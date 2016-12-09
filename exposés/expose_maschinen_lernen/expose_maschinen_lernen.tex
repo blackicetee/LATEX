@@ -1,11 +1,16 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage{csquotes}
 \usepackage[german]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{makeidx}
-%Mit dem Befehl \RM{Zahl in numerischem Format} werden jetzt Römische Zahlen erzeugt 
-%\newcommand{\RM}[1]{\MakeUppercase{\romannumeral #1{.}}}
 
+\usepackage[backend=bibtex,
+%style=numeric,
+style=alphabetic,
+%style=reading,
+bibencoding=ascii]{biblatex}
+\addbibresource{bibliography/bibliography}
 
 \author{Thilo Stegemann}
 \title{Exposé: Entwicklung einer lernfähigen Maschine am Beispiel eines simplen mit ncurces programmierten Computerspiels}
@@ -20,14 +25,39 @@ Wie funktioniert eigentlich künstliche Intelligenz? Gibt es eine anschauliche u
 Innerhalb dieser Bachelorarbeit wird versucht antworten auf diese Fragen zu finden. Die Grundlagen des maschinellen Lernens und der Spielentwicklung sollen erklärt und veranschaulicht werden. 
 
 \section*{Vorläufige Zielsetzung}
-Das Ziel der Arbeit ist die Entwicklung eines rundenbasierten 2-D Strategiespiels, wobei ein Mensch gegen eine künstliche Intelligenz(KI), also einen Computergegner, antritt. Diese KI soll sich den Strategien des Spielpartners anpassen können d.h. die KI soll lernen wie sie den menschlichen Mitspieler, innerhalb des Spiels, schlagen kann. Der menschliche Mitspieler wiederum soll vor eine strategische Herausforderung gestellt werden.
+Das Ziel der Arbeit ist die Entwicklung eines zweidimensionalen rundenbasierten Strategiespiels(ZRS), wobei ein Mensch gegen eine künstliche Intelligenz(KI), also einen Computergegner, antritt. Diese KI soll sich den Strategien des Spielpartners anpassen können d.h. die KI soll lernen wie sie den menschlichen Mitspieler, innerhalb des Spiels, schlagen kann. Der menschliche Mitspieler wiederum soll vor eine strategische Herausforderung gestellt werden.
 
 \section*{Methoden und Vorgehen}
-
+\begin{enumerate}
+	\item Recherche und Studium relevanter Literatur
+	\item Gliedern und herausbilden zielführender Passagen innerhalb der Literatur
+	\item Empirische Feldstudie: 
+	\begin{enumerate}
+		\item Was ist das reizvolle an einem ZRS?
+		\item Wie gut sollte eine KI sein?
+		\item Kann auch ein einfaches Computerspiel erfolgreich und spaßig sein?
+		\item Ist KI leichter zu verstehen, wenn man es mit einem simplen ZRS veranschaulicht?
+	\end{enumerate}	 
+	\item Design des ZRS:
+	\begin{enumerate}
+		\item Entwurf des Spielprinzips und der Benutzerschnittstelle(User Interface)
+		\item Design der Spielwelt
+		\item Musterentwurf des lernfähigen Computergegners
+		\begin{enumerate}
+			\item Welche Lernalgorithmen soll der Computergegner verwenden?
+			\item Wie soll der Computergegner Strategien lernen und verwenden?
+		\end{enumerate}
+	\end{enumerate}
+	\item Implementieren des Computerspiels und der künstlichen Intelligenz
+	\item Alternative Implementierungen und Algorithmen für ein anderes Lernverhalten der KI
+	\item Testen bzw. Validieren der Funktionsweise des Computerspiels und des Lernverhaltens der KI
+	\item Auswertung und Analyse des getesteten Lernverhaltens der KI
+	\item Ausblick: Zukünftige Erweiterungen der Spielwelt, des Spielprinzips und der KI
+\end{enumerate}
 \section*{Erwartbare Ergebnisse}
 \begin{itemize}
 	\item Ein lernfähiger Computergegner
-	\item Rundenbasiertes Strategiespiel für eine Person gegen einen Computergegner 
+	\item Ein zweidimensionales rundenbasiertes Strategiespiel für eine Person welche gegen einen Computergegner antreten kann 
 \end{itemize}
 
 \section*{Zeitplan}
@@ -41,7 +71,7 @@ Das Ziel der Arbeit ist die Entwicklung eines rundenbasierten 2-D Strategiespiel
 	\item Februar:
 	\begin{itemize}
 		\item \textbf{Weiterhin ausführliches Studium} der ausgewählten Literatur
-		\item \textbf{Schreiben der Kapitel}: Implementierung, Validierung, Abstrakt, Einleitung, Auswertung und Ausblick
+		\item \textbf{Schreiben der Kapitel}: Abstrakt, Einleitung, Auswertung und Ausblick
 		\item \textbf{Fertigstellen und Auswerten} der maschinellen Lernalgorithmen und des Computerspiels
 	\end{itemize}
 	\item März:
@@ -92,7 +122,12 @@ Literaturverzeichnis
 \end{enumerate}
 Anhang
 
-\section*{Literatur}
+%This command makes a citation of the literature named: "Alpaydm"
+%\cite{Alpaydm}
 
+%Command \nocite{*} makes command \printbibliography print the bib without citing at all
+\nocite{*}
+%Prints in the thesis mentioned literature
+\printbibliography
 
 \end{document}
