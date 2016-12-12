@@ -63,5 +63,29 @@
     \field{title}{Game Design: Konzepte, Kreation, Vermarktung}
     \field{year}{2002}
   \endentry
+
+  \entry{Harrington}{book}{}
+    \name{author}{1}{}{%
+      {{hash=HP}{%
+         family={Harrington},
+         familyi={H\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Manning}%
+    }
+    \strng{namehash}{HP1}
+    \strng{fullhash}{HP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Har12}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{edition}{1}
+    \field{title}{Machine Learning: IN ACTION}
+    \field{year}{2012}
+  \endentry
 \endsortlist
 \endinput

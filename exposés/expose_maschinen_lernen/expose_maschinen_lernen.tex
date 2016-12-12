@@ -13,58 +13,88 @@ bibencoding=ascii]{biblatex}
 \addbibresource{bibliography/bibliography}
 
 \author{Thilo Stegemann}
-\title{Exposé: Entwicklung einer lernfähigen Maschine am Beispiel eines simplen mit ncurces programmierten Computerspiels}
+\title{Exposé: Untersuchung der Lernfähigkeit einer künstlichen Intelligenz am Beispiel eines Computerspiels}
 
 \begin{document}
 \maketitle
 
 \section*{Motivation}
-%Verstehen der Konzepte der Anfänge Spielentwicklung
-%Angehende Entwickler und Neulinge auf dem Gebiet des maschinellen Lernens sollen die
-Wie funktioniert eigentlich künstliche Intelligenz? Gibt es eine anschauliche und einfache Möglichkeit die Grundprinzipien des maschinellen Lernens zu verstehen? Ist das entwickeln von Computerspielen und künstlicher Intelligenz zu kompliziert?
-Innerhalb dieser Bachelorarbeit wird versucht antworten auf diese Fragen zu finden. Die Grundlagen des maschinellen Lernens und der Spielentwicklung sollen erklärt und veranschaulicht werden. 
+Sie sind ein Entwickler und programmieren aktuell ein Computerspiel mit Anwendungsbedarf von künstlicher Intelligenz oder Sie benötigen innerhalb einer beliebigen Anwendung eine lernfähige künstliche Softwarekomponente und Sie wissen nicht welche Lernalgorithmen sich dafür eignen würden. Innerhalb dieser Arbeit werden Grundlagen der Spielentwicklung und des maschinellen Lernens(ML) bzw. der künstlichen Intelligenz(KI) vermittelt. Zudem werden bestimmte Lernalgorithmen auf Ihre Funktionsweise, Belastbarkeit und Grenzen untersucht, implementiert, getestet und ausgewertet. Der Fokus innerhalb dieser Arbeit konzentriert sich auf die Untersuchung des Lernverhaltens einer KI.
 
 \section*{Vorläufige Zielsetzung}
-Das Ziel der Arbeit ist die Entwicklung eines zweidimensionalen rundenbasierten Strategiespiels(ZRS), wobei ein Mensch gegen eine künstliche Intelligenz(KI), also einen Computergegner, antritt. Diese KI soll sich den Strategien des Spielpartners anpassen können d.h. die KI soll lernen wie sie den menschlichen Mitspieler, innerhalb des Spiels, schlagen kann. Der menschliche Mitspieler wiederum soll vor eine strategische Herausforderung gestellt werden.
+Das Ziel der Arbeit ist die Untersuchung des Lernverhaltens einer künstlichen Intelligenz am Beispiel eines eigens entworfenen zweidimensionalen rundenbasierten Strategiespiels(ZRS). Ein einfaches aber nicht triviales ZRS soll entworfen und implementiert werden. Dieses ZRS soll die Basis für die Untersuchung des Lernverhaltens der KI sein. Die KI wiederum soll maschinell lernen können und sich durch das Training gegen einen menschlichen Spielgegner verbessern. Speziell soll untersucht werden wie genau die KI maschinell lernt, was die Vor- und Nachteile verschiedener Lernalgorithmen sind und wo die Engpässe(Bottlenecks) und Grenzen der KI liegen. 
 
 \section*{Methoden und Vorgehen}
 \begin{enumerate}
 	\item Recherche und Studium relevanter Literatur
+	
 	\item Gliedern und herausbilden zielführender Passagen innerhalb der Literatur
-	\item Empirische Feldstudie: 
+	
+	\item Einführung in das Thema
 	\begin{enumerate}
-		\item Was ist das reizvolle an einem ZRS?
-		\item Wie gut sollte eine KI sein?
-		\item Kann auch ein einfaches Computerspiel erfolgreich und spaßig sein?
-		\item Ist KI leichter zu verstehen, wenn man es mit einem simplen ZRS veranschaulicht?
-	\end{enumerate}	 
-	\item Design des ZRS:
+		\item Klärung Motivation und Relevanz der Arbeit
+		\item Stand der aktuellen Forschung aufzeigen
+		\item Definition der Zielsetzung
+		\item Darstellung der Ergebnisse
+	\end{enumerate}		
+	
+	\item Vermitteln der Grundlagen für besseres Verständnis
 	\begin{enumerate}
-		\item Entwurf des Spielprinzips und der Benutzerschnittstelle(User Interface)
-		\item Design der Spielwelt
-		\item Musterentwurf des lernfähigen Computergegners
-		\begin{enumerate}
-			\item Welche Lernalgorithmen soll der Computergegner verwenden?
-			\item Wie soll der Computergegner Strategien lernen und verwenden?
-		\end{enumerate}
+		\item Spielentwicklung
+		\item Maschinelles Lernen und künstliche Intelligenz
+	\end{enumerate}		
+	
+	\item Design des Spiels:
+	\begin{enumerate}
+		\item Entwurf des Spielprinzips
+		\item Definieren der Spielregeln
+		\item Entwerfen der Benutzerschnittstelle(User Interface)
+		\item Design der Spielwelt 
+		\item "Optional"[Verallgemeinern der Grundlagen und Implementierung eines Computerspiels]
+		\item Festlegen der funktionalen Anforderungen
 	\end{enumerate}
-	\item Implementieren des Computerspiels und der künstlichen Intelligenz
-	\item Alternative Implementierungen und Algorithmen für ein anderes Lernverhalten der KI
+
+	\item Design der künstlichen Intelligenz:
+	\begin{enumerate}
+		\item Analyse möglicher Lernalgorithmen
+		\item Kritische Bewertung: Wird der Lernalgorithmus vom ZRS ausgereizt?
+		\item Erwartbares Lernverhalten der KI am Beispiel des ZRS
+	\end{enumerate}
+	
+	\item Implementieren des ZRS und der Lernalgorithmen
+	
+	\item Alternative Implementierung und Algorithmen für ein anderes Lernverhalten der KI
+	
 	\item Testen bzw. Validieren der Funktionsweise des Computerspiels und des Lernverhaltens der KI
-	\item Auswertung und Analyse des getesteten Lernverhaltens der KI
-	\item Ausblick: Zukünftige Erweiterungen der Spielwelt, des Spielprinzips und der KI
+	\begin{enumerate}
+		%TODO Wie testet man ein Computerspiel? Automatisches Testen?
+		\item Messbare Kriterien für die Lernfähigkeit der KI entwerfen
+		\item Empirisches Protokoll zum erfassen und untersuchen des Lernprozesses der KI mittels messbarer Kriterien
+		\item Lernverhalten der KI im Hinblick auf wechselnde menschliche Spieler
+		\item Ab wie viel wechselnden Spielern erreicht die KI Ihr Lernmaximum?
+	\end{enumerate}
+	
+	\item Kritische Zusammenfassung der Untersuchung und der Ergebnisse
+	
+	\item Ausblick: Zukünftige Erweiterungen der Spielwelt, des Spielprinzips und der Lernalgorithmen
+	\begin{enumerate}
+		\item Ein anderes Spiel
+		\item Neuronale Netze
+	\end{enumerate}
+	
 \end{enumerate}
+
 \section*{Erwartbare Ergebnisse}
 \begin{itemize}
-	\item Ein lernfähiger Computergegner
-	\item Ein zweidimensionales rundenbasiertes Strategiespiel für eine Person welche gegen einen Computergegner antreten kann 
+	\item Untersuchung des Lernverhaltens einer KI am Beispiel eines zweidimensionalen rundenbasierten Strategiespiels(ZRS)
+	\item Ein ZRS für eine Person welche gegen einen lernfähigen Computergegner antreten kann 
 \end{itemize}
 
 \section*{Zeitplan}
 \begin{itemize}
 	\item Januar:
 	\begin{itemize}
-		\item \textbf{Literaturrecherche:} maschinelles Lernen, Entwicklung und Design von 2-D Spielen, Bibliothek ncurces
+		\item \textbf{Literaturrecherche:} maschinelles Lernen, Entwicklung und Design von 2-D Spielen
 		\item \textbf{Schreiben der wissenschaftlichen Arbeit:} Grundlagen, Design und beginn der Kapitel Implementierung und Test
 		\item \textbf{Implementierung und Test:} Algorithmen für maschinelles Lernen und Aufbau des Computerspiels
 	\end{itemize}
@@ -90,34 +120,55 @@ Literaturverzeichnis
 	\item Einleitung
 	\begin{enumerate}
 		\item Motivation
-		\item Zielsetzung
 		\item Stand der Technik
+		\item Zielsetzung
 	\end{enumerate}
+	
 	\item Grundlagen
 	\begin{enumerate}
+		\item Spielentwicklung
 		\item Maschinelles Lernen
-		\item Grafik Bibliothek: Ncurces
 	\end{enumerate}
-	\item Design
+	
+	\item Design des zweidimensionalen rundenbasierten Strategiespiels(ZRS)
 	\begin{enumerate}
 		\item Spielprinzip
-		\item Design-Entwurf
-		\item Strategien
+		\item Spielregeln
+		\item Benutzerschnittstelle
+		\item Spielwelt
+		\item Funktionale Anforderungen
 	\end{enumerate}
+	
+	\item Design der künstlichen Intelligenz(KI)
+	\begin{enumerate}
+		\item Lernalgorithmen
+		\item Voraussichtliche Grenzen der Lernalgorithmen
+		\item Erwartbares Lernverhalten
+	\end{enumerate}		
+	
 	\item Implementierung
 	\begin{enumerate}
-		\item Belohnen und Bestrafen
-		\item Mustererkennung Strategien
-		\item Das Spiel 
+		\item Design ZRS
+		\item Design KI
+		\item Alternative Implementierung der KI
 	\end{enumerate}
+	
 	\item Validierung
 	\begin{enumerate}
-		\item Testen des maschinellen Lernens
-		\item Testen des Spiels
+		\item Messbare Testkriterien entwickeln
+		\item Empirisches Protokoll zum Lernverhalten der KI
+		\item Austesten der Belastbarkeit und herausfinden der Grenzen der KI
 		\item Auswertung der Tests
 	\end{enumerate}
-	\item Zusammenfassung
+	
+	\item Kritische Zusammenfassung der Ergebnisse
+
 	\item Ausblick
+	\begin{enumerate}
+		\item Unterschiedliche Spielgrundlagen
+		\item Andere Lernalgorithmen oder Lerngrundlagen(Neuronale Netze)
+	\end{enumerate}			
+	
 	\item Literatur	
 \end{enumerate}
 Anhang
