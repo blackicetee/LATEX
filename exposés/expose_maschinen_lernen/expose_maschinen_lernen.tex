@@ -1,9 +1,10 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[12pt,a4paper]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage{csquotes}
 \usepackage[german]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{makeidx}
+\usepackage{graphicx}
 
 \usepackage[backend=bibtex,
 %style=numeric,
@@ -12,17 +13,29 @@ style=alphabetic,
 bibencoding=ascii]{biblatex}
 \addbibresource{bibliography/bibliography}
 
-\author{Thilo Stegemann}
-\title{Exposé: Untersuchung der Lernfähigkeit einer künstlichen Intelligenz am Beispiel eines Computerspiels}
-
 \begin{document}
+% Titleinformation formatted with KOMA-Script "scrartcl"
+\subject{Exposé Bachelorarbeit}
+\author{
+	\texttt{Thilo Stegemann}\\
+	\texttt{s0539757}\\
+	\texttt{Angewandte Informatik}}
+\title{Untersuchung der Lernfähigkeit einer künstlichen Intelligenz am Beispiel eines Computerspiels}
+
 \maketitle
+\centerline{\includegraphics[scale=1.5]{htw_logo}}
 
 \section*{Motivation}
-Sie sind ein Entwickler und programmieren aktuell ein Computerspiel mit Anwendungsbedarf von künstlicher Intelligenz oder Sie benötigen innerhalb einer beliebigen Anwendung eine lernfähige künstliche Softwarekomponente und Sie wissen nicht welche Lernalgorithmen sich dafür eignen würden. Innerhalb dieser Arbeit werden die Grundlagen des maschinellen Lernens(ML) bzw. der künstlichen Intelligenz(KI)  vermittelt. Zudem werden bestimmte Lernalgorithmen auf Ihre Funktionsweise, Belastbarkeit und Grenzen untersucht, implementiert, getestet und ausgewertet. Der Fokus innerhalb dieser Arbeit konzentriert sich auf die Untersuchung des Lernverhaltens einer KI.
+%Sind Sie ein (angehender) Softwareentwickler und programmieren aktuell ein Computerspiel mit Anwendungsbedarf von künstlicher Intelligenz? Benötigen Sie innerhalb einer beliebigen Anwendung eine lernfähige künstliche Softwarekomponente und wissen nicht welche Lernalgorithmen sich dafür eignen würden? 
+
+%Innerhalb dieser Arbeit werden die Grundlagen des maschinellen Lernens(ML) bzw. der künstlichen Intelligenz(KI)  vermittelt.45 Zudem werden bestimmte Lernalgorithmen auf Ihre Funktionsweise, Belastbarkeit und Grenzen untersucht, implementiert, getestet und ausgewertet. Der Fokus innerhalb dieser Arbeit konzentriert sich auf die Untersuchung des Lernverhaltens einer KI.
+
+Tritt jemand gegen einen Dame(Das Brettspiel "Dame") Computergegner an und verliert 20 Runden in Folge, dann kann das sehr frustrierend sein. Entweder man versucht verzweifelt die künstliche Intelligenz(KI) des Dame Computergegners immer wieder herauszufordern oder man entwickelt das dringende Verlange zu verstehen wie ein Dame Computergegner funktioniert. Ich persönlich wollte unbedingt verstehen wie das Lernverhalten und der Lernprozess der Dame-KI auf elementarer Ebene aussieht. Dabei interessieren mich besonders folgende Fragen:\\       
+
+Wie lernt ein Programm Strategien? Was sind die elementaren Schritte die ein Programm  während des Lernprozesses durchläuft? Wie verändert sich das Lernverhalten einer künstlichen Intelligenz, wenn sie von verschiedenen menschlichen Gegnern trainiert wird? In wie fern wird die künstliche Intelligenz von einem Computerspiel ausgereizt? Wenn zwei Dame-KIs gegeneinander spielen und die Dame-KIs mit verschiedenen Lernalgorithmen implementiert sind, welche KI lernt dann effizienter, schneller oder besser?
 
 \section*{Vorläufige Zielsetzung}
-Das Ziel der Arbeit ist die Untersuchung des Lernverhaltens einer künstlichen Intelligenz am Beispiel eines eigens entworfenen zweidimensionalen rundenbasierten Strategiespiels(ZRS). Ein einfaches aber nicht triviales ZRS soll entworfen und implementiert werden. Dieses ZRS soll die Basis für die Untersuchung des Lernverhaltens der KI sein. Die KI wiederum soll maschinell lernen können und sich durch das Training gegen einen menschlichen Spielgegner verbessern. Speziell soll untersucht werden wie ein Algorithmus bzw. die KI, anhand von einem Beispiel, lernt, was die Vor- und Nachteile verschiedener Lernalgorithmen sind und wo die Engpässe(Bottlenecks) und Grenzen der KI/Lernalgorithmen liegen. 
+Das Ziel der Arbeit ist die Untersuchung des Lernverhaltens einer künstlichen Intelligenz am Beispiel eines eigens entworfenen zweidimensionalen rundenbasierten Strategiespiels(ZRS). Ein einfaches aber nicht triviales ZRS soll entworfen und implementiert werden. Dieses ZRS soll die Basis für die Untersuchung des Lernverhaltens der KI sein. Die KI wiederum soll maschinell lernen können und sich durch das Training gegen einen menschlichen Spielgegner verbessern. Speziell soll untersucht werden wie ein Algorithmus bzw. die KI, anhand von einem Computerspiel, lernt, was die Vor- und Nachteile verschiedener Lernalgorithmen sind und wo die Schwachstellen und Grenzen der KI/Lernalgorithmen liegen. 
 
 \section*{Methoden und Vorgehen}
 \begin{enumerate}
