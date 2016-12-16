@@ -3,7 +3,7 @@
 
 % the language of the thesis (babel recommends loading csquotes)
 \usepackage{csquotes} 
-\usepackage[english]{babel}
+\usepackage[german]{babel}
 
 % These two packages are needed for math and math symbols, which I use
 % heavily in the document.
@@ -47,15 +47,23 @@
 }
 
 % References with biber. 
+%\usepackage[
+%    backend = biber,
+%    firstinits = true,
+%    %style = phys, % the phys style must be installed separately
+%    sortlocale = en_US,
+%    natbib = true,
+%    doi = false,
+%    eprint = false,
+%    sorting=none
+%]{biblatex}
+
 \usepackage[
-    backend = biber,
-    firstinits = true,
-    %style = phys, % the phys style must be installed separately
-    sortlocale = en_US,
-    natbib = true,
-    doi = false,
-    eprint = false,
-    sorting=none
+	backend=bibtex,
+	%style=numeric,
+	style=alphabetic,
+	%style=reading,
+	bibencoding=ascii
 ]{biblatex}
 
 % clever references

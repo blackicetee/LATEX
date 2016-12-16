@@ -1,0 +1,43 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {chapter}{\nonumberline Einf\IeC {\"u}hrung}{1}{chapter*.2}
+\contentsline {chapter}{\numberline {1}Grundlagen}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Spielentwicklung}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Lineare Algebra}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Heuristik}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Lernf\IeC {\"a}hige Algorithmen}{3}{section.1.4}
+\contentsline {chapter}{\numberline {2}Anforderungen und Entwurf}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Computerspiele}{4}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Spielprinzipien}{4}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Spielregeln}{4}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Benutzerschnittstellen}{4}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Lernverfahren}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Analyse und Auswahl der lernf\IeC {\"a}higen Algorithmen}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Anwendung der Algorithmen auf Computerspiele}{4}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Konzeptuelles Training der Algorithmen}{4}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Persistenz der Trainingsdaten}{4}{subsection.2.2.4}
+\contentsline {chapter}{\numberline {3}Implementierung}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Computerspiele}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Lernverfahren}{5}{section.3.2}
+\contentsline {section}{\numberline {3.3}Alternative Lernverfahren}{5}{section.3.3}
+\contentsline {chapter}{\numberline {4}Validierung}{6}{chapter.4}
+\contentsline {section}{\numberline {4.1}Computerspiele}{6}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Siegesbedingungen}{6}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Spielregeln}{6}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Benutzerschnittstellen}{6}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Grafische Oberfl\IeC {\"a}che}{6}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Lernverfahren}{6}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Messbare Testkriterien entwickeln}{6}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Empirisches Protokoll}{6}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Belastbarkeit und Grenzen}{6}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Optimale Anwendungsgebiete}{6}{subsection.4.2.4}
+\contentsline {chapter}{\numberline {5}Text elements}{7}{chapter.5}
+\contentsline {section}{\numberline {5.1}Math}{7}{section.5.1}
+\contentsline {section}{\numberline {5.2}References}{8}{section.5.2}
+\contentsline {section}{\numberline {5.3}Units}{8}{section.5.3}
+\contentsline {section}{\numberline {5.4}Figures}{8}{section.5.4}
+\contentsline {chapter}{\numberline {A}I am an appendix!}{12}{appendix.A}
+\contentsline {section}{\numberline {A.1}Section in appendix!}{12}{section.A.1}
+\contentsline {chapter}{\numberline {B}Another appendix? What the heck?}{14}{appendix.B}
+\contentsline {section}{\numberline {B.1}Section in appendix!}{14}{section.B.1}

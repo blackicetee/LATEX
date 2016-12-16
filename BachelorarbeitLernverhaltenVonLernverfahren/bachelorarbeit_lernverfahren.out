@@ -1,0 +1,40 @@
+\BOOKMARK [0][-]{chapter*.2}{Einf\374hrung}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Grundlagen}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Spielentwicklung}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Lineare Algebra}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{Heuristik}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.4}{Lernf\344hige Algorithmen}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Anforderungen und Entwurf}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Computerspiele}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.1.1}{Spielprinzipien}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.2}{Spielregeln}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.3}{Benutzerschnittstellen}{section.2.1}% 11
+\BOOKMARK [1][-]{section.2.2}{Lernverfahren}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.1}{Analyse und Auswahl der lernf\344higen Algorithmen}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.2}{Anwendung der Algorithmen auf Computerspiele}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.3}{Konzeptuelles Training der Algorithmen}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.4}{Persistenz der Trainingsdaten}{section.2.2}% 16
+\BOOKMARK [0][-]{chapter.3}{Implementierung}{}% 17
+\BOOKMARK [1][-]{section.3.1}{Computerspiele}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{Lernverfahren}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Alternative Lernverfahren}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{Validierung}{}% 21
+\BOOKMARK [1][-]{section.4.1}{Computerspiele}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.1.1}{Siegesbedingungen}{section.4.1}% 23
+\BOOKMARK [2][-]{subsection.4.1.2}{Spielregeln}{section.4.1}% 24
+\BOOKMARK [2][-]{subsection.4.1.3}{Benutzerschnittstellen}{section.4.1}% 25
+\BOOKMARK [2][-]{subsection.4.1.4}{Grafische Oberfl\344che}{section.4.1}% 26
+\BOOKMARK [1][-]{section.4.2}{Lernverfahren}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.2.1}{Messbare Testkriterien entwickeln}{section.4.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.2}{Empirisches Protokoll}{section.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.2.3}{Belastbarkeit und Grenzen}{section.4.2}% 30
+\BOOKMARK [2][-]{subsection.4.2.4}{Optimale Anwendungsgebiete}{section.4.2}% 31
+\BOOKMARK [0][-]{chapter.5}{Text elements}{}% 32
+\BOOKMARK [1][-]{section.5.1}{Math}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.2}{References}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.3}{Units}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.4}{Figures}{chapter.5}% 36
+\BOOKMARK [0][-]{appendix.A}{I am an appendix!}{}% 37
+\BOOKMARK [1][-]{section.A.1}{Section in appendix!}{appendix.A}% 38
+\BOOKMARK [0][-]{appendix.B}{Another appendix? What the heck?}{}% 39
+\BOOKMARK [1][-]{section.B.1}{Section in appendix!}{appendix.B}% 40
