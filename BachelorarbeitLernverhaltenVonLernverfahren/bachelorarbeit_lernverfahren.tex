@@ -1,0 +1,23 @@
+\input{präambel/dokumentenklasse.tex}
+\input{präambel/pakete.tex}
+\input{präambel/befehle.tex}
+\input{präambel/einstellungen.tex}
+
+\begin{document}
+    
+    \frontmatter
+        \input{seiten/deckblatt.tex}
+        \input{seiten/inhaltsverzeichnis.tex}
+    
+    \mainmatter
+        \input{inhalt/einführung.tex}
+        \input{inhalt/elemente.tex}
+        \input{inhalt/anforderungen_und_konzepte.tex}
+
+    %\backmatter
+        \appendix
+        \input{seiten/bibliografie.tex}
+        \input{seiten/anhang.tex}
+        \input{seiten/danksagung.tex}
+
+\end{document}

@@ -1,0 +1,78 @@
+% I want to use UTF8 always
+\usepackage[utf8]{inputenc}
+
+% the language of the thesis (babel recommends loading csquotes)
+\usepackage{csquotes} 
+\usepackage[english]{babel}
+
+% These two packages are needed for math and math symbols, which I use
+% heavily in the document.
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+
+% siunitx is great for typesetting units like a = 5mm. I try to use it
+% whenever any unit is used. 
+\usepackage{siunitx}
+
+% fonts. Pallatino, basically.
+\usepackage[sc]{mathpazo}
+\usepackage[scaled=0.86]{berasans}
+\usepackage[scaled=1.03]{inconsolata}
+\usepackage{tgpagella}
+
+% use a better font encoding. 7 bit are NOT enough!
+\usepackage[T1]{fontenc}
+
+% This package lets me use \includegraphics for figures.
+\usepackage{graphicx}
+
+% nicer tables
+\usepackage{booktabs}
+
+% tikz graphics
+\usepackage{tikz}
+
+% Make the table of contents be linked to the content position.
+\usepackage{hyperref}
+\definecolor{darkblue}{rgb}{0,0,0}
+\hypersetup{
+%    pdftex=true, 
+    colorlinks=true, 
+    breaklinks=true, 
+    linkcolor=darkblue, 
+    menucolor=darkblue, 
+%    pagecolor=darkblue, 
+    urlcolor=darkblue,
+    citecolor = darkblue
+}
+
+% References with biber. 
+\usepackage[
+    backend = biber,
+    firstinits = true,
+    %style = phys, % the phys style must be installed separately
+    sortlocale = en_US,
+    natbib = true,
+    doi = false,
+    eprint = false,
+    sorting=none
+]{biblatex}
+
+% clever references
+\usepackage[noabbrev, capitalise]{cleveref}
+
+% fix latex2e bugs
+\usepackage{fixltx2e}
+
+% line numbers
+\usepackage[modulo,switch]{lineno}
+\linenumbers
+
+% how is our text width?
+\usepackage{printlen}
+
+% include pdf documents
+\usepackage{pdfpages}
+
+% chemical formulas
+\usepackage[version=3]{mhchem}
