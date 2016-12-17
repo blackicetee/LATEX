@@ -17,7 +17,7 @@ Ziel des Spiels ist es vier Kreuze oder vier Kreise in einer bestimmten Position
 
 Eine horizontale Siegesanordnung entsteht, wenn vier Spielfiguren eines Spielers in einer horizontalen Reihe, veranschaulicht in Abbildung \ref{fig:tttHorizontalerSieg}, angeordnet sind. In jeder Reihe des Spielbretts ist ein horizontaler Sieg möglich.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 1]{inhalt/abbildungen/horizontaler_sieg.pdf}
   \caption{Horizontale Siegesanordnung der 'X' Spielfiguren beim Tic Tac Toe.}
@@ -26,7 +26,7 @@ Eine horizontale Siegesanordnung entsteht, wenn vier Spielfiguren eines Spielers
 
 In Abbildung \ref{fig:tttVertikalerSieg} gewinnt der menschliche Spieler knapp gegen den Computergegner mit einer ununterbrochenen vertikalen Reihe. Der Computergegner hätte fast eine diagonale Reihe aus Kreisen verbunden, die jedoch von dem menschlichen Spieler mit einer Spielfigur geblockt wurde. Zudem hätte der Computergegner auch fast eine vertikale Reihe ohne Unterbrechungen vervollständigt.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 1]{inhalt/abbildungen/vertikaler_sieg.pdf}
   \caption{Vertikale Siegesanordnung der 'X' Spielfiguren beim Tic Tac Toe.}
@@ -35,7 +35,7 @@ In Abbildung \ref{fig:tttVertikalerSieg} gewinnt der menschliche Spieler knapp g
 
 Die dritte und letzte Anordnungsvariante der Spielfiguren, welche zu einem Sieg eines Spielers führt, ist die diagonale Verbindung von vier Spielfiguren eines Spielers. In Abbildung \ref{fig:tttDiagonalerSieg} gewinnt der Computergegner mit einer diagonalen Anordnung von vier Spielfiguren ohne Unterbrechung einer gegnerischen Spielfigur.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 1]{inhalt/abbildungen/diagonaler_sieg.pdf}
   \caption{Diagonale Siegesanordnung der 'O' Spielfiguren beim Tic Tac Toe.}
@@ -50,7 +50,7 @@ Dann gewinnt bzw. verliert keiner der beiden Spieler und es entsteht ein Unentsc
 
 Der Benutzer kann seine Kreuze auf das Spielbrett setzen indem er ein vorher vom Spiel definiertes Zahlentupel über die Tastatur eingibt. Welche Zahlentupel ein Kreuz an welche Stelle setzt ist in Abbildung \ref{fig:kreiseUndKreuzeSetzen} definiert. Sollte der menschliche Spieler keines der erlaubten Zahlentupel eingeben, dann wird er darauf hingewiesen, welche Steuerungsmöglichkeiten zum setzen der Spielfiguren ihm zur Verfügung stehen.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 1]{inhalt/abbildungen/vier_mal_vier_matrix.pdf}
   \caption{Steuerung des Setzen der Spielfiguren auf dem Tic Tac Toe Spielbrett.}
@@ -60,6 +60,20 @@ Der Benutzer kann seine Kreuze auf das Spielbrett setzen indem er ein vorher vom
 \myparagraph{Zusammenfassung in Anforderungen}
 
 \myparagraph{Analyse möglicher Siegesstrategien}
+
+\begin{table}
+\caption{Festlegung der Anforderungen für das Tic Tac Toe Computerspiel}
+\begin{tabularx}{\textwidth}{p{0.25\textwidth}|p{0.65\textwidth}}
+\textbf{Anforderung} & \textbf{Beschreibung} \\
+\hline
+Spielfeld	& Das Spielfeld ist eine Matrix mit vier Zeilen und vier Spalten, also eine vier mal vier Matrix. \\
+\hline
+Spielzug	& Jeder Spieler setzt nacheinander eine Spielfigur in die vier mal vier Matrix. \\
+\hline
+Steuerung 	& Die Spieler setzen ihre Spielfiguren mit der eingabe des Indizes der Matrix. \\
+\end{tabularx}
+\label{tab:tttAnforderungen}
+\end{table}
 
 \subsection{Vier Gewinnt}
 \myparagraph{Spielprinzipien}

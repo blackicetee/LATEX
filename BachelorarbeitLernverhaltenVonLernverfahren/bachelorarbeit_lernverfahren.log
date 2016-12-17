@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.26)  17 DEC 2016 19:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.26)  17 DEC 2016 20:43
 entering extended mode
 **./bachelorarbeit_lernverfahren.tex
 (bachelorarbeit_lernverfahren.tex
@@ -1103,33 +1103,23 @@ File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 \Gin@req@height=\dimen158
 \Gin@req@width=\dimen159
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen160
-\lightrulewidth=\dimen161
-\cmidrulewidth=\dimen162
-\belowrulesep=\dimen163
-\belowbottomsep=\dimen164
-\aboverulesep=\dimen165
-\abovetopsep=\dimen166
-\cmidrulesep=\dimen167
-\cmidrulekern=\dimen168
-\defaultaddspace=\dimen169
-\@cmidla=\count155
-\@cmidlb=\count156
-\@aboverulesep=\dimen170
-\@belowrulesep=\dimen171
-\@thisruleclass=\count157
-\@lastruleclass=\count158
-\@thisrulewidth=\dimen172
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+\TX@col@width=\dimen160
+\TX@old@table=\dimen161
+\TX@old@col=\dimen162
+\TX@target=\dimen163
+\TX@delta=\dimen164
+\TX@cols=\count155
+\TX@ftn=\toks24
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
-\pgfutil@everybye=\toks24
-\pgfutil@tempdima=\dimen173
-\pgfutil@tempdimb=\dimen174
+\pgfutil@everybye=\toks25
+\pgfutil@tempdima=\dimen165
+\pgfutil@tempdimb=\dimen166
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
 x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
@@ -1148,30 +1138,30 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
-\pgfkeys@pathtoks=\toks25
-\pgfkeys@temptoks=\toks26
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
 x"
-\pgfkeys@tmptoks=\toks27
+\pgfkeys@tmptoks=\toks28
 ))
-\pgf@x=\dimen175
-\pgf@y=\dimen176
-\pgf@xa=\dimen177
-\pgf@ya=\dimen178
-\pgf@xb=\dimen179
-\pgf@yb=\dimen180
-\pgf@xc=\dimen181
-\pgf@yc=\dimen182
+\pgf@x=\dimen167
+\pgf@y=\dimen168
+\pgf@xa=\dimen169
+\pgf@ya=\dimen170
+\pgf@xb=\dimen171
+\pgf@yb=\dimen172
+\pgf@xc=\dimen173
+\pgf@yc=\dimen174
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count159
-\c@pgf@countb=\count160
-\c@pgf@countc=\count161
-\c@pgf@countd=\count162
-\t@pgf@toka=\toks28
-\t@pgf@tokb=\toks29
-\t@pgf@tokc=\toks30
+\c@pgf@counta=\count156
+\c@pgf@countb=\count157
+\c@pgf@countc=\count158
+\c@pgf@countd=\count159
+\t@pgf@toka=\toks29
+\t@pgf@tokb=\toks30
+\t@pgf@tokc=\toks31
  ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -1187,8 +1177,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
 ex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count163
-\pgfsyssoftpath@bigbuffer@items=\count164
+\pgfsyssoftpath@smallbuffer@items=\count160
+\pgfsyssoftpath@bigbuffer@items=\count161
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
 ex"
@@ -1217,12 +1207,12 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen183
-\pgfmath@count=\count165
+\pgfmath@dimen=\dimen175
+\pgfmath@count=\count162
 \pgfmath@box=\box54
-\pgfmath@toks=\toks31
-\pgfmath@stack@operand=\toks32
-\pgfmath@stack@operation=\toks33
+\pgfmath@toks=\toks32
+\pgfmath@stack@operand=\toks33
+\pgfmath@stack@operation=\toks34
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
@@ -1242,37 +1232,37 @@ ex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
 hmetics.code.tex")))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count166
+\c@pgfmathroundto@lastzeros=\count163
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
 "
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen184
-\pgf@picmaxx=\dimen185
-\pgf@picminy=\dimen186
-\pgf@picmaxy=\dimen187
-\pgf@pathminx=\dimen188
-\pgf@pathmaxx=\dimen189
-\pgf@pathminy=\dimen190
-\pgf@pathmaxy=\dimen191
-\pgf@xx=\dimen192
-\pgf@xy=\dimen193
-\pgf@yx=\dimen194
-\pgf@yy=\dimen195
-\pgf@zx=\dimen196
-\pgf@zy=\dimen197
+\pgf@picminx=\dimen176
+\pgf@picmaxx=\dimen177
+\pgf@picminy=\dimen178
+\pgf@picmaxy=\dimen179
+\pgf@pathminx=\dimen180
+\pgf@pathmaxx=\dimen181
+\pgf@pathminy=\dimen182
+\pgf@pathmaxy=\dimen183
+\pgf@xx=\dimen184
+\pgf@xy=\dimen185
+\pgf@yx=\dimen186
+\pgf@yy=\dimen187
+\pgf@zx=\dimen188
+\pgf@zy=\dimen189
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
 ode.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen198
-\pgf@path@lasty=\dimen199
+\pgf@path@lastx=\dimen190
+\pgf@path@lasty=\dimen191
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
 tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen256
-\pgf@shorten@start@additional=\dimen257
+\pgf@shorten@end@additional=\dimen192
+\pgf@shorten@start@additional=\dimen193
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
 "
@@ -1280,19 +1270,19 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box55
 \pgf@hbox=\box56
 \pgf@layerbox@main=\box57
-\pgf@picture@serial@count=\count167
+\pgf@picture@serial@count=\count164
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
 de.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen258
+\pgflinewidth=\dimen194
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
 .code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen259
-\pgf@pt@y=\dimen260
-\pgf@pt@temp=\dimen261
+\pgf@pt@x=\dimen195
+\pgf@pt@y=\dimen196
+\pgf@pt@temp=\dimen197
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -1308,12 +1298,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
 "
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen262
+\pgfarrowsep=\dimen198
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen263
-\pgf@sys@shading@range@num=\count168
+\pgf@max=\dimen199
+\pgf@sys@shading@range@num=\count165
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
 x"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -1344,8 +1334,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
 sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen264
-\pgf@nodesepend=\dimen265
+\pgf@nodesepstart=\dimen256
+\pgf@nodesepend=\dimen257
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
 sty"
@@ -1359,10 +1349,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
-\pgffor@iter=\dimen266
-\pgffor@skip=\dimen267
-\pgffor@stack=\toks34
-\pgffor@toks=\toks35
+\pgffor@iter=\dimen258
+\pgffor@skip=\dimen259
+\pgffor@stack=\toks35
+\pgffor@toks=\toks36
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -1370,31 +1360,31 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
 code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count169
-\pgfplotmarksize=\dimen268
+\pgf@plot@mark@count=\count166
+\pgfplotmarksize=\dimen260
 )
-\tikz@lastx=\dimen269
-\tikz@lasty=\dimen270
-\tikz@lastxsaved=\dimen271
-\tikz@lastysaved=\dimen272
-\tikzleveldistance=\dimen273
-\tikzsiblingdistance=\dimen274
+\tikz@lastx=\dimen261
+\tikz@lasty=\dimen262
+\tikz@lastxsaved=\dimen263
+\tikz@lastysaved=\dimen264
+\tikzleveldistance=\dimen265
+\tikzsiblingdistance=\dimen266
 \tikz@figbox=\box60
 \tikz@figbox@bg=\box61
 \tikz@tempbox=\box62
 \tikz@tempbox@bg=\box63
-\tikztreelevel=\count170
-\tikznumberofchildren=\count171
-\tikznumberofcurrentchild=\count172
-\tikz@fig@count=\count173
+\tikztreelevel=\count167
+\tikznumberofchildren=\count168
+\tikznumberofcurrentchild=\count169
+\tikz@fig@count=\count170
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count174
-\pgfmatrixcurrentcolumn=\count175
-\pgf@matrix@numberofcolumns=\count176
+\pgfmatrixcurrentrow=\count171
+\pgfmatrixcurrentcolumn=\count172
+\pgf@matrix@numberofcolumns=\count173
 )
-\tikz@expandcount=\count177
+\tikz@expandcount=\count174
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarytopaths.code.tex"
@@ -1447,16 +1437,16 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen275
-\Hy@linkcounter=\count178
-\Hy@pagecounter=\count179
+\@linkdim=\dimen267
+\Hy@linkcounter=\count175
+\Hy@pagecounter=\count176
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count180
+\Hy@SavedSpaceFactor=\count177
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1468,17 +1458,17 @@ Package hyperref Info: Plain pages OFF on input line 4501.
 Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4735.
-\c@Hy@tempcnt=\count181
+\c@Hy@tempcnt=\count178
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5088.
-\XeTeXLinkMargin=\dimen276
-\Fld@menulength=\count182
-\Field@Width=\dimen277
-\Fld@charsize=\dimen278
+\XeTeXLinkMargin=\dimen268
+\Fld@menulength=\count179
+\Field@Width=\dimen269
+\Fld@charsize=\dimen270
 Package hyperref Info: Hyper figures OFF on input line 6342.
 Package hyperref Info: Link nesting OFF on input line 6347.
 Package hyperref Info: Hyper index ON on input line 6350.
@@ -1488,17 +1478,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6367.
 Package hyperref Info: PDF/A mode OFF on input line 6372.
 LaTeX Info: Redefining \ref on input line 6412.
 LaTeX Info: Redefining \pageref on input line 6416.
-\Hy@abspage=\count183
-\c@Item=\count184
-\c@Hfootnote=\count185
+\Hy@abspage=\count180
+\c@Item=\count181
+\c@Hfootnote=\count182
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
-\Fld@listcount=\count186
-\c@bookmark@seq@number=\count187
+\Fld@listcount=\count183
+\c@bookmark@seq@number=\count184
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -1507,15 +1497,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip71
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 47.
-Package hyperref Info: Option `breaklinks' set `true' on input line 47.
+Package hyperref Info: Option `colorlinks' set `true' on input line 48.
+Package hyperref Info: Option `breaklinks' set `true' on input line 48.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty"
 Package: biblatex 2016/12/05 v3.7 programmable bibliographies (PK/JW/AB)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count188
+\lrq@indent=\count185
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -1526,49 +1516,49 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xstring\xstring.tex"
 \@xs@message=\write4
-\integerpart=\count189
-\decimalpart=\count190
+\integerpart=\count186
+\decimalpart=\count187
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count191
-\c@listtotal=\count192
-\c@listcount=\count193
-\c@liststart=\count194
-\c@liststop=\count195
-\c@citecount=\count196
-\c@citetotal=\count197
-\c@multicitecount=\count198
-\c@multicitetotal=\count199
-\c@instcount=\count266
-\c@maxnames=\count267
-\c@minnames=\count268
-\c@maxitems=\count269
-\c@minitems=\count270
-\c@citecounter=\count271
-\c@savedcitecounter=\count272
-\c@uniquelist=\count273
-\c@uniquename=\count274
-\c@refsection=\count275
-\c@refsegment=\count276
-\c@maxextratitle=\count277
-\c@maxextratitleyear=\count278
-\c@maxextrayear=\count279
-\c@maxextraalpha=\count280
-\c@abbrvpenalty=\count281
-\c@highnamepenalty=\count282
-\c@lownamepenalty=\count283
-\c@maxparens=\count284
-\c@parenlevel=\count285
-\blx@tempcnta=\count286
-\blx@tempcntb=\count287
-\blx@tempcntc=\count288
-\blx@maxsection=\count289
-\blx@maxsegment@0=\count290
-\blx@notetype=\count291
-\blx@parenlevel@text=\count292
-\blx@parenlevel@foot=\count293
-\blx@sectionciteorder@0=\count294
+\c@tabx@nest=\count188
+\c@listtotal=\count189
+\c@listcount=\count190
+\c@liststart=\count191
+\c@liststop=\count192
+\c@citecount=\count193
+\c@citetotal=\count194
+\c@multicitecount=\count195
+\c@multicitetotal=\count196
+\c@instcount=\count197
+\c@maxnames=\count198
+\c@minnames=\count199
+\c@maxitems=\count266
+\c@minitems=\count267
+\c@citecounter=\count268
+\c@savedcitecounter=\count269
+\c@uniquelist=\count270
+\c@uniquename=\count271
+\c@refsection=\count272
+\c@refsegment=\count273
+\c@maxextratitle=\count274
+\c@maxextratitleyear=\count275
+\c@maxextrayear=\count276
+\c@maxextraalpha=\count277
+\c@abbrvpenalty=\count278
+\c@highnamepenalty=\count279
+\c@lownamepenalty=\count280
+\c@maxparens=\count281
+\c@parenlevel=\count282
+\blx@tempcnta=\count283
+\blx@tempcntb=\count284
+\blx@tempcntc=\count285
+\blx@maxsection=\count286
+\blx@maxsegment@0=\count287
+\blx@notetype=\count288
+\blx@parenlevel@text=\count289
+\blx@parenlevel@foot=\count290
+\blx@sectionciteorder@0=\count291
 \labelnumberwidth=\skip72
 \labelalphawidth=\skip73
 \biblabelsep=\skip74
@@ -1579,9 +1569,9 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibhang=\skip79
 \blx@bcfin=\read3
 \blx@bcfout=\write5
-\c@mincomprange=\count295
-\c@maxcomprange=\count296
-\c@mincompwidth=\count297
+\c@mincomprange=\count292
+\c@maxcomprange=\count293
+\c@mincompwidth=\count294
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1590,72 +1580,72 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count298
-\c@savedafterword=\count299
-\c@annotator=\count300
-\c@savedannotator=\count301
-\c@author=\count302
-\c@savedauthor=\count303
-\c@bookauthor=\count304
-\c@savedbookauthor=\count305
-\c@commentator=\count306
-\c@savedcommentator=\count307
-\c@editor=\count308
-\c@savededitor=\count309
-\c@editora=\count310
-\c@savededitora=\count311
-\c@editorb=\count312
-\c@savededitorb=\count313
-\c@editorc=\count314
-\c@savededitorc=\count315
-\c@foreword=\count316
-\c@savedforeword=\count317
-\c@holder=\count318
-\c@savedholder=\count319
-\c@introduction=\count320
-\c@savedintroduction=\count321
-\c@namea=\count322
-\c@savednamea=\count323
-\c@nameb=\count324
-\c@savednameb=\count325
-\c@namec=\count326
-\c@savednamec=\count327
-\c@translator=\count328
-\c@savedtranslator=\count329
-\c@shortauthor=\count330
-\c@savedshortauthor=\count331
-\c@shorteditor=\count332
-\c@savedshorteditor=\count333
-\c@labelname=\count334
-\c@savedlabelname=\count335
-\c@institution=\count336
-\c@savedinstitution=\count337
-\c@lista=\count338
-\c@savedlista=\count339
-\c@listb=\count340
-\c@savedlistb=\count341
-\c@listc=\count342
-\c@savedlistc=\count343
-\c@listd=\count344
-\c@savedlistd=\count345
-\c@liste=\count346
-\c@savedliste=\count347
-\c@listf=\count348
-\c@savedlistf=\count349
-\c@location=\count350
-\c@savedlocation=\count351
-\c@organization=\count352
-\c@savedorganization=\count353
-\c@origlocation=\count354
-\c@savedoriglocation=\count355
-\c@origpublisher=\count356
-\c@savedorigpublisher=\count357
-\c@publisher=\count358
-\c@savedpublisher=\count359
-\c@language=\count360
-\c@savedlanguage=\count361
-\c@pageref=\count362
-\c@savedpageref=\count363
+\c@afterword=\count295
+\c@savedafterword=\count296
+\c@annotator=\count297
+\c@savedannotator=\count298
+\c@author=\count299
+\c@savedauthor=\count300
+\c@bookauthor=\count301
+\c@savedbookauthor=\count302
+\c@commentator=\count303
+\c@savedcommentator=\count304
+\c@editor=\count305
+\c@savededitor=\count306
+\c@editora=\count307
+\c@savededitora=\count308
+\c@editorb=\count309
+\c@savededitorb=\count310
+\c@editorc=\count311
+\c@savededitorc=\count312
+\c@foreword=\count313
+\c@savedforeword=\count314
+\c@holder=\count315
+\c@savedholder=\count316
+\c@introduction=\count317
+\c@savedintroduction=\count318
+\c@namea=\count319
+\c@savednamea=\count320
+\c@nameb=\count321
+\c@savednameb=\count322
+\c@namec=\count323
+\c@savednamec=\count324
+\c@translator=\count325
+\c@savedtranslator=\count326
+\c@shortauthor=\count327
+\c@savedshortauthor=\count328
+\c@shorteditor=\count329
+\c@savedshorteditor=\count330
+\c@labelname=\count331
+\c@savedlabelname=\count332
+\c@institution=\count333
+\c@savedinstitution=\count334
+\c@lista=\count335
+\c@savedlista=\count336
+\c@listb=\count337
+\c@savedlistb=\count338
+\c@listc=\count339
+\c@savedlistc=\count340
+\c@listd=\count341
+\c@savedlistd=\count342
+\c@liste=\count343
+\c@savedliste=\count344
+\c@listf=\count345
+\c@savedlistf=\count346
+\c@location=\count347
+\c@savedlocation=\count348
+\c@organization=\count349
+\c@savedorganization=\count350
+\c@origlocation=\count351
+\c@savedoriglocation=\count352
+\c@origpublisher=\count353
+\c@savedorigpublisher=\count354
+\c@publisher=\count355
+\c@savedpublisher=\count356
+\c@language=\count357
+\c@savedlanguage=\count358
+\c@pageref=\count359
+\c@savedpageref=\count360
 \shorthandwidth=\skip80
 \shortjournalwidth=\skip81
 \shortserieswidth=\skip82
@@ -1683,13 +1673,13 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.def"
 File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count364
-\c@textcitetotal=\count365
-\c@textcitemaxnames=\count366
-\c@biburlnumpenalty=\count367
-\c@biburlucpenalty=\count368
-\c@biburllcpenalty=\count369
-\c@smartand=\count370
+\c@textcitecount=\count361
+\c@textcitetotal=\count362
+\c@textcitemaxnames=\count363
+\c@biburlnumpenalty=\count364
+\c@biburlucpenalty=\count365
+\c@biburllcpenalty=\count366
+\c@smartand=\count367
 )
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
@@ -1701,8 +1691,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx"
 File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count371
-\c@bbx:relatedtotal=\count372
+\c@bbx:relatedcount=\count368
+\c@bbx:relatedtotal=\count369
 ))
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
@@ -1755,19 +1745,19 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\lineno\lineno.sty"
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count373
-\output=\toks36
-\linenoprevgraf=\count374
-\linenumbersep=\dimen279
-\linenumberwidth=\dimen280
-\c@linenumber=\count375
-\c@pagewiselinenumber=\count376
-\c@LN@truepage=\count377
-\c@internallinenumber=\count378
-\c@internallinenumbers=\count379
-\quotelinenumbersep=\dimen281
-\bframerule=\dimen282
-\bframesep=\dimen283
+\linenopenalty=\count370
+\output=\toks37
+\linenoprevgraf=\count371
+\linenumbersep=\dimen271
+\linenumberwidth=\dimen272
+\c@linenumber=\count372
+\c@pagewiselinenumber=\count373
+\c@LN@truepage=\count374
+\c@internallinenumber=\count375
+\c@internallinenumbers=\count376
+\quotelinenumbersep=\dimen273
+\bframerule=\dimen274
+\bframesep=\dimen275
 \bframebox=\box64
 
 
@@ -1783,30 +1773,30 @@ Package: pdfpages 2016/12/11 v0.5g Insert pages of external PDF documents (AM)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count380
-\calc@Bcount=\count381
-\calc@Adimen=\dimen284
-\calc@Bdimen=\dimen285
+\calc@Acount=\count377
+\calc@Bcount=\count378
+\calc@Adimen=\dimen276
+\calc@Bdimen=\dimen277
 \calc@Askip=\skip86
 \calc@Bskip=\skip87
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count382
+\calc@Ccount=\count379
 \calc@Cskip=\skip88
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 )
-\AM@pagewidth=\dimen286
-\AM@pageheight=\dimen287
+\AM@pagewidth=\dimen278
+\AM@pageheight=\dimen279
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
 File: pppdftex.def 2016/12/11 v0.5g Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box65
-\AM@global@opts=\toks37
-\AM@toc@title=\toks38
-\c@AM@survey=\count383
+\AM@global@opts=\toks38
+\AM@toc@title=\toks39
+\c@AM@survey=\count380
 \AM@templatesizebox=\box66
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mhchem\mhchem.sty"
@@ -1817,66 +1807,66 @@ Package: l3regex 2016/11/21 v6760 L3 Experimental regular expressions
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\l3experimental\l3str\l3tl-build.sty"
 Package: l3tl-build 2016/11/21 v6760 L3 Experimental token list construction
-\l__tl_build_start_index_int=\count384
-\l__tl_build_index_int=\count385
+\l__tl_build_start_index_int=\count381
+\l__tl_build_index_int=\count382
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\l3experimental\l3str\l3tl-analysis.sty"
 Package: l3tl-analysis 2016/06/13 v6589 L3 Experimental token lists analysis
-\l__tl_analysis_normal_int=\count386
-\l__tl_analysis_index_int=\count387
-\l__tl_analysis_nesting_int=\count388
-\l__tl_analysis_type_int=\count389
+\l__tl_analysis_normal_int=\count383
+\l__tl_analysis_index_int=\count384
+\l__tl_analysis_nesting_int=\count385
+\l__tl_analysis_type_int=\count386
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\l3experimental\l3str\l3flag.sty"
 Package: l3flag 2016/11/21 v6760 L3 Experimental flags
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\l3experimental\l3str\l3str-convert.sty"
 Package: l3str-convert 2016/09/07 v6699 L3 Experimental string encoding convers
 ions
-\l__str_internal_int=\count390
-\c__str_replacement_char_int=\count391
+\l__str_internal_int=\count387
+\c__str_replacement_char_int=\count388
 )
-\l__regex_internal_a_int=\count392
-\l__regex_internal_b_int=\count393
-\l__regex_internal_c_int=\count394
-\l__regex_balance_int=\count395
-\l__regex_group_level_int=\count396
-\l__regex_mode_int=\count397
-\l__regex_catcodes_int=\count398
-\l__regex_default_catcodes_int=\count399
-\c__regex_catcode_D_int=\count400
-\c__regex_catcode_S_int=\count401
-\c__regex_catcode_L_int=\count402
-\c__regex_catcode_O_int=\count403
-\c__regex_catcode_A_int=\count404
-\c__regex_all_catcodes_int=\count405
-\l__regex_show_lines_int=\count406
-\l__regex_min_state_int=\count407
-\l__regex_max_state_int=\count408
-\l__regex_left_state_int=\count409
-\l__regex_right_state_int=\count410
-\l__regex_capturing_group_int=\count411
-\l__regex_min_pos_int=\count412
-\l__regex_max_pos_int=\count413
-\l__regex_current_pos_int=\count414
-\l__regex_start_pos_int=\count415
-\l__regex_success_pos_int=\count416
-\l__regex_current_char_int=\count417
-\l__regex_current_catcode_int=\count418
-\l__regex_last_char_int=\count419
-\l__regex_case_changed_char_int=\count420
-\l__regex_current_state_int=\count421
-\l__regex_step_int=\count422
-\l__regex_min_active_int=\count423
-\l__regex_max_active_int=\count424
-\l__regex_replacement_csnames_int=\count425
-\l__regex_match_count_int=\count426
-\l__regex_submatch_int=\count427
-\l__regex_zeroth_submatch_int=\count428
+\l__regex_internal_a_int=\count389
+\l__regex_internal_b_int=\count390
+\l__regex_internal_c_int=\count391
+\l__regex_balance_int=\count392
+\l__regex_group_level_int=\count393
+\l__regex_mode_int=\count394
+\l__regex_catcodes_int=\count395
+\l__regex_default_catcodes_int=\count396
+\c__regex_catcode_D_int=\count397
+\c__regex_catcode_S_int=\count398
+\c__regex_catcode_L_int=\count399
+\c__regex_catcode_O_int=\count400
+\c__regex_catcode_A_int=\count401
+\c__regex_all_catcodes_int=\count402
+\l__regex_show_lines_int=\count403
+\l__regex_min_state_int=\count404
+\l__regex_max_state_int=\count405
+\l__regex_left_state_int=\count406
+\l__regex_right_state_int=\count407
+\l__regex_capturing_group_int=\count408
+\l__regex_min_pos_int=\count409
+\l__regex_max_pos_int=\count410
+\l__regex_current_pos_int=\count411
+\l__regex_start_pos_int=\count412
+\l__regex_success_pos_int=\count413
+\l__regex_current_char_int=\count414
+\l__regex_current_catcode_int=\count415
+\l__regex_last_char_int=\count416
+\l__regex_case_changed_char_int=\count417
+\l__regex_current_state_int=\count418
+\l__regex_step_int=\count419
+\l__regex_min_active_int=\count420
+\l__regex_max_active_int=\count421
+\l__regex_replacement_csnames_int=\count422
+\l__regex_match_count_int=\count423
+\l__regex_submatch_int=\count424
+\l__regex_zeroth_submatch_int=\count425
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\chemgreek\chemgreek.sty"
 Package: chemgreek 2016/02/10 v1.0e interfaceforuprightgreeklettersforuseinchem
 istry (CN)
-\l__chemgreek_tmpa_int=\count429
-\g__chemgreek_tmpa_int=\count430
+\l__chemgreek_tmpa_int=\count426
+\g__chemgreek_tmpa_int=\count427
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1928,7 +1918,7 @@ istry (CN)
 . Defining command \selectchemgreekmapping with sig. 'm' on line 491.
 .................................................
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count431
+\l__mhchem_ce_distanceFromLastComma_int=\count428
 \__mhchem_arrow_extPgfLength_skip=\skip89
 \mhchem@minispace@tmp=\skip90
 \mhchem@minibackspace@tmp=\skip91
@@ -1939,11 +1929,11 @@ istry (CN)
 \mhchem@smallbondwidth=\skip96
 \mhchem@bondtmp@minussidebearingleft=\skip97
 \mhchem@bondtmp@minussidebearingright=\skip98
-\l__mhchem_option_version_int=\count432
-\mhchem@option@minusmathsidebearingleft=\dimen288
-\mhchem@option@minusmathsidebearingright=\dimen289
-\mhchem@option@minustextsidebearingleft=\dimen290
-\mhchem@option@minustextsidebearingright=\dimen291
+\l__mhchem_option_version_int=\count429
+\mhchem@option@minusmathsidebearingleft=\dimen280
+\mhchem@option@minusmathsidebearingright=\dimen281
+\mhchem@option@minustextsidebearingleft=\dimen282
+\mhchem@option@minustextsidebearingright=\dimen283
 )
 (präambel/befehle.tex) (präambel/einstellungen.tex
 Package scrkbase Info: You've told me to extend the font selection of the
@@ -2001,17 +1991,17 @@ tim
 )
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count433
-\scratchdimen=\dimen292
+\scratchcounter=\count430
+\scratchdimen=\dimen284
 \scratchbox=\box67
-\nofMPsegments=\count434
-\nofMParguments=\count435
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count436
-\MPscratchDim=\dimen293
-\MPnumerator=\count437
-\makeMPintoPDFobject=\count438
-\everyMPtoPDFconversion=\toks40
+\nofMPsegments=\count431
+\nofMParguments=\count432
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count433
+\MPscratchDim=\dimen285
+\MPnumerator=\count434
+\makeMPintoPDFobject=\count435
+\everyMPtoPDFconversion=\toks41
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -2035,7 +2025,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count439
+\c@section@level=\count436
 )
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
@@ -2073,7 +2063,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 . 
 . Activating mapping `default' on line 6.
 .................................................
-\c__siunitx_mathsf_int=\count440
+\c__siunitx_mathsf_int=\count437
 LaTeX Font Info:    Try loading font information for OT1+pplx on input line 6.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pplx.fd"
@@ -2111,7 +2101,7 @@ LaTeX Font Info:    Try loading font information for OT1+zplm on input line 6.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-\c__siunitx_mathtt_int=\count441
+\c__siunitx_mathtt_int=\count438
 
 (seiten/deckblatt.tex)
 LaTeX Font Info:    Try loading font information for T1+fvs on input line 9.
@@ -2341,7 +2331,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-<inhalt/abbildungen/horizontaler_sieg.pdf, id=241, 170.6375pt x 170.6375pt>
+<inhalt/abbildungen/horizontaler_sieg.pdf, id=240, 170.6375pt x 170.6375pt>
 File: inhalt/abbildungen/horizontaler_sieg.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/horizontaler_sieg.pdf>
@@ -2364,7 +2354,7 @@ Package babel Info: Redefining german shorthand "~
 
 
 ]
-<inhalt/abbildungen/vertikaler_sieg.pdf, id=251, 170.6375pt x 170.6375pt>
+<inhalt/abbildungen/vertikaler_sieg.pdf, id=250, 170.6375pt x 170.6375pt>
 File: inhalt/abbildungen/vertikaler_sieg.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/vertikaler_sieg.pdf>
@@ -2372,7 +2362,7 @@ Package pdftex.def Info: inhalt/abbildungen/vertikaler_sieg.pdf used on input l
 ine 31.
 (pdftex.def)             Requested size: 170.63707pt x 170.63707pt.
 
-<inhalt/abbildungen/diagonaler_sieg.pdf, id=253, 170.6375pt x 170.6375pt>
+<inhalt/abbildungen/diagonaler_sieg.pdf, id=252, 170.6375pt x 170.6375pt>
 File: inhalt/abbildungen/diagonaler_sieg.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/diagonaler_sieg.pdf>
@@ -2402,7 +2392,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
  []
 
 
-<inhalt/abbildungen/vier_mal_vier_matrix.pdf, id=275, 170.6375pt x 170.6375pt>
+<inhalt/abbildungen/vier_mal_vier_matrix.pdf, id=274, 170.6375pt x 170.6375pt>
 File: inhalt/abbildungen/vier_mal_vier_matrix.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/vier_mal_vier_matrix.pdf>
@@ -2419,105 +2409,109 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 64.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 64.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 64.
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in alignment at lines 74--74
+[][] 
+ []
+
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 78.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 78.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 78.
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 81.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 81.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 81.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 81.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 81.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 81.
 [6 <./inhalt/abbildungen/diagonaler_sieg.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 81.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 81.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 81.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 81.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 81.
+ [7 <./inhalt/abbildungen/vier_mal_vier_matrix.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 83.
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 82.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 98.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 98.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 98.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 86.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 86.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 86.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 86.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 86.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 86.
-[7 <./inhalt/abbildungen/vier_mal_vier_matrix.pdf>]
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 86.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 86.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 86.
-)
-(inhalt/implementierung.tex
+(babel)             in language  on input line 100.
+) (inhalt/implementierung.tex
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "|
@@ -2919,10 +2913,10 @@ Package logreq Info: Writing requests to 'bachelorarbeit_lernverfahren.run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 40804 strings out of 493333
- 803061 string characters out of 3139193
- 1105040 words of memory out of 3000000
- 43594 multiletter control sequences out of 15000+200000
+ 40797 strings out of 493333
+ 802958 string characters out of 3139193
+ 1106557 words of memory out of 3000000
+ 43587 multiletter control sequences out of 15000+200000
  86867 words of font info for 112 fonts, out of 3000000 for 9000
  1148 hyphenation exceptions out of 8191
  67i,10n,77p,10410b,2412s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2940,9 +2934,9 @@ qplb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qplr.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qplri.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/urw/palatino/uplri8a.pfb>
-Output written on bachelorarbeit_lernverfahren.pdf (23 pages, 384721 bytes).
+Output written on bachelorarbeit_lernverfahren.pdf (23 pages, 386508 bytes).
 PDF statistics:
  461 PDF objects out of 1000 (max. 8388607)
- 94 named destinations out of 1000 (max. 500000)
+ 95 named destinations out of 1000 (max. 500000)
  368 words of extra memory for PDF output out of 10000 (max. 10000000)
 
