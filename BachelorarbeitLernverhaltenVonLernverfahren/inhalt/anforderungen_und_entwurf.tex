@@ -62,15 +62,27 @@ Der Benutzer kann seine Kreuze auf das Spielbrett setzen indem er ein vorher vom
 \myparagraph{Analyse möglicher Siegesstrategien}
 
 \begin{table}
-\caption{Festlegung der Anforderungen für das Tic Tac Toe Computerspiel}
+\caption{Anforderungen für das Tic Tac Toe Computerspiel}
 \begin{tabularx}{\textwidth}{p{0.25\textwidth}|p{0.65\textwidth}}
 \textbf{Anforderung} & \textbf{Beschreibung} \\
 \hline
-Spielfeld	& Das Spielfeld ist eine Matrix mit vier Zeilen und vier Spalten, also eine vier mal vier Matrix. \\
+Spielfeld					& Das Spielfeld soll eine Matrix mit vier Zeilen und vier Spalten, also eine vier mal vier Matrix, sein. \\
 \hline
-Spielzug	& Jeder Spieler setzt nacheinander eine Spielfigur in die vier mal vier Matrix. \\
+Spielzug					& Jeder Spieler soll nacheinander eine Spielfigur in die vier mal vier Matrix setzen. \\
 \hline
-Steuerung 	& Die Spieler setzen ihre Spielfiguren mit der eingabe des Indizes der Matrix. \\
+Sieg und Niederlage			& Der Spieler der zuerst eine der möglichen Siegesanordnungen vervollständigt soll das Spiel gewinnen und der andere Spieler soll somit automatisch verlieren. \\
+\hline
+Siegesanordnungen 			& Es sollen drei verschiedene Siegesanordnungen möglich sein. Die horizontale, die vertikale und die diagonale Siegesanordnung. \\
+\hline
+Horizontale Siegesanordnung	& Vier Spielsteine eines Spielers befinden sich in genau einer Zeile der vier mal vier Matrix. Beispiel siehe Abbildung \ref{fig:tttHorizontalerSieg}. \\
+\hline
+Vertikale Siegesanordnung	& Vier Spielsteine eines Spielers befinden sich in genau einer Spalte der vier mal vier Matrix. Beispiel siehe Abbildung \ref{fig:tttVertikalerSieg}. \\
+\hline
+Diagonale Siegesanordnung	& Vier Spielsteine eines Spielers befinden sich in einer Diagonalen der vier mal vier Matrix. Beispiel siehe Abbildung \ref{fig:tttDiagonalerSieg}. \\
+\hline
+Unentschieden				& Sind alle Felder der vier mal vier Matrix mit Spielfiguren belegt und keine der möglichen Siegesanordnungen der Spielfiguren ist aufgetreten, dann soll keiner der beiden Spieler gewinnen bzw. verlieren und ein Unentschieden tritt ein. \\
+\hline
+Steuerung 					& Die Spieler sollen ihre Spielfiguren mit der Tastatureingabe der Indizes der vier mal vier Matrix setzen. Das Zahlentupel '00' soll die Spielfigur des Spielers in die obere linke Ecke der Matrix setzen und das Zahlentupel '33' setzt die Spielfigur in die untere rechte Ecke der Matrix. Die gesamten Matrix Indizes, zum setzen der Spielfiguren, sind in Abbildung \ref{fig:kreiseUndKreuzeSetzen} definiert. \\
 \end{tabularx}
 \label{tab:tttAnforderungen}
 \end{table}
