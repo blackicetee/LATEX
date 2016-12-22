@@ -1,40 +1,55 @@
-\BOOKMARK [0][-]{chapter*.2}{Einf\374hrung}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Grundlagen}{}% 2
-\BOOKMARK [1][-]{section.1.1}{Spielentwicklung}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.2}{Lineare Algebra}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.3}{Heuristik}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.4}{Lernf\344hige Algorithmen}{chapter.1}% 6
-\BOOKMARK [0][-]{chapter.2}{Entwurf und Anforderungen}{}% 7
-\BOOKMARK [1][-]{section.2.1}{Computerspiele}{chapter.2}% 8
-\BOOKMARK [2][-]{subsection.2.1.1}{Tic Tac Toe}{section.2.1}% 9
-\BOOKMARK [2][-]{subsection.2.1.2}{Vier Gewinnt}{section.2.1}% 10
-\BOOKMARK [2][-]{subsection.2.1.3}{Black Jack}{section.2.1}% 11
-\BOOKMARK [1][-]{section.2.2}{Lernverfahren}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.1}{Analyse und Auswahl der lernf\344higen Algorithmen}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.2}{Anwendung der Algorithmen auf Computerspiele}{section.2.2}% 14
-\BOOKMARK [2][-]{subsection.2.2.3}{Konzeptuelles Training der Algorithmen}{section.2.2}% 15
-\BOOKMARK [2][-]{subsection.2.2.4}{Persistenz der Trainingsdaten}{section.2.2}% 16
-\BOOKMARK [0][-]{chapter.3}{Implementierung}{}% 17
-\BOOKMARK [1][-]{section.3.1}{Computerspiele}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.2}{Lernverfahren}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.3}{Alternative Lernverfahren}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{Validierung}{}% 21
-\BOOKMARK [1][-]{section.4.1}{Computerspiele}{chapter.4}% 22
-\BOOKMARK [2][-]{subsection.4.1.1}{Siegesbedingungen}{section.4.1}% 23
-\BOOKMARK [2][-]{subsection.4.1.2}{Spielregeln}{section.4.1}% 24
-\BOOKMARK [2][-]{subsection.4.1.3}{Benutzerschnittstellen}{section.4.1}% 25
-\BOOKMARK [2][-]{subsection.4.1.4}{Grafische Oberfl\344che}{section.4.1}% 26
-\BOOKMARK [1][-]{section.4.2}{Lernverfahren}{chapter.4}% 27
-\BOOKMARK [2][-]{subsection.4.2.1}{Messbare Testkriterien entwickeln}{section.4.2}% 28
-\BOOKMARK [2][-]{subsection.4.2.2}{Empirisches Protokoll}{section.4.2}% 29
-\BOOKMARK [2][-]{subsection.4.2.3}{Belastbarkeit und Grenzen}{section.4.2}% 30
-\BOOKMARK [2][-]{subsection.4.2.4}{Optimale Anwendungsgebiete}{section.4.2}% 31
-\BOOKMARK [0][-]{chapter.5}{Text elements}{}% 32
-\BOOKMARK [1][-]{section.5.1}{Math}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.2}{References}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.3}{Units}{chapter.5}% 35
-\BOOKMARK [1][-]{section.5.4}{Figures}{chapter.5}% 36
-\BOOKMARK [0][-]{appendix.A}{I am an appendix!}{}% 37
-\BOOKMARK [1][-]{section.A.1}{Section in appendix!}{appendix.A}% 38
-\BOOKMARK [0][-]{appendix.B}{Another appendix? What the heck?}{}% 39
-\BOOKMARK [1][-]{section.B.1}{Section in appendix!}{appendix.B}% 40
+\BOOKMARK [0][-]{chapter*.2}{Projektvision}{}% 1
+\BOOKMARK [1][-]{section.0.1}{Nutzen/Zweck des Projektes}{chapter*.2}% 2
+\BOOKMARK [1][-]{section.0.2}{Zielgruppe}{chapter*.2}% 3
+\BOOKMARK [0][-]{chapter.1}{Grundlagen}{}% 4
+\BOOKMARK [1][-]{section.1.1}{Spielentwicklung}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Lineare Algebra}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.3}{Heuristik}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.4}{Lernf\344hige Algorithmen}{chapter.1}% 8
+\BOOKMARK [0][-]{chapter.2}{Problemanalyse und Anforderungsdefinition}{}% 9
+\BOOKMARK [1][-]{section.2.1}{Problemanalyse}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.1.1}{Die Problematik}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.2}{Bereits existierende Softwarel\366sungen}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.3}{Gegenstandsbereich des Projektes abgrenzen}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.4}{Abgrenzung gegen\374ber der k\374nstlichen Intelligenz}{section.2.1}% 14
+\BOOKMARK [1][-]{section.2.2}{Anforderungsdefinition}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.1}{Funktionale Anforderungen}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.2}{Nicht-funktionale Anforderungen}{section.2.2}% 17
+\BOOKMARK [0][-]{chapter.3}{Modellierung und Entwurf}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Computerspiele}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.1.1}{Tic Tac Toe}{section.3.1}% 20
+\BOOKMARK [2][-]{subsection.3.1.2}{Vier Gewinnt}{section.3.1}% 21
+\BOOKMARK [2][-]{subsection.3.1.3}{Black Jack}{section.3.1}% 22
+\BOOKMARK [1][-]{section.3.2}{Lernverfahren}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.2.1}{Analyse und Auswahl der lernf\344higen Algorithmen}{section.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.2.2}{Anwendung der Algorithmen auf Computerspiele}{section.3.2}% 25
+\BOOKMARK [2][-]{subsection.3.2.3}{Konzeptuelles Training der Algorithmen}{section.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.2.4}{Persistenz der Trainingsdaten}{section.3.2}% 27
+\BOOKMARK [0][-]{chapter.4}{Implementierung}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Computerspiele}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{Lernverfahren}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.3}{Alternative Lernverfahren}{chapter.4}% 31
+\BOOKMARK [0][-]{chapter.5}{Validierung}{}% 32
+\BOOKMARK [1][-]{section.5.1}{Messbare Testkriterien}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.2}{Modultests}{chapter.5}% 34
+\BOOKMARK [2][-]{subsection.5.2.1}{TicTacToe}{section.5.2}% 35
+\BOOKMARK [2][-]{subsection.5.2.2}{Reversi}{section.5.2}% 36
+\BOOKMARK [2][-]{subsection.5.2.3}{Lernverfahren 1}{section.5.2}% 37
+\BOOKMARK [2][-]{subsection.5.2.4}{Lernverfahren 2}{section.5.2}% 38
+\BOOKMARK [2][-]{subsection.5.2.5}{Persistenz}{section.5.2}% 39
+\BOOKMARK [1][-]{section.5.3}{Systemtest}{chapter.5}% 40
+\BOOKMARK [0][-]{chapter.6}{Auswertung}{}% 41
+\BOOKMARK [1][-]{section.6.1}{Belastbarkeit und Grenzen der Lernverfahren}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.2}{Optimale Anwendungsspiele f\374r die Lernverfahren}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.3}{Gegen\374berstellung der Lernverfahren}{chapter.6}% 44
+\BOOKMARK [1][-]{section.6.4}{Bewertung der Strategien}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.5}{Menschlicher oder mechanischer Trainer?}{chapter.6}% 46
+\BOOKMARK [0][-]{chapter.7}{Text elements}{}% 47
+\BOOKMARK [1][-]{section.7.1}{Math}{chapter.7}% 48
+\BOOKMARK [1][-]{section.7.2}{References}{chapter.7}% 49
+\BOOKMARK [1][-]{section.7.3}{Units}{chapter.7}% 50
+\BOOKMARK [1][-]{section.7.4}{Figures}{chapter.7}% 51
+\BOOKMARK [0][-]{appendix.A}{I am an appendix!}{}% 52
+\BOOKMARK [1][-]{section.A.1}{Section in appendix!}{appendix.A}% 53
+\BOOKMARK [0][-]{appendix.B}{Another appendix? What the heck?}{}% 54
+\BOOKMARK [1][-]{section.B.1}{Section in appendix!}{appendix.B}% 55
