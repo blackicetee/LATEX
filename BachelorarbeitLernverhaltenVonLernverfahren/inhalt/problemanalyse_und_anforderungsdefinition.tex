@@ -14,17 +14,44 @@ In diesem Kapitel: //TODO Einführung in das Kapitel
 \subsection{Abgrenzung gegenüber der künstlichen Intelligenz}
 
 \section{Anforderungsdefinition}
+\label{sec:anforderungsdefinition}
 Innerhalb dieses Abschnittes werden die funktionalen und nicht-funktionalen Anforderungen für die Software definiert. Die funktionalen Anforderungen sollen das Verhalten der Software festlegen, sprich welche Aktionen die Software ausführen kann. In verschiedenen Softwareprojekten können sich die funktionale Anforderungen stark voneinander unterscheiden, dahingegen sind nicht-funktionale Anforderungen in verschiedenen Softwareprojekten oftmals sehr ähnlich.\\ 
 Nichtfunktionale Anforderungen beschreiben wie gut eine Software seine Leistung erbringen soll.
 %TODO definition, Belegung in der Literatur dafür geben Softwareentwicklung
-Die funktionalen und nichtfunktionalen Anforderungen sollen Muss- und Soll-Kriterien beinhalten. Muss-Kriterien beschreiben die Kernfunktionalitäten der Software und ohne diese ist eine Problemstellung nicht zufriedenstellend zu lösen. Soll-Kriterien beschreiben nicht die Kernfunktionalitäten, jedoch können sie die Kernfunktionalitäten erweitern und nützliche Zusatzfunktionalitäten definieren.
 
 \subsection{Funktionale Anforderungen}
 
-\begin{tabular}{lcr}
-Nummer & Titel & Beschreibung
+Eine \ac{UI} ist eine Benutzerschnittstelle diese definiert die Interaktion zwischen dem Benutzer der Anwendung und der Anwendung. Die \ac{ID} soll die nachfolgend aufgestellten Anforderungen eindeutig identifizieren.
+
+\begin{table}
+\caption{Funktionale Anforderungen}
+\begin{tabular}{ | p{0.05\textwidth} | p{0.30\textwidth} | p{0.60\textwidth} |}
+\hline
+\ac{ID} & Titel & Beschreibung \\ \hline
+1 & Brettspiele & Es sollen zwei Brettspiele implementiert werden. \\ \hline
+2 & Brettspiel \ac{UI} &  Es soll eine Benutzersteuerung für die Brettspiele implementiert werden. \\ \hline
+3 & Gleichartigkeit der Brettspiele & Die Spielweise der Brettspiele soll hinsichtlich bestimmter Punkte gleich sein. \\ \hline
+4 & Eindeutigkeit der Brettspiele & Die Brettspiele sollen immer einen Gewinner und einen Verlierer oder ein Unentschieden hervorbringen. \\ \hline
+5 & Endlichkeit der Brettspiele & Die Brettspiele sollen immer nach einer angemessenen endlichen Anzahl von Spielzügen enden. \\ \hline
+6 & Spieleranzahl der Brettspiele & Die Brettspiele sollen genau von zwei Spielern in einer direkten Konfrontation(Eins-gegen-Eins-Situation) ausgetragen werden. \\ \hline
+7 & Lernfähige Verfahren & Es sollen zwei lernfähige Verfahren implementiert werden. Diese Verfahren sollen Strategien, wie die Brettspiele gewonnen werden können, entwickeln. \\ \hline
+8 & Training der Lernverfahren & Die lernfähigen Verfahren sollen durch einen menschlichen Spieler trainiert werden oder durch das jeweils andere Lernverfahren. \\ \hline
+9 & Wissen Speichern & Das von den Lernverfahren ermittelte Wissen(z.B. mögliche Spielzüge, Gewichtungen besserer und schlechterer Spielzüge) soll persistent gespeichert werden. \\ \hline
 \end{tabular}
+\label{tab:funktionale_anforderungen}
+\end{table}
 
 \subsection{Nicht-funktionale Anforderungen}
 
+\begin{table}
+\caption{Nichtfunktionale Anforderungen}
+\begin{tabular}{ | p{0.05\textwidth} | p{0.30\textwidth} | p{0.60\textwidth} |}
+\hline
+\ac{ID} & Titel & Beschreibung \\ \hline
+1 & Programmlogik & Die Programmlogik der Brettspiele und der lernfähigen Verfahren soll in der Programmiersprache Python geschrieben sein. \\ \hline
+2 & Testen der Programmlogik & Die Tests der Programmlogik sollen mit den, in der Standard-Bibliothek von Python enthaltenen, Modultests(Unit testing framework) durchgeführt werden. \\ \hline
+3 & Brettspielgrafik & Die Grafik der Brettspiele soll mit der Bibliothek "PyGame" implementiert werden. \\ \hline
 
+\end{tabular}
+\label{tab:funktionale_anforderungen}
+\end{table}

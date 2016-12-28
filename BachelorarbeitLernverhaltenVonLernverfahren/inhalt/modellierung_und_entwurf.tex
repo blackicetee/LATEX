@@ -1,10 +1,12 @@
 \chapter{Modellierung und Entwurf}
 \label{cha:mue}
 
-In diesem Kapitel: //TODO Einführung in das Kapitel
+In diesem Kapitel werden die funktionalen Anforderungen aus dem Abschnitt \ref{sec:anforderungsdefinition} spezifiziert. Modelle für die einzelnen funktionalen Anforderungen sollen entwickelt werden. Die Modelle veranschaulichen das geforderte funktionale Verhalten der Software. Voraussetzung für die Entwicklung der Modelle ist die Konkretisierung der funktionalen Anforderungen. Diese Konkretisierung beinhaltet die Festlegung der Bestandteile die für eine Implementierung der funktionalen Anforderung benötigt werden. Ziel des Kapitels ist es, die wichtigsten Bestandteile einer funktionalen Anwendung herauszubilden, dieses Bestandteile zu definieren und zu veranschaulichen.
 
 \section{Computerspiele}
 \label{sec:computerspiele}
+
+In diesem Abschnitt werden die Bestandteile der Computerspiele festgelegt und veranschaulicht. 
 
 \subsection{Tic Tac Toe}
 \label{sec:ttt}
@@ -20,7 +22,7 @@ Eine horizontale Siegesanordnung entsteht, wenn vier Spielfiguren eines Spielers
 \begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 1]{inhalt/abbildungen/horizontaler_sieg.pdf}
-  \caption{Horizontale Siegesanordnung der 'X' Spielfiguren beim Tic Tac Toe.}
+  \caption{Tic Tac Toe horizontaler Sieg}
   \label{fig:tttHorizontalerSieg}
 \end{figure}
 
@@ -29,7 +31,7 @@ In Abbildung \ref{fig:tttVertikalerSieg} gewinnt der menschliche Spieler knapp g
 \begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 1]{inhalt/abbildungen/vertikaler_sieg.pdf}
-  \caption{Vertikale Siegesanordnung der 'X' Spielfiguren beim Tic Tac Toe.}
+  \caption{Tic Tac Toe vertikaler Sieg}
   \label{fig:tttVertikalerSieg}
 \end{figure}
 
@@ -38,7 +40,7 @@ Die dritte und letzte Anordnungsvariante der Spielfiguren, welche zu einem Sieg 
 \begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 1]{inhalt/abbildungen/diagonaler_sieg.pdf}
-  \caption{Diagonale Siegesanordnung der 'O' Spielfiguren beim Tic Tac Toe.}
+  \caption{Tic Tac Toe diagonaler Sieg}
   \label{fig:tttDiagonalerSieg}
 \end{figure}
 
@@ -53,52 +55,14 @@ Der Benutzer kann seine Kreuze auf das Spielbrett setzen indem er ein vorher vom
 \begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 1]{inhalt/abbildungen/vier_mal_vier_matrix.pdf}
-  \caption{Steuerung des Setzen der Spielfiguren auf dem Tic Tac Toe Spielbrett.}
+  \caption{Tic Tac Toe Spielfiguren setzen}
   \label{fig:kreiseUndKreuzeSetzen}
 \end{figure}
 
-\myparagraph{Zusammenfassung in Anforderungen}
-
-\myparagraph{Analyse möglicher Siegesstrategien}
-
-\begin{table}
-\caption{Anforderungen für das Tic Tac Toe Computerspiel}
-\begin{tabularx}{\textwidth}{p{0.25\textwidth}|p{0.65\textwidth}}
-\textbf{Anforderung} & \textbf{Beschreibung} \\
-\hline
-Spielfeld					& Das Spielfeld soll eine Matrix mit vier Zeilen und vier Spalten, also eine vier mal vier Matrix, sein. \\
-\hline
-Spielzug					& Jeder Spieler soll nacheinander eine Spielfigur in die vier mal vier Matrix setzen. \\
-\hline
-Sieg und Niederlage			& Der Spieler der zuerst eine der möglichen Siegesanordnungen vervollständigt soll das Spiel gewinnen und der andere Spieler soll somit automatisch verlieren. \\
-\hline
-Siegesanordnungen 			& Es sollen drei verschiedene Siegesanordnungen möglich sein. Die horizontale, die vertikale und die diagonale Siegesanordnung. \\
-\hline
-Horizontale Siegesanordnung	& Vier Spielsteine eines Spielers befinden sich in genau einer Zeile der vier mal vier Matrix. Beispiel siehe Abbildung \ref{fig:tttHorizontalerSieg}. \\
-\hline
-Vertikale Siegesanordnung	& Vier Spielsteine eines Spielers befinden sich in genau einer Spalte der vier mal vier Matrix. Beispiel siehe Abbildung \ref{fig:tttVertikalerSieg}. \\
-\hline
-Diagonale Siegesanordnung	& Vier Spielsteine eines Spielers befinden sich in einer Diagonalen der vier mal vier Matrix. Beispiel siehe Abbildung \ref{fig:tttDiagonalerSieg}. \\
-\hline
-Unentschieden				& Sind alle Felder der vier mal vier Matrix mit Spielfiguren belegt und keine der möglichen Siegesanordnungen der Spielfiguren ist aufgetreten, dann soll keiner der beiden Spieler gewinnen bzw. verlieren und ein Unentschieden tritt ein. \\
-\hline
-Steuerung 					& Die Spieler sollen ihre Spielfiguren mit der Tastatureingabe der Indizes der vier mal vier Matrix setzen. Das Zahlentupel '00' soll die Spielfigur des Spielers in die obere linke Ecke der Matrix setzen und das Zahlentupel '33' setzt die Spielfigur in die untere rechte Ecke der Matrix. Die gesamten Matrix Indizes, zum setzen der Spielfiguren, sind in Abbildung \ref{fig:kreiseUndKreuzeSetzen} definiert. \\
-\end{tabularx}
-\label{tab:tttAnforderungen}
-\end{table}
-
-\subsection{Vier Gewinnt}
+\subsection{Reversi}
 \myparagraph{Spielprinzipien}
 \myparagraph{Spielregeln}
 \myparagraph{Benutzerschnittstellen}
-
-\subsection{Black Jack}
-\myparagraph{Spielprinzipien}
-\myparagraph{Spielregeln}
-\myparagraph{Benutzerschnittstellen}
-
-
-
 
 \section{Lernverfahren}
 \label{sec:lernverfahren}

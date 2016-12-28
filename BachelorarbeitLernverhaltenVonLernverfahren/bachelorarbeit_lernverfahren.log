@@ -1,31 +1,32 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.9)  22 DEC 2016 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  28 DEC 2016 16:24
 entering extended mode
 **./bachelorarbeit_lernverfahren.tex
 (bachelorarbeit_lernverfahren.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 (prÃ¤ambel/dokumentenklasse.tex
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbook.cls
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbook.cls
 Document Class: scrbook 2016/06/14 v3.21 KOMA-Script document class (book)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrkbase.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrkbase.sty
 Package: scrkbase 2016/06/14 v3.21 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
 Package: scrbase 2016/06/14 v3.21 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(E:\dev\MikTex\tex\latex\graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
 Package: scrlfile 2016/06/14 v3.21 KOMA-Script package (loading files)
 
 Package scrlfile, 2016/06/14 v3.21 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-))) (C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\tocbasic.sty
+)))
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\tocbasic.sty
 Package: tocbasic 2016/06/14 v3.21 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
 \scr@dte@tocline@numbox=\box26
@@ -45,10 +46,12 @@ Class scrbook Info: File `scrsize11pt.clo' used instead of
 (scrbook)           file `scrsize11.clo' to setup font sizes on input line 2269
 .
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize11pt.clo
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize11pt.cl
+o
 File: scrsize11pt.clo 2016/06/14 v3.21 KOMA-Script font size class option (11pt
 )
-) (C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\typearea.sty
+)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\typearea.sty
 Package: typearea 2016/06/14 v3.21 KOMA-Script package (type area)
 
 Package typearea, 2016/06/14 v3.21 KOMA-Script package (type area)
@@ -105,7 +108,8 @@ Class scrbook Info: Redefining `\numberline' on input line 5813.
 Class scrbook Info: File `scrsize12pt.clo' used to setup font sizes on input li
 ne 16.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize12pt.clo
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize12pt.cl
+o
 File: scrsize12pt.clo 2016/06/14 v3.21 KOMA-Script font size class option (12pt
 )
 )
@@ -143,20 +147,18 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \footskip       = 50.75pt
 (typearea)              \baselineskip   = 14.5pt
 (typearea)              on input line 64.
-) (prÃ¤ambel/pakete.tex
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+) (prÃ¤ambel/pakete.tex (E:\dev\MikTex\tex\latex\base\inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+(E:\dev\MikTex\tex\latex\base\utf8.def
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+ (E:\dev\MikTex\tex\latex\base\t1enc.dfu
 File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -392,8 +394,7 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+(E:\dev\MikTex\tex\latex\base\ot1enc.dfu
 File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -434,7 +435,7 @@ File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+(E:\dev\MikTex\tex\latex\base\omsenc.dfu
 File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -458,10 +459,10 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.sty
 Package: csquotes 2016/07/14 v5.1h context-sensitive quotations (JAW)
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
 Package: etoolbox 2016/12/01 v2.2b e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count89
 )
@@ -473,58 +474,58 @@ Package: etoolbox 2016/12/01 v2.2b e-TeX tools for LaTeX (JAW)
 \csq@tshold=\count95
 \csq@ltx@everypar=\toks17
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.def
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.def
 File: csquotes.def 2016/07/14 v5.1h csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.cfg
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.cfg
 File: csquotes.cfg 
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+(E:\dev\MikTex\tex\generic\babel\babel.sty
 Package: babel 2016/04/23 3.9r The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel-german\german.ldf"
+(E:\dev\MikTex\tex\latex\babel-german\german.ldf
 Language: german 2016/11/02 v2.9 German support for babel (traditional orthogra
 phy)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel-german\germanb.ldf"
+(E:\dev\MikTex\tex\latex\babel-german\germanb.ldf
 Language: germanb 2016/11/02 v2.9 German support for babel (traditional orthogr
 aphy)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+(E:\dev\MikTex\tex\generic\babel\babel.def
 File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count96
 \U@D=\dimen103
 )
 Package babel Info: Making " an active character on input line 139.
 )))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+(E:\dev\MikTex\tex\latex\amsmath\amsmath.sty
 Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip56
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(E:\dev\MikTex\tex\latex\amsmath\amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(E:\dev\MikTex\tex\latex\amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen104
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(E:\dev\MikTex\tex\latex\amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(E:\dev\MikTex\tex\latex\amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count97
@@ -565,21 +566,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(E:\dev\MikTex\tex\latex\amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(E:\dev\MikTex\tex\latex\amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx.sty
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
 Package: expl3 2016/11/21 v6760 L3 programming layer (loader) 
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3-code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3-code.tex
 Package: expl3 2016/11/21 v6760 L3 programming layer (code)
 L3 Module: l3bootstrap 2016/06/13 v6596 L3 Bootstrap code
 L3 Module: l3names 2016/10/13 v6722 L3 Namespace for primitives
@@ -685,12 +686,13 @@ L3 Module: l3candidates 2016/08/19 v6688 L3 Experimental additions to l3kernel
 \l__coffin_scaled_width_dim=\dimen143
 L3 Module: l3luatex 2016/08/18 v6679 L3 Experimental LuaTeX-specific functions
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3pdfmode.def
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3pdfmode.def
 File: l3pdfmode.def 2016/08/18 v6679 L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count130
 \l__driver_tmp_box=\box45
 ))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\xparse\xparse.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\xparse\xparse.s
+ty
 Package: xparse 2016/11/21 v6760 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count131
 \l__xparse_m_args_int=\count132
@@ -699,7 +701,7 @@ Package: xparse 2016/11/21 v6760 L3 Experimental document command parser
 \l__xparse_v_nesting_int=\count135
 )
 Package: siunitx 2016/11/24 v2.7 A comprehensive (SI) units package
- ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+ (E:\dev\MikTex\tex\latex\tools\array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen144
 \extrarowheight=\dimen145
@@ -707,8 +709,8 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip65
 \backup@length=\skip66
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\l3keys2e\l3keys2e
-.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\l3keys2e\l3keys
+2e.sty
 Package: l3keys2e 2016/11/21 v6760 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box46
@@ -870,24 +872,23 @@ Package: l3keys2e 2016/11/21 v6760 LaTeX2e option processing using LaTeX3 keys
 .................................................
 \g__file_internal_ior=\read1
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\trans
-lator.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\tra
+nslator.sty
 Package: translator 2010/06/12 ver 1.10
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\trans
-lator-language-mappings.tex)))
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\mathpazo.sty"
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\tra
+nslator-language-mappings.tex))) (E:\dev\MikTex\tex\latex\psnfss\mathpazo.sty
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup6
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\bera\berasans.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\bera\berasans.sty
 Package: berasans 2004/01/30 (WaS)
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\inconsolata\inconsolata.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\inconsolata\inconsolata.st
+y
 Package: inconsolata 2016/02/22 v1.10
-
-`inconsolata-zi4' v1.10, 2016/02/22 Text macros for Inconsolata (msharpe)
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+ `inconsolata-zi4' v1.10, 2016/02/22 Text macros for Inconsolata (msharpe)
+(E:\dev\MikTex\tex\latex\base\textcomp.sty
 Package: textcomp 2016/06/19 v1.99m Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -902,12 +903,12 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+(E:\dev\MikTex\tex\latex\base\ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+(E:\dev\MikTex\tex\latex\base\ts1enc.dfu
 File: ts1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -1045,25 +1046,25 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 \zifour@ocount=\count153
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\tex-gyre\tgpagella.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\tex-gyre\tgpagella.sty
 Package: tgpagella 2009/09/27 v1.2 TeX Gyre Pagella as default roman family
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+(E:\dev\MikTex\tex\latex\oberdiek\kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(E:\dev\MikTex\tex\generic\oberdiek\ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+(E:\dev\MikTex\tex\generic\oberdiek\kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(E:\dev\MikTex\tex\generic\oberdiek\infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+(E:\dev\MikTex\tex\generic\oberdiek\etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+(E:\dev\MikTex\tex\generic\oberdiek\ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -1072,40 +1073,40 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 ))))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(E:\dev\MikTex\tex\latex\base\fontenc.sty
 Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(E:\dev\MikTex\tex\latex\base\t1enc.def
 File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )
 LaTeX Font Info:    Try loading font information for T1+qpl on input line 105.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\tex-gyre\t1qpl.fd
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\tex-gyre\t1qpl.fd
 File: t1qpl.fd 2009/09/25 v1.2 font definition file for T1/qpl
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(E:\dev\MikTex\tex\latex\graphics\graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(E:\dev\MikTex\tex\latex\graphics\graphics.sty
 Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(E:\dev\MikTex\tex\latex\graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+(E:\dev\MikTex\tex\latex\graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+(E:\dev\MikTex\tex\latex\graphics-def\pdftex.def
 File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 \Gread@gobject=\count154
 ))
 \Gin@req@height=\dimen158
 \Gin@req@width=\dimen159
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+(E:\dev\MikTex\tex\latex\tools\tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@col@width=\dimen160
 \TX@old@table=\dimen161
@@ -1115,42 +1116,44 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@cols=\count155
 \TX@ftn=\toks24
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz.sty
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.sty
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-comm
-on.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
+mmon.tex
 \pgfutil@everybye=\toks25
 \pgfutil@tempdima=\dimen165
 \pgfutil@tempdimb=\dimen166
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-comm
-on-lists.tex))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-late
-x.def
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
+mmon-lists.tex))
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-la
+tex.def
 \pgfutil@abb=\box53
- (C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
+ (C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfrcs.code.
-tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfrcs.cod
+e.tex
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgfcore.sty
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\pgfsys.sty
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys.cod
-e.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgfcore.sty
+
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\pgfsys.sty
+
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys.c
+ode.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.code
-.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.co
+de.tex
 \pgfkeys@pathtoks=\toks26
 \pgfkeys@temptoks=\toks27
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeysfilte
-red.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeysfil
+tered.code.tex
 \pgfkeys@tmptoks=\toks28
 ))
 \pgf@x=\dimen167
@@ -1171,33 +1174,33 @@ red.code.tex
 \t@pgf@tokb=\toks30
 \t@pgf@tokc=\toks31
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.cfg
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-pdf
-tex.def
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-p
+dftex.def
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-com
-mon-pdf.def
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-c
+ommon-pdf.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsyssoft
-path.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsysso
+ftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count160
 \pgfsyssoftpath@bigbuffer@items=\count161
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsysprot
-ocol.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsyspr
+otocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+(E:\dev\MikTex\tex\latex\graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -1211,17 +1214,18 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore.cod
-e.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore.c
+ode.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.tex
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.code.
-tex
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.code.
-tex)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser.cod
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.te
+x
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.cod
 e.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.cod
+e.tex)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser.c
+ode.tex
 \pgfmath@dimen=\dimen175
 \pgfmath@count=\count162
 \pgfmath@box=\box54
@@ -1229,30 +1233,30 @@ e.tex
 \pgfmath@stack@operand=\toks33
 \pgfmath@stack@operation=\toks34
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.
-code.tex
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.
-basic.code.tex)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.
-trigonometric.code.tex)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.
-random.code.tex)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.
-comparison.code.tex)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.
-base.code.tex)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.
-round.code.tex)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.
-misc.code.tex)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunctions.
-integerarithmetics.code.tex)))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.code
-.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.basic.code.tex)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.trigonometric.code.tex)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.random.code.tex)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.comparison.code.tex)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.base.code.tex)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.round.code.tex)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.misc.code.tex)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.integerarithmetics.code.tex)))
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.co
+de.tex
 \c@pgfmathroundto@lastzeros=\count163
 ))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepoin
-ts.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepo
+ints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen176
 \pgf@picmaxx=\dimen177
@@ -1269,123 +1273,125 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen188
 \pgf@zy=\dimen189
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepath
-construct.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+thconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen190
 \pgf@path@lasty=\dimen191
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepath
-usage.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+thusage.code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen192
 \pgf@shorten@start@additional=\dimen193
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorescop
-es.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoresc
+opes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box55
 \pgf@hbox=\box56
 \pgf@layerbox@main=\box57
 \pgf@picture@serial@count=\count164
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoregrap
-hicstate.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoregr
+aphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen194
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretran
-sformations.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretr
+ansformations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen195
 \pgf@pt@y=\dimen196
 \pgf@pt@temp=\dimen197
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorequic
-k.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorequ
+ick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreobje
-cts.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreob
+jects.code.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepath
-processing.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+thprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorearro
-ws.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorear
+rows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen198
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreshad
-e.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoresh
+ade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen199
 \pgf@sys@shading@range@num=\count165
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreimag
-e.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreim
+age.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreexte
-rnal.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreex
+ternal.code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box58
 ))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorelaye
-rs.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorela
+yers.code.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretran
-sparency.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretr
+ansparency.code.tex
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepatt
-erns.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+tterns.code.tex
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduleshape
-s.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulesha
+pes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box59
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduleplot.
-code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduleplo
+t.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-ve
-rsion-0-65.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-
+version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen256
 \pgf@nodesepend=\dimen257
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-ve
-rsion-1-18.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-
+version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 ))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgffor.sty
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfkeys.sty
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.code
-.tex)) (C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\math\pgfmath.sty
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.tex)
-)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.code.
-tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgffor.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfkeys.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.co
+de.tex))
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\math\pgfmath.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.te
+x))
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.cod
+e.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.tex)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.te
+x)
 \pgffor@iter=\dimen258
 \pgffor@skip=\dimen259
 \pgffor@stack=\toks35
 \pgffor@toks=\toks36
 ))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\tik
-z.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\t
+ikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrarypl
-othandlers.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrary
+plothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count166
 \pgfplotmarksize=\dimen260
@@ -1405,8 +1411,8 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikznumberofcurrentchild=\count169
 \tikz@fig@count=\count170
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulematri
-x.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulemat
+rix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count171
 \pgfmatrixcurrentcolumn=\count172
@@ -1414,18 +1420,18 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 )
 \tikz@expandcount=\count174
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\lib
-raries\tikzlibrarytopaths.code.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+(E:\dev\MikTex\tex\latex\hyperref\hyperref.sty
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+(E:\dev\MikTex\tex\generic\oberdiek\hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+(E:\dev\MikTex\tex\generic\oberdiek\hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -1459,24 +1465,24 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(E:\dev\MikTex\tex\generic\ifxetex\ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+(E:\dev\MikTex\tex\latex\oberdiek\auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen267
 \Hy@linkcounter=\count175
 \Hy@pagecounter=\count176
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+(E:\dev\MikTex\tex\latex\hyperref\pd1enc.def
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count177
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+(E:\dev\MikTex\tex\latex\00miktex\hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4486.
@@ -1488,7 +1494,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4735.
 \c@Hy@tempcnt=\count178
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -1513,12 +1519,12 @@ LaTeX Info: Redefining \pageref on input line 6416.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+(E:\dev\MikTex\tex\latex\hyperref\hpdftex.def
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
 \Fld@listcount=\count183
 \c@bookmark@seq@number=\count184
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+(E:\dev\MikTex\tex\latex\oberdiek\rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -1528,21 +1534,21 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package hyperref Info: Option `colorlinks' set `true' on input line 48.
 Package hyperref Info: Option `breaklinks' set `true' on input line 48.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.sty
-Package: biblatex 2016/09/17 v3.6 programmable bibliographies (PK/JW/AB)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.sty
+Package: biblatex 2016/12/05 v3.7 programmable bibliographies (PK/JW/AB)
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count185
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.def
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(E:\dev\MikTex\tex\latex\base\ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
 \@xs@message=\write4
 \integerpart=\count186
 \decimalpart=\count187
@@ -1603,7 +1609,7 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-dm.def)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-dm.def)
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -1683,14 +1689,14 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-compat.def
-File: blx-compat.def 2016/09/17 v3.6 biblatex compatibility (PK/JW/AB)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-compat.def
+File: blx-compat.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
 )
 Package biblatex Info: Trying to load BibTeX backend compatibility...
 Package biblatex Info: ... file 'blx-bibtex.def' found.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-bibtex.def
-File: blx-bibtex.def 2016/09/17 v3.6 biblatex compatibility (PK/JW/AB)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-bibtex.def
+File: blx-bibtex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
 
 
 Package biblatex Warning: Using fall-back BibTeX(8) backend:
@@ -1699,8 +1705,8 @@ Package biblatex Warning: Using fall-back BibTeX(8) backend:
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.def
-File: biblatex.def 2016/09/17 v3.6 biblatex compatibility (PK/JW/AB)
+ (C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.def
+File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
 \c@textcitecount=\count361
 \c@textcitetotal=\count362
 \c@textcitemaxnames=\count363
@@ -1712,21 +1718,23 @@ File: biblatex.def 2016/09/17 v3.6 biblatex compatibility (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\alphabetic.bbx
-File: alphabetic.bbx 2016/09/17 v3.6 biblatex bibliography style (PK/JW/AB)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\alphabetic.bb
+x
+File: alphabetic.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\standard.bbx
-File: standard.bbx 2016/09/17 v3.6 biblatex bibliography style (PK/JW/AB)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\standard.bbx
+File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count368
 \c@bbx:relatedtotal=\count369
 ))
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\cbx\alphabetic.cbx
-File: alphabetic.cbx 2016/09/17 v3.6 biblatex citation style (PK/JW/AB)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\cbx\alphabetic.cb
+x
+File: alphabetic.cbx 2016/12/05 v3.7 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1740,10 +1748,9 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.cfg
+ (C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.cfg
 File: biblatex.cfg 
-))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\cleveref\cleveref.sty
+)) (C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\cleveref\cleveref.sty
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2230.
 LaTeX Info: Redefining \cref on input line 2230.
@@ -1762,7 +1769,7 @@ Package cleveref Info: no abbreviation of names on input line 7493.
 Package cleveref Info: always capitalise cross-reference names on input line 74
 93.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fixltx2e.sty"
+(E:\dev\MikTex\tex\latex\base\fixltx2e.sty
 Package: fixltx2e 2015/06/22 v2.0b fixes to LaTeX (obsolete)
 
 
@@ -1770,7 +1777,7 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                All fixes are now in the LaTeX kernel.
 (fixltx2e)                See the latexrelease package for details.
 
-) (C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\lineno\lineno.sty
+) (C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\lineno\lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count370
 \output=\toks37
@@ -1792,13 +1799,13 @@ LaTeX Warning: Command \@parboxrestore  has changed.
                Check if current package is valid.
 
 LaTeX Info: Redefining \\ on input line 3056.
-) (C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\printlen\printlen.sty
+) (C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\printlen\printlen.sty
 Package: printlen 2009/09/03 v1.1a print lengths with units
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
-Package: pdfpages 2016/04/19 v0.5f Insert pages of external PDF documents (AM)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
+Package: pdfpages 2016/12/11 v0.5g Insert pages of external PDF documents (AM)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+(E:\dev\MikTex\tex\latex\tools\calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count377
 \calc@Bcount=\count378
@@ -1811,164 +1818,29 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count379
 \calc@Cskip=\skip88
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 )
 \AM@pagewidth=\dimen278
 \AM@pageheight=\dimen279
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pppdftex.def
-File: pppdftex.def 2016/04/19 v0.5f Pdfpages driver for pdfTeX (AM)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pppdftex.def
+File: pppdftex.def 2016/12/11 v0.5g Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box65
 \AM@global@opts=\toks38
 \AM@toc@title=\toks39
 \c@AM@survey=\count380
 \AM@templatesizebox=\box66
+)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\acronym\acronym.sty
+Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
+
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\bigfoot\suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+\AC@clearlist=\toks40
 ))
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\mhchem\mhchem.sty
-Package: mhchem 2016/08/07 v4.05 for typesetting chemical formulae
-
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3regex
-.sty
-Package: l3regex 2016/11/21 v6760 L3 Experimental regular expressions
-
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3tl-bu
-ild.sty
-Package: l3tl-build 2016/11/21 v6760 L3 Experimental token list construction
-\l__tl_build_start_index_int=\count381
-\l__tl_build_index_int=\count382
-)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3tl-an
-alysis.sty
-Package: l3tl-analysis 2016/06/13 v6589 L3 Experimental token lists analysis
-\l__tl_analysis_normal_int=\count383
-\l__tl_analysis_index_int=\count384
-\l__tl_analysis_nesting_int=\count385
-\l__tl_analysis_type_int=\count386
-)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3flag.
-sty
-Package: l3flag 2016/11/21 v6760 L3 Experimental flags
-)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3str-c
-onvert.sty
-Package: l3str-convert 2016/09/07 v6699 L3 Experimental string encoding convers
-ions
-\l__str_internal_int=\count387
-\c__str_replacement_char_int=\count388
-)
-\l__regex_internal_a_int=\count389
-\l__regex_internal_b_int=\count390
-\l__regex_internal_c_int=\count391
-\l__regex_balance_int=\count392
-\l__regex_group_level_int=\count393
-\l__regex_mode_int=\count394
-\l__regex_catcodes_int=\count395
-\l__regex_default_catcodes_int=\count396
-\c__regex_catcode_D_int=\count397
-\c__regex_catcode_S_int=\count398
-\c__regex_catcode_L_int=\count399
-\c__regex_catcode_O_int=\count400
-\c__regex_catcode_A_int=\count401
-\c__regex_all_catcodes_int=\count402
-\l__regex_show_lines_int=\count403
-\l__regex_min_state_int=\count404
-\l__regex_max_state_int=\count405
-\l__regex_left_state_int=\count406
-\l__regex_right_state_int=\count407
-\l__regex_capturing_group_int=\count408
-\l__regex_min_pos_int=\count409
-\l__regex_max_pos_int=\count410
-\l__regex_current_pos_int=\count411
-\l__regex_start_pos_int=\count412
-\l__regex_success_pos_int=\count413
-\l__regex_current_char_int=\count414
-\l__regex_current_catcode_int=\count415
-\l__regex_last_char_int=\count416
-\l__regex_case_changed_char_int=\count417
-\l__regex_current_state_int=\count418
-\l__regex_step_int=\count419
-\l__regex_min_active_int=\count420
-\l__regex_max_active_int=\count421
-\l__regex_replacement_csnames_int=\count422
-\l__regex_match_count_int=\count423
-\l__regex_submatch_int=\count424
-\l__regex_zeroth_submatch_int=\count425
-)
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\chemgreek\chemgreek.sty
-Package: chemgreek 2016/02/10 v1.0e interfaceforuprightgreeklettersforuseinchem
-istry (CN)
-\l__chemgreek_tmpa_int=\count426
-\g__chemgreek_tmpa_int=\count427
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newchemgreekmapping with sig. 'O{}mm' on line 336.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \renewchemgreekmapping with sig. 'O{}mm' on line 339.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \declarechemgreekmapping with sig. 'O{}mm' on line 342.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newchemgreekmappingalias with sig. 'mm' on line 347.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \renewchemgreekmappingalias with sig. 'mm' on line 350.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \declarechemgreekmappingalias with sig. 'mm' on line 353.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \changechemgreeksymbol with sig. 'mmmm' on line 383.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \chemgreekmappingsymbol with sig. 'mm' on line 477.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \activatechemgreekmapping with sig. 'sm' on line 486.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \selectchemgreekmapping with sig. 'm' on line 491.
-.................................................
-)
-\l__mhchem_ce_distanceFromLastComma_int=\count428
-\__mhchem_arrow_extPgfLength_skip=\skip89
-\mhchem@minispace@tmp=\skip90
-\mhchem@minibackspace@tmp=\skip91
-\mhchem@bondwidth=\skip92
-\mhchem@bondheight=\skip93
-\mhchem@smallbondwidth@tmpA=\skip94
-\mhchem@smallbondwidth@tmpB=\skip95
-\mhchem@smallbondwidth=\skip96
-\mhchem@bondtmp@minussidebearingleft=\skip97
-\mhchem@bondtmp@minussidebearingright=\skip98
-\l__mhchem_option_version_int=\count429
-\mhchem@option@minusmathsidebearingleft=\dimen280
-\mhchem@option@minusmathsidebearingright=\dimen281
-\mhchem@option@minustextsidebearingleft=\dimen282
-\mhchem@option@minustextsidebearingright=\dimen283
-)
 (prÃ¤ambel/befehle.tex) (prÃ¤ambel/einstellungen.tex
 Package scrkbase Info: You've told me to extend the font selection of the
 (scrkbase)             element `pagehead' that is an alias of element
@@ -1984,10 +1856,17 @@ Package csquotes Info: Redefining alias 'default' -> 'german'.
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\german.lbx
-File: german.lbx 2016/09/17 v3.6 biblatex localization (PK/JW/AB)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\german.lbx
+File: german.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 )
-(bachelorarbeit_lernverfahren.aux)
+(bachelorarbeit_lernverfahren.aux
+
+LaTeX Warning: Label `tab:funktionale_anforderungen' multiply defined.
+
+
+LaTeX Warning: Label `tab:funktionale_anforderungen@cref' multiply defined.
+
+)
 \openout1 = `bachelorarbeit_lernverfahren.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -2004,42 +1883,42 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 6.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+ (E:\dev\MikTex\tex\latex\base\ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\dicts
-\translator-basic-dictionary\translator-basic-dictionary-English.dict
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\dic
+ts\translator-basic-dictionary\translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx-abbreviation
-s.cfg
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx-abbreviati
+ons.cfg
 File: siunitx-abbreviations.cfg 2016/11/24 v2.7 siunitx: Abbreviated units
-) (C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\upquote\upquote.sty
+)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\upquote\upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count430
-\scratchdimen=\dimen284
+\scratchcounter=\count381
+\scratchdimen=\dimen280
 \scratchbox=\box67
-\nofMPsegments=\count431
-\nofMParguments=\count432
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count433
-\MPscratchDim=\dimen285
-\MPnumerator=\count434
-\makeMPintoPDFobject=\count435
-\everyMPtoPDFconversion=\toks41
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+\nofMPsegments=\count382
+\nofMParguments=\count383
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count384
+\MPscratchDim=\dimen281
+\MPnumerator=\count385
+\makeMPintoPDFobject=\count386
+\everyMPtoPDFconversion=\toks42
+) (E:\dev\MikTex\tex\latex\oberdiek\epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+(E:\dev\MikTex\tex\latex\oberdiek\grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -2053,13 +1932,13 @@ ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box68
 Package hyperref Info: Link coloring ON on input line 6.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+(E:\dev\MikTex\tex\latex\hyperref\nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+(E:\dev\MikTex\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count436
+\c@section@level=\count387
 )
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
@@ -2084,38 +1963,33 @@ Package biblatex Info: ... file 'bachelorarbeit_lernverfahren.bbl' found.
 Package biblatex Info: Reference section=0 on input line 6.
 Package biblatex Info: Reference segment=0 on input line 6.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+(E:\dev\MikTex\tex\latex\oberdiek\pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+(E:\dev\MikTex\tex\latex\graphics\lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-.................................................
-. chemgreek info: "mapping-activated"
-. 
-. Activating mapping `default' on line 6.
-.................................................
-\c__siunitx_mathsf_int=\count437
+\c__siunitx_mathsf_int=\count388
 LaTeX Font Info:    Try loading font information for OT1+pplx on input line 6.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pplx.fd"
+(E:\dev\MikTex\tex\latex\psnfss\ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
 LaTeX Font Info:    Try loading font information for OML+zplm on input line 6.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
+(E:\dev\MikTex\tex\latex\psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Try loading font information for OMS+zplm on input line 6.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
+(E:\dev\MikTex\tex\latex\psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Try loading font information for OMX+zplm on input line 6.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
+(E:\dev\MikTex\tex\latex\psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -2132,15 +2006,14 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 6.
 LaTeX Font Info:    Try loading font information for OT1+zplm on input line 6.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
+(E:\dev\MikTex\tex\latex\psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-\c__siunitx_mathtt_int=\count438
-
-(seiten/deckblatt.tex)
+\c__siunitx_mathtt_int=\count389
+ (seiten/deckblatt.tex)
 LaTeX Font Info:    Try loading font information for T1+fvs on input line 9.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\bera\t1fvs.fd
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\bera\t1fvs.fd
 File: t1fvs.fd 2004/09/07 scalable font definitions for T1/fvs.
 )
 LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
@@ -2163,13 +2036,13 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 10.42007pt on input line 9.
 LaTeX Font Info:    Try loading font information for T1+zi4 on input line 9.
 
-(C:\Users\MrT\AppData\Roaming\MiKTeX\2.9\tex\latex\inconsolata\t1zi4.fd
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\inconsolata\t1zi4.fd
 File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 (Font)              scaled to size 17.79837pt on input line 9.
 
-<htw_logo.jpg, id=226, 115.632pt x 67.452pt>
+<htw_logo.jpg, id=222, 115.632pt x 67.452pt>
 File: htw_logo.jpg Graphic file (type jpg)
  <use htw_logo.jpg>
 Package pdftex.def Info: htw_logo.jpg used on input line 9.
@@ -2191,49 +2064,9 @@ Package babel Info: Redefining german shorthand "~
 
 
 
-{C:/Users/MrT/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./htw_logo.jp
-g>]
-(seiten/inhaltsverzeichnis.tex
-LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
-(Font)              scaled to size 17.83641pt on input line 2.
- (bachelorarbeit_lernverfahren.toc
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 46.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 46.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 46.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 46.
- [2
-
-
-])
-\tf@toc=\write7
-\openout7 = `bachelorarbeit_lernverfahren.toc'.
-
-)
-
-LaTeX Font Warning: Font shape `T1/qpl/m/sl' in size <12> not available
-(Font)              Font shape `T1/qpl/m/it' tried instead on input line 12.
-
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 12.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 12.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 12.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 12.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 12.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 12.
-[3] (inhalt/projektvision.tex
+{C:/Users/Thilo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./htw_logo.
+jpg>]
+(seiten/abkuerzungsverzeichnis.tex
 chapter without number
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
@@ -2242,16 +2075,136 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
 LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
-(Font)              scaled to size 14.86081pt on input line 4.
+(Font)              scaled to size 17.83641pt on input line 1.
+) (seiten/abbildungsverzeichnis.tex
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 2.
+ [2
 
-Overfull \hbox (0.98846pt too wide) in paragraph at lines 5--6
+
+]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 2.
+ (bachelorarbeit_lernverfahren.lof)
+\tf@lof=\write7
+\openout7 = `bachelorarbeit_lernverfahren.lof'.
+
+)
+(seiten/tabellenverzeichnis.tex
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 2.
+ [3
+
+
+]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 2.
+ (bachelorarbeit_lernverfahren.lot)
+\tf@lot=\write8
+\openout8 = `bachelorarbeit_lernverfahren.lot'.
+
+)
+(seiten/inhaltsverzeichnis.tex
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 2.
+ [4
+
+
+] (bachelorarbeit_lernverfahren.toc
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 40.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 40.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 40.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 40.
+ [5
+
+
+])
+\tf@toc=\write9
+\openout9 = `bachelorarbeit_lernverfahren.toc'.
+
+)
+
+LaTeX Font Warning: Font shape `T1/qpl/m/sl' in size <12> not available
+(Font)              Font shape `T1/qpl/m/it' tried instead on input line 16.
+
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 16.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 16.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 16.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 16.
+[6] (inhalt/projektvision.tex
+chapter 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 14.86081pt on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 6.
+
+Overfull \hbox (0.98846pt too wide) in paragraph at lines 7--8
 \T1/qpl/m/n/12 Sind Sie ein (an-ge-hen-der) Soft-wa-re-ent-wick-ler und pro-gra
 m-mie-ren ak-tu-ell ein Com-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
  []
 
 
@@ -2264,6 +2217,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 15.
 Package babel Info: Redefining german shorthand "|
@@ -2271,28 +2229,34 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 15.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 17.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 17.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 17.
 [1
 
 
 
 ]
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 18.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 20.
 ) (inhalt/grundlagen.tex
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
@@ -2307,7 +2271,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
  [2]
-chapter 1.
+chapter 2.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "|
@@ -2355,97 +2319,6 @@ Package babel Info: Redefining german shorthand "~
 
 
 ]
-chapter 2.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 6.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 6.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 8.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 8.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 8.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 10.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 10.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 10.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 12.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 12.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 12.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 14.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 14.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 14.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 16.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 16.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 16.
-
-Overfull \hbox (4.18661pt too wide) in paragraph at lines 17--21
-\T1/qpl/m/n/12 er-brin-gen soll. Die funk-tio-na-len und nicht-funk-tio-na-len 
-An-for-de-run-gen sol-len Muss-
- []
-
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 22.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 22.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 22.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 22.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 22.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 22.
-[4
-
-
-]
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 22.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 22.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 22.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 28.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 28.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 28.
-) (inhalt/modellierung_und_entwurf.tex
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 1.
- [5]
 chapter 3.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
@@ -2460,53 +2333,181 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 6.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 8.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 8.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 8.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 10.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 10.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 10.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 12.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 14.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 14.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 16.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 16.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 22.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 22.
+Package acronym Info: Label `acro:UI' newly defined as it shall be overridden
+although it is yet undefined on input line 24.
+Package acronym Info: Label `acro:ID' newly defined as it shall be overridden
+although it is yet undefined on input line 24.
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\T1/qpl/m/n/12 Endlichkeit der Brett-
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 38--38
+[]|\T1/qpl/m/n/12 Die lern-fä-hi-gen Ver-fah-ren sol-len durch einen
+ []
+
+
+Overfull \hbox (15.8777pt too wide) in paragraph at lines 28--42
+[][]
+ []
+
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 44.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 44.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 44.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 44.
+[4
+
+
+]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 44.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 44.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 44.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 44.
+ [5]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 44.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 44.
+
+Underfull \hbox (badness 1910) in paragraph at lines 52--52
+[]|\T1/qpl/m/n/12 Die Tests der Pro-gramm-lo-gik sol-len mit den,
+ []
+
+
+Overfull \hbox (15.8777pt too wide) in paragraph at lines 48--57
+[][]
+ []
+
+) (inhalt/modellierung_und_entwurf.tex
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+ [6]
+chapter 4.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 11.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 11.
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-<inhalt/abbildungen/horizontaler_sieg.pdf, id=325, 170.6375pt x 170.6375pt>
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 21.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 21.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 21.
+[7
+
+
+]
+<inhalt/abbildungen/horizontaler_sieg.pdf, id=363, 170.6375pt x 170.6375pt>
 File: inhalt/abbildungen/horizontaler_sieg.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/horizontaler_sieg.pdf>
 Package pdftex.def Info: inhalt/abbildungen/horizontaler_sieg.pdf used on input
- line 22.
+ line 24.
 (pdftex.def)             Requested size: 170.63707pt x 170.63707pt.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 28.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 28.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 28.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 28.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 28.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 28.
- [6
 
-
-]
-<inhalt/abbildungen/vertikaler_sieg.pdf, id=334, 170.6375pt x 170.6375pt>
+<inhalt/abbildungen/vertikaler_sieg.pdf, id=365, 170.6375pt x 170.6375pt>
 File: inhalt/abbildungen/vertikaler_sieg.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/vertikaler_sieg.pdf>
 Package pdftex.def Info: inhalt/abbildungen/vertikaler_sieg.pdf used on input l
-ine 31.
+ine 33.
 (pdftex.def)             Requested size: 170.63707pt x 170.63707pt.
 
-<inhalt/abbildungen/diagonaler_sieg.pdf, id=336, 170.6375pt x 170.6375pt>
+<inhalt/abbildungen/diagonaler_sieg.pdf, id=367, 170.6375pt x 170.6375pt>
 File: inhalt/abbildungen/diagonaler_sieg.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/diagonaler_sieg.pdf>
 Package pdftex.def Info: inhalt/abbildungen/diagonaler_sieg.pdf used on input l
-ine 40.
+ine 42.
 (pdftex.def)             Requested size: 170.63707pt x 170.63707pt.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 48.
@@ -2520,180 +2521,104 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 48.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 48.
- [7 <./inhalt/abbildungen/horizontaler_sieg.pdf> <./inhalt/abbildungen/vertikal
+ [8 <./inhalt/abbildungen/horizontaler_sieg.pdf> <./inhalt/abbildungen/vertikal
 er_sieg.pdf
 
 pdfTeX warning: pdflatex (file ./inhalt/abbildungen/vertikaler_sieg.pdf): PDF i
 nclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
 
-<inhalt/abbildungen/vier_mal_vier_matrix.pdf, id=357, 170.6375pt x 170.6375pt>
+<inhalt/abbildungen/vier_mal_vier_matrix.pdf, id=386, 170.6375pt x 170.6375pt>
 File: inhalt/abbildungen/vier_mal_vier_matrix.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/vier_mal_vier_matrix.pdf>
 Package pdftex.def Info: inhalt/abbildungen/vier_mal_vier_matrix.pdf used on in
-put line 55.
+put line 57.
 (pdftex.def)             Requested size: 170.63707pt x 170.63707pt.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 62.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 62.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 62.
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Underfull \hbox (badness 4595) in paragraph at lines 86--86
-[]|\T1/qpl/m/n/12 Horizontale Sieges-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-[]|\T1/qpl/m/n/12 Vertikale Sieges-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-[]|\T1/qpl/m/n/12 Diagonale Sieges-
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 86--86
-[][] 
- []
-
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 90.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 90.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 90.
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 66.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 66.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 66.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 66.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 66.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 93.
-[8 <./inhalt/abbildungen/diagonaler_sieg.pdf>]
+(babel)             in language  on input line 66.
+[9 <./inhalt/abbildungen/diagonaler_sieg.pdf>]
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 67.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 67.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 67.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 93.
- [9]
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-
- []
-
+(babel)             in language  on input line 70.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 95.
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
-
- []
-
+(babel)             in language  on input line 72.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 103.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 103.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 103.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 76.
+) (inhalt/implementierung.tex
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 110.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 112.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 112.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 112.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 112.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 112.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 1.
+
 [10 <./inhalt/abbildungen/vier_mal_vier_matrix.pdf>]
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 112.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 112.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 112.
-)
-(inhalt/implementierung.tex
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 1.
- [11]
-chapter 4.
+chapter 5.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "|
@@ -2731,11 +2656,11 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
- [12
+ [11
 
 
 ]
-chapter 5.
+chapter 6.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "|
@@ -2803,61 +2728,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
- [13
-
-
-]
-chapter 6.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 6.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 6.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 8.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 8.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 8.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 10.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 10.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 10.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 12.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 12.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 12.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 14.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 14.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 14.
-) (inhalt/elemente.tex
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 1.
- [14
+ [12
 
 
 ]
@@ -2868,21 +2739,12 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
-
-LaTeX Warning: Citation 'a' on page 15 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'a' on page 15 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'b' on page 15 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'c' on page 15 undefined on input line 6.
-
-
-LaTeX Warning: Citation 'b' on page 15 undefined on input line 6.
-
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 6.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 8.
 Package babel Info: Redefining german shorthand "|
@@ -2890,66 +2752,23 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 8.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 12.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 12.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 12.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 46.
-[15
-
-
-]
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 47.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 47.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 47.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 73.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 73.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 73.
- <inhalt/abbildungen/molecule.pdf, id=436, 328.07483pt x 79.23053pt>
-File: inhalt/abbildungen/molecule.pdf Graphic file (type pdf)
-
-<use inhalt/abbildungen/molecule.pdf>
-Package pdftex.def Info: inhalt/abbildungen/molecule.pdf used on input line 88.
-
-(pdftex.def)             Requested size: 434.55125pt x 104.94728pt.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 102.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 102.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 102.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 102.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 102.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 102.
- [16]
-<inhalt/abbildungen/example.pdf, id=443, 294.80772pt x 200.45935pt>
-File: inhalt/abbildungen/example.pdf Graphic file (type pdf)
-
-<use inhalt/abbildungen/example.pdf>
-Package pdftex.def Info: inhalt/abbildungen/example.pdf used on input line 105.
-
-(pdftex.def)             Requested size: 434.55125pt x 295.50366pt.
+(babel)             in language  on input line 14.
 ) (seiten/bibliografie.tex)
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 4.
@@ -2963,21 +2782,11 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 4.
- [17 <./inhalt/abbildungen/molecule.pdf>]
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 4.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 4.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 4.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 4.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 4.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 4.
- [18 <./inhalt/abbildungen/example.pdf>]
-Overfull \hbox (12.89148pt too wide) in paragraph at lines 24--24
+ [13
+
+
+]
+Overfull \hbox (12.89148pt too wide) in paragraph at lines 27--27
 []\T1/qpl/m/n/12 Jan Lösch-ner. \T1/qpl/m/it/12 Künst-li-che In-tel-li-genz: Ei
 n Hand-wör-ter-buch für In-ge-nieu-re\T1/qpl/m/n/12 . 1. Aufl.
  []
@@ -2995,7 +2804,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
- [19
+ [14
 
 
 ]
@@ -3024,7 +2833,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 42.
-[20
+[15
 
 
 ]
@@ -3040,7 +2849,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 43.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 43.
- [21]
+ [16]
 chapter B.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 43.
@@ -3067,7 +2876,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 3.
- [22
+ [17
 
 
 ]
@@ -3083,39 +2892,34 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 4.
- [23])
+ [18])
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 28.
- [24
+(babel)             in language  on input line 31.
+ [19
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
  (bachelorarbeit_lernverfahren.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
 Package rerunfilecheck Info: File `bachelorarbeit_lernverfahren.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 588A3AC8AE440BA1773C1F5DDD469BA1;3815.
+(rerunfilecheck)             Checksum: 1469FC5BFC2215ED990C0144035500CB;3783.
 
 
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                bachelorarbeit_lernverfahren
-(biblatex)                and rerun LaTeX afterwards.
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'bachelorarbeit_lernverfahren.run.xml'
 .
@@ -3123,31 +2927,25 @@ Package logreq Info: Writing requests to 'bachelorarbeit_lernverfahren.run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 40838 strings out of 493333
- 806952 string characters out of 3139200
- 1108955 words of memory out of 3000000
- 43602 multiletter control sequences out of 15000+200000
- 86867 words of font info for 112 fonts, out of 3000000 for 9000
+ 39334 strings out of 493333
+ 768674 string characters out of 3145253
+ 1042700 words of memory out of 3000000
+ 42131 multiletter control sequences out of 15000+200000
+ 71640 words of font info for 83 fonts, out of 3000000 for 9000
  1150 hyphenation exceptions out of 8191
- 67i,10n,77p,10410b,2412s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/MrT/AppDat
-a/Roaming/MiKTeX/2.9/fonts/enc/dvips/tex-gyre/q-ec.enc}{C:/Users/MrT/AppData/Ro
-aming/MiKTeX/2.9/fonts/enc/dvips/inconsolata/i4-t1-0.enc}<C:/Users/MrT/AppData/
-Roaming/MiKTeX/2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/MrT/AppData/Roaming/MiK
-TeX/2.9/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/MrT/AppData/Roaming/MiK
-TeX/2.9/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/MrT/AppData/Roaming/Mi
-KTeX/2.9/fonts/type1/bera/fvsb8a.pfb><C:/Users/MrT/AppData/Roaming/MiKTeX/2.9/f
-onts/type1/bera/fvsr8a.pfb><C:/Users/MrT/AppData/Roaming/MiKTeX/2.9/fonts/type1
-/public/tex-gyre/qplb.pfb><C:/Users/MrT/AppData/Roaming/MiKTeX/2.9/fonts/type1/
-public/tex-gyre/qplr.pfb><C:/Users/MrT/AppData/Roaming/MiKTeX/2.9/fonts/type1/p
-ublic/tex-gyre/qplri.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/
-uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on bachelorarbeit_lernverfahren.pdf (27 pages, 401871 bytes).
+ 67i,11n,77p,10410b,2463s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Thilo/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/tex-gyre/q-ec.enc}
+{C:/Users/Thilo/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/inconsolata/i4-t1-0.
+enc}{E:/dev/MikTex/fonts/enc/dvips/base/8r.enc}<C:/Users/Thilo/AppData/Roaming/
+MiKTeX/2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/Thilo/
+AppData/Roaming/MiKTeX/2.9/fonts/type1/bera/fvsb8a.pfb><C:/Users/Thilo/AppData/
+Roaming/MiKTeX/2.9/fonts/type1/bera/fvsr8a.pfb><C:/Users/Thilo/AppData/Roaming/
+MiKTeX/2.9/fonts/type1/public/tex-gyre/qplb.pfb><C:/Users/Thilo/AppData/Roaming
+/MiKTeX/2.9/fonts/type1/public/tex-gyre/qplr.pfb><C:/Users/Thilo/AppData/Roamin
+g/MiKTeX/2.9/fonts/type1/public/tex-gyre/qplri.pfb>
+Output written on bachelorarbeit_lernverfahren.pdf (25 pages, 288593 bytes).
 PDF statistics:
- 565 PDF objects out of 1000 (max. 8388607)
- 114 named destinations out of 1000 (max. 500000)
- 488 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 507 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
+ 470 words of extra memory for PDF output out of 10000 (max. 10000000)
 
