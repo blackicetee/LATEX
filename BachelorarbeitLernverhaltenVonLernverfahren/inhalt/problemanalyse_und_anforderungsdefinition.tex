@@ -11,7 +11,19 @@ Welche Daten müssen die Brettspiele liefern, sodass die lernfähigen Verfahren 
 Wie muss das Format dieser Daten angepasst werden? \\
 Wie wird eine Spielsituation dargestellt? \\
 
+Was genau ist die Problematik?\\
+Kurzgefasst sollen innerhalb dieser wissenschaftlichen Abschlussarbeit lernfähige Verfahren mittels Daten von Brettspielen trainiert werden. Nach Abschluss der Trainingsphase sollen die lernfähigen Verfahren bestenfalls einen menschlichen Gegenspieler schlagen können. Schlussendlich soll die Lernfähigkeit dieser Verfahren untersucht werden. Um diese Problematik zufriedenstellend zu bearbeiten müssen wir diese in zusammengehörige Teilprobleme aufteilen. \\
+
+Das erste Teilproblem ist die Auswahl der lernfähigen Verfahren. Die Schwierigkeit hierbei besteht in der Kompatibilität der Verfahren zu den von den Brettspielen produzierten Daten und in der Anzahl der zur Verfügung stehenden lernfähigen Verfahren. Es existieren drei Gattungen von lernfähige Algorithmen die ihre stärken und schwächen haben und die nur auf bestimmte Daten angewendet werden können. Eine genauere Beschreibung dieser Gattungen ist im Unterabschnitt \ref{subsec:Die drei Arten des maschinellen Lernens} dieser Arbeit vorhanden. \\
+
+Das erste Teilproblem führt unmittelbar zum zweiten Teilproblem. Welche Daten können die zu implementierten Brettspiele liefern und wie sollten diese Daten strukturiert werden? Sollten Daten in Form von Features und Zielwerten generiert werden können, dann sind überwachte lernfähige Algorithmen für Klassifizierung möglicherweise eine gute Wahl. 
+
+
 Eine Schwierigkeit besteht darin herauszufinden welche lernfähigen Verfahren anhand der Daten der Brettspiele angewendet werden können. Die Daten welche von den Brettspielen erzeugt werden, sind besonders ausschlaggebend für die Auswahl der lernfähigen Verfahren. Produziert ein implementiertes Brettspiel ein Datenset bestehend aus Eigenschaften(features) und Zielwerten(target values) so könnte ein überwachtes lernfähiges Verfahren mittels diesen Datensets trainiert werden. Ist es nicht möglich sinnvolle Zielwerte aus den Ausgabedaten der Brettspiele zu extrahieren, dann kann kein überwachtes Lernverfahren eingesetzt werden. \todo[inline]{Erarbeiten der Eigenschaften von überwachten und nicht überwachtem maschinellem Lernen In Kapitel \ref{cha:grundlagen} Grundlagen}
+
+
+
+Sebastian Raschka schreibt: Ein schönes Beispiel für verstärkendes Lernen ist ein Schachcomputer. Hier bewertet der Agent nach einer Reihe von Zügen die Stellung auf dem Schachbrett(die Umgebung), und die Belohnung kann am Ende des Spiels als Sieg oder Niederlage definiert werden.\cite[27]{Raschka}
 \subsection{Bereits existierende Softwarelösungen}
 
 \subsection{Gegenstandsbereich des Projektes abgrenzen}
