@@ -17,10 +17,10 @@
 \endgroup
 
 \sortlist[entry]{anyt/global/}
-  \entry{Alpaydm}{book}{}
+  \entry{Alpaydin}{book}{}
     \name{author}{1}{}{%
       {{hash=AE}{%
-         family={Alpaydm},
+         family={Alpaydin},
          familyi={A\bibinitperiod},
          given={Ethem},
          giveni={E\bibinitperiod},

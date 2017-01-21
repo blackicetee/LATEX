@@ -11,56 +11,56 @@
 \contentsline {section}{\numberline {1.4}Zielgruppe}{2}{section.1.4}
 \contentsline {chapter}{\numberline {2}Grundlagen}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Verst\IeC {\"a}rkendes Lernen(Reinforcement Learing)}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Die drei Arten des maschinellen Lernens}{5}{subsection.2.1.1}
-\contentsline {paragraph}{\nonumberline \IeC {\"U}berwachtes Lernen}{5}{section*.7}
-\contentsline {paragraph}{\nonumberline Un\IeC {\"u}berwachtes Lernen}{5}{section*.8}
-\contentsline {paragraph}{\nonumberline Best\IeC {\"a}rkendes Lernen}{5}{section*.9}
-\contentsline {section}{\numberline {2.2}Spielentwicklung}{6}{section.2.2}
-\contentsline {section}{\numberline {2.3}Lineare Algebra}{6}{section.2.3}
-\contentsline {section}{\numberline {2.4}Heuristik}{6}{section.2.4}
-\contentsline {chapter}{\numberline {3}Problemanalyse und Anforderungsdefinition}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Problemanalyse}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Die Problematik}{7}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Bereits existierende Softwarel\IeC {\"o}sungen}{8}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Gegenstandsbereich des Projektes abgrenzen}{8}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Abgrenzung gegen\IeC {\"u}ber der k\IeC {\"u}nstlichen Intelligenz}{8}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}Anforderungsdefinition}{8}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Funktionale Anforderungen}{8}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Nicht-funktionale Anforderungen}{9}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Modellierung und Entwurf}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Computerspiele}{11}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Tic Tac Toe}{11}{subsection.4.1.1}
-\contentsline {paragraph}{\nonumberline Spielregeln}{11}{section*.14}
-\contentsline {paragraph}{\nonumberline Benutzerschnittstellen}{14}{section*.15}
-\contentsline {subsection}{\numberline {4.1.2}Reversi}{14}{subsection.4.1.2}
-\contentsline {paragraph}{\nonumberline Spielprinzipien}{14}{section*.16}
-\contentsline {paragraph}{\nonumberline Spielregeln}{14}{section*.17}
-\contentsline {paragraph}{\nonumberline Benutzerschnittstellen}{14}{section*.18}
-\contentsline {section}{\numberline {4.2}Lernverfahren}{15}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Analyse und Auswahl der lernf\IeC {\"a}higen Algorithmen}{15}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Anwendung der Algorithmen auf Computerspiele}{15}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Konzeptuelles Training der Algorithmen}{15}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Persistenz der Trainingsdaten}{15}{subsection.4.2.4}
-\contentsline {chapter}{\numberline {5}Implementierung}{16}{chapter.5}
-\contentsline {section}{\numberline {5.1}Computerspiele}{16}{section.5.1}
-\contentsline {section}{\numberline {5.2}Lernverfahren}{16}{section.5.2}
-\contentsline {section}{\numberline {5.3}Alternative Lernverfahren}{16}{section.5.3}
-\contentsline {chapter}{\numberline {6}Validierung}{17}{chapter.6}
-\contentsline {section}{\numberline {6.1}Messbare Testkriterien}{17}{section.6.1}
-\contentsline {section}{\numberline {6.2}Modultests}{17}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}TicTacToe}{17}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Reversi}{17}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Lernverfahren 1}{17}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Lernverfahren 2}{17}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Persistenz}{17}{subsection.6.2.5}
-\contentsline {section}{\numberline {6.3}Systemtest}{17}{section.6.3}
-\contentsline {chapter}{\numberline {7}Auswertung}{18}{chapter.7}
-\contentsline {section}{\numberline {7.1}Belastbarkeit und Grenzen der Lernverfahren}{18}{section.7.1}
-\contentsline {section}{\numberline {7.2}Optimale Anwendungsspiele f\IeC {\"u}r die Lernverfahren}{18}{section.7.2}
-\contentsline {section}{\numberline {7.3}Gegen\IeC {\"u}berstellung der Lernverfahren}{18}{section.7.3}
-\contentsline {section}{\numberline {7.4}Bewertung der Strategien}{18}{section.7.4}
-\contentsline {section}{\numberline {7.5}Menschlicher oder mechanischer Trainer?}{18}{section.7.5}
-\contentsline {chapter}{\numberline {A}I am an appendix!}{20}{appendix.A}
-\contentsline {section}{\numberline {A.1}Section in appendix!}{20}{section.A.1}
-\contentsline {chapter}{\numberline {B}Another appendix? What the heck?}{22}{appendix.B}
-\contentsline {section}{\numberline {B.1}Section in appendix!}{22}{section.B.1}
+\contentsline {paragraph}{\nonumberline Ein Agent im Labyrinth}{4}{section*.7}
+\contentsline {subsection}{\numberline {2.1.1}\IeC {\"U}berwachtes \acs {vs.} verst\IeC {\"a}rkendes Lernen}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Das Strategiespiel Schach}{6}{subsection.2.1.2}
+\contentsline {paragraph}{\nonumberline Schachspiel Komplexit\IeC {\"a}t}{6}{section*.8}
+\contentsline {section}{\numberline {2.2}Spielentwicklung}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Lineare Algebra}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}Heuristik}{7}{section.2.4}
+\contentsline {chapter}{\numberline {3}Problemanalyse und Anforderungsdefinition}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Problemanalyse}{8}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Die Problematik}{8}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Bereits existierende Softwarel\IeC {\"o}sungen}{9}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Gegenstandsbereich des Projektes abgrenzen}{9}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Abgrenzung gegen\IeC {\"u}ber der k\IeC {\"u}nstlichen Intelligenz}{9}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Anforderungsdefinition}{9}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Funktionale Anforderungen}{9}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Nicht-funktionale Anforderungen}{10}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Modellierung und Entwurf}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Computerspiele}{12}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Tic Tac Toe}{12}{subsection.4.1.1}
+\contentsline {paragraph}{\nonumberline Spielregeln}{12}{section*.14}
+\contentsline {paragraph}{\nonumberline Benutzerschnittstellen}{15}{section*.15}
+\contentsline {subsection}{\numberline {4.1.2}Reversi}{15}{subsection.4.1.2}
+\contentsline {paragraph}{\nonumberline Spielprinzipien}{15}{section*.16}
+\contentsline {paragraph}{\nonumberline Spielregeln}{15}{section*.17}
+\contentsline {paragraph}{\nonumberline Benutzerschnittstellen}{15}{section*.18}
+\contentsline {section}{\numberline {4.2}Lernverfahren}{16}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Analyse und Auswahl der lernf\IeC {\"a}higen Algorithmen}{16}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Anwendung der Algorithmen auf Computerspiele}{16}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Konzeptuelles Training der Algorithmen}{16}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Persistenz der Trainingsdaten}{16}{subsection.4.2.4}
+\contentsline {chapter}{\numberline {5}Implementierung}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}Computerspiele}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}Lernverfahren}{17}{section.5.2}
+\contentsline {section}{\numberline {5.3}Alternative Lernverfahren}{17}{section.5.3}
+\contentsline {chapter}{\numberline {6}Validierung}{18}{chapter.6}
+\contentsline {section}{\numberline {6.1}Messbare Testkriterien}{18}{section.6.1}
+\contentsline {section}{\numberline {6.2}Modultests}{18}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}TicTacToe}{18}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Reversi}{18}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Lernverfahren 1}{18}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Lernverfahren 2}{18}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Persistenz}{18}{subsection.6.2.5}
+\contentsline {section}{\numberline {6.3}Systemtest}{18}{section.6.3}
+\contentsline {chapter}{\numberline {7}Auswertung}{19}{chapter.7}
+\contentsline {section}{\numberline {7.1}Belastbarkeit und Grenzen der Lernverfahren}{19}{section.7.1}
+\contentsline {section}{\numberline {7.2}Optimale Anwendungsspiele f\IeC {\"u}r die Lernverfahren}{19}{section.7.2}
+\contentsline {section}{\numberline {7.3}Gegen\IeC {\"u}berstellung der Lernverfahren}{19}{section.7.3}
+\contentsline {section}{\numberline {7.4}Bewertung der Strategien}{19}{section.7.4}
+\contentsline {section}{\numberline {7.5}Menschlicher oder mechanischer Trainer?}{19}{section.7.5}
+\contentsline {chapter}{\numberline {A}I am an appendix!}{21}{appendix.A}
+\contentsline {section}{\numberline {A.1}Section in appendix!}{21}{section.A.1}
+\contentsline {chapter}{\numberline {B}Another appendix? What the heck?}{23}{appendix.B}
+\contentsline {section}{\numberline {B.1}Section in appendix!}{23}{section.B.1}
