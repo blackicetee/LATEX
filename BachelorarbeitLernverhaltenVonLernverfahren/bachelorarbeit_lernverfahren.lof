@@ -5,13 +5,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Der Agent und seine Wechselwirkung mit der Umgebung}}{3}{figure.2.1}
-\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Vogelspezies Klassifikation basierend auf vier Eigenschaften}}{5}{figure.2.2}
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Vogelspezies Klassifikation basierend auf vier Eigenschaften}}{6}{figure.2.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Tic Tac Toe horizontaler Sieg}}{13}{figure.4.1}
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Tic Tac Toe vertikaler Sieg}}{14}{figure.4.2}
-\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Tic Tac Toe diagonaler Sieg}}{14}{figure.4.3}
-\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Tic Tac Toe Spielfiguren setzen}}{15}{figure.4.4}
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces TicTacToe Spielbaum, eines drei mal drei Spielfeldes, der in Level f\IeC {\"u}nf terminiert.}}{15}{figure.4.1}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Veranschaulichung der vertikalen (a), horizontalen (b) und diagonalen (c, d) Siegesbedingung.}}{15}{figure.4.2}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Tic Tac Toe Spielfiguren setzen}}{17}{figure.4.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
