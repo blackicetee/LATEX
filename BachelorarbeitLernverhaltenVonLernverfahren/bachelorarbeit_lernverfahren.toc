@@ -31,38 +31,42 @@
 \contentsline {subsection}{\numberline {3.2.2}Nicht-funktionale Anforderungen}{11}{subsection.3.2.2}
 \contentsline {chapter}{\numberline {4}Modellierung und Entwurf}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}Tic Tac Toe}{13}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Spielregeln}{14}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Strategie}{16}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Benutzerschnittstellen}{16}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Reversi}{16}{section.4.2}
-\contentsline {paragraph}{\nonumberline Spielprinzipien}{16}{section*.14}
-\contentsline {paragraph}{\nonumberline Spielregeln}{17}{section*.15}
-\contentsline {paragraph}{\nonumberline Benutzerschnittstellen}{17}{section*.16}
-\contentsline {section}{\numberline {4.3}Lernverfahren}{17}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Analyse und Auswahl der lernf\IeC {\"a}higen Algorithmen}{17}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Anwendung der Algorithmen auf Computerspiele}{17}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Konzeptuelles Training der Algorithmen}{17}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Persistenz der Trainingsdaten}{17}{subsection.4.3.4}
-\contentsline {chapter}{\numberline {5}Implementierung}{18}{chapter.5}
-\contentsline {section}{\numberline {5.1}Computerspiele}{18}{section.5.1}
-\contentsline {section}{\numberline {5.2}Lernverfahren}{18}{section.5.2}
-\contentsline {section}{\numberline {5.3}Alternative Lernverfahren}{18}{section.5.3}
-\contentsline {chapter}{\numberline {6}Validierung}{19}{chapter.6}
-\contentsline {section}{\numberline {6.1}Messbare Testkriterien}{19}{section.6.1}
-\contentsline {section}{\numberline {6.2}Modultests}{19}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}TicTacToe}{19}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Reversi}{19}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Lernverfahren 1}{19}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Lernverfahren 2}{19}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Persistenz}{19}{subsection.6.2.5}
-\contentsline {section}{\numberline {6.3}Systemtest}{19}{section.6.3}
-\contentsline {chapter}{\numberline {7}Auswertung}{20}{chapter.7}
-\contentsline {section}{\numberline {7.1}Belastbarkeit und Grenzen der Lernverfahren}{20}{section.7.1}
-\contentsline {section}{\numberline {7.2}Optimale Anwendungsspiele f\IeC {\"u}r die Lernverfahren}{20}{section.7.2}
-\contentsline {section}{\numberline {7.3}Gegen\IeC {\"u}berstellung der Lernverfahren}{20}{section.7.3}
-\contentsline {section}{\numberline {7.4}Bewertung der Strategien}{20}{section.7.4}
-\contentsline {section}{\numberline {7.5}Menschlicher oder mechanischer Trainer?}{20}{section.7.5}
-\contentsline {chapter}{\numberline {A}I am an appendix!}{22}{appendix.A}
-\contentsline {section}{\numberline {A.1}Section in appendix!}{22}{section.A.1}
-\contentsline {chapter}{\numberline {B}Another appendix? What the heck?}{24}{appendix.B}
-\contentsline {section}{\numberline {B.1}Section in appendix!}{24}{section.B.1}
+\contentsline {subsection}{\numberline {4.1.1}Spielregeln}{13}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Suchbaum}{15}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Strategie}{17}{subsection.4.1.3}
+\contentsline {paragraph}{\nonumberline Spielfeldsymmetrie}{17}{section*.15}
+\contentsline {paragraph}{\nonumberline Kontrolliere die Mitte}{17}{section*.16}
+\contentsline {paragraph}{\nonumberline Verteidigung ist der beste Angriff}{17}{section*.17}
+\contentsline {subsection}{\numberline {4.1.4}Benutzerschnittstellen}{19}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Reversi}{19}{section.4.2}
+\contentsline {paragraph}{\nonumberline Spielprinzipien}{19}{section*.18}
+\contentsline {paragraph}{\nonumberline Spielregeln}{19}{section*.19}
+\contentsline {paragraph}{\nonumberline Benutzerschnittstellen}{19}{section*.20}
+\contentsline {section}{\numberline {4.3}Lernverfahren}{20}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Analyse und Auswahl der lernf\IeC {\"a}higen Algorithmen}{20}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Anwendung der Algorithmen auf Computerspiele}{20}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Konzeptuelles Training der Algorithmen}{20}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Persistenz der Trainingsdaten}{20}{subsection.4.3.4}
+\contentsline {chapter}{\numberline {5}Implementierung}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Computerspiele}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Lernverfahren}{21}{section.5.2}
+\contentsline {section}{\numberline {5.3}Alternative Lernverfahren}{21}{section.5.3}
+\contentsline {chapter}{\numberline {6}Validierung}{22}{chapter.6}
+\contentsline {section}{\numberline {6.1}Messbare Testkriterien}{22}{section.6.1}
+\contentsline {section}{\numberline {6.2}Modultests}{22}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}TicTacToe}{22}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Reversi}{22}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Lernverfahren 1}{22}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Lernverfahren 2}{22}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Persistenz}{22}{subsection.6.2.5}
+\contentsline {section}{\numberline {6.3}Systemtest}{22}{section.6.3}
+\contentsline {chapter}{\numberline {7}Auswertung}{23}{chapter.7}
+\contentsline {section}{\numberline {7.1}Belastbarkeit und Grenzen der Lernverfahren}{23}{section.7.1}
+\contentsline {section}{\numberline {7.2}Optimale Anwendungsspiele f\IeC {\"u}r die Lernverfahren}{23}{section.7.2}
+\contentsline {section}{\numberline {7.3}Gegen\IeC {\"u}berstellung der Lernverfahren}{23}{section.7.3}
+\contentsline {section}{\numberline {7.4}Bewertung der Strategien}{23}{section.7.4}
+\contentsline {section}{\numberline {7.5}Menschlicher oder mechanischer Trainer?}{23}{section.7.5}
+\contentsline {chapter}{\numberline {A}I am an appendix!}{25}{appendix.A}
+\contentsline {section}{\numberline {A.1}Section in appendix!}{25}{section.A.1}
+\contentsline {chapter}{\numberline {B}Another appendix? What the heck?}{27}{appendix.B}
+\contentsline {section}{\numberline {B.1}Section in appendix!}{27}{section.B.1}
