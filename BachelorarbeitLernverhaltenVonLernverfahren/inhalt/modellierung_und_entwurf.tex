@@ -61,7 +61,14 @@ Blattkonten. In dieser Rechnung sind keine Positionsredundanzen und terminierend
 
 Um die Anzahl der möglichen Spielzüge zu erhöhen und um die mittlere unfaire Position in einem drei mal drei Spielfeld zu entfernen, wird das Spielfeld des klassischen Tic Tac Toe auf eine vier mal vier Matrix erweitert.
 
-\subsection{Strategie}
+\subsection{Lernen mit Strategieverbesserung}
+Die nachfolgend aufgestellte Strategie ist keine optimale Strategie, das heißt es ist nicht möglich mit dieser Strategie immer zu gewinnen oder mindestens ein Unentschieden zu erreichen. Das Ziel des Lernverfahrens ist es, diese nicht optimale Strategie in eine optimale Strategie oder zumindest eine annähernd optimale Strategie zu transformieren. Eine optimale Strategie würde gegen unaufmerksame oder unerfahrene Gegner verhältnismäßig oft Gewinnen und nicht gegen diese Verlieren, Unentschieden können trotzdem vorkommen. Ist der Gegner ein perfekter TicTacToe Algorithmus oder ein TicTacToe Großmeister, dann sollte die optimale Strategie überwiegend Unentschieden hervorbringen. Eine optimale Strategie sollte in 100 Spielen gegen einen Großmeister oder eine andere optimale Strategie (dieselbe Optimale Strategie oder möglicherweise eine andere) 100 Unentschieden erringen. Siege sind theoretisch höherwertiger als Unentschieden, aber innerhalb der TicTacToe Spielwelt sind diese gegen einen Großmeister oder einen perfekten Algorithmus äußerst unwahrscheinlich. \\
+
+Unser Lernalgorithmus oder im Kontext des verstärkenden Lernens unser Agent, erhält eine Belohnung von +1 wenn er eine Party (alle Level bis ein Spielergebnis feststeht) TicTacToe gewinnt. Verliert er eine Party, dann wird er bestraft mit dem numerischen Wert -1. Bei einem Unentschieden wird der Agent ebenfalls belohnt, aber die Belohnung ist nicht so hoch wie bei einem Sieg, denn wir wollen das Verhalten des Lernverfahrens so trainieren, dass es eher einen Sieg erlangen wird als ein Unentschieden, aber auf jeden Fall eine Niederlage vermeidet. Der Agent soll immer versuchen diesen nummerischen Wert zu maximieren, darum wird er eine Niederlage vermeiden. Der Agenten könnte auch so trainiert werden, dass er immer absichtlich verlieren würde, dafür müsste jeder, vom Agenten ausgeführte, Spielzug (egal welcher Spielzug) eine hohe negative nummerische Bestrafung hervorbringen. Das Ziel des Agenten wäre dann, schnellstmöglich ein Ende des Spiels zu provozieren und weil verlieren sicherer und kürzer ist als gewinnen oder ein Unentschieden, würde der Agent lernen absichtlich zu verlieren. Interessant wäre das Spielergebnis, wenn zwei Agenten gegeneinander antreten würden, die immer schnellstmöglich verlieren wollen, dann entstünden theoretisch ausschließlich Unentschieden.
+
+Genug von absichtlich verlierenden Agenten. Der erste Schritt um dem Lernverfahren 
+
+Von jetzt an betrachten wir die beiden Kontrahenten Alice (Spielfiguren X) und Bob (Spielfiguren O) als zwei Instanzen des selben Lernverfahrens, dass heißt der Agent trainiert sich selbst. \\
 
 \myparagraph{Spielfeldsymmetrie}
 
@@ -86,9 +93,11 @@ Um die Anzahl der möglichen Spielzüge zu erhöhen und um die mittlere unfaire 
 \begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 0.8]{inhalt/abbildungen/verteidigung_ist_angriff.pdf}
-  \caption{TicTacToe Spielzustände in denen Alice dringend verteidigen sollte und Bob angreifen kann.}
+  \caption{TicTacToe Angriffsstrategien (aus der Sicht von Bob) und Verteidigungsstrategien (aus der Sicht von Alice).}
   \label{fig:verteidigung_ist_angriff}
 \end{figure}
+
+\subsection{Lernen ohne Strategie}
 
 \subsection{Benutzerschnittstellen}
 

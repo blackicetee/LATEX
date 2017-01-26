@@ -28,34 +28,35 @@
 \BOOKMARK [1][-]{section.4.1}{Tic Tac Toe}{chapter.4}% 28
 \BOOKMARK [2][-]{subsection.4.1.1}{Spielregeln}{section.4.1}% 29
 \BOOKMARK [2][-]{subsection.4.1.2}{Suchbaum}{section.4.1}% 30
-\BOOKMARK [2][-]{subsection.4.1.3}{Strategie}{section.4.1}% 31
-\BOOKMARK [2][-]{subsection.4.1.4}{Benutzerschnittstellen}{section.4.1}% 32
-\BOOKMARK [1][-]{section.4.2}{Reversi}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.3}{Lernverfahren}{chapter.4}% 34
-\BOOKMARK [2][-]{subsection.4.3.1}{Analyse und Auswahl der lernf\344higen Algorithmen}{section.4.3}% 35
-\BOOKMARK [2][-]{subsection.4.3.2}{Anwendung der Algorithmen auf Computerspiele}{section.4.3}% 36
-\BOOKMARK [2][-]{subsection.4.3.3}{Konzeptuelles Training der Algorithmen}{section.4.3}% 37
-\BOOKMARK [2][-]{subsection.4.3.4}{Persistenz der Trainingsdaten}{section.4.3}% 38
-\BOOKMARK [0][-]{chapter.5}{Implementierung}{}% 39
-\BOOKMARK [1][-]{section.5.1}{Computerspiele}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.2}{Lernverfahren}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.3}{Alternative Lernverfahren}{chapter.5}% 42
-\BOOKMARK [0][-]{chapter.6}{Validierung}{}% 43
-\BOOKMARK [1][-]{section.6.1}{Messbare Testkriterien}{chapter.6}% 44
-\BOOKMARK [1][-]{section.6.2}{Modultests}{chapter.6}% 45
-\BOOKMARK [2][-]{subsection.6.2.1}{TicTacToe}{section.6.2}% 46
-\BOOKMARK [2][-]{subsection.6.2.2}{Reversi}{section.6.2}% 47
-\BOOKMARK [2][-]{subsection.6.2.3}{Lernverfahren 1}{section.6.2}% 48
-\BOOKMARK [2][-]{subsection.6.2.4}{Lernverfahren 2}{section.6.2}% 49
-\BOOKMARK [2][-]{subsection.6.2.5}{Persistenz}{section.6.2}% 50
-\BOOKMARK [1][-]{section.6.3}{Systemtest}{chapter.6}% 51
-\BOOKMARK [0][-]{chapter.7}{Auswertung}{}% 52
-\BOOKMARK [1][-]{section.7.1}{Belastbarkeit und Grenzen der Lernverfahren}{chapter.7}% 53
-\BOOKMARK [1][-]{section.7.2}{Optimale Anwendungsspiele f\374r die Lernverfahren}{chapter.7}% 54
-\BOOKMARK [1][-]{section.7.3}{Gegen\374berstellung der Lernverfahren}{chapter.7}% 55
-\BOOKMARK [1][-]{section.7.4}{Bewertung der Strategien}{chapter.7}% 56
-\BOOKMARK [1][-]{section.7.5}{Menschlicher oder mechanischer Trainer?}{chapter.7}% 57
-\BOOKMARK [0][-]{appendix.A}{I am an appendix!}{}% 58
-\BOOKMARK [1][-]{section.A.1}{Section in appendix!}{appendix.A}% 59
-\BOOKMARK [0][-]{appendix.B}{Another appendix? What the heck?}{}% 60
-\BOOKMARK [1][-]{section.B.1}{Section in appendix!}{appendix.B}% 61
+\BOOKMARK [2][-]{subsection.4.1.3}{Lernen mit Strategieverbesserung}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.4}{Lernen ohne Strategie}{section.4.1}% 32
+\BOOKMARK [2][-]{subsection.4.1.5}{Benutzerschnittstellen}{section.4.1}% 33
+\BOOKMARK [1][-]{section.4.2}{Reversi}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.3}{Lernverfahren}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.3.1}{Analyse und Auswahl der lernf\344higen Algorithmen}{section.4.3}% 36
+\BOOKMARK [2][-]{subsection.4.3.2}{Anwendung der Algorithmen auf Computerspiele}{section.4.3}% 37
+\BOOKMARK [2][-]{subsection.4.3.3}{Konzeptuelles Training der Algorithmen}{section.4.3}% 38
+\BOOKMARK [2][-]{subsection.4.3.4}{Persistenz der Trainingsdaten}{section.4.3}% 39
+\BOOKMARK [0][-]{chapter.5}{Implementierung}{}% 40
+\BOOKMARK [1][-]{section.5.1}{Computerspiele}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.2}{Lernverfahren}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.3}{Alternative Lernverfahren}{chapter.5}% 43
+\BOOKMARK [0][-]{chapter.6}{Validierung}{}% 44
+\BOOKMARK [1][-]{section.6.1}{Messbare Testkriterien}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.2}{Modultests}{chapter.6}% 46
+\BOOKMARK [2][-]{subsection.6.2.1}{TicTacToe}{section.6.2}% 47
+\BOOKMARK [2][-]{subsection.6.2.2}{Reversi}{section.6.2}% 48
+\BOOKMARK [2][-]{subsection.6.2.3}{Lernverfahren 1}{section.6.2}% 49
+\BOOKMARK [2][-]{subsection.6.2.4}{Lernverfahren 2}{section.6.2}% 50
+\BOOKMARK [2][-]{subsection.6.2.5}{Persistenz}{section.6.2}% 51
+\BOOKMARK [1][-]{section.6.3}{Systemtest}{chapter.6}% 52
+\BOOKMARK [0][-]{chapter.7}{Auswertung}{}% 53
+\BOOKMARK [1][-]{section.7.1}{Belastbarkeit und Grenzen der Lernverfahren}{chapter.7}% 54
+\BOOKMARK [1][-]{section.7.2}{Optimale Anwendungsspiele f\374r die Lernverfahren}{chapter.7}% 55
+\BOOKMARK [1][-]{section.7.3}{Gegen\374berstellung der Lernverfahren}{chapter.7}% 56
+\BOOKMARK [1][-]{section.7.4}{Bewertung der Strategien}{chapter.7}% 57
+\BOOKMARK [1][-]{section.7.5}{Menschlicher oder mechanischer Trainer?}{chapter.7}% 58
+\BOOKMARK [0][-]{appendix.A}{I am an appendix!}{}% 59
+\BOOKMARK [1][-]{section.A.1}{Section in appendix!}{appendix.A}% 60
+\BOOKMARK [0][-]{appendix.B}{Another appendix? What the heck?}{}% 61
+\BOOKMARK [1][-]{section.B.1}{Section in appendix!}{appendix.B}% 62
