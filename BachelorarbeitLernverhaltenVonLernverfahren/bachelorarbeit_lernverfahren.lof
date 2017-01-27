@@ -10,10 +10,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Veranschaulichung der vertikalen (a), horizontalen (b) und diagonalen (c, d) Siegesbedingung.}}{14}{figure.4.1}
 \contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces TicTacToe Spielbaum, eines drei mal drei Spielfeldes, der in Level f\IeC {\"u}nf terminiert.}}{15}{figure.4.2}
-\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Symmetrie Eigenschaften des vier mal vier Tic Tac Toe Spielfelds.}}{18}{figure.4.3}
-\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Strategie um die Mitte zu kontrollieren.}}{19}{figure.4.4}
-\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces TicTacToe Angriffsstrategien (aus der Sicht von Bob) und Verteidigungsstrategien (aus der Sicht von Alice).}}{19}{figure.4.5}
-\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Tic Tac Toe Spielfiguren setzen}}{20}{figure.4.6}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Symmetrie Eigenschaften des vier mal vier Tic Tac Toe Spielfelds.}}{19}{figure.4.3}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Die Indizes der einzelnen Spielfelder.}}{20}{figure.4.4}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Strategie um die Mitte zu kontrollieren.}}{21}{figure.4.5}
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces TicTacToe Angriffsstrategien (aus der Sicht von Bob) und Verteidigungsstrategien (aus der Sicht von Alice).}}{21}{figure.4.6}
+\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Tic Tac Toe Spielfiguren setzen}}{22}{figure.4.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
