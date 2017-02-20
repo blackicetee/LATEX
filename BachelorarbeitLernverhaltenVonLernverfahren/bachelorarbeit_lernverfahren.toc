@@ -38,7 +38,7 @@
 \contentsline {paragraph}{\nonumberline Das Spielfeld}{19}{section*.16}
 \contentsline {paragraph}{\nonumberline Kontrolliere die Mitte}{20}{section*.17}
 \contentsline {paragraph}{\nonumberline Verteidigung ist der beste Angriff}{22}{section*.18}
-\contentsline {paragraph}{\nonumberline Strategiezusammenfassung}{22}{section*.19}
+\contentsline {paragraph}{\nonumberline Strategieverbesserung (Value-Iteration-Algorithm)}{22}{section*.19}
 \contentsline {subsection}{\numberline {4.1.4}Lernen ohne Strategie}{23}{subsection.4.1.4}
 \contentsline {subsection}{\numberline {4.1.5}Benutzerschnittstellen}{23}{subsection.4.1.5}
 \contentsline {section}{\numberline {4.2}Reversi}{23}{section.4.2}
