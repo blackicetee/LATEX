@@ -29,6 +29,22 @@ Das Modell des optimalen Verhaltens?
 Sebastian Raschka schreibt: Ein schönes Beispiel für verstärkendes Lernen ist ein Schachcomputer. Hier bewertet der Agent nach einer Reihe von Zügen die Stellung auf dem Schachbrett(die Umgebung), und die Belohnung kann am Ende des Spiels als Sieg oder Niederlage definiert werden.\cite[27]{Raschka}
 \subsection{Bereits existierende Softwarelösungen}
 
+\myparagraph{GNU Schach}
+Das Strategiespiel Schach hat viele Ähnlichkeiten mit dem Strategiespiel Reversi und auch Ähnlichkeiten zum Spiel Tic Tac Toe, darum wird nachfolgend die  Anwendungsmöglichkeit des verstärkenden Lernens auf das Schachspiel ausführlicher behandelt. \\
+
+\myparagraph{Schachspiel Komplexität}
+Während eines Schachspiels gibt es für eine typische Stellung über 30 mögliche Züge und eine durchschnittliche Dauer von 50 Halbzügen ist noch relativ kurz. Würden wir einen Suchbaum \todo{Suchbaum?} für ein Schachspiel aufstellen wollen, dann hätte dieser Suchbaum
+
+\begin{equation}
+\sum_{d=0}^{50} 30^{d} = \frac{1 - 30^{51}}{1 - 30} = 7,4 \times 10^{73}
+\end{equation}
+
+Blattkonten. Angenommen wir hätten 10.000 Computer, von denen jeder eine Milliarde Schlussfolgerungen pro Sekunde schaffen würde und wir könnten die Arbeit ohne Verlust auf alle Rechner verteilen. Die gesamte Rechenzeit für $7,4 \times 10^{73}$ Schlussfolgerungen wäre dann $\approx 2,3 \times 10^{53}$ Jahre, was wiederum etwa $10^{43}$ mal so lange dauert wie unser Universum alt ist\cite[93 \psq]{Ertel}. \\
+
+Schach ist also äußert komplex und die Dimensionen der Aktions- und Zustandsräume sind sehr groß. Diverse Suchalgorithmen würden an dieser Komplexität scheitern, weil die Rechenzeit dieser Algorithmen exponentiell zu den Dimensionen ansteigt. 
+
+\myparagraph{Samuels Dame Spiel}
+
 \subsection{Gegenstandsbereich des Projektes abgrenzen}
 
 \subsection{Abgrenzung gegenüber der künstlichen Intelligenz}

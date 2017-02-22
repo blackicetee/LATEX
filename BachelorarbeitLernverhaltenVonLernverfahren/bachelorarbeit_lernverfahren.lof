@@ -4,19 +4,22 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Ein (partieller) Suchbaum vgl. Abbildung 5.1 \cite [208]{Russell}}}{4}{figure.2.1}
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Ein (partieller) Suchbaum vgl. Abbildung 5.1 \cite [208]{Russell}}}{5}{figure.2.1}
 \contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Ein Alpha Beta Suchbaum \cite [213]{Russell}.}}{6}{figure.2.2}
-\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Der Agent und seine Wechselwirkung mit der Umgebung}}{8}{figure.2.3}
-\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Vogelspezies Klassifikation basierend auf vier Eigenschaften}}{11}{figure.2.4}
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces TODO }}{8}{figure.2.3}
+\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Drei verschiedene Spielzugsequenzen die alle zum selben Spielzustand f\IeC {\"u}hren.}}{9}{figure.2.4}
+\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Zobrist Hashing von Spielzust\IeC {\"a}nden.}}{10}{figure.2.5}
+\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Der Agent und seine Wechselwirkung mit der Umgebung}}{12}{figure.2.6}
+\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Vogelspezies Klassifikation basierend auf vier Eigenschaften}}{15}{figure.2.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Veranschaulichung der vertikalen (a), horizontalen (b) und diagonalen (c, d) Siegesbedingung.}}{18}{figure.4.1}
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Symmetrie Eigenschaften des vier mal vier Tic Tac Toe Spielfelds.}}{21}{figure.4.2}
-\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Die Indizes der einzelnen Spielfelder.}}{22}{figure.4.3}
-\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Strategie um die Mitte zu kontrollieren.}}{23}{figure.4.4}
-\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces TicTacToe Angriffsstrategien (aus der Sicht von Bob) und Verteidigungsstrategien (aus der Sicht von Alice).}}{24}{figure.4.5}
-\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Ausgangssituation einer beginnenden Partie Reversi. Die \IeC {\"a}u\IeC {\ss }eren wei\IeC {\ss } hinterlegten Reihen in denen sich Zahlen befinden, dienen dazu die Positionen der einzelnen Spielfelder genau zu definieren. In der Ausgangsspielsituation befinden sich bereits 2 wei\IeC {\ss }e Spielsteine an den Positionen (3,4) und (4,3) und zwei schwarze Spielsteine an den Positionen (3,3) und (4,4).}}{25}{figure.4.6}
-\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Zwei m\IeC {\"o}glicherweise nicht in der Praxis auftretende Spielsituationen, die einzig verdeutlichen sollen welche Zugm\IeC {\"o}glichkeiten der Spieler mit den schwarzen Spielsteinen hat und warum nur diese Z\IeC {\"u}ge m\IeC {\"o}glich sind. Die kleinen schwarzen Punkte zeigen die Positionen an denen ein schwarzer Spielstein gesetzt werden darf. (a) Eine Spielsituation mit maximal einem m\IeC {\"o}glichen Anker. (b) Eine Spielsituation mit maximal 3 m\IeC {\"o}glichen Ankern f\IeC {\"u}r die Position (3,1).}}{26}{figure.4.7}
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Veranschaulichung der vertikalen (a), horizontalen (b) und diagonalen (c, d) Siegesbedingung.}}{21}{figure.4.1}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Symmetrie Eigenschaften des vier mal vier Tic Tac Toe Spielfelds.}}{24}{figure.4.2}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Die Indizes der einzelnen Spielfelder.}}{25}{figure.4.3}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Strategie um die Mitte zu kontrollieren.}}{26}{figure.4.4}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces TicTacToe Angriffsstrategien (aus der Sicht von Bob) und Verteidigungsstrategien (aus der Sicht von Alice).}}{27}{figure.4.5}
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Ausgangssituation einer beginnenden Partie Reversi. Die \IeC {\"a}u\IeC {\ss }eren wei\IeC {\ss } hinterlegten Reihen in denen sich Zahlen befinden, dienen dazu die Positionen der einzelnen Spielfelder genau zu definieren. In der Ausgangsspielsituation befinden sich bereits 2 wei\IeC {\ss }e Spielsteine an den Positionen (3,4) und (4,3) und zwei schwarze Spielsteine an den Positionen (3,3) und (4,4).}}{28}{figure.4.6}
+\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Zwei m\IeC {\"o}glicherweise nicht in der Praxis auftretende Spielsituationen, die einzig verdeutlichen sollen welche Zugm\IeC {\"o}glichkeiten der Spieler mit den schwarzen Spielsteinen hat und warum nur diese Z\IeC {\"u}ge m\IeC {\"o}glich sind. Die kleinen schwarzen Punkte zeigen die Positionen an denen ein schwarzer Spielstein gesetzt werden darf. (a) Eine Spielsituation mit maximal einem m\IeC {\"o}glichen Anker. (b) Eine Spielsituation mit maximal 3 m\IeC {\"o}glichen Ankern f\IeC {\"u}r die Position (3,1).}}{29}{figure.4.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
