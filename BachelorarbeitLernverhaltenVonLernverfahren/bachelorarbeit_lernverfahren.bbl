@@ -164,22 +164,28 @@
   \endentry
 
   \entry{Russell}{book}{}
-    \name{author}{1}{}{%
-      {{hash=RSJ}{%
-         family={Russell},
+    \name{author}{2}{}{%
+      {{hash=RS}{%
+         family={Russel},
          familyi={R\bibinitperiod},
-         given={Stuart\bibnamedelima J.},
-         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={Stuart},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Norvig},
+         familyi={N\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
       {Pearson}%
     }
-    \strng{namehash}{RSJ1}
-    \strng{fullhash}{RSJ1}
+    \strng{namehash}{RSNP1}
+    \strng{fullhash}{RSNP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{Rus12}
+    \field{labelalpha}{RN12}
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \field{edition}{3}

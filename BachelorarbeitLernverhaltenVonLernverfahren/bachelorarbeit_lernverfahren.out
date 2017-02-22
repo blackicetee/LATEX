@@ -7,56 +7,52 @@
 \BOOKMARK [1][-]{section.1.3}{Nutzen/Zweck des Projektes}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.4}{Zielgruppe}{chapter.1}% 8
 \BOOKMARK [0][-]{chapter.2}{Grundlagen}{}% 9
-\BOOKMARK [1][-]{section.2.1}{Verst\344rkendes Lernen\(Reinforcement Learing\)}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.1.1}{Die optimale Strategie}{section.2.1}% 11
-\BOOKMARK [2][-]{subsection.2.1.2}{Zeitliche Beschr\344nkung}{section.2.1}% 12
-\BOOKMARK [2][-]{subsection.2.1.3}{\334berwachtes vs. verst\344rkendes Lernen}{section.2.1}% 13
-\BOOKMARK [2][-]{subsection.2.1.4}{Das Strategiespiel Schach}{section.2.1}% 14
-\BOOKMARK [1][-]{section.2.2}{Spielentwicklung}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.3}{Lineare Algebra}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.4}{Heuristik}{chapter.2}% 17
-\BOOKMARK [0][-]{chapter.3}{Problemanalyse und Anforderungsdefinition}{}% 18
-\BOOKMARK [1][-]{section.3.1}{Problemanalyse}{chapter.3}% 19
-\BOOKMARK [2][-]{subsection.3.1.1}{Die Problematik}{section.3.1}% 20
-\BOOKMARK [2][-]{subsection.3.1.2}{Bereits existierende Softwarel\366sungen}{section.3.1}% 21
-\BOOKMARK [2][-]{subsection.3.1.3}{Gegenstandsbereich des Projektes abgrenzen}{section.3.1}% 22
-\BOOKMARK [2][-]{subsection.3.1.4}{Abgrenzung gegen\374ber der k\374nstlichen Intelligenz}{section.3.1}% 23
-\BOOKMARK [1][-]{section.3.2}{Anforderungsdefinition}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.2.1}{Funktionale Anforderungen}{section.3.2}% 25
-\BOOKMARK [2][-]{subsection.3.2.2}{Nicht-funktionale Anforderungen}{section.3.2}% 26
-\BOOKMARK [0][-]{chapter.4}{Modellierung und Entwurf}{}% 27
-\BOOKMARK [1][-]{section.4.1}{Tic Tac Toe}{chapter.4}% 28
-\BOOKMARK [2][-]{subsection.4.1.1}{Spielregeln}{section.4.1}% 29
-\BOOKMARK [2][-]{subsection.4.1.2}{Suchbaum}{section.4.1}% 30
-\BOOKMARK [2][-]{subsection.4.1.3}{Lernen mit Strategieverbesserung}{section.4.1}% 31
-\BOOKMARK [2][-]{subsection.4.1.4}{Lernen ohne Strategie}{section.4.1}% 32
-\BOOKMARK [2][-]{subsection.4.1.5}{Benutzerschnittstellen}{section.4.1}% 33
-\BOOKMARK [1][-]{section.4.2}{Reversi}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.3}{Lernverfahren}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.3.1}{Analyse und Auswahl der lernf\344higen Algorithmen}{section.4.3}% 36
-\BOOKMARK [2][-]{subsection.4.3.2}{Anwendung der Algorithmen auf Computerspiele}{section.4.3}% 37
-\BOOKMARK [2][-]{subsection.4.3.3}{Konzeptuelles Training der Algorithmen}{section.4.3}% 38
-\BOOKMARK [2][-]{subsection.4.3.4}{Persistenz der Trainingsdaten}{section.4.3}% 39
-\BOOKMARK [0][-]{chapter.5}{Implementierung}{}% 40
-\BOOKMARK [1][-]{section.5.1}{Computerspiele}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.2}{Lernverfahren}{chapter.5}% 42
-\BOOKMARK [1][-]{section.5.3}{Alternative Lernverfahren}{chapter.5}% 43
-\BOOKMARK [0][-]{chapter.6}{Validierung}{}% 44
-\BOOKMARK [1][-]{section.6.1}{Messbare Testkriterien}{chapter.6}% 45
-\BOOKMARK [1][-]{section.6.2}{Modultests}{chapter.6}% 46
-\BOOKMARK [2][-]{subsection.6.2.1}{TicTacToe}{section.6.2}% 47
-\BOOKMARK [2][-]{subsection.6.2.2}{Reversi}{section.6.2}% 48
-\BOOKMARK [2][-]{subsection.6.2.3}{Lernverfahren 1}{section.6.2}% 49
-\BOOKMARK [2][-]{subsection.6.2.4}{Lernverfahren 2}{section.6.2}% 50
-\BOOKMARK [2][-]{subsection.6.2.5}{Persistenz}{section.6.2}% 51
-\BOOKMARK [1][-]{section.6.3}{Systemtest}{chapter.6}% 52
-\BOOKMARK [0][-]{chapter.7}{Auswertung}{}% 53
-\BOOKMARK [1][-]{section.7.1}{Belastbarkeit und Grenzen der Lernverfahren}{chapter.7}% 54
-\BOOKMARK [1][-]{section.7.2}{Optimale Anwendungsspiele f\374r die Lernverfahren}{chapter.7}% 55
-\BOOKMARK [1][-]{section.7.3}{Gegen\374berstellung der Lernverfahren}{chapter.7}% 56
-\BOOKMARK [1][-]{section.7.4}{Bewertung der Strategien}{chapter.7}% 57
-\BOOKMARK [1][-]{section.7.5}{Menschlicher oder mechanischer Trainer?}{chapter.7}% 58
-\BOOKMARK [0][-]{appendix.A}{I am an appendix!}{}% 59
-\BOOKMARK [1][-]{section.A.1}{Section in appendix!}{appendix.A}% 60
-\BOOKMARK [0][-]{appendix.B}{Another appendix? What the heck?}{}% 61
-\BOOKMARK [1][-]{section.B.1}{Section in appendix!}{appendix.B}% 62
+\BOOKMARK [1][-]{section.2.1}{Spiele mit Gegenspieler}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.1.1}{Minimax}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.2}{Alpha-Beta-Pruning}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.3}{Transition Table}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.4}{Heuristik}{section.2.1}% 14
+\BOOKMARK [1][-]{section.2.2}{Verst\344rkendes Lernen\(Reinforcement Learing\)}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.1}{Die optimale Strategie}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.2}{Zeitliche Beschr\344nkung}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.3}{\334berwachtes vs. verst\344rkendes Lernen}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.4}{Das Strategiespiel Schach}{section.2.2}% 19
+\BOOKMARK [0][-]{chapter.3}{Problemanalyse und Anforderungsdefinition}{}% 20
+\BOOKMARK [1][-]{section.3.1}{Problemanalyse}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.1.1}{Die Problematik}{section.3.1}% 22
+\BOOKMARK [2][-]{subsection.3.1.2}{Bereits existierende Softwarel\366sungen}{section.3.1}% 23
+\BOOKMARK [2][-]{subsection.3.1.3}{Gegenstandsbereich des Projektes abgrenzen}{section.3.1}% 24
+\BOOKMARK [2][-]{subsection.3.1.4}{Abgrenzung gegen\374ber der k\374nstlichen Intelligenz}{section.3.1}% 25
+\BOOKMARK [1][-]{section.3.2}{Anforderungsdefinition}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.2.1}{Funktionale Anforderungen}{section.3.2}% 27
+\BOOKMARK [2][-]{subsection.3.2.2}{Nicht-funktionale Anforderungen}{section.3.2}% 28
+\BOOKMARK [0][-]{chapter.4}{Modellierung und Entwurf}{}% 29
+\BOOKMARK [1][-]{section.4.1}{Tic Tac Toe}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.1.1}{Lernen mit Strategieverbesserung}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.2}{Lernen ohne Strategie}{section.4.1}% 32
+\BOOKMARK [1][-]{section.4.2}{Reversi}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.2.1}{Lernen mit Strategie}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.2}{Lernen ohne Strategie}{section.4.2}% 35
+\BOOKMARK [0][-]{chapter.5}{Implementierung}{}% 36
+\BOOKMARK [1][-]{section.5.1}{Computerspiele}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.2}{Lernverfahren}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.3}{Alternative Lernverfahren}{chapter.5}% 39
+\BOOKMARK [0][-]{chapter.6}{Validierung}{}% 40
+\BOOKMARK [1][-]{section.6.1}{Messbare Testkriterien}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.2}{Modultests}{chapter.6}% 42
+\BOOKMARK [2][-]{subsection.6.2.1}{TicTacToe}{section.6.2}% 43
+\BOOKMARK [2][-]{subsection.6.2.2}{Reversi}{section.6.2}% 44
+\BOOKMARK [2][-]{subsection.6.2.3}{Lernverfahren 1}{section.6.2}% 45
+\BOOKMARK [2][-]{subsection.6.2.4}{Lernverfahren 2}{section.6.2}% 46
+\BOOKMARK [2][-]{subsection.6.2.5}{Persistenz}{section.6.2}% 47
+\BOOKMARK [1][-]{section.6.3}{Systemtest}{chapter.6}% 48
+\BOOKMARK [0][-]{chapter.7}{Auswertung}{}% 49
+\BOOKMARK [1][-]{section.7.1}{Belastbarkeit und Grenzen der Lernverfahren}{chapter.7}% 50
+\BOOKMARK [1][-]{section.7.2}{Optimale Anwendungsspiele f\374r die Lernverfahren}{chapter.7}% 51
+\BOOKMARK [1][-]{section.7.3}{Gegen\374berstellung der Lernverfahren}{chapter.7}% 52
+\BOOKMARK [1][-]{section.7.4}{Bewertung der Strategien}{chapter.7}% 53
+\BOOKMARK [1][-]{section.7.5}{Menschlicher oder mechanischer Trainer?}{chapter.7}% 54
+\BOOKMARK [0][-]{appendix.A}{I am an appendix!}{}% 55
+\BOOKMARK [1][-]{section.A.1}{Section in appendix!}{appendix.A}% 56
+\BOOKMARK [0][-]{appendix.B}{Another appendix? What the heck?}{}% 57
+\BOOKMARK [1][-]{section.B.1}{Section in appendix!}{appendix.B}% 58
