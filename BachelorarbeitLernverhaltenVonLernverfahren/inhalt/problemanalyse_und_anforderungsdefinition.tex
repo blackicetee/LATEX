@@ -3,9 +3,8 @@
 
 In diesem Kapitel: \todo{Schreibe die Einführung von Kapitel 3!}
 \todo[inline]{Grundlagen maschinelles Lernen einfügen in Kapitel 2!}
-\section{Problemanalyse}
 
-\subsection{Die Problematik}
+\section{Die Problematik}
 Welches lernfähige Verfahren ist auf die Brettspiele anwendbar? \\
 Welche Daten müssen die Brettspiele liefern, sodass die lernfähigen Verfahren diese Daten verwenden können? \\
 Wie muss das Format dieser Daten angepasst werden? \\
@@ -16,78 +15,43 @@ Kurzgefasst sollen innerhalb dieser wissenschaftlichen Abschlussarbeit lernfähi
 
 Das erste Teilproblem ist die Auswahl der lernfähigen Verfahren. Die Schwierigkeit hierbei besteht in der Kompatibilität der Verfahren zu den von den Brettspielen produzierten Daten und in der Anzahl der zur Verfügung stehenden lernfähigen Verfahren. Es existieren drei Gattungen von lernfähige Algorithmen die ihre stärken und schwächen haben und die nur auf bestimmte Daten angewendet werden können. Eine genauere Beschreibung dieser Gattungen ist im Unterabschnitt \ref{subsec:Die drei Arten des maschinellen Lernens} dieser Arbeit vorhanden. \\
 
-Das erste Teilproblem führt unmittelbar zum zweiten Teilproblem. Welche Daten können die zu implementierten Brettspiele liefern und wie sollten diese Daten strukturiert werden? Sollten Daten in Form von Eigenschaften und Zielwerten generiert werden können, dann sind überwachte lernfähige Algorithmen für Klassifizierung möglicherweise eine gute Wahl. 
+\section{Existierende Softwarelösungen}
+Wir werden in diesem Teilabschnitt kurz einige der bekanntesten Softwarelösungen vorstellen. Dabei konzentrieren wir uns besonders auf die Konzepte, die die Programmierer angewendet haben, um Starke Computergegner zu realisieren. Alle hier vorgestellten Programme haben folgendes gemeinsam: sie sind gegen sehr gut menschliche Spieler getestet worden und es sind Anwendungen für 2-Spieler Strategiespiele. Ein großer Unterschied ist, dass Samuels Damespiel deterministisch und TD Gammon nichtdeterministische Spiele als Programmgrundlage haben.
 
-Spiele für zwei Spieler wie zum Beispiel Schach, Dame, Reversi oder Go sind deterministisch, denn jede Aktion(Spielzug) führt bei gleichem Ausgangszustand immer zum gleichen Nachfolgezustand. Im Unterschied dazu ist Backgammon nichtdeterministisch, denn hier hängt der Nachfolgezustand vom Würfelergebnis ab. Diese Spiele sind alle beobachtbar, denn jeder Spieler kennt immer den kompletten Spielzustand.\cite[114]{Ertel}
+\subsection{Samuels Damespiel}
+Arthur L. Samuel schrieb 1955 ein Programm, dass Dame spielen konnte und mit einem einfachen Lernverfahren seine Parameter verbessern konnte. Sein Programm hatte dabei jedoch Zugriff auf eine große Zahl von archivierten Spielen, bei denen jeder einzelne Zug von Experten bewertet war. Damit verbesserte das Programm seine Bewertungsfunktion. Um eine noch weitere Verbesserung zu erreichen, ließ Samuel dein Programm gegen sich selbst spielen. Das Credit Assignment löste er auf einfache Weise. Für jede einzelne Stellung während eines Spiels vergleicht er die Bewertung durch die Funktion B(s) mit der durch Alpha-Beta-Pruning berechneten Bewertung und verändert B(s) entsprechend. 1961 besiegte sein Dame-Programm den viertbesten Damespieler der USA. Mit dieser bahnbrechenden Arbeit war Samuel seiner Zeit um fast dreißig Jahre voraus \cite[120\psq]{Ertel}.
 
+\subsection{TD-Gammon}
+Das TD-Lernen zusammen mit einem Backpropagation-Netz mit 40 bis 80 verdeckten Neuronen wurde sehr erfolgreich angewendet in TD-Gammon, einem Programm zum Spielen von Backgammon, programmiert vom Entwickler Gerald Tesauro im Jahr 1992. Die einzige direkte Belohnung für das Programm ist das Ergebnis am Ende eines Spiels. Eine optimierte Version des Programms mit einer 2-Züge-Vorausschau wurde mit 1,5 Millionen Spielen gegen sich selbst trainiert. Es besiegte damit Weltklassespieler und spielt so gut wie die drei besten menschlichen Spieler \cite[304]{Ertel}.  
 
+\paragraph{Sind Lernverfahren überhaupt Sinnvoll?}
 
-Beide Brettspiele werden durch das Modell des endlichen Horizonts(engl. finite-horizon model) 
-Das Modell des optimalen Verhaltens?
+\section{Anforderungen}
+\label{sec:Anforderungen}
+Die nachfolgend definierten Anforderungen bilden die Grundlage des zu programmierenden Prototypen. Sie legen fest welche Funktionalitäten der Prototyp anbieten sollte und somit definieren sie die zu realisierenden Softwareziele des Projekts. Die Fett gedruckten Wörter sind die Bezeichnungen der Anforderungen. Die Zahlen vor den Bezeichnungen sind die Identifikatoren und der anschließende Text ist eine genauere Beschreibung der Anforderungen. \\
 
+\begin{enumerate}
+\item \textbf{Programmieren des Strategiespiels Tic Tac Toe}: \\
+Das Programm soll die Tic Tac Toe Regeln anwenden, die Spielzustände sinnvoll realisieren und für Menschen lesbar darstellen können, eine Funktion beinhalten die einen Spielzug nach den Regeln durchführt und den Spielzustand dementsprechend anpasst, ein 4x4 Spielbrett mit 16 Spielfeldern bereitstellen und kein 3x3 Spielbrett wie bei dem klassischen Tic Tac Toe, den Spielzustand zurück geben können und Funktionen anbieten die einen Sieger bzw. Verlierer ermittelt. Ein beliebiger Spielzustand ist eine Repräsentation einer beliebigen Spielsteinstellung die während eines Spiels auftritt, sie beinhaltet alle sich noch auf den Spielfeldern befindenden Spielsteine, deren genaue Positionen und die Zugehörigkeit der Spielsteine zu den einzelnen Spielern.
 
-Sebastian Raschka schreibt: Ein schönes Beispiel für verstärkendes Lernen ist ein Schachcomputer. Hier bewertet der Agent nach einer Reihe von Zügen die Stellung auf dem Schachbrett(die Umgebung), und die Belohnung kann am Ende des Spiels als Sieg oder Niederlage definiert werden.\cite[27]{Raschka}
-\subsection{Bereits existierende Softwarelösungen}
-
-\myparagraph{GNU Schach}
-Das Strategiespiel Schach hat viele Ähnlichkeiten mit dem Strategiespiel Reversi und auch Ähnlichkeiten zum Spiel Tic Tac Toe, darum wird nachfolgend die  Anwendungsmöglichkeit des verstärkenden Lernens auf das Schachspiel ausführlicher behandelt. \\
-
-\myparagraph{Schachspiel Komplexität}
-Während eines Schachspiels gibt es für eine typische Stellung über 30 mögliche Züge und eine durchschnittliche Dauer von 50 Halbzügen ist noch relativ kurz. Würden wir einen Suchbaum \todo{Suchbaum?} für ein Schachspiel aufstellen wollen, dann hätte dieser Suchbaum
-
-\begin{equation}
-\sum_{d=0}^{50} 30^{d} = \frac{1 - 30^{51}}{1 - 30} = 7,4 \times 10^{73}
-\end{equation}
-
-Blattkonten. Angenommen wir hätten 10.000 Computer, von denen jeder eine Milliarde Schlussfolgerungen pro Sekunde schaffen würde und wir könnten die Arbeit ohne Verlust auf alle Rechner verteilen. Die gesamte Rechenzeit für $7,4 \times 10^{73}$ Schlussfolgerungen wäre dann $\approx 2,3 \times 10^{53}$ Jahre, was wiederum etwa $10^{43}$ mal so lange dauert wie unser Universum alt ist\cite[93 \psq]{Ertel}. \\
-
-Schach ist also äußert komplex und die Dimensionen der Aktions- und Zustandsräume sind sehr groß. Diverse Suchalgorithmen würden an dieser Komplexität scheitern, weil die Rechenzeit dieser Algorithmen exponentiell zu den Dimensionen ansteigt. 
-
-\myparagraph{Samuels Dame Spiel}
-
-\subsection{Gegenstandsbereich des Projektes abgrenzen}
-
-\subsection{Abgrenzung gegenüber der künstlichen Intelligenz}
-
-\section{Anforderungsdefinition}
-\label{sec:anforderungsdefinition}
-Innerhalb dieses Abschnittes werden die funktionalen und nicht-funktionalen Anforderungen für die Software definiert. Die funktionalen Anforderungen sollen das Verhalten der Software festlegen, sprich welche Aktionen die Software ausführen kann. In verschiedenen Softwareprojekten können sich die funktionale Anforderungen stark voneinander unterscheiden, dahingegen sind nicht-funktionale Anforderungen in verschiedenen Softwareprojekten oftmals sehr ähnlich.\\ 
-Nichtfunktionale Anforderungen beschreiben wie gut eine Software seine Leistung erbringen soll.
-%TODO definition, Belegung in der Literatur dafür geben Softwareentwicklung
-
-\subsection{Funktionale Anforderungen}
-
-Eine \ac{UI} ist eine Benutzerschnittstelle diese definiert die Interaktion zwischen dem Benutzer der Anwendung und der Anwendung. Die \ac{ID} soll die nachfolgend aufgestellten Anforderungen eindeutig identifizieren.
-
-\begin{table}
-\caption{Funktionale Anforderungen}
-\begin{tabular}{ | p{0.05\textwidth} | p{0.30\textwidth} | p{0.60\textwidth} |}
-\hline
-\ac{ID} & Titel & Beschreibung \\ \hline
-1 & Brettspiele & Es sollen zwei Brettspiele implementiert werden. \\ \hline
-2 & Brettspiel \ac{UI} &  Es soll eine Benutzersteuerung für die Brettspiele implementiert werden. \\ \hline
-3 & Gleichartigkeit der Brettspiele & Die Spielweise der Brettspiele soll hinsichtlich bestimmter Punkte gleich sein. \\ \hline
-4 & Eindeutigkeit der Brettspiele & Die Brettspiele sollen immer einen Gewinner und einen Verlierer oder ein Unentschieden hervorbringen. \\ \hline
-5 & Endlichkeit der Brettspiele & Die Brettspiele sollen immer nach einer angemessenen endlichen Anzahl von Spielzügen enden. \\ \hline
-6 & Spieleranzahl der Brettspiele & Die Brettspiele sollen genau von zwei Spielern in einer direkten Konfrontation(Eins-gegen-Eins-Situation) ausgetragen werden. \\ \hline
-7 & Lernfähige Verfahren & Es sollen zwei lernfähige Verfahren implementiert werden. Diese Verfahren sollen Strategien, wie die Brettspiele gewonnen werden können, entwickeln. \\ \hline
-8 & Training der Lernverfahren & Die lernfähigen Verfahren sollen durch einen menschlichen Spieler trainiert werden oder durch das jeweils andere Lernverfahren. \\ \hline
-9 & Wissen Speichern & Das von den Lernverfahren ermittelte Wissen(z.B. mögliche Spielzüge, Gewichtungen besserer und schlechterer Spielzüge) soll persistent gespeichert werden. \\ \hline
-\end{tabular}
-\label{tab:funktionale_anforderungen}
-\end{table}
-
-\subsection{Nicht-funktionale Anforderungen}
-
-\begin{table}
-\caption{Nichtfunktionale Anforderungen}
-\begin{tabular}{ | p{0.05\textwidth} | p{0.30\textwidth} | p{0.60\textwidth} |}
-\hline
-\ac{ID} & Titel & Beschreibung \\ \hline
-1 & Programmlogik & Die Programmlogik der Brettspiele und der lernfähigen Verfahren soll in der Programmiersprache Python geschrieben sein. \\ \hline
-2 & Testen der Programmlogik & Die Tests der Programmlogik sollen mit den, in der Standard-Bibliothek von Python enthaltenen, Modultests(Unit testing framework) durchgeführt werden. \\ \hline
-3 & Brettspielgrafik & Die Grafik der Brettspiele soll mit der Bibliothek "PyGame" implementiert werden. \\ \hline
-
-\end{tabular}
-\label{tab:funktionale_anforderungen}
-\end{table}
+\item \textbf{Programmieren des Strategiespiels Reversi}: \\
+Dieses Programm soll die gleichen Funktionalitäten anbieten wie das Tic Tac Toe Spiel, mit folgenden Ausnahmen: die Spielregeln sollen Reversi(Othello) Spielregeln sein und das Spielbrett besteht aus 8x8, also 64 Spielfeldern.
+	
+\item \textbf{Funktionstest der Strategiespiele}: \\
+Die Funktionen der programmierten Strategiespiele aus 1. und 2. sollen mit Unittests überprüft werden, um die Korrektheit der Programmlogik sicherzustellen.
+	
+\item \textbf{Heuristiken für beide Strategiespiele entwerfen}: \\
+Im Abschnitt \ref{subsec:Heuristik} Heuristik haben wir bereits eine Schach Bewertungsfunktion B(s) gesehen. Diese erhält einen Spielzustand s als Parameter und evaluiert diese Stellung hinsichtlich der in der Bewertungsfunktion enthaltenen Merkmale und den dazugehörigen Gewichtungen $a_x$. Für die beiden Strategiespiele aus Anforderung 1 und 2 sollen ebenfalls Heuristiken mit angepassten Merkmalen entworfen werden.
+	
+\item \textbf{Entwickeln eines Agenten ohne Lernen}: \\
+Der Agent soll die Konzepte aus Abschnitt \ref{sec:Spiele mit Gegner} Spiele mit Gegner anwenden. Besonders die Alpha-Beta-Suche, eine 2-Halbzüge Vorausschau und eine feste Heuristik.  Dieser Agent bekommt eine Heuristik übergeben und es ist ihm nicht erlaubt diese zu verändern bzw. die Gewichtungen der Merkmale der Heuristik. Der Agent Spielt Tic Tac Toe und Reversi ohne Lernen aber mit einer festen Stellungsbewertungsfunktion (Heuristik).
+	
+\item \textbf{Entwickeln eines Agenten der Heuristiken lernen}: \\
+Ein Agent der ebenfalls die Konzepte aus Abschnitt \ref{sec:Spiele mit Gegner} Spiele mit Gegner realisieren soll. Der Unterschied zwischen diesem Agenten und dem Agenten aus Anforderung 5 ist, dieser Agent lernt die Gewichtungen der Heuristik-Merkmale auf Basis von Erfahrung, die er beim Spielen des Strategiespiels erhält.
+	
+\item \textbf{Entwickeln eines Agenten der ohne zusätzliches Wissen lernt}: \\
+Dieser Agent unterscheidet sich stark von den Agenten die in den Anforderungen 5 und 6 definiert wurden, denn ihm wird kein zusätzliches Wissen, in Form einer Heuristik, mitgeteilt. Er soll auch keinen Minimax- oder Alpha-Beta-Suchbaum erstellen und durchsuchen. Vielmehr verfügt der Agent über eine eigene Lernstrategie (siehe Abschnitt \ref{sec:Verstärkendes Lernen} Verstärkendes Lernen), die Aktionen auswählt bis ein Spielergebnis feststeht und dann die Auswahl der Aktionen je nach Spielergebnis anpasst. Erfahrung sammelt der Agent im Spiel gegen sich selbst.
+	
+\item \textbf{Auswerten der Agentenqualität}: \\
+Die Agenten sollen gegeneinander Spielen und die Spielergebnisse sollen erfasst werden. Die Auswertung dieser Ergebnisse soll zeigen welcher Agent wie oft gegen welchen Agenten verloren, gewonnen oder unentschieden gespielt hat. 
+\end{enumerate}

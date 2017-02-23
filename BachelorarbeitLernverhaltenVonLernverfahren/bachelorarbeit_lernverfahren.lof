@@ -9,7 +9,7 @@
 \contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces TODO }}{8}{figure.2.3}
 \contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Drei verschiedene Spielzugsequenzen die alle zum selben Spielzustand f\IeC {\"u}hren.}}{9}{figure.2.4}
 \contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Zobrist Hashing von Spielzust\IeC {\"a}nden.}}{10}{figure.2.5}
-\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Der Agent und seine Wechselwirkung mit der Umgebung}}{12}{figure.2.6}
+\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Der Agent und seine Wechselwirkung mit der Umgebung. Die Darstellung des Agenten und der Umgebung wird in verschiedenen Fachb\IeC {\"u}chern, die das verst\IeC {\"a}rkenden Lernen behandeln, sehr \IeC {\"a}hnlich realisiert \cite [398]{Alpaydin} und \cite [290]{Ertel}.}}{12}{figure.2.6}
 \contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Vogelspezies Klassifikation basierend auf vier Eigenschaften}}{15}{figure.2.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
