@@ -5,15 +5,34 @@ In diesem Kapitel: \todo{Schreibe die Einführung von Kapitel 3!}
 \todo[inline]{Grundlagen maschinelles Lernen einfügen in Kapitel 2!}
 
 \section{Die Problematik}
+Das Thema der Arbeit ist \textbf{Untersuchung der Lernfähigkeit verschiedener Verfahren am Beispiel von Computerspielen}. Bevor die Lernfähigkeit der Verfahren untersucht werden kann, müssen wir die Computerspiele festlegen und analysieren. Wie bereits erwähnt werden wir die Lernfähigkeit der Verfahren am Beispiel der Strategiespiele Reversi und Tic Tac Toe untersuchen (siehe Abbildung \ref{fig:reversi_und_tictactoe}). Eine genaue Beschreibung der Spielregeln, der Siegesbedingungen und möglicher Strategien bezüglich Heuristiken, wird in Kapitel \ref{cha:Modellierung und Entwurf} Modellierung und Entwurf erfolgen. Die zentrale Frage ist: wie kann ein Programm lernen ein Computerspiel erfolgreich zu spielen? \\
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[scale = 0.6]{inhalt/abbildungen/reversi_und_tictactoe.pdf}
+  \caption{Spielsituationen (Spielzustände oder Stellungen) die während einer Partie (a) Reversi oder (b) Tic Tac Toe auftreten können.}
+  \label{fig:reversi_und_tictactoe}
+\end{figure} 
+
+Die Spieltheorie aus Abschnitt \ref{sec:Spiele mit Gegner} liefert gleich mehrere Ansätze diese Frage zu beantworten. Die kombinatorische Suche (Abschnitt \ref{subsec:Minimax} Minimax) probiert einfach alle Möglichkeiten aus und liefert die beste gefundene Möglichkeit zurück. Die reine kombinatorische Minimax Suche ist praktisch jedoch nicht anwendbar, da, wie bereits im Abschnitt Minimax beschrieben wurde, die Anzahl der Kombinationsmöglichkeiten mit der Komplexität des Ausgangsproblems exponentiell ansteigt. Selbst mit einer Kürzung von ganzen Unterbäumen des Suchbaums, ist die Rechenzeit für realistische Probleme nicht handhabbar (siehe Abschnitt \ref{subsec:Alpha-Beta-Kürzung} Alpha-Beta-Kürzung). Das Kürzen des Suchbaums kann unter Umständen mit einer iterativ vertiefenden Tiefensuche verbessert werden (siehe Abschnitt \ref{subsec:Iterativ vertiefende Tiefensuche} Iterativ vertiefende Tiefensuche). Die iterativ vertiefende Suche könnte Züge, z.B. in einer Tiefe von 2, sortieren. Vielversprechende Spielzüge könnten zu erst ausprobiert werden und das Alpha-Beta Verfahren könnte einen größeren Teil des Suchbaums kürzen. \\
+
+Eine weitere Möglichkeit die Suche nach dem optimalen Spielzug in jeder Spielsituation zu verbessern, ist das Vermeiden von Übergängen. Ein Übergang oder Transition ist ein Spielzustand der mehrfach, an verschiedenen Stellen, in einem Suchbaum auftreten kann. Übergangstabellen und Transitions sind ausführlich in Abschnitt \ref{dubsec:Übergangstabellen} Übergangstabellen erläutert. \\
+
+%Kombinieren wir eine durch Alpha-Beta-Kürzung optimierte kombinatorische Suche mit einer Übergangstabelle die das erneute expandieren bereits explorierter Spielzustände verhindert
+
+
+Die beiden wichtigsten Fragen bezüglich der Aufgabenstellung sind: 
+\begin{itemize}
+\item Welche lernfähigen Verfahren sollen Untersucht werden?
+\item Wie können diese Verfahren die Computerspiele erlernen?
+\end{itemize}
+
+
+
 Welches lernfähige Verfahren ist auf die Brettspiele anwendbar? \\
 Welche Daten müssen die Brettspiele liefern, sodass die lernfähigen Verfahren diese Daten verwenden können? \\
 Wie muss das Format dieser Daten angepasst werden? \\
 Wie wird eine Spielsituation dargestellt? \\
-
-Was genau ist die Problematik?\\
-Kurzgefasst sollen innerhalb dieser wissenschaftlichen Abschlussarbeit lernfähige Verfahren mittels Daten von Brettspielen trainiert werden. Nach Abschluss der Trainingsphase sollen die lernfähigen Verfahren bestenfalls einen menschlichen Gegenspieler schlagen können. Schlussendlich soll die Lernfähigkeit dieser Verfahren untersucht werden. Um diese größere Problematik zufriedenstellend zu bearbeiten müssen wir sie in kleinere Teilprobleme aufteilen. \\
-
-Das erste Teilproblem ist die Auswahl der lernfähigen Verfahren. Die Schwierigkeit hierbei besteht in der Kompatibilität der Verfahren zu den von den Brettspielen produzierten Daten und in der Anzahl der zur Verfügung stehenden lernfähigen Verfahren. Es existieren drei Gattungen von lernfähige Algorithmen die ihre stärken und schwächen haben und die nur auf bestimmte Daten angewendet werden können. Eine genauere Beschreibung dieser Gattungen ist im Unterabschnitt \ref{subsec:Die drei Arten des maschinellen Lernens} dieser Arbeit vorhanden. \\
 
 \section{Existierende Softwarelösungen}
 Wir werden in diesem Teilabschnitt kurz einige der bekanntesten Softwarelösungen vorstellen. Dabei konzentrieren wir uns besonders auf die Konzepte, die die Programmierer angewendet haben, um Starke Computergegner zu realisieren. Alle hier vorgestellten Programme haben folgendes gemeinsam: sie sind gegen sehr gut menschliche Spieler getestet worden und es sind Anwendungen für 2-Spieler Strategiespiele. Ein großer Unterschied ist, dass Samuels Damespiel deterministisch und TD Gammon nichtdeterministische Spiele als Programmgrundlage haben.
