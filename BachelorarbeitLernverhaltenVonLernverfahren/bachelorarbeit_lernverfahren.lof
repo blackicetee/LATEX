@@ -12,15 +12,16 @@
 \contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Der Agent und seine Wechselwirkung mit der Umgebung. Die Darstellung des Agenten und der Umgebung wird in verschiedenen Fachb\IeC {\"u}chern, die das verst\IeC {\"a}rkenden Lernen behandeln, sehr \IeC {\"a}hnlich realisiert \cite [398]{Alpaydin} und \cite [290]{Ertel}.}}{12}{figure.2.6}
 \contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Vogelspezies Klassifikation basierend auf vier Eigenschaften}}{15}{figure.2.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Spielsituationen (Spielzust\IeC {\"a}nde oder Stellungen) die w\IeC {\"a}hrend einer Partie (a) Reversi oder (b) Tic Tac Toe auftreten k\IeC {\"o}nnen.}}{18}{figure.3.1}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Spielsituationen (Spielzust\IeC {\"a}nde oder Stellungen) die w\IeC {\"a}hrend einer Partie (a) Reversi oder (b) Tic Tac Toe auftreten k\IeC {\"o}nnen.}}{17}{figure.3.1}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Die Projektproblematik.}}{19}{figure.3.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Veranschaulichung der vertikalen (a), horizontalen (b) und diagonalen (c, d) Siegesbedingung.}}{23}{figure.4.1}
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Symmetrie Eigenschaften des vier mal vier Tic Tac Toe Spielfelds.}}{26}{figure.4.2}
-\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Die Indizes der einzelnen Spielfelder.}}{27}{figure.4.3}
-\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Strategie um die Mitte zu kontrollieren.}}{28}{figure.4.4}
-\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces TicTacToe Angriffsstrategien (aus der Sicht von Bob) und Verteidigungsstrategien (aus der Sicht von Alice).}}{29}{figure.4.5}
-\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Ausgangssituation einer beginnenden Partie Reversi. Die \IeC {\"a}u\IeC {\ss }eren wei\IeC {\ss } hinterlegten Reihen in denen sich Zahlen befinden, dienen dazu die Positionen der einzelnen Spielfelder genau zu definieren. In der Ausgangsspielsituation befinden sich bereits 2 wei\IeC {\ss }e Spielsteine an den Positionen (3,4) und (4,3) und zwei schwarze Spielsteine an den Positionen (3,3) und (4,4).}}{30}{figure.4.6}
-\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Zwei m\IeC {\"o}glicherweise nicht in der Praxis auftretende Spielsituationen, die einzig verdeutlichen sollen welche Zugm\IeC {\"o}glichkeiten der Spieler mit den schwarzen Spielsteinen hat und warum nur diese Z\IeC {\"u}ge m\IeC {\"o}glich sind. Die kleinen schwarzen Punkte zeigen die Positionen an denen ein schwarzer Spielstein gesetzt werden darf. (a) Eine Spielsituation mit maximal einem m\IeC {\"o}glichen Anker. (b) Eine Spielsituation mit maximal 3 m\IeC {\"o}glichen Ankern f\IeC {\"u}r die Position (3,1).}}{31}{figure.4.7}
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Veranschaulichung der vertikalen (a), horizontalen (b) und diagonalen (c, d) Siegesbedingung.}}{25}{figure.4.1}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Symmetrie Eigenschaften des vier mal vier Tic Tac Toe Spielfelds.}}{28}{figure.4.2}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Die Indizes der einzelnen Spielfelder.}}{29}{figure.4.3}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Strategie um die Mitte zu kontrollieren.}}{30}{figure.4.4}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces TicTacToe Angriffsstrategien (aus der Sicht von Bob) und Verteidigungsstrategien (aus der Sicht von Alice).}}{31}{figure.4.5}
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Ausgangssituation einer beginnenden Partie Reversi. Die \IeC {\"a}u\IeC {\ss }eren wei\IeC {\ss } hinterlegten Reihen in denen sich Zahlen befinden, dienen dazu die Positionen der einzelnen Spielfelder genau zu definieren. In der Ausgangsspielsituation befinden sich bereits 2 wei\IeC {\ss }e Spielsteine an den Positionen (3,4) und (4,3) und zwei schwarze Spielsteine an den Positionen (3,3) und (4,4).}}{32}{figure.4.6}
+\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Zwei m\IeC {\"o}glicherweise nicht in der Praxis auftretende Spielsituationen, die einzig verdeutlichen sollen welche Zugm\IeC {\"o}glichkeiten der Spieler mit den schwarzen Spielsteinen hat und warum nur diese Z\IeC {\"u}ge m\IeC {\"o}glich sind. Die kleinen schwarzen Punkte zeigen die Positionen an denen ein schwarzer Spielstein gesetzt werden darf. (a) Eine Spielsituation mit maximal einem m\IeC {\"o}glichen Anker. (b) Eine Spielsituation mit maximal 3 m\IeC {\"o}glichen Ankern f\IeC {\"u}r die Position (3,1).}}{33}{figure.4.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

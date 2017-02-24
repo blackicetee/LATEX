@@ -9,30 +9,37 @@ Das Thema der Arbeit ist \textbf{Untersuchung der Lernfähigkeit verschiedener V
 
 \begin{figure}[!htbp]
   \centering
-  \includegraphics[scale = 0.6]{inhalt/abbildungen/reversi_und_tictactoe.pdf}
+  \includegraphics[scale = 0.8]{inhalt/abbildungen/reversi_und_tictactoe.pdf}
   \caption{Spielsituationen (Spielzustände oder Stellungen) die während einer Partie (a) Reversi oder (b) Tic Tac Toe auftreten können.}
   \label{fig:reversi_und_tictactoe}
 \end{figure} 
 
-Die Spieltheorie aus Abschnitt \ref{sec:Spiele mit Gegner} liefert gleich mehrere Ansätze diese Frage zu beantworten. Die kombinatorische Suche (Abschnitt \ref{subsec:Minimax} Minimax) probiert einfach alle Möglichkeiten aus und liefert die beste gefundene Möglichkeit zurück. Die reine kombinatorische Minimax Suche ist praktisch jedoch nicht anwendbar, da, wie bereits im Abschnitt Minimax beschrieben wurde, die Anzahl der Kombinationsmöglichkeiten mit der Komplexität des Ausgangsproblems exponentiell ansteigt. Selbst mit einer Kürzung von ganzen Unterbäumen des Suchbaums, ist die Rechenzeit für realistische Probleme nicht handhabbar (siehe Abschnitt \ref{subsec:Alpha-Beta-Kürzung} Alpha-Beta-Kürzung). Das Kürzen des Suchbaums kann unter Umständen mit einer iterativ vertiefenden Tiefensuche verbessert werden (siehe Abschnitt \ref{subsec:Iterativ vertiefende Tiefensuche} Iterativ vertiefende Tiefensuche). Die iterativ vertiefende Suche könnte Züge, z.B. in einer Tiefe von 2, sortieren. Vielversprechende Spielzüge könnten zu erst ausprobiert werden und das Alpha-Beta Verfahren könnte einen größeren Teil des Suchbaums kürzen. \\
+\paragraph{Die Spieltheorie} aus Abschnitt \ref{sec:Spiele mit Gegner} liefert gleich mehrere Ansätze diese Frage zu beantworten. Die kombinatorische Suche (Abschnitt \ref{subsec:Minimax} Minimax) probiert einfach alle Möglichkeiten aus und liefert die beste gefundene Möglichkeit zurück. Die reine kombinatorische Minimax Suche ist praktisch jedoch nicht anwendbar, da, wie bereits im Abschnitt Minimax beschrieben wurde, die Anzahl der Kombinationsmöglichkeiten mit der Komplexität des Ausgangsproblems exponentiell ansteigt. \\
 
-Eine weitere Möglichkeit die Suche nach dem optimalen Spielzug in jeder Spielsituation zu verbessern, ist das Vermeiden von Übergängen. Ein Übergang oder Transition ist ein Spielzustand der mehrfach, an verschiedenen Stellen, in einem Suchbaum auftreten kann. Übergangstabellen und Transitions sind ausführlich in Abschnitt \ref{dubsec:Übergangstabellen} Übergangstabellen erläutert. \\
+Selbst mit einer Kürzung von ganzen Unterbäumen des Suchbaums, ist die Rechenzeit für realistische Probleme nicht handhabbar (siehe Abschnitt \ref{subsec:Alpha-Beta-Kürzung} Alpha-Beta-Kürzung). Das Kürzen des Suchbaums kann unter Umständen mit einer iterativ vertiefenden Tiefensuche verbessert werden (siehe Abschnitt \ref{subsec:Iterativ vertiefende Tiefensuche} Iterativ vertiefende Tiefensuche). Die iterativ vertiefende Suche könnte Züge, z.B. in einer Tiefe von 2, sortieren. Vielversprechende Spielzüge könnten zu erst ausprobiert werden und das Alpha-Beta Verfahren könnte einen größeren Teil des Suchbaums kürzen. \\
 
-%Kombinieren wir eine durch Alpha-Beta-Kürzung optimierte kombinatorische Suche mit einer Übergangstabelle die das erneute expandieren bereits explorierter Spielzustände verhindert
+Eine weitere Möglichkeit die Suche nach dem optimalen Spielzug in jeder Spielsituation zu verbessern, ist das Vermeiden von Übergängen. Ein Übergang oder Transition ist ein Spielzustand der mehrfach, an verschiedenen Stellen, in einem Suchbaum auftreten kann. Übergangstabellen und Transitions sind ausführlich in Abschnitt \ref{subsec:Übergangstabellen} Übergangstabellen erläutert. Eine Vermeidung dieser Übergänge könnte eine weitere Rechenzeitverringerung bewirken. \\
 
+Die Heuristik oder Bewertungsfunktion ist wohl der wichtigste Leistungsfaktor aus den Verfahren der Spieltheorie (siehe Abschnitt \ref{subsec:Heuristik} Heuristik). Eine Heuristik kann jeden Knoten des Suchbaums bewerten (Nutzwert) und nicht nur die Blätter. Dies ermöglicht es die Suche nach einer bestimmten Zeitspanne oder iterierten Tiefe abzubrechen und den Spielzustand mit der besten Bewertung zurück zu geben. \\
 
-Die beiden wichtigsten Fragen bezüglich der Aufgabenstellung sind: 
-\begin{itemize}
-\item Welche lernfähigen Verfahren sollen Untersucht werden?
-\item Wie können diese Verfahren die Computerspiele erlernen?
-\end{itemize}
+Die Vorteile einer Heuristik sind die Limitierung der Zeit, die für eine Suche benötigt wird und dass das bisher beste gefundene Ergebnis zurück gegeben wird. Der große Nachteil einer Bewertungsfunktion ist, ein ermittelter Nutzwert für einen Spielzustand kann falsch sein. Die Qualität einer Heuristik ist also ausschlaggebend für die Spielstärke des Programms. Heuristiken sind zudem stark abhängig von ihrer Spielgrundlage, d.h. sowohl Reversi als auch Tic Tac Toe benötigen eigene Heuristiken, die individuell den Nutzen der Stellungen bewerten. \\
 
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[scale = 0.6]{inhalt/abbildungen/drei_agenten.pdf}
+  \caption{Die Projektproblematik.}
+  \label{fig:drei_agenten}
+\end{figure} 
 
+\paragraph{Die drei Agenten} aus Abbildung \ref{fig:drei_agenten} repräsentieren drei Programme, die mit unterschiedlichen Verfahren, die selbe Aufgabe lösen. Die Aufgabe lautet: für jeden Spielzustand der Strategiespiele Reversi und Tic Tac Toe sollen die Agenten (a), (b) und (c) einen optimalen Spielzug (eine Aktion) vorschlagen, d.h. die Agenten müssen eine optimale Strategie anwenden. Eine optimale Strategie verwendet für jeden Möglichen Spielzustand immer den bestmöglichen Spielzug. \\
 
-Welches lernfähige Verfahren ist auf die Brettspiele anwendbar? \\
-Welche Daten müssen die Brettspiele liefern, sodass die lernfähigen Verfahren diese Daten verwenden können? \\
-Wie muss das Format dieser Daten angepasst werden? \\
-Wie wird eine Spielsituation dargestellt? \\
+Agent (a) ist ein nicht lernender Agent, der Verfahren aus der Spieltheorie anwendet und dem die Bewertungsfunkionen RB(s) und TB(s) zur Verfügung stehen. RB(s) ist die Reversi Bewertungsfunktion, mit einem Reversi Spielzustand s als Eingabeparameter. TB(s) ist die Tic Tac Toe Bewertungsfunktion, mit einem Tic Tac Toe Spielzustand s als Eingabeparameter. \\
+
+Agent (b) ist ein lernender Agent, der dem Agenten (a) sehr ähnlich ist, mit dem Unterschied, dass er die Gewichtungen (Faktoren $a_x$) der Bewertungsfunktionen mittels Spielerfahrung lernt. Agent (b) spielt eine festgelegte Anzahl von Spielen z.B. gegen sich selbst und verwendet eine Aktualisierungsfunktion $\hat{V}(s,a)$. Diese Funktion wurde bereits in Abschnitt \ref{subsec:Wert-Iteration und Dynamische Programmierung} Wert-Iteration und Dynamische Programmierung behandelt. Zusammengefasst ist diese Funktion eine Iterationsvorschrift, die mit der Bellman-Rekursionsgleichung die Gewichtungen der Heuristik so lange anpasst, bis diese sich nicht weiter verändern lassen und gegen eine optimale Strategie konvergieren. \\
+
+Agent (c) ist ein lernender Agent, der im Gegensatz zu den Agenten (a) und (b) über kein Modell der Spielwelt verfügt, also ist ihm nicht bekannt in welchen Spielzustand ihn seine Aktionen führen. Er erhält auch keine Bewertungsfunktionen RB(s) und TB(s) für Spielzustände s. Alles was der Agent erhält sind zwei Menge T und R. Menge T enthält alle möglichen Aktionen die der Agent in einer bestimmten Tic Tac Toe Spielsituation ausführen darf, äquivalent dazu enthält Menge R alle möglichen Aktionen die der Agent in einer bestimmten Reversi Spielsituation ausführen darf. Nach einer bestimmten Anzahl von Aktionen erhält der Agent verspätet unterschiedliche Belohnungen für einen Sieg, eine Niederlage oder ein Unentschieden des Spiels. Der Agent verwendet das Lernverfahren $\hat{Q}$(s, a) aus Abschnitt  \ref{subsec:Q-Lernen}, um eine optimale Strategie zu lernen. \\
+
+Sind alle Agenten implementiert, können wir beginnen die Lernfähigkeit der Agenten zu vergleichen. Wie werden die beiden lernenden Agenten gegen den nicht lernenden Agenten abschneiden? Welcher Agent wird der, der am meisten gewinnt und welcher Agent wird am meisten Verlieren? Wie viel Zeit benötigen die Agenten für die Berechnung der optimalen Strategie für die beiden Strategiespiele (Training)? Diese Fragen werden in Kapitel \ref{Auswertung} Auswertung beantwortet.
 
 \section{Existierende Softwarelösungen}
 Wir werden in diesem Teilabschnitt kurz einige der bekanntesten Softwarelösungen vorstellen. Dabei konzentrieren wir uns besonders auf die Konzepte, die die Programmierer angewendet haben, um Starke Computergegner zu realisieren. Alle hier vorgestellten Programme haben folgendes gemeinsam: sie sind gegen sehr gut menschliche Spieler getestet worden und es sind Anwendungen für 2-Spieler Strategiespiele. Ein großer Unterschied ist, dass Samuels Damespiel deterministisch und TD Gammon nichtdeterministische Spiele als Programmgrundlage haben.

@@ -71,7 +71,7 @@ Kombinieren wir diese beiden uninformierten Suchverfahren miteinander und mit ei
 
 
 \subsection{Übergangstabellen}
-\label{subsection:Übergangstabellen}
+\label{subsec:Übergangstabellen}
 Eine Übergangstabelle (eng. transition table) ist eine Tabelle in der Spielsituationen mit verschiedenen Attributen gespeichert werden (vgl. \cite[215\psq]{Russell}). Übergänge sind der Grund dafür, dass der gleiche Spielzustand durch unterschiedliche Spielzugsequenzen auftritt (siehe Abbildung \ref{fig:transitionen_tictactoe}). Folgende Attribute werden in der Übergangstabelle gespeichert: der Spielzustand, die Alpha-Beta Werte, der bestmögliche Halbzug, der Nutzen und welcher Spieler gerade setzen muss. Alle Attribute beziehen sich auf den gespeicherten Spielzustand z.B. der bestmögliche berechnete Halbzug der für den gespeicherten Spielzustand möglich ist. \\
 
 \begin{figure}[!htbp]
@@ -164,8 +164,12 @@ Verstärktes Lernen umfasst die Probleme, bei denen in der Regel kein solches Tr
 
 Sehr nützlich werden diese beiden Unterstützungen der Anfangsphase des verstärkenden Lernens, sobald die Dimensionen der Umwelt oder des Agenten eine bestimmte Größe überschreiten. Eine Aktionsdimension kann sehr wenige Aktionen beinhalten zum Beispiel die vier Aktionen bewege dich nach oben, unten, rechts oder links. Roboter die dem Menschen nachempfunden sind verfügen über bis zu 50 verschiedene Motoren für die einzelnen Gelenke. Diese müssen gleichzeitig angesteuert werden, was zu einem 50-dimensionalen Zustandsraum und einem 50-dimensionalen Aktionenraum führt\cite[\acs{vgl.} 305\psq]{Ertel}. Bei solch großen Dimensionen können die Laufzeiten einiger verstärkender Lernverfahren massiv ansteigen, bis sie praktisch nicht mehr anwendbar sind. Gerade in der Anfangsphase des verstärkten Lernens kann darum ein Eingriff mittels überwachtem Lernen sehr Laufzeit schonend sein.
 
-\subsection{Wert-Iteration, lernen einer Heuristik}
+\subsection{Wert-Iteration und Dynamische Programmierung}
+\label{subsec:Wert-Iteration und Dynamische Programmierung}
+, lernen einer Heuristik
 Gewichtungen der Heuristik werden aktualisiert?
 
-\subsection{Q-Lernen, lernen ohne Modell der Welt}
+\subsection{Q-Lernen}
+\label{subsec:Q-Lernen}
+ lernen ohne Modell der Welt
 Ohne Modell der Welt heißt: der Agent weiß nicht welche Folgen seine Aktionen haben und er verfügt über keine Heuristik.

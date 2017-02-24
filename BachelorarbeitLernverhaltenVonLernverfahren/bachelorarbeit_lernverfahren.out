@@ -1,6 +1,6 @@
-\BOOKMARK [0][-]{chapter*.2}{Abk\374rzungsverzeichnis}{}% 1
-\BOOKMARK [0][-]{chapter*.3}{Abbildungsverzeichnis}{}% 2
-\BOOKMARK [0][-]{chapter*.4}{Tabellenverzeichnis}{}% 3
+\BOOKMARK [0][-]{chapter*.3}{Abk\374rzungsverzeichnis}{}% 1
+\BOOKMARK [0][-]{chapter*.4}{Abbildungsverzeichnis}{}% 2
+\BOOKMARK [0][-]{chapter*.5}{Tabellenverzeichnis}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Projektvision}{}% 4
 \BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.2}{Vorl\344ufige Zielsetzung}{chapter.1}% 6
@@ -17,8 +17,8 @@
 \BOOKMARK [2][-]{subsection.2.2.1}{Ein Agent im Labyrinth}{section.2.2}% 17
 \BOOKMARK [2][-]{subsection.2.2.2}{Mathematische Formulierung der optimalen Strategie}{section.2.2}% 18
 \BOOKMARK [2][-]{subsection.2.2.3}{\334berwachtes vs. verst\344rkendes Lernen}{section.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.4}{Wert-Iteration, lernen einer Heuristik}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.5}{Q-Lernen, lernen ohne Modell der Welt}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.4}{Wert-Iteration und Dynamische Programmierung}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.5}{Q-Lernen}{section.2.2}% 21
 \BOOKMARK [0][-]{chapter.3}{Problemanalyse und Anforderungsdefinition}{}% 22
 \BOOKMARK [1][-]{section.3.1}{Die Problematik}{chapter.3}% 23
 \BOOKMARK [1][-]{section.3.2}{Existierende Softwarel\366sungen}{chapter.3}% 24

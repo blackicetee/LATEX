@@ -1,9 +1,9 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {german}
-\contentsline {chapter}{\nonumberline Abk\IeC {\"u}rzungsverzeichnis}{iii}{chapter*.2}
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{iv}{chapter*.3}
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{v}{chapter*.4}
+\contentsline {chapter}{\nonumberline Abk\IeC {\"u}rzungsverzeichnis}{iv}{chapter*.3}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{v}{chapter*.4}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{vii}{chapter*.5}
 \contentsline {chapter}{\numberline {1}Projektvision}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Vorl\IeC {\"a}ufige Zielsetzung}{1}{section.1.2}
@@ -11,63 +11,65 @@
 \contentsline {section}{\numberline {1.4}Zielgruppe}{2}{section.1.4}
 \contentsline {chapter}{\numberline {2}Grundlagen}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Spiele mit Gegenspieler}{3}{section.2.1}
-\contentsline {paragraph}{\nonumberline Nullsummenspiele}{3}{section*.6}
+\contentsline {paragraph}{\nonumberline Nullsummenspiele}{3}{section*.7}
 \contentsline {subsection}{\numberline {2.1.1}Minimax}{4}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Alpha-Beta-K\IeC {\"u}rzung}{5}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Iterativ vertiefende Tiefensuche}{7}{subsection.2.1.3}
-\contentsline {paragraph}{\nonumberline Die Breitensuche}{7}{section*.7}
-\contentsline {paragraph}{\nonumberline Die Tiefensuche}{8}{section*.8}
-\contentsline {paragraph}{\nonumberline Anwendung}{8}{section*.9}
+\contentsline {paragraph}{\nonumberline Die Breitensuche}{7}{section*.8}
+\contentsline {paragraph}{\nonumberline Die Tiefensuche}{8}{section*.9}
+\contentsline {paragraph}{\nonumberline Anwendung}{8}{section*.10}
 \contentsline {subsection}{\numberline {2.1.4}\IeC {\"U}bergangstabellen}{8}{subsection.2.1.4}
-\contentsline {paragraph}{\nonumberline Zobrist Hash}{9}{section*.10}
+\contentsline {paragraph}{\nonumberline Zobrist Hash}{9}{section*.11}
 \contentsline {subsection}{\numberline {2.1.5}Heuristik}{10}{subsection.2.1.5}
 \contentsline {section}{\numberline {2.2}Verst\IeC {\"a}rkendes Lernen(Reinforcement Learing)}{12}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Ein Agent im Labyrinth}{13}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Mathematische Formulierung der optimalen Strategie}{14}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}\IeC {\"U}berwachtes \acs {vs.} verst\IeC {\"a}rkendes Lernen}{14}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Wert-Iteration, lernen einer Heuristik}{15}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Q-Lernen, lernen ohne Modell der Welt}{16}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.4}Wert-Iteration und Dynamische Programmierung}{15}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Q-Lernen}{16}{subsection.2.2.5}
 \contentsline {chapter}{\numberline {3}Problemanalyse und Anforderungsdefinition}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}Die Problematik}{17}{section.3.1}
-\contentsline {section}{\numberline {3.2}Existierende Softwarel\IeC {\"o}sungen}{18}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Samuels Damespiel}{19}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}TD-Gammon}{19}{subsection.3.2.2}
-\contentsline {paragraph}{\nonumberline Sind Lernverfahren \IeC {\"u}berhaupt Sinnvoll?}{19}{section*.13}
-\contentsline {section}{\numberline {3.3}Anforderungen}{19}{section.3.3}
-\contentsline {chapter}{\numberline {4}Modellierung und Entwurf}{22}{chapter.4}
-\contentsline {section}{\numberline {4.1}Tic Tac Toe}{22}{section.4.1}
-\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{22}{section*.14}
-\contentsline {paragraph}{\nonumberline Ziel des Spiels}{23}{section*.15}
-\contentsline {subsection}{\numberline {4.1.1}Lernen mit Strategieverbesserung}{24}{subsection.4.1.1}
-\contentsline {paragraph}{\nonumberline Kombination von \IeC {\"u}berwachtem und verst\IeC {\"a}rkenden Lernen}{25}{section*.16}
-\contentsline {paragraph}{\nonumberline Das Spielfeld}{26}{section*.17}
-\contentsline {paragraph}{\nonumberline Kontrolliere die Mitte}{27}{section*.18}
-\contentsline {paragraph}{\nonumberline Verteidigung ist der beste Angriff}{29}{section*.19}
-\contentsline {subsection}{\numberline {4.1.2}Lernen ohne Strategie}{30}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Reversi}{30}{section.4.2}
-\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{30}{section*.20}
-\contentsline {subsection}{\numberline {4.2.1}Lernen mit Strategie}{32}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Lernen ohne Strategie}{32}{subsection.4.2.2}
-\contentsline {chapter}{\numberline {5}Implementierung}{33}{chapter.5}
-\contentsline {section}{\numberline {5.1}Computerspiele}{33}{section.5.1}
-\contentsline {section}{\numberline {5.2}Lernverfahren}{33}{section.5.2}
-\contentsline {section}{\numberline {5.3}Alternative Lernverfahren}{33}{section.5.3}
-\contentsline {chapter}{\numberline {6}Validierung}{34}{chapter.6}
-\contentsline {section}{\numberline {6.1}Messbare Testkriterien}{34}{section.6.1}
-\contentsline {section}{\numberline {6.2}Modultests}{34}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}TicTacToe}{34}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Reversi}{34}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Lernverfahren 1}{34}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Lernverfahren 2}{34}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Persistenz}{34}{subsection.6.2.5}
-\contentsline {section}{\numberline {6.3}Systemtest}{34}{section.6.3}
-\contentsline {chapter}{\numberline {7}Auswertung}{35}{chapter.7}
-\contentsline {section}{\numberline {7.1}Belastbarkeit und Grenzen der Lernverfahren}{35}{section.7.1}
-\contentsline {section}{\numberline {7.2}Optimale Anwendungsspiele f\IeC {\"u}r die Lernverfahren}{35}{section.7.2}
-\contentsline {section}{\numberline {7.3}Gegen\IeC {\"u}berstellung der Lernverfahren}{35}{section.7.3}
-\contentsline {section}{\numberline {7.4}Bewertung der Strategien}{35}{section.7.4}
-\contentsline {section}{\numberline {7.5}Menschlicher oder mechanischer Trainer?}{35}{section.7.5}
-\contentsline {chapter}{\numberline {A}I am an appendix!}{37}{appendix.A}
-\contentsline {section}{\numberline {A.1}Section in appendix!}{37}{section.A.1}
-\contentsline {chapter}{\numberline {B}Another appendix? What the heck?}{39}{appendix.B}
-\contentsline {section}{\numberline {B.1}Section in appendix!}{39}{section.B.1}
+\contentsline {paragraph}{\nonumberline Die Spieltheorie}{18}{section*.14}
+\contentsline {paragraph}{\nonumberline Die drei Agenten}{18}{section*.15}
+\contentsline {section}{\numberline {3.2}Existierende Softwarel\IeC {\"o}sungen}{20}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Samuels Damespiel}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}TD-Gammon}{21}{subsection.3.2.2}
+\contentsline {paragraph}{\nonumberline Sind Lernverfahren \IeC {\"u}berhaupt Sinnvoll?}{21}{section*.16}
+\contentsline {section}{\numberline {3.3}Anforderungen}{21}{section.3.3}
+\contentsline {chapter}{\numberline {4}Modellierung und Entwurf}{24}{chapter.4}
+\contentsline {section}{\numberline {4.1}Tic Tac Toe}{24}{section.4.1}
+\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{24}{section*.17}
+\contentsline {paragraph}{\nonumberline Ziel des Spiels}{25}{section*.18}
+\contentsline {subsection}{\numberline {4.1.1}Lernen mit Strategieverbesserung}{26}{subsection.4.1.1}
+\contentsline {paragraph}{\nonumberline Kombination von \IeC {\"u}berwachtem und verst\IeC {\"a}rkenden Lernen}{27}{section*.19}
+\contentsline {paragraph}{\nonumberline Das Spielfeld}{28}{section*.20}
+\contentsline {paragraph}{\nonumberline Kontrolliere die Mitte}{29}{section*.21}
+\contentsline {paragraph}{\nonumberline Verteidigung ist der beste Angriff}{31}{section*.22}
+\contentsline {subsection}{\numberline {4.1.2}Lernen ohne Strategie}{32}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Reversi}{32}{section.4.2}
+\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{32}{section*.23}
+\contentsline {subsection}{\numberline {4.2.1}Lernen mit Strategie}{34}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Lernen ohne Strategie}{34}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {5}Implementierung}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Computerspiele}{35}{section.5.1}
+\contentsline {section}{\numberline {5.2}Lernverfahren}{35}{section.5.2}
+\contentsline {section}{\numberline {5.3}Alternative Lernverfahren}{35}{section.5.3}
+\contentsline {chapter}{\numberline {6}Validierung}{36}{chapter.6}
+\contentsline {section}{\numberline {6.1}Messbare Testkriterien}{36}{section.6.1}
+\contentsline {section}{\numberline {6.2}Modultests}{36}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}TicTacToe}{36}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Reversi}{36}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Lernverfahren 1}{36}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Lernverfahren 2}{36}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Persistenz}{36}{subsection.6.2.5}
+\contentsline {section}{\numberline {6.3}Systemtest}{36}{section.6.3}
+\contentsline {chapter}{\numberline {7}Auswertung}{37}{chapter.7}
+\contentsline {section}{\numberline {7.1}Belastbarkeit und Grenzen der Lernverfahren}{37}{section.7.1}
+\contentsline {section}{\numberline {7.2}Optimale Anwendungsspiele f\IeC {\"u}r die Lernverfahren}{37}{section.7.2}
+\contentsline {section}{\numberline {7.3}Gegen\IeC {\"u}berstellung der Lernverfahren}{37}{section.7.3}
+\contentsline {section}{\numberline {7.4}Bewertung der Strategien}{37}{section.7.4}
+\contentsline {section}{\numberline {7.5}Menschlicher oder mechanischer Trainer?}{37}{section.7.5}
+\contentsline {chapter}{\numberline {A}I am an appendix!}{39}{appendix.A}
+\contentsline {section}{\numberline {A.1}Section in appendix!}{39}{section.A.1}
+\contentsline {chapter}{\numberline {B}Another appendix? What the heck?}{41}{appendix.B}
+\contentsline {section}{\numberline {B.1}Section in appendix!}{41}{section.B.1}
