@@ -115,6 +115,41 @@
     \field{year}{2012}
   \endentry
 
+  \entry{KLM96}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KLP}{%
+         family={Kaelblig},
+         familyi={K\bibinitperiod},
+         given={Leslie\bibnamedelima Pack},
+         giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=LML}{%
+         family={Littman},
+         familyi={L\bibinitperiod},
+         given={Michael\bibnamedelima L.},
+         giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=MAW}{%
+         family={Moore},
+         familyi={M\bibinitperiod},
+         given={Andrew\bibnamedelima W.},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KLPLMLMAW1}
+    \strng{fullhash}{KLPLMLMAW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{KLM96}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{pages}{237\bibrangedash 285}
+    \field{title}{Reinforcement Learning: A Survey}
+    \field{volume}{4}
+    \field{journaltitle}{Jornal of Artificial Intelligence Research}
+    \field{year}{1996}
+  \endentry
+
   \entry{Löschner}{book}{}
     \name{author}{1}{}{%
       {{hash=LJ}{%

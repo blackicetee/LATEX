@@ -15,44 +15,43 @@
 \BOOKMARK [2][-]{subsection.2.1.5}{Heuristik}{section.2.1}% 15
 \BOOKMARK [1][-]{section.2.2}{Verst\344rkendes Lernen\(Reinforcement Learing\)}{chapter.2}% 16
 \BOOKMARK [2][-]{subsection.2.2.1}{Ein Agent im Labyrinth}{section.2.2}% 17
-\BOOKMARK [2][-]{subsection.2.2.2}{Mathematische Formulierung der optimalen Strategie}{section.2.2}% 18
-\BOOKMARK [2][-]{subsection.2.2.3}{\334berwachtes vs. verst\344rkendes Lernen}{section.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.4}{Markov Entscheidungsprozess}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.2}{\334berwachtes vs. verst\344rkendes Lernen}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.3}{Markov Entscheidungsprozess}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.4}{Optimale Taktiken}{section.2.2}% 20
 \BOOKMARK [2][-]{subsection.2.2.5}{Temporale Differenz Lernen}{section.2.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.6}{Verallgemeinerung beim verst\344rkenden Lernen}{section.2.2}% 22
-\BOOKMARK [0][-]{chapter.3}{Problemanalyse und Anforderungsdefinition}{}% 23
-\BOOKMARK [1][-]{section.3.1}{Die Problematik}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.2}{Existierende Softwarel\366sungen}{chapter.3}% 25
-\BOOKMARK [2][-]{subsection.3.2.1}{Samuels Damespiel}{section.3.2}% 26
-\BOOKMARK [2][-]{subsection.3.2.2}{TD-Gammon}{section.3.2}% 27
-\BOOKMARK [1][-]{section.3.3}{Anforderungen}{chapter.3}% 28
-\BOOKMARK [0][-]{chapter.4}{Modellierung und Entwurf}{}% 29
-\BOOKMARK [1][-]{section.4.1}{Tic Tac Toe}{chapter.4}% 30
-\BOOKMARK [2][-]{subsection.4.1.1}{Lernen mit Strategieverbesserung}{section.4.1}% 31
-\BOOKMARK [2][-]{subsection.4.1.2}{Lernen ohne Strategie}{section.4.1}% 32
-\BOOKMARK [1][-]{section.4.2}{Reversi}{chapter.4}% 33
-\BOOKMARK [2][-]{subsection.4.2.1}{Lernen mit Strategie}{section.4.2}% 34
-\BOOKMARK [2][-]{subsection.4.2.2}{Lernen ohne Strategie}{section.4.2}% 35
-\BOOKMARK [0][-]{chapter.5}{Implementierung}{}% 36
-\BOOKMARK [1][-]{section.5.1}{Computerspiele}{chapter.5}% 37
-\BOOKMARK [1][-]{section.5.2}{Lernverfahren}{chapter.5}% 38
-\BOOKMARK [1][-]{section.5.3}{Alternative Lernverfahren}{chapter.5}% 39
-\BOOKMARK [0][-]{chapter.6}{Validierung}{}% 40
-\BOOKMARK [1][-]{section.6.1}{Messbare Testkriterien}{chapter.6}% 41
-\BOOKMARK [1][-]{section.6.2}{Modultests}{chapter.6}% 42
-\BOOKMARK [2][-]{subsection.6.2.1}{TicTacToe}{section.6.2}% 43
-\BOOKMARK [2][-]{subsection.6.2.2}{Reversi}{section.6.2}% 44
-\BOOKMARK [2][-]{subsection.6.2.3}{Lernverfahren 1}{section.6.2}% 45
-\BOOKMARK [2][-]{subsection.6.2.4}{Lernverfahren 2}{section.6.2}% 46
-\BOOKMARK [2][-]{subsection.6.2.5}{Persistenz}{section.6.2}% 47
-\BOOKMARK [1][-]{section.6.3}{Systemtest}{chapter.6}% 48
-\BOOKMARK [0][-]{chapter.7}{Auswertung}{}% 49
-\BOOKMARK [1][-]{section.7.1}{Belastbarkeit und Grenzen der Lernverfahren}{chapter.7}% 50
-\BOOKMARK [1][-]{section.7.2}{Optimale Anwendungsspiele f\374r die Lernverfahren}{chapter.7}% 51
-\BOOKMARK [1][-]{section.7.3}{Gegen\374berstellung der Lernverfahren}{chapter.7}% 52
-\BOOKMARK [1][-]{section.7.4}{Bewertung der Strategien}{chapter.7}% 53
-\BOOKMARK [1][-]{section.7.5}{Menschlicher oder mechanischer Trainer?}{chapter.7}% 54
-\BOOKMARK [0][-]{appendix.A}{I am an appendix!}{}% 55
-\BOOKMARK [1][-]{section.A.1}{Section in appendix!}{appendix.A}% 56
-\BOOKMARK [0][-]{appendix.B}{Another appendix? What the heck?}{}% 57
-\BOOKMARK [1][-]{section.B.1}{Section in appendix!}{appendix.B}% 58
+\BOOKMARK [0][-]{chapter.3}{Problemanalyse und Anforderungsdefinition}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Die Problematik}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{Existierende Softwarel\366sungen}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.2.1}{Samuels Damespiel}{section.3.2}% 25
+\BOOKMARK [2][-]{subsection.3.2.2}{TD-Gammon}{section.3.2}% 26
+\BOOKMARK [1][-]{section.3.3}{Anforderungen}{chapter.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Modellierung und Entwurf}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Tic Tac Toe}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.1.1}{Lernen mit Strategieverbesserung}{section.4.1}% 30
+\BOOKMARK [2][-]{subsection.4.1.2}{Lernen ohne Strategie}{section.4.1}% 31
+\BOOKMARK [1][-]{section.4.2}{Reversi}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.2.1}{Lernen mit Strategie}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.2}{Lernen ohne Strategie}{section.4.2}% 34
+\BOOKMARK [0][-]{chapter.5}{Implementierung}{}% 35
+\BOOKMARK [1][-]{section.5.1}{Computerspiele}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.2}{Lernverfahren}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.3}{Alternative Lernverfahren}{chapter.5}% 38
+\BOOKMARK [0][-]{chapter.6}{Validierung}{}% 39
+\BOOKMARK [1][-]{section.6.1}{Messbare Testkriterien}{chapter.6}% 40
+\BOOKMARK [1][-]{section.6.2}{Modultests}{chapter.6}% 41
+\BOOKMARK [2][-]{subsection.6.2.1}{TicTacToe}{section.6.2}% 42
+\BOOKMARK [2][-]{subsection.6.2.2}{Reversi}{section.6.2}% 43
+\BOOKMARK [2][-]{subsection.6.2.3}{Lernverfahren 1}{section.6.2}% 44
+\BOOKMARK [2][-]{subsection.6.2.4}{Lernverfahren 2}{section.6.2}% 45
+\BOOKMARK [2][-]{subsection.6.2.5}{Persistenz}{section.6.2}% 46
+\BOOKMARK [1][-]{section.6.3}{Systemtest}{chapter.6}% 47
+\BOOKMARK [0][-]{chapter.7}{Auswertung}{}% 48
+\BOOKMARK [1][-]{section.7.1}{Belastbarkeit und Grenzen der Lernverfahren}{chapter.7}% 49
+\BOOKMARK [1][-]{section.7.2}{Optimale Anwendungsspiele f\374r die Lernverfahren}{chapter.7}% 50
+\BOOKMARK [1][-]{section.7.3}{Gegen\374berstellung der Lernverfahren}{chapter.7}% 51
+\BOOKMARK [1][-]{section.7.4}{Bewertung der Strategien}{chapter.7}% 52
+\BOOKMARK [1][-]{section.7.5}{Menschlicher oder mechanischer Trainer?}{chapter.7}% 53
+\BOOKMARK [0][-]{appendix.A}{I am an appendix!}{}% 54
+\BOOKMARK [1][-]{section.A.1}{Section in appendix!}{appendix.A}% 55
+\BOOKMARK [0][-]{appendix.B}{Another appendix? What the heck?}{}% 56
+\BOOKMARK [1][-]{section.B.1}{Section in appendix!}{appendix.B}% 57
