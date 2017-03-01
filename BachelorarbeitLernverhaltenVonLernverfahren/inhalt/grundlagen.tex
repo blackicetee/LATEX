@@ -164,12 +164,26 @@ Verstärktes Lernen umfasst die Probleme, bei denen in der Regel kein solches Tr
 
 Sehr nützlich werden diese beiden Unterstützungen der Anfangsphase des verstärkenden Lernens, sobald die Dimensionen der Umwelt oder des Agenten eine bestimmte Größe überschreiten. Eine Aktionsdimension kann sehr wenige Aktionen beinhalten zum Beispiel die vier Aktionen bewege dich nach oben, unten, rechts oder links. Roboter die dem Menschen nachempfunden sind verfügen über bis zu 50 verschiedene Motoren für die einzelnen Gelenke. Diese müssen gleichzeitig angesteuert werden, was zu einem 50-dimensionalen Zustandsraum und einem 50-dimensionalen Aktionenraum führt\cite[\acs{vgl.} 305\psq]{Ertel}. Bei solch großen Dimensionen können die Laufzeiten einiger verstärkender Lernverfahren massiv ansteigen, bis sie praktisch nicht mehr anwendbar sind. Gerade in der Anfangsphase des verstärkten Lernens kann darum ein Eingriff mittels überwachtem Lernen sehr Laufzeit schonend sein.
 
-\subsection{Wert-Iteration und Dynamische Programmierung}
-\label{subsec:Wert-Iteration und Dynamische Programmierung}
+\subsection{Markov Entscheidungsprozess}
+\label{subsec:Markov Entscheidungsprozess}
+Der Markov Entscheidungsprozess (MEP) oder MDP (engl. Markov decision process) nach Russell und Norvig \cite[752 \psqq]{Russell} ist ein sequentielles Entscheidungsproblem für eine vollständige beobachtbare, stochastische Umgebung mit einem Markov-Übergangsmodell und additiven Gewinnen. Der MEP besteht aus einem Satz von Zuständen (mit einem Anfangszustand $s_0$), einem Satz Actions(s) von Aktionen in jedem Zustand, einem Übergangsmodell P(s'|s, a) und einer Gewinnfunktion R(s). 
+
+\paragraph{Ein sequentielles Entscheidungsproblem} ist ein wichtiges Anwendungsgebiet des verstärkenden Lernens. Bei diesen Problemen ist dem Agenten der direkte Nutzen des Aktionsergebnisses nicht bekannt. Erst nach einer Folge von Aktionen wird dem Agenten eine Belohnung zugeteilt, z.B. ein Agent der das Schachspielen lernen soll, erhält keine direkte Belohnung nach den einzelnen Zügen. Erst am Ende einer Partie, wenn der König geschlagen ist, wird dem Agenten eine positive Verstärkung für einen Sieg oder eine negative Verstärkung für eine Niederlage zugeteilt.
+
+\paragraph{Vollständig beobachtbare} Spiele sind z.B. Schach, Reversi, Tic Tac Toe, 4-Gewinnt und Dame, denn jeder Spieler kennt immer den kompletten Spielzustand. Vollständig beobachtbare Spiele werden auch als Spiele mit vollständiger Information bezeichnet. Viele Kartenspiele wie zum Beispiel Skat, sind nur teilweise beobachtbar, denn der Spieler kennt die Karten des Gegners nicht oder nur teilweise \cite[114]{Ertel}.
+
+\paragraph{Ein stochastischer Übergang} ist nur in einer nicht deterministischen Umgebung möglich. Reversi, Tic Tac Toe und Schach sind deterministische Strategiespiele, d.h. jeder Nachfolgezustand ist eindeutig definiert, eine Aktionssequenz führt also immer zum selben Ergebnis. Backgammon ist ein nichtdeterministisches Strategiespiel, in diesem werden stochastische Übergänge durch ein Würfelergebnis bestimmt, es ist also vorher nicht eindeutig welcher Nachfolgezustand durch eine Aktion eintreten wird.
+
+\paragraph{Das Übergangsmodell} beschreibt das Ergebnis jeder Aktion in jedem Zustand. Ist das Ergebnis stochastisch, bezeichnet P(s'|s, a) die Wahrscheinlichkeit, den Zustand s' zu erreichen, wenn die Aktion a im Zustand s ausgeführt wird. Handelt es sich um einen Markov-Übergang, dann ist die Wahrscheinlichkeit s' von s zu erreichen, nur von s abhängig und nicht vom Verlauf der vorherigen Zustände. Ganz ähnlich definiert Wolfgang Ertel die Markov-Entscheidungsprozesse \cite[291]{Ertel}. Seine Agenten bzw. die Strategien der Agenten verwenden für die Bestimmung des nächsten Zustandes $s_{t+1}$ nur Informationen über den aktuellen Zustand $s_t$ und nicht über die Vorgeschichte. Dies ist gerechtfertigt, wenn die Belohnung einer Aktion nur von aktuellem Zustand und aktueller Aktion abhängt.
+
+\paragraph{Additive Gewinne} nach Russell und Norvig \cite[756]{Russell} oder das Modell des endlichen Horizonts %\cite[250]{Kaelblig, Littman and Moore} 
+
+\subsection{Temporale Differenz Lernen}
+\label{subsec:Temporale Differenz Lernen}
+Das temporale Differenz Lernen auch TD-Lernen 
 , lernen einer Heuristik
 Gewichtungen der Heuristik werden aktualisiert?
 
-\subsection{Q-Lernen}
-\label{subsec:Q-Lernen}
- lernen ohne Modell der Welt
-Ohne Modell der Welt heißt: der Agent weiß nicht welche Folgen seine Aktionen haben und er verfügt über keine Heuristik.
+\subsection{Verallgemeinerung beim verstärkenden Lernen}
+\label{subsec:Verallgemeinerung}
+
