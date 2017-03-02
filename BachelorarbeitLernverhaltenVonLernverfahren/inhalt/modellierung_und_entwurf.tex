@@ -114,10 +114,39 @@ Der Anker in Abbildung \ref{fig:zuege_schwarz_reversi} ist der schwarze Spielste
 \end{figure}
 
 
-\subsection{Lernen mit Strategie}
+\section{Tic Tac Toe Heuristik}
 
-\subsection{Lernen ohne Strategie}
+\section{Reversi Heuristik}
+
+\section{Die Strategiespielumgebungen Tic Tac Toe und Reversi}
+
+\myparagraph{getPossibleActions()}
+Berechnen eine Liste von Positionskoordinaten in der Form: 
+
+\begin{equation*}
+[Tupel(X_a Koordinate, Y_b Koordinate), ...].
+\end{equation*}
+
+Diese Koordinaten geben die Spielfelder an, welche in einem korrekten Spielzug, von dem aktuellen Spieler, belegt werden können. Aus dieser Liste von Aktionen wählt der Spieler oder der Agent eine mögliche Aktion aus.\\
+
+\section{Agent des Zufalls}
+Der Agent des Zufalls ist der womöglich schlechteste Spieler. Seine Entscheidungen werden durch Suchverfahren, Heuristiken oder Lernverfahren beeinflusst. Theoretisch sollte dieser Agent im Vergleich zu den anderen Agenten am meisten verlieren und am wenigsten gewinnen, denn er wird Strategielos eine zufällige Aktion aus einer Menge von möglichen Aktionen in einem Spielzustand auswählen. Die Menge von möglichen Aktionen wird von den Spielumgebungen Tic Tac Toe und Reversi bereitgestellt (siehe Funktion getPossibleActions()). Der Zufallsagent selbst benötigt lediglich eine Funktion:\\
+
+\myparagraph{getRandomAction(possibleActionList).}
+Diese erhält eine Liste von möglichen Aktionen und liefert eine zufällig ausgewählte Aktion aus dieser Liste zurück.
+
+\section{Agent ohne Lernen}
+Der Agent ohne Lernen bedient sich diverser Spieltheoretischer Verfahren aus dem Grundlagenkapitel \ref{sec:Spiele mit Gegner} Spiele mit Gegner. Auf der Basis des alpha-beta gekürzten Minimax Suchbaumverfahrens versucht der Agent bis zu einer festgelegten Suchtiefe ein optimales Ergebnis zu finden. Die festgelegte Suchtiefe wurde aus dem Abschnitt \ref{subsec:Iterativ vertiefende Tiefensuche} Iterativ vertiefende Tiefensuche in den Algorithmus des nicht lernenden Agenten übernommen. Diese maximale Suchtiefe begrenzt die Rechenzeit des Agenten, sodass der Agent beim explorieren und expandieren des Suchbaums irgendwann abbricht und das bisher beste gefundene Ergebnis zurück gibt. \\
+
+Diese Rechenzeitverbesserung ist nur durch die Verwendung einer Heuristik möglich. Wie bereits in Abschnitt \ref{subsec:Heuristik} Heuristik erklärt, ermöglicht es die Heuristik oder Bewertungsfunktion auch nicht Blattknoten des Suchbaums zu evaluieren, sprich den Nutzen von nicht Endzuständen und Endzuständen zu berechnen. Die Qualität der Heuristik ist ausschlaggebend für die Qualität (Spielstärke) dieses nicht lernenden Agenten. Der nicht lernende Agent hat keine Möglichkeit diese Heuristik anzupassen. Dahingegen kann der Agent mit TD-Lernen die Parameter der Ausgangsheuristik, anhand seiner Spielerfahrung, anpassen. \\
+
+Der Agent ohne Lernen bietet folgende Funktionalitäten:\\
+
+\myparagraph{getStrategicAction(gameState)}
 
 
+\section{Agent mit TD-Lernen}
+
+\section{Agent mit Q-Lernen}
 
 

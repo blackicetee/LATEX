@@ -30,28 +30,35 @@
 \BOOKMARK [2][-]{subsection.4.1.1}{Lernen mit Strategieverbesserung}{section.4.1}% 30
 \BOOKMARK [2][-]{subsection.4.1.2}{Lernen ohne Strategie}{section.4.1}% 31
 \BOOKMARK [1][-]{section.4.2}{Reversi}{chapter.4}% 32
-\BOOKMARK [2][-]{subsection.4.2.1}{Lernen mit Strategie}{section.4.2}% 33
-\BOOKMARK [2][-]{subsection.4.2.2}{Lernen ohne Strategie}{section.4.2}% 34
-\BOOKMARK [0][-]{chapter.5}{Implementierung}{}% 35
-\BOOKMARK [1][-]{section.5.1}{Computerspiele}{chapter.5}% 36
-\BOOKMARK [1][-]{section.5.2}{Lernverfahren}{chapter.5}% 37
-\BOOKMARK [1][-]{section.5.3}{Alternative Lernverfahren}{chapter.5}% 38
-\BOOKMARK [0][-]{chapter.6}{Validierung}{}% 39
-\BOOKMARK [1][-]{section.6.1}{Messbare Testkriterien}{chapter.6}% 40
-\BOOKMARK [1][-]{section.6.2}{Modultests}{chapter.6}% 41
-\BOOKMARK [2][-]{subsection.6.2.1}{TicTacToe}{section.6.2}% 42
-\BOOKMARK [2][-]{subsection.6.2.2}{Reversi}{section.6.2}% 43
-\BOOKMARK [2][-]{subsection.6.2.3}{Lernverfahren 1}{section.6.2}% 44
-\BOOKMARK [2][-]{subsection.6.2.4}{Lernverfahren 2}{section.6.2}% 45
-\BOOKMARK [2][-]{subsection.6.2.5}{Persistenz}{section.6.2}% 46
-\BOOKMARK [1][-]{section.6.3}{Systemtest}{chapter.6}% 47
-\BOOKMARK [0][-]{chapter.7}{Auswertung}{}% 48
-\BOOKMARK [1][-]{section.7.1}{Belastbarkeit und Grenzen der Lernverfahren}{chapter.7}% 49
-\BOOKMARK [1][-]{section.7.2}{Optimale Anwendungsspiele f\374r die Lernverfahren}{chapter.7}% 50
-\BOOKMARK [1][-]{section.7.3}{Gegen\374berstellung der Lernverfahren}{chapter.7}% 51
-\BOOKMARK [1][-]{section.7.4}{Bewertung der Strategien}{chapter.7}% 52
-\BOOKMARK [1][-]{section.7.5}{Menschlicher oder mechanischer Trainer?}{chapter.7}% 53
-\BOOKMARK [0][-]{appendix.A}{I am an appendix!}{}% 54
-\BOOKMARK [1][-]{section.A.1}{Section in appendix!}{appendix.A}% 55
-\BOOKMARK [0][-]{appendix.B}{Another appendix? What the heck?}{}% 56
-\BOOKMARK [1][-]{section.B.1}{Section in appendix!}{appendix.B}% 57
+\BOOKMARK [1][-]{section.4.3}{Tic Tac Toe Heuristik}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.4}{Reversi Heuristik}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.5}{Die Strategiespielumgebungen Tic Tac Toe und Reversi}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.6}{Agent des Zufalls}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.7}{Agent ohne Lernen}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.8}{Agent mit TD-Lernen}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.9}{Agent mit Q-Lernen}{chapter.4}% 39
+\BOOKMARK [0][-]{chapter.5}{Implementierung}{}% 40
+\BOOKMARK [1][-]{section.5.1}{Tic Tac Toe}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.2}{Reversi}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.3}{Suchbaumverfahren}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.4}{Heuristiken}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.5}{TD-Lernen}{chapter.5}% 45
+\BOOKMARK [0][-]{chapter.6}{Validierung}{}% 46
+\BOOKMARK [1][-]{section.6.1}{Messbare Testkriterien}{chapter.6}% 47
+\BOOKMARK [1][-]{section.6.2}{Modultests}{chapter.6}% 48
+\BOOKMARK [2][-]{subsection.6.2.1}{TicTacToe}{section.6.2}% 49
+\BOOKMARK [2][-]{subsection.6.2.2}{Reversi}{section.6.2}% 50
+\BOOKMARK [2][-]{subsection.6.2.3}{Lernverfahren 1}{section.6.2}% 51
+\BOOKMARK [2][-]{subsection.6.2.4}{Lernverfahren 2}{section.6.2}% 52
+\BOOKMARK [2][-]{subsection.6.2.5}{Persistenz}{section.6.2}% 53
+\BOOKMARK [1][-]{section.6.3}{Systemtest}{chapter.6}% 54
+\BOOKMARK [0][-]{chapter.7}{Auswertung}{}% 55
+\BOOKMARK [1][-]{section.7.1}{Belastbarkeit und Grenzen der Lernverfahren}{chapter.7}% 56
+\BOOKMARK [1][-]{section.7.2}{Optimale Anwendungsspiele f\374r die Lernverfahren}{chapter.7}% 57
+\BOOKMARK [1][-]{section.7.3}{Gegen\374berstellung der Lernverfahren}{chapter.7}% 58
+\BOOKMARK [1][-]{section.7.4}{Bewertung der Strategien}{chapter.7}% 59
+\BOOKMARK [1][-]{section.7.5}{Menschlicher oder mechanischer Trainer?}{chapter.7}% 60
+\BOOKMARK [0][-]{appendix.A}{I am an appendix!}{}% 61
+\BOOKMARK [1][-]{section.A.1}{Section in appendix!}{appendix.A}% 62
+\BOOKMARK [0][-]{appendix.B}{Another appendix? What the heck?}{}% 63
+\BOOKMARK [1][-]{section.B.1}{Section in appendix!}{appendix.B}% 64
