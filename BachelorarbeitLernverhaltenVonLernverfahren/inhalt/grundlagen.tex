@@ -188,6 +188,7 @@ Halten wir fest: die Nutzen einer gegebenen Zustandsfolge sind die Summe der ver
 \paragraph{Anwendung des MEP} auf Reversi und Tic Tac Toe. Beide Strategiespiele sind sequentielle Entscheidungsprobleme, denn die einzelnen Züge werden nicht direkt Belohnt, erst am Spielende wird ein Gewinner und ein Verlierer oder ein Unentschieden verkündet und der Agent erhält eine verspätete Belohnung die er auf die Spielzugsequenz aufteilen muss (siehe nächster Abschnitt \ref{subsec:Temporale Differenz Lernen}). Wie bereits erwähnt sind die beiden Strategiespiele vollständig beobachtbar und nicht stochastisch, somit sind sie deterministisch. Ein Übergangsmodell für die Wahrscheinlichkeiten der Zustandsübergänge ist für Reversi und Tic Tac Toe nicht sinnvoll, da beide Spiele nicht vom Zufall abhängen und für jede Aktion in jedem Zustand nur ein einziger Zustandsübergang möglich ist. Wir werden in dieser Arbeit ausschließlich additive Gewinne für Reversi und Tic Tac Toe verwenden, da diese nach einer endlichen Anzahl von Aktionen immer in einem Endzustand terminieren. 
 
 \subsection{Optimale Taktiken}
+\label{subsec:Optimale Taktiken}
 Nach Russell und Norvig \cite[757\psq]{Russell} beeinflusst eine Taktik oder Strategie das Verhalten des Agenten, d.h. sie empfiehlt welche Aktion der Agent in jedem Zustand ausführen soll. Aus Tradition wird beim verstärkenden Lernen eine Taktik mit dem Symbol $\pi$ gekennzeichnet. Die Abbildung der Zustände auf Aktionen ist folgendermaßen definiert $\pi : S \rightarrow A$ oder $\pi(s) = a$. Abhängig von den Dimensionen der Umgebung existieren unterschiedlich viele Taktiken. Eine optimale Taktik wird bestimmt durch den erwarteten Nutzen bei Ausführung der Taktik $\pi$ beginnend in einem Startzustand s:\\
 
 \begin{equation}
@@ -207,14 +208,14 @@ Mit diesen Definitionen ist der wahre Nutzen eines Zustands einfach $U^{\pi^*}(s
 
 \subsection{Temporale Differenz Lernen}
 \label{subsec:Temporale Differenz Lernen}
-Bei dieser Lernmethode werden die Nutzen der beobachteten Zustände an die beobachteten Übergänge angepasst, sodass sie mit den Bedingungsgleichungen (siehe Bellman-Gleichung) übereinstimmen. Allgemeiner können wir sagen, wenn ein Übergang vom Zustand s in den Zustand s' stattfindet, wenden wir die folgende Aktualisierung mit $U^\pi(s)$ an:
+Bei dieser Lernmethode werden die Nutzen der beobachteten Zustände an die beobachteten Übergänge angepasst, sodass sie mit den Bedingungsgleichungen (siehe Bellman-Gleichung) übereinstimmen. Allgemeiner können wir sagen, wenn ein Übergang vom Zustand s in den Zustand s' stattfindet, wenden wir die folgende Aktualisierung mit $U^\pi(s)$ an \cite[966\psq]{Russell}:
 
 \begin{equation}
 \label{eq:Aktualisierung temporale Differenz}
 U^\pi(s) \leftarrow U^\pi(s) + \alpha(R(s) + \gamma U^\pi(s') - U^\pi(s)).
 \end{equation}
 
-Hier ist $\alpha$ der Lernratenparameter. Weil diese Aktualisierungsregel die Differenz der Nutzen aufeinanderfolgender Zustände verwendet, wird sie auch häufig als TD-Gleichung (Temporale Differenz) bezeichnet \cite[966\psq]{Russell}. Der Lernratenparameter $\alpha$ gibt an, wie stark neue Nutzwerte die derzeitige Bewertungsfunktion anpassen können. 
+Hier ist $\alpha$ der Lernratenparameter. Weil diese Aktualisierungsregel die Differenz der Nutzen aufeinanderfolgender Zustände verwendet, wird sie auch häufig als TD-Gleichung (Temporale Differenz) bezeichnet. Der Lernratenparameter $\alpha$ gibt an, wie stark neue Nutzwerte die derzeitige Bewertungsfunktion anpassen können. 
 
 \paragraph{Die Bellman-Gleichung} für Nutzen, nach Russell und Norvig \cite[759]{Russell}. Wir haben bisher festgestellt, dass, der Nutzen in einem Zustand die erwartete Summe von verminderten Gewinnen von diesem Punkt an ist. Daraus folgt, dass es eine direkte Beziehung zwischen dem Nutzen eines Zustandes und dem Nutzen seiner Nachbarn gibt: Der Nutzen eines Zustandes ist der unmittelbare Gewinn für diesen Zustand plus dem erwarteten verminderten Gewinn des nächsten Zustandes, vorausgesetzt, der Agent wählt die optimale Aktion. Das bedeutet, der Nutzen eines Zustandes ist gegeben durch:\\
 
@@ -223,11 +224,4 @@ U(s) = R(s) + \gamma \max_{a \in A(s)} \sum_{s'} P(s'|s, a) U(s').
 \end{equation}
 
 Diese Gleichung wird als Bellman-Gleichung bezeichnet, nach Richard Bellman(1957). Die Nutzen der Zustände - durch Gleichung \ref{eq:Der erwartete Nutzen} als die erwarteten Nutzen nachfolgender Zustandsfolgen definiert - sind Lösungen der Menge der Bellman-Gleichungen.
-
-\myparagraph{Anwendung des TD-Lernens}
-
-Samuels Damespiel Abschnitt \ref{subsec:Samuels Damespiel}
-TD-Gammon Abschnitt \ref{subsec:TD-Gammon}
-
-\paragraph{Verallgemeinerung beim verstärkenden Lernen}
 

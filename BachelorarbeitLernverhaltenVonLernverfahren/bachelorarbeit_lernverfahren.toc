@@ -34,39 +34,37 @@
 \contentsline {subsection}{\numberline {2.2.4}Optimale Taktiken}{17}{subsection.2.2.4}
 \contentsline {subsection}{\numberline {2.2.5}Temporale Differenz Lernen}{18}{subsection.2.2.5}
 \contentsline {paragraph}{\nonumberline Die Bellman-Gleichung}{19}{section*.18}
-\contentsline {paragraph}{\nonumberline Anwendung des TD-Lernens}{19}{section*.19}
-\contentsline {paragraph}{\nonumberline Verallgemeinerung beim verst\IeC {\"a}rkenden Lernen}{19}{section*.20}
 \contentsline {chapter}{\numberline {3}Problemanalyse und Anforderungsdefinition}{20}{chapter.3}
 \contentsline {section}{\numberline {3.1}Die Problematik}{20}{section.3.1}
-\contentsline {paragraph}{\nonumberline Die Spieltheorie}{20}{section*.21}
-\contentsline {paragraph}{\nonumberline Die drei Agenten}{22}{section*.22}
+\contentsline {paragraph}{\nonumberline Die Spieltheorie}{20}{section*.19}
+\contentsline {paragraph}{\nonumberline Die drei Agenten}{22}{section*.20}
 \contentsline {section}{\numberline {3.2}Existierende Softwarel\IeC {\"o}sungen}{23}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Samuels Damespiel}{23}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}TD-Gammon}{24}{subsection.3.2.2}
-\contentsline {paragraph}{\nonumberline Sind Lernverfahren \IeC {\"u}berhaupt Sinnvoll?}{24}{section*.23}
+\contentsline {paragraph}{\nonumberline Sind Lernverfahren \IeC {\"u}berhaupt Sinnvoll?}{24}{section*.21}
 \contentsline {section}{\numberline {3.3}Anforderungen}{24}{section.3.3}
 \contentsline {chapter}{\numberline {4}Modellierung und Entwurf}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Tic Tac Toe}{27}{section.4.1}
-\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{27}{section*.24}
-\contentsline {paragraph}{\nonumberline Ziel des Spiels}{28}{section*.25}
+\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{27}{section*.22}
+\contentsline {paragraph}{\nonumberline Ziel des Spiels}{28}{section*.23}
 \contentsline {subsection}{\numberline {4.1.1}Lernen mit Strategieverbesserung}{29}{subsection.4.1.1}
-\contentsline {paragraph}{\nonumberline Kombination von \IeC {\"u}berwachtem und verst\IeC {\"a}rkenden Lernen}{30}{section*.26}
-\contentsline {paragraph}{\nonumberline Das Spielfeld}{31}{section*.27}
-\contentsline {paragraph}{\nonumberline Kontrolliere die Mitte}{32}{section*.28}
-\contentsline {paragraph}{\nonumberline Verteidigung ist der beste Angriff}{34}{section*.29}
+\contentsline {paragraph}{\nonumberline Kombination von \IeC {\"u}berwachtem und verst\IeC {\"a}rkenden Lernen}{30}{section*.24}
+\contentsline {paragraph}{\nonumberline Das Spielfeld}{31}{section*.25}
+\contentsline {paragraph}{\nonumberline Kontrolliere die Mitte}{32}{section*.26}
+\contentsline {paragraph}{\nonumberline Verteidigung ist der beste Angriff}{34}{section*.27}
 \contentsline {subsection}{\numberline {4.1.2}Lernen ohne Strategie}{35}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Reversi}{35}{section.4.2}
-\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{35}{section*.30}
+\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{35}{section*.28}
 \contentsline {section}{\numberline {4.3}Tic Tac Toe Heuristik}{37}{section.4.3}
 \contentsline {section}{\numberline {4.4}Reversi Heuristik}{37}{section.4.4}
 \contentsline {section}{\numberline {4.5}Die Strategiespielumgebungen Tic Tac Toe und Reversi}{37}{section.4.5}
-\contentsline {paragraph}{\nonumberline getPossibleActions()}{37}{section*.31}
+\contentsline {paragraph}{\nonumberline getPossibleActions()}{37}{section*.29}
 \contentsline {section}{\numberline {4.6}Agent des Zufalls}{37}{section.4.6}
-\contentsline {paragraph}{\nonumberline getRandomAction(possibleActionList).}{37}{section*.32}
+\contentsline {paragraph}{\nonumberline getRandomAction(possibleActionList).}{37}{section*.30}
 \contentsline {section}{\numberline {4.7}Agent ohne Lernen}{37}{section.4.7}
-\contentsline {paragraph}{\nonumberline getStrategicTicTacToeAction(ticTacToeGameState)}{38}{section*.33}
-\contentsline {paragraph}{\nonumberline getStrategicReversiAction(reversiGameState)}{38}{section*.34}
-\contentsline {paragraph}{\nonumberline Alternative Realisierung}{38}{section*.35}
+\contentsline {paragraph}{\nonumberline getStrategicTicTacToeAction(ticTacToeGameState)}{38}{section*.31}
+\contentsline {paragraph}{\nonumberline getStrategicReversiAction(reversiGameState)}{38}{section*.32}
+\contentsline {paragraph}{\nonumberline Alternative Realisierung}{38}{section*.33}
 \contentsline {section}{\numberline {4.8}Agent mit TD-Lernen}{39}{section.4.8}
 \contentsline {section}{\numberline {4.9}Agent mit Q-Lernen}{39}{section.4.9}
 \contentsline {chapter}{\numberline {5}Implementierung}{40}{chapter.5}
@@ -75,22 +73,22 @@
 \contentsline {section}{\numberline {5.3}Suchbaumverfahren}{40}{section.5.3}
 \contentsline {section}{\numberline {5.4}Heuristiken}{40}{section.5.4}
 \contentsline {section}{\numberline {5.5}TD-Q-Lernen}{40}{section.5.5}
-\contentsline {chapter}{\numberline {6}Validierung}{43}{chapter.6}
-\contentsline {section}{\numberline {6.1}Messbare Testkriterien}{43}{section.6.1}
-\contentsline {section}{\numberline {6.2}Modultests}{43}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}TicTacToe}{43}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Reversi}{43}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Lernverfahren 1}{43}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Lernverfahren 2}{43}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Persistenz}{43}{subsection.6.2.5}
-\contentsline {section}{\numberline {6.3}Systemtest}{43}{section.6.3}
-\contentsline {chapter}{\numberline {7}Auswertung}{44}{chapter.7}
-\contentsline {section}{\numberline {7.1}Belastbarkeit und Grenzen der Lernverfahren}{44}{section.7.1}
-\contentsline {section}{\numberline {7.2}Optimale Anwendungsspiele f\IeC {\"u}r die Lernverfahren}{44}{section.7.2}
-\contentsline {section}{\numberline {7.3}Gegen\IeC {\"u}berstellung der Lernverfahren}{44}{section.7.3}
-\contentsline {section}{\numberline {7.4}Bewertung der Strategien}{44}{section.7.4}
-\contentsline {section}{\numberline {7.5}Menschlicher oder mechanischer Trainer?}{44}{section.7.5}
-\contentsline {chapter}{\numberline {A}I am an appendix!}{46}{appendix.A}
-\contentsline {section}{\numberline {A.1}Section in appendix!}{46}{section.A.1}
-\contentsline {chapter}{\numberline {B}Another appendix? What the heck?}{48}{appendix.B}
-\contentsline {section}{\numberline {B.1}Section in appendix!}{48}{section.B.1}
+\contentsline {chapter}{\numberline {6}Validierung}{44}{chapter.6}
+\contentsline {section}{\numberline {6.1}Messbare Testkriterien}{44}{section.6.1}
+\contentsline {section}{\numberline {6.2}Modultests}{44}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}TicTacToe}{44}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Reversi}{44}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Lernverfahren 1}{44}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Lernverfahren 2}{44}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Persistenz}{44}{subsection.6.2.5}
+\contentsline {section}{\numberline {6.3}Systemtest}{44}{section.6.3}
+\contentsline {chapter}{\numberline {7}Auswertung}{45}{chapter.7}
+\contentsline {section}{\numberline {7.1}Belastbarkeit und Grenzen der Lernverfahren}{45}{section.7.1}
+\contentsline {section}{\numberline {7.2}Optimale Anwendungsspiele f\IeC {\"u}r die Lernverfahren}{45}{section.7.2}
+\contentsline {section}{\numberline {7.3}Gegen\IeC {\"u}berstellung der Lernverfahren}{45}{section.7.3}
+\contentsline {section}{\numberline {7.4}Bewertung der Strategien}{45}{section.7.4}
+\contentsline {section}{\numberline {7.5}Menschlicher oder mechanischer Trainer?}{45}{section.7.5}
+\contentsline {chapter}{\numberline {A}I am an appendix!}{47}{appendix.A}
+\contentsline {section}{\numberline {A.1}Section in appendix!}{47}{section.A.1}
+\contentsline {chapter}{\numberline {B}Another appendix? What the heck?}{49}{appendix.B}
+\contentsline {section}{\numberline {B.1}Section in appendix!}{49}{section.B.1}
