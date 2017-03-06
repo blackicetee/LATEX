@@ -74,23 +74,23 @@
 \contentsline {section}{\numberline {5.2}Reversi}{40}{section.5.2}
 \contentsline {section}{\numberline {5.3}Suchbaumverfahren}{40}{section.5.3}
 \contentsline {section}{\numberline {5.4}Heuristiken}{40}{section.5.4}
-\contentsline {section}{\numberline {5.5}TD-Lernen}{40}{section.5.5}
-\contentsline {chapter}{\numberline {6}Validierung}{41}{chapter.6}
-\contentsline {section}{\numberline {6.1}Messbare Testkriterien}{41}{section.6.1}
-\contentsline {section}{\numberline {6.2}Modultests}{41}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}TicTacToe}{41}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Reversi}{41}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Lernverfahren 1}{41}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Lernverfahren 2}{41}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Persistenz}{41}{subsection.6.2.5}
-\contentsline {section}{\numberline {6.3}Systemtest}{41}{section.6.3}
-\contentsline {chapter}{\numberline {7}Auswertung}{42}{chapter.7}
-\contentsline {section}{\numberline {7.1}Belastbarkeit und Grenzen der Lernverfahren}{42}{section.7.1}
-\contentsline {section}{\numberline {7.2}Optimale Anwendungsspiele f\IeC {\"u}r die Lernverfahren}{42}{section.7.2}
-\contentsline {section}{\numberline {7.3}Gegen\IeC {\"u}berstellung der Lernverfahren}{42}{section.7.3}
-\contentsline {section}{\numberline {7.4}Bewertung der Strategien}{42}{section.7.4}
-\contentsline {section}{\numberline {7.5}Menschlicher oder mechanischer Trainer?}{42}{section.7.5}
-\contentsline {chapter}{\numberline {A}I am an appendix!}{44}{appendix.A}
-\contentsline {section}{\numberline {A.1}Section in appendix!}{44}{section.A.1}
-\contentsline {chapter}{\numberline {B}Another appendix? What the heck?}{46}{appendix.B}
-\contentsline {section}{\numberline {B.1}Section in appendix!}{46}{section.B.1}
+\contentsline {section}{\numberline {5.5}TD-Q-Lernen}{40}{section.5.5}
+\contentsline {chapter}{\numberline {6}Validierung}{43}{chapter.6}
+\contentsline {section}{\numberline {6.1}Messbare Testkriterien}{43}{section.6.1}
+\contentsline {section}{\numberline {6.2}Modultests}{43}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}TicTacToe}{43}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Reversi}{43}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Lernverfahren 1}{43}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Lernverfahren 2}{43}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Persistenz}{43}{subsection.6.2.5}
+\contentsline {section}{\numberline {6.3}Systemtest}{43}{section.6.3}
+\contentsline {chapter}{\numberline {7}Auswertung}{44}{chapter.7}
+\contentsline {section}{\numberline {7.1}Belastbarkeit und Grenzen der Lernverfahren}{44}{section.7.1}
+\contentsline {section}{\numberline {7.2}Optimale Anwendungsspiele f\IeC {\"u}r die Lernverfahren}{44}{section.7.2}
+\contentsline {section}{\numberline {7.3}Gegen\IeC {\"u}berstellung der Lernverfahren}{44}{section.7.3}
+\contentsline {section}{\numberline {7.4}Bewertung der Strategien}{44}{section.7.4}
+\contentsline {section}{\numberline {7.5}Menschlicher oder mechanischer Trainer?}{44}{section.7.5}
+\contentsline {chapter}{\numberline {A}I am an appendix!}{46}{appendix.A}
+\contentsline {section}{\numberline {A.1}Section in appendix!}{46}{section.A.1}
+\contentsline {chapter}{\numberline {B}Another appendix? What the heck?}{48}{appendix.B}
+\contentsline {section}{\numberline {B.1}Section in appendix!}{48}{section.B.1}

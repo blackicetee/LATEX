@@ -42,7 +42,7 @@
 \BOOKMARK [1][-]{section.5.2}{Reversi}{chapter.5}% 42
 \BOOKMARK [1][-]{section.5.3}{Suchbaumverfahren}{chapter.5}% 43
 \BOOKMARK [1][-]{section.5.4}{Heuristiken}{chapter.5}% 44
-\BOOKMARK [1][-]{section.5.5}{TD-Lernen}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.5}{TD-Q-Lernen}{chapter.5}% 45
 \BOOKMARK [0][-]{chapter.6}{Validierung}{}% 46
 \BOOKMARK [1][-]{section.6.1}{Messbare Testkriterien}{chapter.6}% 47
 \BOOKMARK [1][-]{section.6.2}{Modultests}{chapter.6}% 48
