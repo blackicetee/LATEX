@@ -18,7 +18,7 @@ Wie kann sich der Agent die Bewertungen seiner Aktionen merken und sich daran er
  
 Bei realen Problemen, wie dem lernen von Schach oder Reversi, erfolgt eine Belohnung oder Bestrafung nicht direkt nach einer Aktion des Agenten (verspätete Belohnung, eng. delayed reward). Erst nach Abschluss einer Partie, also nach einer Sequenz von bestimmten Aktionen, endet das Spiel und der Agent wird für einen Sieg belohnt oder für eine Niederlage bestraft. Eine große Schwierigkeit ist diese verspätete Belohnung am Ende einer Aktionssequenz auf die einzelnen Aktionen des Agenten aufzuteilen. Dieses Problem ist bekannt als Anerkennungszuweisung Problem (eng. credit assignment problem). \\
 
-\subsection{Überwachtes \acs{vs.} verstärkendes Lernen}
+\section{Gegenüberstellung überwachtes und verstärkendes Lernen}
 Ein überwachtes Lernverfahren wird zuerst mittels eines Trainingssets kontrolliert belehrt. Das Trainingsset für ein überwachtes Lernverfahren besteht aus verschiedenen Eigenschaften (Features) und einer den Eigenschaften zugeordneten Klasse beziehungsweise Zielvariable (Target variable). Die Qualität der Zielwerte kann mittels Testsets ermittelt werden. Ein Testset ist ein Datenset bestehend aus Eigenschaften ohne die dazugehörigen Klassen. Abbildung \ref{fig:vogel_spezies} zeigt, wie ein Trainingsset aussehen könnte\cite[8]{Harrington}. Die Spalten Gewicht, Flügelspanne, Schwimmhäute und Rückenfarbe sind die Eigenschaften und die Spalte Spezies beinhaltet die Zielvariablen. Das überwachte Lernverfahren lernt mittels des Trainingsdatensets die Beziehungen zwischen den Eigenschaften und der Klassen. \\
 
 \begin{figure}[!htbp]
@@ -44,7 +44,7 @@ Sehr nützlich werden diese beiden Unterstützungen der Anfangsphase des verstä
 
 Zusammengefasst kann das überwachte Lernen die Problematiken des verstärkenden Lernens nicht alleine lösen, aber überwachtes Lernen kann das verstärkende Lernen in bestimmten Lernphasen unterstützen und die Leistung des verstärkenden Lernens verbessern. Später in dieser Arbeit werden wir eine Anwendung betrachten in der unter anderem überwachtes Lernen eingesetzt wurde, um einen verstärkenden Lernalgorithmus zu unterstützen (Samuels Dame-Spiel).
 
-\subsection{Fallbeispiel: Ein Agent im Labyrinth}
+\section{Fallbeispiel: Ein Agent im Labyrinth}
 Nehmen wir an es existiere folgender Agent, er kann vier Aktionen ausführen, bewege dich nach oben, unten, rechts oder links und er wird in einem ihm unbekannten Labyrinth ausgesetzt. Das Labyrinth ist die Umgebung und die Zustände der Umgebung verändern sich durch die Aktionen des Agenten (Übergänge), das heißt verändert der Agent seine Position innerhalb des Labyrinths, dann wechselt er von einem Ausgangszustand s, durch eine Aktion a, in einen neuen Zustand s'. Eine Aktion a ist immer Element der Menge aller möglichen Aktionen A. Welche Aktionen in einem bestimmten Zustand s möglich sind, wird durch die Funktion A(s) oder ACTIONS(s) bestimmt. Die Menge aller möglichen Zustände einer Umgebung bezeichnen wir als S, d.h. jeder einzelne Zustand s ist Element von S.\\
 
 Der Agent lernt also, dass die Aktion 'bewege dich nach oben' den Ausgangszustand s in einen neuen Zustand s' transformiert. In einer deterministischen Umgebung wird der neue Zustand s' durch die Übergangsfunktion $\delta(s, a)$ bestimmt, sprich führt der Agent eine Aktion a in einem Zustand s aus, dann wird er definitiv den Zustand s' erreichen. Ist die Umgebung nicht deterministisch, dann verändert sich die Übergangsfunktion in P(s'|s,a), d.h. die Umgebung bestimmt die Wahrscheinlichkeit P mit der s' erreicht werden kann, wenn im Zustand s die Aktion a ausgeführt wird. Die Funktion P kann auch ein deterministisches Modell der Welt darstellen, wenn die Wahrscheinlichkeit jedes Zustandsübergangs 100\% ist, also wenn nur ein Zustandsübergang pro Zustand/Aktions-Paar möglich ist. \\
@@ -55,8 +55,8 @@ Nach einer endlichen Sequenz von Aktionen (Zustandsfolge oder Umgebungsverlauf) 
 
 Die Aktionen die der Agent bei erreichen des Ausgangs ausgeführt hat, werden im ersten Versuch und vielleicht in den Nachfolgenden Versuchen wahrscheinlich nicht optimal sein. Nicht optimal in dem Sinne, dass die Aktionssequenz nicht die kürzeste sein wird. Der Agent kann den Wert für die nummerische Belohnung maximieren, indem er eine optimale Strategie entwickelt, die den kürzesten Pfad findet. Eine optimale Strategie die für jeden möglichen Zustand eindeutig definiert, welche Aktion er durchführen muss, um so wenig wie möglich Aktionen zu verwenden und den Ausgang zu erreichen. Eine genauere Beschreibung der optimalen Strategie wird in den nachfolgenden Abschnitten gegeben.\\
 
-\subsection{Markov Entscheidungsprozess}
-\label{subsec:Markov Entscheidungsprozess}
+\section{Markov Entscheidungsprozess}
+\label{sec:Markov Entscheidungsprozess}
 Der Markov Entscheidungsprozess (MEP) oder MDP (engl. Markov decision process) nach Russell und Norvig \cite[752 \psqq]{Russell} ist ein sequentielles Entscheidungsproblem für eine vollständige beobachtbare, stochastische Umgebung mit einem Markov-Übergangsmodell und additiven Gewinnen. Der MEP besteht aus einem Satz von Zuständen (mit einem Anfangszustand $s_0$), einem Satz Actions(s) von Aktionen in jedem Zustand, einem Übergangsmodell P(s'|s, a) und einer Gewinnfunktion R(s). 
 
 \paragraph{Ein sequentielles Entscheidungsproblem} ist ein wichtiges Anwendungsgebiet des verstärkenden Lernens. Bei diesen Problemen ist dem Agenten der direkte Nutzen des Aktionsergebnisses nicht bekannt. Erst nach einer Folge von Aktionen wird dem Agenten eine Belohnung zugeteilt, z.B. ein Agent der das Schachspielen lernen soll, erhält keine direkte Belohnung nach den einzelnen Zügen. Erst am Ende einer Partie, wenn der König geschlagen ist, wird dem Agenten eine positive Verstärkung für einen Sieg oder eine negative Verstärkung für eine Niederlage zugeteilt (verspätetet Belohnung).
@@ -79,8 +79,8 @@ Halten wir fest: der Nutzen einer gegebenen Zustandsfolge ist die Summe der verm
 
 \paragraph{Anwendung des MEP} auf Reversi und Tic Tac Toe. Beide Strategiespiele sind sequentielle Entscheidungsprobleme, denn die einzelnen Züge werden nicht direkt Belohnt, erst am Spielende wird ein Gewinner und ein Verlierer oder ein Unentschieden verkündet und der Agent erhält eine verspätete Verstärkung die er auf die Spielzugsequenz aufteilen muss (siehe nachfolgender Abschnitt \ref{subsec:Temporale Differenz Lernen} Temporale Differenz Lernen). Wie bereits erwähnt sind die beiden Strategiespiele vollständig beobachtbar und nicht stochastisch, somit sind sie deterministisch. Ein stochastisches Übergangsmodell für die Wahrscheinlichkeiten der Zustandsübergänge ist für Reversi und Tic Tac Toe nicht sinnvoll, da beide Spiele nicht vom Zufall abhängen und für jede Aktion in jedem Zustand nur ein einziger Zustandsübergang möglich ist. Wir werden in dieser Arbeit ausschließlich additive Gewinne für Reversi und Tic Tac Toe verwenden, da diese nach einer endlichen Anzahl von Aktionen immer in einem Endzustand terminieren. Später klären wir noch die Frage, ob wir überhaupt ein Übergangsmodell, für die Lernverfahren benötigen, denn es existieren sowohl modellbasierte Lernverfahren (Dynamische Programmierung, speziell Wert-Iteration), als auch modellfreie Lernverfahren (TD- und Q-Lernen). 
 
-\subsection{Optimale Taktiken}
-\label{subsec:Optimale Taktiken}
+\section{Optimale Taktiken}
+\label{sec:Optimale Taktiken}
 Nach Russell und Norvig \cite[757\psq]{Russell} beeinflusst eine Taktik oder Strategie das Verhalten des Agenten, d.h. sie empfiehlt welche Aktion der Agent in jedem Zustand ausführen soll. Aus Tradition wird beim verstärkenden Lernen eine Taktik mit dem Symbol $\pi$ gekennzeichnet. Die Abbildung der Zustände auf Aktionen ist folgendermaßen definiert $\pi : S \rightarrow A$ oder $\pi(s) = a$. Abhängig von den Dimensionen der Umgebung existieren unterschiedlich viele Taktiken. Eine optimale Taktik wird bestimmt durch den erwarteten Nutzen bei Ausführung der Taktik $\pi$ beginnend in einem Startzustand s:\\
 
 \begin{equation}
@@ -98,8 +98,44 @@ Es ist möglich, dass mehrere optimale Taktiken für ein Problem existieren. Rus
 
 Mit diesen Definitionen ist der wahre Nutzen eines Zustands einfach $U^{\pi^*}(s) -$ d.h. die erwartete Summe verminderter Gewinne, wenn der Agent eine optimale Taktik ausführt. Wir schreiben dies als U(s). Russell und Norvig unterstreichen den Sachverhalt, dass die Funktionen U(s) und R(s) ganz unterschiedliche Quantitäten sind, denn R(s) gibt den ''kurzfristigen'' Gewinn, sich in s zu befinden an, wohingegen U(s) den ''langfristigen'' Gesamtgewinn ab s angibt.
 
-\subsection{Temporale Differenz Lernen}
-\label{subsec:Temporale Differenz Lernen}
+
+\section{Dynamische Programmierung und Wert-Iteration}
+Verwenden wir bereits vorhandenes Wissen über Strategien und speichern dieses in Zwischenergebnisse über Teile von Strategien, dann bezeichnen wir diese Vorgehensweise zur Lösung von Optimierungsproblemen als dynamische Programmierung. Diese Vorgehensweise wurde bereits 1957 von Richard Bellman beschrieben \cite[293]{Ertel}. Verfahren welche kein Wissen über bereits vorhandene Strategien verwendet sind z.B. Minimax-Suche, Alpha-Beta-Suche und Iterativ vertiefende Tiefensuche.\\
+
+Im vorherigen Abschnitt haben wir gezeigt (mittels der Ausführungen von Russell und Norvig), dass der Nutzen U, in einem Zustand s, unter Beachtung einer Strategie $\pi$, berechnet werden kann aus der Summe aller abgeschwächten Belohnungen, für jeden besuchten Zustand, in einem Zeitintervall von $t = 0$ bis $\infty$ (siehe \ref{sec:Optimale Taktiken} Optimale Taktiken, Gleichung für den erwarteten Nutzen \ref{eq:Der erwartete Nutzen}). Dementsprechend gibt eine optimale Taktik $\pi^*(s)$ für jeden Zustand s den Nachfolgezustand mit dem größtmöglichen erwarteten Nutzen an:
+
+\begin{equation}
+\pi^*(s) = \argmax_{a \in A(s)} \sum_{s'} P(s'|s, a) U(s').
+\end{equation}
+
+Daraus folgt, dass es eine direkte Beziehung zwischen dem Nutzen eines Zustandes und dem Nutzen seiner Nachbarn gibt: Der Nutzen eines Zustandes ist der unmittelbare Gewinn für diesen Zustand plus dem erwarteten verminderten Gewinn des nächsten Zustandes, vorausgesetzt, der Agent wählt die optimale Aktion. Das bedeutet, der Nutzen eines Zustandes ist gegeben durch:
+
+\begin{equation}
+U(s) = R(s) + \gamma \max_{a \in A(s)} \sum_{s'} P(s'|s, a) U(s').
+\end{equation}
+
+Diese Gleichung wird als Bellman-Gleichung bezeichnet, nach Richard Bellman(1957). Die Nutzen der Zustände - durch Gleichung \ref{eq:Der erwartete Nutzen} als die erwarteten Nutzen nachfolgender Zustandsfolgen definiert - sind Lösungen der Menge der Bellman-Gleichungen \cite[759]{Russell}.
+
+Die aus der Bellman-Gleichung formulierbare rekursive Aktualisierungsregel, auch die Bellman-Aktualisierung genannt, ist Hauptbestandteil des Wert-Iteration Algorithmus. Wolfgang Ertel notiert diese Aktualisierungsregel wie folgt \cite[294]{Ertel}:
+
+\begin{equation}
+\hat{V}(s) = \max_a [r(s,a) + \gamma \hat{V}(\delta(s,a))].
+\end{equation}
+
+Dahingegen notieren Russell und Norvig die Bellman-Aktualisierung etwas anders \cite[760]{Russell}:
+
+\begin{equation}
+U_{i+1}(s) \leftarrow R(s) + \gamma \max_{a \in A(s)} \sum_{s'} P(s'|s,a)U_i(s').
+\end{equation} 
+
+Betrachten wir jetzt die Äquivalenzen der beiden Gleichungen. Ertel bezeichnet den Iterationsschritt in einem Zustand s als $\hat{V}(s)$ und Russell und Norvig definieren den Nutzwert für den Zustand s bei der i-ten Iteration als $U_{i}(s)$ und den Iterationsschritt bezeichnen sie als $U_{i+1}$. Die Gewinnfunktionen R(s) und r(s,a) sind leicht Unterschiedlich. Funktion R(s) gibt den direkten Gewinn in einem Zustand s an und Funktion r(s,a) den Gewinn für eine Aktion die im Zustand s ausgeführt wird. Die Funktionen $\max_a$ und $\max_{a \in A(s)}$ berechnen die Aktion a mit dem höchsten erwarteten Nutzen. Das stochastische Modell der Welt wird durch die Funktionen $\delta(s,a)$ und $P(s'|s,a)$ beschrieben. Beide Funktionen bilden die Wahrscheinlichkeit ab, dass ein Zustand s' erreicht wird, wenn eine Aktion a in Zustand s ausgeführt wird. \\
+
+Den wahren Nutzen haben wir definiert als die erwartete Summe verminderter Gewinne. Die Verminderung wird in beiden Gleichungen durch den Abschwächungsfaktor $\gamma$ notiert. Die erwartete Summe verminderter Gewinne ist die Summe aller Iterationsschritte bis zur Konvergenz beider Gleichungen. Der rekursive Funktionsaufruf in der Aktualisierungsregel von Wolfgang Ertel $\hat{V}(\delta(s,a))$ übergibt dem nächsten Iterationsschritt den Zustand s', der zu einer von $\delta$ bzw. von der Umgebung festgelegten Wahrscheinlichkeit eintrifft. In der Aktualisierungsgleichung von Russell und Norvig wird dies durch die Kombination des stochastischen Modells P(s'|s,a) und dem rekursiven Funktionsaufruf $U_i(s')$ realisiert.\\ 
+
+Ein Lernverfahren (z.B. die adaptive dynamische Programmierung) welches die Wert-Iteration nutzt, wird im Rahmen dieser Arbeit jedoch nicht implementiert. Die dynamische Programmierung und die Wert-Iteration sind sehr wichtige Ansätze für Lernverfahren und die nachfolgenden Lernverfahren sind teilweise sehr eng mit Lernverfahren verwandt, die Wert-Iteration verwenden. \\
+
+\section{Temporale Differenz Lernen}
+\label{sec:Temporale Differenz Lernen}
 Bei dieser Lernmethode werden die Nutzen der beobachteten Zustände an die beobachteten Übergänge angepasst, sodass sie mit den Bedingungsgleichungen (siehe Bellman-Gleichung) übereinstimmen. Allgemeiner können wir sagen, wenn ein Übergang vom Zustand s in den Zustand s' stattfindet, wenden wir die folgende Aktualisierung mit $U^\pi(s)$ an \cite[966\psq]{Russell}:
 
 \begin{equation}
@@ -109,30 +145,8 @@ U^\pi(s) \leftarrow U^\pi(s) + \alpha(R(s) + \gamma U^\pi(s') - U^\pi(s)).
 
 Hier ist $\alpha$ der Lernratenparameter. Weil diese Aktualisierungsregel die Differenz der Nutzen aufeinanderfolgender Zustände verwendet, wird sie auch häufig als TD-Gleichung (Temporale Differenz) bezeichnet. Der Lernratenparameter $\alpha$ gibt an, wie stark neue Nutzwerte die derzeitige Bewertungsfunktion anpassen können. 
 
-\paragraph{Die Bellman-Gleichung} für Nutzen, nach Russell und Norvig \cite[759]{Russell}. Wir haben bisher festgestellt, dass, der Nutzen in einem Zustand die erwartete Summe von verminderten Gewinnen von diesem Punkt an ist. Daraus folgt, dass es eine direkte Beziehung zwischen dem Nutzen eines Zustandes und dem Nutzen seiner Nachbarn gibt: Der Nutzen eines Zustandes ist der unmittelbare Gewinn für diesen Zustand plus dem erwarteten verminderten Gewinn des nächsten Zustandes, vorausgesetzt, der Agent wählt die optimale Aktion. Das bedeutet, der Nutzen eines Zustandes ist gegeben durch:\\
-
-\begin{equation}
-U(s) = R(s) + \gamma \max_{a \in A(s)} \sum_{s'} P(s'|s, a) U(s').
-\end{equation}
-
-Diese Gleichung wird als Bellman-Gleichung bezeichnet, nach Richard Bellman(1957). Die Nutzen der Zustände - durch Gleichung \ref{eq:Der erwartete Nutzen} als die erwarteten Nutzen nachfolgender Zustandsfolgen definiert - sind Lösungen der Menge der Bellman-Gleichungen.
-
-\subsection{Q-Lernen}
-Wir haben bisher erfahren, das ein Agent durch Verstärkung in einer ihm unbekannten Umgebung eine Verhaltensstrategie $\pi(s)$ lernen kann, die für jeden Zustand s eine Aktion a vorschlägt. Wir erinnern uns, dass der Nutzen U, in einem Zustand s, unter Beachtung einer Strategie $\pi$, berechnet wurde aus der Summe aller abgeschwächten Belohnungen, für jeden besuchten Zustand, in einem Zeitintervall von $t = 0$ bis $\infty$ (siehe \ref{subsec:Optimale Taktiken} Optimale Taktiken Gleichung für den erwarteten Nutzen \ref{eq:Der erwartete Nutzen}). Dementsprechend gibt eine optimale Taktik $\pi^*(s)$ für jeden Zustand s den Nachfolgezustand mit dem größtmöglichen erwarteten Nutzen an:
-
-\begin{equation}
-\pi^*(s) = \argmax_{a \in A(s)} \sum_{s'} P(s'|s, a) U(s').
-\end{equation}
-
-Daraus folgt, dass es eine direkte Beziehung zwischen dem Nutzen eines Zustandes und dem Nutzen seiner Nachbarn gibt: Der Nutzen eines Zustandes ist der unmittelbare Gewinn für diesen Zustand plus dem erwarteten verminderten Gewinn des nächsten Zustandes , vorausgesetzt, der Agent wählt die optimale Aktion. Das bedeutet, der Nutzen eines Zustandes ist gegeben durch (siehe Bellman-Gleichung in Abschnitt \ref{subsec:Temporale Differenz Lernen}):
-
-\begin{equation}
-U(s) = R(s) + \gamma \max_{a \in A(s)} \sum_{s'} P(s'|s, a) U(s').
-\end{equation}
-
-Die aus der Bellman-Gleichung formulierbare Aktualisierungsregel, die Bellman-Aktualisierung ist Hauptbestandteil des Wert-Iteration Algorithmus. Dieses Lernverfahren wird im Rahmen dieser Arbeit jedoch nicht implementiert. Es dient hier lediglich dazu die Unterschiede zum TD-Q-Lernen Algorithmus zu erläutern. Die Wert-Iteration kommt aus der dynamischen Programmierung und ist ein sehr bedeutsames Lernverfahren des verstärkenden Lernens.
-
-Die Aufgabe des TD-Q-Lernenden Agenten ist ebenfalls eine optimale Strategie zu entwickeln, jedoch mit dem Unterschied, dass dieser keine Nutzenfunktion U(s) lernt, sondern eine Q-Funktion. Eine Q-Funktion ist eine Abbildung von Zustands/Aktions-Paaren auf Nutzwerte. Q-Werte sind wie folgt mit Nutzwerten verknüpf \cite[973]{Russell}:
+\section{Q-Lernen}
+Das Q-Lernen ist eine Variante des TD-Lernens und wird daher auch als TD-Q-Lernen bezeichnet. Die Aufgabe des TD-Q-Lernenden Agenten ist eine optimale Strategie zu entwickeln, er lernt nicht wie bei einer Wert-Iteration eine wahre Nutzenfunktion U(s), sondern eine Q-Funktion. Eine Q-Funktion ist eine Abbildung von Zustands/Aktions-Paaren auf Nutzwerte. Q-Werte sind wie folgt mit Nutzwerten verknüpf \cite[973]{Russell}:
 
 \begin{equation}
 U(s) = \max_a Q(s,a).
