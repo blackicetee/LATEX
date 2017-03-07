@@ -4,9 +4,10 @@
 \emph{» Das Spiel ist die höchste Form der Forschung. «} \\
 (Albert Einstein) \\
 
-In diesem Kapitel werden folgende Aspekte behandelt: genauere Analyse der Aufgabenstellung, theoretische Anwendung der verschiedenen Lösungsansätze aus dem Grundlagenkapitel auf die beiden Strategiespiele Revesi und Tic Tac Toe, Einführung der Agentenmodelle, Beschreibung zweier bedeutender geschichtlicher Entwicklungen bezüglich dem lernen von Spielstrategien und definieren der Softwareziele in Anforderungen.
+In Abschnitt \ref{sec:Die Problematik} wird die Aufgabenstellung genauer analysiert, die Spieltheoretischen Verfahren und die Verfahren des maschinellen Lernens aus dem Grundlagenkapitel werden auf die beiden Strategiespiele Reversi und Tic Tic Toe angewendet. Abschnitt \ref{sec:Anforderungen} definiert die Anforderungen die der Softwareprototyp erfüllen sollte. Die Anforderungen beziehen sich auf die Problematik und die Grundlagen. 
 
 \section{Die Problematik}
+\label{sec:Die Problematik}
 Das Thema der Arbeit ist Untersuchung der Lernfähigkeit verschiedener Verfahren am Beispiel von Computerspielen. Bevor die Lernfähigkeit der Verfahren untersucht werden kann, müssen wir die Computerspiele festlegen und analysieren. Wie bereits erwähnt werden wir die Lernfähigkeit der Verfahren am Beispiel der Strategiespiele Reversi und Tic Tac Toe untersuchen (siehe Abbildung \ref{fig:reversi_und_tictactoe}). Eine genaue Beschreibung der Spielregeln, der Siegesbedingungen und möglicher Strategien bezüglich Heuristiken, wird in Kapitel \ref{cha:Modellierung und Entwurf} Modellierung und Entwurf erfolgen. Die zentrale Frage ist: wie kann ein Programm lernen ein Computerspiel erfolgreich zu spielen? \\
 
 \begin{figure}[!htbp]
@@ -37,24 +38,11 @@ Die Vorteile einer Heuristik sind die Limitierung der Zeit, die für eine Suche 
 
 Agent (a) ist ein nicht lernender Agent, der Verfahren aus der Spieltheorie anwendet und dem die Bewertungsfunkionen RB(s) und TB(s) zur Verfügung stehen. RB(s) ist die Reversi Bewertungsfunktion, mit einem Reversi Spielzustand s als Eingabeparameter. TB(s) ist die Tic Tac Toe Bewertungsfunktion, mit einem Tic Tac Toe Spielzustand s als Eingabeparameter. \\
 
-Agent (b) ist ein lernender Agent, der dem Agenten (a) sehr ähnlich ist, mit dem Unterschied, dass er die Gewichtungen (Faktoren $a_x$) der Bewertungsfunktionen mittels Spielerfahrung lernt. Agent (b) spielt eine festgelegte Anzahl von Spielen z.B. gegen sich selbst und verwendet eine Aktualisierungsfunktion $\hat{V}(s,a)$. Diese Funktion wurde bereits in Abschnitt \ref{subsec:Wert-Iteration und Dynamische Programmierung} Wert-Iteration und Dynamische Programmierung behandelt. Zusammengefasst ist diese Funktion eine Iterationsvorschrift, die mit der Bellman-Rekursionsgleichung die Gewichtungen der Heuristik so lange anpasst, bis diese sich nicht weiter verändern lassen und gegen eine optimale Strategie konvergieren. \\
+Agent (b) ist ein lernender Agent, der wie der Agenten (a) über die Bewertungsfunktionen RB(s) und TB(s) verfügt. Dieser Agent soll die Gewichtungen (Faktoren $a_x$) der Bewertungsfunktionen mittels Spielerfahrung lernen. Er spielt eine festgelegte Anzahl von Spielen z.B. gegen sich selbst und verwendet eine Aktualisierungsfunktion $\hat{V}(s,a)$. Diese Funktion wurde bereits in Abschnitt \ref{subsec:Wert-Iteration und Dynamische Programmierung} Wert-Iteration und Dynamische Programmierung behandelt. Zusammengefasst ist diese Funktion eine Iterationsvorschrift, die mit der Bellman-Rekursionsgleichung die Gewichtungen der Heuristik so lange anpasst, bis diese sich nicht weiter verändern lassen und gegen eine optimale Strategie konvergieren. \\
 
 Agent (c) ist ein lernender Agent, der im Gegensatz zu den Agenten (a) und (b) über kein Modell der Spielwelt verfügt, also ist ihm nicht bekannt in welchen Spielzustand ihn seine Aktionen führen. Er erhält auch keine Bewertungsfunktionen RB(s) und TB(s) für Spielzustände s. Alles was der Agent erhält sind zwei Menge T und R. Menge T enthält alle möglichen Aktionen die der Agent in einer bestimmten Tic Tac Toe Spielsituation ausführen darf, äquivalent dazu enthält Menge R alle möglichen Aktionen die der Agent in einer bestimmten Reversi Spielsituation ausführen darf. Nach einer bestimmten Anzahl von Aktionen erhält der Agent verspätet unterschiedliche Belohnungen für einen Sieg, eine Niederlage oder ein Unentschieden des Spiels. Der Agent verwendet das Lernverfahren $\hat{Q}$(s, a) aus Abschnitt  \ref{subsec:Q-Lernen}, um eine optimale Strategie zu lernen. \\
 
 Sind alle Agenten implementiert, können wir beginnen die Lernfähigkeit der Agenten zu vergleichen. Wie werden die beiden lernenden Agenten gegen den nicht lernenden Agenten abschneiden? Welcher Agent wird der, der am meisten gewinnt und welcher Agent wird am meisten Verlieren? Wie viel Zeit benötigen die Agenten für die Berechnung der optimalen Strategie für die beiden Strategiespiele (Training)? Diese Fragen werden in Kapitel \ref{Auswertung} Auswertung beantwortet.
-
-\section{Existierende Softwarelösungen}
-Wir werden in diesem Teilabschnitt kurz einige der bekanntesten Softwarelösungen vorstellen. Dabei konzentrieren wir uns besonders auf die Konzepte, die die Programmierer angewendet haben, um Starke Computergegner zu realisieren. Alle hier vorgestellten Programme haben folgendes gemeinsam: sie sind gegen sehr gut menschliche Spieler getestet worden und es sind Anwendungen für 2-Spieler Strategiespiele. Ein großer Unterschied ist, dass Samuels Damespiel deterministisch und TD Gammon nichtdeterministische Spiele als Programmgrundlage haben.
-
-\subsection{Samuels Damespiel}
-\label{subsec:Samuels Damespiel}
-Arthur L. Samuel schrieb 1955 ein Programm, dass Dame spielen konnte und mit einem einfachen Lernverfahren seine Parameter verbessern konnte. Sein Programm hatte dabei jedoch Zugriff auf eine große Zahl von archivierten Spielen, bei denen jeder einzelne Zug von Experten bewertet war. Damit verbesserte das Programm seine Bewertungsfunktion. Um eine noch weitere Verbesserung zu erreichen, ließ Samuel dein Programm gegen sich selbst spielen. Das Credit Assignment löste er auf einfache Weise. Für jede einzelne Stellung während eines Spiels vergleicht er die Bewertung durch die Funktion B(s) mit der durch Alpha-Beta-Pruning berechneten Bewertung und verändert B(s) entsprechend. 1961 besiegte sein Dame-Programm den viertbesten Damespieler der USA. Mit dieser bahnbrechenden Arbeit war Samuel seiner Zeit um fast dreißig Jahre voraus \cite[120\psq]{Ertel}.
-
-\subsection{TD-Gammon}
-\label{subsec:TD-Gammon}
-Das TD-Lernen zusammen mit einem Backpropagation-Netz mit 40 bis 80 verdeckten Neuronen wurde sehr erfolgreich angewendet in TD-Gammon, einem Programm zum Spielen von Backgammon, programmiert vom Entwickler Gerald Tesauro im Jahr 1992. Die einzige direkte Belohnung für das Programm ist das Ergebnis am Ende eines Spiels. Eine optimierte Version des Programms mit einer 2-Züge-Vorausschau wurde mit 1,5 Millionen Spielen gegen sich selbst trainiert. Es besiegte damit Weltklassespieler und spielt so gut wie die drei besten menschlichen Spieler \cite[304]{Ertel}.  
-
-\paragraph{Sind Lernverfahren überhaupt Sinnvoll?}
 
 \section{Anforderungen}
 \label{sec:Anforderungen}
