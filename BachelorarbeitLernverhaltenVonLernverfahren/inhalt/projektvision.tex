@@ -1,20 +1,40 @@
 \chapter{Projektvision}
 \label{cha:projektvision}
 
-%TODO Was passiert in diesem Kapitel?
-
 \section{Motivation}
-Sind Sie ein (angehender) Softwareentwickler und programmieren aktuell ein Computerspiel, welches lernfähige Verfahren unterstützen soll? Benötigen Sie innerhalb einer beliebigen Anwendung einen lernfähigen Algorithmus und sie kennen die Schwächen, Stärken, Grenzen und Anwendungsgebiete der Lernverfahren nicht?\\
 
-Haben Sie sich auch schon mal eine der nachfolgenden Fragen gestellt oder interessieren Sie diese Fragen generell?\\
+\section{Zielsetzung}
 
-Wie lernt ein Programm Strategien? Was sind die elementaren Schritte die ein Programm  während des Lernprozesses durchläuft? Wie anwendbar und leistungsfähig sind die Lernverfahren hinsichtlich verschiedener Spielgrundlagen? In wie fern wird ein Lernverfahren von einem Computerspiel ausgereizt? Wenn zwei unterschiedliche Lernverfahren untersucht und verglichen werden, welches Lernverfahren ist dann effizienter, schneller oder besser?\\
+\section{Realisierung}
 
-Diese wissenschaftliche Arbeit könnte dann sehr interessant für Sie sein. Innerhalb dieser Arbeit werden bestimmte Lernverfahren, am Beispiel verschiedener Computerspiele, auf Ihre Funktionsweise, Schwächen, Stärken und Grenzen untersucht, implementiert, und getestet. 
-
-\section{Vorläufige Zielsetzung}
-Das Ziel der Arbeit ist die Untersuchung des Lernverhaltens, der Grenzen, der Schwächen und der Stärken verschiedener Lernverfahren am Beispiel von mindestens zwei eigens implementierten Computerspielen. Die Lernverfahren sollen trainiert werden und dadurch mehr oder weniger eigenständige Siegesstrategien und Spielzugmuster entwickeln. Die Lernverfahren könnten sich gegenseitig trainieren oder sie trainieren indem sie gegen einen Menschen spielen. Der Fokus der wissenschaftlichen Arbeit liegt hierbei auf der Untersuchung der verschiedenen Lernverfahren und nicht auf der Implementierung besonders komplexer Computerspiele, daher sollen nur sehr simple Computerspiele implementiert werden. Ein vollständiges Dame Spiel wird zum Beispiel nicht implementiert, aber eine absichtlich verkleinerte Dame Variante mit veränderten Spielregen, für ein schnelleres Spielende, wäre durchaus möglich. Zudem wären auch ein vier mal vier Tic-Tac-Toe ein Vier Gewinnt oder ein Black Jack Computerspiel
-
-\section{Nutzen/Zweck des Projektes}
+\section{Ergebnisse}
 
 \section{Aufbau der Arbeit}
+
+
+%Zielsetzung
+Das Ziel der Arbeit ist es, ein bereits existierendes Lernverfahren zu implementieren und dessen Leistungsfähigkeit und Grenzen zu untersuchen. Das Lernverfahren soll eigenständig und automatisch eine Strategie lernen. Jeweils eine Strategie für das Strategiespiele Tic Tac Toe und das Strategiespiel Reversi. \\  
+
+%Validierung
+Die Leistungsfähigkeit und Grenzen beurteilen wir anhand diverser Testspiele. Bei diesen Testspielen spielt die gelernte Strategie gegen die festgelegte Strategie, in den Strategiespielen Tic Tac Toe und Reversi. Wir unterteilen die Testspiele in drei Phasen. In jeder dieser Phasen testen wir ein Stadium der gelernten Strategie. In Phase 1 lernt das Lernverfahren in 1.000 Spielen gegen sich selbst eine Strategie. Wir erhören die Anzahl der Spiele gegen sich selbst in Phase 2 auf 100.000 Spiele und in Phase 3 auf 1.000.000 Spiele gegen sich selbst. Nach Abschluss der Lernphase wird die gelernte Strategie in genau 100 Testspielen gegen eine feste Strategie spielen. \\
+
+%Realisierung nicht lernender Agent / feste Strategie
+Die feste Strategie ist eine Kombination aus einem vorausschauenden Suchbaumverfahren und einer Bewertungsfunktion (Heuristik). Ein Suchverfahren für Strategiespiele, durchsucht einen Spielbaum nach der bestmöglichen Aktion (einem Spielzug) in einem gegebenen Zustand. Ein Zustand oder Spielzustand ist eine Spielsituation bzw. eine Stellung der Spielfiguren auf dem Spielfeld. \\
+
+Das Problem der Suchverfahren ist die Dimensionalität bzw. Komplexität des Ausgangsproblems. Suchbaumverfahren können für sehr einfache Probleme relativ schnell eine optimale Aktion finden. Die Größe des Suchbaums wächst exponentiell mit der Komplexität des Problems, d.h. die Laufzeit des Suchbaumverfahrens ohne Erweiterungen könnte für das Strategiespiele Tic Tac Toe nicht handhabbar sein und ist für das Strategiespiel Reversi nicht handhabbar. Wir schreiben ''könnte'' bei Tic Tac Toe, weil dieses noch ein recht einfacher Vertreter der Strategiespiele ist, dahingegen ist Reversi ein komplexeres Strategiespiel. \\
+
+Um die Diemensionalitätsproblematik zu lösen, kombinieren wir Suchbaumverfahren mit Heuristiken, wir bezeichnen diese Kombination als heuristische Suche. Eine Heuristik berechnet eine Gewinnwahrscheinlichkeit, ausgehend von einem Spielzustand. Ein Spielzustand mit einer hohen heuristischen Bewertung ist, gegenüber einem Spielzustand mit niedriger heuristischer Bewertung, zu bevorzugen. \\
+
+Das Suchbaumverfahren muss den Suchbaum, unter Verwendung einer Heuristik, nicht mehr komplett durchsuchen. Die Suche kann in einer bestimmten Suchbaumtiefe abgebrochen werden. Das Suchbaumverfahren liefert die erste Aktion einer Aktionssequenz. Eine Aktionssequenz ist eine Folge von Aktionen und beschreibt einen Pfad im Suchbaum. Die Aktionssequenz, welche von der heuristischen Suche ausgewählt wurde, repräsentiert den Spielzustand mit der maximalen Gewinnwahrscheinlichkeit. \\
+
+Die Qualität dieser Gewinnschätzung ist wiederum von der maximalen Suchtiefe und der Bewertungsfunktion abhängig. Eine größere Suchtiefe resultiert in einer besseren Schätzung, weil unter Umständen mehr Spielzustände berücksichtigt werden können. Die Verwendung einer Bewertungsfunktion ist keine Garantie für eine optimale Strategie. Verschiedene Bewertungsfunktionen können stark voneinander abweichende Gewinnschätzungen für Spielzustände berechnen. \\
+
+Ein weiteres Ziel in dieser Arbeit, ist die Entwicklung einer Bewertungsfunktion für Reversi und Tic Tac Toe. Die Bewertungsfunktion soll ungefähr die spielerische Leistung eines fortgeschrittenen menschlichen Spielers erbringen. Wir testen die Leistungsfähigkeit der Bewertungsfunktionen, genau wie bei der gelernten Strategie, anhand von Testspielen. Die mit der Bewertungsfunktion und dem Suchverfahren ausgestattete feste Strategie, wird gegen eine Zufallsstrategie antreten. 
+
+%Realisierung lernender Agent / gelernte Strategie
+
+
+%Ergebnisse????????????
+
+
+

@@ -139,19 +139,25 @@ Ein Lernverfahren (z.B. die adaptive dynamische Programmierung) welches die Wert
 Bei dieser Lernmethode werden die Nutzen der beobachteten Zustände an die beobachteten Übergänge angepasst, sodass sie mit den Bedingungsgleichungen (siehe Bellman-Gleichung) übereinstimmen. Allgemeiner können wir sagen, wenn ein Übergang vom Zustand s in den Zustand s' stattfindet, wenden wir die folgende Aktualisierung mit $U^\pi(s)$ an \cite[966\psq]{Russell}:
 
 \begin{equation}
-\label{eq:Aktualisierung temporale Differenz}
+\label{eq:Aktualisierungsgleichung temporale Differenz}
 U^\pi(s) \leftarrow U^\pi(s) + \alpha(R(s) + \gamma U^\pi(s') - U^\pi(s)).
 \end{equation}
 
 Hier ist $\alpha$ der Lernratenparameter. Weil diese Aktualisierungsregel die Differenz der Nutzen aufeinanderfolgender Zustände verwendet, wird sie auch häufig als TD-Gleichung (Temporale Differenz) bezeichnet. Der Lernratenparameter $\alpha$ gibt an, wie stark neue Nutzwerte die derzeitige Bewertungsfunktion anpassen können. 
 
 \section{Q-Lernen}
+\label{sec:Q-Lernen}
 Das Q-Lernen ist eine Variante des TD-Lernens und wird daher auch als TD-Q-Lernen bezeichnet. Die Aufgabe des TD-Q-Lernenden Agenten ist eine optimale Strategie zu entwickeln, er lernt nicht wie bei einer Wert-Iteration eine wahre Nutzenfunktion U(s), sondern eine Q-Funktion. Eine Q-Funktion ist eine Abbildung von Zustands/Aktions-Paaren auf Nutzwerte. Q-Werte sind wie folgt mit Nutzwerten verknüpf \cite[973]{Russell}:
 
 \begin{equation}
+\label{eq:Nutzenwerte und Q-Werte}
 U(s) = \max_a Q(s,a).
 \end{equation}
 
 Eine Nutzenfunktion U(s) ist abhängig von den abgeschwächten Nutzwerten aller nachfolgenden Zustände. Ein TD-Agent der eine Q-Funktion lernt, braucht weder für das Lernen noch die Aktionsauswahl ein Modell der Form P(s'|s,a). Aus diesem Grund sagt man auch, das Q-Lernen ist eine modellfreie Methode \cite[974]{Russell}. \\
+
+\begin{equation}
+Q(s,a) \leftarrow Q(s,a) + \alpha(R(s) + \gamma \max_{a'} Q(s',a') - Q(s,a)).
+\end{equation}
 
 Was ist jedoch der Unterschied zwischen einer Belohnungsfunktion r(s, a) und einer Q-Funktion Q(s, a)? Die Funktion r(s, a) ist von der Umgebung definiert und kann vom Agenten nicht beeinflusst werden. Sollte diese Funktion dem Agenten eine numerische Verstärkung von -0,5 zuweisen, dann kann der Agent dies nicht ändern. Der Agent soll versuchen die Zusammenhänge der Zustands/Aktions-Paare zu lernen und Entscheidungen basierend auf seinen Lernerfahrungen zu treffen. Dies bezeichnen wir dann als Q-Lernen. Die vom Agenten gelernten zusammenhänge werden in Q-Werten gespeichert. Folglich wird in Q(s, a) oder Q[s, a] die gelernte Erfahrung des Agenten, für ein Zustand/Aktions-Paar, gespeichert. \\

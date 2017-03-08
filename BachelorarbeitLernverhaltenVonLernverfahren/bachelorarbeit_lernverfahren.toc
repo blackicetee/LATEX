@@ -1,9 +1,9 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {german}
-\contentsline {chapter}{\nonumberline Abk\IeC {\"u}rzungsverzeichnis}{iv}{chapter*.3}
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{v}{chapter*.4}
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{vi}{chapter*.5}
+\contentsline {chapter}{\nonumberline Abk\IeC {\"u}rzungsverzeichnis}{iii}{chapter*.2}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{iv}{chapter*.3}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{v}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Projektvision}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Vorl\IeC {\"a}ufige Zielsetzung}{1}{section.1.2}
@@ -11,56 +11,56 @@
 \contentsline {section}{\numberline {1.4}Aufbau der Arbeit}{2}{section.1.4}
 \contentsline {chapter}{\numberline {2}Strategiespiele und Spieltheorie}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Das Strategiespiel Tic Tac Toe}{3}{section.2.1}
-\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{4}{section*.7}
-\contentsline {paragraph}{\nonumberline Ziel des Spiels}{4}{section*.8}
+\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{4}{section*.6}
+\contentsline {paragraph}{\nonumberline Ziel des Spiels}{4}{section*.7}
 \contentsline {section}{\numberline {2.2}Das Strategiespiel Reversi}{5}{section.2.2}
-\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{6}{section*.9}
-\contentsline {paragraph}{\nonumberline Ziel des Spiels}{7}{section*.10}
+\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{6}{section*.8}
+\contentsline {paragraph}{\nonumberline Ziel des Spiels}{7}{section*.9}
 \contentsline {section}{\numberline {2.3}Spieltheorie}{7}{section.2.3}
-\contentsline {paragraph}{\nonumberline Nullsummenspiele}{7}{section*.11}
+\contentsline {paragraph}{\nonumberline Nullsummenspiele}{7}{section*.10}
 \contentsline {subsection}{\numberline {2.3.1}Minimax}{8}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Alpha-Beta-K\IeC {\"u}rzung}{9}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Iterativ vertiefende Tiefensuche}{11}{subsection.2.3.3}
-\contentsline {paragraph}{\nonumberline Die Breitensuche}{11}{section*.12}
-\contentsline {paragraph}{\nonumberline Die Tiefensuche}{12}{section*.13}
-\contentsline {paragraph}{\nonumberline Anwendung}{12}{section*.14}
+\contentsline {paragraph}{\nonumberline Die Breitensuche}{11}{section*.11}
+\contentsline {paragraph}{\nonumberline Die Tiefensuche}{12}{section*.12}
+\contentsline {paragraph}{\nonumberline Anwendung}{12}{section*.13}
 \contentsline {subsection}{\numberline {2.3.4}\IeC {\"U}bergangstabellen}{12}{subsection.2.3.4}
-\contentsline {paragraph}{\nonumberline Zobrist Hash}{13}{section*.15}
+\contentsline {paragraph}{\nonumberline Zobrist Hash}{13}{section*.14}
 \contentsline {subsection}{\numberline {2.3.5}Heuristik}{14}{subsection.2.3.5}
 \contentsline {chapter}{\numberline {3}Einf\IeC {\"u}hrung in verst\IeC {\"a}rkendes Lernen}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}Verst\IeC {\"a}rkendes Lernen eine Definition}{17}{section.3.1}
 \contentsline {section}{\numberline {3.2}Gegen\IeC {\"u}berstellung \IeC {\"u}berwachtes und verst\IeC {\"a}rkendes Lernen}{18}{section.3.2}
 \contentsline {section}{\numberline {3.3}Fallbeispiel: Ein Agent im Labyrinth}{20}{section.3.3}
 \contentsline {section}{\numberline {3.4}Markov Entscheidungsprozess}{21}{section.3.4}
-\contentsline {paragraph}{\nonumberline Ein sequentielles Entscheidungsproblem}{21}{section*.16}
-\contentsline {paragraph}{\nonumberline Vollst\IeC {\"a}ndig beobachtbare}{22}{section*.17}
-\contentsline {paragraph}{\nonumberline Ein stochastischer \IeC {\"U}bergang}{22}{section*.18}
-\contentsline {paragraph}{\nonumberline Das \IeC {\"U}bergangsmodell}{22}{section*.19}
-\contentsline {paragraph}{\nonumberline Additive Gewinne}{22}{section*.20}
-\contentsline {paragraph}{\nonumberline Anwendung des MEP}{23}{section*.21}
+\contentsline {paragraph}{\nonumberline Ein sequentielles Entscheidungsproblem}{21}{section*.15}
+\contentsline {paragraph}{\nonumberline Vollst\IeC {\"a}ndig beobachtbare}{22}{section*.16}
+\contentsline {paragraph}{\nonumberline Ein stochastischer \IeC {\"U}bergang}{22}{section*.17}
+\contentsline {paragraph}{\nonumberline Das \IeC {\"U}bergangsmodell}{22}{section*.18}
+\contentsline {paragraph}{\nonumberline Additive Gewinne}{22}{section*.19}
+\contentsline {paragraph}{\nonumberline Anwendung des MEP}{23}{section*.20}
 \contentsline {section}{\numberline {3.5}Optimale Taktiken}{23}{section.3.5}
 \contentsline {section}{\numberline {3.6}Dynamische Programmierung und Wert-Iteration}{24}{section.3.6}
 \contentsline {section}{\numberline {3.7}Temporale Differenz Lernen}{26}{section.3.7}
 \contentsline {section}{\numberline {3.8}Q-Lernen}{27}{section.3.8}
 \contentsline {chapter}{\numberline {4}Problemanalyse und Anforderungsdefinition}{28}{chapter.4}
 \contentsline {section}{\numberline {4.1}Die Problematik}{28}{section.4.1}
-\contentsline {paragraph}{\nonumberline Die Spieltheorie}{28}{section*.22}
-\contentsline {paragraph}{\nonumberline Die drei Agenten}{30}{section*.23}
+\contentsline {paragraph}{\nonumberline Die Spieltheorie}{28}{section*.21}
+\contentsline {paragraph}{\nonumberline Die drei Agenten}{30}{section*.22}
 \contentsline {section}{\numberline {4.2}Anforderungen}{31}{section.4.2}
 \contentsline {chapter}{\numberline {5}Modellierung und Entwurf}{34}{chapter.5}
 \contentsline {section}{\numberline {5.1}Tic Tac Toe Heuristik}{34}{section.5.1}
-\contentsline {paragraph}{\nonumberline Das Spielfeld}{35}{section*.24}
-\contentsline {paragraph}{\nonumberline Kontrolliere die Mitte}{36}{section*.25}
-\contentsline {paragraph}{\nonumberline Verteidigung ist der beste Angriff}{38}{section*.26}
+\contentsline {paragraph}{\nonumberline Das Spielfeld}{35}{section*.23}
+\contentsline {paragraph}{\nonumberline Kontrolliere die Mitte}{36}{section*.24}
+\contentsline {paragraph}{\nonumberline Verteidigung ist der beste Angriff}{38}{section*.25}
 \contentsline {section}{\numberline {5.2}Reversi Heuristik}{38}{section.5.2}
 \contentsline {section}{\numberline {5.3}Die Strategiespielumgebungen Tic Tac Toe und Reversi}{38}{section.5.3}
-\contentsline {paragraph}{\nonumberline getPossibleActions()}{38}{section*.27}
+\contentsline {paragraph}{\nonumberline getPossibleActions()}{38}{section*.26}
 \contentsline {section}{\numberline {5.4}Agent des Zufalls}{39}{section.5.4}
-\contentsline {paragraph}{\nonumberline getRandomAction(possibleActionList).}{39}{section*.28}
+\contentsline {paragraph}{\nonumberline getRandomAction(possibleActionList).}{39}{section*.27}
 \contentsline {section}{\numberline {5.5}Agent ohne Lernen}{40}{section.5.5}
-\contentsline {paragraph}{\nonumberline getStrategicTicTacToeAction(ticTacToeGameState)}{40}{section*.29}
-\contentsline {paragraph}{\nonumberline getStrategicReversiAction(reversiGameState)}{40}{section*.30}
-\contentsline {paragraph}{\nonumberline Alternative Realisierung}{40}{section*.31}
+\contentsline {paragraph}{\nonumberline getStrategicTicTacToeAction(ticTacToeGameState)}{40}{section*.28}
+\contentsline {paragraph}{\nonumberline getStrategicReversiAction(reversiGameState)}{40}{section*.29}
+\contentsline {paragraph}{\nonumberline Alternative Realisierung}{40}{section*.30}
 \contentsline {section}{\numberline {5.6}Agent mit TD-Q-Lernen}{41}{section.5.6}
 \contentsline {chapter}{\numberline {6}Algorithmen und Implementierung}{42}{chapter.6}
 \contentsline {section}{\numberline {6.1}Tic Tac Toe}{42}{section.6.1}
@@ -68,26 +68,22 @@
 \contentsline {section}{\numberline {6.3}Suchbaumverfahren}{42}{section.6.3}
 \contentsline {section}{\numberline {6.4}Heuristiken}{42}{section.6.4}
 \contentsline {section}{\numberline {6.5}TD-Q-Lernen}{42}{section.6.5}
-\contentsline {chapter}{\numberline {7}Validierung}{46}{chapter.7}
-\contentsline {section}{\numberline {7.1}Logiktest der Strategiespiele Tic Tac Toe und Reversi}{46}{section.7.1}
-\contentsline {section}{\numberline {7.2}Agententest}{46}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Bewertungskriterien}{46}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Persistenz der Agentenerfahrung}{46}{subsection.7.2.2}
-\contentsline {chapter}{\numberline {8}Auswertung}{47}{chapter.8}
-\contentsline {section}{\numberline {8.1}Konvergenz des TD-Q-Lernens}{47}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Generalisierung oder Funktionsann\IeC {\"a}herung}{47}{subsection.8.1.1}
-\contentsline {paragraph}{\nonumberline Samuels Dame-Spiel}{47}{section*.32}
-\contentsline {paragraph}{\nonumberline Agent mit TD-Lernen}{47}{section*.33}
-\contentsline {subsection}{\numberline {8.1.2}Neuronales Lernen}{48}{subsection.8.1.2}
-\contentsline {paragraph}{\nonumberline TD-Gammon}{48}{section*.34}
-\contentsline {paragraph}{\nonumberline Sind Lernverfahren \IeC {\"u}berhaupt Sinnvoll?}{48}{section*.35}
-\contentsline {section}{\numberline {8.2}Gegen\IeC {\"u}berstellung der Lernverfahren}{48}{section.8.2}
-\contentsline {paragraph}{\nonumberline \IeC {\"U}berwachtes Lernen}{48}{section*.36}
-\contentsline {paragraph}{\nonumberline Wert-Iteration und dynamische Programmierung}{48}{section*.37}
-\contentsline {paragraph}{\nonumberline TD-Lernen}{48}{section*.38}
-\contentsline {paragraph}{\nonumberline Q-Lernen}{48}{section*.39}
-\contentsline {paragraph}{\nonumberline Funktionsann\IeC {\"a}herung}{48}{section*.40}
-\contentsline {chapter}{\numberline {A}I am an appendix!}{50}{appendix.A}
-\contentsline {section}{\numberline {A.1}Section in appendix!}{50}{section.A.1}
-\contentsline {chapter}{\numberline {B}Another appendix? What the heck?}{52}{appendix.B}
-\contentsline {section}{\numberline {B.1}Section in appendix!}{52}{section.B.1}
+\contentsline {chapter}{\numberline {7}Validierung}{45}{chapter.7}
+\contentsline {section}{\numberline {7.1}Logiktest der Strategiespiele Tic Tac Toe und Reversi}{45}{section.7.1}
+\contentsline {section}{\numberline {7.2}Agententest}{45}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Bewertungskriterien}{45}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Persistenz der Agentenerfahrung}{45}{subsection.7.2.2}
+\contentsline {chapter}{\numberline {8}Auswertung}{46}{chapter.8}
+\contentsline {section}{\numberline {8.1}Konvergenz des TD-Q-Lernens}{46}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Generalisierung oder Funktionsann\IeC {\"a}herung}{46}{subsection.8.1.1}
+\contentsline {paragraph}{\nonumberline Samuels Dame-Spiel}{46}{section*.31}
+\contentsline {paragraph}{\nonumberline Agent mit TD-Lernen}{46}{section*.32}
+\contentsline {subsection}{\numberline {8.1.2}Neuronales Lernen}{47}{subsection.8.1.2}
+\contentsline {paragraph}{\nonumberline TD-Gammon}{47}{section*.33}
+\contentsline {paragraph}{\nonumberline Sind Lernverfahren \IeC {\"u}berhaupt Sinnvoll?}{47}{section*.34}
+\contentsline {section}{\numberline {8.2}Gegen\IeC {\"u}berstellung der Lernverfahren}{47}{section.8.2}
+\contentsline {paragraph}{\nonumberline \IeC {\"U}berwachtes Lernen}{47}{section*.35}
+\contentsline {paragraph}{\nonumberline Wert-Iteration und dynamische Programmierung}{47}{section*.36}
+\contentsline {paragraph}{\nonumberline TD-Lernen}{47}{section*.37}
+\contentsline {paragraph}{\nonumberline Q-Lernen}{47}{section*.38}
+\contentsline {paragraph}{\nonumberline Funktionsann\IeC {\"a}herung}{47}{section*.39}

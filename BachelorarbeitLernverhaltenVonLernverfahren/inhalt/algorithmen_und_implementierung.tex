@@ -12,30 +12,11 @@ In diesem Kapitel: //TODO Einführung in das Kapitel
 \section{Heuristiken}
 
 \section{TD-Q-Lernen}
+In dem Kapitel \ref{cha:Einführung in verstärkendes Lernen} Einführung in verstärkendes Lernen, speziell in den Abschnitte \ref{sec:Temporale Differenz Lernen} Temporale Differenz Lernen und \ref{sec:Q-Lernen} Q-Lernen wurde bereits erklärt, wie das TD-Lernen und das Q-Lernen zusammenwirken. \\
 
-Wir haben bisher erfahren, das ein Agent durch Verstärkung in einer ihm unbekannten Umgebung eine Verhaltensstrategie $\pi(s)$ lernen kann, die für jeden Zustand s eine Aktion a vorschlägt. Wir erinnern uns, dass der Nutzen U, in einem Zustand s, unter Beachtung einer Strategie $\pi$, berechnet wurde aus der Summe aller abgeschwächten Belohnungen, für jeden besuchten Zustand, in einem Zeitintervall von $t = 0$ bis $\infty$ (siehe \ref{subsec:Optimale Taktiken} Optimale Taktiken Gleichung für den erwarteten Nutzen \ref{eq:Der erwartete Nutzen}). Dementsprechend gibt eine optimale Taktik $\pi^*(s)$ für jeden Zustand s den Nachfolgezustand mit dem größtmöglichen erwarteten Nutzen an:
+Fassen wir diese beiden Abschnitte kurz zusammen: Temporale Differenz Lernen (TD-Lernen) passt die Nutzen der beobachteten Zustände an die beobachteten Übergänge an. Die Aktualisierungsregel (Gleichung \ref{eq:Aktualisierungsgleichung temporale Differenz}) des TD-Lernens verwendet die Differenz der Nutzen aufeinanderfolgender Zustände $U\pi(s') - U\pi(s)$, daher die Bezeichnung Temporale Differenz Lernen. Eine alternative TD-Methode ist das Q-Lernen, dass statt Nutzen eine Aktion/Nutzen Repräsentation lernt. Mit der Notation Q(s,a) bezeichnen wir den Wert der Ausführung von Aktion a im Zustand s. Gleichung \ref{eq:Nutzenwerte und Q-Werte} zeigt wie Q-Werte direkt mit Nutzenwerten verknüpft sind. \\
 
-\begin{equation}
-\pi^*(s) = \argmax_{a \in A(s)} \sum_{s'} P(s'|s, a) U(s').
-\end{equation}
-
-Daraus folgt, dass es eine direkte Beziehung zwischen dem Nutzen eines Zustandes und dem Nutzen seiner Nachbarn gibt: Der Nutzen eines Zustandes ist der unmittelbare Gewinn für diesen Zustand plus dem erwarteten verminderten Gewinn des nächsten Zustandes , vorausgesetzt, der Agent wählt die optimale Aktion. Das bedeutet, der Nutzen eines Zustandes ist gegeben durch (siehe Bellman-Gleichung in Abschnitt \ref{subsec:Temporale Differenz Lernen}):
-
-\begin{equation}
-U(s) = R(s) + \gamma \max_{a \in A(s)} \sum_{s'} P(s'|s, a) U(s').
-\end{equation}
-
-Die aus der Bellman-Gleichung formulierbare Aktualisierungsregel, die Bellman-Aktualisierung ist Hauptbestandteil des Wert-Iteration Algorithmus. Dieses Lernverfahren wird im Rahmen dieser Arbeit jedoch nicht implementiert. Es dient hier lediglich dazu die Unterschiede zum TD-Q-Lernen Algorithmus zu erläutern. Die Wert-Iteration kommt aus der dynamischen Programmierung und ist ein sehr bedeutsames Lernverfahren des verstärkenden Lernens.
-
-Die Aufgabe des TD-Q-Lernenden Agenten ist ebenfalls eine optimale Strategie zu entwickeln, jedoch mit dem Unterschied, dass dieser keine Nutzenfunktion U(s) lernt, sondern eine Q-Funktion. Eine Q-Funktion ist eine Abbildung von Zustands/Aktions-Paaren auf Nutzwerte. Q-Werte sind wie folgt mit Nutzwerten verknüpf \cite[973]{Russell}:
-
-\begin{equation}
-U(s) = \max_a Q(s,a).
-\end{equation}
-
-Eine Nutzenfunktion U(s) ist abhängig von den abgeschwächten Nutzwerten aller nachfolgenden Zustände. Ein TD-Agent der eine Q-Funktion lernt, braucht weder für das Lernen noch die Aktionsauswahl ein Modell der Form P(s'|s,a). Aus diesem Grund sagt man auch, das Q-Lernen ist eine modellfreie Methode \cite[974]{Russell}. \\
-
-Was ist jedoch der Unterschied zwischen einer Belohnungsfunktion r(s, a) und einer Q-Funktion Q(s, a)? Die Funktion r(s, a) ist von der Umgebung definiert und kann vom Agenten nicht beeinflusst werden. Sollte diese Funktion dem Agenten eine numerische Verstärkung von -0,5 zuweisen, dann kann der Agent dies nicht ändern. Der Agent soll versuchen die Zusammenhänge der Zustands/Aktions-Paare zu lernen und Entscheidungen basierend auf seinen Lernerfahrungen zu treffen. Dies bezeichnen wir dann als Q-Lernen. Die vom Agenten gelernten zusammenhänge werden in Q-Werten gespeichert. Folglich wird in Q(s, a) oder Q[s, a] die gelernte Erfahrung des Agenten, für ein Zustand/Aktions-Paar, gespeichert. \\
+Der in Abbildung \ref{fig:TD-Q-Lernen Algorithmus} skizzierte Algorithmus ist, leicht abgewandelt, im Lehrbuch für künstliche Intelligenz von Russell und Norvig \cite[974]{Russell} zu finden. Dieser ist bereits leicht modifiziert in seiner Notation und nachdem wir die Einzelheiten des Algorithmus geklärt haben, wird die Notation weiter angepasst, bis sie dem Quellcode des Prototypen entspricht. \\
 
 \begin{figure}[!htbp]
 \centering
@@ -53,8 +34,6 @@ Was ist jedoch der Unterschied zwischen einer Belohnungsfunktion r(s, a) und ein
 \caption{TD-Q-Lernen Algorithmus}
 \label{fig:TD-Q-Lernen Algorithmus}
 \end{figure} 
-
-Der in Abbildung \ref{fig:TD-Q-Lernen Algorithmus} skizzierte Algorithmus ist, leicht abgewandelt, im Lehrbuch für künstliche Intelligenz von Russell und Norvig \cite[974]{Russell} zu finden. Dieser ist bereits leicht modifiziert in seiner Notation und nachdem wir die Einzelheiten des Algorithmus geklärt haben, wird die Notation weiter angepasst, bis sie dem Quellcode des Prototypen entspricht. \\
 
 Der Q-Lernen Algorithmus verwendet einige persistente (d.h. beständige oder dauerhafte) Variablen und Entitäten. Persistent deshalb, weil sie die einzelnen Funktionsaufrufe überdauern: 
 \begin{itemize}
