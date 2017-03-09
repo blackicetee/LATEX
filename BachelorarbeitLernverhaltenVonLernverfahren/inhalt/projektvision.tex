@@ -13,13 +13,18 @@
 
 
 %Zielsetzung
-Das Ziel der Arbeit ist es, ein bereits existierendes Lernverfahren zu implementieren und dessen Leistungsfähigkeit und Grenzen zu untersuchen. Das Lernverfahren soll eigenständig und automatisch eine Strategie lernen. Jeweils eine Strategie für das Strategiespiele Tic Tac Toe und das Strategiespiel Reversi. \\  
+Das Ziel der Arbeit ist es, ein bereits existierendes Lernverfahren zu implementieren und dessen Leistungsfähigkeit und Grenzen zu untersuchen. Das Lernverfahren soll eigenständig und automatisch eine Strategie lernen. Jeweils eine Strategie für das Strategiespiele Tic Tac Toe und das Strategiespiel Reversi. Wir bezeichnen die Implementierung des Lernverfahrens, als lernenden Agenten.\\  
+
+Ein weiteres Ziel in dieser Arbeit ist die Entwicklung von Bewertungsfunktionen (Heuristiken) für Reversi und Tic Tac Toe. Eine Heuristik berechnet eine Gewinnwahrscheinlichkeit ausgehend von einem Spielzustand. Ein Spielzustand mit einer hohen heuristischen Bewertung ist, gegenüber einem Spielzustand mit niedriger heuristischer Bewertung, zu bevorzugen. Eine Bewertungsfunktion soll das Spielwissen eines fortgeschrittenen menschlichen Spielers simulieren und als Implementierungsgrundlage für den nicht lernenden Agenten (auch heuristischer Agent) dienen.\\
 
 %Validierung
-Die Leistungsfähigkeit und Grenzen beurteilen wir anhand diverser Testspiele. Bei diesen Testspielen spielt die gelernte Strategie gegen die festgelegte Strategie, in den Strategiespielen Tic Tac Toe und Reversi. Wir unterteilen die Testspiele in drei Phasen. In jeder dieser Phasen testen wir ein Stadium der gelernten Strategie. In Phase 1 lernt das Lernverfahren in 1.000 Spielen gegen sich selbst eine Strategie. Wir erhören die Anzahl der Spiele gegen sich selbst in Phase 2 auf 100.000 Spiele und in Phase 3 auf 1.000.000 Spiele gegen sich selbst. Nach Abschluss der Lernphase wird die gelernte Strategie in genau 100 Testspielen gegen eine feste Strategie spielen. \\
+Die Leistungsfähigkeit und Grenzen, des Lernverfahrens, beurteilen wir anhand diverser Testspiele. Bei diesen Testspielen spielt der lernende Agent gegen den nicht lernenden Agenten. Die Agenten werden jeweils in den Strategiespielen Tic Tac Toe und Reversi gegeneinander antreten. Wir unterteilen die Testspiele in drei Phasen. In jeder dieser Phasen testen wir ein Lernstadium des lernenden Agenten. In der ersten Phase (kurze Lernphase) lernt das Lernverfahren bzw. der lernende Agent in 1.000 Spielen gegen sich selbst eine Strategie. Wir erhören die Anzahl der Spiele gegen sich selbst in der zweiten Phase (mittlere Lernphase) auf 100.000 Spiele und in der dritten Phase (lange Lernphase) auf 1.000.000 Spiele gegen sich selbst. Nach Abschluss jeder Phase muss der lernende Agent genau 100 Testspielen gegen den nicht lernenden Agenten absolvieren. \\
+
+%Validierung der zu entwickelnden Bewertungsfunktionen
+Wir testen die Leistungsfähigkeit der Bewertungsfunktionen, genau wie vorher beschrieben, anhand von Testspielen. Der nicht lernende Agent, wird gegen einen Zufallsagenten antreten. Ein Zufallsagent wählt, aus allen möglichen Aktionen in einer Spielsituation, zufällig eine Aktion aus. Das Testkriterium der Bewertungsfunktionen ist eine Gewinnquote von mindestens 50\% in 100 Testspielen gegen einen Zufallsagenten. Sollte der Agent mindestens 50\% aller Testspiele Gewinnen, dann bezeichnen wir diesen, als Testgegner mit fortgeschrittenem Spielniveau. \\
 
 %Realisierung nicht lernender Agent / feste Strategie
-Die feste Strategie ist eine Kombination aus einem vorausschauenden Suchbaumverfahren und einer Bewertungsfunktion (Heuristik). Ein Suchverfahren für Strategiespiele, durchsucht einen Spielbaum nach der bestmöglichen Aktion (einem Spielzug) in einem gegebenen Zustand. Ein Zustand oder Spielzustand ist eine Spielsituation bzw. eine Stellung der Spielfiguren auf dem Spielfeld. \\
+In der Implementierung des nicht lernenden oder heuristischen Agenten ist, neben der Bewertungsfunktion, noch ein anderes Verfahren enthalten. Das Suchbaumverfahren für 2-Personenspiele. Dieses Verfahren durchsucht einen Spielbaum nach der bestmöglichen Aktion (einem Spielzug) in einem gegebenen Zustand. Ein Zustand oder Spielzustand ist eine Spielsituation bzw. eine Stellung der Spielfiguren auf dem Spielfeld. \\
 
 Das Problem der Suchverfahren ist die Dimensionalität bzw. Komplexität des Ausgangsproblems. Suchbaumverfahren können für sehr einfache Probleme relativ schnell eine optimale Aktion finden. Die Größe des Suchbaums wächst exponentiell mit der Komplexität des Problems, d.h. die Laufzeit des Suchbaumverfahrens ohne Erweiterungen könnte für das Strategiespiele Tic Tac Toe nicht handhabbar sein und ist für das Strategiespiel Reversi nicht handhabbar. Wir schreiben ''könnte'' bei Tic Tac Toe, weil dieses noch ein recht einfacher Vertreter der Strategiespiele ist, dahingegen ist Reversi ein komplexeres Strategiespiel. \\
 
@@ -29,9 +34,25 @@ Das Suchbaumverfahren muss den Suchbaum, unter Verwendung einer Heuristik, nicht
 
 Die Qualität dieser Gewinnschätzung ist wiederum von der maximalen Suchtiefe und der Bewertungsfunktion abhängig. Eine größere Suchtiefe resultiert in einer besseren Schätzung, weil unter Umständen mehr Spielzustände berücksichtigt werden können. Die Verwendung einer Bewertungsfunktion ist keine Garantie für eine optimale Strategie. Verschiedene Bewertungsfunktionen können stark voneinander abweichende Gewinnschätzungen für Spielzustände berechnen. \\
 
-Ein weiteres Ziel in dieser Arbeit, ist die Entwicklung einer Bewertungsfunktion für Reversi und Tic Tac Toe. Die Bewertungsfunktion soll ungefähr die spielerische Leistung eines fortgeschrittenen menschlichen Spielers erbringen. Wir testen die Leistungsfähigkeit der Bewertungsfunktionen, genau wie bei der gelernten Strategie, anhand von Testspielen. Die mit der Bewertungsfunktion und dem Suchverfahren ausgestattete feste Strategie, wird gegen eine Zufallsstrategie antreten. 
-
 %Realisierung lernender Agent / gelernte Strategie
+Wir stellen mehrere Lernverfahren innerhalb dieser Arbeit vor, aber wir werden nur das Q-Lernen (auch TD-Q-Lernen) implementieren und untersuchen. Das TD-Q-Lernen ist ein Lernverfahren aus dem Bereich des verstärkenden Lernens. Verstärkendes Lernen (eng. reinforcement Learning) ist, wie das überwachte Lernen, eine Lernkategorie des maschinellen Lernens. \\
+
+Verstärkendes lernen versucht, u.a. das lernen von Strategiespielen, wie Schach, Reversi, Dame oder Backgammon, zu ermöglichen. Ein verstärkendes Lernverfahren benötigt, im Gegensatz zu einem überwachten Lernverfahren, keinen Lehrer. Ein Lehrer ist eine Abbildung von Eigenschaften (eng. features) auf Zielvariablen (eng. target values), d.h. einem überwachten Lernverfahren muss explizit, für jede mögliche Spielsituation, mitgeteilt werden,  ob diese Spielsituation gut oder schlecht ist. Die Spielsituationen sind die Eigenschaften und die dazugehörigen Zielvariablen sind mit den Werten ''gut'' oder ''schlecht'' belegt. Innerhalb dieser Arbeit konzentrieren wir uns größtenteils auf die verstärkenden Lernverfahren. \\
+
+\section{Hypothese}
+\label{sec:Hypothese}
+Die festen Strategien werden die gelernten Strategien, des TD-Q-Lernens, in jeder der drei Testphasen und in jedem der Strategiespiele, dominieren. Dominieren definieren wir, als eine Gewinnquote von mindestens 50\% der Testspiele in jeder Testphase. \\
+
+Bestätigen wir diese Hypothese, dann belegen wir folgende Aspekte:
+
+\begin{enumerate}
+\item Das TD-Q-Lernen kann, innerhalb von maximal 1.000.000 Trainingsspielen gegen sich selbst, keine Strategie entwickeln, die besser ist, als die in dieser Arbeit implementierte feste Strategie.
+\item Das TD-Q-Lernen muss möglicherweise mehr als 1.000.000 Trainingsspiele gegen sich selbst spielen, um eine bessere Strategie, als die feste Strategie, zu lernen.
+\item Das reine TD-Q-Lernen, ohne Erweiterungen, ist möglicherweise keine geeignetes Lernverfahren für das lernen eines Strategiespiels.  
+\end{enumerate}
+
+
+
 
 
 %Ergebnisse????????????

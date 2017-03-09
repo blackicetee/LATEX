@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  8 MAR 2017 17:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  9 MAR 2017 00:58
 entering extended mode
 **./bachelorarbeit_lernverfahren.tex
 (bachelorarbeit_lernverfahren.tex
@@ -2093,7 +2093,7 @@ File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
 (Font)              scaled to size 17.79837pt on input line 9.
 
-<htw_logo.jpg, id=214, 115.632pt x 67.452pt>
+<htw_logo.jpg, id=218, 115.632pt x 67.452pt>
 File: htw_logo.jpg Graphic file (type jpg)
  <use htw_logo.jpg>
 Package pdftex.def Info: htw_logo.jpg used on input line 9.
@@ -2238,17 +2238,17 @@ Package babel Info: Redefining german shorthand "~
 
 ] (bachelorarbeit_lernverfahren.toc
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 56.
  [6
 
 
@@ -2284,67 +2284,124 @@ Package babel Info: Redefining german shorthand "~
 LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
 (Font)              scaled to size 14.86081pt on input line 1.
 Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 4.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 4.
+Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 6.
 Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 8.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 8.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 10.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 10.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 10.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 12.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 12.
 
-Overfull \hbox (0.98846pt too wide) in paragraph at lines 7--8
-\T1/qpl/m/n/12 Sind Sie ein (an-ge-hen-der) Soft-wa-re-ent-wick-ler und pro-gra
-m-mie-ren ak-tu-ell ein Com-
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 17.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 17.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 17.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 23.
 [1
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 20.
+(babel)             in language  on input line 34.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Overfull \hbox (0.46248pt too wide) in paragraph at lines 38--39
+\T1/qpl/m/n/12 mög-li-che Spiel-si-tua-ti-on, mit-ge-teilt wer-den, ob die-se S
+piel-si-tua-ti-on gut oder schlecht
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
 ) (inhalt/strategiespiele_und_spieltheorie.tex
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 2.
@@ -2358,7 +2415,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 2.
- [2]
+ [3]
 chapter 2.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 2.
@@ -2389,7 +2446,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 11.
-[3
+[4
 
 
 ]
@@ -2398,7 +2455,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
  []
 
 
-<inhalt/abbildungen/siegesbedingungen_tictactoe.pdf, id=380, 341.275pt x 299.11
+<inhalt/abbildungen/siegesbedingungen_tictactoe.pdf, id=392, 341.275pt x 299.11
 75pt>
 File: inhalt/abbildungen/siegesbedingungen_tictactoe.pdf Graphic file (type pdf
 )
@@ -2424,7 +2481,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 24.
-[4 <./inhalt/abbildungen/siegesbedingungen_tictactoe.pdf>]
+[5 <./inhalt/abbildungen/siegesbedingungen_tictactoe.pdf>]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 26.
 Package babel Info: Redefining german shorthand "|
@@ -2433,7 +2490,7 @@ Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 26.
 
 
-LaTeX Warning: Reference `sec:Tic Tac Toe' on page 5 undefined on input line 28
+LaTeX Warning: Reference `sec:Tic Tac Toe' on page 6 undefined on input line 28
 .
 
 
@@ -2447,7 +2504,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
  []
 
 
-<inhalt/abbildungen/ausgangssituation_reversi.pdf, id=397, 255.95625pt x 255.95
+<inhalt/abbildungen/ausgangssituation_reversi.pdf, id=409, 255.95625pt x 255.95
 625pt>
 File: inhalt/abbildungen/ausgangssituation_reversi.pdf Graphic file (type pdf)
  <use inhalt/abbildungen/ausgangssituation_reversi.pdf>
@@ -2466,13 +2523,13 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 40.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 40.
- [5 <./inhalt/abbildungen/ausgangssituation_reversi.pdf>]
+ [6 <./inhalt/abbildungen/ausgangssituation_reversi.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-<inhalt/abbildungen/zuege_schwarz_reversi.pdf, id=409, 569.12625pt x 255.95625p
+<inhalt/abbildungen/zuege_schwarz_reversi.pdf, id=422, 569.12625pt x 255.95625p
 t>
 File: inhalt/abbildungen/zuege_schwarz_reversi.pdf Graphic file (type pdf)
  <use inhalt/abbildungen/zuege_schwarz_reversi.pdf>
@@ -2507,7 +2564,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 53.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 53.
-[6 <./inhalt/abbildungen/zuege_schwarz_reversi.pdf>]
+[7 <./inhalt/abbildungen/zuege_schwarz_reversi.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
@@ -2541,7 +2598,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 66.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 66.
-[7]
+[8]
 Overfull \hbox (16.53458pt too wide) in paragraph at lines 67--68
 []\T1/qpl/m/n/12 In Ab-bil-dung [][]2.6[][] ist der Ab-lauf ei-ner Minimax-Such
 e ver-an-schau-licht. Der Minimax-
@@ -2552,7 +2609,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-<inhalt/abbildungen/minimax_tictactoe.pdf, id=433, 370.38374pt x 255.95625pt>
+<inhalt/abbildungen/minimax_tictactoe.pdf, id=445, 370.38374pt x 255.95625pt>
 File: inhalt/abbildungen/minimax_tictactoe.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/minimax_tictactoe.pdf>
@@ -2571,7 +2628,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 77.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 77.
- [8 <./inhalt/abbildungen/minimax_tictactoe.pdf>]
+ [9 <./inhalt/abbildungen/minimax_tictactoe.pdf>]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 78.
 Package babel Info: Redefining german shorthand "|
@@ -2584,7 +2641,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
  []
 
 
-<inhalt/abbildungen/alpha_beta_suchbaum.pdf, id=453, 378.41376pt x 307.1475pt>
+<inhalt/abbildungen/alpha_beta_suchbaum.pdf, id=465, 378.41376pt x 307.1475pt>
 File: inhalt/abbildungen/alpha_beta_suchbaum.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/alpha_beta_suchbaum.pdf>
@@ -2624,7 +2681,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 94.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 94.
-[9]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
@@ -2646,7 +2703,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 98.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 98.
-[10 <./inhalt/abbildungen/alpha_beta_suchbaum.pdf>]
+[11 <./inhalt/abbildungen/alpha_beta_suchbaum.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
@@ -2663,7 +2720,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--106
  []
 
 
-<inhalt/abbildungen/iterative_deepening_tictactoe.pdf, id=490, 455.7025pt x 198
+<inhalt/abbildungen/iterative_deepening_tictactoe.pdf, id=502, 455.7025pt x 198
 .7425pt>
 File: inhalt/abbildungen/iterative_deepening_tictactoe.pdf Graphic file (type p
 df)
@@ -2693,7 +2750,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 117.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 117.
-[11]
+[12]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 123.
 Package babel Info: Redefining german shorthand "|
@@ -2706,7 +2763,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--126
  []
 
 
-<inhalt/abbildungen/transitionen_tictactoe.pdf, id=498, 284.06125pt x 113.42375
+<inhalt/abbildungen/transitionen_tictactoe.pdf, id=511, 284.06125pt x 113.42375
 pt>
 File: inhalt/abbildungen/transitionen_tictactoe.pdf Graphic file (type pdf)
  <use inhalt/abbildungen/transitionen_tictactoe.pdf>
@@ -2730,13 +2787,13 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 135.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 135.
-[12 <./inhalt/abbildungen/iterative_deepening_tictactoe.pdf>]
+[13 <./inhalt/abbildungen/iterative_deepening_tictactoe.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
 
-<inhalt/abbildungen/zobrist_hash_tictactoe.pdf, id=519, 341.275pt x 142.5325pt>
+<inhalt/abbildungen/zobrist_hash_tictactoe.pdf, id=531, 341.275pt x 142.5325pt>
 File: inhalt/abbildungen/zobrist_hash_tictactoe.pdf Graphic file (type pdf)
 <use inhalt/abbildungen/zobrist_hash_tictactoe.pdf>
 Package pdftex.def Info: inhalt/abbildungen/zobrist_hash_tictactoe.pdf used on 
@@ -2769,7 +2826,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 150.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 150.
-[13 <./inhalt/abbildungen/transitionen_tictactoe.pdf>]
+[14 <./inhalt/abbildungen/transitionen_tictactoe.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
@@ -2802,7 +2859,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 158.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 158.
-[14 <./inhalt/abbildungen/zobrist_hash_tictactoe.pdf>]
+[15 <./inhalt/abbildungen/zobrist_hash_tictactoe.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
@@ -2833,7 +2890,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--173
  []
 
 
-LaTeX Warning: Reference `cha:Implementierung' on page 15 undefined on input li
+LaTeX Warning: Reference `cha:Implementierung' on page 16 undefined on input li
 ne 174.
 
 ) (inhalt/einfÃ¼hrung_in_verstÃ¤rkendes_lernen.tex
@@ -2853,7 +2910,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
-[15]
+[16]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "|
@@ -2866,7 +2923,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
- [16]
+ [17]
 chapter 3.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
@@ -2891,7 +2948,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-<inhalt/abbildungen/agent_umgebung.pdf, id=569, 284.06125pt x 85.31876pt>
+<inhalt/abbildungen/agent_umgebung.pdf, id=581, 284.06125pt x 85.31876pt>
 File: inhalt/abbildungen/agent_umgebung.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/agent_umgebung.pdf>
@@ -2915,7 +2972,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 18.
-[17
+[18
 
 
  <./inhalt/abbildungen/agent_umgebung.pdf>]
@@ -2934,7 +2991,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<inhalt/abbildungen/vogel_spezies.pdf, id=585, 469.755pt x 113.42375pt>
+<inhalt/abbildungen/vogel_spezies.pdf, id=598, 469.755pt x 113.42375pt>
 File: inhalt/abbildungen/vogel_spezies.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/vogel_spezies.pdf>
@@ -2963,7 +3020,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 34.
-[18]
+[19]
 LaTeX Font Info:    Try loading font information for TS1+qpl on input line 37.
  (C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\tex-gyre\ts1qpl.fd
 File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
@@ -2989,7 +3046,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 44.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 44.
-[19 <./inhalt/abbildungen/vogel_spezies.pdf>]
+[20 <./inhalt/abbildungen/vogel_spezies.pdf>]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 47.
 Package babel Info: Redefining german shorthand "|
@@ -3023,7 +3080,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 53.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 53.
-[20]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
@@ -3051,7 +3108,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 64.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 64.
-[21]
+[22]
 Overfull \hbox (9.30618pt too wide) in paragraph at lines 64--65
 [] []\T1/fvs/b/n/12 Vollständig be-ob-acht-ba-re[][] \T1/qpl/m/n/12 Spie-le sin
 d z.B. Schach, Re-ver-si, Tic Tac Toe, 4-Gewinnt
@@ -3090,13 +3147,13 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 75.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 75.
-[22]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
 
-LaTeX Warning: Reference `subsec:Temporale Differenz Lernen' on page 23 undefin
+LaTeX Warning: Reference `subsec:Temporale Differenz Lernen' on page 24 undefin
 ed on input line 80.
 
 Package babel Info: Redefining german shorthand "f
@@ -3122,7 +3179,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 85.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 85.
-[23]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
@@ -3155,7 +3212,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 106.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 106.
-[24]
+[25]
 Overfull \hbox (25.8657pt too wide) in paragraph at lines 117--118
 []\T1/qpl/m/n/12 Diese Glei-chung wird als Bellman-Gleichung be-zeich-net, nach
  Ri-chard Bell-man(1957).
@@ -3184,7 +3241,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 132.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 132.
-[25]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
@@ -3212,7 +3269,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 148.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 148.
-[26]
+[27]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 148.
 Package babel Info: Redefining german shorthand "|
@@ -3241,7 +3298,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
-[27]
+[28]
 chapter 4.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
@@ -3266,7 +3323,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
  []
 
 
-<inhalt/abbildungen/reversi_und_tictactoe.pdf, id=686, 313.17pt x 113.42375pt>
+<inhalt/abbildungen/reversi_und_tictactoe.pdf, id=698, 313.17pt x 113.42375pt>
 File: inhalt/abbildungen/reversi_und_tictactoe.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/reversi_und_tictactoe.pdf>
@@ -3275,7 +3332,7 @@ nput line 15.
 (pdftex.def)             Requested size: 250.53633pt x 90.7391pt.
 
 
-LaTeX Warning: Reference `sec:Spiele mit Gegner' on page 28 undefined on input 
+LaTeX Warning: Reference `sec:Spiele mit Gegner' on page 29 undefined on input 
 line 20.
 
 
@@ -3295,7 +3352,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 21.
-[28
+[29
 
 
 ]
@@ -3318,7 +3375,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-<inhalt/abbildungen/drei_agenten.pdf, id=697, 668.4975pt x 426.59375pt>
+<inhalt/abbildungen/drei_agenten.pdf, id=709, 668.4975pt x 426.59375pt>
 File: inhalt/abbildungen/drei_agenten.pdf Graphic file (type pdf)
 
 <use inhalt/abbildungen/drei_agenten.pdf>
@@ -3337,7 +3394,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 35.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 35.
- [29 <./inhalt/abbildungen/reversi_und_tictactoe.pdf>]
+ [30 <./inhalt/abbildungen/reversi_und_tictactoe.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
@@ -3349,7 +3406,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
 
 LaTeX Warning: Reference `subsec:Wert-Iteration und Dynamische Programmierung' 
-on page 30 undefined on input line 41.
+on page 31 undefined on input line 41.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
@@ -3368,9 +3425,9 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 42.
-[30 <./inhalt/abbildungen/drei_agenten.pdf>]
+[31 <./inhalt/abbildungen/drei_agenten.pdf>]
 
-LaTeX Warning: Reference `subsec:Q-Lernen' on page 31 undefined on input line 4
+LaTeX Warning: Reference `subsec:Q-Lernen' on page 32 undefined on input line 4
 3.
 
 
@@ -3379,7 +3436,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
  []
 
 
-LaTeX Warning: Reference `Auswertung' on page 31 undefined on input line 45.
+LaTeX Warning: Reference `Auswertung' on page 32 undefined on input line 45.
 
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 47.
@@ -3404,17 +3461,17 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 54.
-[31]
+[32]
 
-LaTeX Warning: Reference `sec:Spiele mit Gegner' on page 32 undefined on input 
+LaTeX Warning: Reference `sec:Spiele mit Gegner' on page 33 undefined on input 
 line 65.
 
 
-LaTeX Warning: Reference `sec:Spiele mit Gegner' on page 32 undefined on input 
+LaTeX Warning: Reference `sec:Spiele mit Gegner' on page 33 undefined on input 
 line 68.
 
 
-LaTeX Warning: Reference `sec:Verst\IeC {\"a}rkendes Lernen' on page 32 undefin
+LaTeX Warning: Reference `sec:Verst\IeC {\"a}rkendes Lernen' on page 33 undefin
 ed on input line 71.
 
 Package babel Info: Redefining german shorthand "f
@@ -3429,7 +3486,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 72.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 72.
-[32]) (inhalt/modellierung_und_entwurf.tex
+[33]) (inhalt/modellierung_und_entwurf.tex
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "|
@@ -3442,7 +3499,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
- [33]
+ [34]
 chapter 5.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
@@ -3451,7 +3508,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
 
-LaTeX Warning: Reference `sec:anforderungsdefinition' on page 34 undefined on i
+LaTeX Warning: Reference `sec:anforderungsdefinition' on page 35 undefined on i
 nput line 4.
 
 
@@ -3483,7 +3540,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 11.
-[34
+[35
 
 
 ]
@@ -3492,7 +3549,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
  []
 
 
-<inhalt/abbildungen/symmetrie_tictactoe_spielfeld.pdf, id=763, 398.48875pt x 22
+<inhalt/abbildungen/symmetrie_tictactoe_spielfeld.pdf, id=775, 398.48875pt x 22
 7.85126pt>
 File: inhalt/abbildungen/symmetrie_tictactoe_spielfeld.pdf Graphic file (type p
 df)
@@ -3512,13 +3569,13 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 23.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 23.
- [35 <./inhalt/abbildungen/symmetrie_tictactoe_spielfeld.pdf>]
+ [36 <./inhalt/abbildungen/symmetrie_tictactoe_spielfeld.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
 
-<inhalt/abbildungen/tictactoe_spielfeld_indizes.pdf, id=784, 113.42375pt x 113.
+<inhalt/abbildungen/tictactoe_spielfeld_indizes.pdf, id=797, 113.42375pt x 113.
 42375pt>
 File: inhalt/abbildungen/tictactoe_spielfeld_indizes.pdf Graphic file (type pdf
 )
@@ -3532,7 +3589,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
  []
 
 
-<inhalt/abbildungen/kontrolliere_die_mitte.pdf, id=786, 418.56375pt x 255.95625
+<inhalt/abbildungen/kontrolliere_die_mitte.pdf, id=799, 418.56375pt x 255.95625
 pt>
 File: inhalt/abbildungen/kontrolliere_die_mitte.pdf Graphic file (type pdf)
  <use inhalt/abbildungen/kontrolliere_die_mitte.pdf>
@@ -3556,7 +3613,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 46.
-[36 <./inhalt/abbildungen/tictactoe_spielfeld_indizes.pdf>]
+[37 <./inhalt/abbildungen/tictactoe_spielfeld_indizes.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
@@ -3578,7 +3635,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 50.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 50.
-[37 <./inhalt/abbildungen/kontrolliere_die_mitte.pdf>]
+[38 <./inhalt/abbildungen/kontrolliere_die_mitte.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
@@ -3589,7 +3646,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
  []
 
 
-<inhalt/abbildungen/verteidigung_ist_angriff.pdf, id=816, 370.38374pt x 255.956
+<inhalt/abbildungen/verteidigung_ist_angriff.pdf, id=828, 370.38374pt x 255.956
 25pt>
 File: inhalt/abbildungen/verteidigung_ist_angriff.pdf Graphic file (type pdf)
  <use inhalt/abbildungen/verteidigung_ist_angriff.pdf>
@@ -3625,7 +3682,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 77.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 77.
-[38]
+[39]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 78.
 Package babel Info: Redefining german shorthand "|
@@ -3644,7 +3701,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 84.
 
-LaTeX Warning: Reference `sec:Spiele mit Gegner' on page 39 undefined on input 
+LaTeX Warning: Reference `sec:Spiele mit Gegner' on page 40 undefined on input 
 line 85.
 
 
@@ -3664,7 +3721,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 86.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 86.
-[39 <./inhalt/abbildungen/verteidigung_ist_angriff.pdf>]
+[40 <./inhalt/abbildungen/verteidigung_ist_angriff.pdf>]
 Overfull \hbox (6.38843pt too wide) in paragraph at lines 87--88
 []\T1/qpl/m/n/12 Diese Re-chen-zeit-ver-bes-se-rung ist nur durch die Ver-wen-d
 ung ei-ner Heu-ri-stik mög-
@@ -3694,7 +3751,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 96.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 96.
-[40]
+[41]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 97.
 Package babel Info: Redefining german shorthand "|
@@ -3714,7 +3771,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
- [41]
+ [42]
 chapter 6.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
@@ -3779,7 +3836,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 20.
-[42
+[43
 
 
 ]
@@ -3800,9 +3857,9 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 50.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 50.
-[43]
+[44]
 
-LaTeX Warning: Reference `subsec:Optimale Taktiken' on page 44 undefined on inp
+LaTeX Warning: Reference `subsec:Optimale Taktiken' on page 45 undefined on inp
 ut line 61.
 
 ) (inhalt/validierung.tex
@@ -3818,7 +3875,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
- [44]
+ [45]
 chapter 7.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
@@ -3863,7 +3920,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
- [45
+ [46
 
 
 ]
@@ -3904,7 +3961,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 26.
-[46
+[47
 
 
 ]
@@ -3927,7 +3984,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 4.
- [47]
+ [48]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 33.
 Package babel Info: Redefining german shorthand "|
@@ -3940,7 +3997,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 33.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 33.
- [48
+ [49
 
 
 ]
@@ -3951,7 +4008,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
 Package rerunfilecheck Info: File `bachelorarbeit_lernverfahren.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 5CF24380C7F3F5560F22991642CF9F30;3662.
+(rerunfilecheck)             Checksum: 3D98ADA4E456A09F5387827504A055E3;3692.
 
 
 LaTeX Warning: There were undefined references.
@@ -3965,10 +4022,10 @@ Package logreq Info: Writing requests to 'bachelorarbeit_lernverfahren.run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 41686 strings out of 493333
- 808069 string characters out of 3145253
- 1232334 words of memory out of 3000000
- 44307 multiletter control sequences out of 15000+200000
+ 41692 strings out of 493333
+ 808120 string characters out of 3145253
+ 1232333 words of memory out of 3000000
+ 44308 multiletter control sequences out of 15000+200000
  71619 words of font info for 116 fonts, out of 3000000 for 9000
  1150 hyphenation exceptions out of 8191
  76i,9n,77p,10410b,3089s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3988,9 +4045,9 @@ Users/Thilo/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qplr.pfb><C:
 /Users/Thilo/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qplri.pfb><
 E:/dev/MikTex/fonts/type1/urw/palatino/uplr8a.pfb><E:/dev/MikTex/fonts/type1/ur
 w/palatino/uplri8a.pfb>
-Output written on bachelorarbeit_lernverfahren.pdf (55 pages, 805567 bytes).
+Output written on bachelorarbeit_lernverfahren.pdf (56 pages, 809612 bytes).
 PDF statistics:
- 1007 PDF objects out of 1200 (max. 8388607)
- 207 named destinations out of 1000 (max. 500000)
- 514 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1020 PDF objects out of 1200 (max. 8388607)
+ 212 named destinations out of 1000 (max. 500000)
+ 522 words of extra memory for PDF output out of 10000 (max. 10000000)
 
