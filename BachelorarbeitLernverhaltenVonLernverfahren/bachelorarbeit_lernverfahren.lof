@@ -4,26 +4,26 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Veranschaulichung der vertikalen (a), horizontalen (b) und diagonalen (c, d) Siegesbedingung.}}{5}{figure.2.1}
-\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Ausgangssituation einer beginnenden Partie Reversi.}}{6}{figure.2.2}
-\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces M\IeC {\"o}gliche Spielz\IeC {\"u}ge innerhalb w\IeC {\"a}hrend einer fiktiven Partie Reversi.}}{7}{figure.2.3}
-\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Ein (partieller) Suchbaum vgl. Abbildung 5.1 \cite [208]{Russell}}}{9}{figure.2.4}
-\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Ein Alpha Beta Suchbaum \cite [213]{Russell}.}}{11}{figure.2.5}
-\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces TODO }}{13}{figure.2.6}
-\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Drei verschiedene Spielzugsequenzen die alle zum selben Spielzustand f\IeC {\"u}hren.}}{14}{figure.2.7}
-\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces Zobrist Hashing von Spielzust\IeC {\"a}nden.}}{15}{figure.2.8}
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Veranschaulichtes Ziel des Strategiespiels Tic Tac Toe.}}{6}{figure.2.1}
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Ausgangsspielzustand Reversi.}}{7}{figure.2.2}
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Spielzugm\IeC {\"o}glichkeiten Reversi.}}{8}{figure.2.3}
+\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Ein (partieller) Suchbaum vgl. \cite [208]{Russell}}}{10}{figure.2.4}
+\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Ein Alpha Beta Suchbaum \cite [213]{Russell}.}}{12}{figure.2.5}
+\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces TODO }}{14}{figure.2.6}
+\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Verschiedene Spielzugsequenzen enden im selben Spielzustand.}}{15}{figure.2.7}
+\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces Zobrist Hashing von Spielzust\IeC {\"a}nden.}}{16}{figure.2.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Der Agent und seine Wechselwirkung mit der Umgebung. Die Darstellung des Agenten und der Umgebung wird in verschiedenen Fachb\IeC {\"u}chern, die das verst\IeC {\"a}rkenden Lernen behandeln, sehr \IeC {\"a}hnlich realisiert \cite [398]{Alpaydin} und \cite [290]{Ertel}.}}{18}{figure.3.1}
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Vogelspezies Klassifikation basierend auf vier Eigenschaften}}{20}{figure.3.2}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Der Agent und seine Wechselwirkung mit der Umgebung vgl. \cite [290]{Ertel} und \cite [398]{Alpaydin}.}}{19}{figure.3.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Spielsituationen (Spielzust\IeC {\"a}nde oder Stellungen) die w\IeC {\"a}hrend einer Partie (a) Reversi oder (b) Tic Tac Toe auftreten k\IeC {\"o}nnen.}}{30}{figure.4.1}
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Die Projektproblematik.}}{31}{figure.4.2}
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Tic Tac Toe und Reversi Spielzust\IeC {\"a}nde.}}{29}{figure.4.1}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Die Projektproblematik.}}{30}{figure.4.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Symmetrie Eigenschaften des vier mal vier Tic Tac Toe Spielfelds.}}{36}{figure.5.1}
-\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Die Indizes der einzelnen Spielfelder.}}{37}{figure.5.2}
-\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Strategie um die Mitte zu kontrollieren.}}{38}{figure.5.3}
-\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces TicTacToe Angriffsstrategien (aus der Sicht von Bob) und Verteidigungsstrategien (aus der Sicht von Alice).}}{40}{figure.5.4}
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Symmetrie Eigenschaften des vier mal vier Tic Tac Toe Spielfelds.}}{37}{figure.5.1}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Die Indizes der einzelnen Spielfelder.}}{38}{figure.5.2}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Strategie um die Mitte zu kontrollieren.}}{39}{figure.5.3}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces TicTacToe Angriffsstrategien (aus der Sicht von Bob) und Verteidigungsstrategien (aus der Sicht von Alice).}}{41}{figure.5.4}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces TD-Q-Lernen Algorithmus}}{44}{figure.6.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 8.1}{\ignorespaces Vogelspezies Klassifikation basierend auf vier Eigenschaften}}{49}{figure.8.1}

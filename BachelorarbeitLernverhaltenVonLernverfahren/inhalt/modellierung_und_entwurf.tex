@@ -75,12 +75,6 @@ Berechnen eine Liste von Positionskoordinaten in der Form:
 
 Diese Koordinaten geben die Spielfelder an, welche in einem korrekten Spielzug, von dem aktuellen Spieler, belegt werden können. Aus dieser Liste von Aktionen wählt der Spieler oder der Agent eine mögliche Aktion aus.\\
 
-\section{Agent des Zufalls}
-Der Agent des Zufalls ist der womöglich schlechteste Spieler. Seine Entscheidungen werden durch Suchverfahren, Heuristiken oder Lernverfahren beeinflusst. Theoretisch sollte dieser Agent im Vergleich zu den anderen Agenten am meisten verlieren und am wenigsten gewinnen, denn er wird Strategielos eine zufällige Aktion aus einer Menge von möglichen Aktionen in einem Spielzustand auswählen. Die Menge von möglichen Aktionen wird von den Spielumgebungen Tic Tac Toe und Reversi bereitgestellt (siehe Funktion getPossibleActions()). Der Zufallsagent selbst benötigt lediglich eine Funktion:\\
-
-\myparagraph{getRandomAction(possibleActionList).}
-Diese Funktion erhält eine Liste von möglichen Aktionen und liefert eine zufällig ausgewählte Aktion aus dieser Liste zurück.
-
 \section{Agent ohne Lernen}
 Der Agent ohne Lernen bedient sich diverser Spieltheoretischer Verfahren aus dem Grundlagenkapitel \ref{sec:Spiele mit Gegner} Spiele mit Gegner. Auf der Basis des alpha-beta gekürzten Minimax Suchbaumverfahrens versucht der Agent bis zu einer festgelegten Suchtiefe ein optimales Ergebnis zu finden. Die festgelegte Suchtiefe wurde aus dem Abschnitt \ref{subsec:Iterativ vertiefende Tiefensuche} Iterativ vertiefende Tiefensuche in den Algorithmus des nicht lernenden Agenten übernommen. Diese maximale Suchtiefe begrenzt die Rechenzeit des Agenten, sodass der Agent beim explorieren und expandieren des Suchbaums irgendwann abbricht und das bisher beste gefundene Ergebnis zurück gibt. \\
 

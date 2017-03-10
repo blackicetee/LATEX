@@ -16,7 +16,7 @@ Tic Tac Toe ist ein Spiel, welches von genau zwei Spielern gespielt wird. Währe
 \begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 0.6]{inhalt/abbildungen/siegesbedingungen_tictactoe.pdf}
-  \caption{Veranschaulichung der vertikalen (a), horizontalen (b) und diagonalen (c, d) Siegesbedingung.}
+  \caption{Veranschaulichtes Ziel des Strategiespiels Tic Tac Toe.}
   \label{fig:siegesbedingungen_tictactoe}
 \end{figure}
 
@@ -32,7 +32,7 @@ Anmerkung zu Abbildung \ref{fig:ausgangssituation_reversi}  Die äußeren weiß 
 \begin{figure}[!htbp]
   \centering
   \includegraphics[scale=0.5]{inhalt/abbildungen/ausgangssituation_reversi.pdf}
-  \caption{Ausgangssituation einer beginnenden Partie Reversi.}
+  \caption{Ausgangsspielzustand Reversi.}
   \label{fig:ausgangssituation_reversi}
 \end{figure}
 
@@ -43,7 +43,7 @@ Eine Besonderheit von Reversi ist, dass gesetzte Spielsteine ihre Farbe ändern 
 \begin{figure}[!htbp]
   \centering
   \includegraphics[scale=0.5]{inhalt/abbildungen/zuege_schwarz_reversi.pdf}
-  \caption{Mögliche Spielzüge innerhalb während einer fiktiven Partie Reversi.}
+  \caption{Spielzugmöglichkeiten Reversi.}
   \label{fig:zuege_schwarz_reversi}
 \end{figure}
 
@@ -69,7 +69,7 @@ In Abbildung \ref{fig:minimax_tictactoe} ist der Ablauf einer Minimax-Suche vera
 \begin{figure}[!htbp]
   \centering
   \includegraphics{inhalt/abbildungen/minimax_tictactoe.pdf}
-  \caption{Ein (partieller) Suchbaum vgl. Abbildung 5.1 \cite[208]{Russell}}
+  \caption{Ein (partieller) Suchbaum vgl. \cite[208]{Russell}}
   \label{fig:minimax_tictactoe}
 \end{figure} 
 
@@ -127,7 +127,7 @@ Eine Übergangstabelle (eng. transition table) ist eine Tabelle in der Spielsitu
 \begin{figure}[!htbp]
   \centering
   \includegraphics{inhalt/abbildungen/transitionen_tictactoe.pdf}
-  \caption{Drei verschiedene Spielzugsequenzen die alle zum selben Spielzustand führen.}
+  \caption{Verschiedene Spielzugsequenzen enden im selben Spielzustand.}
   \label{fig:transitionen_tictactoe}
 \end{figure} 
 
@@ -172,3 +172,7 @@ Diese Schach Heuristik ist entstanden aus der Zusammenarbeit von Schachexperten 
 Eine Heuristik ist stark Abhängig von ihrer Grundlage, d.h. eine Heuristik die für ein Schachspiel konzipiert wurde, berücksichtigt die Spielfiguren, das Spielfeld und die Spielregeln des Schachspiels. Wir können diese Heuristik nicht direkt auf Reversi oder Tic Tac Toe anwenden, weil eine Schach Heuristik nicht auf andere Spiele angewendet werden kann. Eine Reversi Heuristik kann z.B. auch nicht für das Spielen eines Tic Tac Toe Spiels verwendet werden. Es ist uns jedoch möglich das Konzept, sprich die Essenz der Heuristik Entwicklung, aus dieser Beispielheuristik für Schachspiele zu entnehmen und auf die Heuristik Entwicklung für Reversi und Tic Tac Toe anzuwenden. \\
 
 Mehr zum Thema Heuristik Entwicklung in Kapitel \ref{cha:Modellierung und Entwurf} Modellierung und Entwurf, in diesem Kapitel werden wir ähnlich der gerade vorgestellten Heuristik, eigene Bewertungsfunktionen für Tic Tac Toe und Reversi entwerfen und in Kapitel \ref{cha:Implementierung} Implementierung, werden die modellierten Bewertungsfunktionen praktisch angewendet. \\
+
+\myparagraph{Tic Tac Toe Heuristik}
+
+\myparagraph{Reversi Heuristik}
