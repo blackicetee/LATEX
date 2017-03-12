@@ -4,26 +4,26 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Veranschaulichtes Ziel des Strategiespiels Tic Tac Toe.}}{6}{figure.2.1}
-\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Ausgangsspielzustand Reversi.}}{7}{figure.2.2}
-\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Spielzugm\IeC {\"o}glichkeiten Reversi.}}{8}{figure.2.3}
-\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Ein (partieller) Suchbaum vgl. \cite [208]{Russell}}}{10}{figure.2.4}
-\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Ein Alpha Beta Suchbaum \cite [213]{Russell}.}}{12}{figure.2.5}
-\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces TODO }}{14}{figure.2.6}
-\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Verschiedene Spielzugsequenzen enden im selben Spielzustand.}}{15}{figure.2.7}
-\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces Zobrist Hashing von Spielzust\IeC {\"a}nden.}}{16}{figure.2.8}
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Veranschaulichtes Ziel des Strategiespiels Tic Tac Toe.}}{7}{figure.2.1}
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Ausgangsspielzustand Reversi.}}{8}{figure.2.2}
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Spielzugm\IeC {\"o}glichkeiten Reversi.}}{9}{figure.2.3}
+\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Ein (partieller) Suchbaum vgl. \cite [208]{Russell}}}{11}{figure.2.4}
+\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Ein Alpha Beta Suchbaum \cite [213]{Russell}.}}{13}{figure.2.5}
+\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces TODO }}{15}{figure.2.6}
+\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Verschiedene Spielzugsequenzen enden im selben Spielzustand.}}{16}{figure.2.7}
+\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces Zobrist Hashing von Spielzust\IeC {\"a}nden.}}{17}{figure.2.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Der Agent und seine Wechselwirkung mit der Umgebung vgl. \cite [290]{Ertel} und \cite [398]{Alpaydin}.}}{19}{figure.3.1}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Der Agent und seine Wechselwirkung mit der Umgebung vgl. \cite [290]{Ertel} und \cite [398]{Alpaydin}.}}{20}{figure.3.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Tic Tac Toe und Reversi Spielzust\IeC {\"a}nde.}}{29}{figure.4.1}
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Die Projektproblematik.}}{30}{figure.4.2}
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Tic Tac Toe und Reversi Spielzust\IeC {\"a}nde.}}{30}{figure.4.1}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Die Projektproblematik.}}{31}{figure.4.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Symmetrie Eigenschaften des vier mal vier Tic Tac Toe Spielfelds.}}{37}{figure.5.1}
-\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Die Indizes der einzelnen Spielfelder.}}{38}{figure.5.2}
-\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Strategie um die Mitte zu kontrollieren.}}{39}{figure.5.3}
-\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces TicTacToe Angriffsstrategien (aus der Sicht von Bob) und Verteidigungsstrategien (aus der Sicht von Alice).}}{41}{figure.5.4}
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Symmetrie Eigenschaften des vier mal vier Tic Tac Toe Spielfelds.}}{38}{figure.5.1}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Die Indizes der einzelnen Spielfelder.}}{39}{figure.5.2}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Strategie um die Mitte zu kontrollieren.}}{40}{figure.5.3}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces TicTacToe Angriffsstrategien (aus der Sicht von Bob) und Verteidigungsstrategien (aus der Sicht von Alice).}}{42}{figure.5.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces TD-Q-Lernen Algorithmus}}{44}{figure.6.1}
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces TD-Q-Lernen Algorithmus}}{45}{figure.6.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 8.1}{\ignorespaces Vogelspezies Klassifikation basierend auf vier Eigenschaften}}{49}{figure.8.1}
+\contentsline {figure}{\numberline {\relax 8.1}{\ignorespaces Vogelspezies Klassifikation basierend auf vier Eigenschaften}}{50}{figure.8.1}

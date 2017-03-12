@@ -1,28 +1,20 @@
 \chapter{Projektvision}
 \label{cha:projektvision}
 
-\section{Motivation}
+Geschichte 10 Sätze ...
 
 \section{Zielsetzung}
-
-\section{Realisierung}
-
-\section{Ergebnisse}
-
-\section{Aufbau der Arbeit}
-
-
-%Zielsetzung
 Das Ziel der Arbeit ist es, ein bereits existierendes Lernverfahren zu implementieren und dessen Leistungsfähigkeit und Grenzen zu untersuchen. Das Lernverfahren soll eigenständig und automatisch eine Strategie lernen. Jeweils eine Strategie für das Strategiespiele Tic Tac Toe und das Strategiespiel Reversi. Wir bezeichnen die Implementierung des Lernverfahrens, als lernenden Agenten.\\  
 
 Ein weiteres Ziel in dieser Arbeit ist die Entwicklung von Bewertungsfunktionen (Heuristiken) für Reversi und Tic Tac Toe. Eine Heuristik berechnet eine Gewinnwahrscheinlichkeit ausgehend von einem Spielzustand. Ein Spielzustand mit einer hohen heuristischen Bewertung ist, gegenüber einem Spielzustand mit niedriger heuristischer Bewertung, zu bevorzugen. Eine Bewertungsfunktion soll das Spielwissen eines fortgeschrittenen menschlichen Spielers simulieren und als Implementierungsgrundlage für den nicht lernenden Agenten (auch heuristischer Agent) dienen.\\
 
-%Validierung
-Die Leistungsfähigkeit und Grenzen, des Lernverfahrens, beurteilen wir anhand diverser Testspiele. Bei diesen Testspielen spielt der lernende Agent gegen den nicht lernenden Agenten. Die Agenten werden jeweils in den Strategiespielen Tic Tac Toe und Reversi gegeneinander antreten. Wir unterteilen die Testspiele in drei Phasen. In jeder dieser Phasen testen wir ein Lernstadium des lernenden Agenten. In der ersten Phase (kurze Lernphase) lernt das Lernverfahren bzw. der lernende Agent in 1.000 Spielen gegen sich selbst eine Strategie. Wir erhören die Anzahl der Spiele gegen sich selbst in der zweiten Phase (mittlere Lernphase) auf 100.000 Spiele und in der dritten Phase (lange Lernphase) auf 1.000.000 Spiele gegen sich selbst. Nach Abschluss jeder Phase muss der lernende Agent genau 100 Testspielen gegen den nicht lernenden Agenten absolvieren. \\
+\section{Quantifizierung der Ziele}
+Die Leistungsfähigkeit und Grenzen, des Lernverfahrens, beurteilen wir anhand diverser Testspiele. Bei diesen Testspielen spielt der lernende Agent gegen den nicht lernenden Agenten und den Zufallsagenten. Die Agenten werden jeweils in den Strategiespielen Tic Tac Toe und Reversi gegeneinander antreten. Wir unterteilen die Testspiele in drei Phasen. In der ersten Phase (kurze Lernphase) lernt das Lernverfahren bzw. der lernende Agent in 100 Spielen gegen sich selbst eine Strategie. Wir erhören die Anzahl der Spiele gegen sich selbst in der zweiten Phase (mittlere Lernphase) auf 1.000 Spiele und in der dritten Phase (lange Lernphase) auf 10.000 Spiele gegen sich selbst. Nach Abschluss jeder Phase muss der lernende Agent genau 100 Testspielen gegen den nicht lernenden Agenten absolvieren. \\
 
 %Validierung der zu entwickelnden Bewertungsfunktionen
-Wir testen die Leistungsfähigkeit der Bewertungsfunktionen, genau wie vorher beschrieben, anhand von Testspielen. Der nicht lernende Agent, wird gegen einen Zufallsagenten antreten. Ein Zufallsagent wählt, aus allen möglichen Aktionen in einer Spielsituation, zufällig eine Aktion aus. Das Testkriterium der Bewertungsfunktionen ist eine Gewinnquote von mindestens 50\% in 100 Testspielen gegen einen Zufallsagenten. Sollte der Agent mindestens 50\% aller Testspiele Gewinnen, dann bezeichnen wir diesen, als Testgegner mit fortgeschrittenem Spielniveau. \\
+Wir testen die Leistungsfähigkeit der Bewertungsfunktionen ebenfalls anhand von Testspielen. Der nicht lernende Agent wird gegen einen Zufallsagenten antreten. Ein Zufallsagent wählt, aus allen möglichen Aktionen in einer Spielsituation, zufällig eine Aktion aus. Das Testkriterium der Bewertungsfunktionen ist eine Gewinnquote von mindestens 60\% in 100 Testspielen gegen einen Zufallsagenten. Sollte der Agent mindestens 60\% aller Testspiele Gewinnen, dann bezeichnen wir diesen, als Testgegner mit fortgeschrittenem Spielniveau. \\
 
+\section{Realisierung des Heuristik Agenten}
 %Realisierung nicht lernender Agent / feste Strategie
 In der Implementierung des nicht lernenden oder heuristischen Agenten ist, neben der Bewertungsfunktion, noch ein anderes Verfahren enthalten. Das Suchbaumverfahren für 2-Personenspiele. Dieses Verfahren durchsucht einen Spielbaum nach der bestmöglichen Aktion (einem Spielzug) in einem gegebenen Zustand. Ein Zustand oder Spielzustand ist eine Spielsituation bzw. eine Stellung der Spielfiguren auf dem Spielfeld. \\
 
@@ -34,20 +26,25 @@ Das Suchbaumverfahren muss den Suchbaum, unter Verwendung einer Heuristik, nicht
 
 Die Qualität dieser Gewinnschätzung ist wiederum von der maximalen Suchtiefe und der Bewertungsfunktion abhängig. Eine größere Suchtiefe resultiert in einer besseren Schätzung, weil unter Umständen mehr Spielzustände berücksichtigt werden können. Die Verwendung einer Bewertungsfunktion ist keine Garantie für eine optimale Strategie. Verschiedene Bewertungsfunktionen können stark voneinander abweichende Gewinnschätzungen für Spielzustände berechnen. \\
 
-%Realisierung lernender Agent / gelernte Strategie
-Wir stellen mehrere Lernverfahren innerhalb dieser Arbeit vor, aber wir werden nur das Q-Lernen (auch TD-Q-Lernen) implementieren und untersuchen. Das TD-Q-Lernen ist ein Lernverfahren aus dem Bereich des verstärkenden Lernens. Verstärkendes Lernen (eng. reinforcement Learning) ist, wie das überwachte Lernen, eine Lernkategorie des maschinellen Lernens. \\
+\section{Realisierung des TD-Q lernenden Agent}
+Wir stellen mehrere Lernverfahren innerhalb dieser Arbeit vor, aber wir werden nur das Q-Lernen (auch TD-Q-Lernen) implementieren und untersuchen. Das TD-Q-Lernen ist ein Lernverfahren aus dem Bereich des verstärkenden Lernens. Das TD-Q-Lernen soll es uns ermöglichen einen selbst lernenden Agenten zu programmieren. Verstärkendes Lernen (eng. reinforcement Learning) ist eine Lernkategorie des maschinellen Lernens. Problemstellungen des verstärkenden Lernens sind, u.a. das lernen von Strategiespielen, wie Schach, Reversi, Dame oder Backgammon. Der theoretische verstärkend lernende Lösungsansatz dieser Probleme ist wie folgt: ein Agent soll ein ihm unbekanntes Strategiespiel lernen (das Strategiespiel ist die unbekannte Umgebung), für einen Spielzug  (Aktion) in einer Spielsituation (Zustand) erhält der Agent eine numerische Belohnung oder Bestrafung (Verstärkung), mittels dieser Verstärkung soll der Agent ein optimales Verhalten in der ihm unbekannte Umgebung erlernen.\\
 
-Verstärkendes lernen versucht, u.a. das lernen von Strategiespielen, wie Schach, Reversi, Dame oder Backgammon, zu ermöglichen. Ein verstärkendes Lernverfahren benötigt, im Gegensatz zu einem überwachten Lernverfahren, keinen Lehrer. Ein Lehrer ist eine Abbildung von Eigenschaften (eng. features) auf Zielvariablen (eng. target values), d.h. einem überwachten Lernverfahren muss explizit, für jede mögliche Spielsituation, mitgeteilt werden,  ob diese Spielsituation gut oder schlecht ist. Die Spielsituationen sind die Eigenschaften und die dazugehörigen Zielvariablen sind mit den Werten ''gut'' oder ''schlecht'' belegt. Innerhalb dieser Arbeit konzentrieren wir uns größtenteils auf die verstärkenden Lernverfahren. \\
+Wie realisiert das TD-Q-Lernen diesen verstärkenden Lernansatz? Das TD-Q-Lernen lernt Q-Werte für Zustand/Aktionspaare, diese Q-Werte werden bei jedem erneuten Auftreten des Zustand/Aktionspaares aktualisiert. Eine Q-Funktion ist eine Abbildung von allen möglichen Zustand/Aktionspaaren auf Q-Werte und eine Q-Funktion ist eine Möglichkeit Nutzeninformationen zu speichern \cite[974]{Russell}. Nachdem der Agent eine Q-Funktion gelernt hat, kann er mittels dieser, vermeintlich optimale Aktionen auswählen. Wir schreiben ''Vermeintlich'', weil eine gelernte Q-Funktion nicht immer zu einer optimalen Strategie konvergiert.
+
+Wir zeige in dieser Arbeit praktisch, dass das TD-Q-Lernen ohne Erweiterungen, nur auf Probleme mit geringer Komplexität angewendet werden kann. Die Komplexität bzw. Dimensionalität des Ausgangsproblems ist ein Grund dafür, dass die gelernte Q-Funktion nicht immer zu einer optimalen Strategie konvergiert, ein anderer Grund ist die zeitliche Beschränkung durch die Realität, d.h. in der Realität können nicht unendlich viele Testspiele durchgeführt werden. Es wurde bereits empirisch belegt, dass das Q-Lernen, sollte jedes Zustand/Aktionspaar nahezu unendlich oft besucht und aktualisiert werden, immer zu einer optimalen Strategie konvergiert. Das Problem dabei ist, dass die Komplexität bzw. die Dimensionalität des Ausgangsproblems, ein exponentiellen Verhältnis zur Zustands- und Aktionsmenge hat. \\
+
+Lernt der TD-Q Agent, z.B. innerhalb von 10.000 Testspielen eine nahezu optimale Strategie für ein Tic Tac Toe Spiel mit 3 mal 3 Dimensionen (9 Spielfelder), dann ist das TD-Q-Lernen praktisch für ein Strategiespiel bis zu dieser Dimensionalität anwendbar. Erhöhen wir die Zustands- und Aktionsdimension, z.B. bei einem 16 Spielfelder Tic Tac Toe Spiel, dann reichen selbst 1.000.000 Testspiele unter Umständen nicht mehr aus, um eine annähernd optimale Strategie zu lernen. Jede weitere Dimension erhöht außerdem die Dauer eines Trainingsspiels, d.h. für jede weitere Dimension benötigt das TD-Q-Lernverfahren erheblich mehr Testspiele, um zu einer annähernd optimalen Strategie zu konvergieren und gleichzeitig erhöht sich die Dauert jedes Testspiels für jede zusätzliche Dimension des Ausgangsproblems.
 
 \section{Hypothese}
 \label{sec:Hypothese}
-Die festen Strategien werden die gelernten Strategien, des TD-Q-Lernens, in jeder der drei Testphasen und in jedem der Strategiespiele, dominieren. Dominieren definieren wir, als eine Gewinnquote von mindestens 50\% der Testspiele in jeder Testphase. \\
+Der Heuristik Agent wird in beiden Strategiespielen gegen den lernenden Agenten mindestens 50\% aller Testspiele gewinnen.\\
 
 Bestätigen wir diese Hypothese, dann belegen wir folgende Aspekte:
 
 \begin{enumerate}
-\item Das TD-Q-Lernen kann, innerhalb von maximal 1.000.000 Trainingsspielen gegen sich selbst, keine Strategie entwickeln, die besser ist, als die in dieser Arbeit implementierte feste Strategie.
-\item Das TD-Q-Lernen muss möglicherweise mehr als 1.000.000 Trainingsspiele gegen sich selbst spielen, um eine bessere Strategie, als die feste Strategie, zu lernen.
+\item Das TD-Q-Lernen kann, innerhalb von maximal 10.000 Trainingsspielen gegen sich selbst, keine Strategie entwickeln, die in 100 Testspielen häufiger Gewinnt, als die in dieser Arbeit implementierte 2-Züge vorausschauende Heuristik-Suche.
+\item Das TD-Q-Lernen muss möglicherweise mehr als 10.000 Trainingsspiele gegen sich selbst spielen, um eine bessere Strategie, als die nicht lernende Strategie, zu lernen.
+\item Die Konvergenzgeschwindigkeit das TD-Q-Lernen zu einer optimalen Strategie, ist möglicherweise stark von der Dimensionalität des Ausgangsproblems abhängig, d.h. genau wie die uninformierten Suchbaumverfahren, ist das TD-Q-Lernen nur auf sehr einfache bzw. niedrig dimensionale Probleme anwendbar. Konvergenzgeschwindigkeit ist die Zeit, die ein Lernverfahren benötigt, bis es eine annähernd optimale Strategie entwickelt hat.
 \item Das reine TD-Q-Lernen, ohne Erweiterungen, ist möglicherweise keine geeignetes Lernverfahren für das lernen eines Strategiespiels.  
 \end{enumerate}
 
