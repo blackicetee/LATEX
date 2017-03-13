@@ -11,7 +11,7 @@
 \BOOKMARK [1][-]{section.2.1}{Das Strategiespiel Tic Tac Toe}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.2}{Das Strategiespiel Reversi}{chapter.2}% 12
 \BOOKMARK [1][-]{section.2.3}{Spieltheorie}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.3.1}{Minimax}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.1}{Minimax-Suche}{section.2.3}% 14
 \BOOKMARK [2][-]{subsection.2.3.2}{Alpha-Beta-K\374rzung}{section.2.3}% 15
 \BOOKMARK [2][-]{subsection.2.3.3}{Iterativ vertiefende Tiefensuche}{section.2.3}% 16
 \BOOKMARK [2][-]{subsection.2.3.4}{\334bergangstabellen}{section.2.3}% 17
@@ -36,25 +36,24 @@
 \BOOKMARK [2][-]{subsection.4.2.7}{Reversi TD-Q lernender Agent}{section.4.2}% 36
 \BOOKMARK [2][-]{subsection.4.2.8}{Testen der Agenten}{section.4.2}% 37
 \BOOKMARK [0][-]{chapter.5}{Modellierung und Entwurf}{}% 38
-\BOOKMARK [1][-]{section.5.1}{Tic Tac Toe Heuristik}{chapter.5}% 39
-\BOOKMARK [1][-]{section.5.2}{Reversi Heuristik}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.3}{Die Strategiespielumgebungen Tic Tac Toe und Reversi}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.4}{Agent ohne Lernen}{chapter.5}% 42
-\BOOKMARK [1][-]{section.5.5}{Agent mit TD-Q-Lernen}{chapter.5}% 43
-\BOOKMARK [0][-]{chapter.6}{Algorithmen und Implementierung}{}% 44
-\BOOKMARK [1][-]{section.6.1}{Tic Tac Toe}{chapter.6}% 45
-\BOOKMARK [1][-]{section.6.2}{Reversi}{chapter.6}% 46
-\BOOKMARK [1][-]{section.6.3}{Suchbaumverfahren}{chapter.6}% 47
-\BOOKMARK [1][-]{section.6.4}{Heuristiken}{chapter.6}% 48
-\BOOKMARK [1][-]{section.6.5}{TD-Q-Lernen}{chapter.6}% 49
-\BOOKMARK [0][-]{chapter.7}{Validierung}{}% 50
-\BOOKMARK [1][-]{section.7.1}{Logiktest der Strategiespiele Tic Tac Toe und Reversi}{chapter.7}% 51
-\BOOKMARK [1][-]{section.7.2}{Agententest}{chapter.7}% 52
-\BOOKMARK [2][-]{subsection.7.2.1}{Bewertungskriterien}{section.7.2}% 53
-\BOOKMARK [2][-]{subsection.7.2.2}{Persistenz der Agentenerfahrung}{section.7.2}% 54
-\BOOKMARK [0][-]{chapter.8}{Auswertung}{}% 55
-\BOOKMARK [1][-]{section.8.1}{Konvergenz des TD-Q-Lernens}{chapter.8}% 56
-\BOOKMARK [2][-]{subsection.8.1.1}{Generalisierung oder Funktionsann\344herung}{section.8.1}% 57
-\BOOKMARK [2][-]{subsection.8.1.2}{Neuronales Lernen}{section.8.1}% 58
-\BOOKMARK [1][-]{section.8.2}{Gegen\374berstellung der Lernverfahren}{chapter.8}% 59
-\BOOKMARK [1][-]{section.8.3}{Gegen\374berstellung \374berwachtes und verst\344rkendes Lernen}{chapter.8}% 60
+\BOOKMARK [1][-]{section.5.1}{Die Strategiespielumgebungen}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.2}{Der Heuristik Agent}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.3}{Der TD-Q Agent}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.4}{Die Testumgebung}{chapter.5}% 42
+\BOOKMARK [0][-]{chapter.6}{Algorithmen und Implementierung}{}% 43
+\BOOKMARK [1][-]{section.6.1}{Tic Tac Toe}{chapter.6}% 44
+\BOOKMARK [1][-]{section.6.2}{Reversi}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.3}{Suchbaumverfahren}{chapter.6}% 46
+\BOOKMARK [1][-]{section.6.4}{Heuristiken}{chapter.6}% 47
+\BOOKMARK [1][-]{section.6.5}{TD-Q-Lernen}{chapter.6}% 48
+\BOOKMARK [0][-]{chapter.7}{Validierung}{}% 49
+\BOOKMARK [1][-]{section.7.1}{Logiktest der Strategiespiele Tic Tac Toe und Reversi}{chapter.7}% 50
+\BOOKMARK [1][-]{section.7.2}{Agententest}{chapter.7}% 51
+\BOOKMARK [2][-]{subsection.7.2.1}{Bewertungskriterien}{section.7.2}% 52
+\BOOKMARK [2][-]{subsection.7.2.2}{Persistenz der Agentenerfahrung}{section.7.2}% 53
+\BOOKMARK [0][-]{chapter.8}{Auswertung}{}% 54
+\BOOKMARK [1][-]{section.8.1}{Konvergenz des TD-Q-Lernens}{chapter.8}% 55
+\BOOKMARK [2][-]{subsection.8.1.1}{Generalisierung oder Funktionsann\344herung}{section.8.1}% 56
+\BOOKMARK [2][-]{subsection.8.1.2}{Neuronales Lernen}{section.8.1}% 57
+\BOOKMARK [1][-]{section.8.2}{Gegen\374berstellung der Lernverfahren}{chapter.8}% 58
+\BOOKMARK [1][-]{section.8.3}{Gegen\374berstellung \374berwachtes und verst\344rkendes Lernen}{chapter.8}% 59
