@@ -39,7 +39,7 @@
 \contentsline {section}{\numberline {3.4}Optimale Taktiken}{29}{section.3.4}
 \contentsline {section}{\numberline {3.5}Dynamische Programmierung und Wert-Iteration}{29}{section.3.5}
 \contentsline {section}{\numberline {3.6}Temporale Differenz Lernen}{31}{section.3.6}
-\contentsline {section}{\numberline {3.7}TD-Q-Lernen}{32}{section.3.7}
+\contentsline {section}{\numberline {3.7}Q-Lernen}{32}{section.3.7}
 \contentsline {chapter}{\numberline {4}Problemanalyse und Anforderungsdefinition}{33}{chapter.4}
 \contentsline {section}{\numberline {4.1}Die Problematik}{33}{section.4.1}
 \contentsline {paragraph}{\nonumberline Die Spieltheorie}{33}{section*.19}
@@ -81,24 +81,13 @@
 \contentsline {chapter}{\numberline {6}Algorithmen und Implementierung}{43}{chapter.6}
 \contentsline {section}{\numberline {6.1}Iterative Alpha-Beta Suche}{43}{section.6.1}
 \contentsline {section}{\numberline {6.2}TD-Q-Lernen}{45}{section.6.2}
-\contentsline {paragraph}{\nonumberline Entdecken (eng. exploration) oder Verwenden (eng. exploitation)}{47}{section*.41}
-\contentsline {chapter}{\numberline {7}Validierung}{49}{chapter.7}
-\contentsline {section}{\numberline {7.1}Logiktest der Strategiespiele Tic Tac Toe und Reversi}{49}{section.7.1}
-\contentsline {section}{\numberline {7.2}Agententest}{49}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Bewertungskriterien}{49}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Persistenz der Agentenerfahrung}{49}{subsection.7.2.2}
-\contentsline {chapter}{\numberline {8}Auswertung}{50}{chapter.8}
-\contentsline {section}{\numberline {8.1}Konvergenz des TD-Q-Lernens}{50}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Generalisierung oder Funktionsann\IeC {\"a}herung}{50}{subsection.8.1.1}
-\contentsline {paragraph}{\nonumberline Samuels Dame-Spiel}{50}{section*.42}
-\contentsline {paragraph}{\nonumberline Agent mit TD-Lernen}{50}{section*.43}
-\contentsline {subsection}{\numberline {8.1.2}Neuronales Lernen}{51}{subsection.8.1.2}
-\contentsline {paragraph}{\nonumberline TD-Gammon}{51}{section*.44}
-\contentsline {paragraph}{\nonumberline Sind Lernverfahren \IeC {\"u}berhaupt Sinnvoll?}{51}{section*.45}
-\contentsline {section}{\numberline {8.2}Gegen\IeC {\"u}berstellung der Lernverfahren}{51}{section.8.2}
-\contentsline {paragraph}{\nonumberline \IeC {\"U}berwachtes Lernen}{51}{section*.46}
-\contentsline {paragraph}{\nonumberline Wert-Iteration und dynamische Programmierung}{51}{section*.47}
-\contentsline {paragraph}{\nonumberline TD-Lernen}{51}{section*.48}
-\contentsline {paragraph}{\nonumberline Q-Lernen}{51}{section*.49}
-\contentsline {paragraph}{\nonumberline Funktionsann\IeC {\"a}herung}{51}{section*.50}
-\contentsline {section}{\numberline {8.3}Gegen\IeC {\"u}berstellung \IeC {\"u}berwachtes und verst\IeC {\"a}rkendes Lernen}{51}{section.8.3}
+\contentsline {paragraph}{\nonumberline Erkunden und Verwenden}{48}{section*.41}
+\contentsline {chapter}{\numberline {7}Validierung}{50}{chapter.7}
+\contentsline {section}{\numberline {7.1}Logiktest der Strategiespiele Tic Tac Toe und Reversi}{50}{section.7.1}
+\contentsline {section}{\numberline {7.2}Agententest}{50}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Bewertungskriterien}{50}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Persistenz der Agentenerfahrung}{50}{subsection.7.2.2}
+\contentsline {chapter}{\numberline {8}Auswertung}{51}{chapter.8}
+\contentsline {section}{\numberline {8.1}Ausblick}{51}{section.8.1}
+\contentsline {paragraph}{\nonumberline Agent mit TD-Lernen}{52}{section*.42}
+\contentsline {subsection}{\numberline {8.1.1}Neuronales Lernen}{52}{subsection.8.1.1}

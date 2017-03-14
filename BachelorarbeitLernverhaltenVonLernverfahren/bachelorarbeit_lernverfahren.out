@@ -23,7 +23,7 @@
 \BOOKMARK [1][-]{section.3.4}{Optimale Taktiken}{chapter.3}% 23
 \BOOKMARK [1][-]{section.3.5}{Dynamische Programmierung und Wert-Iteration}{chapter.3}% 24
 \BOOKMARK [1][-]{section.3.6}{Temporale Differenz Lernen}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.7}{TD-Q-Lernen}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.7}{Q-Lernen}{chapter.3}% 26
 \BOOKMARK [0][-]{chapter.4}{Problemanalyse und Anforderungsdefinition}{}% 27
 \BOOKMARK [1][-]{section.4.1}{Die Problematik}{chapter.4}% 28
 \BOOKMARK [1][-]{section.4.2}{Anforderungen}{chapter.4}% 29
@@ -49,8 +49,5 @@
 \BOOKMARK [2][-]{subsection.7.2.1}{Bewertungskriterien}{section.7.2}% 49
 \BOOKMARK [2][-]{subsection.7.2.2}{Persistenz der Agentenerfahrung}{section.7.2}% 50
 \BOOKMARK [0][-]{chapter.8}{Auswertung}{}% 51
-\BOOKMARK [1][-]{section.8.1}{Konvergenz des TD-Q-Lernens}{chapter.8}% 52
-\BOOKMARK [2][-]{subsection.8.1.1}{Generalisierung oder Funktionsann\344herung}{section.8.1}% 53
-\BOOKMARK [2][-]{subsection.8.1.2}{Neuronales Lernen}{section.8.1}% 54
-\BOOKMARK [1][-]{section.8.2}{Gegen\374berstellung der Lernverfahren}{chapter.8}% 55
-\BOOKMARK [1][-]{section.8.3}{Gegen\374berstellung \374berwachtes und verst\344rkendes Lernen}{chapter.8}% 56
+\BOOKMARK [1][-]{section.8.1}{Ausblick}{chapter.8}% 52
+\BOOKMARK [2][-]{subsection.8.1.1}{Neuronales Lernen}{section.8.1}% 53

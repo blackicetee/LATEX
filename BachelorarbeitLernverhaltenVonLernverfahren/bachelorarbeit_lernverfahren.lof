@@ -24,7 +24,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Alpha-Beta iterativ vertiefende Suche}}{44}{figure.6.1}
 \contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Iteratives Suchen des maximalen Ergebnisses.}}{45}{figure.6.2}
-\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces TD-Q-Lernen Algorithmus}}{46}{figure.6.3}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces TD-Q-Lernen Algorithmus vgl. \cite [974]{Russell}}}{46}{figure.6.3}
+\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Die implementierte Explorationsstrategie.}}{48}{figure.6.4}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 8.1}{\ignorespaces Vogelspezies Klassifikation basierend auf vier Eigenschaften}}{52}{figure.8.1}
