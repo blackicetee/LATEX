@@ -73,7 +73,7 @@ In diesem Abschnitt werden wir erklären was uninformierte Suchbaumverfahren, Ü
 
 Schach, Vier gewinnt, Dame, Tic Tac Toe und Reversi sind strategische Spiele für zwei Personen, die gegeneinander antreten, um nach den Regeln des Spiels, den Gegenspieler zu besiegen. Diese Spiele sind deterministisch, weil das Spiel nicht vom Zufall abhängt und der gleiche Spielzug führt, bei gleichem Ausgangszustand, immer zum selben Spielergebnis. Ein nichtdeterministisches Spiel mit Gegenspieler ist z.B. Backgammon, denn Würfelergebnisse und somit der Zufall sind Bestandteil des Spiels. Die eben genannten Strategiespiele sind alle vollständig beobachtbar (wir verfügen über vollständige Information). Sie sind vollständig überschaubar, weil zu jedem Zeitpunkt des Spiels, das Spielfeld und alle Spielzüge einsehbar sind. Ein nicht vollständig beobachtbares Spiel ist, z.B. Poker oder andere Kartenspiele. Bei einem Poker Spiel sind die gegnerischen Karten und die Karten im Spieldeck unbekannt.\\
 
-''In der künstlichen Intelligenz haben die gebräuchlichsten Spiele in der Regel eine spezielle Natur - die Spieltheoretiker sprechen von deterministischen Zwei-Personen-Nullsummenspielen mit vollständiger Informaiton, bei denen zwei Spieler abwechselt agieren (wie zum Beispiel Schach)\cite[206]{Russell}.'' Die von Russell und Norvig erwähnten Eigenschaften treffen auch auf unsere Strategiespiele zu. Reversi und Tic Tac Toe sind deterministische und vollständig überschaubare Nullsummenspiele, d.h. wir müssen zufällig auftretende Zustandsübergänge und unbekannte Informationen, in unseren Heuristiken und Lernverfahren, nicht berücksichtigen. Nullsummenspiel bedeutet: gewinnt ein Spieler eine Partie, dann verliert der Gegenspieler automatisch in gleicher Höhe.
+''In der künstlichen Intelligenz haben die gebräuchlichsten Spiele in der Regel eine spezielle Natur - die Spieltheoretiker sprechen von deterministischen Zwei-Personen-Nullsummenspielen mit vollständiger Informaiton, bei denen zwei Spieler abwechselt agieren (wie zum Beispiel Schach) \cite[206]{Russell}.'' Die von Russell und Norvig erwähnten Eigenschaften treffen auch auf unsere Strategiespiele zu. Reversi und Tic Tac Toe sind deterministische und vollständig überschaubare Nullsummenspiele, d.h. wir müssen zufällig auftretende Zustandsübergänge und unbekannte Informationen, in unseren Heuristiken und Lernverfahren, nicht berücksichtigen. Nullsummenspiel bedeutet: gewinnt ein Spieler eine Partie, dann verliert der Gegenspieler automatisch in gleicher Höhe.
 
 \subsection{Minimax-Suche}
 \label{subsec:Minimax}
@@ -206,23 +206,18 @@ Formal definieren Russell und Norvig Bewertungsfunktionen \cite[218]{Russell}:
 als eine gewichtete Lineare Funktion einer Menge von Merkmalen (oder Basisfunktionen) $f_1, ..., f_n$. Die Parameter $\theta = \theta_1, ... \theta_n$ sind die Gewichtungen der einzelnen Merkmale, d.h. ein Parameter bestimmt, wie ''wichtig'' ein Merkmal ist.
 
 \myparagraph{Tic Tac Toe Heuristik}
-Für eine bessere Beschreibung der Tic Tac Toe Heuristik, werden wir eine konkrete Identifikation der einzelnen Spielfelder vornehmen. In Abbildung \ref{fig:tictactoe_spielfeld_indizes} weisen wir jedem der Spielfelder einen Index zu. Die Eckfelder (0,0), (0,3), (3,0) und (3,3) sind weiß. Die Randfelder (1,0), (2,0), (0,1), (0,2), (3,1), (3,2), (1,3) und (2,3) sind grau. Die Mittelfelder (1,1), (1,2), (2,1) und (2,2) sind schwarz. \\
-
-\begin{figure}[!htbp]
-  \centering
-  \includegraphics[scale = 0.7]{inhalt/abbildungen/tictactoe_spielfeld_indizes.pdf}
-  \caption{Die Indizes der einzelnen Spielfelder.}
-  \label{fig:tictactoe_spielfeld_indizes}
-\end{figure}
-
 Das erste Merkmal unserer Tic Tac Toe Heuristik ist, die Kontrolle der mittleren Spielfelder, d.h. Spielsituationen in denen die mittleren Spielfelder mit eigenen Spielfiguren besetzt sind, erhalten eine höhere Bewertung. Die Kontrolle des mittleren Spielfeldes bezeichnet ein Eröffnungsmerkmal. Die erste Spielfigur, soll in die mittleren Spielfelder gesetzt werden und die zweite eigene Spielfigur, soll in die vom Gegenspieler nicht gestörte mittlere Position gesetzt werden. \\
 
 \begin{figure}[!htbp]
   \centering
-  \includegraphics[scale = 0.7]{inhalt/abbildungen/tictactoe_mid_control.pdf}
+  \includegraphics[scale = 0.5]{inhalt/abbildungen/tictactoe_mid_control.pdf}
   \caption{Tic Tac Toe Eröffnungssituationen.}
   \label{fig:tictactoe_mid_control}
 \end{figure}
+
+Abbildung \ref{fig:tictactoe_mid_control} zeigt 4 verschiedene Spielsituationen. Wir werden das erste Merkmal der Tic Tac Toe Heuristik an diesem Beispiel erklären. Spielsituation (a) wird, nach der Definition des ersten Merkmals, eine bessere heuristische Bewertung erhalten, als Spielsituation (b). Die Kreuzspielsteine sind in beiden Spielsituationen zwar gleich positioniert, aber der Kreisspielstein stört in Spielsituation (b) die Siegesformation des Kreuzspielers. Aus dem selben Grund ist Spielsituation (c) ''wertvoller'' oder ''nützlicher'' als Spielsituation (d). In Spielsituation (c) ist eine mögliche Siegesformation des Kreuzspielers (mit bereits 2 Kreuzfiguren) ungestört. In Spielsituation (d) ist die diagonale Siegesformation des Kreuzspielers bereits gestört und somit unbrauchbar, hinsichtlich einer größeren Gewinnchance. \\
+
+Das zweite Merkmal der Tic Tac Toe Heuristik ist, die Beachtung der ungestörten Möglichkeiten für Siegesformationen. Eine Formationsmöglichkeit wird gefährlicher bzw. attraktiver, je mehr gleiche Spielfiguren sich bereits in dieser befinden. Wir stellen bei diesem Merkmal gegenüber: wie viele, vom Gegenspieler nicht gestörte, Formationsmöglichkeiten  einem Spieler zur Verfügung stehen und wie viele ungestörte Formationsmöglichkeiten der Gegenspieler hat. \\
 
 \begin{figure}[!htbp]
   \centering
@@ -231,13 +226,29 @@ Das erste Merkmal unserer Tic Tac Toe Heuristik ist, die Kontrolle der mittleren
   \label{fig:tictactoe_formations}
 \end{figure}
 
-
-
-Das zweite Merkmal der Tic Tac Toe Heuristik ist, die Beachtung der ungestörten Möglichkeiten für Siegesformationen. Eine Formationsmöglichkeit wird gefährlicher bzw. attraktiver, je mehr gleiche Spielfiguren sich bereits in dieser befinden. Wir stellen bei diesem Merkmal gegenüber: wie viele, vom Gegenspieler nicht gestörte, Formationsmöglichkeiten  einem Spieler zur Verfügung stehen und wie viele ungestörte Formationsmöglichkeiten der Gegenspieler hat. 
-
+Betrachten wir die ungestörten möglichen Siegesformationen in Abbildung \ref{fig:tictactoe_formations}. In Spielsituation (a) hat der Kreuzspieler 2 Möglichkeiten eine Siegesformation zu erreichen. In der vertikalen Formation sind bereits 3 Kreuze und in der diagonalen 1 Kreuz vorhanden. Die vertikal mögliche Siegesformation ist wesentlich höherwertiger, als die diagonal mögliche Siegesformation, weil diese bereits mehr Kreuzfiguren enthält. In Spielsituation (b) verfügt der Kreuzspieler über 4 mögliche ungestörte Siegesformationen, wobei die diagonal mögliche Siegesformation attraktiver sein sollte, als die anderen 3 möglichen Formationen. Die möglichen Siegesformationen des Gegenspielers sollen ebenfalls berücksichtigt werden.
 
 \myparagraph{Reversi Heuristik}
-%http://www.samsoft.org.uk/reversi/strategy.htm
+Für die Erstellung der Reversi Heuristik verwenden wir bereits existierendes strategisches Wissen (siehe Sammlung von Reversi Strategien \cite{MacGuire}). \\
+
+Das erste wichtige Merkmal für unsere Reversi Heuristik ist die Mobilität. Das Merkmal der Mobilität wird in zwei Merkmale aufgeteilt. Ein Merkmal für die aktuelle Mobilität und ein zweites Merkmal für die mögliche Mobilität. Mit aktueller Mobilität ist die Anzahl aller möglichen Spielzüge in einem aktuellen Spielzustand gemeint. Die Anzahl der Spielsteine am Ende des Spiels ist zwar Entscheidend, aber in den Spielzügen bevor das Spiel endet, ist der Spieler im Vorteil, der mehr Zugmöglichkeiten hat. \\
+
+Abbildung \ref{fig:reversi_maximum_disk_strategy} zeigt eine Spielsituation in der Spieler Weiß nahezu alle Spielsteine kontrolliert. Spieler Schwarz ist jedoch der einige Spieler der noch über Mobilität verfügt, d.h. er kann noch Spielzüge ausführen. In den nachfolgenden 4 Spielzügen $(0,0) \rightarrow (0,7) \rightarrow (7,0) \rightarrow (7,7)$ gewinnt der Schwarze Spieler die Partie. \\
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[scale = 0.3]{inhalt/abbildungen/reversi_maximum_disk_strategy.pdf}
+  \caption{Reversi Merkmal der aktuellen Mobilität.}
+  \label{fig:reversi_maximum_disk_strategy}
+\end{figure}
+
+Die mögliche Mobilität beachtet alle freien Spielfelder die an gegnerische Spielsteine Angrenzen. In Abbildung \ref{fig:reversi_movement_notation_positioning} (a) ist Spieler Weiß am Zug. Die aktuelle Mobilität ist in dieser Spielsituation identisch mit der möglichen Mobilität, denn es gibt nur 3 freie Spielfelder die an schwarze Spielsteine angrenzen. Bei der ersten Spielsituation in Abbildung \ref{fig:reversi_maximum_disk_strategy} ist die aktuelle Mobilität gleich 2 und die mögliche Mobilität gleich 4.\\
+
+Das zweite wichtige Merkmal für unsere Reversi Heuristik ist die Bewertung der Eckspielfelder und der Randspielfelder. In Abbildung \ref{fig:reversi_movement_notation_positioning} (b) sind bestimmte Spielfelder mit Buchstaben gekennzeichnet, diese Buchstaben repräsentieren Spielfelder mit bestimmten Eigenschaften. Alle X-Spielfelder (eng. x-squares) sollten unbedingt vermieden werden, denn sie bieten dem Gegner (fast immer) die Möglichkeit eine der 4 Ecken zu besetzen. Es existieren auch Strategien die, die Vier Ecken generell, aus Gründen eingeschränkter Mobilität, vermeiden. \\
+
+Das Ziel unserer Reversi Heuristik soll das besetzen dieser 4 Ecken sein und gleichzeitig das Verhindern, dass der Gegenspieler diese Ecken besetzt. Genau wie die X-Spielfelder, bieten die C-Spielfelder direkten Zugang zu den 4 Ecken des Spielbretts. Die C-Spielfelder sollen daher ebenfalls vermieden werden. A- und B-Spielfelder sind zu bevorzugen und können besetzt werden. In Abbildung \ref{fig:reversi_movement_notation_positioning} (c) sind die einzelnen Bewertungen der Positionen veranschaulicht. Diese numerischen Bewertungen beziehen sich auf das gesamte Reversi Spielbrett, weil dieses Symmetrisch ist.
+
+
 \begin{figure}[!htbp]
   \centering
   \includegraphics[scale = 0.5]{inhalt/abbildungen/reversi_movement_notation_positioning.pdf}

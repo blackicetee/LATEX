@@ -1,22 +1,69 @@
 \chapter{Algorithmen und Implementierung}
 \label{cha:Algorithmen und Implementierung}
 
-In diesem Kapitel: //TODO Einführung in das Kapitel
+Wir werden in diesem Kapitel den Algorithmus des vorausschauenden und des lernenden Agenten betrachten. Der Algorithmus des vorausschauenden Agenten ist eine Kombination aus 2 Algorithmen. Der Alpha-Beta Algorithmus \cite[212 \psqq]{Russell} und der Algorithmus der iterativ vertiefende Tiefensuche \cite[124 \psqq]{Russell}. Der vorausschauende Algorithmus benötigt zusätzlich noch eine Heuristik, um die iterativ vertiefende Suche in einer bestimmten Suchtiefe abbrechen zu können. Wir haben im Abschnitt \ref{subsec:Heuristik} bereits Heuristiken für Reversi und Tic Tac Toe entworfen. Der Algorithmus des lernenden Agenten ist das TD-Q-Lernen \cite[973 \psqq]{Russell}. Das bisher noch nicht erwähnte Verhältnis von Exploration und Ausnutzung wird am ende des Kapitels erklärt.\\
 
-\section{Tic Tac Toe}
+Die Strategiespielumgebungen Reversi und Tic Tac Toe sind kommentiert und getestet. Die Implementierung dieser Strategiespielumgebungen wird in diesem Kapitel nicht erklärt. Sollte trotzdem Interesse an diesen Implementierungen bestehen, dann können diese direkt in der Programmlogik des Prototypen nachgesehen werden. Die von mir implementierten Algorithmen sind in der Programmiersprache Python realisiert. Python ist eine Hochsprache die sehr leicht erlernbar ist und leicht von Menschen gelesen werden kann, sie ähnelt einer Darstellung in Pseudocode. Python wird außerdem sehr gerne im Bereich des maschinellen Lernens eingesetzt. Ich verwenden in dieser Arbeit die Python Version 2.7.13. \\
 
-\section{Reversi}
+\section{Iterative Alpha-Beta Suche}
+Die Alpha-Beta Suche war bereits Thema des Abschnitts \ref{subsec:Alpha-Beta-Kürzung} und die iterativ vertiefende Tiefensuche des Abschnitts \ref{subsec:Iterativ vertiefende Tiefensuche}. Es folgt eine Beschreibung der Implementierung dieser beiden Algorithmen.\\
 
-\section{Suchbaumverfahren}
+Sehen wir uns das Codebeispiel aus Abbildung \ref{fig:Alpha-Beta iterativ vertiefende Suche} genauer an. Der Eingabeparameter der Funktion ist ein Zustand (eine Spielsituation) der Spielumgebung. Basierend auf diesem Zustand expandiert die Funktion einen Suchbaum mit der maximalen Tiefe 2. Ziel der Funktion ist es ein minimales oder ein maximales Ergebnis innerhalb der Suchtiefe 2 zu finden. Muss der Kreuzspieler seinen Spielzug ausführen, dann wird ein maximales Ergebnis gesucht und muss der Kreisspieler seinen Spielzug ausführen, wird ein minimales Ergebnis gesucht. Zurückgegeben wird ein entsprechendes Aktionstupel der Form (x,y) oder (Koordinate 1, Koordinate 2). \\
 
-\section{Heuristiken}
+Das Codebeispiel bezieht sich auf die Tic Tac Toe Implementierung der iterative vertiefenden Alpha-Beta Suche, aber die Reversi Implementierung ist fast identisch. Einzig der Vergleich in Zeile 8 ist unterschiedlich. Würden dieser Vergleich ausgelagert werden, wären die Algorithmen identisch, denn die Funktionalitäten der Strategiespielumgebungen sind sehr ähnlich definiert (siehe Abschnitt \ref{sec:Anforderungen}). \\
+
+\begin{figure}[!htbp]
+\centering
+\begin{lstlisting}[frame=single, mathescape=true]
+1  def alphaBetaIterativeDeepeningSearch(state):
+2    listOfActionUtilities = []
+3    actionList = actions(state)
+4    for action in actionList:
+5      state.makeMove(action)
+6      listOfActionUtilities.append(maxValue(
+         state, -sys.maxint, sys.maxint, 0, 2))
+7      state.undoMove()
+8    if state.getPlayerToMove() == 'X':
+9      bestActionIndex = argmax(listOfActionUtilities)
+10   else:
+11     bestActionIndex = argmin(listOfActionUtilities)
+12   return actionList[bestActionIndex]
+\end{lstlisting}
+\caption{Alpha-Beta iterativ vertiefende Suche}
+\label{fig:Alpha-Beta iterativ vertiefende Suche}
+\end{figure} 
+
+Die in der Funktion alphaBetaIterativeDeepeningSearch(state) verwendete Funktion maxValue(state, alpha, beta, depth, depthBound), realisiert die rekursive Exploration des Suchbaums (siehe Abbildung \ref{fig:Iteratives Suchen des maximalen Ergebnisses}). Die Funktion liefert den Ergebniswert eines Spielzustands, dieser wird durch die Bewertungsfunktion evaluate(state) bestimmt. Die Rekursion entsteht durch den Aufruf der Funktion minValue(state, alpha, beta, depth +1, depthBound). Der Eingabeparameter ''depth + 1'' bedeutet eine Erhöhung der aktuellen Tiefe. Der Eingabeparameter ''depthBound'' speichert die maximale Tiefe die von der aktuellen Tiefe nicht überschritten werden darf. Die beiden Funktionen minValue() und maxValue() unterscheiden sich nur in ihren letzten drei Codezeilen und in dem gegenseitigen Aufrufen der jeweils anderen Funktion. Die letzten drei Codezeilen von minValue() bewirken: liefere Alpha zurück, wenn $Beta <= Alpha$ ist, andernfalls gib Beta zurück. \\
+
+Die beiden Codebeispiele (Abbildung \ref{fig:Alpha-Beta iterativ vertiefende Suche} und Abbildung \ref{fig:Iteratives Suchen des maximalen Ergebnisses}) sind abgeleitet vom Alpha-Beta Algorithmus \cite[214 \psq]{Russell} und dem Algorithmus der iterativ vertiefenden Tiefensuche \cite[124]{Russell}.\\
+
+\begin{figure}[!htbp]
+\centering
+\begin{lstlisting}[frame=single, mathescape=true]
+1  def maxValue(state, alpha, beta, depth, depthBound):
+2    if cutoffTest(state, depth, depthBound):
+3      return evaluate(state)
+4    for a in actions(state):
+5      state.makeMove(a)
+6      alpha = max(alpha, minValue(
+         state, alpha, beta, depth + 1, depthBound))
+7      state.undoMove()
+8      if alpha >= beta:
+9        return beta
+10   return alpha
+\end{lstlisting}
+\caption{Iteratives Suchen des maximalen Ergebnisses.}
+\label{fig:Iteratives Suchen des maximalen Ergebnisses}
+\end{figure} 
 
 \section{TD-Q-Lernen}
-In dem Kapitel \ref{cha:Einführung in verstärkendes Lernen} Einführung in verstärkendes Lernen, speziell in den Abschnitte \ref{sec:Temporale Differenz Lernen} Temporale Differenz Lernen und \ref{sec:Q-Lernen} Q-Lernen wurde bereits erklärt, wie das TD-Lernen und das Q-Lernen zusammenwirken. \\
+In dem Kapitel \ref{cha:Einführung in verstärkendes Lernen} Einführung in verstärkendes Lernen, speziell in den Abschnitte \ref{sec:Temporale Differenz Lernen} Temporale Differenz Lernen und \ref{sec:Q-Lernen} Q-Lernen wurde bereits erklärt, wie das TD-Lernen und das Q-Lernen zusammenwirken. Das Thema in diesem Kapitel ist die Implementierung des TD-Q-Lernens und die Erläuterung des dafür benötigten Algorithmus. \\
 
-Fassen wir diese beiden Abschnitte kurz zusammen: Temporale Differenz Lernen (TD-Lernen) passt die Nutzen der beobachteten Zustände an die beobachteten Übergänge an. Die Aktualisierungsregel (Gleichung \ref{eq:Aktualisierungsgleichung temporale Differenz}) des TD-Lernens verwendet die Differenz der Nutzen aufeinanderfolgender Zustände $U\pi(s') - U\pi(s)$, daher die Bezeichnung Temporale Differenz Lernen. Eine alternative TD-Methode ist das Q-Lernen, dass statt Nutzen eine Aktion/Nutzen Repräsentation lernt. Mit der Notation Q(s,a) bezeichnen wir den Wert der Ausführung von Aktion a im Zustand s. Gleichung \ref{eq:Nutzenwerte und Q-Werte} zeigt wie Q-Werte direkt mit Nutzenwerten verknüpft sind. \\
+Kurzfassung Abschnitt \ref{sec:Temporale Differenz Lernen} Temporale Differenz Lernen: Temporale Differenz Lernen (TD-Lernen) passt die Nutzen der beobachteten Zustände an die beobachteten Übergänge an. Die Aktualisierungsregel (Gleichung \ref{eq:Aktualisierungsgleichung temporale Differenz}) des TD-Lernens verwendet die Differenz der Nutzen aufeinanderfolgender Zustände $U\pi(s') - U\pi(s)$, daher die Bezeichnung Temporale Differenz Lernen. \\
 
-Der in Abbildung \ref{fig:TD-Q-Lernen Algorithmus} skizzierte Algorithmus ist, leicht abgewandelt, im Lehrbuch für künstliche Intelligenz von Russell und Norvig \cite[974]{Russell} zu finden. Dieser ist bereits leicht modifiziert in seiner Notation und nachdem wir die Einzelheiten des Algorithmus geklärt haben, wird die Notation weiter angepasst, bis sie dem Quellcode des Prototypen entspricht. \\
+Kurzfassung Abschnitt \ref{sec:Q-Lernen} Q-Lernen: Eine alternative TD-Methode ist das Q-Lernen, dass statt Nutzen eine Aktion/Nutzen Repräsentation lernt. Mit der Notation Q(s,a) bezeichnen die Literatur den Wert der Ausführung von Aktion a im Zustand s. Gleichung \ref{eq:Nutzenwerte und Q-Werte} zeigt wie Q-Werte direkt mit Nutzenwerten verknüpft sind. \\
+
+Der in Abbildung \ref{fig:TD-Q-Lernen Algorithmus} skizzierte Algorithmus ist, leicht abgewandelt (vgl. \cite[974]{Russell}). Die eigentliche Implementierung des Algorithmus wird beschrieben, sobald der Algorithmus ausführlich erklärt wurde. \\
 
 \begin{figure}[!htbp]
 \centering
@@ -35,7 +82,7 @@ Der in Abbildung \ref{fig:TD-Q-Lernen Algorithmus} skizzierte Algorithmus ist, l
 \label{fig:TD-Q-Lernen Algorithmus}
 \end{figure} 
 
-Der Q-Lernen Algorithmus verwendet einige persistente (d.h. beständige oder dauerhafte) Variablen und Entitäten. Persistent deshalb, weil sie die einzelnen Funktionsaufrufe überdauern: 
+Der Q-Lernen Algorithmus verwendet einige persistente (d.h. beständige oder dauerhafte) Variablen. Persistent deshalb, weil sie die einzelnen Funktionsaufrufe überdauern: 
 \begin{itemize}
 
 \item \textbf{Q} ist eine Tabelle mit Aktionswerden, indiziert nach Zustand und Aktion. Der Aufruf Q[s, a] liefert z.B. einen Aktionswert (Q-Wert) für eine Aktion a in einem Zustand s. Zu beginn des Lernprozesses sind alle Werte dieser Tabelle leer.
@@ -61,8 +108,9 @@ Der Q-Lernen Algorithmus bekommt folgende Eingabeparameter übergeben:
 \item $\boldsymbol{\gamma}$ ist der Abschwächungsfaktor (eng. discounting factor). Im fachlichen Umfeld des verstärkenden Lernens wird dieser Abschwächungsfaktor bei Modellen mit unendlichen Horizont verwendet. Endet eine Aktionssequenz in einem Markov-Entscheidungsprozess nicht, dann ist diese unendlich. Um Probleme dieser Klasse trotzdem handhaben zu können, wird für die Berechnung des erwarteten Nutzens $U^\pi(s)$ (siehe \ref{subsec:Optimale Taktiken} Optimale Taktiken Gleichung für den erwarteten Nutzen \ref{eq:Der erwartete Nutzen}) eines Zustands s der Abschwächungsfaktor verwendet. Da sowohl Tic Tac Toe als auch Reversi, nach einer maximalen Anzahl von Aktionen, immer in einem Endzustand terminieren, werden wir den Abschwächungsfaktor gleich 1 setzen. Ein Abschwächungsfaktor von 1 bedeutet, dass Belohnungen in der Zukunft genau so Wertvoll sind wie unmittelbare Belohnungen. 
 \end{itemize} 
 
-Konzentrieren wir uns nachfolgend auf die Aktualisierung dieser Q-Werte.
 
-\begin{equation} \label{eq:TD-Q-Aktualisierungsgleichung}
-Q(s,a) \leftarrow Q(s,a) + \alpha(R(s) + \gamma \max_{a'} Q(s', a') - Q(s,a))
-\end{equation}
+
+\myparagraph{Entdecken (eng. exploration) oder Verwenden (eng. exploitation)}
+Funktion f()
+Russell und Norvig schreiben sinngemäß \cite[974]{Russell} Die Statistik $N_{sa}$ kann weggelassen werden, wenn eine angemessene Explorationsstrategie $f$ verwendet wird. Mit einer angemessenen Explorationsstrateige meinen sie, ein zufälliges Agieren für einen bestimmten Anteil an Schritten, wobei dieser Anteil mit der Zeit geringer wird.
+
