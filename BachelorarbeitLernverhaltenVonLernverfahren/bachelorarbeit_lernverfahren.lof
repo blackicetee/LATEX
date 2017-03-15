@@ -16,10 +16,10 @@
 \contentsline {figure}{\numberline {\relax 2.10}{\ignorespaces Reversi Merkmal der aktuellen Mobilit\IeC {\"a}t.}}{22}{figure.2.10}
 \contentsline {figure}{\numberline {\relax 2.11}{\ignorespaces Merkmale einer Reversi Heuristik.}}{23}{figure.2.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Der Agent und seine Wechselwirkung mit der Umgebung vgl. \cite [290]{Ertel} und \cite [398]{Alpaydin}.}}{24}{figure.3.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Tic Tac Toe und Reversi Spielzust\IeC {\"a}nde.}}{34}{figure.4.1}
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Die Projektproblematik.}}{35}{figure.4.2}
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Der Agent und die Umgebung vgl. \cite [290]{Ertel}.}}{32}{figure.4.1}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Tic Tac Toe und Reversi Spielzust\IeC {\"a}nde.}}{33}{figure.4.2}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Die Projektproblematik.}}{34}{figure.4.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Alpha-Beta iterativ vertiefende Suche}}{44}{figure.6.1}

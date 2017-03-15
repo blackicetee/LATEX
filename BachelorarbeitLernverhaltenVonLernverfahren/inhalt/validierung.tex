@@ -1,14 +1,137 @@
 \chapter{Validierung}
 \label{cha:Validierung}
 
-In diesem Kapitel: //TODO Einführung in das Kapitel
+In diesem Kapitel werden die Agentenmodelle, in den Strategiespielumgebungen Tic Tac Toe und Reversi, getestet (siehe \ref{sec:Quantifizierung der Ziele} Quantifizierung der Ziele). Alle Agententests befinden sich in der Datei ''TestAgents.py''. Die vorausschauenden Heuristik Agenten spielen 100 Testspiele gegen einen Zufallsagenten, dabei müssen sie eine Gewinnquote von mindestens 60\% erreichen. Sollten die vorausschauenden Heuristik Agenten dieses Bewertungskriterium erfüllen, bezeichnen wir das Spielniveau dieser Agenten als fortgeschritten. Der Test soll verdeutlichen, dass es wesentlich schwerer ist gegen die Heuristik Agenten zu Gewinnen, als gegen die Zufallsagenten. \\
 
-\section{Logiktest der Strategiespiele Tic Tac Toe und Reversi}
+Der TD-Q Agent wird in 3 verschiedenen Lernphasen getestet. Die Lernphasen unterscheiden sich in der Anzahl der Trainingsspiele. Untersucht werden vom TD-Q Agenten gelernte Strategien die, in 100 Trainingsspielen (Lernphase 1), in 1.000 Trainingsspielen (Lernphase 2) und in 10.000 Trainingsspielen trainiert wurden. In jeder Lernphase muss der TD-Q Agent 2 Versionen der Strategiespielumgebung Tic Tac Toe und die Strategiespielumgebung Reversi lernen. Die erste Version der Tic Tac Toe Strategiespielumgebung ist die klassische Variante mit 9 Spielfeldern und die zweite Version ist die auf 16 Spielfelder vergrößerte Variante. Der TD-Q Agent lernt die klassische Variante von Reversi (64 Spielfelder). Die Gegenspieler, für die gelernten Strategien, in den einzelnen Lernphasen, werden die vorausschauenden Heuristik Agenten und der Zufallsagent. \\
 
-\section{Agententest}
-Empirisches Protokoll
+Die von mir implementierten Strategiespielumgebungen wurde mit dem Python Paket ''unittest'' getestet. Die Tests der Tic Tac Toe Strategiespielumgebung befinden sich in der Datei ''TestTicTacToe.py'' und die Tests der Reversi Strategiespielumgebung befinden sich in der Datei ''TestReversi.py''. In diesen sind die wichtigsten Funktionalitäten der Strategiespielumgebungen ausgeführt und mit ''unittest.asserts'' getestet. Alle Tests der Strategiespielumgebungen waren positiv und könnten bei bedarf wiederholt werden. Wir wollen uns in diesem Kapitel jedoch mehr auf die Testergebnisse der Agenten konzentrieren und nicht auf die Testergebnisse der Programmlogik der Strategiespielumgebungen. \\
 
-\subsection{Bewertungskriterien}
+\section{9 Spielfelder Tic Tac Toe}
 
-\subsection{Persistenz der Agentenerfahrung}
+\subsection{Heuristik gegen Zufall}
+Für das 9 Spielfelder Tic Tac Toe erfüllt der Heuristik Agent (mit der Tic Tac Toe Heuristik) das Testkriterium. Der Agent gewinnt mit einer 64\% Gewinnquote, wenn der Zufallsagent beginnt und mit einer 83\% Gewinnquote, wenn er selbst beginnt.
 
+\myparagraph{Der Zufallsagent beginnt:}
+Der vorausschauende Heuristik Agent gewinnt 64 Testspiele, der Zufallsagent gewinnt 4 Testspiele und es werden 32 unentschieden erspielt.
+
+\myparagraph{Der Heuristik Agent beginnt:}
+Der vorausschauende Heuristik Agent gewinnt 83 Testspiele, der Zufallsagent gewinnt 3 Testspiele und es werden 14 unentschieden erspielt. 
+
+\subsection{TD-Q Lernen in 100 Trainingsspielen}
+\begin{itemize}
+\item Lernzeit: ungefähr 5 Minuten
+
+\item Siege gegen den beginnenden Zufallsagenten: 37
+\item Niederlagen gegen den beginnenden Zufallsagenten: 59
+
+\item Siege gegen den nachziehenden Zufallsagenten: 73
+\item Niederlagen gegen den nachziehenden Zufallsagenten: 16
+
+\item Siege gegen den beginnenden Heuristik Agenten: 0
+\item Niederlagen gegen den beginnenden Heuristik Agenten: 100
+
+\item Siege gegen den nachziehenden Heuristik Agenten: 0
+\item Niederlagen gegen den nachziehenden Heuristik Agenten: 100
+\end{itemize}
+
+\subsection{TD-Q Lernen in 1.000 Trainingsspielen}
+\begin{itemize}
+\item Lernzeit: ungefähr 30 Minuten
+
+\item Siege gegen den beginnenden Zufallsagenten: 54
+\item Niederlagen gegen den beginnenden Zufallsagenten: 38
+
+\item Siege gegen den nachziehenden Zufallsagenten: 79
+\item Niederlagen gegen den nachziehenden Zufallsagenten: 15
+
+\item Siege gegen den beginnenden Heuristik Agenten: 0
+\item Niederlagen gegen den beginnenden Heuristik Agenten: 100
+
+\item Siege gegen den nachziehenden Heuristik Agenten: 0
+\item Niederlagen gegen den nachziehenden Heuristik Agenten: 0
+
+\end{itemize}
+
+
+\subsection{TD-Q Lernen in 10.000 Trainingsspielen}
+\begin{itemize}
+\item Lernzeit: ungefähr 180 Minuten
+
+\item Siege gegen den beginnenden Zufallsagenten: 45
+\item Niederlagen gegen den beginnenden Zufallsagenten: 33
+
+\item Siege gegen den nachziehenden Zufallsagenten: 92
+\item Niederlagen gegen den nachziehenden Zufallsagenten: 8
+
+\item Siege gegen den beginnenden Heuristik Agenten: 0
+\item Niederlagen gegen den beginnenden Heuristik Agenten: 100 
+
+\item Siege gegen den nachziehenden Heuristik Agenten: 0
+\item Niederlagen gegen den nachziehenden Heuristik Agenten: 100 
+\end{itemize}
+
+
+\section{4 x 4 Tic Tac Toe (16 Spielfelder)}
+
+\subsection{Heuristik gegen Zufall}
+Für das 16 Spielfelder Tic Tac Toe erfüllt der Heuristik Agent (mit der Tic Tac Toe Heuristik) das Testkriterium. Der Agent gewinnt mit einer 88\% Gewinnquote, wenn der Zufallsagent beginnt und mit einer 100\% Gewinnquote, wenn er selbst beginnt.
+
+\myparagraph{Der Zufallsagent beginnt:}
+Der vorausschauende Heuristik Agent gewinnt 88 Testspiele, der Zufallsagent gewinnt 0 Testspiele und es werden 12 unentschieden erspielt.
+
+\myparagraph{Der Heuristik Agent beginnt:}
+Der vorausschauende Heuristik Agent gewinnt 100 Testspiele, der Zufallsagent gewinnt 0 Testspiele und es werden 0 unentschieden erspielt.
+
+\subsection{TD-Q Lernen in 100 Trainingsspielen}
+\begin{itemize}
+\item Lernzeit: ungefähr 25 Minuten
+
+\item Siege gegen den beginnenden Zufallsagenten: 45
+\item Niederlagen gegen den beginnenden Zufallsagenten: 31 
+
+\item Siege gegen den nachziehenden Zufallsagenten: 46
+\item Niederlagen gegen den nachziehenden Zufallsagenten: 44 
+
+\item Siege gegen den beginnenden Heuristik Agenten: 0
+\item Niederlagen gegen den beginnenden Heuristik Agenten: 100
+
+\item Siege gegen den nachziehenden Heuristik Agenten: 0
+\item Niederlagen gegen den nachziehenden Heuristik Agenten: 100
+\end{itemize}
+
+\subsection{TD-Q Lernen in 1.000 Trainingsspielen}
+\begin{itemize}
+\item Lernzeit: ungefähr 180 Minuten
+
+\item Siege gegen den beginnenden Zufallsagenten: 54
+\item Niederlagen gegen den beginnenden Zufallsagenten: 38
+
+\item Siege gegen den nachziehenden Zufallsagenten: 79
+\item Niederlagen gegen den nachziehenden Zufallsagenten: 15
+
+\item Siege gegen den beginnenden Heuristik Agenten: 0
+\item Niederlagen gegen den beginnenden Heuristik Agenten: 100
+
+\item Siege gegen den nachziehenden Heuristik Agenten: 0
+\item Niederlagen gegen den nachziehenden Heuristik Agenten: 0
+
+\end{itemize}
+
+
+\subsection{TD-Q Lernen in 10.000 Trainingsspielen}
+\begin{itemize}
+\item Lernzeit: ungefähr 1440 Minuten
+
+\item Siege gegen den beginnenden Zufallsagenten: 45
+\item Niederlagen gegen den beginnenden Zufallsagenten: 33
+
+\item Siege gegen den nachziehenden Zufallsagenten: 92
+\item Niederlagen gegen den nachziehenden Zufallsagenten: 8
+
+\item Siege gegen den beginnenden Heuristik Agenten: 0
+\item Niederlagen gegen den beginnenden Heuristik Agenten: 100 
+
+\item Siege gegen den nachziehenden Heuristik Agenten: 0
+\item Niederlagen gegen den nachziehenden Heuristik Agenten: 100 
+\end{itemize}
