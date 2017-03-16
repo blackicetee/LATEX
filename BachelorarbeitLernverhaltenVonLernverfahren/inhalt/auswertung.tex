@@ -1,22 +1,78 @@
 \chapter{Auswertung}
 \label{cha:Auswertung}
-Der TD-Q Agent lernt in 10.000 Trainingsspielen gegen sich selbst, eine annähernd optimale Strategie für ein Tic Tac Toe Strategiespiel mit 9 Spielfeldern.
+In diesem Kapitel wollen wir die Testergebnisse des vorherigen Kapitels \ref{cha:Validierung} auswerten. Die Ergebnisse der Testphase sollen uns dabei helfen die Leistungsfähigkeit und die Grenzen des TD-Q-Lernens zu beurteilen (siehe Abschnitt \ref{sec:TD-Q-Lernen - Leistung und Grenzen}). Wir werden ein, in der Literatur bereits bekanntes, Problem dieses Lernverfahrens mit den Testergebnissen belegen und Lösungsmöglichkeiten besprechen. Diese Lösungsmöglichkeiten sind ebenfalls aus der Literatur entnommen und sie stellen herausragende Erfolge auf dem Gebiet des verstärkenden Lernens dar (siehe Abschnitt \ref{sec:Ausblick}). \\
 
-Das Lernen eines 16 Spielfelder Tic Tac Toe Strategiespiels verursacht jedoch zeitliche Probleme. Das lernen in 100 Trainingsspielen benötigt bereits ein vielfaches der Zeit, die das lernen eines 9 Spielfelder Tic Tac Toe's, in 100 Trainingsspielen, benötigt hatte.
+\section{TD-Q-Lernen - Leistung und Grenzen}
+\label{sec:TD-Q-Lernen - Leistung und Grenzen}
+In diesem Abschnitt wollen wir Bezug auf die Testergebnisse des vorherigen Kapitels \ref{cha:Validierung} Validierung nehmen. Die Testergebnisse sollen Aussagen über die Konvergenz und über die benötigte Rechenzeit der gelernten Strategien in den verschiedenen Testphasen ermöglichen. Die Konvergenz bezieht sich auf eine Annäherung der vom TD-Q-Agenten gelernten Strategie an eine unbekannte optimale Strategie. \\
+
+Wolfgang Ertel schreibt über die allgemeine Konvergenz des Q-Lernens (TD-Q-Lernens) (vgl. \cite[299]{Ertel}): \\
+
+Das Q-Lernen konvergiert für ein konkretes Beispiel und allgemein, zu einer optimalen Strategie, wenn jedes Zustands-Aktions-Paar unendlich oft besucht wird. Konkret konvergiert der Wert $\hat{Q}_n(s,a)$ für alle Werte von s und a gegen $Q(s,a)$ für $n \rightarrow \infty$, mit $n$ gleich der Anzahl der Aktualisierungen des Q-Werts ($\hat{Q}_n(s,a)$).
+
+\subsection{TD-Q-Lernen Konvergenz (Leistungsfähigkeit)}
+In diesem Abschnitt analysieren wir die Testergebnisse der einzelnen Lernphasen, für 9 und 16 Spielfelder Tic Tac Toe. Wir beurteilen die Leistung der einzelnen gelernten Strategien, aufgrund der Testspiele gegen den Zufallsagenten und den Heuristik Agenten. Wir wollen versuchen die oben zitierte Aussage von Wolfgang Ertel, über die Konvergenz, mit unseren Testergebnissen zu untermauern.  \\
+
+Die Testergebnisse des vorausschauenden Heuristik Agenten gegen den Zufallsagenten sind eindeutig. Die kleinste Gewinnquote des Heuristik Agenten erfüllt, mit 64\% Gewinnchance, das Testkriterium (siehe Abschnitt \ref{Quantifizierung der Ziele}). Die größte Gewinnquote des von uns implementierten Tic Tac Toe vorausschauenden Heuristik Agenten ist 100\%, d.h. von 100 Testspielen in einem 16 Spielfelder Tic Tac Toe, wenn der Zufallsagent nachzieht, gewinnt der Heuristik Agent alle 100 Testspiele. \\
+
+Die Testspiele der gelernten Strategien gegen den vorausschauenden Heuristik Agent sind sehr einseitig ausgefallen. Jede gelernte Strategie, egal ob für das 9 oder 16 Spielfelder Tic Tac Toe, spielt gegen die nicht gelernte Strategie des vorausschauenden Heuristik Agenten immer das selbe Spiel. Der vorausschauende Heuristik Agent führt ebenfalls immer die selben Spielzüge aus. Die folge daraus ist, beide Agenten spielen in 100 Testspielen immer die exakt gleiche Partie mit dem selben Spielergebnis. Die gelernten Strategien haben es zudem nicht geschafft, innerhalb von maximale 10.000 Trainingsspielen, eine Strategie zu lernen, die den vorausschauenden Heuristik Agenten besiegt. \\
+
+Die Testergebnisse in Spielen gegen den Zufallsagenten sind ebenfalls kritisch zu betrachten, denn sie hängen offensichtlich vom Zufall ab. Wir können die Testergebnisse demnach nur berücksichtigen, wenn diese eindeutig sind, d.h. die gelernten Strategien müssten hohe Gewinnquoten und niedrige Verlustquoten erreichen. Wir versuchen trotzdem die Leistungsfähigkeit des TD-Q-Lernens, über die Testergebnisse, gegen den Zufallsagenten, herzuleiten. \\
+
+\myparagraph{Tic Tac Toe - 9 Spielfelder - Lernen gegen Zufall}
+Testergebnisse des TD-Q Agenten gegen den nachziehenden Zufallsagenten: \\
+Nach Abschluss der Lernphase 1 gewinnt er 73 und verliert 16 Testspiele. \\
+Nach Abschluss der Lernphase 2 gewinnt er 79 und verliert 15 Testspiele. \\ 
+Nach Abschluss der Lernphase 3 gewinnt er 92 und verliert 8 Testspiele. \\
+
+Testergebnisse des TD-Q Agenten gegen den beginnenden Zufallsagenten: \\
+Nach Abschluss der Lernphase 1 gewinnt er 37 und verliert 59 Testspiele. \\
+Nach Abschluss der Lernphase 2 gewinnt er 41 und verliert 44 Testspiele. \\ 
+Nach Abschluss der Lernphase 3 gewinnt er 49 und verliert 38 Testspiele. \\
+
+Die in 10.000 Trainingsspielen gelernte Strategie des TD-Q Agenten hat deutlich bessere Gewinn- und Verlustquoten  als die in 100 Trainingsspielen gelernte Strategie. Die in 1.000 Trainingsspielen gelernte Strategie hat bessere Gewinn- und Verlustquoten als die in 100 Trainingsspielen gelernte Strategie, aber schlechtere Gewinn- und Verlustquoten als die in 10.000 Trainingsspielen gelernte Strategie.\\
+
+Wir können aus den oberen Testergebnissen ableiten, dass die Leistungsfähigkeit (also die Spielstärke hinsichtlich einer höheren Gewinnquote und einer Niedrigen Verlustquote) ansteigt, je mehr Trainingsspiele der TD-Q-Lernende Agent durchführen konnte. Die gelernten Strategien nach 10.000 Trainingsspielen erbrachten die höchste Gewinnquote (92\%) für ein 9 Spielfelder Tic Tac Toe, wenn der TD-Q Agent gegen den nachziehenden Zufallsagenten spielt. Die Testergebnisse der Lernphasen zeigen sehr gut die Auswirkungen, die die Anzahl der Trainingsspiele auf die Konvergenz der gelernten Strategie hat. \\
+
+Obwohl es praktisch nicht möglich ist unendlich viele Trainingsspiele durchzuführen, konnten wir zeigen, dass die gelernten Strategien eher zu einer optimalen Strategie konvertieren, je mehr Trainingsspiele durchgeführt werden. Die oben zitierte Aussage von Wolfgang Ertel, über die Konvergenz, trifft für diese Testergebnisse demnach annähern zu. \\
+
+\myparagraph{Tic Tac Toe - 16 Spielfelder - Lernen gegen Zufall}
+Testergebnisse des TD-Q Agenten gegen den nachziehenden Zufallsagenten: \\
+Nach Abschluss der Lernphase 1 gewinnt er 51 und verliert 42 Testspiele. \\
+Nach Abschluss der Lernphase 2 gewinnt er 48 und verliert 34 Testspiele. \\
+Nach Abschluss der Lernphase 3 gewinnt er 57 und verliert 18 Testspiele. \\
+
+Testergebnisse des TD-Q Agenten gegen den beginnenden Zufallsagenten: \\
+Nach Abschluss der Lernphase 1 gewinnt er 52 und verliert 22 Testspiele. \\
+Nach Abschluss der Lernphase 2 gewinnt er 60 und verliert 23 Testspiele. \\ Nach Abschluss der Lernphase 3 gewinnt er 49 und verliert 32 Testspiele. \\
+
+Wir können aus den oberen Testergebnissen ablesen, dass die Leistungsfähigkeit der gelernten Strategie nicht unbedingt ansteigt, je mehr Trainingsspiele das TD-Q-Lernverfahren absolviert. Beginnt der TD-Q Agent, dann ergibt sich, für die in 1.000 Trainingsspielen gelernte Strategie, eine Siegesquote von 60\% und eine Verlustquote von 23\%. Die in 10.000 Trainingsspielen gelernte Strategie erreicht nur eine Gewinnquote von 49\% und eine Verlustquote von 32\%. Beginnt wiederum der Zufallsagent, dann ergibt sich für die in 10.000 Trainingsspielen gelernte Strategie eine Siegesquote von 57\% und eine Verlustquote von 18\%. Die in 1.000 Trainingsspielen gelernte Strategie erreicht nur eine Gewinnquote von 48\% und eine Verlustquote von 18\%. \\
+
+Die Testergebnisse für das 16 Spielfelder Tic Tac Toe zeigen keine deutliche Verbesserung der Strategien abhängig von der Anzahl der durchgeführten Trainingsspiele des TD-Q Agenten. Wir wollen nachfolgend klären, warum die Testergebnisse der einzelnen Lernphasen, für das 16 Spielfelder Tic Tac Toe, keine eindeutige Leistungssteigerung aufzeigen, obwohl die Trainingsspiele in jeder Lernphase um Faktor 10 erhöht wurden. \\
+
+\subsection{Fluch der Dimensionalität}
+''Trotz der Erfolge in den letzten Jahren bleibt das Lernen durch Verstärkung ein sehr attraktives Forschungsgebiet der KI, nicht zuletzt deshalb, weil auch die besten heute bekannten Lernalgorithmen bei hochdimensionalen Zustands- und Aktionsräumen wegen ihrer gigantischen Rechenzeit immer noch nicht praktisch anwendbar sind. \cite[305]{Ertel}''
+
+Wolfgang Ertel beschreibt in diesem Zitat den Fluch der Dimensionalität, als großes Problem der heutigen Lernalgorithmen. 
+
+ 
+\subsection{TD-Q-Lernen Rechenzeit (Grenzen)}
+
 
 Die Testergebnisse aus dem vorherigen Kapitel \ref{cha:Validierung} Validierung bestätigen folgende Aussage von Wolfgang Ertel.
 
-''Die weltbesten Schachcomputer arbeiten bis heute immer noch ohne Lernverfahren. Dafür gibt es zwei Gründe. Einerseits benötigen die bis heute entwickelten Verfahren zum Lernen durch Verstärkung bei großen Zustandsräumen noch sehr viel Rechenzeit. Andererseits sind aber die manuell erstellten Heuristiken der Hochleistungsschachcomputer schon sehr stark optimiert. Das heißt, dass nur ein sehr gutes Lernverfahren noch zu Verbesserungen führen kann \cite[120]{Ertel}.''\\
+''Die weltbesten Schachcomputer arbeiten bis heute immer noch ohne Lernverfahren. Dafür gibt es zwei Gründe. Einerseits benötigen die bis heute entwickelten Verfahren zum Lernen durch Verstärkung bei großen Zustandsräumen noch sehr viel Rechenzeit. Andererseits sind aber die manuell erstellten Heuristiken der Hochleistungsschachcomputer schon sehr stark optimiert. Das heißt, dass nur ein sehr gutes Lernverfahren noch zu Verbesserungen führen kann. \cite[120]{Ertel}''\\
 
 In dieser Arbeit lernt der Agent eine Tabelle, diese Tabelle enthält Zustands/Aktionspaare und für jedes dieser Paare einen dazugehörigen Q-Wert. Die Tabelle repräsentiert die Q-Funktion. \\
 
 ''Bisher sind wir davon ausgegangen, dass die Nutzenfunktionen und die von den Agenten gelernten Q-Funktionen in tabellarischer Form mit einem Ausgabewert für jedes Eingabetupel vorliegen. Ein solcher Ansatz funktioniert ausreichend gut für kleine Zustandsräume, aber die Zeit bis zur Konvergenz und (für ADP) die Zeit pro Iteration steigt mit wachsendem Raum rapide an \cite[975]{Russell}.''   
 
 
-
 \section{Ausblick}
-Im letzten Abschnitt dieser Arbeit werden wir uns die zwei bisher erfolgreichsten lernenden Programme ansehen. Das Dame-Spiel von Arthur L. Samuel aus dem Jahre 1955 und TD-Gammon von Gerald Tesauro aus dem Jahre 1992. 
+\label{sec:Ausblick}
+Im letzten Abschnitt dieser Arbeit werden wir uns die zwei der bisher erfolgreichsten lernenden Programme ansehen. Das Dame-Spiel von Arthur L. Samuel aus dem Jahre 1955 und TD-Gammon von Gerald Tesauro aus dem Jahre 1992. 
 
+\subsection{Samuels-Dame-Spiel}
 ''Arthur L. Samuel schrieb 1955 ein Programm, dass Dame spielen konnte und mit einem einfachen Lernverfahren seine Parameter verbessern konnte. Sein Programm hatte dabei jedoch Zugriff auf eine große Zahl von archivierten Spielen, bei denen jeder einzelne Zug von Experten bewertet war (Überwachtes Lernen zur Unterstützung des verstärkenden Lernens). Damit verbesserte das Programm seine Bewertungsfunktion. Um eine noch weitere Verbesserung zu erreichen, ließ Samuel dein Programm gegen sich selbst spielen. Das Credit Assignment löste er auf einfache Weise. Für jede einzelne Stellung während eines Spiels vergleicht er die Bewertung durch die Funktion B(s) mit der durch Alpha-Beta-Pruning berechneten Bewertung und verändert B(s) entsprechend. 1961 besiegte sein Dame-Programm den viertbesten Damespieler der USA. Mit dieser bahnbrechenden Arbeit war Samuel seiner Zeit um fast dreißig Jahre voraus \cite[120\psq]{Ertel}''.
 
 \paragraph{Agent mit TD-Lernen}
@@ -26,6 +82,6 @@ Die Aufgabe des Agenten mit TD-Lernen ist, dass verbessern einer gegebenen Heuri
 \hat{U}_\theta(s) = \theta_1 f_1(s) + \theta_2 f_2(s) + ... + \theta_n f_n(s)
 \end{equation*}
 
-\subsection{Neuronales Lernen}
-\label{subsec:Neuronales Lernen}
+\subsection{TD-Gammon}
+\label{subsec:TD-Gammon}
 ''Das TD-Lernen zusammen mit einem Backpropagation-Netz mit 40 bis 80 verdeckten Neuronen wurde sehr erfolgreich angewendet in TD-Gammon, einem Programm zum Spielen von Backgammon, programmiert vom Entwickler Gerald Tesauro im Jahr 1992. Die einzige direkte Belohnung für das Programm ist das Ergebnis am Ende eines Spiels. Eine optimierte Version des Programms mit einer 2-Züge-Vorausschau wurde mit 1,5 Millionen Spielen gegen sich selbst trainiert. Es besiegte damit Weltklassespieler und spielt so gut wie die drei besten menschlichen Spieler \cite[304]{Ertel}''.  

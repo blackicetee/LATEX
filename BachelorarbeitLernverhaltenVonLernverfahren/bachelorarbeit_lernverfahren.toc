@@ -31,8 +31,8 @@
 \contentsline {subsection}{\numberline {3.1.2}Zusammenfassung und Anwendung}{27}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}Optimale Taktiken}{28}{section.3.2}
 \contentsline {section}{\numberline {3.3}Dynamische Programmierung und Wert-Iteration}{29}{section.3.3}
-\contentsline {section}{\numberline {3.4}Temporale Differenz Lernen}{30}{section.3.4}
-\contentsline {section}{\numberline {3.5}Q-Lernen}{31}{section.3.5}
+\contentsline {section}{\numberline {3.4}Temporale Differenz Lernen (TD-Lernen)}{30}{section.3.4}
+\contentsline {section}{\numberline {3.5}Q-Lernen (TD-Q-Lernen)}{31}{section.3.5}
 \contentsline {chapter}{\numberline {4}Problemanalyse und Anforderungsdefinition}{32}{chapter.4}
 \contentsline {section}{\numberline {4.1}Die Problematik}{32}{section.4.1}
 \contentsline {paragraph}{\nonumberline Die Spieltheorie}{33}{section*.12}
@@ -77,21 +77,28 @@
 \contentsline {section}{\numberline {6.2}TD-Q-Lernen}{45}{section.6.2}
 \contentsline {paragraph}{\nonumberline Erkunden und Verwenden}{48}{section*.34}
 \contentsline {chapter}{\numberline {7}Validierung}{50}{chapter.7}
-\contentsline {section}{\numberline {7.1}9 Spielfelder Tic Tac Toe}{51}{section.7.1}
+\contentsline {section}{\numberline {7.1}Tic Tac Toe - 9 Spielfelder}{51}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Heuristik gegen Zufall}{51}{subsection.7.1.1}
 \contentsline {paragraph}{\nonumberline Der Zufallsagent beginnt:}{51}{section*.35}
 \contentsline {paragraph}{\nonumberline Der Heuristik Agent beginnt:}{51}{section*.36}
 \contentsline {subsection}{\numberline {7.1.2}TD-Q Lernen in 100 Trainingsspielen}{51}{subsection.7.1.2}
 \contentsline {subsection}{\numberline {7.1.3}TD-Q Lernen in 1.000 Trainingsspielen}{52}{subsection.7.1.3}
 \contentsline {subsection}{\numberline {7.1.4}TD-Q Lernen in 10.000 Trainingsspielen}{52}{subsection.7.1.4}
-\contentsline {section}{\numberline {7.2}4 x 4 Tic Tac Toe (16 Spielfelder)}{52}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Heuristik gegen Zufall}{52}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.2}Tic Tac Toe - 16 Spielfelder}{53}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Heuristik gegen Zufall}{53}{subsection.7.2.1}
 \contentsline {paragraph}{\nonumberline Der Zufallsagent beginnt:}{53}{section*.37}
 \contentsline {paragraph}{\nonumberline Der Heuristik Agent beginnt:}{53}{section*.38}
 \contentsline {subsection}{\numberline {7.2.2}TD-Q Lernen in 100 Trainingsspielen}{53}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}TD-Q Lernen in 1.000 Trainingsspielen}{53}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.3}TD-Q Lernen in 1.000 Trainingsspielen}{54}{subsection.7.2.3}
 \contentsline {subsection}{\numberline {7.2.4}TD-Q Lernen in 10.000 Trainingsspielen}{54}{subsection.7.2.4}
 \contentsline {chapter}{\numberline {8}Auswertung}{55}{chapter.8}
-\contentsline {section}{\numberline {8.1}Ausblick}{55}{section.8.1}
-\contentsline {paragraph}{\nonumberline Agent mit TD-Lernen}{56}{section*.39}
-\contentsline {subsection}{\numberline {8.1.1}Neuronales Lernen}{56}{subsection.8.1.1}
+\contentsline {section}{\numberline {8.1}TD-Q-Lernen - Leistung und Grenzen}{55}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}TD-Q-Lernen Konvergenz (Leistungsf\IeC {\"a}higkeit)}{55}{subsection.8.1.1}
+\contentsline {paragraph}{\nonumberline Tic Tac Toe - 9 Spielfelder - Lernen gegen Zufall}{56}{section*.39}
+\contentsline {paragraph}{\nonumberline Tic Tac Toe - 16 Spielfelder - Lernen gegen Zufall}{57}{section*.40}
+\contentsline {subsection}{\numberline {8.1.2}Fluch der Dimensionalit\IeC {\"a}t}{58}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}TD-Q-Lernen Rechenzeit (Grenzen)}{58}{subsection.8.1.3}
+\contentsline {section}{\numberline {8.2}Ausblick}{59}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Samuels-Dame-Spiel}{59}{subsection.8.2.1}
+\contentsline {paragraph}{\nonumberline Agent mit TD-Lernen}{59}{section*.41}
+\contentsline {subsection}{\numberline {8.2.2}TD-Gammon}{59}{subsection.8.2.2}
