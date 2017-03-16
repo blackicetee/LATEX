@@ -96,9 +96,9 @@
 \contentsline {subsection}{\numberline {8.1.1}TD-Q-Lernen Konvergenz (Leistungsf\IeC {\"a}higkeit)}{55}{subsection.8.1.1}
 \contentsline {paragraph}{\nonumberline Tic Tac Toe - 9 Spielfelder - Lernen gegen Zufall}{56}{section*.39}
 \contentsline {paragraph}{\nonumberline Tic Tac Toe - 16 Spielfelder - Lernen gegen Zufall}{57}{section*.40}
-\contentsline {subsection}{\numberline {8.1.2}Fluch der Dimensionalit\IeC {\"a}t}{58}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}TD-Q-Lernen Rechenzeit (Grenzen)}{58}{subsection.8.1.3}
-\contentsline {section}{\numberline {8.2}Ausblick}{59}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Samuels-Dame-Spiel}{59}{subsection.8.2.1}
-\contentsline {paragraph}{\nonumberline Agent mit TD-Lernen}{59}{section*.41}
-\contentsline {subsection}{\numberline {8.2.2}TD-Gammon}{59}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.1.2}Fluch der Dimensionalit\IeC {\"a}t (Grenzen des TD-Q-Lernens)}{58}{subsection.8.1.2}
+\contentsline {paragraph}{\nonumberline Rechenzeit der Lernphasen}{59}{section*.41}
+\contentsline {subsection}{\numberline {8.1.3}Zusammenfassung}{60}{subsection.8.1.3}
+\contentsline {section}{\numberline {8.2}Ausblick}{61}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Samuels-Dame-Spiel}{61}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}TD-Gammon}{62}{subsection.8.2.2}

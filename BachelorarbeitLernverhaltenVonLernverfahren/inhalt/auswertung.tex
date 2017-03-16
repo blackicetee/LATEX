@@ -17,6 +17,8 @@ Die Testergebnisse des vorausschauenden Heuristik Agenten gegen den Zufallsagent
 
 Die Testspiele der gelernten Strategien gegen den vorausschauenden Heuristik Agent sind sehr einseitig ausgefallen. Jede gelernte Strategie, egal ob für das 9 oder 16 Spielfelder Tic Tac Toe, spielt gegen die nicht gelernte Strategie des vorausschauenden Heuristik Agenten immer das selbe Spiel. Der vorausschauende Heuristik Agent führt ebenfalls immer die selben Spielzüge aus. Die folge daraus ist, beide Agenten spielen in 100 Testspielen immer die exakt gleiche Partie mit dem selben Spielergebnis. Die gelernten Strategien haben es zudem nicht geschafft, innerhalb von maximale 10.000 Trainingsspielen, eine Strategie zu lernen, die den vorausschauenden Heuristik Agenten besiegt. \\
 
+Die einzige Ausnahme war die in 1.000 Testspielen gelernte Strategie, diese erreichte 100 unentschieden gegen den nachziehenden Heuristik Agent (jeweils im 9 und 16 Spielfelder Tic Tac Toe). Alle 100 Testspiele wurden von beiden Agenten exakt gleich gespielt. Für die Tests wäre es vermutlich interessanter einen weiteren Trainingsmodus für den TD-Q-Agenten zu implementieren. Ein Trainingsmodus der nicht gegen sich selbst spielt, sondern gegen Andere Agenten. Die Testergebnisse gegen den Heuristik Agenten würden dann wahrscheinlich auch variieren, dies ist jedoch kein Ziel dieser Arbeit. \\
+
 Die Testergebnisse in Spielen gegen den Zufallsagenten sind ebenfalls kritisch zu betrachten, denn sie hängen offensichtlich vom Zufall ab. Wir können die Testergebnisse demnach nur berücksichtigen, wenn diese eindeutig sind, d.h. die gelernten Strategien müssten hohe Gewinnquoten und niedrige Verlustquoten erreichen. Wir versuchen trotzdem die Leistungsfähigkeit des TD-Q-Lernens, über die Testergebnisse, gegen den Zufallsagenten, herzuleiten. \\
 
 \myparagraph{Tic Tac Toe - 9 Spielfelder - Lernen gegen Zufall}
@@ -50,38 +52,71 @@ Wir können aus den oberen Testergebnissen ablesen, dass die Leistungsfähigkeit
 
 Die Testergebnisse für das 16 Spielfelder Tic Tac Toe zeigen keine deutliche Verbesserung der Strategien abhängig von der Anzahl der durchgeführten Trainingsspiele des TD-Q Agenten. Wir wollen nachfolgend klären, warum die Testergebnisse der einzelnen Lernphasen, für das 16 Spielfelder Tic Tac Toe, keine eindeutige Leistungssteigerung aufzeigen, obwohl die Trainingsspiele in jeder Lernphase um Faktor 10 erhöht wurden. \\
 
-\subsection{Fluch der Dimensionalität}
-''Trotz der Erfolge in den letzten Jahren bleibt das Lernen durch Verstärkung ein sehr attraktives Forschungsgebiet der KI, nicht zuletzt deshalb, weil auch die besten heute bekannten Lernalgorithmen bei hochdimensionalen Zustands- und Aktionsräumen wegen ihrer gigantischen Rechenzeit immer noch nicht praktisch anwendbar sind. \cite[305]{Ertel}''
+\subsection{Fluch der Dimensionalität (Grenzen des TD-Q-Lernens)}
+''Trotz der Erfolge in den letzten Jahren bleibt das Lernen durch Verstärkung ein sehr attraktives Forschungsgebiet der KI, nicht zuletzt deshalb, weil auch die besten heute bekannten Lernalgorithmen bei hochdimensionalen Zustands- und Aktionsräumen wegen ihrer gigantischen Rechenzeit immer noch nicht praktisch anwendbar sind. \cite[305]{Ertel}''\\
 
-Wolfgang Ertel beschreibt in diesem Zitat den Fluch der Dimensionalität, als großes Problem der heutigen Lernalgorithmen. 
+Wolfgang Ertel beschreibt in diesem Zitat den Fluch der Dimensionalität, als großes Problem der heutigen Lernalgorithmen. Auch Russell und Norvig erwähnen dieses Problem:\\
 
- 
-\subsection{TD-Q-Lernen Rechenzeit (Grenzen)}
+''Bisher sind wir davon ausgegangen, dass die Nutzenfunktionen und die von den Agenten gelernten Q-Funktionen in tabellarischer Form mit einem Ausgabewert für jedes Eingabetupel vorliegen. Ein solcher Ansatz funktioniert ausreichend gut für kleine Zustandsräume, aber die Zeit bis zur Konvergenz und (für ADP) die Zeit pro Iteration steigt mit wachsendem Raum rapide an. \cite[975]{Russell}''\\
 
+Stellen wir uns einen Suchbaum vor (ähnlich der Abbildung \ref{fig:minimax_tictactoe} aus dem Abschnitt Minimax-Suche), der alle Aktionen in jedem Zustand eines 9 Spielfelder Tic Tac Toe Spiels abbildet. Das Spielbrett eines 9 Spielfelder Tic Tac Toe's ist 3 mal 3 Spielfelder groß, die Dimension des 9 Spielfelder Tic Tac Toes ist also gleich 3. Der Verzweigungsfaktor des Suchbaums ist direkt nach dem Wurzelknoten gleich 9. Erhöhen wir die Tiefe des Suchbaums um 1, dann verringert sich der Verzweigungsfaktor ebenfalls um 1 (gilt für Reversi und Tic Tac Toe). Der Verzweigungsfaktor symbolisiert den Aktionsraum der in einem bestimmten Spielzustand vorhanden ist. Jeder Knoten (auch Blattknoten und Wurzelknoten) ist ein möglicher Spielzustand. Die Gesamtheit aller Spielzustände bildet den Zustandsraum ab. \\
 
-Die Testergebnisse aus dem vorherigen Kapitel \ref{cha:Validierung} Validierung bestätigen folgende Aussage von Wolfgang Ertel.
+Wenn wir die redundanten Spielzustände nicht ausschließen und den Fakt nicht beachten das nicht jeder Baumpfad eine maximale Länge von 9 hat (9 Spielfelder Tic Tac Toe kann schon in einer Tiefe von 5 terminieren), dann hat der Spielbaum geschätzt 362880 Spielzustände ($9 * 8 * 7 * 6 * 5 * 4 * 3 * 2$ entspricht 9 Fakultät!). Erhöhen wir die Dimension des Tic Tac Toe Spiels auf 4, dann erhalten wir das 16 Spielfelder Tic Tac Toe. Berechnen wir die Spielzustände für das 16 Spielfelder Tic Tac Toe unter den gleichen Voraussetzungen wie bei dem 9 Spielfelder Tic Tac Toe, dann erhalten wir ungefähr 20922789888000 Spielzustände. Diese Anzahl der Spielzustände entsprechen nicht der tatsächlichen Anzahl, sie sollen hier nur als grobe Schätzung und zur Veranschaulichung dienen (keine Garantie der Korrektheit der Werte). \\
+
+Wir können aus diesen beiden Spielzustandsschätzungen schlussfolgern, dass eine Erhöhung der Dimension einen enormen Effekt auf die Vergrößerung des Zustands- und Aktionsraums hat. Vermutlich meint Wolfgang Ertel genau dieses Verhältnis, wenn er von Fluch der Dimensionalität spricht. \\
+
+\myparagraph{Rechenzeit der Lernphasen}
+Wir können die in der Testphase ermittelten Rechenzeitwerte der einzelnen Lernphasen verwenden, um den Fluch der Dimensionalität aufzuzeigen. \\
+
+Rechenzeit des TD-Q-Lernens für 9 Spielfelder Tic Tac Toe: 
+\begin{itemize}
+\item 100 Trainingsspiele ungefähr 5 Minuten 
+\item 1.000 Trainingsspiele ungefähr 25 Minuten
+\item 10.000 Trainingsspiele ungefähr 180 Minuten
+\end{itemize}
+
+Rechenzeit des TD-Q-Lernens für 16 Spielfelder Tic Tac Toe: 
+\begin{itemize}
+\item 100 Trainingsspiele ungefähr 25 Minuten
+\item 1.000 Trainingssiele ungefähr 180 Minuten
+\item 10.000 Trainingsspiele ungefähr 1440 Minuten
+\end{itemize}
+
+Die einzelnen Testergebnisse zeigen deutlich eine Rechenzeiterhöhung der Lernphasen des 9 Spielfelder Tic Tac Toe's im Gegensatz zum 16 Spielfelder Tic Tac Toe, d.h. mit steigender Dimension erhöht sich die Rechenzeit für das TD-Q-Lernen erheblich. Der TD-Q-Agent benötigt 180 Minuten um eine 9 Spielfelder Tic Tac Toe Strategie, in 10.000 Trainingsspielen, zu lernen. Dahingegen benötigt er bereits 1440 Minuten um eine 16 Spielfelder Tic Tac Toe Strategie, in ebenfalls 10.000 Trainingsspielen, zu lernen. \\
+
+\subsection{Zusammenfassung}
+Die Auswertung hat bereits ergeben, dass die gelernten Strategien, für das 16 Spielfelder Tic Tac Toe, nicht so Leistungsfähig sind, wie die gelernten Strategien für das 9 Spielfelder Tic Tac Toe. Grund dafür ist der enorm erhöhte Spielzustandsraum des 16 Spielfelder Tic Tac Toe's gegenüber dem 9 Spielfelder Tic Tac Toe. In 10.000 Trainingsspielen werden die ungefähr 362880 geschätzten Spielzustände des 9 Spielfelder Tic Tac Toe's wesentlich öfter besucht als in einem 16 Spielfelder Tic Tac Toe mit ungefähr 20922789888000 geschätzten Spielzuständen. \\
+
+Wir haben bereits die allgemeine Konvergenzbedingung des Q-Lernens (TD-Q-Lernen) von Wolfgang Ertel zitiert. Demnach konvergiert die gelernte Strategie nur zu einer optimalen Strategie, wenn jedes Zustands-Aktions-Paar unendlich oft besucht wird. Da der geschätzte Zustandsraum des 9 Spielfelder Tic Tac Toe's viel kleiner ist, als der geschätzte 16 Spielfelder Tic Tac Toe Zustandsraum, konvergiert die gelernte Strategie annähernd für das 9 Spielfelder Tic Tac Toe in 10.000 Trainingsspielen, aber nicht für das 16 Spielfelder Tic Tac Toe. Daraus folgt: 10.000 Trainingsspiele reichen nicht aus, um die einzelnen Spielzustände des 16 Spielfelder Tic Tac Toe's für eine Konvergenz ausreichend oft zu besuchen. \\  
+
+Aus diesen Gründen untersuchen wir die Lernfähigkeit und Grenzen des TD-Q-Lernens nur für 9 und 16 Spielfelder Tic Tac Toe Spiele und nicht für das 64 Spielfelder Reversi. 10.000 Trainingsspiele für das Reversi Strategiespiel würden Tage oder Wochen an Rechenzeit benötigen und letztlich würden 10.000 Trainingsspiele für den Reversi Zustandsraum nicht ausreichen, um eine annähernd optimale Reversi Strategie zu lernen. \\
+
+Die bisherigen Ergebnisse dieser Arbeit bestätigen somit die nachfolgende Aussagen von Wolfgang Ertel: \\
 
 ''Die weltbesten Schachcomputer arbeiten bis heute immer noch ohne Lernverfahren. Dafür gibt es zwei Gründe. Einerseits benötigen die bis heute entwickelten Verfahren zum Lernen durch Verstärkung bei großen Zustandsräumen noch sehr viel Rechenzeit. Andererseits sind aber die manuell erstellten Heuristiken der Hochleistungsschachcomputer schon sehr stark optimiert. Das heißt, dass nur ein sehr gutes Lernverfahren noch zu Verbesserungen führen kann. \cite[120]{Ertel}''\\
 
-In dieser Arbeit lernt der Agent eine Tabelle, diese Tabelle enthält Zustands/Aktionspaare und für jedes dieser Paare einen dazugehörigen Q-Wert. Die Tabelle repräsentiert die Q-Funktion. \\
-
-''Bisher sind wir davon ausgegangen, dass die Nutzenfunktionen und die von den Agenten gelernten Q-Funktionen in tabellarischer Form mit einem Ausgabewert für jedes Eingabetupel vorliegen. Ein solcher Ansatz funktioniert ausreichend gut für kleine Zustandsräume, aber die Zeit bis zur Konvergenz und (für ADP) die Zeit pro Iteration steigt mit wachsendem Raum rapide an \cite[975]{Russell}.''   
-
-
 \section{Ausblick}
 \label{sec:Ausblick}
-Im letzten Abschnitt dieser Arbeit werden wir uns die zwei der bisher erfolgreichsten lernenden Programme ansehen. Das Dame-Spiel von Arthur L. Samuel aus dem Jahre 1955 und TD-Gammon von Gerald Tesauro aus dem Jahre 1992. 
+Im letzten Abschnitt dieser Arbeit wollen wir auf die sehr guten Lernverfahren eingehen, die Wolfgang Ertel in seiner Aussage gerade eben erwähnt hat. Die beiden vielleicht bisher erfolgreichsten lernenden Programme. Das Dame-Spiel von Arthur L. Samuel aus dem Jahre 1955 und TD-Gammon von Gerald Tesauro aus dem Jahre 1992. 
 
 \subsection{Samuels-Dame-Spiel}
-''Arthur L. Samuel schrieb 1955 ein Programm, dass Dame spielen konnte und mit einem einfachen Lernverfahren seine Parameter verbessern konnte. Sein Programm hatte dabei jedoch Zugriff auf eine große Zahl von archivierten Spielen, bei denen jeder einzelne Zug von Experten bewertet war (Überwachtes Lernen zur Unterstützung des verstärkenden Lernens). Damit verbesserte das Programm seine Bewertungsfunktion. Um eine noch weitere Verbesserung zu erreichen, ließ Samuel dein Programm gegen sich selbst spielen. Das Credit Assignment löste er auf einfache Weise. Für jede einzelne Stellung während eines Spiels vergleicht er die Bewertung durch die Funktion B(s) mit der durch Alpha-Beta-Pruning berechneten Bewertung und verändert B(s) entsprechend. 1961 besiegte sein Dame-Programm den viertbesten Damespieler der USA. Mit dieser bahnbrechenden Arbeit war Samuel seiner Zeit um fast dreißig Jahre voraus \cite[120\psq]{Ertel}''.
+''Arthur L. Samuel schrieb 1955 ein Programm, dass Dame spielen konnte und mit einem einfachen Lernverfahren seine Parameter verbessern konnte. Sein Programm hatte dabei jedoch Zugriff auf eine große Zahl von archivierten Spielen, bei denen jeder einzelne Zug von Experten bewertet war (Überwachtes Lernen zur Unterstützung des verstärkenden Lernens). Damit verbesserte das Programm seine Bewertungsfunktion. Um eine noch weitere Verbesserung zu erreichen, ließ Samuel dein Programm gegen sich selbst spielen. Das Credit Assignment löste er auf einfache Weise. Für jede einzelne Stellung während eines Spiels vergleicht er die Bewertung durch die Funktion B(s) mit der durch Alpha-Beta-Pruning berechneten Bewertung und verändert B(s) entsprechend. 1961 besiegte sein Dame-Programm den viertbesten Damespieler der USA. Mit dieser bahnbrechenden Arbeit war Samuel seiner Zeit um fast dreißig Jahre voraus. \cite[120\psq]{Ertel}''\\
 
-\paragraph{Agent mit TD-Lernen}
-Die Aufgabe des Agenten mit TD-Lernen ist, dass verbessern einer gegebenen Heuristik. Unter Verwendung dieser möglicherweise verbesserten Heuristik, soll der Agent eine möglichst optimale Aktion auswählen. Der Agent verbessert die Bewertungsfunktion durch Aktualisierung bzw. Anpassung der Parameter $\theta = \theta_1, ... \theta_n$. 
+Wir wollen nachfolgend den unterschied zwischen dem in dieser Arbeit implementierten Lernverfahren und dem von Samuel implementierten Lernverfahren erläutern (vgl. \cite[976]{Russell}): \\
 
+Russell und Norvig beschreiben das Lernverfahren von Samuel als \textbf{Funktionsannäherung}. Der unterschied zwischen Samuels Lernalgorithmus und dem von uns implementierten TD-Q-Algorithmus ist, dass Samuel eine andere Darstellung als eine Suchtabelle (die Tabelle die wir mit Q(s,a) gekennzeichnet hatten) für die Q-Funktion verwendet. Arthur Samuels Dame Spiel verwendete also eine parametrisierte Bewertungsfunktion in der Form: \\
 \begin{equation*}
-\hat{U}_\theta(s) = \theta_1 f_1(s) + \theta_2 f_2(s) + ... + \theta_n f_n(s)
+\hat{U}_\theta(s) = \theta_1 f_1(s) + \theta_2 f_2(s) + ... + \theta_n f_n(s),
 \end{equation*}
+
+um die Q-Funktion darzustellen. Samuel verwendet für das Lernen der einzelnen Parameter ($\theta = \theta_1, ... \theta_n$) der Bewertungsfunktion $\hat{U}_\theta(s)$ eine abgewandelte Form, des in dieser Arbeit implementierten TD-Q-Lernens (vgl. \cite[981]{Russell}). Dieses Vorgehen ermöglichte es Samuels Lernalgorithmus die Q-Funktion, statt in einer $10^{40}$ Tabelle, durch etwa $n = 20$ Parameter zu charakterisieren. Dies ist gegenüber der Tabelle (unsere Darstellung der Q-Funktion) die unser TD-Q Agent in dieser Arbeit lernt, eine riesige Komprimierung. \\
 
 \subsection{TD-Gammon}
 \label{subsec:TD-Gammon}
-''Das TD-Lernen zusammen mit einem Backpropagation-Netz mit 40 bis 80 verdeckten Neuronen wurde sehr erfolgreich angewendet in TD-Gammon, einem Programm zum Spielen von Backgammon, programmiert vom Entwickler Gerald Tesauro im Jahr 1992. Die einzige direkte Belohnung für das Programm ist das Ergebnis am Ende eines Spiels. Eine optimierte Version des Programms mit einer 2-Züge-Vorausschau wurde mit 1,5 Millionen Spielen gegen sich selbst trainiert. Es besiegte damit Weltklassespieler und spielt so gut wie die drei besten menschlichen Spieler \cite[304]{Ertel}''.  
+''Das TD-Lernen zusammen mit einem Backpropagation-Netz mit 40 bis 80 verdeckten Neuronen wurde sehr erfolgreich angewendet in TD-Gammon, einem Programm zum Spielen von Backgammon, programmiert vom Entwickler Gerald Tesauro im Jahr 1992. Die einzige direkte Belohnung für das Programm ist das Ergebnis am Ende eines Spiels. Eine optimierte Version des Programms mit einer 2-Züge-Vorausschau wurde mit 1,5 Millionen Spielen gegen sich selbst trainiert. Es besiegte damit Weltklassespieler und spielt so gut wie die drei besten menschlichen Spieler. \cite[304]{Ertel}''
+
+Aus dem oberen Zitat von Wolfgang Ertel und den Ausführungen von Russell und Norvig \cite[982]{Russell} zum Thema TD-Gammon können wir folgendes feststellen: \\
+
+Gerald Tesauro gelang es demnach ein verstärkendes Lernverfahren zu entwickeln, welches tatsächlich fähig war, menschliche Weltklassespieler zu besiegen. Sein Lernverfahren war dem von Samuel implementierten Lernverfahren sehr ähnlich, denn er verwendete ebenfalls das TD-Lernen, eine Funktionsannäherung und einen Selbsttrainingsmodus. In einem Selbstspielmodus spielt das Lernverfahren gegen sich selbst, um seine gelernte Strategie zu verbessern. Der besondere Unterschied der beiden Lernverfahren ist, die Darstellung der Bewertungsfunktion $\hat{U}_\theta(s)$. Gerald Tesauro stellte die Bewertungsfunktion als ein vollständig verknüpftes neuronales Netz mit einer einzigen verborgenen Schicht mit 40 Knoten dar. \\
+
+Die erfolgreichen Anwendungen von Arthur L. Samuel und Gerald Tesauro haben gezeigt, dass es verstärkende Lernverfahren gibt, die das Lernen einer annähernd optimalen Strategie, für Dame und Backgammon, ermöglichen. \\
