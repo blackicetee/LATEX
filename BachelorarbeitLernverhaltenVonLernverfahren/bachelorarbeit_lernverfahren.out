@@ -3,58 +3,58 @@
 \BOOKMARK [0][-]{chapter.1}{Projektvision}{}% 3
 \BOOKMARK [1][-]{section.1.1}{Zielsetzung}{chapter.1}% 4
 \BOOKMARK [1][-]{section.1.2}{Quantifizierung der Ziele}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.3}{Realisierung des Heuristik Agenten}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.4}{Realisierung des TD-Q lernenden Agent}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.5}{Hypothesen}{chapter.1}% 8
-\BOOKMARK [0][-]{chapter.2}{Strategiespiele und Spieltheorie}{}% 9
-\BOOKMARK [1][-]{section.2.1}{Das Strategiespiel Tic Tac Toe}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{Das Strategiespiel Reversi}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.3}{Spieltheorie}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.3.1}{Minimax-Suche}{section.2.3}% 13
-\BOOKMARK [2][-]{subsection.2.3.2}{Alpha-Beta-K\374rzung}{section.2.3}% 14
-\BOOKMARK [2][-]{subsection.2.3.3}{Iterativ vertiefende Tiefensuche}{section.2.3}% 15
-\BOOKMARK [2][-]{subsection.2.3.4}{\334bergangstabellen}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.5}{Heuristik}{section.2.3}% 17
-\BOOKMARK [0][-]{chapter.3}{Einf\374hrung in verst\344rkendes Lernen}{}% 18
-\BOOKMARK [1][-]{section.3.1}{Markov-Entscheidungsprozess \(MEP\)}{chapter.3}% 19
-\BOOKMARK [2][-]{subsection.3.1.1}{Eigenschaften eines MEP}{section.3.1}% 20
-\BOOKMARK [2][-]{subsection.3.1.2}{Zusammenfassung und Anwendung}{section.3.1}% 21
-\BOOKMARK [1][-]{section.3.2}{Optimale Taktiken}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.3}{Dynamische Programmierung und Wert-Iteration}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.4}{Temporale Differenz Lernen \(TD-Lernen\)}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.5}{Q-Lernen \(TD-Q-Lernen\)}{chapter.3}% 25
-\BOOKMARK [0][-]{chapter.4}{Problemanalyse und Anforderungsdefinition}{}% 26
-\BOOKMARK [1][-]{section.4.1}{Die Problematik}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.2}{Fallbeispiel: Ein Agent im Labyrinth}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.3}{Anforderungen}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.3.1}{Tic Tac Toe Spielumgebung}{section.4.3}% 30
-\BOOKMARK [2][-]{subsection.4.3.2}{Reversi Spielumgebung}{section.4.3}% 31
-\BOOKMARK [2][-]{subsection.4.3.3}{Agent des Zufalls}{section.4.3}% 32
-\BOOKMARK [2][-]{subsection.4.3.4}{Tic Tac Toe Heuristik Agent}{section.4.3}% 33
-\BOOKMARK [2][-]{subsection.4.3.5}{Reversi Heuristik Agent}{section.4.3}% 34
-\BOOKMARK [2][-]{subsection.4.3.6}{Tic Tac Toe TD-Q lernender Agent}{section.4.3}% 35
-\BOOKMARK [2][-]{subsection.4.3.7}{Reversi TD-Q lernender Agent}{section.4.3}% 36
-\BOOKMARK [2][-]{subsection.4.3.8}{Testen der Agenten}{section.4.3}% 37
-\BOOKMARK [1][-]{section.4.4}{Die Anforderungen im Klassendiagramm}{chapter.4}% 38
-\BOOKMARK [0][-]{chapter.5}{Algorithmen und Implementierung}{}% 39
-\BOOKMARK [1][-]{section.5.1}{Iterative Alpha-Beta Suche}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.2}{TD-Q-Lernen}{chapter.5}% 41
-\BOOKMARK [0][-]{chapter.6}{Validierung}{}% 42
-\BOOKMARK [1][-]{section.6.1}{Tic Tac Toe - 9 Spielfelder}{chapter.6}% 43
-\BOOKMARK [2][-]{subsection.6.1.1}{Heuristik gegen Zufall}{section.6.1}% 44
-\BOOKMARK [2][-]{subsection.6.1.2}{TD-Q Lernen in 100 Trainingsspielen}{section.6.1}% 45
-\BOOKMARK [2][-]{subsection.6.1.3}{TD-Q Lernen in 1.000 Trainingsspielen}{section.6.1}% 46
-\BOOKMARK [2][-]{subsection.6.1.4}{TD-Q Lernen in 10.000 Trainingsspielen}{section.6.1}% 47
-\BOOKMARK [1][-]{section.6.2}{Tic Tac Toe - 16 Spielfelder}{chapter.6}% 48
-\BOOKMARK [2][-]{subsection.6.2.1}{Heuristik gegen Zufall}{section.6.2}% 49
-\BOOKMARK [2][-]{subsection.6.2.2}{TD-Q Lernen in 100 Trainingsspielen}{section.6.2}% 50
-\BOOKMARK [2][-]{subsection.6.2.3}{TD-Q Lernen in 1.000 Trainingsspielen}{section.6.2}% 51
-\BOOKMARK [2][-]{subsection.6.2.4}{TD-Q Lernen in 10.000 Trainingsspielen}{section.6.2}% 52
-\BOOKMARK [0][-]{chapter.7}{Auswertung}{}% 53
-\BOOKMARK [1][-]{section.7.1}{TD-Q-Lernen - Leistung und Grenzen}{chapter.7}% 54
-\BOOKMARK [2][-]{subsection.7.1.1}{TD-Q-Lernen Konvergenz \(Leistungsf\344higkeit\)}{section.7.1}% 55
-\BOOKMARK [2][-]{subsection.7.1.2}{Fluch der Dimensionalit\344t \(Grenzen des TD-Q-Lernens\)}{section.7.1}% 56
-\BOOKMARK [2][-]{subsection.7.1.3}{Zusammenfassung}{section.7.1}% 57
-\BOOKMARK [1][-]{section.7.2}{Ausblick}{chapter.7}% 58
-\BOOKMARK [2][-]{subsection.7.2.1}{Samuels-Dame-Spiel}{section.7.2}% 59
-\BOOKMARK [2][-]{subsection.7.2.2}{TD-Gammon}{section.7.2}% 60
+\BOOKMARK [1][-]{section.1.3}{Aufbau des Projekts}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.4}{Ergebnisse}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Strategiespiele und Spielregeln}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Das Strategiespiel Tic Tac Toe}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Das Strategiespiel Reversi}{chapter.2}% 10
+\BOOKMARK [0][-]{chapter.3}{Realisierung des Heuristik Agenten}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Spieltheorie}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.1.1}{Minimax-Suche}{section.3.1}% 13
+\BOOKMARK [2][-]{subsection.3.1.2}{Alpha-Beta-K\374rzung}{section.3.1}% 14
+\BOOKMARK [2][-]{subsection.3.1.3}{Iterativ vertiefende Tiefensuche}{section.3.1}% 15
+\BOOKMARK [2][-]{subsection.3.1.4}{\334bergangstabellen}{section.3.1}% 16
+\BOOKMARK [2][-]{subsection.3.1.5}{Heuristik}{section.3.1}% 17
+\BOOKMARK [0][-]{chapter.4}{Einf\374hrung in verst\344rkendes Lernen}{}% 18
+\BOOKMARK [1][-]{section.4.1}{Markov-Entscheidungsprozess \(MEP\)}{chapter.4}% 19
+\BOOKMARK [2][-]{subsection.4.1.1}{Eigenschaften eines MEP}{section.4.1}% 20
+\BOOKMARK [2][-]{subsection.4.1.2}{Zusammenfassung und Anwendung}{section.4.1}% 21
+\BOOKMARK [1][-]{section.4.2}{Optimale Taktiken}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.3}{Dynamische Programmierung und Wert-Iteration}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.4}{Temporale Differenz Lernen \(TD-Lernen\)}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.5}{Q-Lernen \(TD-Q-Lernen\)}{chapter.4}% 25
+\BOOKMARK [0][-]{chapter.5}{Problemanalyse und Anforderungsdefinition}{}% 26
+\BOOKMARK [1][-]{section.5.1}{Die Problematik}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.2}{Fallbeispiel: Ein Agent im Labyrinth}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.3}{Anforderungen}{chapter.5}% 29
+\BOOKMARK [2][-]{subsection.5.3.1}{Tic Tac Toe Spielumgebung}{section.5.3}% 30
+\BOOKMARK [2][-]{subsection.5.3.2}{Reversi Spielumgebung}{section.5.3}% 31
+\BOOKMARK [2][-]{subsection.5.3.3}{Agent des Zufalls}{section.5.3}% 32
+\BOOKMARK [2][-]{subsection.5.3.4}{Tic Tac Toe Heuristik Agent}{section.5.3}% 33
+\BOOKMARK [2][-]{subsection.5.3.5}{Reversi Heuristik Agent}{section.5.3}% 34
+\BOOKMARK [2][-]{subsection.5.3.6}{Tic Tac Toe TD-Q lernender Agent}{section.5.3}% 35
+\BOOKMARK [2][-]{subsection.5.3.7}{Reversi TD-Q lernender Agent}{section.5.3}% 36
+\BOOKMARK [2][-]{subsection.5.3.8}{Testen der Agenten}{section.5.3}% 37
+\BOOKMARK [1][-]{section.5.4}{Die Anforderungen im Klassendiagramm}{chapter.5}% 38
+\BOOKMARK [0][-]{chapter.6}{Algorithmen und Implementierung}{}% 39
+\BOOKMARK [1][-]{section.6.1}{Iterative Alpha-Beta Suche}{chapter.6}% 40
+\BOOKMARK [1][-]{section.6.2}{TD-Q-Lernen}{chapter.6}% 41
+\BOOKMARK [0][-]{chapter.7}{Validierung}{}% 42
+\BOOKMARK [1][-]{section.7.1}{Tic Tac Toe - 9 Spielfelder}{chapter.7}% 43
+\BOOKMARK [2][-]{subsection.7.1.1}{Heuristik gegen Zufall}{section.7.1}% 44
+\BOOKMARK [2][-]{subsection.7.1.2}{TD-Q Lernen in 100 Trainingsspielen}{section.7.1}% 45
+\BOOKMARK [2][-]{subsection.7.1.3}{TD-Q Lernen in 1.000 Trainingsspielen}{section.7.1}% 46
+\BOOKMARK [2][-]{subsection.7.1.4}{TD-Q Lernen in 10.000 Trainingsspielen}{section.7.1}% 47
+\BOOKMARK [1][-]{section.7.2}{Tic Tac Toe - 16 Spielfelder}{chapter.7}% 48
+\BOOKMARK [2][-]{subsection.7.2.1}{Heuristik gegen Zufall}{section.7.2}% 49
+\BOOKMARK [2][-]{subsection.7.2.2}{TD-Q Lernen in 100 Trainingsspielen}{section.7.2}% 50
+\BOOKMARK [2][-]{subsection.7.2.3}{TD-Q Lernen in 1.000 Trainingsspielen}{section.7.2}% 51
+\BOOKMARK [2][-]{subsection.7.2.4}{TD-Q Lernen in 10.000 Trainingsspielen}{section.7.2}% 52
+\BOOKMARK [0][-]{chapter.8}{Auswertung}{}% 53
+\BOOKMARK [1][-]{section.8.1}{TD-Q-Lernen - Leistung und Grenzen}{chapter.8}% 54
+\BOOKMARK [2][-]{subsection.8.1.1}{TD-Q-Lernen Konvergenz \(Leistungsf\344higkeit\)}{section.8.1}% 55
+\BOOKMARK [2][-]{subsection.8.1.2}{Fluch der Dimensionalit\344t \(Grenzen des TD-Q-Lernens\)}{section.8.1}% 56
+\BOOKMARK [2][-]{subsection.8.1.3}{Zusammenfassung}{section.8.1}% 57
+\BOOKMARK [1][-]{section.8.2}{L\366sungen f\374r das Dimensionalit\344tsproblem}{chapter.8}% 58
+\BOOKMARK [2][-]{subsection.8.2.1}{Samuels-Dame-Spiel}{section.8.2}% 59
+\BOOKMARK [2][-]{subsection.8.2.2}{TD-Gammon}{section.8.2}% 60

@@ -1,23 +1,28 @@
 \chapter{Realisierung des Heuristik Agenten}
 \label{cha:Realisierung des Heuristik Agenten}
 
-Im Unterkapital Spieltheorie (Abschnitt \ref{sec:Spieltheorie}) werden uninformierte Suchbaumverfahren, deren Optimierungsmöglichkeiten, Übergangstabellen und Heuristiken erklärt.\\
+Für die Realisierung des Heuristik Agenten müssen wir ein Verfahren implementieren, welches optimale Spielzüge für jeden Spielzustand berechnet. \\
 
-Die Minimax-Suche (Abschnitt \ref{subsec:Minimax}) ist ein uninformiertes Suchbaumverfahren. Die Minimax-Suche kann in Zweipersonenstrategiespielen eingesetzt werden, um eine optimale Strategie zu finden. In der Praxis ist das Verfahren jedoch nicht anwendbar. Die Suchbäume realistischer Probleme sind meist entartet bzw. zu groß für eine klassische Minimax-Suche. Die Alpha-Beta-Kürzung (Abschnitt \ref{subsec:Alpha-Beta-Kürzung}) ist eine Verbesserung der Minimax-Suche, dieses Optimierungsverfahren Versucht, den meist viel zu großen Suchbaum zu kürzen, ohne das Endergebnis der Minimax-Suche zu beeinflussen. Wir werden die Minimax-Suche bzw. Alpha-Beta-Suche für die Implementierung des Heuristik Agenten verwenden. Die iterativ vertiefende Tiefensuche (Abschnitt \ref{subsec:Iterativ vertiefende Tiefensuche}) ist ein uninformiertes Suchverfahren, welches Breitensuche und Tiefensuche kombiniert und bis zu einer bestimmten Suchtiefe ein bestmögliches Ergebnis sucht. Wir verwenden die iterativ vertiefende Tiefensuche, für die Verbesserung der vorausschauenden Suche des Heuristik Agenten. \\
+Dazu gibt es das Verfahren der Minimax-Suche (Abschnitt \ref{subsec:Minimax}), die durch die Alpha-Beta-Kürzung (Abschnitt \ref{subsec:Alpha-Beta-Kürzung}) optimiert wird. \\
 
-Die Übergangstabellen (Abschnitt \ref{subsec:Übergangstabellen}) beschreiben eine Möglichkeit Übergänge zu vermeiden. Übergänge sind identische Spielsituationen, die durch unterschiedliche Aktionssequenzen (eine Folge von Spielzügen) dargestellt werden können, daher scheinen die Spielsituationen unterschiedlich zu sein. Das Zobrist-Hash Verfahren beschreibt eine Möglichkeit die Spielsituationen eindeutig als Zahlwerte darstellen zu können. Wir verwenden dieses Hashverfahren bzw. auch eine Art der Übergangstabellen für das TD-Q lernen. \\
+Weil diese Suchbäume für Strategiespiele sehr große Dimensionen annehmen, 
+muss die Suchtiefe begrenzt werden. Dazu bedienen wir uns der iterativ vertiefenden Tiefensuche. \\
 
-Heuristiken bilden die stärkste Leistungsverbesserung, bezüglich der Rechenzeit, für Suchbaumverfahren. Eine Heuristik (Abschnitt \ref{subsec:Heuristik}) ist eine Bewertungsfunktion B(s), welche für jeden Spielzustand (Stellung der Spielfiguren) s eine Schätzung bereitstellt. Die Schätzung gibt an, wie hoch die Gewinnchance, in einem bestimmten Spielzustand, für den Spielzug ausführenden Spieler, ist. Heuristiken ermöglichen das abbrechen der Suche innerhalb eines Suchbaumes, d.h. auch die nicht Blattkonten des Baumes können Spielergebnisse bereitstellen. Die Kombination von uninformierter Suche und Heuristiken ist nicht mehr uninformiert. Heuristiken stellen zusätzliche Spielinformationen bereit. Die Literatur bezeichnet dies daher als heuristische (informierte) Suche \cite[105]{Ertel}. \\
+Ein Suchbaum besteht aus einem Wurzelknoten, mehreren inneren Knoten und mehreren Blattknoten. Nur die Blattknoten liefern Ergebnisse des Spiels.
 
-Wir fassen zusammen: Die Implementierung des Heuristik Agenten erhält eine iterativ vertiefende Alpha-Beta Suche, diese kann auch nicht Blattknoten des Suchbaums, mittels einer Heuristik, bewerten. Wir können also die Rechenzeit des Heuristik Agenten begrenzen, indem wir die maximale Suchtiefe auf 2 Halbzüge begrenzen. Der Heuristik Agent expandiert, wie die iterativ vertiefende Tiefensuche, zu erst alle Knoten in einer Tiefe und erhöht danach schritt für schritt (iterativ) die aktuelle Tiefenschranke, bis zu der maximal möglichen Tiefe. 
 
-\section{Spieltheorie}
-\label{sec:Spieltheorie}
-In diesem Abschnitt werden wir erklären was uninformierte Suchbaumverfahren, Übergangstabellen und Heuristiken sind. Wir verwenden diese Methoden, aus der Spieltheorie, für die Implementierung unserer Agentenmodelle. Wolfgang Ertel beschreibt Spiele mit Gegenspieler wie folgt \cite[114]{Ertel}: \\ 
+Durch die Begrenzen der Suchtiefe, werden keine Blattknoten gefunden, d.h. keine Spielergebnisse.
 
-Schach, Vier gewinnt, Dame, Tic Tac Toe und Reversi sind strategische Spiele für zwei Personen, die gegeneinander antreten, um nach den Regeln des Spiels, den Gegenspieler zu besiegen. Diese Spiele sind deterministisch, weil das Spiel nicht vom Zufall abhängt und der gleiche Spielzug führt, bei gleichem Ausgangszustand, immer zum selben Spielergebnis. Ein nichtdeterministisches Spiel mit Gegenspieler ist z.B. Backgammon, denn Würfelergebnisse und somit der Zufall sind Bestandteil des Spiels. Die eben genannten Strategiespiele sind alle vollständig beobachtbar (wir verfügen über vollständige Information). Sie sind vollständig überschaubar, weil zu jedem Zeitpunkt des Spiels, das Spielfeld und alle Spielzüge einsehbar sind. Ein nicht vollständig beobachtbares Spiel ist, z.B. Poker oder andere Kartenspiele. Bei einem Poker Spiel sind die gegnerischen Karten und die Karten im Spieldeck unbekannt.\\
+Deshalb bedarf es zusätzlich der Heuristiken, die dazu führen, dass die Spielzustände auch vor erreichen eines Blattknotens bewertet werden können und somit auch Ergebnisse liefern.  
 
-''In der künstlichen Intelligenz haben die gebräuchlichsten Spiele in der Regel eine spezielle Natur - die Spieltheoretiker sprechen von deterministischen Zwei-Personen-Nullsummenspielen mit vollständiger Informaiton, bei denen zwei Spieler abwechselt agieren (wie zum Beispiel Schach) \cite[206]{Russell}.'' Die von Russell und Norvig erwähnten Eigenschaften treffen auch auf unsere Strategiespiele zu. Reversi und Tic Tac Toe sind deterministische und vollständig überschaubare Nullsummenspiele, d.h. wir müssen zufällig auftretende Zustandsübergänge und unbekannte Informationen, in unseren Heuristiken und Lernverfahren, nicht berücksichtigen. Nullsummenspiel bedeutet: gewinnt ein Spieler eine Partie, dann verliert der Gegenspieler automatisch in gleicher Höhe.
+  
+
+
+Bezüglich der extrem hohen Rechenzeit , müssen wir eine weitere Komponente dazunehmen, das uninformierte Suchverfahren der iterativ vertiefenden Tiefensuche.
+
+Eine Heuristik ist eine Bewertungsfunktion für Spielzustände. Die Bewertungsfunktion gibt an, wie gut oder schlecht eine bestimmte Spielsituation ist. \\
+
+''Heuristiken sind Problemlösungsstrategien, din in vielen Fällen zu einer schnelleren Lösung führen als die uninformierte Suche. Es gibt jedoch keine Garantie hierfür. Die heuristische Suche kann auch viel mehr Rechenzeit beanspruchen und letztlich dazu führen, dass die Lösung nicht gefunden wird.  \cite[105]{Ertel}''\\
 
 \subsection{Minimax-Suche}
 \label{subsec:Minimax}
