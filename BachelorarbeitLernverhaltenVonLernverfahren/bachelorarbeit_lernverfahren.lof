@@ -20,11 +20,12 @@
 \contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Der Agent und die Umgebung vgl. \cite [290]{Ertel}.}}{32}{figure.4.1}
 \contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Tic Tac Toe und Reversi Spielzust\IeC {\"a}nde.}}{33}{figure.4.2}
 \contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Die Projektproblematik.}}{34}{figure.4.3}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Klassendiagramm der Software}}{43}{figure.4.4}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Alpha-Beta iterativ vertiefende Suche}}{45}{figure.5.1}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Iteratives Suchen des maximalen Ergebnisses.}}{46}{figure.5.2}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces TD-Q-Lernen Algorithmus vgl. \cite [974]{Russell}}}{47}{figure.5.3}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Die implementierte Explorationsstrategie.}}{49}{figure.5.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Alpha-Beta iterativ vertiefende Suche}}{44}{figure.6.1}
-\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Iteratives Suchen des maximalen Ergebnisses.}}{45}{figure.6.2}
-\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces TD-Q-Lernen Algorithmus vgl. \cite [974]{Russell}}}{46}{figure.6.3}
-\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Die implementierte Explorationsstrategie.}}{48}{figure.6.4}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Die Ergebnisse der Agententests.}}{56}{figure.6.1}
 \addvspace {10\p@ }

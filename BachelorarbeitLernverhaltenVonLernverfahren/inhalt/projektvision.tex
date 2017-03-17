@@ -1,24 +1,64 @@
 \chapter{Projektvision}
 \label{cha:projektvision}
 
-Viele Menschen spielen gerne Strategiespiele gegen andere Menschen oder gegen einen Computer. Sie veranstalten große Meisterschaften in Schach und Poker. ''... Schach - zumindest in der Form des Turnierschachs - ist heute unbestreitbar als Sport anzusehen ... \cite{Weyer}'' Schach ist demnach nicht nur ein Spiel, sondern auch ein anerkannter Turniersport. Der Reiz eines Strategiespiels ist vermutlich die Entwicklung und Verbesserung der Strategie. Der Mensch lernt seine Strategien durch ständiges trainieren, verlieren, siegen, analysieren und anpassen. Er kann seine Strategie auch aus Büchern oder von einem Lehrer lernen. Eine Strategie, die sich sehr oft in der Praxis bewährt hat und viele wichtige Aspekte und Spielregeln beachtet, wird die Gewinnchancen eines Spielers verbessern. ''Zum ersten mal hat der seit zehn Jahren amtierende Schachweltmeister Garri Kasparow, den viele für den stärksten Spieler aller Zeiten halten, eine normale Turnierpartie gegen einen Schachcomputer verloren. In Philadelphia musste der Champion in der ersten von sechs Partien eines Zweikampfs gegen das auf einem IBM-Großrechner laufende Schachprogramm "Deep Blue" nach 37 Zügen die Waffen strecken \cite{Neander}.'' Dementsprechend kündigt sich eine Veränderung in den Turniren und Meisterschaften der Strategiespiele an, immer mehr menschliche Meister der Strategien werden von Computern besiegt. Wir wollen daher folgende Fragen in dieser Arbeit behandeln: Wie spielt ein Computer Strategiespiele oder wie entwickelt er Strategien? Lernen die Computer ihre Strategien oder werden ihnen explizit Strategien vorgegeben? Werden lernende Computerprogramme, in nächster Zeit, Turniere und Meisterschaften gewinnen? 
+Viele Menschen spielen gerne Strategiespiele gegen andere Menschen oder gegen einen Computer. \\
+Sie veranstalten große Meisterschaften in Schach und Poker. ''... Schach - zumindest in der Form des Turnierschachs - ist heute unbestreitbar als Sport anzusehen ... \cite{Weyer}'' Schach ist demnach nicht nur ein Spiel, sondern auch ein anerkannter Turniersport. \\
+
+Der Reiz eines Strategiespiels ist vermutlich die Entwicklung und Verbesserung der Strategie. Der Mensch lernt seine Strategien durch ständiges trainieren, verlieren, siegen, analysieren und anpassen. Er kann seine Strategie auch aus Büchern oder von einem Lehrer lernen.
+Eine Strategie, die sich sehr oft in der Praxis bewährt hat und viele wichtige Aspekte und Spielregeln beachtet, wird die Gewinnchancen eines Spielers verbessern. \\
+
+''Zum ersten mal hat der seit zehn Jahren amtierende Schachweltmeister Garri Kasparow, den viele für den stärksten Spieler aller Zeiten halten, eine normale Turnierpartie gegen einen Schachcomputer verloren. 
+In Philadelphia musste der Champion in der ersten von sechs Partien eines Zweikampfs gegen das auf einem IBM-Großrechner laufende Schachprogramm Deep Blue nach 37 Zügen die Waffen strecken. \cite{Neander}''\\
+
+Dementsprechend kündigt sich eine Veränderung in den Turnieren und Meisterschaften der Strategiespiele an. Immer mehr menschliche Meister der Strategien werden von Computern besiegt. \\
+
+Wir wollen daher folgende Fragen in dieser Arbeit behandeln:\\
+Wie spielt ein Computer Strategiespiele oder wie entwickelt er Strategien? Lernen die Computer ihre Strategien oder werden ihnen explizit Strategien vorgegeben? Werden lernende Computerprogramme, in nächster Zeit, Turniere und Meisterschaften gewinnen? 
 \newpage
 
 \section{Zielsetzung}
-Das Ziel der Arbeit ist es, ein bereits existierendes Lernverfahren zu implementieren und dessen Leistungsfähigkeit und Grenzen zu untersuchen. Das Lernverfahren soll eigenständig und automatisch eine Strategie lernen. Jeweils eine Strategie für das Strategiespiele Tic Tac Toe und das Strategiespiel Reversi. Wir bezeichnen die Implementierung des Lernverfahrens, als lernenden Agenten.\\  
+Das Ziel der Arbeit ist es, den bereits existierenden Lernalgorithmus des TD-Q-Lernens zu implementieren und dessen Leistungsfähigkeit und Grenzen zu untersuchen. Das daraus resultierende Lernverfahren, soll eigenständig und automatisch Strategien für zwei Computerspiele erlernen. Wir bezeichnen die Implementierung des TD-Q-Lernens fortan als TD-Q-Agenten. \\
 
-Ein weiteres Ziel in dieser Arbeit ist die Entwicklung von Bewertungsfunktionen (Heuristiken) für Reversi und Tic Tac Toe. Eine Heuristik berechnet eine Gewinnwahrscheinlichkeit ausgehend von einem Spielzustand. Ein Spielzustand mit einer hohen heuristischen Bewertung ist, gegenüber einem Spielzustand mit niedriger heuristischer Bewertung, zu bevorzugen. Eine Bewertungsfunktion soll das Spielwissen eines fortgeschrittenen menschlichen Spielers simulieren und als Implementierungsgrundlage für den nicht lernenden Agenten (auch heuristischer Agent) dienen.\\
+Der TD-Q-Agent soll Strategien für die selbst programmierten Computerspiele Tic Tac Toe und Reversi erlernen. Wir werden die Strategiespiele Tic Tac Toe mit 9 Spielfeldern, Tic Tac Toe mit 16 Spielfeldern und Reversi mit 64 Spielfeldern eigenständig implementieren. \\
+
+Wir beurteilen die Leistungsfähigkeit des implementierten TD-Q-Agenten, anhand von Testspielen gegen andere Agenten mit unterschiedlichen Strategien. Wir werden dafür innerhalb dieser Arbeit einen Zufallsagenten und einen vorausschauenden Heuristik Agent entwickeln und implementieren. \\
 
 \section{Quantifizierung der Ziele}
 \label{sec:Quantifizierung der Ziele}
-Die Leistungsfähigkeit und Grenzen, des Lernverfahrens, beurteilen wir anhand diverser Testspiele. Bei diesen Testspielen spielt der lernende Agent gegen den nicht lernenden Agenten und den Zufallsagenten. Die Agenten werden jeweils in den Strategiespielen Tic Tac Toe und Reversi gegeneinander antreten. Wir unterteilen die Testspiele in drei Phasen. In der ersten Phase (kurze Lernphase) lernt das Lernverfahren bzw. der lernende Agent in 100 Spielen gegen sich selbst eine Strategie. Wir erhören die Anzahl der Spiele gegen sich selbst in der zweiten Phase (mittlere Lernphase) auf 1.000 Spiele und in der dritten Phase (lange Lernphase) auf 10.000 Spiele gegen sich selbst. Nach Abschluss jeder Phase muss der lernende Agent genau 100 Testspielen gegen den nicht lernenden Agenten absolvieren. \\
 
-%Validierung der zu entwickelnden Bewertungsfunktionen
-Wir testen die Leistungsfähigkeit der Bewertungsfunktionen ebenfalls anhand von Testspielen. Der nicht lernende Agent wird gegen einen Zufallsagenten antreten. Ein Zufallsagent wählt, aus allen möglichen Aktionen in einer Spielsituation, zufällig eine Aktion aus. Das Testkriterium der Bewertungsfunktionen ist eine Gewinnquote von mindestens 60\% in 100 Testspielen gegen einen Zufallsagenten. Sollte der Agent mindestens 60\% aller Testspiele Gewinnen, dann bezeichnen wir diesen, als Testgegner mit fortgeschrittenem Spielniveau. \\
+Wir unterteilen das Lernen des TD-Q-Agenten in drei Phasen. In der ersten Phase lernt der TD-Q-Agent in 100 Trainingsspielen eine Strategie. Trainingsspiel bedeutet: Der TD-Q-Agent spielt und lernt gegen sich selbst. Wir erhören die Anzahl der Trainingsspiele in der zweiten Phase auf 1.000 und in der dritten Phase auf 10.000 Trainingsspiele. \\
 
-\section{Realisierung des Heuristik Agenten}
+Für jede Lernphase entsteht eine eigene Strategie. Insgesamt lernt der TD-Q-Agent demnach 9 Strategien. 3 Strategien für das 9 Spielfelder Tic Tac Toe, 3 Strategien für das 16 Spielfelder Tic Tac Toe und 3 Strategien für das 64 Spielfelder Reversi. \\
+
+Nach Abschluss jeder Lernphase wird der TD-Q-Agent mit der gelernten Strategie, in genau 100 Testspielen, gegen den vorausschauenden Heuristik Agenten und den Zufallsagenten spielen. Der Heuristik Agent wird ebenfalls in 100 Testspielen gegen den Zufallsagenten spielen. \\
+
+\section{Aufbau des Projekts}
+Zuerst werden die Spielregeln der beiden ausgesuchten Computerspiele definiert. Die Computerspiele und entsprechende Tests werden programmiert. Die Programmierung der Computerspiele und der Tests wird nicht explizit aufgeführt, kann jedoch der beiliegenden Software-CD entnommen werden. \\
+
+In den nächsten beiden Schritten werden die Grundlagen für die Implementierung des Heuristik Agenten und des TD-Q-Agenten ermittelt und erstellt. \\
+
+Für die Erstellung der Agenten werden danach die Anforderungen definiert und anschließend modelliert. \\
+
+Die definierten Anforderungen werden Implementiert. Der Algorithmus der das vorausschauen des Heuristik Agenten realisiert und der Algorithmus der das eigenständige Lernen des TD-Q-Agenten realisiert werden ausführlich in dieser Arbeit beschrieben. Die kompletten implementierten Anforderungen und die benötigten Algorithmen für die Agenten sind auf der Software-CD vorhanden. \\
+
+Anschließend beginnen die geplanten Trainingsphasen und Testspiele. \\
+
+Der letzte Schritt ist die Auswertung der Testergebnisse und die Beurteilung der Leistungsfähigkeit der Agenten. \\
+
+\section{Ergebnisse}
+
+Innerhalb dieser Arbeit wollen wir verschiedene Aussagen der Literatur bestätigen: Die Dimensionalität ist ein großes Problem der Lernalgorithmen. Lernverfahren sind momentan noch ungeeignet für das Lernen von komplexen Strategiespielen und sie werden von manuell optimierten Heuristiken dominiert.
+
+
+
+
+
+\section{Realisierung Heuristik Agent}
 %Realisierung nicht lernender Agent / feste Strategie
-In der Implementierung des nicht lernenden oder heuristischen Agenten ist, neben der Bewertungsfunktion, noch ein anderes Verfahren enthalten. Das Suchbaumverfahren für 2-Personenspiele. Dieses Verfahren durchsucht einen Spielbaum nach der bestmöglichen Aktion (einem Spielzug) in einem gegebenen Zustand. Ein Zustand oder Spielzustand ist eine Spielsituation bzw. eine Stellung der Spielfiguren auf dem Spielfeld. \\
+Der vorausschauende Heuristik Agent ist ein nicht lernender Agent der eine von uns festgelegte Strategie erhält. Die Strategie besteht aus einer Stellungsbewertung (Heuristik) und einer 2 Spielzüge vorausschauenden Spielbaumsuche. Wir werden in Abschnitt \ref{Spieltheorie} Spieltheorie die Theoretischen Grundlagen erklären, die wir für die Implementierung des vorausschauenden Heuristik Agenten benötigen.  
+
+
+In der Implementierung des vorausschauenden Heuristik Agenten ist, neben der Bewertungsfunktion, noch ein anderes Verfahren enthalten. Das Suchbaumverfahren für 2-Personenspiele. Dieses Verfahren durchsucht einen Spielbaum nach der bestmöglichen Aktion (einem Spielzug) in einem gegebenen Zustand. Ein Zustand oder Spielzustand ist eine Spielsituation bzw. eine Stellung der Spielfiguren auf dem Spielfeld. \\
 
 Das Problem der Suchverfahren ist die Dimensionalität bzw. Komplexität des Ausgangsproblems. Suchbaumverfahren können für sehr einfache Probleme relativ schnell eine optimale Aktion finden. Die Größe des Suchbaums wächst exponentiell mit der Komplexität des Problems, d.h. die Laufzeit des Suchbaumverfahrens ohne Erweiterungen könnte für das Strategiespiele Tic Tac Toe nicht handhabbar sein und ist für das Strategiespiel Reversi nicht handhabbar. Wir schreiben ''könnte'' bei Tic Tac Toe, weil dieses noch ein recht einfacher Vertreter der Strategiespiele ist, dahingegen ist Reversi ein komplexeres Strategiespiel. \\
 
@@ -46,12 +86,6 @@ Lernt der TD-Q Agent, z.B. innerhalb von 10.000 Testspielen eine nahezu optimale
 \item Die Konvergenzgeschwindigkeit das TD-Q-Lernen zu einer optimalen Strategie, ist möglicherweise stark von der Dimensionalität des Ausgangsproblems abhängig, d.h. genau wie die uninformierten Suchbaumverfahren, ist das TD-Q-Lernen nur auf sehr einfache bzw. niedrig dimensionale Probleme anwendbar. Konvergenzgeschwindigkeit ist die Zeit, die ein Lernverfahren benötigt, bis es eine annähernd optimale Strategie entwickelt hat.
 \item Das reine TD-Q-Lernen, ohne Erweiterungen, ist möglicherweise keine geeignetes Lernverfahren für das lernen eines Strategiespiels.  
 \end{enumerate}
-
-
-
-
-
-%Ergebnisse????????????
 
 
 

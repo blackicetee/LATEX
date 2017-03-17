@@ -67,38 +67,34 @@
 \contentsline {paragraph}{\nonumberline learnReversiInXGames(amountOfGames):}{41}{section*.32}
 \contentsline {paragraph}{\nonumberline suggestAction(reversiState): return tuple}{41}{section*.33}
 \contentsline {subsection}{\numberline {4.3.8}Testen der Agenten}{41}{subsection.4.3.8}
-\contentsline {chapter}{\numberline {5}Modellierung und Entwurf}{42}{chapter.5}
-\contentsline {section}{\numberline {5.1}Die Strategiespielumgebungen}{42}{section.5.1}
-\contentsline {section}{\numberline {5.2}Der Heuristik Agent}{42}{section.5.2}
-\contentsline {section}{\numberline {5.3}Der TD-Q Agent}{42}{section.5.3}
-\contentsline {section}{\numberline {5.4}Die Testumgebung}{42}{section.5.4}
-\contentsline {chapter}{\numberline {6}Algorithmen und Implementierung}{43}{chapter.6}
-\contentsline {section}{\numberline {6.1}Iterative Alpha-Beta Suche}{43}{section.6.1}
-\contentsline {section}{\numberline {6.2}TD-Q-Lernen}{45}{section.6.2}
-\contentsline {paragraph}{\nonumberline Erkunden und Verwenden}{48}{section*.34}
-\contentsline {chapter}{\numberline {7}Validierung}{50}{chapter.7}
-\contentsline {section}{\numberline {7.1}Tic Tac Toe - 9 Spielfelder}{51}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Heuristik gegen Zufall}{51}{subsection.7.1.1}
-\contentsline {paragraph}{\nonumberline Der Zufallsagent beginnt:}{51}{section*.35}
-\contentsline {paragraph}{\nonumberline Der Heuristik Agent beginnt:}{51}{section*.36}
-\contentsline {subsection}{\numberline {7.1.2}TD-Q Lernen in 100 Trainingsspielen}{51}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}TD-Q Lernen in 1.000 Trainingsspielen}{52}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}TD-Q Lernen in 10.000 Trainingsspielen}{52}{subsection.7.1.4}
-\contentsline {section}{\numberline {7.2}Tic Tac Toe - 16 Spielfelder}{53}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Heuristik gegen Zufall}{53}{subsection.7.2.1}
-\contentsline {paragraph}{\nonumberline Der Zufallsagent beginnt:}{53}{section*.37}
-\contentsline {paragraph}{\nonumberline Der Heuristik Agent beginnt:}{53}{section*.38}
-\contentsline {subsection}{\numberline {7.2.2}TD-Q Lernen in 100 Trainingsspielen}{53}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}TD-Q Lernen in 1.000 Trainingsspielen}{54}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}TD-Q Lernen in 10.000 Trainingsspielen}{54}{subsection.7.2.4}
-\contentsline {chapter}{\numberline {8}Auswertung}{55}{chapter.8}
-\contentsline {section}{\numberline {8.1}TD-Q-Lernen - Leistung und Grenzen}{55}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}TD-Q-Lernen Konvergenz (Leistungsf\IeC {\"a}higkeit)}{55}{subsection.8.1.1}
-\contentsline {paragraph}{\nonumberline Tic Tac Toe - 9 Spielfelder - Lernen gegen Zufall}{56}{section*.39}
-\contentsline {paragraph}{\nonumberline Tic Tac Toe - 16 Spielfelder - Lernen gegen Zufall}{57}{section*.40}
-\contentsline {subsection}{\numberline {8.1.2}Fluch der Dimensionalit\IeC {\"a}t (Grenzen des TD-Q-Lernens)}{58}{subsection.8.1.2}
-\contentsline {paragraph}{\nonumberline Rechenzeit der Lernphasen}{59}{section*.41}
-\contentsline {subsection}{\numberline {8.1.3}Zusammenfassung}{60}{subsection.8.1.3}
-\contentsline {section}{\numberline {8.2}Ausblick}{61}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Samuels-Dame-Spiel}{61}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}TD-Gammon}{62}{subsection.8.2.2}
+\contentsline {section}{\numberline {4.4}Die Anforderungen im Klassendiagramm}{42}{section.4.4}
+\contentsline {chapter}{\numberline {5}Algorithmen und Implementierung}{44}{chapter.5}
+\contentsline {section}{\numberline {5.1}Iterative Alpha-Beta Suche}{44}{section.5.1}
+\contentsline {section}{\numberline {5.2}TD-Q-Lernen}{46}{section.5.2}
+\contentsline {paragraph}{\nonumberline Erkunden und Verwenden}{49}{section*.34}
+\contentsline {chapter}{\numberline {6}Validierung}{51}{chapter.6}
+\contentsline {section}{\numberline {6.1}Tic Tac Toe - 9 Spielfelder}{52}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Heuristik gegen Zufall}{52}{subsection.6.1.1}
+\contentsline {paragraph}{\nonumberline Der Zufallsagent beginnt:}{52}{section*.35}
+\contentsline {paragraph}{\nonumberline Der Heuristik Agent beginnt:}{52}{section*.36}
+\contentsline {subsection}{\numberline {6.1.2}TD-Q Lernen in 100 Trainingsspielen}{52}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}TD-Q Lernen in 1.000 Trainingsspielen}{53}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}TD-Q Lernen in 10.000 Trainingsspielen}{53}{subsection.6.1.4}
+\contentsline {section}{\numberline {6.2}Tic Tac Toe - 16 Spielfelder}{54}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Heuristik gegen Zufall}{54}{subsection.6.2.1}
+\contentsline {paragraph}{\nonumberline Der Zufallsagent beginnt:}{54}{section*.37}
+\contentsline {paragraph}{\nonumberline Der Heuristik Agent beginnt:}{54}{section*.38}
+\contentsline {subsection}{\numberline {6.2.2}TD-Q Lernen in 100 Trainingsspielen}{54}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}TD-Q Lernen in 1.000 Trainingsspielen}{55}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}TD-Q Lernen in 10.000 Trainingsspielen}{55}{subsection.6.2.4}
+\contentsline {chapter}{\numberline {7}Auswertung}{57}{chapter.7}
+\contentsline {section}{\numberline {7.1}TD-Q-Lernen - Leistung und Grenzen}{57}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}TD-Q-Lernen Konvergenz (Leistungsf\IeC {\"a}higkeit)}{57}{subsection.7.1.1}
+\contentsline {paragraph}{\nonumberline Tic Tac Toe - 9 Spielfelder - Lernen gegen Zufall}{58}{section*.39}
+\contentsline {paragraph}{\nonumberline Tic Tac Toe - 16 Spielfelder - Lernen gegen Zufall}{59}{section*.40}
+\contentsline {subsection}{\numberline {7.1.2}Fluch der Dimensionalit\IeC {\"a}t (Grenzen des TD-Q-Lernens)}{60}{subsection.7.1.2}
+\contentsline {paragraph}{\nonumberline Rechenzeit der Lernphasen}{61}{section*.41}
+\contentsline {subsection}{\numberline {7.1.3}Zusammenfassung}{62}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Ausblick}{63}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Samuels-Dame-Spiel}{63}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}TD-Gammon}{64}{subsection.7.2.2}
