@@ -15,85 +15,83 @@
 \contentsline {section}{\numberline {2.2}Das Strategiespiel Reversi}{6}{section.2.2}
 \contentsline {paragraph}{\nonumberline Ziel des Spiels}{8}{section*.7}
 \contentsline {chapter}{\numberline {3}Realisierung des Heuristik Agenten}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Spieltheorie}{10}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Minimax-Suche}{11}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Alpha-Beta-K\IeC {\"u}rzung}{12}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Iterativ vertiefende Tiefensuche}{15}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}\IeC {\"U}bergangstabellen}{16}{subsection.3.1.4}
-\contentsline {paragraph}{\nonumberline Zobrist Hash}{17}{section*.8}
-\contentsline {subsection}{\numberline {3.1.5}Heuristik}{18}{subsection.3.1.5}
-\contentsline {paragraph}{\nonumberline Tic Tac Toe Heuristik}{19}{section*.9}
-\contentsline {paragraph}{\nonumberline Reversi Heuristik}{20}{section*.10}
-\contentsline {chapter}{\numberline {4}Einf\IeC {\"u}hrung in verst\IeC {\"a}rkendes Lernen}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Markov-Entscheidungsprozess (MEP)}{24}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Eigenschaften eines MEP}{24}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Zusammenfassung und Anwendung}{26}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Optimale Taktiken}{27}{section.4.2}
-\contentsline {section}{\numberline {4.3}Dynamische Programmierung und Wert-Iteration}{28}{section.4.3}
-\contentsline {section}{\numberline {4.4}Temporale Differenz Lernen (TD-Lernen)}{29}{section.4.4}
-\contentsline {section}{\numberline {4.5}Q-Lernen (TD-Q-Lernen)}{30}{section.4.5}
-\contentsline {chapter}{\numberline {5}Problemanalyse und Anforderungsdefinition}{31}{chapter.5}
-\contentsline {section}{\numberline {5.1}Die Problematik}{31}{section.5.1}
-\contentsline {paragraph}{\nonumberline Die Spieltheorie}{32}{section*.11}
-\contentsline {paragraph}{\nonumberline Die drei Agenten}{33}{section*.12}
-\contentsline {section}{\numberline {5.2}Fallbeispiel: Ein Agent im Labyrinth}{35}{section.5.2}
-\contentsline {section}{\numberline {5.3}Anforderungen}{36}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Tic Tac Toe Spielumgebung}{36}{subsection.5.3.1}
-\contentsline {paragraph}{\nonumberline makeMove(position):}{36}{section*.13}
-\contentsline {paragraph}{\nonumberline undoMove():}{36}{section*.14}
-\contentsline {paragraph}{\nonumberline getPossibleMoves(): return list}{36}{section*.15}
-\contentsline {paragraph}{\nonumberline getPlayerToMove(): return str}{37}{section*.16}
-\contentsline {paragraph}{\nonumberline isTerminal: return bool}{37}{section*.17}
-\contentsline {paragraph}{\nonumberline getReward: return float}{37}{section*.18}
-\contentsline {subsection}{\numberline {5.3.2}Reversi Spielumgebung}{37}{subsection.5.3.2}
-\contentsline {paragraph}{\nonumberline makeMove(position):}{37}{section*.19}
-\contentsline {paragraph}{\nonumberline undoMove():}{37}{section*.20}
-\contentsline {paragraph}{\nonumberline getPossibleMoves(): return list}{37}{section*.21}
-\contentsline {paragraph}{\nonumberline getPlayerToMove(): return str}{37}{section*.22}
-\contentsline {paragraph}{\nonumberline isTerminal: return bool}{38}{section*.23}
-\contentsline {paragraph}{\nonumberline getReward: return float}{38}{section*.24}
-\contentsline {subsection}{\numberline {5.3.3}Agent des Zufalls}{38}{subsection.5.3.3}
-\contentsline {paragraph}{\nonumberline suggestRandomTicTacToeAction(ticTacToeState): return tuple}{38}{section*.25}
-\contentsline {paragraph}{\nonumberline suggestRandomReversiAction(reversiState): return tuple}{38}{section*.26}
-\contentsline {subsection}{\numberline {5.3.4}Tic Tac Toe Heuristik Agent}{38}{subsection.5.3.4}
-\contentsline {paragraph}{\nonumberline suggestAction(ticTacToeState): return tuple}{38}{section*.27}
-\contentsline {subsection}{\numberline {5.3.5}Reversi Heuristik Agent}{39}{subsection.5.3.5}
-\contentsline {paragraph}{\nonumberline suggestAction(reversiState): return tuple}{39}{section*.28}
-\contentsline {subsection}{\numberline {5.3.6}Tic Tac Toe TD-Q lernender Agent}{39}{subsection.5.3.6}
-\contentsline {paragraph}{\nonumberline learnTicTacToeInXGames(amountOfGames):}{39}{section*.29}
-\contentsline {paragraph}{\nonumberline suggestAction(ticTacToeState): return tuple}{39}{section*.30}
-\contentsline {subsection}{\numberline {5.3.7}Reversi TD-Q lernender Agent}{40}{subsection.5.3.7}
-\contentsline {paragraph}{\nonumberline learnReversiInXGames(amountOfGames):}{40}{section*.31}
-\contentsline {paragraph}{\nonumberline suggestAction(reversiState): return tuple}{40}{section*.32}
-\contentsline {subsection}{\numberline {5.3.8}Testen der Agenten}{40}{subsection.5.3.8}
-\contentsline {section}{\numberline {5.4}Die Anforderungen im Klassendiagramm}{41}{section.5.4}
-\contentsline {chapter}{\numberline {6}Algorithmen und Implementierung}{43}{chapter.6}
-\contentsline {section}{\numberline {6.1}Iterative Alpha-Beta Suche}{43}{section.6.1}
-\contentsline {section}{\numberline {6.2}TD-Q-Lernen}{45}{section.6.2}
-\contentsline {paragraph}{\nonumberline Erkunden und Verwenden}{48}{section*.33}
-\contentsline {chapter}{\numberline {7}Validierung}{50}{chapter.7}
-\contentsline {section}{\numberline {7.1}Tic Tac Toe - 9 Spielfelder}{51}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Heuristik gegen Zufall}{51}{subsection.7.1.1}
-\contentsline {paragraph}{\nonumberline Der Zufallsagent beginnt:}{51}{section*.34}
-\contentsline {paragraph}{\nonumberline Der Heuristik Agent beginnt:}{51}{section*.35}
-\contentsline {subsection}{\numberline {7.1.2}TD-Q Lernen in 100 Trainingsspielen}{51}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}TD-Q Lernen in 1.000 Trainingsspielen}{52}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}TD-Q Lernen in 10.000 Trainingsspielen}{52}{subsection.7.1.4}
-\contentsline {section}{\numberline {7.2}Tic Tac Toe - 16 Spielfelder}{53}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Heuristik gegen Zufall}{53}{subsection.7.2.1}
-\contentsline {paragraph}{\nonumberline Der Zufallsagent beginnt:}{53}{section*.36}
-\contentsline {paragraph}{\nonumberline Der Heuristik Agent beginnt:}{53}{section*.37}
-\contentsline {subsection}{\numberline {7.2.2}TD-Q Lernen in 100 Trainingsspielen}{53}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}TD-Q Lernen in 1.000 Trainingsspielen}{54}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}TD-Q Lernen in 10.000 Trainingsspielen}{54}{subsection.7.2.4}
-\contentsline {chapter}{\numberline {8}Auswertung}{56}{chapter.8}
-\contentsline {section}{\numberline {8.1}TD-Q-Lernen - Leistung und Grenzen}{56}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}TD-Q-Lernen Konvergenz (Leistungsf\IeC {\"a}higkeit)}{56}{subsection.8.1.1}
-\contentsline {paragraph}{\nonumberline Tic Tac Toe - 9 Spielfelder - Lernen gegen Zufall}{57}{section*.38}
-\contentsline {paragraph}{\nonumberline Tic Tac Toe - 16 Spielfelder - Lernen gegen Zufall}{58}{section*.39}
-\contentsline {subsection}{\numberline {8.1.2}Fluch der Dimensionalit\IeC {\"a}t (Grenzen des TD-Q-Lernens)}{59}{subsection.8.1.2}
-\contentsline {paragraph}{\nonumberline Rechenzeit der Lernphasen}{60}{section*.40}
-\contentsline {subsection}{\numberline {8.1.3}Zusammenfassung}{61}{subsection.8.1.3}
-\contentsline {section}{\numberline {8.2}L\IeC {\"o}sungen f\IeC {\"u}r das Dimensionalit\IeC {\"a}tsproblem}{62}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Samuels-Dame-Spiel}{62}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}TD-Gammon}{63}{subsection.8.2.2}
+\contentsline {section}{\numberline {3.1}Minimax-Suche}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Alpha-Beta-K\IeC {\"u}rzung}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Iterativ vertiefende Tiefensuche}{14}{section.3.3}
+\contentsline {section}{\numberline {3.4}Heuristik}{15}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Tic Tac Toe Heuristik}{16}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Reversi Heuristik}{18}{subsection.3.4.2}
+\contentsline {chapter}{\numberline {4}Realisierung des TD-Q-Agenten (Verst\IeC {\"a}rkendes Lernen)}{20}{chapter.4}
+\contentsline {section}{\numberline {4.1}Markov-Entscheidungsprozess (MEP)}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Eigenschaften eines MEP}{21}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Zusammenfassung und Anwendung}{23}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Optimale Taktiken}{24}{section.4.2}
+\contentsline {section}{\numberline {4.3}Verst\IeC {\"a}rkende Lernverfahren}{25}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Dynamische Programmierung und Wert-Iteration}{25}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Temporale Differenz Lernen (TD-Lernen)}{26}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Q-Lernen (TD-Q-Lernen)}{27}{subsection.4.3.3}
+\contentsline {chapter}{\numberline {5}Problemanalyse und Anforderungsdefinition}{28}{chapter.5}
+\contentsline {section}{\numberline {5.1}Die Problematik}{28}{section.5.1}
+\contentsline {paragraph}{\nonumberline Die Spieltheorie}{29}{section*.8}
+\contentsline {paragraph}{\nonumberline Die drei Agenten}{30}{section*.9}
+\contentsline {section}{\numberline {5.2}Fallbeispiel: Ein Agent im Labyrinth}{31}{section.5.2}
+\contentsline {section}{\numberline {5.3}Anforderungen}{33}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Tic Tac Toe Spielumgebung}{33}{subsection.5.3.1}
+\contentsline {paragraph}{\nonumberline makeMove(position):}{33}{section*.10}
+\contentsline {paragraph}{\nonumberline undoMove():}{33}{section*.11}
+\contentsline {paragraph}{\nonumberline getPossibleMoves(): return list}{33}{section*.12}
+\contentsline {paragraph}{\nonumberline getPlayerToMove(): return str}{33}{section*.13}
+\contentsline {paragraph}{\nonumberline isTerminal: return bool}{34}{section*.14}
+\contentsline {paragraph}{\nonumberline getReward: return float}{34}{section*.15}
+\contentsline {subsection}{\numberline {5.3.2}Reversi Spielumgebung}{34}{subsection.5.3.2}
+\contentsline {paragraph}{\nonumberline makeMove(position):}{34}{section*.16}
+\contentsline {paragraph}{\nonumberline undoMove():}{34}{section*.17}
+\contentsline {paragraph}{\nonumberline getPossibleMoves(): return list}{34}{section*.18}
+\contentsline {paragraph}{\nonumberline getPlayerToMove(): return str}{34}{section*.19}
+\contentsline {paragraph}{\nonumberline isTerminal: return bool}{34}{section*.20}
+\contentsline {paragraph}{\nonumberline getReward: return float}{35}{section*.21}
+\contentsline {subsection}{\numberline {5.3.3}Agent des Zufalls}{35}{subsection.5.3.3}
+\contentsline {paragraph}{\nonumberline suggestRandomTicTacToeAction(ticTacToeState): return tuple}{35}{section*.22}
+\contentsline {paragraph}{\nonumberline suggestRandomReversiAction(reversiState): return tuple}{35}{section*.23}
+\contentsline {subsection}{\numberline {5.3.4}Tic Tac Toe Heuristik Agent}{35}{subsection.5.3.4}
+\contentsline {paragraph}{\nonumberline suggestAction(ticTacToeState): return tuple}{35}{section*.24}
+\contentsline {subsection}{\numberline {5.3.5}Reversi Heuristik Agent}{36}{subsection.5.3.5}
+\contentsline {paragraph}{\nonumberline suggestAction(reversiState): return tuple}{36}{section*.25}
+\contentsline {subsection}{\numberline {5.3.6}Tic Tac Toe TD-Q lernender Agent}{36}{subsection.5.3.6}
+\contentsline {paragraph}{\nonumberline learnTicTacToeInXGames(amountOfGames):}{36}{section*.26}
+\contentsline {paragraph}{\nonumberline suggestAction(ticTacToeState): return tuple}{36}{section*.27}
+\contentsline {subsection}{\numberline {5.3.7}Reversi TD-Q lernender Agent}{36}{subsection.5.3.7}
+\contentsline {paragraph}{\nonumberline learnReversiInXGames(amountOfGames):}{37}{section*.28}
+\contentsline {paragraph}{\nonumberline suggestAction(reversiState): return tuple}{37}{section*.29}
+\contentsline {subsection}{\numberline {5.3.8}Testen der Agenten}{37}{subsection.5.3.8}
+\contentsline {section}{\numberline {5.4}Die Anforderungen im Klassendiagramm}{38}{section.5.4}
+\contentsline {chapter}{\numberline {6}Algorithmen und Implementierung}{40}{chapter.6}
+\contentsline {section}{\numberline {6.1}Iterative Alpha-Beta Suche}{40}{section.6.1}
+\contentsline {section}{\numberline {6.2}TD-Q-Lernen}{42}{section.6.2}
+\contentsline {paragraph}{\nonumberline Erkunden und Verwenden}{45}{section*.30}
+\contentsline {chapter}{\numberline {7}Validierung}{47}{chapter.7}
+\contentsline {section}{\numberline {7.1}Tic Tac Toe - 9 Spielfelder}{48}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Heuristik gegen Zufall}{48}{subsection.7.1.1}
+\contentsline {paragraph}{\nonumberline Der Zufallsagent beginnt:}{48}{section*.31}
+\contentsline {paragraph}{\nonumberline Der Heuristik Agent beginnt:}{48}{section*.32}
+\contentsline {subsection}{\numberline {7.1.2}TD-Q Lernen in 100 Trainingsspielen}{48}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}TD-Q Lernen in 1.000 Trainingsspielen}{49}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}TD-Q Lernen in 10.000 Trainingsspielen}{49}{subsection.7.1.4}
+\contentsline {section}{\numberline {7.2}Tic Tac Toe - 16 Spielfelder}{50}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Heuristik gegen Zufall}{50}{subsection.7.2.1}
+\contentsline {paragraph}{\nonumberline Der Zufallsagent beginnt:}{50}{section*.33}
+\contentsline {paragraph}{\nonumberline Der Heuristik Agent beginnt:}{50}{section*.34}
+\contentsline {subsection}{\numberline {7.2.2}TD-Q Lernen in 100 Trainingsspielen}{50}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}TD-Q Lernen in 1.000 Trainingsspielen}{51}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}TD-Q Lernen in 10.000 Trainingsspielen}{51}{subsection.7.2.4}
+\contentsline {chapter}{\numberline {8}Auswertung}{53}{chapter.8}
+\contentsline {section}{\numberline {8.1}TD-Q-Lernen - Leistung und Grenzen}{53}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}TD-Q-Lernen Konvergenz (Leistungsf\IeC {\"a}higkeit)}{53}{subsection.8.1.1}
+\contentsline {paragraph}{\nonumberline Tic Tac Toe - 9 Spielfelder - Lernen gegen Zufall}{54}{section*.35}
+\contentsline {paragraph}{\nonumberline Tic Tac Toe - 16 Spielfelder - Lernen gegen Zufall}{55}{section*.36}
+\contentsline {subsection}{\numberline {8.1.2}Fluch der Dimensionalit\IeC {\"a}t (Grenzen des TD-Q-Lernens)}{56}{subsection.8.1.2}
+\contentsline {paragraph}{\nonumberline Rechenzeit der Lernphasen}{57}{section*.37}
+\contentsline {subsection}{\numberline {8.1.3}Zusammenfassung}{58}{subsection.8.1.3}
+\contentsline {section}{\numberline {8.2}L\IeC {\"o}sungen f\IeC {\"u}r das Dimensionalit\IeC {\"a}tsproblem}{59}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Samuels-Dame-Spiel}{59}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}TD-Gammon}{60}{subsection.8.2.2}

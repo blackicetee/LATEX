@@ -69,9 +69,10 @@ Es ist möglich, dass mehrere optimale Taktiken für ein Problem existieren. Rus
 
 Mit diesen Definitionen ist der wahre Nutzen eines Zustands einfach $U^{\pi^*}(s) -$ d.h. die erwartete Summe verminderter Gewinne, wenn der Agent eine optimale Taktik ausführt. Wir schreiben dies als U(s). Russell und Norvig unterstreichen den Sachverhalt, dass die Funktionen U(s) und R(s) ganz unterschiedliche Quantitäten sind, denn R(s) gibt den ''kurzfristigen'' Gewinn, sich in s zu befinden an, wohingegen U(s) den ''langfristigen'' Gesamtgewinn ab s angibt.
 
+\section{Verstärkende Lernverfahren}
 
-\section{Dynamische Programmierung und Wert-Iteration}
-\label{sec:Wert-Iteration}
+\subsection{Dynamische Programmierung und Wert-Iteration}
+\label{subsec:Wert-Iteration}
 Verwenden wir bereits vorhandenes Wissen über Strategien und speichern dieses in Zwischenergebnisse über Teile von Strategien, dann bezeichnen wir diese Vorgehensweise zur Lösung von Optimierungsproblemen als dynamische Programmierung. Diese Vorgehensweise wurde bereits 1957 von Richard Bellman beschrieben \cite[293]{Ertel}. Verfahren welche kein Wissen über bereits vorhandene Strategien verwendet sind z.B. Minimax-Suche, Alpha-Beta-Suche und Iterativ vertiefende Tiefensuche.\\
 
 Im vorherigen Abschnitt haben wir gezeigt (mittels der Ausführungen von Russell und Norvig), dass der Nutzen U, in einem Zustand s, unter Beachtung einer Strategie $\pi$, berechnet werden kann aus der Summe aller abgeschwächten Belohnungen, für jeden besuchten Zustand, in einem Zeitintervall von $t = 0$ bis $\infty$ (siehe \ref{sec:Optimale Taktiken} Optimale Taktiken, Gleichung für den erwarteten Nutzen \ref{eq:Der erwartete Nutzen}). Dementsprechend gibt eine optimale Taktik $\pi^*(s)$ für jeden Zustand s den Nachfolgezustand mit dem größtmöglichen erwarteten Nutzen an:
@@ -106,8 +107,8 @@ Den wahren Nutzen haben wir definiert als die erwartete Summe verminderter Gewin
 
 Ein Lernverfahren (z.B. die adaptive dynamische Programmierung) welches die Wert-Iteration nutzt, wird im Rahmen dieser Arbeit jedoch nicht implementiert. Die dynamische Programmierung und die Wert-Iteration sind sehr wichtige Ansätze für Lernverfahren und die nachfolgenden Lernverfahren sind teilweise sehr eng mit Lernverfahren verwandt, die Wert-Iteration verwenden. \\
 
-\section{Temporale Differenz Lernen (TD-Lernen)}
-\label{sec:Temporale Differenz Lernen}
+\subsection{Temporale Differenz Lernen (TD-Lernen)}
+\label{subsec:Temporale Differenz Lernen}
 Bei dieser Lernmethode werden die Nutzen der beobachteten Zustände an die beobachteten Übergänge angepasst, sodass sie mit den Bedingungsgleichungen (siehe Bellman-Gleichung) übereinstimmen. Allgemeiner können wir sagen, wenn ein Übergang vom Zustand s in den Zustand s' stattfindet, wenden wir die folgende Aktualisierung mit $U^\pi(s)$ an \cite[966\psq]{Russell}:
 
 \begin{equation}
@@ -117,8 +118,8 @@ U^\pi(s) \leftarrow U^\pi(s) + \alpha(R(s) + \gamma U^\pi(s') - U^\pi(s)).
 
 Hier ist $\alpha$ der Lernratenparameter. Weil diese Aktualisierungsregel die Differenz der Nutzen aufeinanderfolgender Zustände verwendet, wird sie auch häufig als TD-Gleichung (Temporale Differenz) bezeichnet. Der Lernratenparameter $\alpha$ gibt an, wie stark neue Nutzwerte die derzeitige Bewertungsfunktion anpassen können. 
 
-\section{Q-Lernen (TD-Q-Lernen)}
-\label{sec:Q-Lernen}
+\subsection{Q-Lernen (TD-Q-Lernen)}
+\label{subsec:Q-Lernen}
 Das Q-Lernen ist eine Variante des TD-Lernens und wird auch als TD-Q-Lernen bezeichnet. Die Aufgabe des TD-Q-Lernenden Agenten ist eine optimale Strategie zu entwickeln, er lernt nicht wie bei einer Wert-Iteration eine wahre Nutzenfunktion U(s), sondern eine Q-Funktion. Eine Q-Funktion ist eine Abbildung von Zustands/Aktions-Paaren auf Nutzwerte. Q-Werte sind wie folgt mit Nutzwerten verknüpf \cite[973]{Russell}:
 
 \begin{equation}
