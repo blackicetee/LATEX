@@ -1,16 +1,18 @@
 \chapter{Algorithmen und Implementierung}
 \label{cha:Algorithmen und Implementierung}
 
-Wir werden in diesem Kapitel den Algorithmus des vorausschauenden und des lernenden Agenten betrachten. Der Algorithmus des vorausschauenden Agenten ist eine Kombination aus 2 Algorithmen. Der Alpha-Beta Algorithmus \cite[212 \psqq]{Russell} und der Algorithmus der iterativ vertiefende Tiefensuche \cite[124 \psqq]{Russell}. Der vorausschauende Algorithmus benötigt zusätzlich noch eine Heuristik, um die iterativ vertiefende Suche in einer bestimmten Suchtiefe abbrechen zu können. Wir haben im Abschnitt \ref{subsec:Heuristik} bereits Heuristiken für Reversi und Tic Tac Toe entworfen. Der Algorithmus des lernenden Agenten ist das TD-Q-Lernen \cite[973 \psqq]{Russell}. Das bisher noch nicht erwähnte Verhältnis von Exploration und Ausnutzung wird am ende des Kapitels erklärt.\\
+Wir werden in diesem Kapitel den Algorithmus des Heuristik Agenten und des TD-Q-Agenten betrachten. Nachfolgend haben wir die wichtigsten Algorithmen für die Implementierung der Agenten dargestellt und erläutert. Die Gesamtheit aller für die Implementierung nötigen Algorithmen und der Tests findet man auf der beiliegenden Software-CD. \\
 
-Die Strategiespielumgebungen Reversi und Tic Tac Toe sind kommentiert und getestet. Die Implementierung dieser Strategiespielumgebungen wird in diesem Kapitel nicht erklärt. Sollte trotzdem Interesse an diesen Implementierungen bestehen, dann können diese direkt in der Programmlogik des Prototypen nachgesehen werden. Die von mir implementierten Algorithmen sind in der Programmiersprache Python realisiert. Python ist eine Hochsprache die sehr leicht erlernbar ist und leicht von Menschen gelesen werden kann, sie ähnelt einer Darstellung in Pseudocode. Python wird außerdem sehr gerne im Bereich des maschinellen Lernens eingesetzt. Ich verwenden in dieser Arbeit die Python Version 2.7.13. \\
+Für die Konvergenz des TD-Q-Lernens ist die Theorie des Erkundens und Verwertens (eng. exploration and exploitation) elementar wichtig. Am Ende des Kapitels werden wird dazu näheres erklären. \\
 
-\section{Iterative Alpha-Beta Suche}
-Die Alpha-Beta Suche war bereits Thema des Abschnitts \ref{subsec:Alpha-Beta-Kürzung} und die iterativ vertiefende Tiefensuche des Abschnitts \ref{subsec:Iterativ vertiefende Tiefensuche}. Es folgt eine Beschreibung der Implementierung dieser beiden Algorithmen.\\
+Die von mir implementierten Algorithmen sind in der Programmiersprache Python realisiert. Python ist eine Hochsprache, die sehr leicht erlernbar ist und leicht von Menschen gelesen werden kann. Sie ähnelt einer Darstellung in Pseudocode. Python wird außerdem sehr gerne im Bereich des maschinellen Lernens eingesetzt. Wir verwenden in dieser Arbeit die Python Version 2.7.13. \\
 
-Sehen wir uns das Codebeispiel aus Abbildung \ref{fig:Alpha-Beta iterativ vertiefende Suche} genauer an. Der Eingabeparameter der Funktion ist ein Zustand (eine Spielsituation) der Spielumgebung. Basierend auf diesem Zustand expandiert die Funktion einen Suchbaum mit der maximalen Tiefe 2. Ziel der Funktion ist es ein minimales oder ein maximales Ergebnis innerhalb der Suchtiefe 2 zu finden. Muss der Kreuzspieler seinen Spielzug ausführen, dann wird ein maximales Ergebnis gesucht und muss der Kreisspieler seinen Spielzug ausführen, wird ein minimales Ergebnis gesucht. Zurückgegeben wird ein entsprechendes Aktionstupel der Form (x,y) oder (Koordinate 1, Koordinate 2). \\
+\section{Iterative-Alpha-Beta-Suche}
+Die Alpha-Beta-Suche und die iterativ vertiefende Tiefensuche des Abschnitts waren bereits Thema im Abschnitt \ref{cha:Realisierung des Heuristik Agenten}. Es folgt eine Beschreibung der Implementierung dieser beiden Algorithmen.\\
 
-Das Codebeispiel bezieht sich auf die Tic Tac Toe Implementierung der iterative vertiefenden Alpha-Beta Suche, aber die Reversi Implementierung ist fast identisch. Einzig der Vergleich in Zeile 8 ist unterschiedlich. Würden dieser Vergleich ausgelagert werden, wären die Algorithmen identisch, denn die Funktionalitäten der Strategiespielumgebungen sind sehr ähnlich definiert (siehe Abschnitt \ref{sec:Anforderungen}). \\
+Sehen wir uns das Codebeispiel aus Abbildung \ref{fig:Alpha-Beta iterativ vertiefende Suche} genauer an. Der Eingabeparameter der Funktion ist ein Zustand (eine Spielsituation) der Spielumgebung. Basierend auf diesem Zustand expandiert die Funktion einen Suchbaum mit der maximalen Tiefe 2. Ziel der Funktion ist es, ein minimales oder ein maximales Ergebnis innerhalb der Suchtiefe 2 zu finden. Muss der Kreuzspieler seinen Spielzug ausführen, dann wird ein maximales Ergebnis gesucht und muss der Kreisspieler seinen Spielzug ausführen, wird ein minimales Ergebnis gesucht. Zurückgegeben wird ein entsprechendes Aktionstupel der Form (x,y) oder der Form (Koordinate 1, Koordinate 2). \\
+
+Das Codebeispiel bezieht sich auf die Tic Tac Toe Implementierung der iterative vertiefenden Alpha-Beta-Suche. Die Reversi Implementierung ist fast identisch. Einzig der Vergleich in Zeile 8 ist unterschiedlich. Würde dieser Vergleich ausgelagert werden, wären die Algorithmen identisch, denn die Funktionalitäten der Strategiespielumgebungen sind sehr ähnlich definiert. \\
 
 \begin{figure}[!htbp]
 \centering
@@ -29,11 +31,11 @@ Das Codebeispiel bezieht sich auf die Tic Tac Toe Implementierung der iterative 
 11     bestActionIndex = argmin(listOfActionUtilities)
 12   return actionList[bestActionIndex]
 \end{lstlisting}
-\caption{Alpha-Beta iterativ vertiefende Suche}
+\caption{Codeauszug der Iterativen-Alpha-Beta-Suche.}
 \label{fig:Alpha-Beta iterativ vertiefende Suche}
 \end{figure} 
 
-Die in der Funktion alphaBetaIterativeDeepeningSearch(state) verwendete Funktion maxValue(state, alpha, beta, depth, depthBound), realisiert die rekursive Exploration des Suchbaums (siehe Abbildung \ref{fig:Iteratives Suchen des maximalen Ergebnisses}). Die Funktion liefert den Ergebniswert eines Spielzustands, dieser wird durch die Bewertungsfunktion evaluate(state) bestimmt. Die Rekursion entsteht durch den Aufruf der Funktion minValue(state, alpha, beta, depth +1, depthBound). Der Eingabeparameter ''depth + 1'' bedeutet eine Erhöhung der aktuellen Tiefe. Der Eingabeparameter ''depthBound'' speichert die maximale Tiefe die von der aktuellen Tiefe nicht überschritten werden darf. Die beiden Funktionen minValue() und maxValue() unterscheiden sich nur in ihren letzten drei Codezeilen und in dem gegenseitigen Aufrufen der jeweils anderen Funktion. Die letzten drei Codezeilen von minValue() bewirken: liefere Alpha zurück, wenn $Beta <= Alpha$ ist, andernfalls gib Beta zurück. \\
+Die in der Funktion alphaBetaIterativeDeepeningSearch(state) verwendete Funktion maxValue(state, alpha, beta, depth, depthBound), realisiert die rekursive Exploration des Suchbaums (siehe Abbildung \ref{fig:Iteratives Suchen des maximalen Ergebnisses}). Die Funktion liefert den Ergebniswert eines Spielzustands, dieser wird durch die Bewertungsfunktion evaluate(state) bestimmt. Die Rekursion entsteht durch den Aufruf der Funktion minValue(state, alpha, beta, depth +1, depthBound). Der Eingabeparameter ''depth + 1'' bedeutet eine Erhöhung der aktuellen Tiefe. Der Eingabeparameter ''depthBound'' speichert die maximale Tiefe, die von der aktuellen Tiefe nicht überschritten werden darf. Die beiden Funktionen minValue(...) und maxValue(...) unterscheiden sich nur in ihren letzten drei Codezeilen und in dem gegenseitigen Aufrufen der jeweils anderen Funktion. Die letzten drei Codezeilen von minValue(...) bewirken: Liefere Alpha zurück, wenn $Beta <= Alpha$ ist, andernfalls gib Beta zurück. \\
 
 Die beiden Codebeispiele (Abbildung \ref{fig:Alpha-Beta iterativ vertiefende Suche} und Abbildung \ref{fig:Iteratives Suchen des maximalen Ergebnisses}) sind abgeleitet vom Alpha-Beta Algorithmus \cite[214 \psq]{Russell} und dem Algorithmus der iterativ vertiefenden Tiefensuche \cite[124]{Russell}.\\
 
@@ -57,11 +59,7 @@ Die beiden Codebeispiele (Abbildung \ref{fig:Alpha-Beta iterativ vertiefende Suc
 \end{figure} 
 
 \section{TD-Q-Lernen}
-Im Kapitel \ref{cha:Einführung in verstärkendes Lernen} Einführung in verstärkendes Lernen, speziell in den Abschnitten \ref{sec:Temporale Differenz Lernen} Temporale Differenz Lernen und \ref{sec:Q-Lernen} Q-Lernen wurde bereits erklärt, was TD-Lernen und Q-Lernen ist. Das Thema in diesem Kapitel ist die Implementierung des TD-Q-Lernens und die Erläuterung des dafür benötigten Algorithmus. \\
-
-Kurzfassung Abschnitt \ref{sec:Temporale Differenz Lernen} Temporale Differenz Lernen: Temporale Differenz Lernen (TD-Lernen) passt die Nutzen der beobachteten Zustände an die beobachteten Übergänge an. Die Aktualisierungsregel (Gleichung \ref{eq:Aktualisierungsgleichung temporale Differenz}) des TD-Lernens verwendet die Differenz der Nutzen aufeinanderfolgender Zustände $U\pi(s') - U\pi(s)$, daher die Bezeichnung Temporale Differenz Lernen. \\
-
-Kurzfassung Abschnitt \ref{sec:Q-Lernen} Q-Lernen: Eine alternative TD-Methode ist das Q-Lernen, dass statt Nutzen eine Aktion/Nutzen Repräsentation lernt. Mit der Notation Q(s,a) bezeichnen die Literatur den Wert der Ausführung von Aktion a im Zustand s. \\
+Das Thema in diesem Kapitel ist die Implementierung des TD-Q-Lernens und die Erläuterung des dafür benötigten Algorithmus. \\
 
 \begin{figure}[!htbp]
 \centering
@@ -76,7 +74,7 @@ Kurzfassung Abschnitt \ref{sec:Q-Lernen} Q-Lernen: Eine alternative TD-Methode i
 7    s, a, r $\leftarrow$ s', argmax$_{a'}$, f(Q[s', a'], N$_{sa}$), r'
 8    return a
 \end{lstlisting}
-\caption{TD-Q-Lernen Algorithmus vgl. \cite[974]{Russell}}
+\caption{Algorithmus des TD-Q-Lernens vgl. \cite[974]{Russell}}
 \label{fig:TD-Q-Lernen Algorithmus}
 \end{figure} 
 

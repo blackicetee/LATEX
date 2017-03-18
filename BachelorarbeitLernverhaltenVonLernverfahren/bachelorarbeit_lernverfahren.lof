@@ -16,12 +16,12 @@
 \contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Merkmale einer Reversi Heuristik.}}{19}{figure.3.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Klassendiagramm der Software}}{35}{figure.5.1}
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Klassendiagramm der Software}}{34}{figure.5.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Alpha-Beta iterativ vertiefende Suche}}{37}{figure.6.1}
-\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Iteratives Suchen des maximalen Ergebnisses.}}{38}{figure.6.2}
-\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces TD-Q-Lernen Algorithmus vgl. \cite [974]{Russell}}}{39}{figure.6.3}
-\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Die implementierte Explorationsstrategie.}}{41}{figure.6.4}
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Codeauszug der Iterativen-Alpha-Beta-Suche.}}{36}{figure.6.1}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Iteratives Suchen des maximalen Ergebnisses.}}{37}{figure.6.2}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Algorithmus des TD-Q-Lernens vgl. \cite [974]{Russell}}}{37}{figure.6.3}
+\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Die implementierte Explorationsstrategie.}}{40}{figure.6.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Die Ergebnisse der Agententests.}}{48}{figure.7.1}
+\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Die Ergebnisse der Agententests.}}{46}{figure.7.1}
 \addvspace {10\p@ }
