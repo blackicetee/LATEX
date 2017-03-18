@@ -1,0 +1,94 @@
+\chapter{Anforderungsdefinition und Modellierung}
+\label{cha:Anforderungsdefinition und Modellierung}
+
+In diesem Kapitel definieren wir die funktionalen Anforderungen des Softwareprojektes für die ausgesuchten Strategiespiele, den Zufallsagenten, den Heuristik Agenten, den TD-Q-Agenten und die Agententests. Anschließend werden wir die funktionalen Anforderungen und die Zusammenhänge in einem Klassendiagramm veranschaulichen. \\
+
+Bisher war geplant, für Reversi genau wie für Tic Tac Toe, das TD-Q-Lernen zu implementieren. Anhand der Tests der unterschiedlich großen Tic Tac Toe Spielfelder, werden wir ableiten können, dass bereits eine kleine Veränderung der Dimension des Spielfelds eine enorme Rechenzeitverlängerung der Lernphasen bedeutet. Wir können daraus schlussfolgern, dass das TD-Q-Lernen, mit tabellarischer Q-Funktionsrepräsentation, für Reversi nicht geeignet ist. Diese Aussage wird in der Auswertung bewiesen, deshalb werden wir den TD-Q-Agenten für Reversi nicht mehr implementieren. \\
+
+\section{Funktionale Anforderungen}
+\label{sec:Funktionale Anforderungen}
+Im nachfolgenden Abschnitt definieren wir die funktionalen Anforderungen der Software. Wir bestimmten, welche Funktionalitäten die Strategiespiele und die Agenten mindestens haben müssen und wie die Agenten getestet werden sollen. Wir definieren die Funktionalitäten, um den Funktionsbereich der Software einzugrenzen und einen Überblick zu verschaffen.
+
+\subsection{Tic Tac Toe Spielumgebung}
+Die Spielumgebung soll die in Abschnitt \ref{sec:Das Strategiespiel Tic Tac Toe} definierten Tic Tac Toe Spielregeln implementieren. Die Tic Tac Toe Spielumgebung repräsentiert eine Testumgebung für die Agenten. Der Zufallsagent wird in dieser Umgebung gegen den TicTacToe-Heuristik Agenten antreten. Der TD-Q-Agent soll zuerst diese Umgebung erkunden und lernen, sich in der Umgebung zurecht zu finden, d.h. der TD-Q-Agent soll eine TicTacToe-Siegesstrategie entwickeln. 
+
+\myparagraph{makeMove(position):}
+Die Funktion soll Koordinaten erhalten. Die Koordinaten definiert exakt, auf welches Spielfeld eine Spielfigur gesetzt werden soll. Die Funktion soll diesen Spielzug, sollte dieser Regelkonform sein, ausführen.
+
+\myparagraph{undoMove():}
+Die Funktion soll den letzten durchgeführten Spielzug revidieren.
+
+\myparagraph{getPossibleMoves(): return list}
+Die Funktion soll eine Liste von Koordinaten liefern. In dieser Liste sind nur mögliche und regelkonforme Spielzüge (Koordinaten) enthalten.
+
+\myparagraph{getPlayerToMove(): return str}
+Die Funktion soll einen String zurückgeben. Dieser String repräsentiert den Spieler der aktuell einen Spielzug ausführen soll. Der String ''X'' ist die Repräsentation des Kreuzspielers. Der String ''O'' ist die äquivalente Repräsentation des Kreisspielers.
+
+\myparagraph{isTerminal: return bool}
+Die Funktion soll True zurück liefern, wenn der aktuelle Zustand der Umgebung ein Endzustand (Terminalzustand) ist, andernfalls liefert die Funktion ein False.
+
+\myparagraph{getReward: return float}
+Die Funktion soll eine nummerische Belohnung liefern. Die Belohnung soll abhängig sein vom aktuellen Spielzustand.
+
+\subsection{Reversi Spielumgebung}
+Die Spielumgebung soll die in Abschnitt \ref{sec:Das Strategiespiel Reversi} definierten Reversi Spielregeln implementieren. Die Reversi Spielumgebung repräsentiert eine Testumgebung für die Agenten. Der Zufallsagent wird in dieser Umgebung gegen den Reversi-Heuristik Agenten antreten. Der TD-Q-Agent soll zuerst diese Umgebung erkunden und lernen, sich in der Umgebung zurecht zu finden, d.h. der TD-Q-Agent soll eine Reversi-Siegesstrategie entwickeln. 
+
+\myparagraph{makeMove(position):}
+Die Funktion soll Koordinaten erhalten. Die Koordinaten definiert exakt, auf welches Spielfeld eine Spielfigur gesetzt werden soll. Die Funktion soll diesen Spielzug, sollte dieser Regelkonform sein, ausführen.
+
+\myparagraph{undoMove():}
+Die Funktion soll den letzten durchgeführten Spielzug revidieren.
+
+\myparagraph{getPossibleMoves(): return list}
+Die Funktion soll eine Liste von Koordinaten liefern. In dieser Liste sind nur mögliche und regelkonforme Spielzüge (Koordinaten) enthalten.
+
+\myparagraph{getPlayerToMove(): return str}
+Die Funktion soll einen String zurückgeben. Dieser String repräsentiert den Spieler der aktuell einen Spielzug ausführen soll. Der String ''B'' ist die Repräsentation des schwarzen (black) Spielers. Der String ''W'' ist die äquivalente Repräsentation des weißen (white) Spielers.
+
+\myparagraph{isTerminal: return bool}
+Die Funktion soll True zurück liefern, wenn der aktuelle Zustand der Umgebung ein Endzustand (Terminalzustand) ist, andernfalls liefert die Funktion ein False.
+
+\myparagraph{getReward: return float}
+Die Funktion soll eine nummerische Belohnung liefern. Die Belohnung soll abhängig sein vom aktuellen Spielzustand.
+
+\subsection{Agent des Zufalls}
+Der Agent des Zufalls soll den Spieler symbolisieren, der keine Strategie hat und nicht lernt. Er soll seine Entscheidungen vollkommen zufällig treffen. In Kapitel \ref{cha:Validierung} Validierung werden wir diesen Agenten, als Gegenspieler für die Heuristik Agenten und die lernenden TD-Q-Agenten einsetzen. \\
+
+\myparagraph{suggestRandomTicTacToeAction(ticTacToeState): return tuple}
+Diese Funktion soll eine Tic Tac Toe Spielsituation übergeben bekommen, d.h. eine Instanz der TicTacToe-Klasse. Die Funktion soll eine zufällige, aber zulässige Aktion zurückgeben.
+
+\myparagraph{suggestRandomReversiAction(reversiState): return tuple}
+Diese Funktion soll eine Reversi Spielsituation übergeben bekommen, d.h. eine Instanz der Reversi-Klasse. Die Funktion soll eine zufällige, aber zulässige Aktion zurückgeben.
+
+\subsection{Tic Tac Toe Heuristik Agent}
+Der Agent soll die in Abschnitt \ref{subsec:Tic Tac Toe Heuristik} erstellte Tic Tac Toe Heuristik und eine 2-Spielzüge vorausschauende Alpha-Beta Suche verwenden. Dieser Agent soll einen fortgeschrittenen Spielgegner repräsentiert, d.h. wir müssen mittels Testspielen gegen den Zufallsagenten zeigen, dass der Tic Tac Toe Heuristik Agent verhältnismäßig oft gewinnt. Dieser Agent soll in Tic Tac Toe Testspielen gegen den TD-Q-Agenten antreten. Die Ergebnisse sollen dabei helfen, die Leistungsfähigkeit und Grenzen des TD-Q-Lernens, hinsichtlich des Lernens von Tic Tac Toe, zu beurteilen. 
+
+\myparagraph{suggestAction(ticTacToeState): return tuple}
+Diese Funktion soll eine Tic Tac Toe Spielsituation (eine Instanz der TicTacToe-Klasse) übergeben bekommen. Die Funktion soll, abhängig von der erhaltenen Spielsituation, eine Aktion vorschlagen. Die Aktion soll mittels der Tic Tac Toe Heuristik und einer 2-Zug Vorausschau und Alpha-Beta-Suche ermittelt werden.
+
+\subsection{Reversi Heuristik Agent}
+Der Agent soll die in Abschnitt \ref{subsec:Reversi Heuristik} erstellte Reversi Heuristik und eine 2-Spielzüge vorausschauende Alpha-Beta Suche verwenden. Dieser Agent soll einen fortgeschrittenen Spielgegner repräsentieren, d.h. wir müssen mittels Testspielen gegen den Zufallsagenten zeigen, dass der Reversi-Heuristik Agent verhältnismäßig oft gewinnt.
+
+\myparagraph{suggestAction(reversiState): return tuple}
+Diese Funktion soll eine Reversi Spielsituation (eine Instanz der Reversi-Klasse) übergeben bekommen. Die Funktion soll, abhängig von der erhaltenen Spielsituation, eine Aktion vorschlagen. Die Aktion soll mittels der Reversi Heuristik und einer 2-Zug Vorausschau und Alpha-Beta-Suche ermittelt werden.
+
+\subsection{Tic Tac Toe TD-Q-Agent}
+Der Agent soll mittels des in Abschnitt \ref{subsec:Q-Lernen} behandelten TD-Q-Lernens, eine Siegesstrategie für das Strategiespiel Tic Tac Toe entwickeln. Testspiele gegen den Zufallsagenten und den Tic Tac Toe Heuristik Agenten, sollen eine Untersuchung der Leistungsfähigkeit und der Grenzen des TD-Q-Lernens ermöglichen.
+
+\myparagraph{learnTicTacToeInXGames(amountOfGames):}
+Die Funktion soll den Lernmodus des Agenten realisieren. Der Eingabeparameter legt die Anzahl der Trainingsspiele fest. Die Lernerfahrungen während dieser Trainingsspiele, sollen in einer SQLite Datenbank gespeichert werden.
+
+\myparagraph{suggestAction(ticTacToeState): return tuple}
+Die Funktion soll eine Tic Tac Toe Spielsituation übergeben bekommen. Ausgehend von der Eingangsspielsituation, ist nur eine bestimmte Anzahl von Aktionen möglich. Abhängig von seinen Erfahrungen (SQL-Datenbank - Q-Funktion) und dem gegebenen Spielzustand, soll der Agent die mögliche Aktion mit dem höchsten gelernten Q-Wert zurückgeben.
+
+\subsection{Testen der Agenten}
+In dieser Testumgebung sollen die Agenten gegeneinander Testspiele absolvieren. Der Zufallsagent soll in 100 Testspielen gegen den Tic Tac Toe Heuristik Agenten und den Tic Tac Toe TD-Q-Lernen Agenten antreten. Der Tic Tac Toe Heuristik Agent soll 100 Testspiele gegen die drei Lernstadien des Tic Tac Toe TD-Q-Lernen Agenten spielen. Im ersten Lernstadium soll der TD-Q-Lernen Agent, in 100 Trainingsspielen gegen sich selbst, eine Strategie entwickeln. Im zweiten Lernstadium sollen es 1.000 und im dritten Lernstadium 10.000 Trainingsspiele sein.
+
+\section{Modellierung}
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[angle = 90, scale = 0.5]{inhalt/abbildungen/projectClassDiagram.jpg}
+  \caption{Klassendiagramm der Software}
+  \label{fig:klassendiagramm}
+\end{figure} 

@@ -117,6 +117,7 @@ Nachfolgend liefern wir eine formale, allgemeine Darstellung einer Heuristik. Fo
 als eine gewichtete Lineare Funktion einer Menge von Merkmalen (oder Basisfunktionen) $f_1, ..., f_n$. Die Parameter $\theta = \theta_1, ... \theta_n$ sind die Gewichtungen der einzelnen Merkmale, d.h. ein Parameter bestimmt, wie ''wichtig'' ein Merkmal ist.
 
 \subsection{Tic Tac Toe Heuristik}
+\label{subsec:Tic Tac Toe Heuristik}
 Das erste Merkmal unserer Tic Tac Toe Heuristik ist die Kontrolle der mittleren Spielfelder. Spielsituationen in denen die mittleren Spielfelder mit eigenen Spielfiguren besetzt sind, erhalten eine höhere Bewertung. Die erste Spielfigur soll in die mittleren Spielfelder gesetzt werden. Die zweite Spielfigur soll in die vom Gegenspieler nicht gestörte mittlere Position gesetzt werden. \\
 
 \begin{figure}[!htbp]
@@ -140,6 +141,7 @@ Das zweite Merkmal der Tic Tac Toe Heuristik ist die Beachtung der ungestörten 
 Betrachten wir die ungestörten möglichen Siegesformationen in Abbildung \ref{fig:tictactoe_formations}. In Spielsituation (a) hat der Kreuzspieler 2 Möglichkeiten eine Siegesformation zu erreichen. In der vertikalen Formation sind bereits 3 Kreuze und in der diagonalen 1 Kreuz vorhanden. Die vertikal mögliche Siegesformation ist wesentlich hochwertiger, als die diagonal mögliche Siegesformation, weil diese bereits mehr Kreuzfiguren enthält. In Spielsituation (b) verfügt der Kreuzspieler über 4 mögliche ungestörte Siegesformationen, wobei die diagonal mögliche Siegesformation attraktiver sein sollte, als die anderen 3 möglichen Formationen. Die möglichen Siegesformationen des Gegenspielers sollen ebenfalls berücksichtigt werden.
 
 \subsection{Reversi Heuristik}
+\label{subsec:Reversi Heuristik}
 Für die Erstellung der Reversi Heuristik verwenden wir bereits existierendes strategisches Wissen (siehe Sammlung von Reversi Strategien \cite{MacGuire}). \\
 
 Das erste wichtige Merkmal für unsere Reversi Heuristik ist die Mobilität. Das Merkmal der Mobilität wird in zwei Merkmale aufgeteilt. Ein Merkmal für die aktuelle Mobilität und ein zweites Merkmal für die mögliche Mobilität. Mit aktueller Mobilität ist die Anzahl aller möglichen Spielzüge in einem aktuellen Spielzustand gemeint. Die Anzahl der Spielsteine am Ende des Spiels ist zwar entscheidend, aber in den Spielzügen bevor das Spiel endet, ist der Spieler im Vorteil, der mehr Zugmöglichkeiten hat. \\

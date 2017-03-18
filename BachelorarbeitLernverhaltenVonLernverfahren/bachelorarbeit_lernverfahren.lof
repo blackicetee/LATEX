@@ -16,15 +16,12 @@
 \contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Merkmale einer Reversi Heuristik.}}{19}{figure.3.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Der Agent und die Umgebung vgl. \cite [290]{Ertel}.}}{28}{figure.5.1}
-\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Tic Tac Toe und Reversi Spielzust\IeC {\"a}nde.}}{29}{figure.5.2}
-\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Die Projektproblematik.}}{30}{figure.5.3}
-\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Klassendiagramm der Software}}{39}{figure.5.4}
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Klassendiagramm der Software}}{35}{figure.5.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Alpha-Beta iterativ vertiefende Suche}}{41}{figure.6.1}
-\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Iteratives Suchen des maximalen Ergebnisses.}}{42}{figure.6.2}
-\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces TD-Q-Lernen Algorithmus vgl. \cite [974]{Russell}}}{43}{figure.6.3}
-\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Die implementierte Explorationsstrategie.}}{45}{figure.6.4}
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Alpha-Beta iterativ vertiefende Suche}}{37}{figure.6.1}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Iteratives Suchen des maximalen Ergebnisses.}}{38}{figure.6.2}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces TD-Q-Lernen Algorithmus vgl. \cite [974]{Russell}}}{39}{figure.6.3}
+\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Die implementierte Explorationsstrategie.}}{41}{figure.6.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Die Ergebnisse der Agententests.}}{52}{figure.7.1}
+\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Die Ergebnisse der Agententests.}}{48}{figure.7.1}
 \addvspace {10\p@ }
