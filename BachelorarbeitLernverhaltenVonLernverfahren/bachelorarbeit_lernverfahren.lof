@@ -3,7 +3,6 @@
 \select@language {german}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Tic Tac Toe Siegesformationen f\IeC {\"u}r den Kreuzspieler.}}{6}{figure.2.1}
 \contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Ausgangsspielzustand Reversi.}}{7}{figure.2.2}
 \contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Fortgeschrittene Spielzugm\IeC {\"o}glichkeiten Reversi.}}{7}{figure.2.3}
@@ -24,5 +23,6 @@
 \contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Die implementierte Explorationsstrategie.}}{40}{figure.6.4}
 \contentsline {figure}{\numberline {\relax 6.5}{\ignorespaces Zobrist Hashing von Spielzust\IeC {\"a}nden.}}{41}{figure.6.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Die Ergebnisse der Agententests.}}{44}{figure.7.1}
+\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Die Testergebnisse f\IeC {\"u}r das 9 Spielfelder Tic Tac Toe.}}{44}{figure.7.1}
+\contentsline {figure}{\numberline {\relax 7.2}{\ignorespaces Die Testergebnisse f\IeC {\"u}r das 16 Spielfelder Tic Tac Toe.}}{45}{figure.7.2}
 \addvspace {10\p@ }

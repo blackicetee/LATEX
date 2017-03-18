@@ -1,19 +1,18 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {german}
-\contentsline {chapter}{\nonumberline Abk\IeC {\"u}rzungsverzeichnis}{iii}{chapter*.2}
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{iv}{chapter*.3}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{iii}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Projektvision}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Zielsetzung}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Quantifizierung der Ziele}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}Aufbau des Projekts}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}Ergebnisse}{3}{section.1.4}
+\contentsline {section}{\numberline {1.4}Ergebnisse}{4}{section.1.4}
 \contentsline {chapter}{\numberline {2}Strategiespiele und Spielregeln}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Das Strategiespiel Tic Tac Toe}{5}{section.2.1}
-\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{5}{section*.5}
-\contentsline {paragraph}{\nonumberline Ziel des Spiels}{5}{section*.6}
+\contentsline {paragraph}{\nonumberline Spielz\IeC {\"u}ge}{5}{section*.4}
+\contentsline {paragraph}{\nonumberline Ziel des Spiels}{5}{section*.5}
 \contentsline {section}{\numberline {2.2}Das Strategiespiel Reversi}{6}{section.2.2}
-\contentsline {paragraph}{\nonumberline Ziel des Spiels}{8}{section*.7}
+\contentsline {paragraph}{\nonumberline Ziel des Spiels}{8}{section*.6}
 \contentsline {chapter}{\numberline {3}Realisierung des Heuristik Agenten}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Minimax-Suche}{10}{section.3.1}
 \contentsline {section}{\numberline {3.2}Alpha-Beta-K\IeC {\"u}rzung}{11}{section.3.2}
@@ -32,46 +31,46 @@
 \contentsline {chapter}{\numberline {5}Anforderungsdefinition und Modellierung}{29}{chapter.5}
 \contentsline {section}{\numberline {5.1}Funktionale Anforderungen}{29}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Tic Tac Toe Spielumgebung}{29}{subsection.5.1.1}
-\contentsline {paragraph}{\nonumberline makeMove(position):}{30}{section*.8}
-\contentsline {paragraph}{\nonumberline undoMove():}{30}{section*.9}
-\contentsline {paragraph}{\nonumberline getPossibleMoves(): return list}{30}{section*.10}
-\contentsline {paragraph}{\nonumberline getPlayerToMove(): return str}{30}{section*.11}
-\contentsline {paragraph}{\nonumberline isTerminal: return bool}{30}{section*.12}
-\contentsline {paragraph}{\nonumberline getReward: return float}{30}{section*.13}
+\contentsline {paragraph}{\nonumberline makeMove(position):}{30}{section*.7}
+\contentsline {paragraph}{\nonumberline undoMove():}{30}{section*.8}
+\contentsline {paragraph}{\nonumberline getPossibleMoves(): return list}{30}{section*.9}
+\contentsline {paragraph}{\nonumberline getPlayerToMove(): return str}{30}{section*.10}
+\contentsline {paragraph}{\nonumberline isTerminal: return bool}{30}{section*.11}
+\contentsline {paragraph}{\nonumberline getReward: return float}{30}{section*.12}
 \contentsline {subsection}{\numberline {5.1.2}Reversi Spielumgebung}{30}{subsection.5.1.2}
-\contentsline {paragraph}{\nonumberline makeMove(position):}{31}{section*.14}
-\contentsline {paragraph}{\nonumberline undoMove():}{31}{section*.15}
-\contentsline {paragraph}{\nonumberline getPossibleMoves(): return list}{31}{section*.16}
-\contentsline {paragraph}{\nonumberline getPlayerToMove(): return str}{31}{section*.17}
-\contentsline {paragraph}{\nonumberline isTerminal: return bool}{31}{section*.18}
-\contentsline {paragraph}{\nonumberline getReward: return float}{31}{section*.19}
+\contentsline {paragraph}{\nonumberline makeMove(position):}{31}{section*.13}
+\contentsline {paragraph}{\nonumberline undoMove():}{31}{section*.14}
+\contentsline {paragraph}{\nonumberline getPossibleMoves(): return list}{31}{section*.15}
+\contentsline {paragraph}{\nonumberline getPlayerToMove(): return str}{31}{section*.16}
+\contentsline {paragraph}{\nonumberline isTerminal: return bool}{31}{section*.17}
+\contentsline {paragraph}{\nonumberline getReward: return float}{31}{section*.18}
 \contentsline {subsection}{\numberline {5.1.3}Agent des Zufalls}{31}{subsection.5.1.3}
-\contentsline {paragraph}{\nonumberline suggestRandomTicTacToeAction(ticTacToeState): return tuple}{31}{section*.20}
-\contentsline {paragraph}{\nonumberline suggestRandomReversiAction(reversiState): return tuple}{32}{section*.21}
+\contentsline {paragraph}{\nonumberline suggestRandomTicTacToeAction(ticTacToeState): return tuple}{31}{section*.19}
+\contentsline {paragraph}{\nonumberline suggestRandomReversiAction(reversiState): return tuple}{32}{section*.20}
 \contentsline {subsection}{\numberline {5.1.4}Tic Tac Toe Heuristik Agent}{32}{subsection.5.1.4}
-\contentsline {paragraph}{\nonumberline suggestAction(ticTacToeState): return tuple}{32}{section*.22}
+\contentsline {paragraph}{\nonumberline suggestAction(ticTacToeState): return tuple}{32}{section*.21}
 \contentsline {subsection}{\numberline {5.1.5}Reversi Heuristik Agent}{32}{subsection.5.1.5}
-\contentsline {paragraph}{\nonumberline suggestAction(reversiState): return tuple}{32}{section*.23}
+\contentsline {paragraph}{\nonumberline suggestAction(reversiState): return tuple}{32}{section*.22}
 \contentsline {subsection}{\numberline {5.1.6}Tic Tac Toe TD-Q-Agent}{32}{subsection.5.1.6}
-\contentsline {paragraph}{\nonumberline learnTicTacToeInXGames(amountOfGames):}{33}{section*.24}
-\contentsline {paragraph}{\nonumberline suggestAction(ticTacToeState): return tuple}{33}{section*.25}
+\contentsline {paragraph}{\nonumberline learnTicTacToeInXGames(amountOfGames):}{33}{section*.23}
+\contentsline {paragraph}{\nonumberline suggestAction(ticTacToeState): return tuple}{33}{section*.24}
 \contentsline {subsection}{\numberline {5.1.7}Testen der Agenten}{33}{subsection.5.1.7}
 \contentsline {section}{\numberline {5.2}Modellierung}{33}{section.5.2}
 \contentsline {chapter}{\numberline {6}Algorithmen und Implementierung}{35}{chapter.6}
 \contentsline {section}{\numberline {6.1}Iterative-Alpha-Beta-Suche}{35}{section.6.1}
 \contentsline {section}{\numberline {6.2}TD-Q-Lernen}{37}{section.6.2}
-\contentsline {paragraph}{\nonumberline Erkunden und Verwenden}{39}{section*.26}
-\contentsline {paragraph}{\nonumberline Zobrist Hash}{41}{section*.27}
-\contentsline {chapter}{\numberline {7}Validierung}{43}{chapter.7}
-\contentsline {chapter}{\numberline {8}Auswertung}{45}{chapter.8}
-\contentsline {section}{\numberline {8.1}TD-Q-Lernen - Leistung und Grenzen}{45}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}TD-Q-Lernen Leistungsf\IeC {\"a}higkeit (Konvergenz)}{45}{subsection.8.1.1}
-\contentsline {paragraph}{\nonumberline Tic Tac Toe - Lernen gegen Zufall - 9 Spielfelder}{46}{section*.28}
-\contentsline {paragraph}{\nonumberline Tic Tac Toe - Lernen gegen Zufall - 16 Spielfelder}{46}{section*.29}
-\contentsline {paragraph}{\nonumberline Tic Tac Toe - Lernen gegen Heuristik - 9 und 16 Spielfelder}{47}{section*.30}
-\contentsline {paragraph}{\nonumberline Tic Tac Toe - Heuristik gegen Zufall - 9 und 16 Spielfelder}{47}{section*.31}
-\contentsline {subsection}{\numberline {8.1.2}TD-Q-Lernen Grenzen (Fluch der Dimensionalit\IeC {\"a}t)}{48}{subsection.8.1.2}
-\contentsline {paragraph}{\nonumberline Rechenzeit der Lernphasen}{49}{section*.32}
-\contentsline {section}{\numberline {8.2}L\IeC {\"o}sungen f\IeC {\"u}r das Dimensionalit\IeC {\"a}tsproblem}{50}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Samuels-Dame-Spiel}{50}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}TD-Gammon}{51}{subsection.8.2.2}
+\contentsline {paragraph}{\nonumberline Erkunden und Verwenden}{39}{section*.25}
+\contentsline {paragraph}{\nonumberline Zobrist Hash}{41}{section*.26}
+\contentsline {chapter}{\numberline {7}Testergebnisse (Validierung)}{43}{chapter.7}
+\contentsline {chapter}{\numberline {8}Auswertung}{46}{chapter.8}
+\contentsline {section}{\numberline {8.1}TD-Q-Lernen - Leistung und Grenzen}{46}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}TD-Q-Lernen Leistungsf\IeC {\"a}higkeit (Konvergenz)}{46}{subsection.8.1.1}
+\contentsline {paragraph}{\nonumberline Tic Tac Toe - Lernen gegen Zufall - 9 Spielfelder}{47}{section*.27}
+\contentsline {paragraph}{\nonumberline Tic Tac Toe - Lernen gegen Zufall - 16 Spielfelder}{47}{section*.28}
+\contentsline {paragraph}{\nonumberline Tic Tac Toe - Lernen gegen Heuristik - 9 und 16 Spielfelder}{48}{section*.29}
+\contentsline {paragraph}{\nonumberline Tic Tac Toe - Heuristik gegen Zufall - 9 und 16 Spielfelder}{48}{section*.30}
+\contentsline {subsection}{\numberline {8.1.2}TD-Q-Lernen Grenzen (Fluch der Dimensionalit\IeC {\"a}t)}{49}{subsection.8.1.2}
+\contentsline {paragraph}{\nonumberline Rechenzeit der Lernphasen}{50}{section*.31}
+\contentsline {section}{\numberline {8.2}L\IeC {\"o}sungen f\IeC {\"u}r das Dimensionalit\IeC {\"a}tsproblem}{51}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Samuels-Dame-Spiel}{51}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}TD-Gammon}{52}{subsection.8.2.2}
