@@ -141,12 +141,3 @@ Dies trifft auch auf die Strategiespiele Tic Tac Toe und Reversi zu, denn bei di
 
 
 
-
-
-Die Testergebnisse des vorausschauenden Heuristik Agenten gegen den Zufallsagenten sind eindeutig. Der kleinste Erfolg des Heuristik Agenten, mit 64\% Gewinnquote bestätigt bereits die Hypothese aus Abschnitt \ref{sec:Ergebnisse}. Die größte Gewinnquote des von uns implementierten Tic Tac Toe vorausschauenden Heuristik Agenten ist 100\%, d.h. von 100 Testspielen in einem 16 Spielfelder Tic Tac Toe, wenn der Heuristik Agent das Spiel beginnt, gewinnt der Heuristik Agent alle 100 Testspiele. \\
-
-Die Testspiele der gelernten TD-Q-Strategien gegen den vorausschauenden Heuristik Agent sind sehr eindeutig ausgefallen. Jede gelernte Strategie, egal ob für das 9 oder 16 Spielfelder Tic Tac Toe, spielt gegen die nicht gelernte Strategie des vorausschauenden Heuristik Agenten immer das selbe Spiel. Der vorausschauende Heuristik Agent führt ebenfalls immer die selben Spielzüge aus. Die folge daraus ist, beide Agenten spielen in 100 Testspielen immer die exakt gleiche Partie mit dem selben Spielergebnis. Die gelernten Strategien haben es zudem nicht geschafft, innerhalb von maximale 10.000 Trainingsspielen, eine Strategie zu lernen, die den vorausschauenden Heuristik Agenten besiegt. \\
-
-Die einzige Ausnahme war die in 1.000 Testspielen gelernte Strategie, diese erreichte 100 unentschieden gegen den nachziehenden Heuristik Agent (jeweils im 9 und 16 Spielfelder Tic Tac Toe). Alle 100 Testspiele wurden von beiden Agenten exakt gleich gespielt. Für die Tests wäre es vermutlich interessanter einen weiteren Trainingsmodus für den TD-Q-Agenten zu implementieren. Ein Trainingsmodus der nicht gegen sich selbst spielt, sondern gegen Andere Agenten. Die Testergebnisse gegen den Heuristik Agenten würden dann wahrscheinlich auch variieren, dies ist jedoch kein Ziel dieser Arbeit. \\
-
-Die Testergebnisse in Spielen gegen den Zufallsagenten sind ebenfalls kritisch zu betrachten, denn sie hängen offensichtlich vom Zufall ab. Wir können die Testergebnisse demnach nur berücksichtigen, wenn diese eindeutig sind, d.h. die gelernten Strategien müssten hohe Gewinnquoten und niedrige Verlustquoten erreichen. Wir versuchen trotzdem die Leistungsfähigkeit des TD-Q-Lernens, über die Testergebnisse, gegen den Zufallsagenten, herzuleiten. \\ 

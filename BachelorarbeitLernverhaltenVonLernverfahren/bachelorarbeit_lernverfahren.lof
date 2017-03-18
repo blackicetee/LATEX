@@ -20,9 +20,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Codeauszug der Iterativen-Alpha-Beta-Suche.}}{36}{figure.6.1}
 \contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Iteratives Suchen des maximalen Ergebnisses.}}{37}{figure.6.2}
-\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Algorithmus des TD-Q-Lernens vgl. \cite [974]{Russell}}}{37}{figure.6.3}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Algorithmus des TD-Q-Lernens vgl. \cite [974]{Russell}}}{38}{figure.6.3}
 \contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Die implementierte Explorationsstrategie.}}{40}{figure.6.4}
 \contentsline {figure}{\numberline {\relax 6.5}{\ignorespaces Zobrist Hashing von Spielzust\IeC {\"a}nden.}}{41}{figure.6.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Die Ergebnisse der Agententests.}}{47}{figure.7.1}
+\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Die Ergebnisse der Agententests.}}{44}{figure.7.1}
 \addvspace {10\p@ }
