@@ -32,6 +32,9 @@ Für jede Lernphase entsteht eine eigene Strategie. Insgesamt lernt der TD-Q-Age
 
 Nach Abschluss jeder Lernphase wird der TD-Q-Agent mit der gelernten Strategie, in genau 100 Testspielen, gegen den vorausschauenden Heuristik Agenten und den Zufallsagenten spielen. Der Heuristik Agent wird ebenfalls in 100 Testspielen gegen den Zufallsagenten spielen. \\
 
+Wir differenzieren die Testspiele außerdem nach dem jeweils beginnenden Agenten, d.h. pro gelernter Strategie, beginnt 100 mal die gelernte Strategie und 100 mal der Gegenspieler. Insgesamt werden 200 Testspiele pro gelernter Strategie durchgeführt. \\
+
+
 \section{Aufbau des Projekts}
 Zuerst werden die Spielregeln der beiden ausgesuchten Computerspiele definiert. Die Computerspiele und entsprechende Tests werden programmiert. Die Programmierung der Computerspiele und der Tests wird nicht explizit aufgeführt, kann jedoch der beiliegenden Software-CD entnommen werden. \\
 

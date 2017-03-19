@@ -30,16 +30,17 @@
 \BOOKMARK [2][-]{subsection.5.1.4}{Tic Tac Toe Heuristik Agent}{section.5.1}% 30
 \BOOKMARK [2][-]{subsection.5.1.5}{Reversi Heuristik Agent}{section.5.1}% 31
 \BOOKMARK [2][-]{subsection.5.1.6}{Tic Tac Toe TD-Q-Agent}{section.5.1}% 32
-\BOOKMARK [2][-]{subsection.5.1.7}{Testen der Agenten}{section.5.1}% 33
-\BOOKMARK [1][-]{section.5.2}{Modellierung}{chapter.5}% 34
-\BOOKMARK [0][-]{chapter.6}{Algorithmen und Implementierung}{}% 35
-\BOOKMARK [1][-]{section.6.1}{Iterative-Alpha-Beta-Suche}{chapter.6}% 36
-\BOOKMARK [1][-]{section.6.2}{TD-Q-Lernen}{chapter.6}% 37
-\BOOKMARK [0][-]{chapter.7}{Testergebnisse \(Validierung\)}{}% 38
-\BOOKMARK [0][-]{chapter.8}{Auswertung}{}% 39
-\BOOKMARK [1][-]{section.8.1}{TD-Q-Lernen - Leistung und Grenzen}{chapter.8}% 40
-\BOOKMARK [2][-]{subsection.8.1.1}{TD-Q-Lernen Leistungsf\344higkeit \(Konvergenz\)}{section.8.1}% 41
-\BOOKMARK [2][-]{subsection.8.1.2}{TD-Q-Lernen Grenzen \(Fluch der Dimensionalit\344t\)}{section.8.1}% 42
-\BOOKMARK [1][-]{section.8.2}{L\366sungen f\374r das Dimensionalit\344tsproblem}{chapter.8}% 43
-\BOOKMARK [2][-]{subsection.8.2.1}{Samuels-Dame-Spiel}{section.8.2}% 44
-\BOOKMARK [2][-]{subsection.8.2.2}{TD-Gammon}{section.8.2}% 45
+\BOOKMARK [2][-]{subsection.5.1.7}{Agententests in 9 Spielfelder Tic Tac Toe}{section.5.1}% 33
+\BOOKMARK [2][-]{subsection.5.1.8}{Agententests in 16 Spielfelder Tic Tac Toe}{section.5.1}% 34
+\BOOKMARK [1][-]{section.5.2}{Modellierung}{chapter.5}% 35
+\BOOKMARK [0][-]{chapter.6}{Algorithmen und Implementierung}{}% 36
+\BOOKMARK [1][-]{section.6.1}{Iterative-Alpha-Beta-Suche}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.2}{TD-Q-Lernen}{chapter.6}% 38
+\BOOKMARK [0][-]{chapter.7}{Testergebnisse \(Validierung\)}{}% 39
+\BOOKMARK [0][-]{chapter.8}{Auswertung}{}% 40
+\BOOKMARK [1][-]{section.8.1}{TD-Q-Lernen - Leistung und Grenzen}{chapter.8}% 41
+\BOOKMARK [2][-]{subsection.8.1.1}{TD-Q-Lernen Leistungsf\344higkeit \(Konvergenz\)}{section.8.1}% 42
+\BOOKMARK [2][-]{subsection.8.1.2}{TD-Q-Lernen Grenzen \(Fluch der Dimensionalit\344t\)}{section.8.1}% 43
+\BOOKMARK [1][-]{section.8.2}{L\366sungen f\374r das Dimensionalit\344tsproblem}{chapter.8}% 44
+\BOOKMARK [2][-]{subsection.8.2.1}{Samuels-Dame-Spiel}{section.8.2}% 45
+\BOOKMARK [2][-]{subsection.8.2.2}{TD-Gammon}{section.8.2}% 46

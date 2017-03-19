@@ -5,6 +5,7 @@
 ''Ein zentrales Problem beim Verbessern der Stellungsbewertung aufgrund von gewonnenen oder verlorenen Partien ist heute bekannt unter dem Namen Credit Assignment. Man hat zwar am Ende des Spiels eine Bewertung des ganzen Spiels, aber keine Bewertung der einzelnen Züge. Der Agent macht also viele Aktionen und erhält erst am Ende ein positives oder negatives Feedback. Wie soll er nun den vielen Aktionen in der Vergangenheit dieses Feedback zuordnen? Und wie soll er dann seine Aktionen gegebenenfalls verbessern? Mit diesen Fragen beschäftigt sich das spannende junge Gebiet des Lernens durch Verstärkung (engl. reinforcement learning) \cite[120]{Ertel}.'' \\
 
 Wir wollen in dieser Arbeit ein Lernverfahren untersuchen und implementieren. Dieses Lernverfahren soll die Strategiespiele Tic Tac Toe und Reversi lernen. Nach den beiden oberen Definitionen, kann ein Agent, der verstärkendes Lernen anwendet, eine annähernd optimalen Strategie, für eine ihm unbekannte Umgebung, lernen. Wir erklären daher in diesem Kapitel verschiedene verstärkende Lernverfahren. Die Wert-Iteration mit der Bellman-Gelichung (siehe Abschnitt \ref{subsec:Wert-Iteration}), die temporale Differenz (siehe Abschnitt \ref{subsec:Lernen mit temporaler Differenz}) und das Q-Lernen (siehe Abschnitt \ref{subsec:Q-Lernen}). \\
+\newpage
 
 Das Q-Lernen soll in dieser Arbeit angewendet und untersucht werden. Die Wert-Iteration, ist ein wichtiges Lernverfahren im verstärkenden Lernen. Sie ermöglicht es eine optimale Strategie für Strategiespiele zu lernen. Wert-Iteration hat auch Eigenschaften die im Temporalen Differenz Lernen wiederzufinden sind. Versteht man die Wert-Iteration fällt es leichter das Temporale Differenz Lernen zu verstehen. Das Q-Lernen ist eine Variante des Temporalen Differenz Lernens und wird daher auch als TD-Q-Lernen bezeichnet. \\
 
@@ -32,7 +33,7 @@ Ein \textbf{stochastischer Übergang} ist nur in einer nicht deterministischen U
 Sinngemäße Definition des Übergangsmodells \cite[753]{Russell}: \\
 Das \textbf{Übergangsmodell} beschreibt das Ergebnis jeder Aktion in jedem Zustand. Ist das Ergebnis stochastisch, bezeichnet P(s'|s, a) die Wahrscheinlichkeit, den Zustand s' zu erreichen, wenn die Aktion a im Zustand s ausgeführt wird. Handelt es sich um einen Markov-Übergang, dann ist die Wahrscheinlichkeit s' von s zu erreichen, nur von s abhängig und nicht vom Verlauf der vorherigen Zustände. \\
 
-Ein stochastisches Übergangsmodell für die Wahrscheinlichkeiten der Zustandsübergänge ist für Tic Tac Toe und Reversi nicht sinnvoll, da beide Spiele nicht vom Zufall abhängen (keine stochastischen Übergänge) und für jede Aktion in jedem Zustand nur ein einziger Zustandsübergang möglich ist. \\
+Ein stochastisches Übergangsmodell für die Wahrscheinlichkeiten der Zustandsübergänge ist für Tic Tac Toe und Reversi nicht sinnvoll, da beide Spiele nicht vom Zufall abhängen (keine stochastischen Übergänge) und für jede Aktion in jedem Zustand nur ein einziger Zustandsübergang möglich ist. \newpage
 
 \textbf{Additive Gewinne}, nach Russell und Norvig \cite[756]{Russell}, bestimmen über das zukunftsbezogene Verhalten des Agenten. Verwendet der Agent additive Gewinne, dann bedeutet das für den Agenten, jeder Nutzen eines Zustandes in einer gewählten Zustandsfolge ist gleich wertvoll. Zudem ist die Summe der Zustandsnutzen endlich, deshalb auch Modell des endlichen Horizonts. Der Nutzen einer Zustandsfolge ist wie folgt definiert: \\
 
@@ -47,12 +48,12 @@ Tic Tac Toe und Reversi terminieren immer, nach einer endlichen Anzahl von Aktio
 $U_h([s_0, s_1, s_2 ...]) = R(s_0) + \gamma R(s_1) + \gamma^2 R(s_2) + ...$\\
 
 Wichtiges Fazit daraus: \\
-Der Nutzen einer gegebenen Zustandsfolge ist die Summe der verminderten Gewinne, die während der Folge erhalten werden (vgl. \cite[757]{Russell}). \\
+Der Nutzen einer gegebenen Zustandsfolge ist die Summe der verminderten Gewinne, die während der Folge erhalten werden (vgl. \cite[757]{Russell}).
+\newpage
 
 \section{Optimale Taktiken}
 \label{sec:Optimale Taktiken}
-Wir definieren in diesem Abschnitt, nach Russell und Norvig \cite[757\psq]{Russell}, was eine optimale Taktik ist: \\
-Eine Taktik (Strategie) beeinflusst das Verhalten des Agenten, d.h. sie empfiehlt welche Aktion der Agent in jedem Zustand ausführen soll. Aus Tradition wird beim verstärkenden Lernen eine Taktik mit dem Symbol $\pi$ gekennzeichnet. Die Abbildung der Zustände auf Aktionen ist folgendermaßen definiert $\pi : S \rightarrow A$ (vgl. \cite[290]{Ertel}) oder $\pi(s) = a$. Abhängig von den Dimensionen der Umgebung existieren unterschiedlich viele Taktiken. Eine optimale Taktik wird bestimmt durch den erwarteten Nutzen bei Ausführung der Taktik $\pi$ beginnend in einem Startzustand s:\\
+Wir definieren in diesem Abschnitt, nach Russell und Norvig \cite[757\psq]{Russell}, was eine optimale Taktik ist: Eine Taktik (Strategie) beeinflusst das Verhalten des Agenten, d.h. sie empfiehlt welche Aktion der Agent in jedem Zustand ausführen soll. Aus Tradition wird beim verstärkenden Lernen eine Taktik mit dem Symbol $\pi$ gekennzeichnet. Die Abbildung der Zustände auf Aktionen ist folgendermaßen definiert $\pi : S \rightarrow A$ (vgl. \cite[290]{Ertel}) oder $\pi(s) = a$. Abhängig von den Dimensionen der Umgebung existieren unterschiedlich viele Taktiken. Eine optimale Taktik wird bestimmt durch den erwarteten Nutzen bei Ausführung der Taktik $\pi$ beginnend in einem Startzustand s:\\
 
 \begin{equation}
 \label{eq:Der erwartete Nutzen}
@@ -68,6 +69,7 @@ Eine optimale Taktik hat im Vergleich zu allen anderen möglichen Taktiken einen
 Es ist möglich, dass mehrere optimale Taktiken für ein Problem existieren. Russell und Norvig erklären, dass für eine optimale Strategie $\pi^*_s$, auch $\pi^*$ geschrieben werden kann, denn wenn Taktik $\pi^*_a$ optimal beim Beginn in a und Taktik $\pi^*_b$ optimal beim Start in b sind und sie einen dritten Zustand c erreichen, gibt es keinen vernünftigen Grund, dass sie untereinander oder mit $\pi^*_c$ nicht übereinkommen. \\
 
 Mit diesen Definitionen ist der wahre Nutzen eines Zustands einfach $U^{\pi^*}(s) -$ d.h. die erwartete Summe verminderter Gewinne, wenn der Agent eine optimale Taktik ausführt. Wir schreiben dies als U(s). Russell und Norvig unterstreichen den Sachverhalt, dass die Funktionen U(s) und R(s) ganz unterschiedliche Quantitäten sind, denn R(s) gibt den ''kurzfristigen'' Gewinn, sich in s zu befinden an, wohingegen U(s) den ''langfristigen'' Gesamtgewinn ab s angibt.
+\newpage
 
 \section{Verstärkende Lernverfahren}
 Verstärkendes Lernen (eng. reinforcement Learning) ist eine Lernkategorie des maschinellen Lernens. Problemstellungen des verstärkenden Lernens sind, u.a. das lernen von Strategiespielen, wie Schach, Reversi, Dame oder Backgammon. Der theoretische verstärkend lernende Lösungsansatz dieser Probleme ist wie folgt: ein Agent soll ein ihm unbekanntes Strategiespiel lernen (das Strategiespiel ist die unbekannte Umgebung), für einen Spielzug  (Aktion) in einer Spielsituation (Zustand) erhält der Agent eine numerische Belohnung oder Bestrafung (Verstärkung), mittels dieser Verstärkung soll der Agent ein optimales Verhalten in der ihm unbekannte Umgebung erlernen. \\
@@ -106,7 +108,8 @@ U_{i+1}(s) \leftarrow R(s) + \gamma \max_{a \in A(s)} \sum_{s'} P(s'|s,a)U_i(s')
 
 Betrachten wir jetzt die Äquivalenzen der beiden Gleichungen. Ertel bezeichnet den Iterationsschritt in einem Zustand s als $\hat{V}(s)$ und Russell und Norvig definieren den Nutzwert für den Zustand s bei der i-ten Iteration als $U_{i}(s)$ und den Iterationsschritt bezeichnen sie als $U_{i+1}$. Die Gewinnfunktionen R(s) und r(s,a) sind leicht unterschiedlich. Funktion R(s) gibt den direkten Gewinn in einem Zustand s an und Funktion r(s,a) den Gewinn für eine Aktion, die im Zustand s ausgeführt wird. Die Funktionen $\max_a$ und $\max_{a \in A(s)}$ berechnen die Aktion a mit dem höchsten erwarteten Nutzen. Das stochastische Modell der Welt wird durch die Funktionen $\delta(s,a)$ und $P(s'|s,a)$ beschrieben. Beide Funktionen bilden die Wahrscheinlichkeit ab, dass ein Zustand s' erreicht wird, wenn eine Aktion a in Zustand s ausgeführt wird. \\
 
-Den wahren Nutzen haben wir definiert als die erwartete Summe verminderter Gewinne. Die Verminderung wird in beiden Gleichungen durch den Abschwächungsfaktor $\gamma$ notiert. Die erwartete Summe verminderter Gewinne ist die Summe aller Iterationsschritte bis zur Konvergenz beider Gleichungen. Der rekursive Funktionsaufruf in der Aktualisierungsregel von Wolfgang Ertel $\hat{V}(\delta(s,a))$ übergibt dem nächsten Iterationsschritt den Zustand s', der zu einer von $\delta$ bzw. von der Umgebung festgelegten Wahrscheinlichkeit eintrifft. In der Aktualisierungsgleichung von Russell und Norvig wird dies durch die Kombination des stochastischen Modells P(s'|s,a) und dem rekursiven Funktionsaufruf $U_i(s')$ realisiert.\\ 
+Den wahren Nutzen haben wir definiert als die erwartete Summe verminderter Gewinne. Die Verminderung wird in beiden Gleichungen durch den Abschwächungsfaktor $\gamma$ notiert. Die erwartete Summe verminderter Gewinne ist die Summe aller Iterationsschritte bis zur Konvergenz beider Gleichungen. Der rekursive Funktionsaufruf in der Aktualisierungsregel von Wolfgang Ertel $\hat{V}(\delta(s,a))$ übergibt dem nächsten Iterationsschritt den Zustand s', der zu einer von $\delta$ bzw. von der Umgebung festgelegten Wahrscheinlichkeit eintrifft. In der Aktualisierungsgleichung von Russell und Norvig wird dies durch die Kombination des stochastischen Modells P(s'|s,a) und dem rekursiven Funktionsaufruf $U_i(s')$ realisiert.
+\newpage
 
 Ein Lernverfahren (z.B. die adaptive dynamische Programmierung), welches die Wert-Iteration nutzt, wird im Rahmen dieser Arbeit jedoch nicht implementiert. Die dynamische Programmierung und die Wert-Iteration sind sehr wichtige Ansätze für Lernverfahren und die nachfolgenden Lernverfahren sind teilweise sehr eng mit Lernverfahren verwandt, die Wert-Iteration verwenden. \\
 
@@ -134,6 +137,8 @@ Das Q-Lernen ist eine Variante des TD-Lernens und wird auch als TD-Q-Lernen beze
 \label{eq:Nutzenwerte und Q-Werte}
 U(s) = \max_a Q(s,a).
 \end{equation}
+
+\newpage
 
 ''Ein TD-Q-Agent der eine Q-Funktion lernt, braucht weder für das Lernen noch die Aktionsauswahl ein Modell der Form P(s'|s,a). Aus diesem Grund sagt man auch, das Q-Lernen ist eine modellfreie Methode. \cite[974]{Russell}'' \\
 

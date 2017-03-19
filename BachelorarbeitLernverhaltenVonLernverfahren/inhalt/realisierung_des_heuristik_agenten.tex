@@ -26,6 +26,7 @@ Nachfolgend erläutern wir die von Russell und Norvig beschriebene Minimax-Suche
 Anders ausgedrückt, berücksichtigt die Minimax-Suche, gegenüber anderen uninformierten Suchverfahren (z.B. Breitensuche oder Tiefensuche), dass ein Gegenspieler existiert. Der Gegenspieler führt den für sich optimalen Zug aus, d.h. er wird den anderen Spieler, wann immer es geht, behindern. Ein Spieler wird als MAX bezeichnet und der Gegenspieler als MIN. Spieler MAX versucht einen maximalen Gewinn für sich zu erlangen und Spieler MIN versucht den erreichbaren Gewinn von MAX zu minimieren.\\
 
 In Abbildung \ref{fig:minimax_tictactoe} wird der Ablauf der Minimax-Suche veranschaulicht. Der Minimax-Suchbaum berücksichtigt jeden Zustand, indem sich die Spielwelt befinden kann. Im ersten Spielzug könnte Spieler MAX (Maximumknoten) sein Kreuzspielstein in die obere linke Ecke setzen, daraus ergeben sich neue Zustandsmöglichkeiten. Spieler MIN (Minimumknoten) könnte seinen Kreisspielstein ein Feld weiter rechts und in die selbe Reihe wie Spieler MAX setzen. Die Abbildung bzw. die Minimax-Suche muss rekursiv betrachtet werden, denn erst in den Blattknoten des Suchbaums, sind die Spielergebnisse zu finden. Von seinen Blattknoten ausgehend entscheidet sich MIN für den geringsten Nutzwert und MAX für den höchsten Nutzwert. Die Entscheidungen stehen in direkter Abhängigkeit zur vorherigen Entscheidung des Gegenspielers. \\
+\newpage
   
 \begin{figure}[!htbp]
   \centering
@@ -37,6 +38,7 @@ In Abbildung \ref{fig:minimax_tictactoe} wird der Ablauf der Minimax-Suche veran
 Wolfgang Ertel beschreibt in dem nachfolgenden Zitat das Verhältnis von Problemkomplexität und Suchbaumgröße, was belegt, das Suchbäume für Strategiespiele enorme Dimensionen annehmen.\\
 
 ''Der effektive Verzweigungsfaktor beim Schachspiel liegt etwa bei 30 bis 35. Bei einem typischen Spiel mit 50 Zügen pro Spieler hat der Suchbaum dann mehr als $30^{100} \approx 10^{148}$ Blattknoten. Der Suchbaum lässt sich also bei weitem nicht vollständig explorieren. Hinzu kommt, dass beim Schachspiel oft mit Zeitbeschränkung gespielt wird. Wegen dieser Realzeitanforderung wird die Tiefe des Suchbaums auf eine passende Tiefe, zum Beispiel acht Halbzüge, beschränkt. \cite[114 \psq]{Ertel}'' \\
+\newpage
 
 \section{Alpha-Beta-Kürzung}
 \label{sec:Alpha-Beta-Kürzung}
@@ -52,7 +54,10 @@ Beim Alpha-Beta-Kürzen wird der Teil des Suchbaums beschnitten, der keinen Effe
   \label{fig:alpha_beta}
 \end{figure} 
 
-Verdeutlichen wir das Alpha-Beta-Pruning an Hand eines Beispiels (Abbildung \ref{fig:alpha_beta}). Die nachfolgenden Erklärungen zur Abbildung \ref{fig:alpha_beta} sind in ähnlicher Form in der Literatur zu finden \cite[212 \psqq]{Russell}. Ein Dreieck mit der Spitze nach oben ist ein Maximumknoten und ein Dreieck mit der Spitze nach unten ist ein Minimumknoten. Leere Dreiecke ohne einen bezeichnenden Buchstaben und gestrichelter Umrandung sind noch nicht explorierte Knoten. Durchgängige Linien verweisen auf bereits besuchte Pfade und gestrichelte Linien verweisen auf noch nicht besuchte Pfade. Die Zahlen unterhalb der Blattknoten sind die Nutzwerte, die der maximierende Spieler erhält, wenn er den Pfad bis zu diesem Blattknoten durchschreitet. \\
+Verdeutlichen wir das Alpha-Beta-Pruning an Hand eines Beispiels (Abbildung \ref{fig:alpha_beta}). Die nachfolgenden Erklärungen zur Abbildung \ref{fig:alpha_beta} sind in ähnlicher Form in der Literatur zu finden \cite[212 \psqq]{Russell}. 
+\newpage
+
+Ein Dreieck mit der Spitze nach oben ist ein Maximumknoten und ein Dreieck mit der Spitze nach unten ist ein Minimumknoten. Leere Dreiecke ohne einen bezeichnenden Buchstaben und gestrichelter Umrandung sind noch nicht explorierte Knoten. Durchgängige Linien verweisen auf bereits besuchte Pfade und gestrichelte Linien verweisen auf noch nicht besuchte Pfade. Die Zahlen unterhalb der Blattknoten sind die Nutzwerte, die der maximierende Spieler erhält, wenn er den Pfad bis zu diesem Blattknoten durchschreitet. \\
 
 (a) Minimumknoten B findet einen Nutzwert 3, da dieser Wert der bisher kleinste gefundene Wert ist wird er in Beta gespeichert. \\
 
@@ -61,6 +66,7 @@ Verdeutlichen wir das Alpha-Beta-Pruning an Hand eines Beispiels (Abbildung \ref
 (c) Minimumknoten B findet den Wert 8, dieser ist genau wie 12 größer als 3 und daher wird Spieler MIN vermeiden, dass Spieler MAX zu diesem Spielergebnis gelangt. Minimumknoten B hat alle seine nachfolgenden Knoten exploriert. Maximumknoten A wird vom Minimumknoten B maximal den Nutzwert 3 erhalten, somit ergibt sich für den Maximumknoten A, dass dieser mindestens den Nutzwert 3 erreichen kann. \\
 
 (d) Ein weiterer Minimumknoten ist C. Der erste Blattknoten von C liefert einen Nutzwert von 2, weil dieser Wert der erste gefundene Wert unterhalb des Minimumknotens C ist, wird er in Beta gespeichert. C wird Maximumknoten A maximal einen Nutzwert 2 liefern. A wiederum kann durch Minimumknoten B bereits einen minimalen Nutzwert von 3 erhalten und hat diesen in Alpha gespeichert. Es gilt $Beta \leq Alpha$ und es ist nicht notwendig die Knoten unterhalb von C weiter zu explorieren. Selbst wenn ein größerer Nutzwert gefunden werden würde, entscheidet sich der minimierende Spieler trotzdem für den kleineren Wert und würde ein kleinerer Nutzwert als 2 gefunden werden, dann entscheidet sich der maximierende Spieler für den Nutzwert 3, den Minimumknoten B liefert. Folglich kann der Suchbaum an dieser Stelle abgeschnitten werden, weil weitere gefundene Nutzwerte keinen Einfluss mehr auf das Ergebnis haben. \\
+\newpage
 
 (e) Der letzte von A zu erreichende Minimumknoten wird exploriert. Der erste Blattknoten unterhalb des Minimumknoten D liefert den Nutzwert 14. Dieser Wert wäre für Maximumknoten A eine starke Verbesserung, weil dieser bisher nur maximal einen Nutzwert von 3 erreichen konnte. Der minimierende Spieler hat noch zwei weitere Möglichkeiten(Knoten) zu explorieren und daher wird er versuchen einen geringeren Nutzwert als 14 zu finden. \\
 
@@ -73,6 +79,7 @@ Durch die Alpha-Beta-Kürzung kann ein großer Teil des Suchbaums abgeschnitten 
 Um dieses Verfahren zu beschreiben, fassen wir die Ausführungen, zum Thema iterativ vertiefende Tiefensuche, von Russell und Norvig vgl. \cite[116]{Russell} zusammen:\\
 
 Die iterativ vertiefende Tiefensuche (eng. Iterative Deepening) ist ein kombinatorisches, uninformiertes Suchbaumverfahren und kombiniert die Breitensuche mit der Tiefensuche. Die Suchstrategien der uninformierten Suchverfahren haben keine zusätzlichen Informationen über Zustände, außer den in der Problemdefinition vorgegebenen. Alles was sie tun können, ist, Nachfolger zu erzeugen und einen Zielzustand von einem Nichtzielzustand zu unterscheiden. Ein Nachfolger, ist ein Suchbaumknoten, der unterhalb eines anderen Suchbaumknotens existiert. Die Reihenfolge der Suche ist entscheidend für die Unterscheidung der einzelnen uninformierten Suchverfahren. \\
+\newpage
  
 Die Breitensuche expandiert (erweitert oder vergrößert) zuerst alle Nachfolger, die in derselben Tiefe liegen, beginnend mit dem Wurzelknoten. Diesen Schritt wiederholt die Breitensuche bis ein gesuchtes Ergebnis gefunden wird oder der Suchbaum vollständig exploriert (erkundet) ist. \\
 
@@ -130,6 +137,7 @@ Das erste Merkmal unserer Tic Tac Toe Heuristik ist die Kontrolle der mittleren 
 Abbildung \ref{fig:tictactoe_mid_control} zeigt 4 verschiedene Spielsituationen. Wir werden das erste Merkmal der Tic Tac Toe Heuristik an diesem Beispiel erklären. Spielsituation (a) wird, nach der Definition des ersten Merkmals, eine bessere heuristische Bewertung erhalten, als Spielsituation (b). Die Kreuzspielsteine sind in beiden Spielsituationen zwar gleich positioniert, aber der Kreisspielstein stört in Spielsituation (b) die Siegesformation des Kreuzspielers. Aus dem selben Grund ist Spielsituation (c) ''wertvoller'' oder ''nützlicher'' als Spielsituation (d). In Spielsituation (c) ist eine mögliche Siegesformation des Kreuzspielers (mit bereits 2 Kreuzfiguren) ungestört. In Spielsituation (d) ist die diagonale Siegesformation des Kreuzspielers bereits gestört und somit unbrauchbar, hinsichtlich einer größeren Gewinnchance. \\
 
 Das zweite Merkmal der Tic Tac Toe Heuristik ist die Beachtung der ungestörten Möglichkeiten für Siegesformationen. Eine Formationsmöglichkeit wird gefährlicher bzw. attraktiver, je mehr gleiche Spielfiguren sich bereits in dieser befinden. Wir stellen bei diesem Merkmal gegenüber, wie viele, vom Gegenspieler nicht gestörte Formationsmöglichkeiten  einem Spieler zur Verfügung stehen. Gleichzeitig berücksichtigen wir, wie viele ungestörte Formationsmöglichkeiten der Gegenspieler hat. \\
+\newpage
 
 \begin{figure}[!htbp]
   \centering
@@ -147,6 +155,7 @@ Für die Erstellung der Reversi Heuristik verwenden wir bereits existierendes st
 Das erste wichtige Merkmal für unsere Reversi Heuristik ist die Mobilität. Das Merkmal der Mobilität wird in zwei Merkmale aufgeteilt. Ein Merkmal für die aktuelle Mobilität und ein zweites Merkmal für die mögliche Mobilität. Mit aktueller Mobilität ist die Anzahl aller möglichen Spielzüge in einem aktuellen Spielzustand gemeint. Die Anzahl der Spielsteine am Ende des Spiels ist zwar entscheidend, aber in den Spielzügen bevor das Spiel endet, ist der Spieler im Vorteil, der mehr Zugmöglichkeiten hat. \\
 
 Abbildung \ref{fig:reversi_maximum_disk_strategy} zeigt eine Spielsituation in der Spieler Weiß nahezu alle Spielsteine kontrolliert. Spieler Schwarz ist jedoch der einzige Spieler der noch über Mobilität verfügt, d.h. er kann noch Spielzüge ausführen. In den nachfolgenden 4 Spielzügen $(0,0) \rightarrow (0,7) \rightarrow (7,0) \rightarrow (7,7)$ gewinnt der Schwarze Spieler die Partie. \\
+\newpage
 
 \begin{figure}[!htbp]
   \centering
@@ -164,7 +173,7 @@ Das Ziel unserer Reversi Heuristik soll das Besetzen dieser 4 Ecken sein und gle
 
 \begin{figure}[!htbp]
   \centering
-  \includegraphics[scale = 0.5]{inhalt/abbildungen/reversi_movement_notation_positioning.pdf}
+  \includegraphics[scale = 0.4]{inhalt/abbildungen/reversi_movement_notation_positioning.pdf}
   \caption{Merkmale einer Reversi Heuristik.}
   \label{fig:reversi_movement_notation_positioning}
 \end{figure}

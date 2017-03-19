@@ -9,6 +9,7 @@ Die Testergebnisse ermöglichen uns, über die Konvergenz und über die benötig
 Wolfgang Ertel schreibt über die allgemeine Konvergenz des Q-Lernens (TD-Q-Lernens) (vgl. \cite[299]{Ertel}): \\
 
 Das Q-Lernen konvergiert für ein konkretes Beispiel und allgemein, zu einer optimalen Strategie, wenn jedes Zustands-Aktions-Paar unendlich oft besucht wird. Konkret konvergiert der Wert $\hat{Q}_n(s,a)$ für alle Werte von s und a gegen $Q(s,a)$ für $n \rightarrow \infty$, mit $n$ gleich der Anzahl der Aktualisierungen des Q-Werts ($\hat{Q}_n(s,a)$).
+\newpage
 
 \subsection{TD-Q-Lernen Leistungsfähigkeit (Konvergenz)}
 In diesem Abschnitt analysieren wir die Testergebnisse der einzelnen Lernphasen, für 9 und 16 Spielfelder Tic Tac Toe. Wir beurteilen die Leistung der einzelnen gelernten Strategien, aufgrund der Testspiele gegen den Zufallsagenten und den Heuristik Agenten. Wir versuchen, die oben zitierte Aussage von Wolfgang Ertel, über die Konvergenz, mit unseren Testergebnissen zu untermauern.  \\
@@ -93,7 +94,10 @@ Im letzten Abschnitt dieser Arbeit werden wir auf die sehr guten Lernverfahren e
 
 Wir werden nachfolgend den Unterschied zwischen dem in dieser Arbeit implementierten Lernverfahren und dem von Samuel implementierten Lernverfahren erläutern (vgl. \cite[976]{Russell}): \\
 
-Russell und Norvig beschreiben das Lernverfahren von Samuel als \textbf{Funktionsannäherung}. Der Unterschied zwischen Samuels Lernalgorithmus und dem von uns implementierten TD-Q-Algorithmus ist, dass Samuel eine andere Darstellung als eine Suchtabelle (die Tabelle die wir mit Q(s,a) gekennzeichnet hatten) für die Q-Funktion verwendet. Arthur Samuels Dame Spiel verwendete also eine parametrisierte Bewertungsfunktion in der Form: \\
+Russell und Norvig beschreiben das Lernverfahren von Samuel als \textbf{Funktionsannäherung}. Der Unterschied zwischen Samuels Lernalgorithmus und dem von uns implementierten TD-Q-Algorithmus ist, dass Samuel eine andere Darstellung als eine Suchtabelle (die Tabelle die wir mit Q(s,a) gekennzeichnet hatten) für die Q-Funktion verwendet.
+\newpage
+
+Arthur Samuels Dame Spiel verwendete also eine parametrisierte Bewertungsfunktion in der Form: \\
 \begin{equation*}
 \hat{U}_\theta(s) = \theta_1 f_1(s) + \theta_2 f_2(s) + ... + \theta_n f_n(s),
 \end{equation*}

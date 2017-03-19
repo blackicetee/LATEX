@@ -5,24 +5,24 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Tic Tac Toe Siegesformationen f\IeC {\"u}r den Kreuzspieler.}}{6}{figure.2.1}
 \contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Ausgangsspielzustand Reversi.}}{7}{figure.2.2}
-\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Fortgeschrittene Spielzugm\IeC {\"o}glichkeiten Reversi.}}{7}{figure.2.3}
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Fortgeschrittene Spielzugm\IeC {\"o}glichkeiten Reversi.}}{8}{figure.2.3}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Ein (partieller) Suchbaum vgl. \cite [208]{Russell}}}{11}{figure.3.1}
 \contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Ein Alpha Beta Suchbaum \cite [213]{Russell}.}}{12}{figure.3.2}
 \contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Tic Tac Toe Er\IeC {\"o}ffnungssituationen.}}{17}{figure.3.3}
-\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Tic Tac Toe Formationsm\IeC {\"o}glichkeiten.}}{17}{figure.3.4}
-\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Reversi Merkmal der aktuellen Mobilit\IeC {\"a}t.}}{18}{figure.3.5}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Tic Tac Toe Formationsm\IeC {\"o}glichkeiten.}}{18}{figure.3.4}
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Reversi Merkmal der aktuellen Mobilit\IeC {\"a}t.}}{19}{figure.3.5}
 \contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Merkmale einer Reversi Heuristik.}}{19}{figure.3.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Klassendiagramm der Software}}{34}{figure.5.1}
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Klassendiagramm der Software}}{35}{figure.5.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Codeauszug der Iterativen-Alpha-Beta-Suche.}}{36}{figure.6.1}
-\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Iteratives Suchen des maximalen Ergebnisses.}}{37}{figure.6.2}
-\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Algorithmus des TD-Q-Lernens vgl. \cite [974]{Russell}}}{38}{figure.6.3}
-\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Die implementierte Explorationsstrategie.}}{40}{figure.6.4}
-\contentsline {figure}{\numberline {\relax 6.5}{\ignorespaces Zobrist Hashing von Spielzust\IeC {\"a}nden.}}{41}{figure.6.5}
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Codeauszug der Iterativen-Alpha-Beta-Suche.}}{37}{figure.6.1}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Iteratives Suchen des maximalen Ergebnisses.}}{38}{figure.6.2}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Algorithmus des TD-Q-Lernens vgl. \cite [974]{Russell}}}{39}{figure.6.3}
+\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Die implementierte Explorationsstrategie.}}{42}{figure.6.4}
+\contentsline {figure}{\numberline {\relax 6.5}{\ignorespaces Zobrist Hashing von Spielzust\IeC {\"a}nden.}}{43}{figure.6.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Die Testergebnisse f\IeC {\"u}r das 9 Spielfelder Tic Tac Toe.}}{44}{figure.7.1}
-\contentsline {figure}{\numberline {\relax 7.2}{\ignorespaces Die Testergebnisse f\IeC {\"u}r das 16 Spielfelder Tic Tac Toe.}}{45}{figure.7.2}
+\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Die Testergebnisse f\IeC {\"u}r das 9 Spielfelder Tic Tac Toe.}}{45}{figure.7.1}
+\contentsline {figure}{\numberline {\relax 7.2}{\ignorespaces Die Testergebnisse f\IeC {\"u}r das 16 Spielfelder Tic Tac Toe.}}{46}{figure.7.2}
 \addvspace {10\p@ }
