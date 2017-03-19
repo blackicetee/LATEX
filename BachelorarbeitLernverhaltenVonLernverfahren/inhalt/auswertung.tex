@@ -1,6 +1,6 @@
 \chapter{Auswertung}
 \label{cha:Auswertung}
-In diesem Kapitel wollen wir die Testergebnisse des vorherigen Kapitels \ref{cha:Validierung} auswerten. Die Ergebnisse der Testphase sollen uns dabei helfen die Leistungsfähigkeit und die Grenzen des TD-Q-Lernens zu beurteilen. Wir werden ein, in der Literatur bereits bekanntes Problem dieses Lernverfahrens mit den Testergebnissen belegen und Lösungsmöglichkeiten besprechen. Diese Lösungsmöglichkeiten sind aus der Literatur entnommen und sie stellen herausragende Erfolge auf dem Gebiet des verstärkenden Lernens dar. \\
+In diesem Kapitel wollen wir die Testergebnisse des vorherigen Kapitels \ref{cha:Validierung} auswerten. Die Ergebnisse der Testphase sollen uns dabei helfen, die Leistungsfähigkeit und die Grenzen des TD-Q-Lernens zu beurteilen. Wir werden ein, in der Literatur bereits bekanntes Problem dieses Lernverfahrens mit den Testergebnissen belegen und Lösungsmöglichkeiten besprechen. Diese Lösungsmöglichkeiten sind aus der Literatur entnommen und sie stellen herausragende Erfolge auf dem Gebiet des verstärkenden Lernens dar. \\
 
 \section{TD-Q-Lernen - Leistung und Grenzen}
 \label{sec:TD-Q-Lernen - Leistung und Grenzen}
@@ -14,7 +14,7 @@ Das Q-Lernen konvergiert für ein konkretes Beispiel und allgemein, zu einer opt
 \subsection{TD-Q-Lernen Leistungsfähigkeit (Konvergenz)}
 In diesem Abschnitt analysieren wir die Testergebnisse der einzelnen Lernphasen, für 9 und 16 Spielfelder Tic Tac Toe. Wir beurteilen die Leistung der einzelnen gelernten Strategien, aufgrund der Testspiele gegen den Zufallsagenten und den Heuristik Agenten. Wir versuchen, die oben zitierte Aussage von Wolfgang Ertel, über die Konvergenz, mit unseren Testergebnissen zu untermauern.  \\
 
-\myparagraph{Tic Tac Toe - Lernen gegen Zufall - 9 Spielfelder}
+\myparagraph{Tic Tac Toe - TD-Q-Agent gegen Zufallsagent - 9 Spielfelder}
 
 Zufallsagent beginnt das Spiel: \\
 Die in 100 Trainingsspielen gelernte Strategie des TD-Q-Agenten hat schlechtere Gewinnquoten (37 Siege), als die in 1.000 Trainingsspielen gelernte Strategie. Die in 10.000 Trainingsspielen gelernte Strategie, hat die besten Gewinnquoten (49 Siege). Die Steigerung der Gewinnquoten der einzelnen Lernphasen ist hier noch recht klein. \\
@@ -26,25 +26,25 @@ Wir können aus den Testergebnissen ableiten, dass die Leistungsfähigkeit anste
 
 Obwohl es praktisch nicht möglich ist, unendlich viele Trainingsspiele durchzuführen, konnten wir zeigen, dass die gelernten Strategien eher zu einer optimalen Strategie konvergieren, je mehr Trainingsspiele durchgeführt werden. Die oben zitierte Aussage von Wolfgang Ertel, über die Konvergenz, trifft für diese Testergebnisse demnach annähern zu. \\
 
-\myparagraph{Tic Tac Toe - Lernen gegen Zufall - 16 Spielfelder}
+\myparagraph{Tic Tac Toe - TD-Q-Agent gegen Zufallsagent - 16 Spielfelder}
 
-Beim 16 Spielfelder Tic Tac Toe sind die Aktions- und Zustandsräume wesentlich umfangreicher, als beim 9 Spielfelder Tic Tac Toe. Den Testergebnissen können wir entnehmen, dass beim 16 Spielfelder Tic Tac TOe keine eindeutige Steigerung der Gewinnquote mit ansteigender Trainingsspielanzahl erkennbar ist, egal welcher der beiden Agenten das Spiel beginnt. Auf Grund der erhöhten Komplexität, sind mit hoher Wahrscheinlichkeit wesentlich mehr Trainingsspiele erforderlich, um auch hier eine annähernde Konvergenz der gelernten Strategie zu erreichen.
+Beim 16 Spielfelder Tic Tac Toe sind die Aktions- und Zustandsräume wesentlich umfangreicher, als beim 9 Spielfelder Tic Tac Toe. Den Testergebnissen können wir entnehmen, dass beim 16 Spielfelder Tic Tac Toe keine eindeutige Steigerung der Gewinnquote mit ansteigender Trainingsspielanzahl erkennbar ist, egal welcher der beiden Agenten das Spiel beginnt. Auf Grund der erhöhten Komplexität, sind mit hoher Wahrscheinlichkeit wesentlich mehr Trainingsspiele erforderlich, um auch hier eine annähernde Konvergenz der gelernten Strategie zu erreichen.
 
 In Abschnitt \ref{subsec:TD-Q-Lernen Grenzen} klären wir noch ausführlich, warum die Testergebnisse der einzelnen Lernphasen, für das 16 Spielfelder Tic Tac Toe, keine eindeutige Leistungssteigerung aufzeigen, obwohl die Trainingsspiele in jeder Lernphase um Faktor 10 erhöht wurden. \\
 
-\myparagraph{Tic Tac Toe - Lernen gegen Heuristik - 9 und 16 Spielfelder}
+\myparagraph{Tic Tac Toe - TD-Q-Agent gegen Heuristik Agent - 9 und 16 Spielfelder}
 
 Die Testspiele der gelernten TD-Q-Strategien gegen den vorausschauenden Heuristik Agent sind insofern eindeutig ausgefallen, dass der Heuristik Agent bis auf 2 gelernte Strategien, immer die bessere Strategie hatte und gewinnt. In zwei Lernphasen geht das Spiel unentschieden aus. \\
 
-In jeder der 6 Lernphasen (3 Lernphasen 9 Spielfelder und 3 Lernphasen 16 Spielfelder) wird eine unterschiedliche Strategie gelernt. In den Lernphasen wurden 6 verschiedene Strategien gelernt. \\
+In jeder der 6 Lernphasen (3 Lernphasen im 9 Spielfelder und 3 Lernphasen im 16 Spielfelder Tic Tac Toe) wird eine unterschiedliche Strategie gelernt. In den Lernphasen wurden 6 verschiedene Strategien gelernt. \\
 
-In den einzelnen Testphasen haben die beiden Agenten, je nachdem wer beginnt, in den jeweils 100 Testspielen das gleiche Spiel gespielt. Der Grund dafür ist, nach Abschluss der Lernphasen entstehen feste nicht veränderbare Strategien. Diese entscheiden für den selben Ausgangszustand immer mit der selben Aktion, das Gleiche gilt auch für den Heuristik Agenten. Insgesamt wurden in den 1.200 Testspielen nur 12 unterschiedliche Spiele gespielt. Eine Erkenntnis der Auswertung der Testergebnisse ist deshalb auch, dass es  ausreichend gewesen wäre, wenn in jeder Testphase maximal 2 Testspiele durchgeführt worden wären. Einmal hätte der Heuristik Agent das Spiel begonnen und einmal der TD-Q-Agent. \\ 
+In den einzelnen Testphasen haben die beiden Agenten, je nachdem wer beginnt, in den jeweils 100 Testspielen das gleiche Spiel gespielt. Der Grund dafür ist, nach Abschluss der Lernphasen entstehen feste, nicht veränderbare Strategien. Diese entscheiden für denselben Ausgangszustand immer mit derselben Aktion, das Gleiche gilt auch für den Heuristik Agenten. Insgesamt wurden in den 1.200 Testspielen einzig 12 unterschiedliche Spiele gespielt. Eine Erkenntnis der Auswertung der Testergebnisse ist deshalb auch, dass es  ausreichend gewesen wäre, wenn in jeder Testphase maximal 2 Testspiele durchgeführt worden wären. Einmal hätte der Heuristik Agent das Spiel begonnen und einmal der TD-Q-Agent. \\ 
 
 Folglich ist die 2. Hypothese aus dem Abschnitt \ref{sec:Ergebnisse} bestätigt. \\
 
-\myparagraph{Tic Tac Toe - Heuristik gegen Zufall - 9 und 16 Spielfelder}
+\myparagraph{Tic Tac Toe - Heuristik Agent gegen Zufallsagent - 9 und 16 Spielfelder}
 
-Die Testergebnisse des vorausschauenden Heuristik Agenten gegen den Zufallsagenten sind eindeutig. Der kleinste Erfolg des Heuristik Agenten, mit 64\% Gewinnquote bestätigt bereits die 1. Hypothese aus Abschnitt \ref{sec:Ergebnisse}. Die größte Gewinnquote des von uns implementierten Tic Tac Toe vorausschauenden Heuristik Agenten ist 100\%, d.h. von 100 Testspielen in einem 16 Spielfelder Tic Tac Toe, wenn der Heuristik Agent das Spiel beginnt, gewinnt der Heuristik Agent alle 100 Testspiele. \\
+Die Testergebnisse des vorausschauenden Heuristik Agenten gegen den Zufallsagenten sind eindeutig. Der kleinste Erfolg des Heuristik Agenten, mit 64\% Gewinnquote bestätigt die 1. Hypothese aus Abschnitt \ref{sec:Ergebnisse}. Die größte Gewinnquote des von uns implementierten Tic Tac Toe vorausschauenden Heuristik Agenten ist 100\%, d.h. von 100 Testspielen in einem 16 Spielfelder Tic Tac Toe, wenn der Heuristik Agent das Spiel beginnt, gewinnt der Heuristik Agent alle 100 Testspiele. \\
 
 \subsection{TD-Q-Lernen Grenzen (Fluch der Dimensionalität)}
 \label{subsec:TD-Q-Lernen Grenzen}
@@ -56,9 +56,9 @@ Wolfgang Ertel beschreibt in diesem Zitat den Fluch der Dimensionalität, als gr
 
 Stellen wir uns einen Suchbaum vor (ähnlich der Abbildung \ref{fig:minimax_tictactoe} aus dem Abschnitt Minimax-Suche), der alle Aktionen in jedem Zustand eines 9 Spielfelder Tic Tac Toe Spiels abbildet. Das Spielbrett eines 9 Spielfelder Tic Tac Toe's ist 3 mal 3 Spielfelder groß, die Dimension des 9 Spielfelder Tic Tac Toe's ist also gleich 3. Der Verzweigungsfaktor des Suchbaums ist direkt nach dem Wurzelknoten gleich 9. Erhöhen wir die Tiefe des Suchbaums um 1, dann verringert sich der Verzweigungsfaktor ebenfalls um 1 (gilt für Reversi und Tic Tac Toe). Der Verzweigungsfaktor symbolisiert den Aktionsraum, der in einem bestimmten Spielzustand vorhanden ist. Jeder Knoten (auch Blattknoten und Wurzelknoten) ist ein möglicher Spielzustand. Die Gesamtheit aller Spielzustände bildet den Zustandsraum ab. \\
 
-Wenn wir die redundanten Spielzustände nicht ausschließen und den Fakt nicht beachten, dass nicht jeder Baumpfad eine maximale Länge von 9 hat (9 Spielfelder Tic Tac Toe kann schon in einer Tiefe von 5 terminieren), dann hat der Spielbaum geschätzt 362.880 Spielzustände ($9 * 8 * 7 * 6 * 5 * 4 * 3 * 2$ entspricht 9 Fakultät!). Erhöhen wir die Dimension des Tic Tac Toe Spiels auf 4, dann erhalten wir das 16 Spielfelder Tic Tac Toe. Berechnen wir die Spielzustände für das 16 Spielfelder Tic Tac Toe unter den gleichen Voraussetzungen wie bei dem 9 Spielfelder Tic Tac Toe, dann erhalten wir ungefähr 20.922.789.888.000 Spielzustände. Die Anzahl der Berechneten Spielzustände entspricht einer groben Schätzung und soll zur Veranschaulichung der Dimensionen dienen.
+Wenn wir die redundanten Spielzustände nicht ausschließen und den Fakt nicht beachten, dass nicht jeder Baumpfad eine maximale Länge von 9 hat (9 Spielfelder Tic Tac Toe kann schon in einer Tiefe von 5 terminieren), dann hat der Spielbaum geschätzt 362.880 Spielzustände ($9 * 8 * 7 * 6 * 5 * 4 * 3 * 2$ entspricht 9 Fakultät!). Erhöhen wir die Dimension des Tic Tac Toe Spiels auf 4, dann erhalten wir das 16 Spielfelder Tic Tac Toe. Berechnen wir die Spielzustände für das 16 Spielfelder Tic Tac Toe unter den gleichen Voraussetzungen wie bei dem 9 Spielfelder Tic Tac Toe, dann erhalten wir ungefähr 20.922.789.888.000 Spielzustände. Die Anzahl der berechneten Spielzustände entspricht einer groben Schätzung und soll zur Veranschaulichung der Dimensionen dienen.
 
-Diese Anzahl der Spielzustände entsprechen nicht der tatsächlichen Anzahl, sie sollen hier nur als grobe Schätzung und zur Veranschaulichung dienen (keine Garantie der Korrektheit der Werte). \\
+Diese Anzahl der Spielzustände entsprechen nicht der tatsächlichen Anzahl, sie sollen hier nur als grobe Schätzung und zur Veranschaulichung dienen. \\
 
 Wir können aus diesen beiden Spielzustandsschätzungen schlussfolgern, dass eine Erhöhung der Dimension einen enormen Effekt auf die Vergrößerung des Zustands- und Aktionsraums hat. Vermutlich meint Wolfgang Ertel genau dieses Verhältnis, wenn er von Fluch der Dimensionalität spricht. \\
 
@@ -79,7 +79,7 @@ Rechenzeit des TD-Q-Lernens für 16 Spielfelder Tic Tac Toe:
 \item 10.000 Trainingsspiele ungefähr 1440 Minuten
 \end{itemize}
 
-Die einzelnen Testergebnisse zeigen deutlich eine Rechenzeiterhöhung der Lernphasen des 16 Spielfelder Tic Tac Toe's im Gegensatz zum 9 Spielfelder Tic Tac Toe, d.h. mit steigender Dimension erhöht sich die Rechenzeit für das TD-Q-Lernen in unserem Beispiel bereits um 800\%. Wir schlussfolgern daher: 10.000 Trainingsspiele für das Strategiespiel Reversi, würden mehrere Monate oder Jahre in Anspruch nehmen, bei Verwendung einer tabellarischen Darstellung der Q-Funktion. \\
+Die stark unterschiedlichen Rechenzeitergebnisse zeigen deutlich eine Rechenzeiterhöhung der Lernphasen des 16 Spielfelder Tic Tac Toe im Gegensatz zum 9 Spielfelder Tic Tac Toe, d.h. mit steigender Dimension erhöht sich die Rechenzeit für das TD-Q-Lernen in der Lernphase 3 bereits um 800\%. Wir schlussfolgern daher: 10.000 Trainingsspiele für das Strategiespiel Reversi, würden mehrere Monate oder Jahre in Anspruch nehmen, bei Verwendung einer tabellarischen Darstellung der Q-Funktion. \\
 
 Die bisherigen Ergebnisse dieser Arbeit bestätigen somit die nachfolgende Aussagen von Wolfgang Ertel: \\
 
