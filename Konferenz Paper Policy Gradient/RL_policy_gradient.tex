@@ -525,11 +525,18 @@ Für ein besseres Verständnis des Policy Gradient Verfahrens wird nachfolgend e
 \subsection{Das Problem}
 Agent in einer Unbekannten Umgebung (Versuch und Irrtum)
 
-\subsection{Das Modell}
-Markov-Entscheidungsprozess
+\subsection{Komponenten eines RL Agenten}
 
-\subsection{Die Strategie}
+\subsubsection{Die Strategie (policy)}
+Definiert das Verhalten des Agenten als Funktion.
 Maximierung der Summe der erwarteten Belohnungen entspricht der Findung einer optimalen Strategie
+
+\subsubsection{Die Bewertungsfunktion (value function)}
+Bewertet wie gut jeder Zustand und/oder jede Aktion ist. 
+
+\subsubsection{Das Modell}
+Markov-Entscheidungsprozess
+Die vom Agenten genutzte Repräsentation der Umgebung. 
 
 \section{Policy Gradient Theorem}
 

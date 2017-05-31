@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  31 MAY 2017 09:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  31 MAY 2017 10:34
 entering extended mode
 **./RL_policy_gradient.tex
 (RL_policy_gradient.tex
@@ -443,15 +443,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 398.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 398.
-
-Underfull \hbox (badness 1502) in paragraph at lines 532--533
-[]\OT1/ptm/m/n/10 Maximierung der Summe der er-warteten Be-loh-nun-gen
- []
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 573.
+(Font)              <8> on input line 580.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 573.
+(Font)              <6> on input line 580.
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -481,7 +476,7 @@ Here is how much of TeX's memory you used:
 kTex/fonts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmb
 i8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev/MikTex/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on RL_policy_gradient.pdf (1 page, 50315 bytes).
+Output written on RL_policy_gradient.pdf (1 page, 52696 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
