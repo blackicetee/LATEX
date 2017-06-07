@@ -116,12 +116,12 @@
 % *** GRAPHICS RELATED PACKAGES ***
 %
 \ifCLASSINFOpdf
-  % \usepackage[pdftex]{graphicx}
+   \usepackage[pdftex]{graphicx}
   % declare the path(s) where your graphic files are
-  % \graphicspath{{../pdf/}{../jpeg/}}
+   \graphicspath{{./Abbildungen/}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+   \DeclareGraphicsExtensions{.pdf}
 \else
   % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
   % will default to the driver specified in the system graphics.cfg if no
@@ -159,7 +159,7 @@
 
 % *** MATH PACKAGES ***
 %
-%\usepackage{amsmath}
+\usepackage{amsmath}
 % A popular package from the American Mathematical Society that provides
 % many useful and powerful commands for dealing with mathematics.
 %
@@ -519,26 +519,48 @@ The conclusion goes here.
 % conference papers do not normally have an appendix
 
 
-\section{Grundlagen}
-Für ein besseres Verständnis des Policy Gradient Verfahrens wird nachfolgend ein Überblick der wichtigsten Grundlagen des Reinforcement Learnings (RL) gegeben. Das Problem des RL, das Agentenmodell, Maximierung der erwarteten Gewinne.
+\section{Reinforcement Learning (RL)}
+Für ein besseres Verständnis des Policy Gradient Verfahrens wird nachfolgend ein Überblick der wichtigsten Grundlagen des Reinforcement Learnings (RL) gegeben. \\
 
-\subsection{Das Problem}
-Agent in einer Unbekannten Umgebung (Versuch und Irrtum)
+Sutton und Barto \cite{sutton_barto_12} definieren ein Standard RL-Framework, in diesem interagiert ein Agent mit einer Umgebung. Der Agent lernt, in einer ihm unbekannten Umgebung, durch Versuch und Irrtum eine Strategie. Der Agent kann in einer bestimmten Umgebung bestimmte Aktionen $a$ ausführen. Ist die Menge der Aktionen begrenzt, dann ist es ein diskreter Aktionsraum $A$. Eine unbegrenzte Menge von Aktionen bezeichnet einen kontinuierlichen Aktionsraum. Die Umgebung bestimmt die Aktionsmenge und der Agent entscheidet welche Aktion aus dieser Menge ausgewählt wird. Eine Aktion kann eine Positionsangabe, eine Richtung oder etwas viel komplexeres sein. Sutton und Barto definieren die Umgebung als einen Markov Entscheidungsprozess (eng. Markov Decision Process). Der Agent interagiert demnach mit einem MDP und erhält von diesem einen Zustand und eine Belohnung. Der MDP erhält vom Agenten eine ausgewählte Aktion. \\
 
-\subsection{Komponenten eines RL Agenten}
+\subsection{Markov Decision Process}
+Ein MDP ist ein sequentielles Entscheidungsproblem. Eine Sequenz $S_0, A_0, S_1, A_1 ... S_t, A_t$ beschreibt die Interaktion des Agenten mit dem MDP.
 
-\subsubsection{Die Strategie (policy)}
+Ein Zustand ist eine Darstellung der Umwelt zu einem Zeitpunkt t. Die Zustände bestimmten, welche Aktionen ausgeführt werden können d.h. es existiert eine Funktion $A(S_t)$. Ergebnis dieser Funktion ist eine zulässige Menge von Aktionen $A_t$ in einem Zustand $S_t$. Ein Beispiel: Es existiert ein Tic Tac Toe Spiel mit 9 Spielfeldern. Das Tic Tac Toe Spiel ist die Umgebung. Eine Darstellungsmöglichkeit des Spielfelds ist z.B. eine 3x3 Matrix. Jedes Element der Matrix wird mit einem Leerzeichen (' ') initialisiert. Der Startzustand $s_0$ ist eine 3x3 Matrix, indem jedes Element der Matrix ein Leerzeichen ist. Ein Spieler kann Kreuze ('X') in die Matrix einfügen und der andere Spieler Kreise ('O'). Der gesamte Zustandsraum $S$ eines Tic Tac Toe Spiels, kann abgebildet werden. Die leeren Matrixelemente bestimmten die Positionen auf die Spielsteine gesetzt werden können. Ein weiteres Beispiel: Ein Modellhubschrauber soll eigenständig lernen zu fliegen ohne abzustürzen und bestimmte Manöver auszuführen. In diesem Beispiel ist die Steuerung des Modellhubschraubers die zu lernende Strategie des RL Algorithmus. Eigenschaften der Umwelt sind unter anderem: Luftdruck, Position und Geschwindigkeit des Hubschraubers, Windgeschwindigkeit, Treibstoff. Die Modellierung der Zustände in diesem zweiten Beispiel ist ungleich komplexer verglichen mit dem ersten Beispiel. \\
+
+Die numerische Belohnung ist eine Bewertung der Aktion des Agenten. Der Agent versucht diese numerische Belohnung, über die Zeit, zu maximieren. Der Agent kann eine Belohnung von $+10$ erhalten (Hubschrauber um 360 Grad gedreht), wenn er in einem Zustand $s$ eine Aktion $a$ mit $s\in S$ und $a\in A$ ausführt. Der Agent kann auch eine negative numerische Belohnung von z.B. $-23$ erhalten (Hubschrauber abgestürzt). Der genaue Wert der Belohnung wird von der Umgebung definiert und der Agent kann diesen Wert nicht direkt beeinflussen oder verändern. Allein die Entscheidungen d.h. die Aktionsauswahl des Agenten entscheidet über die erhaltene Belohnung r. Die Umgebung definiert eine Belohnungsfunktion $R(s,a)$ oder $R_s^a$. Diese Funktion ist eine Abbildung von Zustand-Aktionspaaren auf erwartete Belohnungen. \\ 
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=2.5in]{agent_environment}
+\caption{Die Interaktion zwischen Agent und Umgebung nach \cite{sutton_barto_12}.}
+\label{agent_environment}
+\end{figure}
+
+\subsection{Die Strategie (Policy $\pi$)}
 Definiert das Verhalten des Agenten als Funktion.
-Maximierung der Summe der erwarteten Belohnungen entspricht der Findung einer optimalen Strategie
+Maximierung der Summe der erwarteten Belohnungen entspricht der Findung einer optimalen Strategie. \\
 
-\subsubsection{Die Bewertungsfunktion (value function)}
+\begin{equation}
+\Delta \theta \approx \alpha \frac{\partial \rho}{\partial \theta}
+\end{equation}
+
+
+\begin{equation}
+\begin{aligned}
+\rho(\pi) & = \lim\limits_{n \rightarrow \infty}{\frac{1}{n} E\{r_1 + r_2 + ... + r_n | \pi\}} \\
+& = \sum_s d^\pi (s) \sum_a \pi(s,a) R^a_s
+\end{aligned}
+\end{equation}
+
+
+\subsection{Die Bewertungsfunktion (Value Function)}
 Bewertet wie gut jeder Zustand und/oder jede Aktion ist. 
 
-\subsubsection{Das Modell}
-Markov-Entscheidungsprozess
-Die vom Agenten genutzte Repräsentation der Umgebung. 
-
 \section{Value-Based Reinforcement Learning}
+
+This is Goodfellow: \cite{goodfellow_16}.
 
 $V_{\theta}(s) \approx V^{\pi}(s)$
 
@@ -546,21 +568,24 @@ $Q_{\theta}(s, a) \approx Q^{\pi}(s, a)$
 
 \section{Policy-Based Reinforcement Learning}
 
+\section{Funktionsapproximation}
+-Kombination linearer Eigenschaften
+-Neuronale Netze
+
 \section{Policy Gradient Methoden}
 
 \subsection{Finite Difference Policy Gradient}
 
-\subsection{Monte-Carlo Policy Gradient}
+\subsection{Monte-Carlo Policy Gradient (REINFORCE)}
 
 \subsection{Actor-Critic Policy Gradient}
 
-\section{Theoretische Anwendung Neuronaler Netze}
 
 % use section* for acknowledgment
-\section*{Acknowledgment}
+%\section*{Acknowledgment}
 
 
-The authors would like to thank...
+%The authors would like to thank...
 
 
 
@@ -588,14 +613,23 @@ The authors would like to thank...
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
+
 \begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+\bibitem{goodfellow_16}
+I.~Goodfellow and Y.~Bengio and A.~Courville,
+\emph{Deep Learning}, MIT Press, 2016.
+
+\bibitem{sutton_barto_12}
+R.~S. Sutton and A.~G. Barto,
+\emph{Reinforcement Learning: An Introduction}, 2rd~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Cambridge, Massachusetts, London, England: MIT Press, 2012.
+  
+\bibitem{sutton_99}
+R.~S. Sutton and D.~ McAllester and S.~Singh and Y.~Mansour,
+\emph{Policy Gradient Methods for Reinforcement Learning with Function Approximation}, 180 Park Avenue, Florham Park, NY 07932: AT\&T Labs, 1999.
 
 \end{thebibliography}
-
 
 
 
