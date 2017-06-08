@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  7 JUN 2017 17:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  8 JUN 2017 14:39
 entering extended mode
 **./RL_policy_gradient.tex
 (RL_policy_gradient.tex
@@ -596,36 +596,6 @@ Underfull \hbox (badness 4967) in paragraph at lines 525--526
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 525--526
-\OT1/ptm/m/n/10 Framework, in diesem in-ter-agiert ein Agent mit einer
- []
-
-
-Underfull \hbox (badness 1527) in paragraph at lines 525--526
-\OT1/ptm/m/n/10 Umge-bung. Der Agent lernt, in einer ihm un-bekan-nten
- []
-
-
-Underfull \hbox (badness 2626) in paragraph at lines 525--526
-\OT1/ptm/m/n/10 Agent kann in einer bes-timmten Umge-bung bes-timmte
- []
-
-
-Underfull \hbox (badness 3623) in paragraph at lines 525--526
-\OT1/ptm/m/n/10 Menge von Ak-tio-nen beze-ich-net einen kon-tinuier-lichen
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 525--526
-\OT1/ptm/m/n/10 und Barto definieren die Umge-bung als einen Markov
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
-
- []
-
-
 Underfull \hbox (badness 2932) in paragraph at lines 530--531
 \OT1/ptm/m/n/10 k[]onnen. Ein weit-eres Beispiel: Ein Mod-ell-hub-schrauber
  []
@@ -692,6 +662,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 542--544
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--658
+[]\OT1/ptm/m/n/8 D.  Sil-ver, \OT1/ptm/m/it/8 On-line Course Re-in-force-ment L
+earn-ing\OT1/ptm/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--658
+\OT1/ptm/m/n/8 http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html, Lon-d
+on,
+ []
+
+
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
 
@@ -702,29 +694,29 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2
-
- <./Abbildungen/agent_environment.pdf>] (RL_policy_gradient.aux) ) 
+[2 <./Abbildungen/agent_environment.pdf>] (RL_policy_gradient.aux) ) 
 Here is how much of TeX's memory you used:
- 3223 strings out of 493333
- 46547 string characters out of 3145253
- 118666 words of memory out of 3000000
- 6724 multiletter control sequences out of 15000+200000
+ 3224 strings out of 493333
+ 46558 string characters out of 3145253
+ 119669 words of memory out of 3000000
+ 6725 multiletter control sequences out of 15000+200000
  35675 words of font info for 66 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  40i,8n,25p,1423b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/dev/MikTe
-x/fonts/enc/dvips/base/8r.enc}<E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cme
-x10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/dev/MikTex
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/dev/MikTex/fonts/type1/public/ams
-fonts/cm/cmr10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/d
-ev/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/dev/MikTex/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmb8a.pfb><E
-:/dev/MikTex/fonts/type1/urw/times/utmbi8a.pfb><E:/dev/MikTex/fonts/type1/urw/t
-imes/utmr8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on RL_policy_gradient.pdf (2 pages, 755167 bytes).
+{E:/dev/Mik
+Tex/fonts/enc/dvips/base/8r.enc}<E:/dev/MikTex/fonts/type1/public/amsfonts/cm/c
+mex10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/dev/MikT
+ex/fonts/type1/public/amsfonts/cm/cmmi5.pfb><E:/dev/MikTex/fonts/type1/public/a
+msfonts/cm/cmmi7.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><E
+:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr5.pfb><E:/dev/MikTex/fonts/type1
+/public/amsfonts/cm/cmr7.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/dev/MikTex/f
+onts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmbi8a.pf
+b><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev/MikTex/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on RL_policy_gradient.pdf (2 pages, 773271 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

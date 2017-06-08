@@ -324,7 +324,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{(Deep) Reinforcement Learning\\ understanding Policy Gradient}
+\title{(Deep) Reinforcement Learning - \\ Policy Gradient}
 
 
 % author names and affiliations
@@ -522,10 +522,10 @@ The conclusion goes here.
 \section{Reinforcement Learning (RL)}
 Für ein besseres Verständnis des Policy Gradient Verfahrens wird nachfolgend ein Überblick der wichtigsten Grundlagen des Reinforcement Learnings (RL) gegeben. \\
 
-Sutton und Barto \cite{sutton_barto_12} definieren ein Standard RL-Framework, in diesem interagiert ein Agent mit einer Umgebung. Der Agent lernt, in einer ihm unbekannten Umgebung, durch Versuch und Irrtum eine Strategie. Der Agent kann in einer bestimmten Umgebung bestimmte Aktionen $a$ ausführen. Ist die Menge der Aktionen begrenzt, dann ist es ein diskreter Aktionsraum $A$. Eine unbegrenzte Menge von Aktionen bezeichnet einen kontinuierlichen Aktionsraum. Die Umgebung bestimmt die Aktionsmenge und der Agent entscheidet welche Aktion aus dieser Menge ausgewählt wird. Eine Aktion kann eine Positionsangabe, eine Richtung oder etwas viel komplexeres sein. Sutton und Barto definieren die Umgebung als einen Markov Entscheidungsprozess (eng. Markov Decision Process). Der Agent interagiert demnach mit einem MDP und erhält von diesem einen Zustand und eine Belohnung. Der MDP erhält vom Agenten eine ausgewählte Aktion. \\
+Sutton und Barto \cite{sutton_barto_12} definieren ein Standard RL-Framework, in diesem interagiert ein Agent mit einer Umgebung. Der Agent lernt, in einer ihm unbekannten Umgebung, durch Versuch und Irrtum eine Strategie. Der Agent kann in einer bestimmten Umgebung bestimmte Aktionen $a$ ausführen. Ist die Menge der Aktionen begrenzt, dann ist es ein diskreter Aktionsraum $A$. Eine unbegrenzte Menge von Aktionen bezeichnet einen kontinuierlichen Aktionsraum. Die Umgebung bestimmt die Aktionsmenge und der Agent entscheidet welche Aktion aus dieser Menge ausgewählt wird. Eine Aktion kann eine Positionsangabe, eine Richtung oder etwas viel komplexeres sein. Sutton und Barto definieren die Umgebung als einen Markov Entscheidungsprozess (eng. Markov Decision Process). Der Agent interagiert demnach mit einem MDP und erhält von diesem einen Zustand und eine Belohnung. Der MDP erhält vom Agenten eine ausgewählte Aktion. 
 
 \subsection{Markov Decision Process}
-Ein MDP ist ein sequentielles Entscheidungsproblem. Eine Sequenz $S_0, A_0, S_1, A_1 ... S_t, A_t$ beschreibt die Interaktion des Agenten mit dem MDP.
+Ein MDP ist ein sequentielles Entscheidungsproblem. Eine Sequenz $... S_t, A_t, R_{t+1}, S_{t+1}, A_{t+1}, R_{t+2}, S_{t+2} ...$ beschreibt die Interaktion des Agenten mit dem MDP.
 
 Ein Zustand ist eine Darstellung der Umwelt zu einem Zeitpunkt t. Die Zustände bestimmten, welche Aktionen ausgeführt werden können d.h. es existiert eine Funktion $A(S_t)$. Ergebnis dieser Funktion ist eine zulässige Menge von Aktionen $A_t$ in einem Zustand $S_t$. Ein Beispiel: Es existiert ein Tic Tac Toe Spiel mit 9 Spielfeldern. Das Tic Tac Toe Spiel ist die Umgebung. Eine Darstellungsmöglichkeit des Spielfelds ist z.B. eine 3x3 Matrix. Jedes Element der Matrix wird mit einem Leerzeichen (' ') initialisiert. Der Startzustand $s_0$ ist eine 3x3 Matrix, indem jedes Element der Matrix ein Leerzeichen ist. Ein Spieler kann Kreuze ('X') in die Matrix einfügen und der andere Spieler Kreise ('O'). Der gesamte Zustandsraum $S$ eines Tic Tac Toe Spiels, kann abgebildet werden. Die leeren Matrixelemente bestimmten die Positionen auf die Spielsteine gesetzt werden können. Ein weiteres Beispiel: Ein Modellhubschrauber soll eigenständig lernen zu fliegen ohne abzustürzen und bestimmte Manöver auszuführen. In diesem Beispiel ist die Steuerung des Modellhubschraubers die zu lernende Strategie des RL Algorithmus. Eigenschaften der Umwelt sind unter anderem: Luftdruck, Position und Geschwindigkeit des Hubschraubers, Windgeschwindigkeit, Treibstoff. Die Modellierung der Zustände in diesem zweiten Beispiel ist ungleich komplexer verglichen mit dem ersten Beispiel. \\
 
@@ -542,6 +542,44 @@ Die numerische Belohnung ist eine Bewertung der Aktion des Agenten. Der Agent ve
 Definiert das Verhalten des Agenten als Funktion.
 Maximierung der Summe der erwarteten Belohnungen entspricht der Findung einer optimalen Strategie. \\
 
+\paragraph*{Policy-Based Reinforcement Learning} 
+
+$\pi$ is life!
+
+
+\subsection{Die Bewertungsfunktion (Value Function)}
+Bewertet wie gut jeder Zustand und/oder jede Aktion ist. \\
+
+\paragraph*{Value-Based Reinforcement Learning} \mbox{}\\
+
+
+This is Goodfellow: \cite{goodfellow_16}.
+
+$V_{\theta}(s) \approx V^{\pi}(s)$
+
+$Q_{\theta}(s, a) \approx Q^{\pi}(s, a)$
+
+\section{Funktionsapproximation}
+-Kombination linearer Eigenschaften
+-Neuronale Netze
+
+\section{(Stochastic) Gradient Decent}
+
+\begin{equation}
+\Delta \theta = \alpha \nabla_\theta J(\theta)
+\end{equation}
+
+\begin{equation}
+\nabla_\theta J(\theta) = 
+\begin{pmatrix}
+\frac{\partial J(\theta)}{\partial \theta_1} \\
+\vdots \\
+\frac{\partial J(\theta)}{\partial \theta_n} \\
+\end{pmatrix}
+\end{equation}
+
+\section{Policy Gradient Methoden}
+
 \begin{equation}
 \Delta \theta \approx \alpha \frac{\partial \rho}{\partial \theta}
 \end{equation}
@@ -554,25 +592,11 @@ Maximierung der Summe der erwarteten Belohnungen entspricht der Findung einer op
 \end{aligned}
 \end{equation}
 
-
-\subsection{Die Bewertungsfunktion (Value Function)}
-Bewertet wie gut jeder Zustand und/oder jede Aktion ist. 
-
-\section{Value-Based Reinforcement Learning}
-
-This is Goodfellow: \cite{goodfellow_16}.
-
-$V_{\theta}(s) \approx V^{\pi}(s)$
-
-$Q_{\theta}(s, a) \approx Q^{\pi}(s, a)$
-
-\section{Policy-Based Reinforcement Learning}
-
-\section{Funktionsapproximation}
--Kombination linearer Eigenschaften
--Neuronale Netze
-
-\section{Policy Gradient Methoden}
+\begin{equation}
+\frac{\partial \rho}{\partial \theta} = 
+\sum_s d^\pi (s) \sum_a \frac{\partial \pi (s,a)}{\partial \theta} 
+Q^\pi (s,a)
+\end{equation}
 
 \subsection{Finite Difference Policy Gradient}
 
@@ -628,6 +652,9 @@ R.~S. Sutton and A.~G. Barto,
 \bibitem{sutton_99}
 R.~S. Sutton and D.~ McAllester and S.~Singh and Y.~Mansour,
 \emph{Policy Gradient Methods for Reinforcement Learning with Function Approximation}, 180 Park Avenue, Florham Park, NY 07932: AT\&T Labs, 1999.
+
+\bibitem{silver_15}
+D.~ Silver, \emph{Online Course Reinforcement Learning}, http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html, London, England: Googel Deep Mind, 2015
 
 \end{thebibliography}
 
