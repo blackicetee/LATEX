@@ -405,14 +405,6 @@ I wish you the best of success.
  
 \hfill August 26, 2015
 
-\subsection{Subsection Heading Here}
-Subsection text here.
-
-
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
-
-
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
@@ -507,27 +499,18 @@ Subsubsection text here.
 % footnotes above bottom floats. This can be corrected via the
 % \fnbelowfloat command of the stfloats package.
 
-
-
-
-\section{Ergebnis}
-The conclusion goes here.
-
-
-
-
 % conference papers do not normally have an appendix
 
 
 \section{Reinforcement Learning (RL)}
 Für ein besseres Verständnis des Policy Gradient Verfahrens wird nachfolgend ein Überblick der wichtigsten Grundlagen des Reinforcement Learnings (RL) gegeben. \\
 
-Sutton und Barto \cite{sutton_barto_12} definieren ein Standard RL-Framework, in diesem interagiert ein Agent mit einer Umgebung. Der Agent lernt, in einer ihm unbekannten Umgebung, durch Versuch und Irrtum eine Strategie. Der Agent kann in einer bestimmten Umgebung bestimmte Aktionen $a$ ausführen. Ist die Menge der Aktionen begrenzt, dann ist es ein diskreter Aktionsraum $A$. Eine unbegrenzte Menge von Aktionen bezeichnet einen kontinuierlichen Aktionsraum. Die Umgebung bestimmt die Aktionsmenge und der Agent entscheidet welche Aktion aus dieser Menge ausgewählt wird. Eine Aktion kann eine Positionsangabe, eine Richtung oder etwas viel komplexeres sein. Sutton und Barto definieren die Umgebung als einen Markov Entscheidungsprozess (eng. Markov Decision Process). Der Agent interagiert demnach mit einem MDP und erhält von diesem einen Zustand und eine Belohnung. Der MDP erhält vom Agenten eine ausgewählte Aktion. 
+Sutton und Barto \cite{sutton_barto_12} definieren ein Standard RL-Framework, in diesem interagiert ein Agent mit einer Umgebung. Der Agent lernt, in einer ihm unbekannten Umgebung, durch Versuch und Irrtum eine Strategie (eng. Policy). Der Agent kann in einer bestimmten Umgebung bestimmte Aktionen $a$ ausführen. Ist die Menge der Aktionen begrenzt, dann ist es ein diskreter Aktionsraum $A$. Eine unbegrenzte Menge von Aktionen bezeichnet einen kontinuierlichen Aktionsraum. Die Umgebung bestimmt die Aktionsmenge und der Agent entscheidet welche Aktion aus dieser Menge ausgewählt wird. Eine Aktion kann eine Positionsangabe, eine Richtung oder etwas viel komplexeres sein. Sutton und Barto \cite{sutton_barto_12} definieren die Umgebung als einen Markov Entscheidungsprozess (eng. Markov Decision Process). Der Agent interagiert demnach mit einem MDP und erhält von diesem einen Zustand und eine Belohnung. Der MDP erhält vom Agenten eine ausgewählte Aktion. 
 
 \subsection{Markov Decision Process}
 Ein MDP ist ein sequentielles Entscheidungsproblem. Eine Sequenz $... S_t, A_t, R_{t+1}, S_{t+1}, A_{t+1}, R_{t+2}, S_{t+2} ...$ beschreibt die Interaktion des Agenten mit dem MDP.
 
-Ein Zustand ist eine Darstellung der Umwelt zu einem Zeitpunkt t. Die Zustände bestimmten, welche Aktionen ausgeführt werden können d.h. es existiert eine Funktion $A(S_t)$. Ergebnis dieser Funktion ist eine zulässige Menge von Aktionen $A_t$ in einem Zustand $S_t$. Ein Beispiel: Es existiert ein Tic Tac Toe Spiel mit 9 Spielfeldern. Das Tic Tac Toe Spiel ist die Umgebung. Eine Darstellungsmöglichkeit des Spielfelds ist z.B. eine 3x3 Matrix. Jedes Element der Matrix wird mit einem Leerzeichen (' ') initialisiert. Der Startzustand $s_0$ ist eine 3x3 Matrix, indem jedes Element der Matrix ein Leerzeichen ist. Ein Spieler kann Kreuze ('X') in die Matrix einfügen und der andere Spieler Kreise ('O'). Der gesamte Zustandsraum $S$ eines Tic Tac Toe Spiels, kann abgebildet werden. Die leeren Matrixelemente bestimmten die Positionen auf die Spielsteine gesetzt werden können. Ein weiteres Beispiel: Ein Modellhubschrauber soll eigenständig lernen zu fliegen ohne abzustürzen und bestimmte Manöver auszuführen. In diesem Beispiel ist die Steuerung des Modellhubschraubers die zu lernende Strategie des RL Algorithmus. Eigenschaften der Umwelt sind unter anderem: Luftdruck, Position und Geschwindigkeit des Hubschraubers, Windgeschwindigkeit, Treibstoff. Die Modellierung der Zustände in diesem zweiten Beispiel ist ungleich komplexer verglichen mit dem ersten Beispiel. \\
+Ein Zustand ist eine Darstellung der Umwelt zu einem Zeitpunkt t. Die Zustände bestimmten, welche Aktionen ausgeführt werden können d.h. es existiert eine Funktion $A(S_t)$. Ergebnis dieser Funktion ist eine zulässige Menge von Aktionen $A_t$ in einem Zustand $S_t$. Ein Beispiel: Es existiert ein Tic Tac Toe Spiel mit 9 Spielfeldern. Das Tic Tac Toe Spiel ist die Umgebung. Eine Darstellungsmöglichkeit des Spielfelds ist z.B. eine 3x3 Matrix. Jedes Element der Matrix wird mit einem Leerzeichen (' ') initialisiert. Der Startzustand $s_0$ ist eine 3x3 Matrix, indem jedes Element der Matrix ein Leerzeichen ist. Ein Spieler kann Kreuze ('X') in die Matrix einfügen und der andere Spieler Kreise ('O'). Der gesamte Zustandsraum $S$ eines Tic Tac Toe Spiels, kann abgebildet werden. Die leeren Matrixelemente bestimmten die Positionen auf die Spielsteine gesetzt werden können. Ein weiteres Beispiel: Ein Modellhubschrauber soll eigenständig lernen zu fliegen ohne abzustürzen und bestimmte Manöver auszuführen. In diesem Beispiel ist die Steuerung des Modellhubschraubers die zu lernende Strategie des RL Algorithmus. Eigenschaften der Umwelt sind unter anderem: Luftdruck, Position und Geschwindigkeit des Hubschraubers, Windgeschwindigkeit, Treibstoff. Die Modellierung der Zustände in diesem zweiten Beispiel ist ungleich komplexer verglichen mit dem ersten Beispiel. Zustände und Aktionen können sehr komplexe Objekte sein, dahingegen ist die Belohnung ein numerischer Wert und kein komplexes Objekt. \\
 
 Die numerische Belohnung ist eine Bewertung der Aktion des Agenten. Der Agent versucht diese numerische Belohnung, über die Zeit, zu maximieren. Der Agent kann eine Belohnung von $+10$ erhalten (Hubschrauber um 360 Grad gedreht), wenn er in einem Zustand $s$ eine Aktion $a$ mit $s\in S$ und $a\in A$ ausführt. Der Agent kann auch eine negative numerische Belohnung von z.B. $-23$ erhalten (Hubschrauber abgestürzt). Der genaue Wert der Belohnung wird von der Umgebung definiert und der Agent kann diesen Wert nicht direkt beeinflussen oder verändern. Allein die Entscheidungen d.h. die Aktionsauswahl des Agenten entscheidet über die erhaltene Belohnung r. Die Umgebung definiert eine Belohnungsfunktion $R(s,a)$ oder $R_s^a$. Diese Funktion ist eine Abbildung von Zustand-Aktionspaaren auf erwartete Belohnungen. \\ 
 
@@ -553,24 +536,21 @@ Bewertet wie gut jeder Zustand und/oder jede Aktion ist. \\
 \paragraph*{Value-Based Reinforcement Learning} \mbox{}\\
 
 
-This is Goodfellow: \cite{goodfellow_16}.
-
-$V_{\theta}(s) \approx V^{\pi}(s)$
-
-$Q_{\theta}(s, a) \approx Q^{\pi}(s, a)$
-
-\section{Funktionsapproximation}
--Kombination linearer Eigenschaften
--Neuronale Netze
 
 \section{Gradientenbasierte Optimierung}
 Der Agent soll die Policy $\pi$ mittels Erfahrung und daraus resultierender Belohnung und Bestrafung optimieren. 
 
 Ein Methode die Funktion $\pi(s) = a$ zu minimieren, ist das Gradienten Abstiegsverfahren (Gradient Decent).
 
-Definition eines Gradienten nach G. Hoever \cite[vgl. S. 213]{hoever_14}:
+Definition eines Gradienten nach G. Hoever \cite[vgl. S. 213]{hoever_14}: In einem Gradienten werden die verschiedenen partiellen Ableitungen einer Funktion $f(x)$ zusammengefasst. Zu einer Funktion $f : \Re$ heißt (falls die partiellen Ableitungen existieren)
 
-In einem Gradienten werden die verschiedenen partiellen Ableitungen einer Funktion $f(x)$ zusammengefasst.  
+\begin{equation}
+\nabla f(x) := grad f(x) := \begin{pmatrix}
+\frac{\partial f}{\partial x_1}(x), \hdots, \frac{\partial f}{\partial x_n}(x)
+\end{pmatrix}
+\end{equation}
+
+Gradient von $f$ im Punkt $x$. ($\nabla f$ wird "nabla $f$" gelesen.)
 
 \begin{equation}
 \Delta \theta = \alpha \nabla_\theta J(\theta)
@@ -585,7 +565,7 @@ In einem Gradienten werden die verschiedenen partiellen Ableitungen einer Funkti
 \end{pmatrix}
 \end{equation}
 
-\section{Zielfunktion}
+\section{Zielfunktionen}
 Die Qualität (Performance) einer Policy berechnet die Zielfunktion (eng. objective function oder criterion) $\rho(\pi)$. R. S. Sutton \cite{sutton_99} unterscheidet zwei verschiedene Formulierungen der Zielfunktion $\rho(\pi)$: 
 
 \begin{equation}
@@ -595,14 +575,21 @@ Die Qualität (Performance) einer Policy berechnet die Zielfunktion (eng. object
 \end{aligned}
 \end{equation}
 
-ist die durchschnittliche Belohnung, diese bewertet die Strategie bezüglich der zu erwartenden Langzeitbelohnung pro Schritt. Eine Langzeitbelohnung (eng. long-term reward) ist die Aufsummierung der Belohnungen für eine Entscheidungssequenz. Der Term $d^\pi(s) = \lim\limits_{t \rightarrow \infty} Pr\{s_t = s|s_0,\pi\}$ beschreibt die stationäre Verteilung der Zustände unter $\pi$, d.h. $d^\pi(s)$ gibt an, wie hoch die Wahrscheinlichkeit dafür ist, jeden Zustand $s_t$ zu erreichen, bedingt durch die Policy $\pi$ und unabhängig vom Startzustand $s_0$, wenn $t$ gegen unendlich strebt. Sprachliche Formulierung der Funktion $\rho_{avR}(\pi)$: Es existiert eine Wahrscheinlichkeit, dass sich der Agent in Zustand $s$ befindet und es existiert eine Wahrscheinlichkeit, dass der Agent eine Aktion $a$ auswählt ($a$ abhängig von $\pi$). Berechnet wird die durchschnittliche Belohnung pro Zeitschritt, wobei die Belohnung $R^a_s$ von den beiden vorher erwähnten Wahrscheinlichkeiten $s$ und $a$ abhängt. Die zweite Formulierung der Zielfunktion $\rho(\pi)$ berücksichtigt einen genau festgelegten Startzustand $s_0$ und ausschließlich von diesem Startzustand ausgehende Langzeitbelohnungen:
+ist die durchschnittliche Belohnung, diese bewertet die Strategie bezüglich der zu erwartenden Langzeitbelohnung pro Schritt. Eine Langzeitbelohnung (eng. long-term reward) ist die Aufsummierung der Belohnungen für eine Entscheidungssequenz. Der Term $d^\pi(s) = \lim\limits_{t \rightarrow \infty} Pr\{s_t = s|s_0,\pi\}$ beschreibt die stationäre Verteilung der Zustände unter $\pi$, d.h. $d^\pi(s)$ gibt an, wie hoch die Wahrscheinlichkeit dafür ist, jeden Zustand $s_t$ zu erreichen, bedingt durch die Policy $\pi$ und unabhängig vom Startzustand $s_0$, wenn $t$ gegen unendlich strebt. Sprachliche Formulierung der Funktion $\rho_{avR}(\pi)$: Es existiert eine Wahrscheinlichkeit, dass sich der Agent in Zustand $s$ befindet und es existiert eine Wahrscheinlichkeit, dass der Agent eine Aktion $a$ auswählt ($a$ abhängig von $\pi$). Berechnet wird die durchschnittliche Belohnung pro Zeitschritt, wobei die Belohnung $R^a_s$ von den beiden vorher erwähnten Wahrscheinlichkeiten $s$ und $a$ abhängt. Der Wert eines Zustands-Aktionspaares, unter Berücksichtigung einer Policy $\pi$, ist für die Zielfunktion der durchschnittlichen Belohnung $\rho_{avR}(\pi)$ wie folgt definiert:
+
+\begin{equation}
+Q^\pi(s,a) = \sum^\infty_{t=1} E\{r_t - \rho_{avR}(\pi)|s_0 = s, a_0 = a, \pi\},
+\end{equation}
+
+mit $\forall s \in S, a \in A$. Die Funktion berechnet die Summe der Differenzen zwischen einer sofortigen Belohnung ($r_t$) in jedem Zeitschritt $t$ und der Zielfunktion $\rho_{avR}(\pi)$, also der durchschnittlichen Belohnung pro Zeitschritt, für ein Zustands-Aktionspaar unter Verwendung einer Policy $\pi$. R. S. Sutton notiert die Zielfunktion $\rho_{avR}(\pi)$ als $\rho(\pi)$, in dieser Arbeit wird für die durchschnittliche erwartete Belohnung pro Zeitschritt die Notation $\rho_{avR}(\pi)$ verwendet (für \textbf{av}erage \textbf{R}eward ähnlich D. Silver \cite{silver_15}). 
+
+Die zweite Formulierung der Zielfunktion $\rho(\pi)$ berücksichtigt einen genau festgelegten Startzustand $s_0$ und ausschließlich von diesem Startzustand ausgehende Langzeitbelohnungen:
 
 \begin{equation}
 \rho_{s_0}(\pi) = E\{\sum^\infty_{t=1} \gamma^{t-1} r_t | s_0,\pi \}.
 \end{equation}
  
-
-\section{Policy Gradient Methoden}
+\section{Policy Gradient}
 
 \begin{equation}
 \Delta \theta \approx \alpha \frac{\partial \rho}{\partial \theta}
@@ -614,9 +601,15 @@ ist die durchschnittliche Belohnung, diese bewertet die Strategie bezüglich der
 Q^\pi (s,a)
 \end{equation}
 
-\begin{equation}
-Q^\pi(s,a) = \sum^\infty_{t=1} E\{r_t - \rho(\pi)|s_0 = s, a_0 = a, \pi\}
-\end{equation}
+\section{Funktionsapproximation}
+-Kombination linearer Eigenschaften
+-Neuronale Netze
+
+$V_{\theta}(s) \approx V^{\pi}(s)$
+
+$Q_{\theta}(s, a) \approx Q^{\pi}(s, a)$
+
+\section{Policy Gradient Methoden}
 
 \subsection{Finite Difference Policy Gradient}
 
