@@ -563,7 +563,14 @@ $Q_{\theta}(s, a) \approx Q^{\pi}(s, a)$
 -Kombination linearer Eigenschaften
 -Neuronale Netze
 
-\section{(Stochastic) Gradient Decent}
+\section{Gradientenbasierte Optimierung}
+Der Agent soll die Policy $\pi$ mittels Erfahrung und daraus resultierender Belohnung und Bestrafung optimieren. 
+
+Ein Methode die Funktion $\pi(s) = a$ zu minimieren, ist das Gradienten Abstiegsverfahren (Gradient Decent).
+
+Definition eines Gradienten nach G. Hoever \cite[vgl. S. 213]{hoever_14}:
+
+In einem Gradienten werden die verschiedenen partiellen Ableitungen einer Funktion $f(x)$ zusammengefasst.  
 
 \begin{equation}
 \Delta \theta = \alpha \nabla_\theta J(\theta)
@@ -578,24 +585,37 @@ $Q_{\theta}(s, a) \approx Q^{\pi}(s, a)$
 \end{pmatrix}
 \end{equation}
 
+\section{Zielfunktion}
+Die Qualität (Performance) einer Policy berechnet die Zielfunktion (eng. objective function oder criterion) $\rho(\pi)$. R. S. Sutton \cite{sutton_99} unterscheidet zwei verschiedene Formulierungen der Zielfunktion $\rho(\pi)$: 
+
+\begin{equation}
+\begin{aligned}
+\rho_{avR}(\pi) & = \lim\limits_{n \rightarrow \infty}{\frac{1}{n} E\{r_1 + r_2 + ... + r_n | \pi\}} \\
+& = \sum_s d^\pi (s) \sum_a \pi(s,a) R^a_s,
+\end{aligned}
+\end{equation}
+
+ist die durchschnittliche Belohnung, diese bewertet die Strategie bezüglich der zu erwartenden Langzeitbelohnung pro Schritt. Eine Langzeitbelohnung (eng. long-term reward) ist die Aufsummierung der Belohnungen für eine Entscheidungssequenz. Der Term $d^\pi(s) = \lim\limits_{t \rightarrow \infty} Pr\{s_t = s|s_0,\pi\}$ beschreibt die stationäre Verteilung der Zustände unter $\pi$, d.h. $d^\pi(s)$ gibt an, wie hoch die Wahrscheinlichkeit dafür ist, jeden Zustand $s_t$ zu erreichen, bedingt durch die Policy $\pi$ und unabhängig vom Startzustand $s_0$, wenn $t$ gegen unendlich strebt. Sprachliche Formulierung der Funktion $\rho_{avR}(\pi)$: Es existiert eine Wahrscheinlichkeit, dass sich der Agent in Zustand $s$ befindet und es existiert eine Wahrscheinlichkeit, dass der Agent eine Aktion $a$ auswählt ($a$ abhängig von $\pi$). Berechnet wird die durchschnittliche Belohnung pro Zeitschritt, wobei die Belohnung $R^a_s$ von den beiden vorher erwähnten Wahrscheinlichkeiten $s$ und $a$ abhängt. Die zweite Formulierung der Zielfunktion $\rho(\pi)$ berücksichtigt einen genau festgelegten Startzustand $s_0$ und ausschließlich von diesem Startzustand ausgehende Langzeitbelohnungen:
+
+\begin{equation}
+\rho_{s_0}(\pi) = E\{\sum^\infty_{t=1} \gamma^{t-1} r_t | s_0,\pi \}.
+\end{equation}
+ 
+
 \section{Policy Gradient Methoden}
 
 \begin{equation}
 \Delta \theta \approx \alpha \frac{\partial \rho}{\partial \theta}
 \end{equation}
 
-
-\begin{equation}
-\begin{aligned}
-\rho(\pi) & = \lim\limits_{n \rightarrow \infty}{\frac{1}{n} E\{r_1 + r_2 + ... + r_n | \pi\}} \\
-& = \sum_s d^\pi (s) \sum_a \pi(s,a) R^a_s
-\end{aligned}
-\end{equation}
-
 \begin{equation}
 \frac{\partial \rho}{\partial \theta} = 
 \sum_s d^\pi (s) \sum_a \frac{\partial \pi (s,a)}{\partial \theta} 
 Q^\pi (s,a)
+\end{equation}
+
+\begin{equation}
+Q^\pi(s,a) = \sum^\infty_{t=1} E\{r_t - \rho(\pi)|s_0 = s, a_0 = a, \pi\}
 \end{equation}
 
 \subsection{Finite Difference Policy Gradient}
@@ -640,21 +660,25 @@ Q^\pi (s,a)
 
 \begin{thebibliography}{1}
 
-\bibitem{goodfellow_16}
-I.~Goodfellow and Y.~Bengio and A.~Courville,
-\emph{Deep Learning}, MIT Press, 2016.
-
 \bibitem{sutton_barto_12}
 R.~S. Sutton and A.~G. Barto,
 \emph{Reinforcement Learning: An Introduction}, 2rd~ed.\hskip 1em plus
   0.5em minus 0.4em\relax Cambridge, Massachusetts, London, England: MIT Press, 2012.
-  
+ 
 \bibitem{sutton_99}
 R.~S. Sutton and D.~ McAllester and S.~Singh and Y.~Mansour,
 \emph{Policy Gradient Methods for Reinforcement Learning with Function Approximation}, 180 Park Avenue, Florham Park, NY 07932: AT\&T Labs, 1999.
 
+\bibitem{hoever_14}
+G.~ Hoever, \emph{Höhere Mathematik kompakt}, 2. Auflage, Springer Spektrum, 2014
+
 \bibitem{silver_15}
 D.~ Silver, \emph{Online Course Reinforcement Learning}, http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html, London, England: Googel Deep Mind, 2015
+
+\bibitem{goodfellow_16}
+I.~Goodfellow and Y.~Bengio and A.~Courville,
+\emph{Deep Learning}, MIT Press, 2016.
+
 
 \end{thebibliography}
 

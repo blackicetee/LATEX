@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  8 JUN 2017 14:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  9 JUN 2017 13:51
 entering extended mode
 **./RL_policy_gradient.tex
 (RL_policy_gradient.tex
@@ -672,13 +672,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 553--554
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 657--658
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
 []\OT1/ptm/m/n/8 D.  Sil-ver, \OT1/ptm/m/it/8 On-line Course Re-in-force-ment L
 earn-ing\OT1/ptm/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 657--658
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
 \OT1/ptm/m/n/8 http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html, Lon-d
 on,
  []
@@ -696,10 +696,10 @@ Before submitting the final camera ready copy, remember to:
 
 [2 <./Abbildungen/agent_environment.pdf>] (RL_policy_gradient.aux) ) 
 Here is how much of TeX's memory you used:
- 3224 strings out of 493333
- 46558 string characters out of 3145253
- 119669 words of memory out of 3000000
- 6725 multiletter control sequences out of 15000+200000
+ 3225 strings out of 493333
+ 46569 string characters out of 3145253
+ 121672 words of memory out of 3000000
+ 6726 multiletter control sequences out of 15000+200000
  35675 words of font info for 66 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  40i,8n,25p,1423b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -714,7 +714,7 @@ msfonts/cm/cmmi7.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><E
 onts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmbi8a.pf
 b><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev/MikTex/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on RL_policy_gradient.pdf (2 pages, 773271 bytes).
+Output written on RL_policy_gradient.pdf (2 pages, 778296 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
