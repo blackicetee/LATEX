@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  13 JUN 2017 09:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  13 JUN 2017 11:07
 entering extended mode
 **./RL_policy_gradient.tex
 (RL_policy_gradient.tex
@@ -605,127 +605,68 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 398.
 
 (E:\dev\MikTex\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 506--507
-
- []
+) [1{C:/Users/Thilo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
-Underfull \hbox (badness 4967) in paragraph at lines 508--509
-[]\OT1/ptm/m/n/10 Sutton und Barto [[]] definieren ein Stan-dard RL-
- []
-
-
-Underfull \hbox (badness 2932) in paragraph at lines 513--514
-\OT1/ptm/m/n/10 k[]onnen. Ein weit-eres Beispiel: Ein Mod-ell-hub-schrauber
- []
-
-
-Underfull \hbox (badness 1694) in paragraph at lines 513--514
-\OT1/ptm/m/n/10 bes-timmte Man[]over auszuf[]uhren. In diesem Beispiel ist
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 513--514
-\OT1/ptm/m/n/10 die Steuerung des Mod-ell-hub-schraubers die zu ler-nende
- []
-
-
-Underfull \hbox (badness 1924) in paragraph at lines 513--514
-\OT1/ptm/m/n/10 des Hub-schraubers, Windgeschwindigkeit, Treib-stoff. Die
- []
-
-
-Underfull \hbox (badness 1577) in paragraph at lines 513--514
-\OT1/ptm/m/n/10 un-gle-ich kom-plexer ver-glichen mit dem er-sten Beispiel.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 513--514
-
- []
-
-
-Underfull \hbox (badness 5417) in paragraph at lines 515--516
-[]\OT1/ptm/m/n/10 Die nu-merische Be-loh-nung ist eine Be-w-er-tung der
- []
-
-
-Underfull \hbox (badness 1389) in paragraph at lines 515--516
-\OT1/ptm/m/n/10 wird von der Umge-bung definiert und der Agent kann
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 515--516
-
- []
-
-<./Abbildungen/agent_environment.pdf, id=1, 125.46875pt x 48.18pt>
+]
+<./Abbildungen/agent_environment.pdf, id=14, 125.46875pt x 48.18pt>
 File: ./Abbildungen/agent_environment.pdf Graphic file (type pdf)
 
 <use ./Abbildungen/agent_environment.pdf>
 Package pdftex.def Info: ./Abbildungen/agent_environment.pdf used on input line
- 519.
+ 517.
 (pdftex.def)             Requested size: 180.67499pt x 69.38719pt.
 
-Underfull \hbox (badness 6859) in paragraph at lines 525--527
-[]\OT1/ptm/m/n/10 Definiert das Ver-hal-ten des Agen-ten als Funk-tion.
+<./Abbildungen/gridworld_example.pdf, id=15, 122.4575pt x 47.17625pt>
+File: ./Abbildungen/gridworld_example.pdf Graphic file (type pdf)
+
+<use ./Abbildungen/gridworld_example.pdf>
+Package pdftex.def Info: ./Abbildungen/gridworld_example.pdf used on input line
+ 524.
+(pdftex.def)             Requested size: 252.94499pt x 97.44902pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 524--525
+ [][] 
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 525--527
-\OT1/ptm/m/n/10 Max-imierung der Summe der er-warteten Be-loh-nun-gen
+Underfull \hbox (badness 7468) in paragraph at lines 530--532
+\OT1/ptm/m/n/10 geschrieben. Max-imierung der Summe der er-warteten
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--527
-
- []
-
-[1{C:/Users/Thilo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 534--535
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 536--537
+Underfull \hbox (badness 10000) in paragraph at lines 530--532
 
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 581--582
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--542
+
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 585--586
 \OML/cmm/m/it/10 $\OT1/ptm/m/n/10 ). Berech-net wird die durch-schnit-tliche B
 e-loh-nung pro
  []
 
+[2 <./Abbildungen/agent_environment.pdf> <./Abbildungen/gridworld_example.pdf
 
-Underfull \hbox (badness 10000) in paragraph at lines 589--590
-[]\OT1/ptm/m/n/10 Die zweite For-mulierung der Ziel-funk-tion $\OML/cmm/m/it/10
- \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 \OT1/cmr/m/n/10 )$
- []
-
-
-Underfull \hbox (badness 3930) in paragraph at lines 589--590
-\OT1/ptm/m/n/10 ber[]ucksichtigt einen genau fest-gelegten Startzu-s-tand $\OML
-/cmm/m/it/10 s[]$
- []
-
-
-Underfull \hbox (badness 3118) in paragraph at lines 589--590
-\OT1/ptm/m/n/10 und auss-chlielich von diesem Startzu-s-tand aus-ge-hende
- []
-
-[2 <./Abbildungen/agent_environment.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 674--675
+pdfTeX warning: pdflatex (file ./Abbildungen/gridworld_example.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 682--683
 []\OT1/ptm/m/n/8 D.  Sil-ver, \OT1/ptm/m/it/8 On-line Course Re-in-force-ment L
 earn-ing\OT1/ptm/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 674--675
+Underfull \hbox (badness 10000) in paragraph at lines 682--683
 \OT1/ptm/m/n/8 http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html, Lon-d
 on,
  []
@@ -741,31 +682,30 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
-
-] (RL_policy_gradient.aux) ) 
+[3] (RL_policy_gradient.aux) ) 
 Here is how much of TeX's memory you used:
- 3511 strings out of 493333
- 49577 string characters out of 3145253
- 122159 words of memory out of 3000000
- 6992 multiletter control sequences out of 15000+200000
+ 3516 strings out of 493333
+ 49768 string characters out of 3145253
+ 123167 words of memory out of 3000000
+ 6996 multiletter control sequences out of 15000+200000
  38027 words of font info for 73 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 40i,8n,26p,1559b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/dev/MikTex/fonts/enc/dvips/base/8r.enc}<E:/dev/
-MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/dev/MikTex/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi5.
-pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/dev/MikTex/font
-s/type1/public/amsfonts/cm/cmr10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts
-/cm/cmr5.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/dev/Mik
-Tex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/dev/MikTex/fonts/type1/public
-/amsfonts/cm/cmsy7.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type
-1/urw/times/utmbi8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev
-/MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on RL_policy_gradient.pdf (3 pages, 785804 bytes).
+ 40i,8n,26p,2175b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
+{E:/dev/MikTex/fonts/enc/dvips/base/8r.enc}<E:/de
+v/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/dev/MikTex/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi
+5.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/dev/MikTex/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><E:/dev/MikTex/fonts/type1/public/amsfon
+ts/cm/cmr5.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/dev/M
+ikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/dev/MikTex/fonts/type1/publ
+ic/amsfonts/cm/cmsy5.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b><E:/dev/MikTex/fonts/type1/public/amsfonts/symbols/msbm10.pfb><E:/dev/MikTex/
+fonts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmbi8a.p
+fb><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev/MikTex/fonts/type1/u
+rw/times/utmri8a.pfb>
+Output written on RL_policy_gradient.pdf (3 pages, 1402617 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
