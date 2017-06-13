@@ -171,7 +171,7 @@
 % version and documentation can be obtained at:
 % http://www.ctan.org/pkg/amsmath
 
-
+\usepackage{amssymb}
 
 
 
@@ -537,35 +537,38 @@ Bewertet wie gut jeder Zustand und/oder jede Aktion ist. \\
 
 
 
-\section{Gradientenbasierte Optimierung}
-Der Agent soll die Policy $\pi$ mittels Erfahrung und daraus resultierender Belohnung und Bestrafung optimieren. 
+\section{Policy Gradient Theorem}
+Der Agent soll die Policy $\pi_\theta(s)$ mittels Erfahrung und daraus resultierender Belohnung und Bestrafung optimieren. Die folgenden zwei Optimierungsverfahren sind daher von besonderer Wichtigkeit, dass Gradienten Abstiegsverfahren (eng. Gradient Decent) und das Gradienten Anstiegsverfahren (eng. Gradient Ascent). Bei der univariaten und multivariaten Regression wird das Gradienten Abstiegsverfahren verwendet, um eine Kostenfunktion zu minimieren. Diese Kostenfunktion berechnet die Qualität einer Hypothese (z.B. mittels dem Fehler der kleinsten Quadrate eng. least-squared-errors). Bei Problemen des Reinforcement Learnings versucht der Agent eine möglichst optimale Strategie zu erlernen, daher versucht der Algorithmus des Agenten die abgeschwächten kumulierten Belohnungen über der Zeit zu maximieren mittels des Gradienten Anstiegsverfahrens. Um eine optimale Strategie zu entwickeln benötigt der Algorithmus folgende Elemente: Eine Zielfunktion, die die Qualität einer Policy $\pi$ bewertet, ein Verfahren welches die Zielfunktion maximiert und eine geeignete Darstellung der Policy $\pi$.
 
-Ein Methode die Funktion $\pi(s) = a$ zu minimieren, ist das Gradienten Abstiegsverfahren (Gradient Decent).
-
-Definition eines Gradienten nach G. Hoever \cite[vgl. S. 213]{hoever_14}: In einem Gradienten werden die verschiedenen partiellen Ableitungen einer Funktion $f(x)$ zusammengefasst. Zu einer Funktion $f : \Re$ heißt (falls die partiellen Ableitungen existieren)
+\subsection{Gradientenbasierte lokale Optimierung}
+Eine Methode die Funktion $\pi_\theta(s)$ zu optimieren, ist das Gradienten Verfahren. Definition eines Gradienten nach G. Hoever \cite[vgl. S. 213]{hoever_14}: In einem Gradienten werden die verschiedenen partiellen Ableitungen einer Funktion $f(x)$ zusammengefasst. Zu einer Funktion $f : \mathbb{R}^n \rightarrow \mathbb{R}$ heißt (falls die partiellen Ableitungen existieren)
 
 \begin{equation}
-\nabla f(x) := grad f(x) := \begin{pmatrix}
+\nabla f(x) := grad \: f(x) := \begin{pmatrix}
 \frac{\partial f}{\partial x_1}(x), \hdots, \frac{\partial f}{\partial x_n}(x)
 \end{pmatrix}
 \end{equation}
 
-Gradient von $f$ im Punkt $x$. ($\nabla f$ wird "nabla $f$" gelesen.)
+Gradient von $f$ im Punkt $x$. ($\nabla f$ wird "nabla $f$" gelesen.) Der Gradient einer Funktion weist in die Richtung des Steilsten Anstiegs. Senkrecht zum Gradienten ändert sich der Funktionswert nicht. G.Hoever \cite[vgl. S. 214]{hoever_14} liefert ebenfalls eine Erklärung des Gradientenverfahrens: Sucht man ausgehend von einem Startpunkt $x^{(0)}$ eine Maximalstelle (Gradient Ascent), so geht man ein Stück in die Richtung des Gradienten, also
+\begin{equation*}
+x^{(1)} = x^{(0)} + \alpha_0 \cdot \nabla \: f(x^{(0)}),
+\end{equation*}
+\begin{equation*}
+x^{(2)} = x^{(1)} + \alpha_1 \cdot \nabla \: f(x^{(1)}),
+\end{equation*}
+allgemein:
+\begin{equation*}
+x^{(i+1)} = x^{(i)} + \alpha_i \cdot \nabla \: f(x^{(i)}).
+\end{equation*}
 
-\begin{equation}
-\Delta \theta = \alpha \nabla_\theta J(\theta)
-\end{equation}
+Dabei beschreibt $\alpha_i$ die Schrittweite. Die genaue Wahl dieser Schrittweite ist oft nicht ganz einfach, wird an dieser Stelle jedoch nicht näher erläutert. Sucht man eine Minimalstelle (Gradient Descent), so setzt man entsprechend 
 
-\begin{equation}
-\nabla_\theta J(\theta) = 
-\begin{pmatrix}
-\frac{\partial J(\theta)}{\partial \theta_1} \\
-\vdots \\
-\frac{\partial J(\theta)}{\partial \theta_n} \\
-\end{pmatrix}
-\end{equation}
+\begin{equation*}
+x^{(i+1)} = x^{(i)} - \alpha_i \cdot \nabla \: f(x^{(i)}).
+\end{equation*}
 
-\section{Zielfunktionen}
+
+\subsection{Zielfunktion}
 Die Qualität (Performance) einer Policy berechnet die Zielfunktion (eng. objective function oder criterion) $\rho(\pi)$. R. S. Sutton \cite{sutton_99} unterscheidet zwei verschiedene Formulierungen der Zielfunktion $\rho(\pi)$: 
 
 \begin{equation}
@@ -608,6 +611,8 @@ Q^\pi (s,a)
 $V_{\theta}(s) \approx V^{\pi}(s)$
 
 $Q_{\theta}(s, a) \approx Q^{\pi}(s, a)$
+
+$\pi_\theta (s,a) = P[a|s,\theta]$
 
 \section{Policy Gradient Methoden}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  9 JUN 2017 15:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  13 JUN 2017 09:03
 entering extended mode
 **./RL_policy_gradient.tex
 (RL_policy_gradient.tex
@@ -201,6 +201,16 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
+(E:\dev\MikTex\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(E:\dev\MikTex\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (E:\dev\MikTex\tex\latex\base\inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks21
@@ -586,6 +596,16 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
+LaTeX Font Info:    Try loading font information for U+msa on input line 398.
+
+(E:\dev\MikTex\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 398.
+
+(E:\dev\MikTex\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 Underfull \hbox (badness 10000) in paragraph at lines 506--507
 
  []
@@ -676,41 +696,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 536--537
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 578--579
+Underfull \hbox (badness 1442) in paragraph at lines 581--582
 \OML/cmm/m/it/10 $\OT1/ptm/m/n/10 ). Berech-net wird die durch-schnit-tliche B
 e-loh-nung pro
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 586--587
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
 []\OT1/ptm/m/n/10 Die zweite For-mulierung der Ziel-funk-tion $\OML/cmm/m/it/10
  \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 \OT1/cmr/m/n/10 )$
  []
 
 
-Underfull \hbox (badness 3930) in paragraph at lines 586--587
+Underfull \hbox (badness 3930) in paragraph at lines 589--590
 \OT1/ptm/m/n/10 ber[]ucksichtigt einen genau fest-gelegten Startzu-s-tand $\OML
 /cmm/m/it/10 s[]$
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 586--587
+Underfull \hbox (badness 3118) in paragraph at lines 589--590
 \OT1/ptm/m/n/10 und auss-chlielich von diesem Startzu-s-tand aus-ge-hende
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 669--670
+[2 <./Abbildungen/agent_environment.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 674--675
 []\OT1/ptm/m/n/8 D.  Sil-ver, \OT1/ptm/m/it/8 On-line Course Re-in-force-ment L
 earn-ing\OT1/ptm/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 669--670
+Underfull \hbox (badness 10000) in paragraph at lines 674--675
 \OT1/ptm/m/n/8 http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html, Lon-d
 on,
  []
 
-[2 <./Abbildungen/agent_environment.pdf>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -726,13 +745,13 @@ Before submitting the final camera ready copy, remember to:
 
 ] (RL_policy_gradient.aux) ) 
 Here is how much of TeX's memory you used:
- 3226 strings out of 493333
- 46575 string characters out of 3145253
- 121672 words of memory out of 3000000
- 6726 multiletter control sequences out of 15000+200000
- 36782 words of font info for 67 fonts, out of 3000000 for 9000
+ 3511 strings out of 493333
+ 49577 string characters out of 3145253
+ 122159 words of memory out of 3000000
+ 6992 multiletter control sequences out of 15000+200000
+ 38027 words of font info for 73 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 40i,8n,25p,1559b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,26p,1559b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/dev/MikTex/fonts/enc/dvips/base/8r.enc}<E:/dev/
 MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/dev/MikTex/fonts/type1/pub
 lic/amsfonts/cm/cmmi10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi5.
@@ -740,12 +759,13 @@ pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/dev/MikTex/font
 s/type1/public/amsfonts/cm/cmr10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts
 /cm/cmr5.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/dev/Mik
 Tex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/dev/MikTex/fonts/type1/public
-/amsfonts/cm/cmsy7.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/dev/
-MikTex/fonts/type1/urw/times/utmbi8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/u
-tmr8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on RL_policy_gradient.pdf (3 pages, 781793 bytes).
+/amsfonts/cm/cmsy7.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/symbols/msbm1
+0.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type
+1/urw/times/utmbi8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev
+/MikTex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on RL_policy_gradient.pdf (3 pages, 785804 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
+ 74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
