@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  13 JUN 2017 11:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  13 JUN 2017 12:52
 entering extended mode
 **./RL_policy_gradient.tex
 (RL_policy_gradient.tex
@@ -630,29 +630,13 @@ Overfull \hbox (0.94499pt too wide) in paragraph at lines 524--525
  []
 
 
-Underfull \hbox (badness 7468) in paragraph at lines 530--532
-\OT1/ptm/m/n/10 geschrieben. Max-imierung der Summe der er-warteten
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 530--532
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 539--540
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 541--542
-
- []
-
-
-Underfull \hbox (badness 1442) in paragraph at lines 585--586
-\OML/cmm/m/it/10 $\OT1/ptm/m/n/10 ). Berech-net wird die durch-schnit-tliche B
-e-loh-nung pro
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
+[]\OT1/ptm/m/n/10 Dynamische Pro-gram-mierung, Monte-Carlo-Methoden,
  []
 
 [2 <./Abbildungen/agent_environment.pdf> <./Abbildungen/gridworld_example.pdf
@@ -660,13 +644,19 @@ e-loh-nung pro
 pdfTeX warning: pdflatex (file ./Abbildungen/gridworld_example.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 682--683
+Underfull \hbox (badness 1442) in paragraph at lines 580--581
+\OML/cmm/m/it/10 $\OT1/ptm/m/n/10 ). Berech-net wird die durch-schnit-tliche B
+e-loh-nung pro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 677--678
 []\OT1/ptm/m/n/8 D.  Sil-ver, \OT1/ptm/m/it/8 On-line Course Re-in-force-ment L
 earn-ing\OT1/ptm/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 682--683
+Underfull \hbox (badness 10000) in paragraph at lines 677--678
 \OT1/ptm/m/n/8 http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html, Lon-d
 on,
  []
@@ -684,10 +674,10 @@ Before submitting the final camera ready copy, remember to:
 
 [3] (RL_policy_gradient.aux) ) 
 Here is how much of TeX's memory you used:
- 3516 strings out of 493333
- 49768 string characters out of 3145253
- 123167 words of memory out of 3000000
- 6996 multiletter control sequences out of 15000+200000
+ 3517 strings out of 493333
+ 49776 string characters out of 3145253
+ 122167 words of memory out of 3000000
+ 6997 multiletter control sequences out of 15000+200000
  38027 words of font info for 73 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  40i,8n,26p,2175b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -703,7 +693,7 @@ b><E:/dev/MikTex/fonts/type1/public/amsfonts/symbols/msbm10.pfb><E:/dev/MikTex/
 fonts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmbi8a.p
 fb><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev/MikTex/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on RL_policy_gradient.pdf (3 pages, 1402617 bytes).
+Output written on RL_policy_gradient.pdf (3 pages, 1404745 bytes).
 PDF statistics:
  82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

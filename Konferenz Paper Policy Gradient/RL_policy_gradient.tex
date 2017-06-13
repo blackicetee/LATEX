@@ -526,29 +526,20 @@ In einer realen Umgebung kann es passieren, dass der Agent selbst (z.B. ein einf
 \label{gridworld_example}
 \end{figure}
 
-\subsection{Die Strategie (Policy $\pi$)}
-Die Policy ist eine Prozedur, welche die Entscheidungsfindung des Agenten festlegt. Eine Policy $\pi$ definiert das Verhalten des Agenten als Funktion von Zuständen $s$, mit $s \in S$ und $S$ ist der gesamte Zustandsraum. Eine stochastische angenäherte Policy wird als $\pi(s,a,\theta) = Pr \{ a_t = a | s_t = s, \theta \}$ geschrieben. 
-
-
-Maximierung der Summe der erwarteten Belohnungen entspricht der Findung einer optimalen Strategie. \\
-
-\paragraph*{Policy-Based Reinforcement Learning} 
-
-$\pi$ is life!
-
-
 \subsection{Die Bewertungsfunktion (Value Function)}
+Eine Bewertungsfunktion V
 Bewertet wie gut jeder Zustand und/oder jede Aktion ist. \\
 
-\paragraph*{Value-Based Reinforcement Learning} \mbox{}\\
+Dynamische Programmierung, Monte-Carlo-Methoden, Temporales-Differenzlernen
 
-
+\subsection{Die Strategie (Policy $\pi$)}
+Die Policy ist eine Prozedur, welche die Entscheidungsfindung des Agenten festlegt. Eine Policy $\pi$ definiert das Verhalten des Agenten als Funktion von Zuständen $s$, mit $s \in S$ und $S$ ist der gesamte Zustandsraum. Bei allen tabellarischen Aktion-Wert Methoden wird eine Wertefunktion gelernt und mittels dieser kann implizit eine Policy erstellt werden ($\epsilon-greedy$). Innerhalb dieser Arbeit werden speziell die Methoden erläutert, welche die Policy (bzw. die Policy Parameter) direkt lernen. Eine stochastische angenäherte Policy wird als $\pi(s,a,\theta) = Pr \{ a_t = a | s_t = s, \theta \}$ geschrieben. Die Policy ist stochastisch (nicht-deterministisch) d.h. sie beschreibt Wahrscheinlichkeiten für das Auswählen von Aktionen. Eine deterministische (nicht-stochastische) Policy legt jeweils exakt eine Aktion für einen Zustand fest. Die Policy ist angenähert (approximiert), aus Gründen der Rechenzeitverbesserung. $\theta$ beschreibt einen Parametervektor durch den die Funktionsapproximation realisiert werden kann. Das optimieren dieses Parametervektors $\theta$ ist Ziel des Policy Gradient Verfahrens. Warum wird die Policy Approximiert? Der Grund dafür ist das Dimensionsproblem. Bei tabellarischen Aktion-Wert Methoden steigt die Größe der Tabelle exponentiell mit der Größe der Zustands- und Aktionsräume. Über die Tabelle muss annähernd unendlich oft iteriert werden, um eine optimale Strategie zu erlernen. Lernen mit tabellarischer Wertefunktionsdarstellung ist ausschließlich für sehr einfache niedrigdimensionale Probleme sinnvoll. Um auch komplexere Probleme lösen zu können wird auf eine exakte Berechnung der optimalen Strategie verzichtet und eine annähernd optimale Strategie wird, aus gründen enormer Rechenzeiteinsparungen, bevorzugt. Eine Strategie ist optimal, wenn die Summe der erwarteten Belohnungen maximal ist, gegenüber allen anderen möglichen Strategien. Es können auch mehrere Strategien optimal sein, dann ist der aufsummierte Wert der erwarteten Belohnungen, für jede dieser Strategien, gleich hoch. 
 
 \section{Policy Gradient Theorem}
-Der Agent soll die Policy $\pi_\theta(s)$ mittels Erfahrung und daraus resultierender Belohnung und Bestrafung optimieren. Die folgenden zwei Optimierungsverfahren sind daher von besonderer Wichtigkeit, dass Gradienten Abstiegsverfahren (eng. Gradient Decent) und das Gradienten Anstiegsverfahren (eng. Gradient Ascent). Bei der univariaten und multivariaten Regression wird das Gradienten Abstiegsverfahren verwendet, um eine Kostenfunktion zu minimieren. Diese Kostenfunktion berechnet die Qualität einer Hypothese (z.B. mittels dem Fehler der kleinsten Quadrate eng. least-squared-errors). Bei Problemen des Reinforcement Learnings versucht der Agent eine möglichst optimale Strategie zu erlernen, daher versucht der Algorithmus des Agenten die abgeschwächten kumulierten Belohnungen über der Zeit zu maximieren mittels des Gradienten Anstiegsverfahrens. Um eine optimale Strategie zu entwickeln benötigt der Algorithmus folgende Elemente: Eine Zielfunktion, die die Qualität einer Policy $\pi$ bewertet, ein Verfahren welches die Zielfunktion maximiert und eine geeignete Darstellung der Policy $\pi$.
+Die nachfolgenden Erläuterungen basieren auf der wissenschaftlichen Arbeit unter anderem von R. S. Sutton \cite{sutton_99}. Der Agent soll eine annähernd optimale Policy mittels Funktionsapproximation und Policy Gradienten Verfahren erlernen.
 
 \subsection{Gradientenbasierte lokale Optimierung}
-Eine Methode die Funktion $\pi_\theta(s)$ zu optimieren, ist das Gradienten Verfahren. Definition eines Gradienten nach G. Hoever \cite[vgl. S. 213]{hoever_14}: In einem Gradienten werden die verschiedenen partiellen Ableitungen einer Funktion $f(x)$ zusammengefasst. Zu einer Funktion $f : \mathbb{R}^n \rightarrow \mathbb{R}$ heißt (falls die partiellen Ableitungen existieren)
+Eine Methode dies zu erreichen ist die Maximierung einer Zielfunktion $\rho(\pi)$, mittels eines Gradienten Anstiegsverfahrens. Eine Zielfunktion berechnet die Qualität einer Policy. Definition eines Gradienten nach G. Hoever \cite[vgl. S. 213]{hoever_14}: In einem Gradienten werden die verschiedenen partiellen Ableitungen einer Funktion $f(x)$ zusammengefasst. Zu einer Funktion $f : \mathbb{R}^n \rightarrow \mathbb{R}$ heißt (falls die partiellen Ableitungen existieren)
 
 \begin{equation*}
 \nabla f(x) := grad \: f(x) := \begin{pmatrix}
@@ -573,6 +564,8 @@ Dabei beschreibt $\alpha_i$ die Schrittweite. Die genaue Wahl dieser Schrittweit
 \begin{equation*}
 x^{(i+1)} = x^{(i)} - \alpha_i \cdot \nabla \: f(x^{(i)}).
 \end{equation*}
+
+Bei der univariaten und multivariaten Regression (siehe maschinelles Lernen: vorhersage von kontinuierlichen Werten \cite{goodfellow_16}) wird das Gradienten Abstiegsverfahren verwendet, um eine Kostenfunktion zu minimieren. Diese Kostenfunktion berechnet die Qualität einer Hypothese (z.B. mittels dem Fehler der kleinsten Quadrate, eng. least-squared-errors). Bei Problemen des Reinforcement Learnings ist die Kostenfunktion definiert durch eine Zielfunktion $\rho(\pi)$ und der Agent versucht eine Policy zu erlernen für die, die Zielfunktion maximal wird. Der Agenten verändert die Policy mittels des Parametervektors $\theta$ unter Verwendung eines Gradienten Anstiegsverfahrens. Vielmehr ist die Kostenfunktion bei RL Problemen eher als Gewinnfunktion oder Belohnungsfunktion zu bezeichnen, da diese maximiert und nicht minimiert werden soll. Wie genau sieht die mit dem Gradienten Anstiegsverfahren zu maximierende Funktion $\rho(\pi)$ aus?
 
 \subsection{Zielfunktion}
 Die Qualität (Performance) einer Policy berechnet die Zielfunktion (eng. objective function oder criterion) $\rho(\pi)$. R. S. Sutton \cite{sutton_99} unterscheidet zwei verschiedene Formulierungen der Zielfunktion $\rho(\pi)$: 
@@ -602,7 +595,7 @@ Q^\pi (s,a) = E \{\sum^\infty_{k=1} \gamma^{k-1} r_{t+k} | s_t = s, a_t = a, \pi
 
 Dabei ist $\gamma \in [0,1]$ ein Abschwächungsfaktor ($\gamma = 1$ ist nur in endlichen abzählbaren Sequenzen einzusetzen). Die stationäre Verteilung der Zustände $d^\pi (s)$ ist bei der Startzustandsformulierung eine abgeschwächte Gewichtung der vorgefundenen Zustände angefangen in Zustand $s_0$ und unter Berücksichtigung der Policy $\pi$: $d^\pi (s) = \sum^\infty_{t=0} \gamma^t Pr \{s_t = s | s_0, \pi\}$.
  
-\section{Policy Gradient}
+\subsection{Policy Gradient}
 
 \begin{equation}
 \Delta \theta \approx \alpha \frac{\partial \rho}{\partial \theta}
@@ -614,7 +607,7 @@ Dabei ist $\gamma \in [0,1]$ ein Abschwächungsfaktor ($\gamma = 1$ ist nur in e
 Q^\pi (s,a)
 \end{equation}
 
-\section{Funktionsapproximation}
+\subsection{Policy Gradient mit Funktionsapproximation}
 -Kombination linearer Eigenschaften
 -Neuronale Netze
 
