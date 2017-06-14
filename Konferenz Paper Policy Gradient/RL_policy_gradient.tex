@@ -519,13 +519,6 @@ In einer realen Umgebung kann es passieren, dass der Agent selbst (z.B. ein einf
 \label{agent_environment}
 \end{figure}
 
-\begin{figure}[!t]
-\centering
-\includegraphics[width=3.5in]{gridworld_example}
-\caption{Optimale Lösungen des Rasterwelt Beispiels nach \cite{sutton_barto_12}.}
-\label{gridworld_example}
-\end{figure}
-
 \subsection{Wertefunktionsapproximation}
 Die nachfolgenden Ausführungen basieren auf den Erläuterungen von D. Silver vgl. \cite{silver_15}: Eine nicht approximierte Wertefunktion ist eine Wertetabelle. In dieser Wertetabelle hat jeder Zustand $s$ einen Eintrag der Form $V(s)$ oder jedes Zustands-Aktionspaar $s, a$ hat einen Eintrag $Q(s,a)$. Für große Markov-Entscheidungsprozesse existieren zu viele Zustände und Aktionen, um diese in der Wertetabelle speichern zu können. Das eigentliche Lernen der Wertefunktion ist zudem sehr langsam, weil für jeden Zustand ein individueller Wert gelernt werden muss. Die Lösung für große MDPs ist daher eine geschätzte (eng. estimated) Wertefunktion. Die Schätzung erfolgt mittels Funktionsapproximation:
 
@@ -535,8 +528,15 @@ $Q_{\theta}(s, a) \approx Q^{\pi}(s, a)$, dabei ist $Q^{\pi}(s, a)$ die wahre Q-
 
 $V_{\theta}(s)$ und $Q_{\theta}(s, a)$ sind Funktionsapproximationen, welche sich an die wahren Wertefunktionen annähern sollen. Die approximierten Funktionen generalisieren von bereits besuchten/bekannten Zuständen auf unbekannte/noch nicht besuchte Zustände. In der Regeln ist die Anzahl der Parameter im Parametervektor $\theta$ viel kleiner als die Anzahl der Zustände des MDPs. Die Annäherung erfolgt durch die Modifikation des Parametervektors $\theta$ (wird auch oft als $w$ bezeichnet). Dieser Parametervektor wird mittels Monte-Carlo oder Temporaler-Differenz gelernt. Im nächsten Abschnitt wird das gerade beschriebene Konzept der Funktionsapproximation auf die Strategiefunktion angewendet.
 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{gridworld_example}
+\caption{Optimale Lösungen des Rasterwelt Beispiels nach \cite{sutton_barto_12}.}
+\label{gridworld_example}
+\end{figure}
+
 \subsection{Strategiefunktionsapproximation}
-Eine Strategie $\pi$ (eng. Policy) definiert das Verhalten des Agenten als Funktion von Zuständen $s$, mit $s \in S$ und $S$ ist der gesamte Zustandsraum des MDPs. Bei allen Wertefunktionsbasierten Methoden wird eine Wertefunktion gelernt und mittels dieser kann implizit eine Strategie erstellt werden (z.B. mit $\epsilon-greedy$ vgl. \cite{silver_15}). Innerhalb dieser Arbeit werden speziell die Methoden erläutert, welche Strategien $\pi_\theta$ (bzw. den Parametervektor $\theta$) direkt lernen (ausgenommen der Actor-Critic-Methode, diese verwendet sowohl Strategie- als auch Wertefunktionen). Eine stochastische approximierte Strategiefunktion wird als $\pi(s,a,\theta) = Pr \{ a_t = a | s_t = s, \theta \}$ geschrieben. Die Strategie ist stochastisch (nicht-deterministisch) d.h. sie beschreibt Wahrscheinlichkeiten für das Auswählen von Aktionen. Eine deterministische (nicht-stochastische) Strategie legt jeweils exakt eine Aktion für einen Zustand fest. Eine weitere Beschreibung der Strategiefunktion wäre $\pi_\theta (s,a) = P[a|s,\theta]$, d.h. $\pi_\theta (s,a)$ gibt die Wahrscheinlichkeitsverteilung über den möglichen Aktionen $a$ im Zustand $s$ an und durch den Parametervektor $\theta$ kann diese Wahrscheinlichkeitsverteilung verändert werden. Das optimieren des Parametervektors $\theta$ der Strategiefunktion $\pi_\theta$ ist Ziel des Policy Gradient Verfahrens und wird im nächsten Abschnitt ausführlich behandelt. 
+Eine Strategie $\pi$ (eng. Policy) definiert das Verhalten des Agenten als Funktion von Zuständen $s$, mit $s \in S$ und $S$ ist der gesamte Zustandsraum des MDPs. Bei allen Wertefunktionsbasierten Methoden wird eine Wertefunktion gelernt und mittels dieser kann implizit eine Strategie erstellt werden (z.B. mit $\epsilon-greedy$ vgl. \cite{silver_15}). Innerhalb dieser Arbeit werden speziell die Methoden erläutert, welche Strategien $\pi_\theta$ (bzw. den Parametervektor $\theta$) direkt lernen (ausgenommen der Actor-Critic-Methode, diese verwendet sowohl Strategie- als auch Wertefunktionen). Eine stochastische approximierte Strategiefunktion wird als $\pi(s,a,\theta) = Pr \{ a_t = a | s_t = s, \theta \}$ geschrieben. $\pi(s,a,\theta)$ wird oft auch als $\pi(s,a)$ geschrieben. Die Strategie ist stochastisch (nicht-deterministisch) d.h. sie beschreibt Wahrscheinlichkeiten für das Auswählen von Aktionen. Eine deterministische (nicht-stochastische) Strategie legt jeweils exakt eine Aktion für einen Zustand fest. Eine weitere Beschreibung der Strategiefunktion wäre $\pi_\theta (s,a) = P[a|s,\theta]$, d.h. $\pi_\theta (s,a)$ gibt die Wahrscheinlichkeitsverteilung über den möglichen Aktionen $a$ im Zustand $s$ an und durch den Parametervektor $\theta$ kann diese Wahrscheinlichkeitsverteilung verändert werden. Das optimieren des Parametervektors $\theta$ der Strategiefunktion $\pi_\theta$ ist Ziel des Policy Gradient Verfahrens und wird im nächsten Abschnitt ausführlich behandelt. 
 
 \section{Policy Gradient Theorem}
 Die nachfolgenden Erläuterungen basieren auf der wissenschaftlichen Arbeit unter anderem von R. S. Sutton \cite{sutton_99}. Der Agent soll eine approximierte optimale Strategie $\pi_\theta (s, a)$ mittels des Policy Gradienten Verfahrens erlernen. Für ein besseres Verständnis des Policy Gradient Verfahrens wird zuerst die allgemeine gradientenbasierte lokale Optimierung erläutert und anschließend wird erklärt was eine Zielfunktion ist und wie diese dargestellt werden kann. Die letzten beiden  Teilabschnitte beschreiben die Anwendung des Gradientenverfahrens auf die Zielfunktion (Policy Gradient) und eine Unterscheidung verschiedener Policy Gradient Methoden.
@@ -545,32 +545,32 @@ Die nachfolgenden Erläuterungen basieren auf der wissenschaftlichen Arbeit unte
 Definition eines Gradienten nach G. Hoever \cite[vgl. S. 213]{hoever_14} und D. Silver \cite{silver_15}: In einem Gradienten werden die verschiedenen partiellen Ableitungen einer Zielfunktion $J(\theta)$ zusammengefasst. Zu einer Zielfunktion $J : \mathbb{R}^n \rightarrow \mathbb{R}$ heißt (falls die partiellen Ableitungen existieren)
 
 \begin{equation*}
-\nabla f(x) := grad \: f(x) := \begin{pmatrix}
-\frac{\partial f}{\partial x_1}(x), \hdots, \frac{\partial f}{\partial x_n}(x)
+\nabla_\theta J(\theta) := grad \: J(\theta) := \begin{pmatrix}
+\frac{\partial J(\theta)}{\partial \theta_1}, \hdots, \frac{\partial J(\theta)}{\partial \theta_n}
 \end{pmatrix}
 \end{equation*}
 
-Gradient von $f$ im Punkt $x$. ($\nabla f$ wird "nabla $f$" gelesen.) Der Gradient einer Funktion weist in die Richtung des Steilsten Anstiegs. Senkrecht zum Gradienten ändert sich der Funktionswert nicht. G.Hoever \cite[vgl. S. 214]{hoever_14} liefert ebenfalls eine Erklärung des Gradientenverfahrens: Sucht man ausgehend von einem Startpunkt $x^{(0)}$ eine Maximalstelle (Gradient Ascent), so geht man ein Stück in die Richtung des Gradienten, also
+Gradient von $J$ im Punkt $\theta$. ($\nabla J$ wird "nabla $J$" gelesen.) Der Gradient einer Funktion weist in die Richtung des Steilsten Anstiegs. Senkrecht zum Gradienten ändert sich der Funktionswert nicht. G.Hoever \cite[vgl. S. 214]{hoever_14} liefert ebenfalls eine Erklärung des Gradientenverfahrens: Sucht man ausgehend von einem Startpunkt $\theta^{(0)}$ eine Maximalstelle (Gradient Ascent), so geht man ein Stück in die Richtung des Gradienten, also
 \begin{equation*}
-x^{(1)} = x^{(0)} + \alpha_0 \cdot \nabla \: f(x^{(0)}),
+\theta^{(1)} = \theta^{(0)} + \alpha_0 \cdot \nabla \: J(\theta^{(0)}),
 \end{equation*}
 \begin{equation*}
-x^{(2)} = x^{(1)} + \alpha_1 \cdot \nabla \: f(x^{(1)}),
+\theta^{(2)} = \theta^{(1)} + \alpha_1 \cdot \nabla \: J(\theta^{(1)}),
 \end{equation*}
 allgemein:
 \begin{equation*}
-x^{(i+1)} = x^{(i)} + \alpha_i \cdot \nabla \: f(x^{(i)}).
+\theta^{(i+1)} = \theta^{(i)} + \alpha_i \cdot \nabla \: J(\theta^{(i)}).
 \end{equation*}
 
-Dabei beschreibt $\alpha_i$ die Schrittweite. Die genaue Wahl dieser Schrittweite ist oft nicht ganz einfach, wird an dieser Stelle jedoch nicht näher erläutert. Sucht man eine Minimalstelle (Gradient Descent), so setzt man entsprechend 
+Dabei beschreibt $\alpha_i$ die Schrittweite (auch Lernrate genant). Sucht man eine Minimalstelle (Gradient Descent), so setzt man entsprechend 
 
 \begin{equation*}
-x^{(i+1)} = x^{(i)} - \alpha_i \cdot \nabla \: f(x^{(i)}).
+\theta^{(i+1)} = \theta^{(i)} - \alpha_i \cdot \nabla \: J(\theta^{(i)}).
 \end{equation*}
 
-Bei der univariaten und multivariaten Regression (siehe maschinelles Lernen: vorhersage von kontinuierlichen Werten \cite{goodfellow_16}) wird das Gradienten Abstiegsverfahren verwendet, um eine Kostenfunktion zu minimieren. Diese Kostenfunktion berechnet die Qualität einer Hypothese (z.B. mittels dem Fehler der kleinsten Quadrate, eng. least-squared-errors). Bei Problemen des Reinforcement Learnings ist die Kostenfunktion definiert durch eine Zielfunktion $\rho(\pi)$ und der Agent versucht eine Strategie zu erlernen für die, die Zielfunktion maximal wird. Der Agenten verändert die Strategie mittels des Parametervektors $\theta$ unter Verwendung eines Gradienten Anstiegsverfahrens. Vielmehr ist die Kostenfunktion bei RL Problemen eher als Gewinnfunktion oder Belohnungsfunktion zu bezeichnen, da diese maximiert und nicht minimiert werden soll. Wie genau sieht die mit dem Gradienten Anstiegsverfahren zu maximierende Funktion $\rho(\pi)$ aus?
+Bei der univariaten und multivariaten Regression (siehe maschinelles Lernen: vorhersage von kontinuierlichen Werten \cite{goodfellow_16}) wird das Gradienten Abstiegsverfahren verwendet, um eine Kostenfunktion $J(h_\theta)$ zu minimieren. Diese Kostenfunktion $J$ berechnet die Qualität einer Hypothese $h_\theta$ (z.B. mittels dem Fehler der kleinsten Quadrate, eng. least-squared-errors). Eine Kostenfunktion $J$ ist demnach eine Funktion der Hypothesen $h_\theta$. Bei Problemen des Reinforcement Learnings ist es ganz ähnlich. Die Kostenfunktion der Hypothesen $J(h_\theta)$ ist, bei RL Problemen, als eine Gewinnfunktion $\rho(\pi_\theta)$ der erwarteten akkumulierten Belohnungen zu verstehen, d.h. $\rho(\pi_\theta)$ ist eine Funktion der Strategien und $\pi_\theta$ bezeichnet die verschiedenen Strategien. Die Strategien sind sozusagen die Hypothesen. Die Gewinnfunktion $\rho(\pi_\theta)$ ist die Zielfunktion des Agenten und der Agent versucht eine Strategie zu erlernen für die, die Zielfunktion maximal wird. Der Agenten verändert die Strategie mittels des Parametervektors $\theta$ unter Verwendung eines Gradienten Anstiegsverfahrens. Wie genau sieht die mit dem Gradienten Anstiegsverfahren zu maximierende Funktion $\rho(\pi)$ aus?
 
-\subsection{Zielfunktion}
+\subsection{Strategiezielfunktion}
 Die Qualität (Performance) einer Policy berechnet die Zielfunktion (eng. objective function oder criterion) $\rho(\pi)$. R. S. Sutton \cite{sutton_99} unterscheidet zwei verschiedene Formulierungen der Zielfunktion $\rho(\pi)$: 
 
 \begin{equation*}
@@ -599,9 +599,21 @@ Q^\pi (s,a) = E \{\sum^\infty_{k=1} \gamma^{k-1} r_{t+k} | s_t = s, a_t = a, \pi
 Dabei ist $\gamma \in [0,1]$ ein Abschwächungsfaktor ($\gamma = 1$ ist nur in endlichen abzählbaren Sequenzen einzusetzen). Die stationäre Verteilung der Zustände $d^\pi (s)$ ist bei der Startzustandsformulierung eine abgeschwächte Gewichtung der vorgefundenen Zustände angefangen in Zustand $s_0$ und unter Berücksichtigung der Policy $\pi$: $d^\pi (s) = \sum^\infty_{t=0} \gamma^t Pr \{s_t = s | s_0, \pi\}$.
  
 \subsection{Policy Gradient}
+Das Policy Gradient Verfahren nach unter anderem Sutton \cite{sutton_99} und D. Silver \cite{silver_15} funktioniert wie folgt:
+Sei $\rho(\theta)$ eine beliebige Strategiezielfunktion. Policy Gradient Algorithmen suchen ein lokales Maximum der Strategiefunktion $\rho(\theta)$, mittels des ansteigenden Gradienten der Strategie, bezüglich der Parameter $\theta$:   
+\begin{equation*}
+\Delta \theta \approx \alpha \frac{\partial \rho}{\partial \theta} \approx \alpha \nabla_\theta \rho(\theta).
+\end{equation*}
+
+Der Gradient der Strategiezielfunktion $\rho(\theta)$ ist der Vektor der partiellen Ableitungen:
 
 \begin{equation}
-\Delta \theta \approx \alpha \frac{\partial \rho}{\partial \theta}
+\nabla_\theta \rho(\theta) = \frac{\partial \rho}{\partial \theta} =
+\begin{pmatrix}
+\frac{\partial \rho(\theta)}{\partial \theta_1} \\ 
+\vdots \\
+\frac{\partial \rho(\theta)}{\partial \theta_n}
+\end{pmatrix}.
 \end{equation}
 
 \begin{equation}
@@ -609,8 +621,6 @@ Dabei ist $\gamma \in [0,1]$ ein Abschwächungsfaktor ($\gamma = 1$ ist nur in e
 \sum_s d^\pi (s) \sum_a \frac{\partial \pi (s,a)}{\partial \theta} 
 Q^\pi (s,a)
 \end{equation}
-
-\section{Policy Gradient Methoden}
 
 \subsection{Finite Difference Policy Gradient}
 
