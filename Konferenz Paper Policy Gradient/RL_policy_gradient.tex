@@ -568,6 +568,13 @@ Dabei beschreibt $\alpha_i$ die Schrittweite (auch Lernrate genant). Sucht man e
 \theta^{(i+1)} = \theta^{(i)} - \alpha_i \cdot \nabla \: J(\theta^{(i)}).
 \end{equation*}
 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{gradient_descent}
+\caption{Plot der Funktion $J(\theta_0, \theta_1)$ nach Andrew Ng \cite{andrew_ng_17}.}
+\label{gradient_descent}
+\end{figure}
+
 Bei der univariaten und multivariaten Regression (siehe maschinelles Lernen: vorhersage von kontinuierlichen Werten \cite{goodfellow_16}) wird das Gradienten Abstiegsverfahren verwendet, um eine Kostenfunktion $J(h_\theta)$ zu minimieren. Diese Kostenfunktion $J$ berechnet die Qualität einer Hypothese $h_\theta$ (z.B. mittels dem Fehler der kleinsten Quadrate, eng. least-squared-errors). Eine Kostenfunktion $J$ ist demnach eine Funktion der Hypothesen $h_\theta$. Bei Problemen des Reinforcement Learnings ist es ganz ähnlich. Die Kostenfunktion der Hypothesen $J(h_\theta)$ ist, bei RL Problemen, als eine Gewinnfunktion $\rho(\pi_\theta)$ der erwarteten akkumulierten Belohnungen zu verstehen, d.h. $\rho(\pi_\theta)$ ist eine Funktion der Strategien und $\pi_\theta$ bezeichnet die verschiedenen Strategien. Die Strategien sind sozusagen die Hypothesen. Die Gewinnfunktion $\rho(\pi_\theta)$ ist die Zielfunktion des Agenten und der Agent versucht eine Strategie zu erlernen für die, die Zielfunktion maximal wird. Der Agenten verändert die Strategie mittels des Parametervektors $\theta$ unter Verwendung eines Gradienten Anstiegsverfahrens. Wie genau sieht die mit dem Gradienten Anstiegsverfahren zu maximierende Funktion $\rho(\pi)$ aus?
 
 \subsection{Strategiezielfunktion}
@@ -616,15 +623,12 @@ Der Gradient der Strategiezielfunktion $\rho(\theta)$ ist der Vektor der partiel
 \end{pmatrix}.
 \end{equation}
 
+\subsection{Monte-Carlo Policy Gradient (REINFORCE)}
 \begin{equation}
 \frac{\partial \rho}{\partial \theta} = 
 \sum_s d^\pi (s) \sum_a \frac{\partial \pi (s,a)}{\partial \theta} 
 Q^\pi (s,a)
 \end{equation}
-
-\subsection{Finite Difference Policy Gradient}
-
-\subsection{Monte-Carlo Policy Gradient (REINFORCE)}
 
 \subsection{Actor-Critic Policy Gradient}
 
@@ -674,10 +678,13 @@ R.~S. Sutton and D.~ McAllester and S.~Singh and Y.~Mansour,
 \emph{Policy Gradient Methods for Reinforcement Learning with Function Approximation}, 180 Park Avenue, Florham Park, NY 07932: AT\&T Labs, 1999.
 
 \bibitem{hoever_14}
-G.~ Hoever, \emph{Höhere Mathematik kompakt}, 2. Auflage, Springer Spektrum, 2014
+G.~ Hoever, \emph{Höhere Mathematik kompakt}, 2. Auflage, Springer Spektrum, 2014.
 
 \bibitem{silver_15}
-D.~ Silver, \emph{Online Course Reinforcement Learning}, http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html, London, England: Googel Deep Mind, 2015
+D.~ Silver, \emph{Online Course Reinforcement Learning}, http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html, London, England: Googel Deep Mind, 2015.
+
+\bibitem{andrew_ng_17}
+A.~ Ng, \emph{01 and 02: Introduction, Regression Analysis and Gradient Descent}, http://www.holehouse.org/mlclass, Stanford University Lectures, 2017.
 
 \bibitem{goodfellow_16}
 I.~Goodfellow and Y.~Bengio and A.~Courville,
