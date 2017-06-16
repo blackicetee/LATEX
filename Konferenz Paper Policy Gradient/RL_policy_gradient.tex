@@ -497,13 +497,6 @@ Die numerische Belohnung ist eine Bewertung der Aktion des Agenten. Der Agent ve
 
 In einer realen Umgebung kann es passieren, dass der Agent selbst (z.B. ein einfacher Laufroboter oder ein Hubschrauber) eine Signalstörung empfängt oder eine Fehlfunktion seiner mechanischen Steuereinheiten hat. Die Umgebungsgegebenheiten können sich ebenfalls verschieben oder verändern (z.B. wechselnde Windrichtungen, Windstärken-Schwankungen, andere autonom agierende Agenten). Man bezeichnet diese Möglichkeiten als die Dynamiken der Umgebung. Abgebildet werden diese Dynamiken mittels Wahrscheinlichkeiten. Die Zustandsübergangswahrscheinlichkeit das ein Agent in Zustand $s_t$ mit der Aktion $a_t$ in den Zustand $s'_t$ übergeht ist definiert durch die Wahrscheinlichkeit $P^a_{ss'} = Pr \{ s_{t+1} = s' | s_t = s, a_t = a \}.$ Die Umgebungsdynamik beeinflusst auch die Policy $\pi$ und die Belohnungsfunktion $R^a_s$.
 
-\begin{figure}[!t]
-\centering
-\includegraphics[width=2.5in]{agent_environment}
-\caption{Die Interaktion zwischen Agent und Umgebung nach \cite{sutton_barto_12}.}
-\label{agent_environment}
-\end{figure}
-
 \subsection{Wertefunktionsapproximation}
 Die nachfolgenden Ausführungen basieren auf den Erläuterungen von D. Silver vgl. \cite{silver_15}: Eine nicht approximierte Wertefunktion ist eine Wertetabelle. In dieser Wertetabelle hat jeder Zustand $s$ einen Eintrag der Form $V(s)$ oder jedes Zustands-Aktionspaar $s, a$ hat einen Eintrag $Q(s,a)$. Für große Markov-Entscheidungsprozesse existieren zu viele Zustände und Aktionen, um diese in der Wertetabelle speichern zu können. Das eigentliche Lernen der Wertefunktion ist zudem sehr langsam, weil für jeden Zustand ein individueller Wert gelernt werden muss. Die Lösung für große MDPs ist daher eine geschätzte (eng. estimated) Wertefunktion. Die Schätzung erfolgt mittels Funktionsapproximation:
 
@@ -524,7 +517,7 @@ $V_{\theta}(s)$ und $Q_{\theta}(s, a)$ sind Funktionsapproximationen, welche sic
 Eine Strategie $\pi$ (eng. Policy) definiert das Verhalten des Agenten als Funktion von Zuständen $s$, mit $s \in S$ und $S$ ist der gesamte Zustandsraum des MDPs. Bei allen Wertefunktionsbasierten Methoden wird eine Wertefunktion gelernt und mittels dieser kann implizit eine Strategie erstellt werden (z.B. mit $\epsilon-greedy$ vgl. \cite{silver_15}). Innerhalb dieser Arbeit werden speziell die Methoden erläutert, welche Strategien $\pi_\theta$ (bzw. den Parametervektor $\theta$) direkt lernen (ausgenommen der Actor-Critic-Methode, diese verwendet sowohl Strategie- als auch Wertefunktionen). Eine stochastische approximierte Strategiefunktion wird als $\pi(s,a,\theta) = Pr \{ a_t = a | s_t = s, \theta \}$ geschrieben. $\pi(s,a,\theta)$ wird oft auch als $\pi(s,a)$ geschrieben. Die Strategie ist stochastisch (nicht-deterministisch) d.h. sie beschreibt Wahrscheinlichkeiten für das Auswählen von Aktionen. Eine deterministische (nicht-stochastische) Strategie legt jeweils exakt eine Aktion für einen Zustand fest. Eine weitere Beschreibung der Strategiefunktion wäre $\pi_\theta (s,a) = P[a|s,\theta]$, d.h. $\pi_\theta (s,a)$ gibt die Wahrscheinlichkeitsverteilung über den möglichen Aktionen $a$ im Zustand $s$ an und durch den Parametervektor $\theta$ kann diese Wahrscheinlichkeitsverteilung verändert werden. Das optimieren des Parametervektors $\theta$ der Strategiefunktion $\pi_\theta$ ist Ziel des Policy Gradient Verfahrens und wird im nächsten Abschnitt ausführlich behandelt. 
 
 \section{Policy Gradient}
-Die nachfolgenden Erläuterungen basieren auf der wissenschaftlichen Arbeit unter anderem von R. S. Sutton \cite{sutton_99}. Der Agent soll eine approximierte optimale Strategie $\pi_\theta (s, a)$ mittels des Policy Gradienten Verfahrens erlernen. Für ein besseres Verständnis des Policy Gradient Verfahrens wird zuerst die allgemeine gradientenbasierte lokale Optimierung erläutert und anschließend wird erklärt was eine Zielfunktion ist und wie diese dargestellt werden kann. Die letzten drei  Teilabschnitte beschreiben die Anwendung des Gradientenverfahrens auf die Zielfunktion und eine Unterscheidung verschiedener Policy Gradient Methoden.
+Die nachfolgenden Erläuterungen basieren auf der wissenschaftlichen Arbeit unter anderem von R. S. Sutton \cite{sutton_99}. Der Agent soll eine approximierte optimale Strategie $\pi_\theta (s, a)$ mittels des Policy Gradienten Verfahrens erlernen. Für ein besseres Verständnis des Policy Gradient Verfahrens wird zuerst die allgemeine gradientenbasierte lokale Optimierung erläutert und anschließend wird erklärt was eine Zielfunktion ist und wie diese dargestellt werden kann. Die letzten beiden Teilabschnitte beschreiben die Anwendung des Gradientenverfahrens auf die Zielfunktion und eine Unterscheidung verschiedener Policy Gradient Methoden.
 
 \subsection{Gradientenbasierte lokale Optimierung}
 Definition eines Gradienten nach G. Hoever \cite[vgl. S. 213]{hoever_14} und D. Silver \cite{silver_15}: In einem Gradienten werden die verschiedenen partiellen Ableitungen einer Zielfunktion $J(\theta)$ zusammengefasst. Zu einer Zielfunktion $J : \mathbb{R}^n \rightarrow \mathbb{R}$ heißt (falls die partiellen Ableitungen existieren)
@@ -553,14 +546,16 @@ Dabei beschreibt $\alpha_i$ die Schrittweite (auch Lernrate genant). Sucht man e
 \theta^{(i+1)} = \theta^{(i)} - \alpha_i \cdot \nabla \: J(\theta^{(i)}).
 \end{equation*}
 
+Angewendet wird dieses Verfahren u.a. bei der univariaten und multivariaten Regression (siehe maschinelles Lernen: vorhersage von kontinuierlichen Werten \cite{goodfellow_16}). Die Kostenfunktion $J$ berechnet die Qualität einer Hypothese $h_\theta$ (z.B. mittels dem Fehler der kleinsten Quadrate, eng. least-squared-errors). Eine Kostenfunktion $J$ ist demnach eine Funktion der Hypothesen $h_\theta$. Eine gute Veranschaulichung des Verfahrens liefert Andrew Ng: In Abbildung \ref{fig:gradient_descent} ist ein dreidimensionaler Funktionsplot abgebildet. Die Z-Achse beschreibt den Funktionswert von $J(\theta_0, \theta_1)$. $J$ ist eine Kostenfunktion von zwei Parametern $\theta$ und berechnet einen Kostenwert für verschiedene Werte dieser Parameter. Parameter $\theta_0$ bezeichnet die X-Achse und Parameter $\theta_1$ die Y-Achse. Die dunkelroten Stellen markieren Funktionsmaxima von $J$ und die dunkelblauen Stellen markieren Funktionsminima. Das Gradienten Abstiegsverfahren findet für die Kostenfunktion $J$ ein lokales Minimum (die lokal geringsten Kosten), jedoch kann das Verfahren für unterschiedliche Startpositionen unterschiedliche Minima finden. 
+
+Bei Problemen des Reinforcement Learnings ist es ganz ähnlich. Die Kostenfunktion der Hypothesen $J(h_\theta)$ ist, bei RL Problemen, als eine Gewinnfunktion $\rho(\pi_\theta)$ der erwarteten akkumulierten Belohnungen zu verstehen, d.h. $\rho(\pi_\theta)$ ist eine Funktion der Strategien und $\pi_\theta$ bezeichnet die verschiedenen Strategien. Die Strategien sind sozusagen die Hypothesen. Die Gewinnfunktion $\rho(\pi_\theta)$ ist die Zielfunktion des Agenten und der Agent versucht eine Strategie zu erlernen für die, die Zielfunktion maximal wird. Der Agenten verändert die Strategie mittels des Parametervektors $\theta$ unter Verwendung eines Gradienten Anstiegsverfahrens. Wie genau sieht die mit dem Gradienten Anstiegsverfahren zu maximierende Funktion $\rho(\pi)$ aus?
+
 \begin{figure}[!t]
 \centering
 \includegraphics[width=3.5in]{gradient_descent}
-\caption{Plot der Funktion $J(\theta_0, \theta_1)$ nach Andrew Ng \cite{andrew_ng_17}.}
-\label{gradient_descent}
+\caption{Gradienten Abstiegsverfahren nach Andrew Ng \cite{andrew_ng_17}.}
+\label{fig:gradient_descent}
 \end{figure}
-
-Bei der univariaten und multivariaten Regression (siehe maschinelles Lernen: vorhersage von kontinuierlichen Werten \cite{goodfellow_16}) wird das Gradienten Abstiegsverfahren verwendet, um eine Kostenfunktion $J(h_\theta)$ zu minimieren. Diese Kostenfunktion $J$ berechnet die Qualität einer Hypothese $h_\theta$ (z.B. mittels dem Fehler der kleinsten Quadrate, eng. least-squared-errors). Eine Kostenfunktion $J$ ist demnach eine Funktion der Hypothesen $h_\theta$. Bei Problemen des Reinforcement Learnings ist es ganz ähnlich. Die Kostenfunktion der Hypothesen $J(h_\theta)$ ist, bei RL Problemen, als eine Gewinnfunktion $\rho(\pi_\theta)$ der erwarteten akkumulierten Belohnungen zu verstehen, d.h. $\rho(\pi_\theta)$ ist eine Funktion der Strategien und $\pi_\theta$ bezeichnet die verschiedenen Strategien. Die Strategien sind sozusagen die Hypothesen. Die Gewinnfunktion $\rho(\pi_\theta)$ ist die Zielfunktion des Agenten und der Agent versucht eine Strategie zu erlernen für die, die Zielfunktion maximal wird. Der Agenten verändert die Strategie mittels des Parametervektors $\theta$ unter Verwendung eines Gradienten Anstiegsverfahrens. Wie genau sieht die mit dem Gradienten Anstiegsverfahren zu maximierende Funktion $\rho(\pi)$ aus?
 
 \subsection{Zielfunktionen}
 Die Qualität (Performance) einer Policy berechnet die Zielfunktion (eng. objective function oder criterion) $\rho(\pi)$. R. S. Sutton \cite{sutton_99} unterscheidet zwei verschiedene Formulierungen der Zielfunktion $\rho(\pi)$: 
@@ -637,16 +632,10 @@ d.h. die Parameter der Strategiefunktion werden in die Richtung des Gradienten a
 \paragraph*{Einschritt MDP} ist keine Entscheidungssequenz, sondern ein einziger Zeitschritt in einem MDP. Starte in einem Zustand $s \sim d(s)$, wähle eine Aktion $a$ entsprechend der Strategiefunktion $\pi_\theta(s,a)$ und erhalte eine Belohnung definiert durch die Funktion $R^a_s$:
 
 \begin{equation*}
-\rho_{avR}(\theta) = \sum_s d^\pi(s) \sum_a \pi(s,a) R^a_s
+J(\theta) = \mathbb{E}[R_{s,a}] = \sum_{s \in S} d(s) \sum_{a \in A} \pi_\theta(s,a) R_{s,a}.
 \end{equation*}
 
-D. Silver schreibt die Zielfunktion etwas anders:
-
-\begin{equation*}
-J(\theta) = \mathbb{E}[R_{s,a}] = \sum_{s \in S} d(s) \sum_{a \in A} \pi_\theta(s,a) R_{s,a}
-\end{equation*}
-
-Der Gradient dieser Zielfunktion ist entsprechend:
+Die Schreibweise $J(\theta)$ der Zielfunktion $\rho_{avR}(\theta)$ ist von D. Silver \cite{silver_15}, daher $J(\theta) \sim \rho_{avR}(\pi)$. Der Gradient dieser Zielfunktion ist entsprechend:
 
 \begin{equation*}
 \begin{aligned}
@@ -663,8 +652,7 @@ d.h. einzig die Policy $\pi_\theta(s,a)$ ist abhängig von $\theta$, darum muss 
 \nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a) Q^{\pi_\theta}(s,a)],
 \end{equation*}
 
-Das Policy Gradient Theorem verallgemeinert das Einschritt MDP auf eine Sequenz von Zeitschritten (Mehrfachschritt MDP). Das Theorem ist auf die Startzustandszielfunktion und auf die durchschnittliche Langzeitbelohnung Zielfunktion anwendbar. 
-\subsection{Actor-Critic Policy Gradient}
+Das Policy Gradient Theorem verallgemeinert das Einschritt MDP auf eine Sequenz von Zeitschritten (Mehrfachschritt MDP). Das Theorem ist auf die Startzustandszielfunktion und auf die durchschnittliche Langzeitbelohnung Zielfunktion anwendbar. Ein Nachteil dieses Verfahrens ist die relativ hohe Varianz. Das Actor-Critic Policy Gradient Verfahren (detaillierte Informationen von u.a. R. S. Sutton \cite{sutton_barto_12} und D. Silver \cite{silver_15}) verwendet eine Strategiefunktionen und eine Wertefunktionen für das lernen/aktualisieren der Parametervektoren und verringert somit die Varianz. Das Actor-Critic Verfahren ist sehr fortgeschritten und wird oft in der Praxis eingesetzt. Auf eine genaue Erläuterung dieses Verfahrens muss auf Grund des begrenzten Umfangs dieser Arbeit verzichtet werden.
 
 
 % use section* for acknowledgment

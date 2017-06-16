@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  16 JUN 2017 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  16 JUN 2017 14:11
 entering extended mode
 **./RL_policy_gradient.tex
 (RL_policy_gradient.tex
@@ -614,93 +614,81 @@ Underfull \hbox (badness 3679) in paragraph at lines 494--495
 
 
 ]
-<./Abbildungen/agent_environment.pdf, id=16, 125.46875pt x 48.18pt>
-File: ./Abbildungen/agent_environment.pdf Graphic file (type pdf)
-
-<use ./Abbildungen/agent_environment.pdf>
-Package pdftex.def Info: ./Abbildungen/agent_environment.pdf used on input line
- 502.
-(pdftex.def)             Requested size: 180.67499pt x 69.38719pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
 []\OT1/ptm/m/n/10 Die nach-fol-gen-den Ausf[]uhrungen basieren auf den
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 508--509
+Underfull \hbox (badness 1540) in paragraph at lines 501--502
 \OT1/ptm/m/n/10 gel-ernt wer-den muss. Die L[]osung f[]ur groe MDPs ist
  []
 
-<./Abbildungen/gridworld_example.pdf, id=17, 122.4575pt x 47.17625pt>
+<./Abbildungen/gridworld_example.pdf, id=16, 122.4575pt x 47.17625pt>
 File: ./Abbildungen/gridworld_example.pdf Graphic file (type pdf)
 
 <use ./Abbildungen/gridworld_example.pdf>
 Package pdftex.def Info: ./Abbildungen/gridworld_example.pdf used on input line
- 518.
+ 511.
 (pdftex.def)             Requested size: 252.94499pt x 97.44902pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 518--519
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 511--512
  [][] 
  []
 
-[2 <./Abbildungen/agent_environment.pdf> <./Abbildungen/gridworld_example.pdf
-
-pdfTeX warning: pdflatex (file ./Abbildungen/gridworld_example.pdf): PDF inclus
-ion: multiple pdfs with page group included in a single page
->] <./Abbildungen/gradient_descent.pdf, id=32, 421.575pt x 221.82875pt>
+[2 <./Abbildungen/gridworld_example.pdf>]
+<./Abbildungen/gradient_descent.pdf, id=28, 421.575pt x 221.82875pt>
 File: ./Abbildungen/gradient_descent.pdf Graphic file (type pdf)
 
 <use ./Abbildungen/gradient_descent.pdf>
 Package pdftex.def Info: ./Abbildungen/gradient_descent.pdf used on input line 
-558.
+555.
 (pdftex.def)             Requested size: 252.94499pt x 133.09825pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 558--559
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 555--556
  [][] 
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 575--576
+Underfull \hbox (badness 1442) in paragraph at lines 570--571
 \OML/cmm/m/it/10 $\OT1/ptm/m/n/10 ). Berech-net wird die durch-schnit-tliche B
 e-loh-nung pro
  []
 
 [3 <./Abbildungen/gradient_descent.pdf>]
-Underfull \hbox (badness 1394) in paragraph at lines 614--615
+Underfull \hbox (badness 1394) in paragraph at lines 609--610
  \OT1/ptm/m/it/10 Soft-max Pol-icy: [] \OT1/ptm/m/n/10 ist eine al-ter-na-tive 
 Darstel-lung der
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 628--629
+Underfull \hbox (badness 1783) in paragraph at lines 623--624
 \OT1/ptm/m/n/10 Rich-tung des Gra-di-en-ten angepasst, wenn das Merk-mal
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 628--629
+Underfull \hbox (badness 3514) in paragraph at lines 623--624
 \OT1/ptm/m/n/10 der tats[]achlich aus-gew[]ahlten Ak-tion, im Gegen-satz zu
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 628--629
+Underfull \hbox (badness 2600) in paragraph at lines 623--624
 \OT1/ptm/m/n/10 erh[]alt. All-ge-mein ist der Gra-di-ent von $\OML/cmm/m/it/10 
 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s; a\OT1/cmr/m/n/10 )$ \OT1/ptm/m/n/10 gle
 -ich
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 706--707
 []\OT1/ptm/m/n/8 D.  Sil-ver, \OT1/ptm/m/it/8 On-line Course Re-in-force-ment L
 earn-ing\OT1/ptm/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 706--707
 \OT1/ptm/m/n/8 http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html, Lon-d
 on,
  []
 
-[4]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -716,30 +704,28 @@ Before submitting the final camera ready copy, remember to:
 
 ] (RL_policy_gradient.aux) ) 
 Here is how much of TeX's memory you used:
- 3541 strings out of 493333
- 50156 string characters out of 3145253
- 123178 words of memory out of 3000000
- 7014 multiletter control sequences out of 15000+200000
- 40049 words of font info for 84 fonts, out of 3000000 for 9000
+ 3516 strings out of 493333
+ 49774 string characters out of 3145253
+ 123170 words of memory out of 3000000
+ 6997 multiletter control sequences out of 15000+200000
+ 36949 words of font info for 72 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  40i,8n,26p,2510b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/dev/MikTex/fonts/enc/dvips/base/8r.enc}<E:/dev/
 MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/dev/MikTex/fonts/type1/pub
 lic/amsfonts/cm/cmmi10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi5.
 pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/dev/MikTex/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr5.pfb><E:/dev/Mi
-kTex/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/dev/MikTex/fonts/type1/public/
-amsfonts/cm/cmr7.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:
-/dev/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/dev/MikTex/fonts/type
-1/public/amsfonts/cm/cmsy5.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cm
-sy7.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/symbols/msbm10.pfb><E:/dev/M
-ikTex/fonts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utm
-bi8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev/MikTex/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on RL_policy_gradient.pdf (5 pages, 1485883 bytes).
+s/type1/public/amsfonts/cm/cmr10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts
+/cm/cmr5.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/dev/Mik
+Tex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/dev/MikTex/fonts/type1/public
+/amsfonts/cm/cmsy5.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+<E:/dev/MikTex/fonts/type1/public/amsfonts/symbols/msbm10.pfb><E:/dev/MikTex/fo
+nts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmbi8a.pfb
+><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev/MikTex/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on RL_policy_gradient.pdf (5 pages, 831995 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
+ 88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
