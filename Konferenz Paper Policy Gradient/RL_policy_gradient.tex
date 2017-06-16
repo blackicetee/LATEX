@@ -390,21 +390,6 @@ The abstract goes here.
 % creates the second title. It will be ignored for other modes.
 \IEEEpeerreviewmaketitle
 
-
-
-\section{Einführung}
-% no \IEEEPARstart
-This demo file is intended to serve as a ``starter file''
-for IEEE conference papers produced under \LaTeX\ using
-IEEEtran.cls version 1.8b and later.
-% You must have at least 2 lines in the paragraph with the drop letter
-% (should never be an issue)
-I wish you the best of success.
-
-\hfill mds
- 
-\hfill August 26, 2015
-
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
@@ -538,8 +523,8 @@ $V_{\theta}(s)$ und $Q_{\theta}(s, a)$ sind Funktionsapproximationen, welche sic
 \subsection{Strategiefunktionsapproximation}
 Eine Strategie $\pi$ (eng. Policy) definiert das Verhalten des Agenten als Funktion von Zuständen $s$, mit $s \in S$ und $S$ ist der gesamte Zustandsraum des MDPs. Bei allen Wertefunktionsbasierten Methoden wird eine Wertefunktion gelernt und mittels dieser kann implizit eine Strategie erstellt werden (z.B. mit $\epsilon-greedy$ vgl. \cite{silver_15}). Innerhalb dieser Arbeit werden speziell die Methoden erläutert, welche Strategien $\pi_\theta$ (bzw. den Parametervektor $\theta$) direkt lernen (ausgenommen der Actor-Critic-Methode, diese verwendet sowohl Strategie- als auch Wertefunktionen). Eine stochastische approximierte Strategiefunktion wird als $\pi(s,a,\theta) = Pr \{ a_t = a | s_t = s, \theta \}$ geschrieben. $\pi(s,a,\theta)$ wird oft auch als $\pi(s,a)$ geschrieben. Die Strategie ist stochastisch (nicht-deterministisch) d.h. sie beschreibt Wahrscheinlichkeiten für das Auswählen von Aktionen. Eine deterministische (nicht-stochastische) Strategie legt jeweils exakt eine Aktion für einen Zustand fest. Eine weitere Beschreibung der Strategiefunktion wäre $\pi_\theta (s,a) = P[a|s,\theta]$, d.h. $\pi_\theta (s,a)$ gibt die Wahrscheinlichkeitsverteilung über den möglichen Aktionen $a$ im Zustand $s$ an und durch den Parametervektor $\theta$ kann diese Wahrscheinlichkeitsverteilung verändert werden. Das optimieren des Parametervektors $\theta$ der Strategiefunktion $\pi_\theta$ ist Ziel des Policy Gradient Verfahrens und wird im nächsten Abschnitt ausführlich behandelt. 
 
-\section{Policy Gradient Theorem}
-Die nachfolgenden Erläuterungen basieren auf der wissenschaftlichen Arbeit unter anderem von R. S. Sutton \cite{sutton_99}. Der Agent soll eine approximierte optimale Strategie $\pi_\theta (s, a)$ mittels des Policy Gradienten Verfahrens erlernen. Für ein besseres Verständnis des Policy Gradient Verfahrens wird zuerst die allgemeine gradientenbasierte lokale Optimierung erläutert und anschließend wird erklärt was eine Zielfunktion ist und wie diese dargestellt werden kann. Die letzten beiden  Teilabschnitte beschreiben die Anwendung des Gradientenverfahrens auf die Zielfunktion (Policy Gradient) und eine Unterscheidung verschiedener Policy Gradient Methoden.
+\section{Policy Gradient}
+Die nachfolgenden Erläuterungen basieren auf der wissenschaftlichen Arbeit unter anderem von R. S. Sutton \cite{sutton_99}. Der Agent soll eine approximierte optimale Strategie $\pi_\theta (s, a)$ mittels des Policy Gradienten Verfahrens erlernen. Für ein besseres Verständnis des Policy Gradient Verfahrens wird zuerst die allgemeine gradientenbasierte lokale Optimierung erläutert und anschließend wird erklärt was eine Zielfunktion ist und wie diese dargestellt werden kann. Die letzten drei  Teilabschnitte beschreiben die Anwendung des Gradientenverfahrens auf die Zielfunktion und eine Unterscheidung verschiedener Policy Gradient Methoden.
 
 \subsection{Gradientenbasierte lokale Optimierung}
 Definition eines Gradienten nach G. Hoever \cite[vgl. S. 213]{hoever_14} und D. Silver \cite{silver_15}: In einem Gradienten werden die verschiedenen partiellen Ableitungen einer Zielfunktion $J(\theta)$ zusammengefasst. Zu einer Zielfunktion $J : \mathbb{R}^n \rightarrow \mathbb{R}$ heißt (falls die partiellen Ableitungen existieren)
@@ -577,7 +562,7 @@ Dabei beschreibt $\alpha_i$ die Schrittweite (auch Lernrate genant). Sucht man e
 
 Bei der univariaten und multivariaten Regression (siehe maschinelles Lernen: vorhersage von kontinuierlichen Werten \cite{goodfellow_16}) wird das Gradienten Abstiegsverfahren verwendet, um eine Kostenfunktion $J(h_\theta)$ zu minimieren. Diese Kostenfunktion $J$ berechnet die Qualität einer Hypothese $h_\theta$ (z.B. mittels dem Fehler der kleinsten Quadrate, eng. least-squared-errors). Eine Kostenfunktion $J$ ist demnach eine Funktion der Hypothesen $h_\theta$. Bei Problemen des Reinforcement Learnings ist es ganz ähnlich. Die Kostenfunktion der Hypothesen $J(h_\theta)$ ist, bei RL Problemen, als eine Gewinnfunktion $\rho(\pi_\theta)$ der erwarteten akkumulierten Belohnungen zu verstehen, d.h. $\rho(\pi_\theta)$ ist eine Funktion der Strategien und $\pi_\theta$ bezeichnet die verschiedenen Strategien. Die Strategien sind sozusagen die Hypothesen. Die Gewinnfunktion $\rho(\pi_\theta)$ ist die Zielfunktion des Agenten und der Agent versucht eine Strategie zu erlernen für die, die Zielfunktion maximal wird. Der Agenten verändert die Strategie mittels des Parametervektors $\theta$ unter Verwendung eines Gradienten Anstiegsverfahrens. Wie genau sieht die mit dem Gradienten Anstiegsverfahren zu maximierende Funktion $\rho(\pi)$ aus?
 
-\subsection{Strategiezielfunktion}
+\subsection{Zielfunktionen}
 Die Qualität (Performance) einer Policy berechnet die Zielfunktion (eng. objective function oder criterion) $\rho(\pi)$. R. S. Sutton \cite{sutton_99} unterscheidet zwei verschiedene Formulierungen der Zielfunktion $\rho(\pi)$: 
 
 \begin{equation*}
@@ -605,8 +590,8 @@ Q^\pi (s,a) = \mathbb{E} \{\sum^\infty_{k=1} \gamma^{k-1} r_{t+k} | s_t = s, a_t
 
 Dabei ist $\gamma \in [0,1]$ ein Abschwächungsfaktor ($\gamma = 1$ ist nur in endlichen abzählbaren Sequenzen einzusetzen). Die stationäre Verteilung der Zustände $d^\pi (s)$ ist bei der Startzustandsformulierung eine abgeschwächte Gewichtung der vorgefundenen Zustände angefangen in Zustand $s_0$ und unter Berücksichtigung der Policy $\pi$: $d^\pi (s) = \sum^\infty_{t=0} \gamma^t Pr \{s_t = s | s_0, \pi\}$.
  
-\subsection{Policy Gradient}
-Das Policy Gradient Verfahren nach unter anderem Sutton \cite{sutton_99} und D. Silver \cite{silver_15} funktioniert wie folgt:
+\subsection{Bedeutung des Policy Gradient}
+Das Policy Gradient Verfahren nach unter anderem R. S. Sutton \cite{sutton_99} und D. Silver \cite{silver_15} funktioniert wie folgt:
 Sei $\rho(\theta)$ eine beliebige Strategiezielfunktion. Policy Gradient Algorithmen suchen ein lokales Maximum der Strategiefunktion $\rho(\theta)$, mittels des ansteigenden Gradienten der Strategie, bezüglich der Parameter $\theta$:   
 \begin{equation*}
 \Delta \theta \approx \alpha \frac{\partial \rho}{\partial \theta} \approx \alpha \nabla_\theta \rho(\theta).
@@ -614,17 +599,17 @@ Sei $\rho(\theta)$ eine beliebige Strategiezielfunktion. Policy Gradient Algorit
 
 Der Gradient der Strategiezielfunktion $\rho(\theta)$ ist der Vektor der partiellen Ableitungen:
 
-\begin{equation}
+\begin{equation*}
 \nabla_\theta \rho(\theta) = \frac{\partial \rho}{\partial \theta} =
 \begin{pmatrix}
 \frac{\partial \rho(\theta)}{\partial \theta_1} \\ 
 \vdots \\
 \frac{\partial \rho(\theta)}{\partial \theta_n}
 \end{pmatrix}.
-\end{equation}
+\end{equation*}
 
-\subsection{Monte-Carlo Policy Gradient (REINFORCE)}
-Das Monte-Carlo Policy Gradient Verfahren nach R. S. Sutton \cite{sutton_99} und D. Silver \cite{silver_15} berechnet den Gradienten der Strategiefunktion analytisch ohne eine Wertefunktion zu verwenden. Ein Nachteil dieses Verfahrens ist die relativ hohe Varianz, daher wird das Actor-Critic Verfahren im nächsten Abschnitt behandelt. Actor-Critic verwendet Strategiefunktionen und Wertefunktionen und verringert somit die Varianz. 
+\subsection{Monte-Carlo Policy Gradient}
+Das Monte-Carlo Policy Gradient Verfahren nach R. S. Sutton \cite{sutton_99} und D. Silver \cite{silver_15} berechnet den Gradienten der Strategiefunktion analytisch ohne eine Wertefunktion zu verwenden.
 
 \paragraph*{Softmax Policy} ist eine alternative Darstellung der Strategiefunktion $\pi_\theta(s,a)$ im Gegensatz zu $\epsilon$-geedy. Der Ausdruck $\phi(s,a) \top \theta$ steht für eine Gewichtung von Aktionen, welche lineare Kombination von Merkmalen verwenden. Dieser Ausdruck ergibt einen Wert und der Wert gibt an, wie sehr die konkrete Aktion $a$ bevorzugt ausgewählt werden soll.  $\phi(s,a)$ ist das ausgewählte Merkmal einer Aktion in einem Zustand und $\theta$ ist die Gewichtung dieses Merkmals. Softmax Policy wird ausschließlich für diskrete Aktionsräume verwendet und nicht bei kontinuierlichen Aktionsräumen. Um den Ausdruck $\phi(s,a) \top \theta$ in eine Wahrscheinlichkeit umzuwandeln, wird dieser exponenziert und normalisiert.
 
@@ -634,20 +619,51 @@ Das Monte-Carlo Policy Gradient Verfahren nach R. S. Sutton \cite{sutton_99} und
 
 d.h. die Wahrscheinlichkeit das die Aktion $a$ wirklich ausgewählt wird, ist Proportional zum exponenzierten Wert der gewichteten linearen Kombination der Merkmale. Eine lineare Kombination von Merkmalen in z.B. einem Labyrinth mit einem diskreten Aktionsraum von Hoch, Runter, Links und Rechts: Jede der Vier Aktionen erhält Merkmale, je höher die Punktzahl (eng. score) der Merkmale ist, wenn die gewichtete Summe der linearen Merkmale berechnet wird, desto höher ist die Wahrscheinlichkeit die Aktion des Merkmals zu wählen.
 
-\paragraph*{Gradient der Softmax Policy (Score Funktion)} ist die Differenz des Merkmals der tatsächlich ausgewählten Aktion und dem durchschnittlichen Merkmal für alle Aktionen die hätten ausgewählt werden können: 
+\paragraph*{Gradient der Softmax Policy (Softmax Score Funktion)} ist die Differenz des Merkmals der tatsächlich ausgewählten Aktion und dem durchschnittlichen Merkmal für alle Aktionen die hätten ausgewählt werden können: 
 
 \begin{equation*}
 \nabla_\theta \log \pi_\theta (s,a) = \phi(s,a) - \mathbb{E}_{\pi_\theta}[\phi(s, \cdot)]
 \end{equation*}
 
-d.h. die Parameter der Strategiefunktion werden in die Richtung des Gradienten angepasst, wenn das Merkmal der tatsächlich ausgewählten Aktion, im Gegensatz zu allen anderen Merkmalen und deren Aktionen, öfter auftritt (hohe Punktzahl des Merkmals) und eine gute Belohnung erhält.
+d.h. die Parameter der Strategiefunktion werden in die Richtung des Gradienten angepasst, wenn das Merkmal der tatsächlich ausgewählten Aktion, im Gegensatz zu allen anderen Merkmalen und deren Aktionen, öfter auftritt (hohe Punktzahl des Merkmals) und eine gute Belohnung erhält. Allgemein ist der Gradient von $\pi_\theta (s,a)$ gleich $\pi_\theta (s,a) \nabla_\theta \log \pi_\theta (s,a)$ nach der Berechnung:
 
-\begin{equation}
-\frac{\partial \rho}{\partial \theta} = 
-\sum_s d^\pi (s) \sum_a \frac{\partial \pi (s,a)}{\partial \theta} 
-Q^\pi (s,a)
-\end{equation}
+\begin{equation*}
+\begin{aligned}
+\nabla_\theta \pi_\theta (s,a) & = \pi_\theta (s,a) \frac{\nabla_\theta \pi_\theta (s,a)}{\pi_\theta (s,a)} \\
+& = \pi_\theta (s,a) \nabla_\theta \log \pi_\theta (s,a).
+\end{aligned}
+\end{equation*}
 
+\paragraph*{Einschritt MDP} ist keine Entscheidungssequenz, sondern ein einziger Zeitschritt in einem MDP. Starte in einem Zustand $s \sim d(s)$, wähle eine Aktion $a$ entsprechend der Strategiefunktion $\pi_\theta(s,a)$ und erhalte eine Belohnung definiert durch die Funktion $R^a_s$:
+
+\begin{equation*}
+\rho_{avR}(\theta) = \sum_s d^\pi(s) \sum_a \pi(s,a) R^a_s
+\end{equation*}
+
+D. Silver schreibt die Zielfunktion etwas anders:
+
+\begin{equation*}
+J(\theta) = \mathbb{E}[R_{s,a}] = \sum_{s \in S} d(s) \sum_{a \in A} \pi_\theta(s,a) R_{s,a}
+\end{equation*}
+
+Der Gradient dieser Zielfunktion ist entsprechend:
+
+\begin{equation*}
+\begin{aligned}
+\nabla_\theta J(\theta) & = \sum_{s \in S} d(s) \sum_{a \in A} \pi_\theta(s,a) \nabla_\theta \log \pi_\theta(s,a) R_{s,a} \\
+& = \mathbb{E}_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a) R_{s,a}],
+\end{aligned}
+\end{equation*}
+
+d.h. einzig die Policy $\pi_\theta(s,a)$ ist abhängig von $\theta$, darum muss der Gradient nur von dieser Policy gebildet werden. Dieser Aktualisierungsschritt benötigt kein Modell, denn die Policy $\pi_\theta(s,a)$ ist bekannt. $\mathbb{E}_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a) R_{s,a}]$ bedeutet: Der Erwartungswert $\mathbb{E}$ unterliegt einer Strategiefunktion $\pi_\theta$, sprich er ist abhängig von einem Startzustand $s$ und einer ausgewählten Aktion $a$ der Strategiefunktion $\pi_\theta(s,a)$. Der durch die Strategiefunktion bedingte Erwartungswert wird berechnet durch den Erwartungswert von $\nabla_\theta \log \pi_\theta(s,a)$ (Punktzahl) multipliziert mit der sofortigen Belohnung (eng. immediate reward) $R_{s,a}$. 
+
+\paragraph*{Policy Gradient Theorem} ist die Substitution der sofortigen Belohnung $R_{s,a}$ mit der Langzeitbelohnung $Q^{\pi_\theta}(s,a)$ aus der Berechnung des Gradienten der Zielfunktion:
+
+\begin{equation*}
+\nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a) Q^{\pi_\theta}(s,a)],
+\end{equation*}
+
+Das Policy Gradient Theorem verallgemeinert das Einschritt MDP auf eine Sequenz von Zeitschritten (Mehrfachschritt MDP). Das Theorem ist auf die Startzustandszielfunktion und auf die durchschnittliche Langzeitbelohnung Zielfunktion anwendbar. 
 \subsection{Actor-Critic Policy Gradient}
 
 
