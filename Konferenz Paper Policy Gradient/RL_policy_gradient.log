@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  16 JUN 2017 14:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  16 JUN 2017 14:25
 entering extended mode
 **./RL_policy_gradient.tex
 (RL_policy_gradient.tex
@@ -596,26 +596,40 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 491.
+LaTeX Font Info:    Try loading font information for U+msa on input line 494.
 
 (E:\dev\MikTex\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 491.
+LaTeX Font Info:    Try loading font information for U+msb on input line 494.
 
 (E:\dev\MikTex\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 3679) in paragraph at lines 494--495
-[]\OT1/ptm/m/n/10 Sutton und Barto [[]] definieren die Umge-bung als
- []
-
-[1{C:/Users/Thilo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+) [1{C:/Users/Thilo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 501--502
-[]\OT1/ptm/m/n/10 Die nach-fol-gen-den Ausf[]uhrungen basieren auf den
+[]\OT1/ptm/m/n/10 Eine nicht ap-prox-imierte Werte-funk-tion ist eine
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 501--502
+\OT1/ptm/m/n/10 Wertetabelle. In dieser Wertetabelle hat jeder Zu-s-tand
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 501--502
+\OML/cmm/m/it/10 s$ \OT1/ptm/m/n/10 einen Ein-trag der Form $\OML/cmm/m/it/10 V
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )$ \OT1/ptm/m/n/10 oder jede
+s Zustands-
+ []
+
+
+Underfull \hbox (badness 2726) in paragraph at lines 501--502
+\OT1/ptm/m/n/10 Aktionspaar $\OML/cmm/m/it/10 s; a$ \OT1/ptm/m/n/10 hat einen E
+in-trag $\OML/cmm/m/it/10 Q\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s; a\OT1/cmr/m/n/1
+0 )$\OT1/ptm/m/n/10 . F[]ur groe
  []
 
 
@@ -623,7 +637,7 @@ Underfull \hbox (badness 1540) in paragraph at lines 501--502
 \OT1/ptm/m/n/10 gel-ernt wer-den muss. Die L[]osung f[]ur groe MDPs ist
  []
 
-<./Abbildungen/gridworld_example.pdf, id=16, 122.4575pt x 47.17625pt>
+<./Abbildungen/gridworld_example.pdf, id=15, 122.4575pt x 47.17625pt>
 File: ./Abbildungen/gridworld_example.pdf Graphic file (type pdf)
 
 <use ./Abbildungen/gridworld_example.pdf>
@@ -710,7 +724,7 @@ Here is how much of TeX's memory you used:
  6997 multiletter control sequences out of 15000+200000
  36949 words of font info for 72 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 40i,8n,26p,2510b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,26p,3067b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/dev/MikTex/fonts/enc/dvips/base/8r.enc}<E:/dev/
 MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/dev/MikTex/fonts/type1/pub
 lic/amsfonts/cm/cmmi10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi5.
@@ -723,7 +737,7 @@ Tex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/dev/MikTex/fonts/type1/public
 nts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmbi8a.pfb
 ><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev/MikTex/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on RL_policy_gradient.pdf (5 pages, 831995 bytes).
+Output written on RL_policy_gradient.pdf (5 pages, 831966 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
