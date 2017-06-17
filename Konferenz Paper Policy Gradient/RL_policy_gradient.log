@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.26)  17 JUN 2017 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.26)  17 JUN 2017 13:59
 entering extended mode
 **./RL_policy_gradient.tex
 (RL_policy_gradient.tex
@@ -614,8 +614,8 @@ Underfull \hbox (badness 1430) in paragraph at lines 495--496
  []
 
 
-Underfull \hbox (badness 2460) in paragraph at lines 495--496
-\OT1/ptm/m/n/10 Windgeschwindigkeit, Treib-stoff. Zust[]ande und Ak-tio-nen
+Underfull \hbox (badness 2020) in paragraph at lines 495--496
+\OT1/ptm/m/n/10 Windgeschwindigkeit, Treib-stoff. All diese Eigen-schaften
  []
 
 
@@ -647,10 +647,7 @@ Underfull \hbox (badness 1540) in paragraph at lines 502--503
 \OT1/ptm/m/n/10 gel-ernt wer-den muss. Die L[]osung f[]ur groe MDPs ist
  []
 
-
-Underfull \vbox (badness 5519) has occurred while \output is active []
-
- [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ] [2]
@@ -672,37 +669,37 @@ Underfull \hbox (badness 1442) in paragraph at lines 571--572
 e-loh-nung pro
  []
 
-[3 <./Abbildungen/gradient_descent.pdf>]
-Underfull \hbox (badness 1394) in paragraph at lines 610--611
+
+Underfull \hbox (badness 1394) in paragraph at lines 609--610
  \OT1/ptm/m/it/10 Soft-max Pol-icy: [] \OT1/ptm/m/n/10 ist eine al-ter-na-tive 
 Darstel-lung der
  []
 
-
-Underfull \hbox (badness 1783) in paragraph at lines 624--625
+[3 <./Abbildungen/gradient_descent.pdf>]
+Underfull \hbox (badness 1783) in paragraph at lines 623--624
 \OT1/ptm/m/n/10 Rich-tung des Gra-di-en-ten angepasst, wenn das Merk-mal
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 624--625
+Underfull \hbox (badness 3514) in paragraph at lines 623--624
 \OT1/ptm/m/n/10 der tats[]achlich aus-gew[]ahlten Ak-tion, im Gegen-satz zu
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 624--625
+Underfull \hbox (badness 2600) in paragraph at lines 623--624
 \OT1/ptm/m/n/10 erh[]alt. All-ge-mein ist der Gra-di-ent von $\OML/cmm/m/it/10 
 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s; a\OT1/cmr/m/n/10 )$ \OT1/ptm/m/n/10 gle
 -ich
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--708
+Underfull \hbox (badness 10000) in paragraph at lines 706--707
 []\OT1/ptm/m/n/8 D.  Sil-ver, \OT1/ptm/m/it/8 On-line Course Re-in-force-ment L
 earn-ing\OT1/ptm/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--708
+Underfull \hbox (badness 10000) in paragraph at lines 706--707
 \OT1/ptm/m/n/8 http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html, Lon-d
 on,
  []
@@ -718,34 +715,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4] (RL_policy_gradient.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[4] (RL_policy_gradient.aux) ) 
 Here is how much of TeX's memory you used:
- 3511 strings out of 493333
- 50538 string characters out of 3139193
- 123170 words of memory out of 3000000
- 6993 multiletter control sequences out of 15000+200000
+ 3510 strings out of 493333
+ 50519 string characters out of 3139193
+ 124162 words of memory out of 3000000
+ 6992 multiletter control sequences out of 15000+200000
  36949 words of font info for 72 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 40i,8n,26p,1548b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
-/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on RL_policy_gradient.pdf (4 pages, 230766 bytes).
+ 40i,8n,26p,1493b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base
+/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on RL_policy_gradient.pdf (4 pages, 230664 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
