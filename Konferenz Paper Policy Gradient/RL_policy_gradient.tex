@@ -652,7 +652,25 @@ d.h. einzig die Policy $\pi_\theta(s,a)$ ist abhängig von $\theta$, darum muss 
 \nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a) Q^{\pi_\theta}(s,a)],
 \end{equation*}
 
-Das Policy Gradient Theorem verallgemeinert das Einschritt MDP auf eine Sequenz von Zeitschritten (Mehrfachschritt MDP). Das Theorem ist auf die Startzustandszielfunktion und auf die durchschnittliche Langzeitbelohnung Zielfunktion anwendbar. Ein Nachteil dieses Verfahrens ist die relativ hohe Varianz. Das Actor-Critic Policy Gradient Verfahren (detaillierte Informationen von u.a. R. S. Sutton \cite{sutton_barto_12} und D. Silver \cite{silver_15}) verwendet eine Strategiefunktionen und eine Wertefunktionen für das lernen/aktualisieren der Parametervektoren und verringert somit die Varianz. Das Actor-Critic Verfahren ist sehr fortgeschritten und wird oft in der Praxis eingesetzt. Auf eine genaue Erläuterung dieses Verfahrens muss auf Grund des begrenzten Umfangs dieser Arbeit verzichtet werden.
+Das Policy Gradient Theorem verallgemeinert das Einschritt MDP auf eine Sequenz von Zeitschritten (Mehrfachschritt MDP). Das Theorem ist auf die Startzustandszielfunktion und auf die durchschnittliche Langzeitbelohnung Zielfunktion anwendbar.
+
+\subsection{Actor-Critic Policy Gradient}
+Ein Nachteil des Monte-Carlo Verfahrens ist seine relativ hohe Varianz, daher wird ein Kritiker (eng. critic) verwendet, um die Aktions-Wertefunktion zu schätzen:
+
+\begin{equation*}
+Q_w(s,a) \approx Q^{\pi_\theta} (s,a).
+\end{equation*}
+
+Das Actor-Critic Policy Gradient Verfahren unterhält zwei Parametervektoren. Der Kritiker aktualisiert den Parametervektor $w$ für die Aktions-Wertefunktion. Der Akteur/Handlungsträger (eng. actor) aktualisiert den Parametervektor $\theta$ der Strategiefunktion in die vom Kritiker vorgeschlagene Richtung. Der Actor-Critic Algorithmus verfolgt einen angenäherten Gradienten der Strategiefunktion:
+
+\begin{equation*}
+\nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a) Q_w(s,a)]
+\end{equation*}
+
+\begin{equation*}
+\Delta \theta = \alpha \nabla_\theta \log \pi_\theta (s,a) Q_w(s,a).
+\end{equation*}
+
 
 
 % use section* for acknowledgment
