@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  16 JUN 2017 14:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.26)  17 JUN 2017 13:28
 entering extended mode
 **./RL_policy_gradient.tex
 (RL_policy_gradient.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\ieeetran\IEEEtran.cls
+("C:\Program Files\MiKTeX 2.9\tex\latex\ieeetran\IEEEtran.cls"
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -17,7 +17,7 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 
-(E:\dev\MikTex\tex\latex\psnfss\ot1ptm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -111,31 +111,31 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEPARstartletwidth=\dimen125
 \c@IEEEbiography=\count93
 \@IEEEtranrubishbin=\box27
-) (E:\dev\MikTex\tex\latex\graphics\graphicx.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(E:\dev\MikTex\tex\latex\graphics\keyval.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(E:\dev\MikTex\tex\latex\graphics\graphics.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
-(E:\dev\MikTex\tex\latex\graphics\trig.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(E:\dev\MikTex\tex\latex\graphics-cfg\graphics.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(E:\dev\MikTex\tex\latex\graphics-def\pdftex.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
 File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
-(E:\dev\MikTex\tex\generic\oberdiek\infwarerr.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(E:\dev\MikTex\tex\generic\oberdiek\ltxcmds.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count94
@@ -143,24 +143,24 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen126
 \Gin@req@width=\dimen127
 )
-(E:\dev\MikTex\tex\latex\amsmath\amsmath.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-(E:\dev\MikTex\tex\latex\amsmath\amstext.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(E:\dev\MikTex\tex\latex\amsmath\amsgen.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen128
 ))
-(E:\dev\MikTex\tex\latex\amsmath\amsbsy.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen129
 )
-(E:\dev\MikTex\tex\latex\amsmath\amsopn.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count95
@@ -201,28 +201,29 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
-(E:\dev\MikTex\tex\latex\amsfonts\amssymb.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(E:\dev\MikTex\tex\latex\amsfonts\amsfonts.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(E:\dev\MikTex\tex\latex\base\inputenc.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks21
 \inpenc@posthook=\toks22
 
-(E:\dev\MikTex\tex\latex\base\utf8.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
- (E:\dev\MikTex\tex\latex\base\t1enc.dfu
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -458,7 +459,8 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
-(E:\dev\MikTex\tex\latex\base\ot1enc.dfu
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -499,7 +501,7 @@ File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(E:\dev\MikTex\tex\latex\base\omsenc.dfu
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -522,7 +524,8 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) (RL_policy_gradient.aux)
+))
+(RL_policy_gradient.aux)
 \openout1 = `RL_policy_gradient.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 319.
@@ -539,7 +542,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 319.
 LaTeX Font Info:    ... okay on input line 319.
 
 -- Lines per column: 56 (exact).
-(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count107
 \scratchdimen=\dimen137
@@ -552,15 +555,15 @@ LaTeX Font Info:    ... okay on input line 319.
 \MPnumerator=\count111
 \makeMPintoPDFobject=\count112
 \everyMPtoPDFconversion=\toks24
-) (E:\dev\MikTex\tex\generic\oberdiek\pdftexcmds.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(E:\dev\MikTex\tex\generic\oberdiek\ifluatex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(E:\dev\MikTex\tex\generic\oberdiek\ifpdf.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -568,22 +571,22 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(E:\dev\MikTex\tex\latex\oberdiek\epstopdf-base.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(E:\dev\MikTex\tex\latex\oberdiek\grfext.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(E:\dev\MikTex\tex\generic\oberdiek\kvdefinekeys.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-(E:\dev\MikTex\tex\latex\oberdiek\kvoptions.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(E:\dev\MikTex\tex\generic\oberdiek\kvsetkeys.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(E:\dev\MikTex\tex\generic\oberdiek\etexcmds.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -598,107 +601,108 @@ Package grfext Info: Graphics extension search list:
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 494.
 
-(E:\dev\MikTex\tex\latex\amsfonts\umsa.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 494.
 
-(E:\dev\MikTex\tex\latex\amsfonts\umsb.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{C:/Users/Thilo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+)
+Underfull \hbox (badness 1430) in paragraph at lines 495--496
+\OT1/ptm/m/n/10 rith-mus. Eigen-schaften der Umwelt sind unter an-derem:
+ []
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 2460) in paragraph at lines 495--496
+\OT1/ptm/m/n/10 Windgeschwindigkeit, Treib-stoff. Zust[]ande und Ak-tio-nen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
 []\OT1/ptm/m/n/10 Eine nicht ap-prox-imierte Werte-funk-tion ist eine
  []
 
 
-Underfull \hbox (badness 4193) in paragraph at lines 501--502
+Underfull \hbox (badness 4193) in paragraph at lines 502--503
 \OT1/ptm/m/n/10 Wertetabelle. In dieser Wertetabelle hat jeder Zu-s-tand
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 501--502
+Underfull \hbox (badness 2617) in paragraph at lines 502--503
 \OML/cmm/m/it/10 s$ \OT1/ptm/m/n/10 einen Ein-trag der Form $\OML/cmm/m/it/10 V
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )$ \OT1/ptm/m/n/10 oder jede
 s Zustands-
  []
 
 
-Underfull \hbox (badness 2726) in paragraph at lines 501--502
+Underfull \hbox (badness 2726) in paragraph at lines 502--503
 \OT1/ptm/m/n/10 Aktionspaar $\OML/cmm/m/it/10 s; a$ \OT1/ptm/m/n/10 hat einen E
 in-trag $\OML/cmm/m/it/10 Q\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s; a\OT1/cmr/m/n/1
 0 )$\OT1/ptm/m/n/10 . F[]ur groe
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 501--502
+Underfull \hbox (badness 1540) in paragraph at lines 502--503
 \OT1/ptm/m/n/10 gel-ernt wer-den muss. Die L[]osung f[]ur groe MDPs ist
  []
 
-<./Abbildungen/gridworld_example.pdf, id=15, 122.4575pt x 47.17625pt>
-File: ./Abbildungen/gridworld_example.pdf Graphic file (type pdf)
 
-<use ./Abbildungen/gridworld_example.pdf>
-Package pdftex.def Info: ./Abbildungen/gridworld_example.pdf used on input line
- 511.
-(pdftex.def)             Requested size: 252.94499pt x 97.44902pt.
+Underfull \vbox (badness 5519) has occurred while \output is active []
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 511--512
- [][] 
- []
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-[2 <./Abbildungen/gridworld_example.pdf>]
-<./Abbildungen/gradient_descent.pdf, id=28, 421.575pt x 221.82875pt>
+
+] [2]
+<./Abbildungen/gradient_descent.pdf, id=23, 421.575pt x 221.82875pt>
 File: ./Abbildungen/gradient_descent.pdf Graphic file (type pdf)
 
 <use ./Abbildungen/gradient_descent.pdf>
 Package pdftex.def Info: ./Abbildungen/gradient_descent.pdf used on input line 
-555.
+556.
 (pdftex.def)             Requested size: 252.94499pt x 133.09825pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 555--556
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 556--557
  [][] 
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 570--571
+Underfull \hbox (badness 1442) in paragraph at lines 571--572
 \OML/cmm/m/it/10 $\OT1/ptm/m/n/10 ). Berech-net wird die durch-schnit-tliche B
 e-loh-nung pro
  []
 
 [3 <./Abbildungen/gradient_descent.pdf>]
-Underfull \hbox (badness 1394) in paragraph at lines 609--610
+Underfull \hbox (badness 1394) in paragraph at lines 610--611
  \OT1/ptm/m/it/10 Soft-max Pol-icy: [] \OT1/ptm/m/n/10 ist eine al-ter-na-tive 
 Darstel-lung der
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 623--624
+Underfull \hbox (badness 1783) in paragraph at lines 624--625
 \OT1/ptm/m/n/10 Rich-tung des Gra-di-en-ten angepasst, wenn das Merk-mal
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 623--624
+Underfull \hbox (badness 3514) in paragraph at lines 624--625
 \OT1/ptm/m/n/10 der tats[]achlich aus-gew[]ahlten Ak-tion, im Gegen-satz zu
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 623--624
+Underfull \hbox (badness 2600) in paragraph at lines 624--625
 \OT1/ptm/m/n/10 erh[]alt. All-ge-mein ist der Gra-di-ent von $\OML/cmm/m/it/10 
 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s; a\OT1/cmr/m/n/10 )$ \OT1/ptm/m/n/10 gle
 -ich
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--708
 []\OT1/ptm/m/n/8 D.  Sil-ver, \OT1/ptm/m/it/8 On-line Course Re-in-force-ment L
 earn-ing\OT1/ptm/m/n/8 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 707--708
 \OT1/ptm/m/n/8 http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html, Lon-d
 on,
  []
@@ -714,32 +718,36 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5
+[4] (RL_policy_gradient.aux)
 
-] (RL_policy_gradient.aux) ) 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3516 strings out of 493333
- 49774 string characters out of 3145253
+ 3511 strings out of 493333
+ 50538 string characters out of 3139193
  123170 words of memory out of 3000000
- 6997 multiletter control sequences out of 15000+200000
+ 6993 multiletter control sequences out of 15000+200000
  36949 words of font info for 72 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 40i,8n,26p,3067b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/dev/MikTex/fonts/enc/dvips/base/8r.enc}<E:/dev/
-MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/dev/MikTex/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi5.
-pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/dev/MikTex/font
-s/type1/public/amsfonts/cm/cmr10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts
-/cm/cmr5.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/dev/Mik
-Tex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/dev/MikTex/fonts/type1/public
-/amsfonts/cm/cmsy5.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-<E:/dev/MikTex/fonts/type1/public/amsfonts/symbols/msbm10.pfb><E:/dev/MikTex/fo
-nts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmbi8a.pfb
-><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev/MikTex/fonts/type1/urw
-/times/utmri8a.pfb>
-Output written on RL_policy_gradient.pdf (5 pages, 831966 bytes).
+ 40i,8n,26p,1548b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
+/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on RL_policy_gradient.pdf (4 pages, 230766 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
