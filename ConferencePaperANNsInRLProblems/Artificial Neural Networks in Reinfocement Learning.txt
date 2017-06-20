@@ -1,0 +1,32 @@
+How to get started with “Artificial Neural Networks” (ANN's) for “Reinforcement Learning” (RL) problems?
+
+Conference “Rise of AI” May 2018, Berlin, Germany, “http://riseof.ai/”
+The conference is for decision-makers, game-changers, opinion-influencers and knowledge-seekers. The conference provides a wide area of Artificial Intelligence (AI) topics, for example (see the official Website):  
+1. Deep Learning: Future of AI ~ “ Inspired by the recend advances in Deep Learning, this talk will introduce deep learning, explain its impact, and provide an outlook about where the journey will go and how the area of deep learning will potentially evolve and therefore change the current AI landscape. ” [Dr. Damian Borth]
+2. How will AI be, if it is smarter than humans? What problems can be solved better by AI than by humans? [Prof. Dr. Hans Uszkoreit]
+3. Cooperation between Men and Machine –  Designing Autonomous Cars for the Shared Space of the Future. [Alexander Mankowsky]
+
+My short introduction of ANN's in RL problems:
+Artificial Intelligence is a huge, rewarding, rising and complex research field. More and more people are interested in AI every day. Students, researchers, economics, engineers, CEO's and investors are highly encouraged to use, understand and/or improve AI technologies. At some point in time an AI newcomer will get to the problems of Reinforcement Learning (RL) and therefore to Artificial Neural Networks (ANN's). RL problems consider an agent-environment interaction framework. The agent (RL logic and learning algorithms) will interact with the environment (a Markov Decision Process). The agent will get rewards and states from the environment and the environment will get actions from the agent. The agent tries to learn optimal behaviour through trial and error attempts. The agent wants to know which actions in which states get the most long-term reward and fit this knowledge into a policy representation.
+ A few main problems of this RL framework are: 
+The agent only gets a numerical reward from the environment at the end of a decision-sequence.
+How should the reward be assigned to the different steps of a decision-sequence?
+How to handle vast action- and state-spaces?
+A major goal of RL is to find a global optimal policy. A policy is a function which maps states to actions. This policy will additionally get a vector of parameters. The parameter-vector changes the policy output. This parametrisation of the policy function is called “function approximation” and Artificial Neural Networks are a really great approach for approximating a policy function. With this approximation the problem of vast action- and state-spaces can be solved. To optimise the parameter-vector methods  like “Monte-Carlo Policy Gradient” or “Actor-Critic Policy Gradient” are used. Applications like TD-Gammon by Gerald Tesauro proved that learning complex strategy games with Artificial Neural Networks is possible and promising.
+
+
+
+Reasoning, three conference topics mentioned above associated with my research topic:
+Topic [1] Deep Learning: Future of AI
+Deep Learning is all about Deep Artificial Neural Networks (e.g. Convolutional NN's, Recurrent NN's or combination of both). An ANN is considered deep when it has more then one hidden layer of neurons. If I write a scientific paper about ANN's in RL problems for AI beginners then it fits this conference topic, because using ANN's in RL problems is a big application of Deep Learning. 
+
+Topic [2] How will AI be, if it is smarter than humans? 
+Artificial Intelligence is a huge science field and using ANN's for RL problems is just a tiny snippet of this science. Nevertheless with ANN's for RL problems it is possible to create strategical Game AI's which can win against the best human players of the world (e.g. Google Deep Mind AlphaGo or TD-Gemmon). If the AI gets even smarter using Algorithms with ANN's and RL methods, at least for the strategical gaming part, the human world champions will constantly lose against the advances AI's.
+TODO:
+Topic [2] What problems can be solved better by AI than by humans?
+Topic [3] Designing Autonomous Cars for the Shared Space of the Future.
+	
+International Conference on Web Intelligence Aug 23 - Aug 26, 2017, Leipzig, Germany, “http://webintelligence2017.com/”
+
+
+
