@@ -487,15 +487,8 @@ Email: t.stegemann@gmx.de}}
 % conference papers do not normally have an appendix
 
 % Introduction : Which question or which problem was investigated?
-\section{Introduction to Deep Reinforcement Learning}
-Artificial Intelligence is a huge, rewarding, rising and complex research field. More and more people are interested in AI every day. Students, researchers, economics, engineers, CEO's and investors are highly encouraged to use, understand and/or improve AI technologies. At some point in time an AI newcomer will get to the problems of Reinforcement Learning (RL) and therefore to Artificial Neural Networks (ANN's). Andrew Ng. describes AI as the new upcomming electricity: AI will change many different industries and it will have a huge general impact in everyday life. RL problems consider an agent-environment interaction framework. The agent (RL logic and learning algorithms) will interact with the environment (a Markov Decision Process). The agent will get rewards and states from the environment and the environment will get actions from the agent. The agent tries to learn optimal behaviour through trial and error attempts. The agent wants to know which actions in which states get the most long-term reward and fit this knowledge into a policy representation. A few main problems of this RL framework are: 
-\begin{itemize}
-\item The agent only gets a numerical reward from the environment at the end of a decision-sequence. \\ $\sim$ \textit{Delayed Reward}
-\item How should the reward be assigned to the different steps of a decision-sequence? \\ $\sim$ \textit{Credit Assignment Problem}
-\item How to handle vast action- and state-spaces? \\ $\sim$ \textit{Generalization Problem}
-\end{itemize}
-
-A major goal of RL is to find a global optimal policy. A policy is a function which maps states to actions. This policy will additionally get a vector of parameters. The parameter-vector changes the policy output. This parametrisation of the policy function is called “function approximation” and Artificial Neural Networks are a really great approach for approximating a policy function. With this approximation the problem of vast action- and state-spaces can be solved. To optimise the parameter-vector methods  like “Monte-Carlo Policy Gradient” or “Actor-Critic Policy Gradient” are used. Applications like TD-Gammon by Gerald Tesauro proved that learning complex strategy games with Artificial Neural Networks is possible and promising.
+\section{Introduction}
+Artificial Intelligence is a huge, rewarding, rising and complex research field. More and more people are interested in AI every day. Students, researchers, economics, engineers, CEO's and investors are highly encouraged to use, understand and/or improve AI technologies. At some point in time an AI newcomer will get to the problems of Reinforcement Learning (RL) and therefore to Artificial Neural Networks (ANN's). Andrew Ng. describes AI as the new upcomming electricity: AI will change many different industries and it will have a huge general impact in everyday life. 
 
 % Related Work / State of the art / Literature Review
 \section{Related Work}
@@ -512,18 +505,40 @@ The paper is about how to reach human-level control through a deep Q-network, th
 
 \subsection{Mastering the game of Go with deep neural networks and tree search}
 
-The paper from Google concerns two different algorithm approaches for deep reinforcement learning. The first approach uses 'value networks' to evaluate board positions and 'policy networks' to select moves. These deep neural networks are trained by a novel combination of supervised learning from human expert games and reinforcement learning from games of self-play. They proof through experiments that this deep RL algorithm approach is capable of playing Go at the level of state-of-the-art Monte Carlo tree search. The second deep RL approach is a new seach algorithm that combines Monte Carlo simulation with value and policy networks 
+The paper from Google concerns two different algorithm approaches for deep reinforcement learning. The first approach uses 'value networks' to evaluate board positions and 'policy networks' to select moves. These deep neural networks are trained by a novel combination of supervised learning from human expert games and reinforcement learning from games of self-play. They proof through experiments that this deep RL algorithm approach is capable of playing Go at the level of state-of-the-art Monte Carlo tree search. The second deep RL approach is a new seach algorithm that combines Monte Carlo simulation with value and policy networks. They used this search algorithm inside the application AlphaGo and the application achieved a 99.8\% winning rate against other Go programs and it defeated the human European Go champion by 5 games to 0.
 
 \subsection{Playing Atari with Deep Reinforcement Learning}
+The paper from DeepMind Technologies is about a deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. They defined the model as a convolutional neural network (CNN). This CNN is trained with a variant of Q-learning. Input of the CNN is row pixels and output is a value function estimating future rewards. They apply this deep learning model to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. Result of this experiment is that it outperforms all previous approaches on sex ot the games and surpasses a human expert on three of them. 
 
 \begin{itemize}
 \item Cite \cite{DBLP:journals/corr/MnihBMGLHSK16}
 \item Cite \cite{DBLP:journals/corr/HasseltGS15}
 \end{itemize}
 
-\subsection{Reinforcement Learning}
+\section{Reinforcement Learning}
+RL problems consider an agent-environment interaction framework. The agent (RL logic and learning algorithms) will interact with the environment (a Markov Decision Process). The agent will get rewards and states from the environment and the environment will get actions from the agent. The agent tries to learn optimal behaviour through trial and error attempts. The agent wants to know which actions in which states get the most long-term reward and fit this knowledge into a policy representation. A few main problems of this RL framework are: 
+\begin{itemize}
+\item The agent only gets a numerical reward from the environment at the end of a decision-sequence. \\ $\sim$ \textit{Delayed Reward}
+\item How should the reward be assigned to the different steps of a decision-sequence? \\ $\sim$ \textit{Credit Assignment Problem}
+\item How to handle vast action- and state-spaces? \\ $\sim$ \textit{Generalization Problem}
+\end{itemize}
 
-\subsection{Artificial Neural Networks}
+A major goal of RL is to find a global optimal policy. A policy is a function which maps states to actions. This policy will additionally get a vector of parameters. The parameter-vector changes the policy output. This parametrisation of the policy function is called “function approximation” and Artificial Neural Networks are a really great approach for approximating a policy function. With this approximation the problem of vast action- and state-spaces can be solved. To optimise the parameter-vector methods  like “Monte-Carlo Policy Gradient” or “Actor-Critic Policy Gradient” are used. Applications like TD-Gammon by Gerald Tesauro proved that learning complex strategy games with Artificial Neural Networks is possible and promising.
+
+\subsection{Q-value function}
+
+\subsection{Actor-critic approaches}
+
+\section{Convolutional Neural Networks}
+
+\section{Deep Q-network}
+"A deep Q network (DQN) is a multi-layerd neural network that for a given state $s$ outputs a vector of action values $Q(a, ; \theta)$, where $\theta$ are the parameters of the network. For an $n$-dimensional state space and an action space containing $m$ actions, the neural network is a function from $\mathbb{R}^n$ to $\mathbb{R}^m$. Two important ingredients of the DQN algorithm as proposed by Mnih et al. (2015) are the use of a target network and the use of experience replay. The target network, with parameters $\theta^-$, is the same as the online network except that its parameters are copied every $t$ steps from the online network, so that then $\theta^-_t = \theta_t$, and kept fixed on all other steps. The target used by DQN is then
+
+\begin{equation*}
+Y^{DQN}_t \equiv R_{t+1} + \gamma \max_a Q(S_{t+1}, a; \theta^-_t).
+\end{equation*}
+
+For the experience replay (Lin, 1992), observed transitions are stored for some time and sampled uniformly from this memory bank to update the network. Both the target network and the experience replay dramatically improve the performance of the algorithm (Mnih et al. 2015)."
 
 % use section* for acknowledgment
 % \section*{Acknowledgment}
