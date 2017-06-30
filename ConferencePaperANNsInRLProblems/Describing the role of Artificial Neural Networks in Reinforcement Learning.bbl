@@ -36,4 +36,39 @@ H.~van Hasselt, A.~Guez, and D.~Silver, ``Deep reinforcement learning with
   Available: \url{http://arxiv.org/abs/1509.06461}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DRL:HumanLevelControl}
+\BIBentryALTinterwordspacing
+V.~Mnih, K.~Kavukcuoglu, D.~Silver, A.~Rusu, J.~Veness, M.~G. Bellemare,
+  A.~Graves, M.~Riedmiller, A.~Fidjeland, G.~Ostrovski, S.~Petersen,
+  C.~Beattie, A.~Sadik, I.~Antonoglou, H.~King, D.~Kumaran, D.~Wierstra, and
+  D.~H. S~Legg, ``Human-level control through deep reinforcement learning,''
+  \emph{Nature}, vol. 518, 2015. [Online]. Available:
+  \url{https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{DRL:Silver_2016}
+D.~Silver, A.~Huang, C.~J. Maddison, A.~Guez, L.~Sifre, G.~van~den Driessche,
+  J.~Schrittwieser, I.~Antonoglou, V.~Panneershelvam, M.~Lanctot, S.~Dieleman,
+  D.~Grewe, J.~Nham, N.~Kalchbrenner, I.~Sutskever, T.~Lillicrap, M.~Leach,
+  K.~Kavukcuoglu, T.~Graepel, and D.~Hassabis, ``Mastering the game of {Go}
+  with deep neural networks and tree search,'' \emph{Nature}, vol. 529, no.
+  7587, pp. 484--489, Jan. 2016.
+
+\bibitem{mnih-atari-2013}
+V.~Mnih, K.~Kavukcuoglu, D.~Silver, A.~Graves, I.~Antonoglou, D.~Wierstra, and
+  M.~Riedmiller, ``Playing atari with deep reinforcement learning,'' in
+  \emph{NIPS Deep Learning Workshop}, 2013.
+
+\bibitem{sutton_barto_98}
+R.~S. Sutton and A.~G. Barto, \emph{Introduction to Reinforcement Learning},
+  1st~ed.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge, MA, USA: MIT Press,
+  1998.
+
+\bibitem{KarpathyCNN}
+\BIBentryALTinterwordspacing
+A.~Karpathy. (2017) Cs231n convolutional neural networks for visual
+  recognition. [Online]. Available:
+  \url{http://cs231n.github.io/convolutional-networks/}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
