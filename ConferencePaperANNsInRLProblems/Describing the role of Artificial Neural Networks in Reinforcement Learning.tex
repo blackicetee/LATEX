@@ -369,6 +369,10 @@ Email: t.stegemann@gmx.de}}
 % make the title area
 \maketitle
 
+% enables page numbering
+\thispagestyle{plain}
+\pagestyle{plain}
+
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
@@ -488,10 +492,63 @@ Email: t.stegemann@gmx.de}}
 
 % Introduction : Which question or which problem was investigated?
 \section{Introduction}
-Artificial Intelligence is a huge, rewarding, rising and complex research field. More and more people are interested in AI every day. Students, researchers, economics, engineers, CEO's and investors are highly encouraged to use, understand and/or improve AI technologies. At some point in time an AI newcomer will get to the problems of Reinforcement Learning (RL) and therefore to Artificial Neural Networks (ANN's). Andrew Ng. describes AI as the new upcomming electricity: AI will change many different industries and it will have a huge general impact in everyday life. 
+Artificial Intelligence (AI) is a huge, rewarding, rising and complex research field. More and more people are interested in AI every day. Students, researchers, economics, engineers, CEO's and investors are highly encouraged to use, understand and/or improve AI technologies. At some point in time an AI newcomer will get to the problems of Reinforcement Learning (RL) and therefore to Artificial Neural Networks (ANN's). Andrew Ng. describes AI as the new upcomming electricity: AI will change many different industries and it will have a huge general impact in everyday life. \\
+
+In this paper we will concentrate on the use of ANN's in Reinforcement Learning. To understand the relationship between those two big concepts we explain key parts of both. For RL key parts are the problem definition, especially sequential stochastic decision processes (Markov Decision Process), discounted sums of delayed rewards, policy and value functions and approximation approaches of those functions. Additionally it is needed to  define what the RL algorithms have to achieve in form of a loss function (also called objective or cost function) and how this function can be optimized with gradient methods. This mechanism of defining a loss function and optimize it with gradient methods is also widely used in other machine learning sub domains like supervised learning. RL is one of three main machine learning sub domains: Supervised Learning (SL) where a "teacher" defines whether something is good or bad, Reinforcement Learning (RL) where no "teacher" is given and the algorithm only learns from trial and error experience and delayed reward signals and Unsupervised Learning (UL) where no "teacher" or reward signal is given and the algorithm learns considering the special clustering or structure of the input data. Inside the paper we will strongly concentrate on RL and don't mention the other two sub domains of machine learning.
+
+Policy and value functions represent the behaviour and learning result of an RL algorithm. Those functions cannot be represented in a table lookup, e.g. with a database. Because the dimensions of most RL problems will lead to databases with more entries then particles in the universe (compare chess board positions and actions W. Ertel 2007 S. 114 ff). A great generalization (as we will see later) is approximating policy and value functions using ANN's. For ANN's key parts are convolutional neural networks (CNN'S), recurrent neural networks (RNN's) and backpropagation. CNN's and RNN's are special kinds of ANN's. CNN's are often used for image classification and RNN's are often used in sequential settings when we have input over time. Combination of both special types are also possible and practically used. Another approach for approximating policy and value functions is using a linear combination of features, but this will not be part of this paper. After we explained both concepts RL and ANN's we switch to practical case studies done by scientific researchers, which all used ANN's in RL successfully. We will have a closer look onto the results and how they realized their experiments. Last part of the paper is a discussion and conclusion part about how well ANN's are used in RL and which opportunities for ANN's in RL are in the future.  
+
+\section{Reinforcement Learning (RL)}
+Reinforcement learning (RL) problems consider an agent-environment interaction framework. Basics of reinforcement learning are mentioned in \cite{DBLP:journals/corr/MnihBMGLHSK16, DBLP:journals/corr/HasseltGS15, DRL:HumanLevelControl, DRL:Silver_2016, mnih-atari-2013}. As an in depth guide for reinforcement learning see \cite{sutton_barto_98}. The following part is about summarizing those background RL introductions. The agent (implementation of the learning algorithm) will interact with the environment (a Markov Decision Process). The agent will get rewards and states from the environment and the environment will get actions from the agent. The agent tries to learn optimal behaviour through trial and error attempts. The agent wants to know which actions in which states get the most long-term reward and fit this knowledge into a policy representation. A few main problems of this RL framework are: 
+\begin{itemize}
+\item The agent only gets a numerical reward from the environment at the end of a decision-sequence. \\ $\sim$ \textit{Delayed Reward}
+\item How should the reward be assigned to the different steps of a decision-sequence? \\ $\sim$ \textit{Credit Assignment Problem}
+\item How to handle vast action- and state-spaces? \\ $\sim$ \textit{Generalization Problem}
+\end{itemize}
+
+A major goal of RL is to find a global optimal policy. A policy is a function which maps states to actions. This policy will additionally get a vector of parameters. The parameter-vector changes the policy output. This parametrisation of the policy function is called “function approximation” and Artificial Neural Networks are a really great approach for approximating a policy function. Combining ANN's with reinforcement learning algorithms have so far shown spectacular results e.g.: The Google DeepMind Team programmed an AI which plays Go (a very complex strategy board game) at human grandmaster level \cite{DRL:Silver_2016}. With this approximation the problem of vast action- and state-spaces can be solved. To optimise the parameter-vector methods  like “Monte-Carlo Policy Gradient” or “Actor-Critic Policy Gradient” are applied to objective functions. Applications like TD-Gammon by Gerald Tesauro proved that learning complex strategy games with Artificial Neural Networks is possible and promising.
+
+\subsection{Q-learning}
+
+\subsection{Loss (or Objective) Functions}
+
+\subsection{Batch vs. Stochastic Gradient Decent}
+The following differentiation of batch and stochastic gradient descent is based on \cite{bottou-bousquet-2008} and \cite{bottou-2010}: In general gradient methods are used to optimize a function respective to its partial derivatives. A parameter update with batch gradient descent will consider the whole training set for its calculation. So in large scale machine learning problems there are training sets with several millions or billions of examples. For every update step the batch gradient descent calculates the sum of the partial derivatives in respective to all examples. To find the minimum of a function multiple update steps are needed. Batch gradient descent will have an exponential computational cost for larger machine learning problems. \\
+
+A Solution for this problem is the stochastic gradient descent. Instead of computing the gradient of the function exactly, each iteration (update step) estimates the gradient on the basis of a single randomly picked example. The trade-off between batch and stochastic gradient descent is that batch gradient descent achieves linear convergence, when the initial estimate is close enough to the optimum and when the gain of the discounting factor is sufficiently small. The stochastic gradient descent will not converge to a minimum like batch gradient descent does, rather the parameters which are updated will oscillate around the minimum but will may never converge to the minimum. But often the stochastic gradient descent gets the parameters close to the minimum much faster than batch gradient descent. \\
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{gradient_plots}
+\caption{Contour plots of cost function $J(\theta)$ with marked batch (left) and stochastic gradient descent (right) \cite{ng_2017}.}
+\label{fig:gradient_plots}
+\end{figure}
+
+Figure \ref{fig:gradient_plots} illustrates how batch and stochastic gradient descent converge to a minimum. The coloured ovals define the contour of a cost function $J(\theta)$. The cost function is minimal in the middle of the smallest oval and gets higher in the outer ovals. The parameters $\theta_0$ and $\theta_1$ are two parameters of a parameter vector $\theta$. Those parameter values will change the cost of function $J(\theta)$. In the left part of figure \ref{fig:gradient_plots} parameters $\theta$ updated by batch gradient descent converges "relatively straight" to a minimum after several iterations. Whereas in the right part of figure \ref{fig:gradient_plots} parameters $\theta$ updated by stochastic gradient descent are in general moved in the direction of the minimum but not always and in the end the parameters are wondering around close to the minimum.
+
+\section{Artificial Neural Networks (ANN's)}
+
+\subsection{Convolutional Neural Networks (CNN's)}
+
+A convolutional neural network (CNN) consists of layers. There are different kinds of layers: input layer, convolutional layer (CONV), rectified linear unit layer (RELU), pooling layer (POOL), fully connected layer (FC) and an output layer. Some of these layers can appear multiple times. For example CONV $\rightarrow$ RELU $\rightarrow$ CONV $\rightarrow$ RELU $\rightarrow$ POOL ... FC. In neural networks in general between the output and the input layers are hidden layers. If there is more then one hidden layer between input and output layer, then the neural network is called a deep neural network. To understand the Deep Q-networks it is helpful to first think about how those convolutional neural networks work in detail. 
+
+\paragraph{The Input layer} can be high dimensional sensory data. Considering the Atari 2600 arcade gaming environment \cite{DBLP:journals/corr/MnihBMGLHSK16, DBLP:journals/corr/HasseltGS15, DRL:HumanLevelControl} the input is a video stream of pixels at different time steps. At time step $t$ a video signal reduces to just an image of pixels and the complete sequence of images at all time steps equals the video signal. There is still more then the raw pixels from the video stream like the score value at each time step \cite{DRL:HumanLevelControl}. In terms of reinforcement learning the score signal is a reward signal and the video stream at each time step describes the state in which the agent is in.
+
+\paragraph{The convolution layer} is about shifting a fixed sized window (a filter) around the whole input image. The size of the filter should be about 3x3 or 5x5 pixels small. Each time the 3x3 filter is applied on an image position it outputs exact one value for that position. A filter can be a representation for edges, lines or other shapes. A combination of those low level filters results in more complex filters like an eye or an ear. Andrej Karpathy created a great visualisation of the computation inside the convolution layer see section "Convolution Demo" in \cite{KarpathyCNN}.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{conv_net}
+\caption{Schematic illustration of the convolutional neural network \cite{DRL:HumanLevelControl}.}
+\label{fig:conv_net}
+\end{figure}
+
+\subsection{Recurrent Neural Networks (RNN's)}
+
 
 % Related Work / State of the art / Literature Review
-\section{Related Work}
+\section{Successful case studies using ANN's for RL}
+The following part is about summarising successful case studies which used ANN's for RL. 
 
 \subsection{Asynchronous Methods for Deep Reinforcement Learning}
 The scientists from Google DeepMind and Montreal Institute for Learning Algorithms introduced asynchronous deep learning algorithms \cite{DBLP:journals/corr/MnihBMGLHSK16}. These asynchronous algorithms are based on four standard reinforcement learning algorithms: One-step Q-learning, one-step Sarsa, n-step Q-learning and advantage actor-critic. The paper explains the background of reinforcement learning and how the asynchronous reinforcement learning methods works. The study was approved by an experiment in an Atari 2600 evaluation environment . All four asynchronous algorithms where tested within the test environment  . The Atari 2600 environment tests where used to compare the performance of the four algorithms. The main finding of this study is that all four asynchronous deep reinforcement learning algorithms are able to train neural network controllers on a variety of domains in a stable manner. In addition their results show that stable train ing of neural networks through reinforcement learning is possible with both value-based and policy-based methods, off-policy as well as on-policy methods, and in discrete as well as continuous domains. 
@@ -510,36 +567,10 @@ The paper from Google concerns two different algorithm approaches for deep reinf
 \subsection{Playing Atari with Deep Reinforcement Learning}
 The paper from DeepMind Technologies is about a deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning \cite{mnih-atari-2013}. They defined the model as a convolutional neural network (CNN). This CNN is trained with a variant of Q-learning. Input of the CNN is row pixels and output is a value function estimating future rewards. They apply this deep learning model to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. Result of this experiment is that it outperforms all previous approaches on sex ot the games and surpasses a human expert on three of them. 
 
-\section{Reinforcement Learning}
-Reinforcement learning (RL) problems consider an agent-environment interaction framework. Basics of reinforcement learning are mentioned in \cite{DBLP:journals/corr/MnihBMGLHSK16, DBLP:journals/corr/HasseltGS15, DRL:HumanLevelControl, DRL:Silver_2016, mnih-atari-2013}. As an in depth guide for reinforcement learning see \cite{sutton_barto_98}. The following part is about summarizing those background RL introductions. The agent (implementation of the learning algorithm) will interact with the environment (a Markov Decision Process). The agent will get rewards and states from the environment and the environment will get actions from the agent. The agent tries to learn optimal behaviour through trial and error attempts. The agent wants to know which actions in which states get the most long-term reward and fit this knowledge into a policy representation. A few main problems of this RL framework are: 
-\begin{itemize}
-\item The agent only gets a numerical reward from the environment at the end of a decision-sequence. \\ $\sim$ \textit{Delayed Reward}
-\item How should the reward be assigned to the different steps of a decision-sequence? \\ $\sim$ \textit{Credit Assignment Problem}
-\item How to handle vast action- and state-spaces? \\ $\sim$ \textit{Generalization Problem}
-\end{itemize}
+\section{Deep Reinforcement Learning}
+In depth explaining of the experiment done in paper "Playing Atari with Deep Reinforcement Learning".
 
-A major goal of RL is to find a global optimal policy. A policy is a function which maps states to actions. This policy will additionally get a vector of parameters. The parameter-vector changes the policy output. This parametrisation of the policy function is called “function approximation” and Artificial Neural Networks are a really great approach for approximating a policy function. Combining ANN's with reinforcement learning algorithms have so far shown spectacular results e.g.: The Google DeepMind Team programmed an AI which plays Go (a very complex strategy board game) at human grandmaster level \cite{DRL:Silver_2016}. With this approximation the problem of vast action- and state-spaces can be solved. To optimise the parameter-vector methods  like “Monte-Carlo Policy Gradient” or “Actor-Critic Policy Gradient” are applied to objective functions. Applications like TD-Gammon by Gerald Tesauro proved that learning complex strategy games with Artificial Neural Networks is possible and promising.
-
-\subsection{Q-learning}
-
-\subsection{Actor-critic approaches}
-
-\section{Convolutional Neural Networks}
-
-A convolutional neural network (CNN) consists of layers. There are different kinds of layers: input layer, convolutional layer (CONV), rectified linear unit layer (RELU), pooling layer (POOL), fully connected layer (FC) and an output layer. Some of these layers can appear multiple times. For example CONV $\rightarrow$ RELU $\rightarrow$ CONV $\rightarrow$ RELU $\rightarrow$ POOL ... FC. In neural networks in general between the output and the input layers are hidden layers. If there is more then one hidden layer between input and output layer, then the neural network is called a deep neural network. To understand the Deep Q-networks it is helpful to first think about how those convolutional neural networks work in detail. 
-
-\paragraph{The Input layer} can be high dimensional sensory data. Considering the Atari 2600 arcade gaming environment \cite{DBLP:journals/corr/MnihBMGLHSK16, DBLP:journals/corr/HasseltGS15, DRL:HumanLevelControl} the input is a video stream of pixels at different time steps. At time step $t$ a video signal reduces to just an image of pixels and the complete sequence of images at all time steps equals the video signal. There is still more then the raw pixels from the video stream like the score value at each time step \cite{DRL:HumanLevelControl}. In terms of reinforcement learning the score signal is a reward signal and the video stream at each time step describes the state in which the agent is in.
-
-\paragraph{The convolution layer} is about shifting a fixed sized window (a filter) around the whole input image. The size of the filter should be about 3x3 or 5x5 pixels small. Each time the 3x3 filter is applied on an image position it outputs exact one value for that position. A filter can be a representation for edges, lines or other shapes. A combination of those low level filters results in more complex filters like an eye or an ear. Andrej Karpathy created a great visualisation of the computation inside the convolution layer see section "Convolution Demo" in \cite{KarpathyCNN}.
-
-\begin{figure}[!t]
-\centering
-\includegraphics[width=3.5in]{conv_net}
-\caption{Schematic illustration of the convolutional neural network \cite{DRL:HumanLevelControl}.}
-\label{fig:conv_net}
-\end{figure}
-
-\section{Deep Q-network}
+\subsection{Deep Q-network}
 A deep Q network (DQN) is a combination of a convolutional neural network and the reinforcement learning algorithm Q-learning. 
 
 "A deep Q network (DQN) is a multi-layerd neural network that for a given state $s$ outputs a vector of action values $Q(a, ; \theta)$, where $\theta$ are the parameters of the network. For an $n$-dimensional state space and an action space containing $m$ actions, the neural network is a function from $\mathbb{R}^n$ to $\mathbb{R}^m$. Two important ingredients of the DQN algorithm as proposed by Mnih et al. (2015) are the use of a target network and the use of experience replay. The target network, with parameters $\theta^-$, is the same as the online network except that its parameters are copied every $t$ steps from the online network, so that then $\theta^-_t = \theta_t$, and kept fixed on all other steps. The target used by DQN is then
@@ -549,6 +580,8 @@ Y^{DQN}_t \equiv R_{t+1} + \gamma \max_a Q(S_{t+1}, a; \theta^-_t).
 \end{equation*}
 
 For the experience replay (Lin, 1992), observed transitions are stored for some time and sampled uniformly from this memory bank to update the network. Both the target network and the experience replay dramatically improve the performance of the algorithm (Mnih et al. 2015)."
+
+\section{Discussion \& Conclusion}
 
 % use section* for acknowledgment
 % \section*{Acknowledgment}
