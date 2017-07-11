@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  11 JUL 2017 12:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  11 JUL 2017 14:48
 entering extended mode
 **"./Describing the role of Artificial Neural Networks in Reinforcement Learnin
 g.tex"
@@ -219,10 +219,37 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+(E:\dev\MikTex\tex\latex\base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@ALC@unique=\count107
+\c@ALC@line=\count108
+\c@ALC@rem=\count109
+\c@ALC@depth=\count110
+\ALC@tlm=\skip47
+\algorithmicindent=\skip48
+)
+(C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(E:\dev\MikTex\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count111
+\float@exts=\toks21
+\float@box=\box30
+\@float@everytoks=\toks22
+\@floatcapt=\box31
+)
+\@float@every@algorithm=\toks23
+\c@algorithm=\count112
+)
 (E:\dev\MikTex\tex\latex\base\inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks21
-\inpenc@posthook=\toks22
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
 
 (E:\dev\MikTex\tex\latex\base\utf8.def
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
@@ -536,33 +563,33 @@ ux")
 \openout1 = `"Describing the role of Artificial Neural Networks in Reinforcemen
 t Learning.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 319.
-LaTeX Font Info:    ... okay on input line 319.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 319.
-LaTeX Font Info:    ... okay on input line 319.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 319.
-LaTeX Font Info:    ... okay on input line 319.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 319.
-LaTeX Font Info:    ... okay on input line 319.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 319.
-LaTeX Font Info:    ... okay on input line 319.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 319.
-LaTeX Font Info:    ... okay on input line 319.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
 
 -- Lines per column: 56 (exact).
 (C:\Users\Thilo\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
+\scratchcounter=\count113
 \scratchdimen=\dimen137
-\scratchbox=\box30
-\nofMPsegments=\count108
-\nofMParguments=\count109
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count110
+\scratchbox=\box32
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count116
 \MPscratchDim=\dimen138
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
-\everyMPtoPDFconversion=\toks24
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks27
 ) (E:\dev\MikTex\tex\generic\oberdiek\pdftexcmds.sty
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -607,7 +634,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 495--496
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
 
@@ -615,19 +642,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 495--496
 File: ./images/agent_environment.pdf Graphic file (type pdf)
 
 <use ./images/agent_environment.pdf>
-Package pdftex.def Info: ./images/agent_environment.pdf used on input line 505.
+Package pdftex.def Info: ./images/agent_environment.pdf used on input line 506.
 
 (pdftex.def)             Requested size: 252.94499pt x 97.14265pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 505--506
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 506--507
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 512.
+LaTeX Font Info:    Try loading font information for U+msa on input line 511.
 (E:\dev\MikTex\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 512.
+LaTeX Font Info:    Try loading font information for U+msb on input line 511.
 
 (E:\dev\MikTex\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -635,68 +662,93 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
  <./images/agent_environment.pdf>]
-<./images/linear_regression_model_fit.pdf, id=13, 549.05125pt x 198.7425pt>
+Underfull \hbox (badness 1496) in paragraph at lines 518--519
+\OT1/ptm/m/n/10 failed for big-ger game fields of Tic-Tac-Toe or Re-versi.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
+
+ []
+
+<./images/linear_regression_model_fit.pdf, id=19, 549.05125pt x 198.7425pt>
 File: ./images/linear_regression_model_fit.pdf Graphic file (type pdf)
 
 <use ./images/linear_regression_model_fit.pdf>
 Package pdftex.def Info: ./images/linear_regression_model_fit.pdf used on input
- line 540.
+ line 543.
 (pdftex.def)             Requested size: 252.94499pt x 91.55911pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 540--541
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 543--544
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 545--546
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
 
  []
 
-[2 <./images/linear_regression_model_fit.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 550--551
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
 
  []
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 552--553
+Underfull \hbox (badness 1552) in paragraph at lines 555--556
 \OT1/ptm/m/n/10 that batch gra-di-ent de-scent achieves lin-ear con-ver-gence,
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 552--553
+Underfull \hbox (badness 1590) in paragraph at lines 555--556
 \OT1/ptm/m/n/10 pa-ram-e-ters which are up-dated will os-cil-late around the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--553
+Underfull \hbox (badness 10000) in paragraph at lines 555--556
 
  []
 
-<./images/gradient_plots.pdf, id=28, 230.8625pt x 88.33pt>
+<./images/gradient_plots.pdf, id=25, 230.8625pt x 88.33pt>
 File: ./images/gradient_plots.pdf Graphic file (type pdf)
 
 <use ./images/gradient_plots.pdf>
-Package pdftex.def Info: ./images/gradient_plots.pdf used on input line 556.
+Package pdftex.def Info: ./images/gradient_plots.pdf used on input line 559.
 (pdftex.def)             Requested size: 252.94499pt x 96.77916pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 556--557
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 559--560
  [][] 
  []
 
-<./images/conv_net.pdf, id=29, 597.23125pt x 384.43625pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./images/linear_regression_model_fit.pdf> <./images/gradient_plots.pdf
+
+pdfTeX warning: pdflatex (file ./images/gradient_plots.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+>] <./images/conv_net.pdf, id=36, 597.23125pt x 384.43625pt>
 File: ./images/conv_net.pdf Graphic file (type pdf)
 
 <use ./images/conv_net.pdf>
-Package pdftex.def Info: ./images/conv_net.pdf used on input line 575.
+Package pdftex.def Info: ./images/conv_net.pdf used on input line 596.
 (pdftex.def)             Requested size: 252.94499pt x 162.82303pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 575--576
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 596--597
  [][] 
  []
 
-[3 <./images/gradient_plots.pdf>] [4 <./images/conv_net.pdf>]
+
+Underfull \vbox (badness 5832) has occurred while \output is active []
+
+ [4 <./images/conv_net.pdf>]
 ("Describing the role of Artificial Neural Networks in Reinforcement Learning.b
-bl")
+bl"
+Underfull \hbox (badness 1688) in paragraph at lines 68--71
+[]\OT1/ptm/m/n/8 W. Er-tel, \OT1/ptm/m/it/8 Grund-kurs K[]unstliche In-tel-li-g
+enz: eine prax-isori-en-tierte
+ []
+
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -708,19 +760,17 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5
-
-]
+[5]
 ("Describing the role of Artificial Neural Networks in Reinforcement Learning.a
 ux") ) 
 Here is how much of TeX's memory you used:
- 3645 strings out of 493333
- 52409 string characters out of 3145253
- 122978 words of memory out of 3000000
- 7112 multiletter control sequences out of 15000+200000
- 38942 words of font info for 83 fonts, out of 3000000 for 9000
+ 3930 strings out of 493333
+ 55911 string characters out of 3145253
+ 129427 words of memory out of 3000000
+ 7382 multiletter control sequences out of 15000+200000
+ 40049 words of font info for 84 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 40i,15n,26p,1485b,238s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,15n,26p,1623b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/dev/MikTex/fonts/enc/dvips/base/8r.enc}<E:/dev/MikTex/fonts/type1/pub
 lic/amsfonts/cm/cmex10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi10
 .pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/dev/MikTex/fon
@@ -733,9 +783,9 @@ onts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmbi8a.pf
 b><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev/MikTex/fonts/type1/ur
 w/times/utmri8a.pfb>
 Output written on "Describing the role of Artificial Neural Networks in Reinfor
-cement Learning.pdf" (5 pages, 1578165 bytes).
+cement Learning.pdf" (5 pages, 1584837 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

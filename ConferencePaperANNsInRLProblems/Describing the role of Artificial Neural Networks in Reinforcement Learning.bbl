@@ -64,6 +64,11 @@ V.~Mnih, K.~Kavukcuoglu, D.~Silver, A.~Graves, I.~Antonoglou, D.~Wierstra, and
   M.~Riedmiller, ``Playing atari with deep reinforcement learning,'' in
   \emph{NIPS Deep Learning Workshop}, 2013.
 
+\bibitem{ertel_2009}
+W.~Ertel, \emph{Grundkurs Künstliche Intelligenz: eine praxisorientierte
+  Einführung}, 2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Wiesbaden:
+  Vieweg + Teubner, 2009.
+
 \bibitem{Watkins_1992}
 C.~J. C.~H. Watkins and P.~Dayan, ``Technical note: \cal q-learning,''
   \emph{Mach. Learn.}, vol.~8, no. 3-4, pp. 279--292, May 1992.
