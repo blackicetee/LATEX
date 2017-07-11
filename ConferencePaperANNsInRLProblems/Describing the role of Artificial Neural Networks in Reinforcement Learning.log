@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  7 JUL 2017 13:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  11 JUL 2017 12:43
 entering extended mode
 **"./Describing the role of Artificial Neural Networks in Reinforcement Learnin
 g.tex"
@@ -611,66 +611,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 495--496
 
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 504.
+<./images/agent_environment.pdf, id=1, 125.46875pt x 48.18pt>
+File: ./images/agent_environment.pdf Graphic file (type pdf)
+
+<use ./images/agent_environment.pdf>
+Package pdftex.def Info: ./images/agent_environment.pdf used on input line 505.
+
+(pdftex.def)             Requested size: 252.94499pt x 97.14265pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 505--506
+ [][] 
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 512.
 (E:\dev\MikTex\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 504.
+LaTeX Font Info:    Try loading font information for U+msb on input line 512.
 
 (E:\dev\MikTex\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{C:/Users/Thilo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
-]
-Underfull \hbox (badness 2401) in paragraph at lines 516--517
-[]\OT1/ptm/m/n/10 The fol-low-ing dif-fer-en-ti-a-tion of batch and stochas-tic
+ <./images/agent_environment.pdf>]
+<./images/linear_regression_model_fit.pdf, id=13, 549.05125pt x 198.7425pt>
+File: ./images/linear_regression_model_fit.pdf Graphic file (type pdf)
+
+<use ./images/linear_regression_model_fit.pdf>
+Package pdftex.def Info: ./images/linear_regression_model_fit.pdf used on input
+ line 540.
+(pdftex.def)             Requested size: 252.94499pt x 91.55911pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 540--541
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
+
+ []
+
+[2 <./images/linear_regression_model_fit.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--517
-
- []
-
-
-Underfull \hbox (badness 1552) in paragraph at lines 518--519
+Underfull \hbox (badness 1552) in paragraph at lines 552--553
 \OT1/ptm/m/n/10 that batch gra-di-ent de-scent achieves lin-ear con-ver-gence,
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 518--519
+Underfull \hbox (badness 1590) in paragraph at lines 552--553
 \OT1/ptm/m/n/10 pa-ram-e-ters which are up-dated will os-cil-late around the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--519
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
 
  []
 
-<./images/gradient_plots.pdf, id=11, 230.8625pt x 88.33pt>
+<./images/gradient_plots.pdf, id=28, 230.8625pt x 88.33pt>
 File: ./images/gradient_plots.pdf Graphic file (type pdf)
 
 <use ./images/gradient_plots.pdf>
-Package pdftex.def Info: ./images/gradient_plots.pdf used on input line 522.
+Package pdftex.def Info: ./images/gradient_plots.pdf used on input line 556.
 (pdftex.def)             Requested size: 252.94499pt x 96.77916pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 522--523
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 556--557
  [][] 
  []
 
-<./images/conv_net.pdf, id=12, 597.23125pt x 384.43625pt>
+<./images/conv_net.pdf, id=29, 597.23125pt x 384.43625pt>
 File: ./images/conv_net.pdf Graphic file (type pdf)
 
 <use ./images/conv_net.pdf>
-Package pdftex.def Info: ./images/conv_net.pdf used on input line 541.
+Package pdftex.def Info: ./images/conv_net.pdf used on input line 575.
 (pdftex.def)             Requested size: 252.94499pt x 162.82303pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 541--542
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 575--576
  [][] 
  []
 
-[2 <./images/gradient_plots.pdf>] [3 <./images/conv_net.pdf>]
+[3 <./images/gradient_plots.pdf>] [4 <./images/conv_net.pdf>]
 ("Describing the role of Artificial Neural Networks in Reinforcement Learning.b
 bl")
 
@@ -684,31 +708,34 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4]
+[5
+
+]
 ("Describing the role of Artificial Neural Networks in Reinforcement Learning.a
 ux") ) 
 Here is how much of TeX's memory you used:
- 3632 strings out of 493333
- 51969 string characters out of 3145253
- 123958 words of memory out of 3000000
- 7101 multiletter control sequences out of 15000+200000
+ 3645 strings out of 493333
+ 52409 string characters out of 3145253
+ 122978 words of memory out of 3000000
+ 7112 multiletter control sequences out of 15000+200000
  38942 words of font info for 83 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 40i,7n,26p,1445b,238s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,15n,26p,1485b,238s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/dev/MikTex/fonts/enc/dvips/base/8r.enc}<E:/dev/MikTex/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.
-pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/dev/MikTex/font
-s/type1/public/amsfonts/cm/cmr10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts
-/cm/cmr7.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/dev/Mik
-Tex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/dev/MikTex/fonts/type1/public
-/amsfonts/cm/cmsy7.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type
-1/urw/times/utmbi8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev
-/MikTex/fonts/type1/urw/times/utmri8a.pfb>
+lic/amsfonts/cm/cmex10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/dev/MikTex/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb><E:/dev/MikTex/fonts/type1/public/amsfont
+s/cm/cmr10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/dev/M
+ikTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/dev/MikTex/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+><E:/dev/MikTex/fonts/type1/public/amsfonts/symbols/msbm10.pfb><E:/dev/MikTex/f
+onts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmbi8a.pf
+b><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev/MikTex/fonts/type1/ur
+w/times/utmri8a.pfb>
 Output written on "Describing the role of Artificial Neural Networks in Reinfor
-cement Learning.pdf" (4 pages, 894046 bytes).
+cement Learning.pdf" (5 pages, 1578165 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 92 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

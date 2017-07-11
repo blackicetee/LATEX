@@ -21,6 +21,11 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{sutton_barto_98}
+R.~S. Sutton and A.~G. Barto, \emph{Introduction to Reinforcement Learning},
+  1st~ed.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge, MA, USA: MIT Press,
+  1998.
+
 \bibitem{DBLP:journals/corr/MnihBMGLHSK16}
 \BIBentryALTinterwordspacing
 V.~Mnih, A.~P. Badia, M.~Mirza, A.~Graves, T.~P. Lillicrap, T.~Harley,
@@ -59,10 +64,9 @@ V.~Mnih, K.~Kavukcuoglu, D.~Silver, A.~Graves, I.~Antonoglou, D.~Wierstra, and
   M.~Riedmiller, ``Playing atari with deep reinforcement learning,'' in
   \emph{NIPS Deep Learning Workshop}, 2013.
 
-\bibitem{sutton_barto_98}
-R.~S. Sutton and A.~G. Barto, \emph{Introduction to Reinforcement Learning},
-  1st~ed.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge, MA, USA: MIT Press,
-  1998.
+\bibitem{Watkins_1992}
+C.~J. C.~H. Watkins and P.~Dayan, ``Technical note: \cal q-learning,''
+  \emph{Mach. Learn.}, vol.~8, no. 3-4, pp. 279--292, May 1992.
 
 \bibitem{bottou-bousquet-2008}
 \BIBentryALTinterwordspacing
