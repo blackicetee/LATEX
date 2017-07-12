@@ -582,14 +582,37 @@ Figure \ref{fig:gradient_plots} illustrates how batch and stochastic gradient de
 Algorithm \ref{alg:stochastic gradient descent} is a pseudocode example of stochastic gradient descent from Andrew Ng \cite{ng_2017}. The term $m$ denotes the amount of training examples, $n$ is the amount of parameters $\theta$, hyper parameter $\alpha$ is the step size or learning rate which we already mentioned in chapter Q-learning and $h_\theta(x^{(i)}) - y^{(i)}$ is a part of the error term mentioned in chapter loss function. For a concrete example with $m = 300.000.000,00$ training examples the algorithm \ref{alg:stochastic gradient descent} will update all parameters $\theta_n$ for every training example. So in one single stochastic gradient descent step the parameter vector $\Theta = \theta_0, ..., \theta_n$ is updated $m$ times. Batch gradient descent will in contrast calculate an update of all parameters $\theta_n$ considering all training examples at once and then just performing one single batch gradient descent update of the parameter vector $\Theta$.
 
 \section{Artificial Neural Networks (ANN's)}
+In neural networks in general between the output and the input layers are hidden layers. If there is more then one hidden layer between input and output layer, then the neural network is called a deep neural network.
 
-\subsection{Convolutional Neural Networks (CNN's)}
+\subsection{Convolutional Neural Network (CNN/ConvNet)}
 
-A convolutional neural network (CNN) consists of layers. There are different kinds of layers: input layer, convolutional layer (CONV), rectified linear unit layer (RELU), pooling layer (POOL), fully connected layer (FC) and an output layer. Some of these layers can appear multiple times. For example CONV $\rightarrow$ RELU $\rightarrow$ CONV $\rightarrow$ RELU $\rightarrow$ POOL ... FC. In neural networks in general between the output and the input layers are hidden layers. If there is more then one hidden layer between input and output layer, then the neural network is called a deep neural network. To understand the Deep Q-networks it is helpful to first think about how those convolutional neural networks work in detail. 
+To better understand the later experiment \cite{mnih-atari-2013} (Deep Q-network) it is helpful to get into CNN's first. Knowledge base of this chapter is a Stanford class CS231n about "Convolutional Neural Networks for Visual Recognition" \cite{KarpathyCNN}. A convolutional neural network is a specific ANN which assumes that every input is an image. This assumption allows to reduce the amount of parameters and so improve the performance for image processing with CNN's in contrast to more general ANN's. More general because ANN's don't assume a specific input. A CNN consists of layers. There are different kinds of layers: input layer (INPUT), convolutional layer (CONV), rectified linear unit layer (RELU), pooling layer (POOL), fully connected layer (FC) and an output layer. Some of these layers can appear multiple times. A simple ConvNet architecture for classification could be INPUT $\rightarrow$ CONV $\rightarrow$ RELU $\rightarrow$ POOL $\rightarrow$ FC. In the following every different layer will be explained in detail.
 
-\paragraph{The Input layer} can be high dimensional sensory data. Considering the Atari 2600 arcade gaming environment \cite{DBLP:journals/corr/MnihBMGLHSK16, DBLP:journals/corr/HasseltGS15, DRL:HumanLevelControl} the input is a video stream of pixels at different time steps. At time step $t$ a video signal reduces to just an image of pixels and the complete sequence of images at all time steps equals the video signal. There is still more then the raw pixels from the video stream like the score value at each time step \cite{DRL:HumanLevelControl}. In terms of reinforcement learning the score signal is a reward signal and the video stream at each time step describes the state in which the agent is in.
+\paragraph{The Input layer} can be high dimensional sensory data. Considering the Atari 2600 arcade gaming environment \cite{DBLP:journals/corr/MnihBMGLHSK16, DBLP:journals/corr/HasseltGS15, DRL:HumanLevelControl} the input is a video stream of pixels at different time steps. At time step $t$ a video signal reduces to just an image of pixels and the complete sequence of images at all time steps equals the video signal. There is still more then the raw pixels from the video stream like the score value at each time step \cite{DRL:HumanLevelControl}. In terms of reinforcement learning the score signal is a reward signal and the video stream at each time step describes the state in which the agent is in. Another example is the CIFAR-10 dataset which contains images of shape 32x32x3 (32 wide, 32 high, 3 color channels).
 
-\paragraph{The convolution layer} is about shifting a fixed sized window (a filter) around the whole input image. The size of the filter should be about 3x3 or 5x5 pixels small. Each time the 3x3 filter is applied on an image position it outputs exact one value for that position. A filter can be a representation for edges, lines or other shapes. A combination of those low level filters results in more complex filters like an eye or an ear. Andrej Karpathy created a great visualisation of the computation inside the convolution layer see section "Convolution Demo" in \cite{KarpathyCNN}.
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{convolutional_layer}
+\caption{Computation inside a convolution layer \cite{KarpathyCNN}.}
+\label{fig:convolutional_layer}
+\end{figure}
+
+\paragraph{The convolution layer} is the most computationally expensive layer, because much matrix multiplications are performed on raw data (not reduced data expect preprocessing). In general this layer applies filters on input images. A filter is a window with fixed size for the CIFAR-10 example the filters could have a size of 5x5x3. These filters are shifted around the width and height of the input images and for every position a matrix multiplication between the input image and the filter is performed. The matrix multiplication results in scalar values stored in a result matrix (feature map). Every filter produces an own feature map. Filters represent the weights of CNN's. For every filter there is an additional bias weight which need to be considered inside the computation. The output of this layer is controlled by three hyperparameters: depth, stride and zero-padding.
+
+\begin{itemize}
+\item Depth
+\item Stride
+\item Zero-padding
+\end{itemize}    
+
+A filter can be a representation for edges, lines or other shapes. A combination of those low level filters results in more complex filters like an eye or an ear. Those low and high level filters are like extracted features from the CNN. The computation inside a convolution layer is represented in Fig. \ref{fig:convolutional_layer}. Three input matrices of shape 7x7 are independently drawn, because each matrix represents the red, green or blue color channel so the input layer has a shape of 7x7x3 (7 wide, 7 high, 3 color channels). The outer lines (matrix borders) are all zero 
+
+\paragraph{The rectified linear unit layer} will apply an elementwise activation function, such as the $max(0,x)$ thresholding at zero. If $max(0,x)$ gets values below zero then it will return just zero and if the values are greater then zero $max$ will return the value itself. The blue circles in Fig. \ref{fig:conv_net} with a white line after CONV and FC layers represent the RELU activation function. The $max(0,x)$ rectifier is used for deep learning rather then e.g. the logistic sigmoid, because of better practical efficiency.
+
+\paragraph{The pooling layer} 
+
+\paragraph{The output layer} Aim of the CNN is to predict which of 10 different CIFAR classes an image belongs to.
+
 
 \begin{figure}[!t]
 \centering

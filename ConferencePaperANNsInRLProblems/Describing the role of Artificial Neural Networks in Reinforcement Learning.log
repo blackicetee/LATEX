@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  11 JUL 2017 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  12 JUL 2017 15:18
 entering extended mode
 **"./Describing the role of Artificial Neural Networks in Reinforcement Learnin
 g.tex"
@@ -719,28 +719,34 @@ Overfull \hbox (0.94499pt too wide) in paragraph at lines 559--560
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3 <./images/linear_regression_model_fit.pdf> <./images/gradient_plots.pdf
+[3 <./images/linear_regression_model_fit.pdf> <./images/gradient_plots.pdf
 
 pdfTeX warning: pdflatex (file ./images/gradient_plots.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->] <./images/conv_net.pdf, id=36, 597.23125pt x 384.43625pt>
-File: ./images/conv_net.pdf Graphic file (type pdf)
+>] <./images/convolutional_layer.pdf, id=36, 370.38374pt x 318.18875pt>
+File: ./images/convolutional_layer.pdf Graphic file (type pdf)
 
-<use ./images/conv_net.pdf>
-Package pdftex.def Info: ./images/conv_net.pdf used on input line 596.
-(pdftex.def)             Requested size: 252.94499pt x 162.82303pt.
+<use ./images/convolutional_layer.pdf>
+Package pdftex.def Info: ./images/convolutional_layer.pdf used on input line 59
+5.
+(pdftex.def)             Requested size: 252.94499pt x 217.30252pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 596--597
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 595--596
  [][] 
  []
 
+<./images/conv_net.pdf, id=37, 597.23125pt x 384.43625pt>
+File: ./images/conv_net.pdf Graphic file (type pdf)
 
-Underfull \vbox (badness 5832) has occurred while \output is active []
+<use ./images/conv_net.pdf>
+Package pdftex.def Info: ./images/conv_net.pdf used on input line 619.
+(pdftex.def)             Requested size: 252.94499pt x 162.82303pt.
 
- [4 <./images/conv_net.pdf>]
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 619--620
+ [][] 
+ []
+
+[4 <./images/convolutional_layer.pdf>] [5 <./images/conv_net.pdf>]
 ("Describing the role of Artificial Neural Networks in Reinforcement Learning.b
 bl"
 Underfull \hbox (badness 1688) in paragraph at lines 68--71
@@ -760,14 +766,16 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5]
+[6
+
+]
 ("Describing the role of Artificial Neural Networks in Reinforcement Learning.a
 ux") ) 
 Here is how much of TeX's memory you used:
- 3930 strings out of 493333
- 55911 string characters out of 3145253
- 129427 words of memory out of 3000000
- 7382 multiletter control sequences out of 15000+200000
+ 3936 strings out of 493333
+ 56106 string characters out of 3145253
+ 129435 words of memory out of 3000000
+ 7387 multiletter control sequences out of 15000+200000
  40049 words of font info for 84 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  40i,15n,26p,1623b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -783,9 +791,9 @@ onts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmbi8a.pf
 b><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev/MikTex/fonts/type1/ur
 w/times/utmri8a.pfb>
 Output written on "Describing the role of Artificial Neural Networks in Reinfor
-cement Learning.pdf" (5 pages, 1584837 bytes).
+cement Learning.pdf" (6 pages, 2191222 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
