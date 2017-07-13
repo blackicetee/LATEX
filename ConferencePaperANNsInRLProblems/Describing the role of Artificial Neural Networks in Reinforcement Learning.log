@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  12 JUL 2017 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  13 JUL 2017 15:15
 entering extended mode
 **"./Describing the role of Artificial Neural Networks in Reinforcement Learnin
 g.tex"
@@ -723,32 +723,107 @@ Overfull \hbox (0.94499pt too wide) in paragraph at lines 559--560
 
 pdfTeX warning: pdflatex (file ./images/gradient_plots.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->] <./images/convolutional_layer.pdf, id=36, 370.38374pt x 318.18875pt>
-File: ./images/convolutional_layer.pdf Graphic file (type pdf)
-
-<use ./images/convolutional_layer.pdf>
-Package pdftex.def Info: ./images/convolutional_layer.pdf used on input line 59
-5.
-(pdftex.def)             Requested size: 252.94499pt x 217.30252pt.
-
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 595--596
- [][] 
- []
-
-<./images/conv_net.pdf, id=37, 597.23125pt x 384.43625pt>
+>] <./images/conv_net.pdf, id=36, 597.23125pt x 384.43625pt>
 File: ./images/conv_net.pdf Graphic file (type pdf)
 
 <use ./images/conv_net.pdf>
-Package pdftex.def Info: ./images/conv_net.pdf used on input line 619.
+Package pdftex.def Info: ./images/conv_net.pdf used on input line 591.
 (pdftex.def)             Requested size: 252.94499pt x 162.82303pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 619--620
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 591--592
  [][] 
  []
 
-[4 <./images/convolutional_layer.pdf>] [5 <./images/conv_net.pdf>]
+<./images/convolutional_layer.pdf, id=37, 370.38374pt x 318.18875pt>
+File: ./images/convolutional_layer.pdf Graphic file (type pdf)
+
+<use ./images/convolutional_layer.pdf>
+Package pdftex.def Info: ./images/convolutional_layer.pdf used on input line 60
+2.
+(pdftex.def)             Requested size: 252.94499pt x 217.30252pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 602--603
+ [][] 
+ []
+
+[4 <./images/conv_net.pdf> <./images/convolutional_layer.pdf
+
+pdfTeX warning: pdflatex (file ./images/convolutional_layer.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+>] <./images/result_table_dqn.pdf, id=47, 341.275pt x 108.405pt>
+File: ./images/result_table_dqn.pdf Graphic file (type pdf)
+
+<use ./images/result_table_dqn.pdf>
+Package pdftex.def Info: ./images/result_table_dqn.pdf used on input line 687.
+(pdftex.def)             Requested size: 252.94499pt x 80.3491pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 687--688
+ [][] 
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 693--694
+\OT1/ptm/m/n/10 a hu-man in sev-eral Atari 2600 games, there are still
+ []
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 693--694
+\OT1/ptm/m/n/10 suf-fers from sub-stan-tial over-es-ti-ma-tions in some games
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
+
+ []
+
+[5 <./images/result_table_dqn.pdf>]
+Underfull \hbox (badness 2932) in paragraph at lines 695--696
+\OT1/ptm/m/n/10 sen-sory in-puts us-ing end-to-end re-in-force-ment learn-ing.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--696
+
+ []
+
+
+Underfull \hbox (badness 6808) in paragraph at lines 697--698
+[]\OT1/ptm/m/n/10 Another promiss-ing ap-proach us-ing ar-ti-fi-cial neu-ral
+ []
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 697--698
+\OT1/ptm/m/n/10 Al-go-rithms, they in-tro-duced asyn-chronous deep learn-ing
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 697--698
+\OT1/ptm/m/n/10 a pre-vi-ous sec-tion. The pa-per ex-plains the back-ground
+ []
+
+
+Underfull \hbox (badness 5970) in paragraph at lines 697--698
+\OT1/ptm/m/n/10 of re-in-force-ment learn-ing and how the asyn-chronous
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 697--698
+\OT1/ptm/m/n/10 re-in-force-ment learn-ing meth-ods works. The study was
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--698
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--700
+
+ []
+
+
 ("Describing the role of Artificial Neural Networks in Reinforcement Learning.b
-bl"
+bl" [6]
 Underfull \hbox (badness 1688) in paragraph at lines 68--71
 []\OT1/ptm/m/n/8 W. Er-tel, \OT1/ptm/m/it/8 Grund-kurs K[]unstliche In-tel-li-g
 enz: eine prax-isori-en-tierte
@@ -766,34 +841,35 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
+[7
 
 ]
 ("Describing the role of Artificial Neural Networks in Reinforcement Learning.a
 ux") ) 
 Here is how much of TeX's memory you used:
- 3936 strings out of 493333
- 56106 string characters out of 3145253
- 129435 words of memory out of 3000000
- 7387 multiletter control sequences out of 15000+200000
+ 3947 strings out of 493333
+ 56395 string characters out of 3145253
+ 131483 words of memory out of 3000000
+ 7397 multiletter control sequences out of 15000+200000
  40049 words of font info for 84 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 40i,15n,26p,1623b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,16n,26p,1623b,522s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/dev/MikTex/fonts/enc/dvips/base/8r.enc}<E:/dev/MikTex/fonts/type1/pub
 lic/amsfonts/cm/cmex10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/dev/MikTex/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb><E:/dev/MikTex/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/dev/M
-ikTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/dev/MikTex/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-><E:/dev/MikTex/fonts/type1/public/amsfonts/symbols/msbm10.pfb><E:/dev/MikTex/f
-onts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmbi8a.pf
-b><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/dev/MikTex/fonts/type1/ur
-w/times/utmri8a.pfb>
+.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmmi5.pfb><E:/dev/MikTex/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb><E:/dev/MikTex/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/dev/
+MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/dev/MikTex/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><E:/dev/MikTex/fonts/type1/public/amsfonts/cm/cmsy5.pfb><E:/dev/MikTex/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb><E:/dev/MikTex/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex
+/fonts/type1/urw/times/utmbi8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.
+pfb><E:/dev/MikTex/fonts/type1/urw/times/utmri8a.pfb>
 Output written on "Describing the role of Artificial Neural Networks in Reinfor
-cement Learning.pdf" (6 pages, 2191222 bytes).
+cement Learning.pdf" (7 pages, 2945329 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
+ 116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

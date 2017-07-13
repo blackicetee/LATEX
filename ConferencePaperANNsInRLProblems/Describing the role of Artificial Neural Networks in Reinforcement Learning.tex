@@ -522,7 +522,7 @@ A major goal of RL is to find a global optimal policy. A policy is a function wh
 \subsection{Q-learning}
 Q-Learning (Watkins \cite{Watkins_1992}, 1989) is a reinforcement learning algorithm for agents to learn how to act optimally in controlled Markov decision processes. Watkins showed in his paper that Q-Learning converges to the optimum action-value with probability 1 so long as all actions are repeatedly sampled in all states and the action-value are represented discretely. We will describe the Q-Value update in detail now, because in a later chapter Q-Learning is a fundamental part of the implementation. The update rule of one-step Q-Learning is \cite{sutton_barto_98}:
 
-\begin{equation}
+\begin{equation} \label{equ:one step Q function}
 \begin{split}
 Q(S_t, A_t) \leftarrow & Q(S_t, A_t) + \alpha[R_{t+1} + \\
  & \gamma \max_a Q(S_{t+1},a) - Q(S_t, A_t)].
@@ -586,6 +586,13 @@ In neural networks in general between the output and the input layers are hidden
 
 \subsection{Convolutional Neural Network (CNN/ConvNet)}
 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{conv_net}
+\caption{Schematic illustration of the convolutional neural network \cite{DRL:HumanLevelControl}.}
+\label{fig:conv_net}
+\end{figure}
+
 To better understand the later experiment \cite{mnih-atari-2013} (Deep Q-network) it is helpful to get into CNN's first. Knowledge base of this chapter is a Stanford class CS231n about "Convolutional Neural Networks for Visual Recognition" \cite{KarpathyCNN}. A convolutional neural network is a specific ANN which assumes that every input is an image. This assumption allows to reduce the amount of parameters and so improve the performance for image processing with CNN's in contrast to more general ANN's. More general because ANN's don't assume a specific input. A CNN consists of layers. There are different kinds of layers: input layer (INPUT), convolutional layer (CONV), rectified linear unit layer (RELU), pooling layer (POOL), fully connected layer (FC) and an output layer. Some of these layers can appear multiple times. A simple ConvNet architecture for classification could be INPUT $\rightarrow$ CONV $\rightarrow$ RELU $\rightarrow$ POOL $\rightarrow$ FC. In the following every different layer will be explained in detail.
 
 \paragraph{The Input layer} can be high dimensional sensory data. Considering the Atari 2600 arcade gaming environment \cite{DBLP:journals/corr/MnihBMGLHSK16, DBLP:journals/corr/HasseltGS15, DRL:HumanLevelControl} the input is a video stream of pixels at different time steps. At time step $t$ a video signal reduces to just an image of pixels and the complete sequence of images at all time steps equals the video signal. There is still more then the raw pixels from the video stream like the score value at each time step \cite{DRL:HumanLevelControl}. In terms of reinforcement learning the score signal is a reward signal and the video stream at each time step describes the state in which the agent is in. Another example is the CIFAR-10 dataset which contains images of shape 32x32x3 (32 wide, 32 high, 3 color channels).
@@ -613,53 +620,85 @@ A filter can be a representation for edges, lines or other shapes. A combination
 
 \paragraph{The output layer} Aim of the CNN is to predict which of 10 different CIFAR classes an image belongs to.
 
+\section{Playing Atari with Deep Reinforcement Learning}
+The paper from DeepMind Technologies is about a deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning \cite{mnih-atari-2013}. They defined the model as a convolutional neural network (CNN). This CNN is trained with a variant of Q-learning. Input of the CNN is row pixels and output is a value function estimating future rewards. They apply this deep learning model to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. Result of this experiment is that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them. 
+
+\subsection{Deep Reinforcement Learning}
+The following subsection is an in depth explanation of the experiment done in paper "Playing Atari with Deep Reinforcement Learning" \cite{mnih-atari-2013}. Inside the deep Q-learning algorithm (see Algorithm \ref{alg:deep q learning}) every concept explained in previous chapters are involved. This algorithm describes a deep Q network (DQN). A deep Q network is a combination of a convolutional neural networks and the reinforcement learning algorithm Q-learning. The problem setting is a Markov Decision Process defined by the Atari 2600 games emulator. The algorithm aims to learn an optimal policy like reinforcement learning agents always try to in an MDP environment.
+
+\begin{equation} \label{equ:loss functions}
+L_i(\theta_i) = \mathbb{E}_{s,a \sim \rho(\cdot)} [(y_i - Q(s,a;Q_i))^2]
+\end{equation}
+
+Furthermore a sequence of loss functions displayed in equation \ref{equ:loss functions} is used by Mnih et al. 2013 \cite{mnih-atari-2013}. The core of the loss function equation \ref{equ:loss functions} is pretty similar to the Q-function of Sutton and Barto \cite{sutton_barto_98} equation \ref{equ:one step Q function} or the original from Watkins \cite{Watkins_1992}. The similarity appears because of the objective definition in Reinforcement Learning problems. RL objective is to maximize the accumulated rewards over time. This RL objective is mathematically formalized either in Sutton and Bartos one step Q-update rule (equation \ref{equ:one step Q function}) and in Mnih et al. equation of loss functions (equation \ref{equ:loss functions}).
+
+\begin{equation} \label{equ:gradient loss}
+\begin{split}
+\nabla_{\theta_i} L_i (\theta_i) = & \mathbb{E}_{s,a \sim \rho(\cdot);s'\sim \mathcal{E}} [(r + \gamma \max_{a'} Q(s',a';\theta_{i-1}) \\
+ & - Q(s,a;\theta_i)) \nabla_{\theta_i} Q(s,a;\theta_i)]
+\end{split}
+\end{equation}
+
+These loss functions are optimized by a stochastic gradient descent update referenced in equation \ref{equ:gradient loss}. 
+
+\begin{equation} \label{equ:true Q-value-function}
+Q^*(s,a) = \mathbb{E}_{s' \sim \mathcal{E}} [r + \gamma \max_{a'} Q^* (s',a') |s,a]
+\end{equation}
+
+Mnih et al. used a convolutional neural network as function approximation to estimate the true Q-value-function $Q^*(s,a)$ defined in equation \ref{equ:true Q-value-function}. So the approximation is a Q-function $Q(s,a;\theta)$ with an additional parameter vector of weights $\theta$. The deep Q-learning algorithm optimizes the weights of the convolutional neural network function approximation for an nearly optimal approximation of $Q(s,a;\theta) \approx Q^*(s,a)$. Initially the weights of the CNN are randomly initialized, so the entries (neurons) will not behave exactly homogeneous.
+
+\begin{algorithm}
+\caption{Deep Q-learning with Experience Replay \cite{mnih-atari-2013}} \label{alg:deep q learning}
+\begin{algorithmic}
+\STATE Initialize replay memory $\mathcal{D}$ to capacity $N$
+\STATE Initialize action-value function $Q$ with random weights
+\FOR{ episode $= 1, M$}
+	\STATE Initialise sequence $s_1 = \{x_1\}$ and preprocessed \\
+	\qquad sequenced $\phi_1 = \phi(s_1)$
+	\FOR{$t = 1,T$}
+		\STATE With probability $\epsilon$ select a random action $a_t$
+		\STATE otherwise select $a_t = \max_a Q^* (\phi(s_t),a;\theta)$
+		\STATE Execute action $a_t$ in emulator and observe reward $r_t$ \\
+		\qquad and image $x_{t+1}$
+		\STATE Set $s_{t+1} = s_t, a_t, x_{t+1}$ and preprocess $\phi_{t+1} =
+		\phi(s_{t+1})$
+		\STATE Store transition $(\phi_t,a_t,r_t,\phi_{t+1})$ in $\mathcal{D}$
+		\STATE Sample random minibatch of transitions \\
+		\qquad $(\phi_j,a_j,r_j,\phi_{j+1})$ from $\mathcal{D}$
+		\STATE \medskip Set $y_j = \begin{cases} 
+			r_j \qquad \qquad \quad \text{for terminal } \phi_{j+1} \\
+			r_j + \gamma \max_{a'} Q(\phi_{j+1},a';\theta) \\
+			\qquad \qquad \qquad \text{for non-terminal} \phi_{j+1}		
+		\end{cases}$
+		\STATE Perform a gradient descent step on $(y_j - 
+		Q(\phi_i,a_j;\theta))^2$ \\ \qquad according to equation
+		\ref{equ:gradient loss}
+	\ENDFOR
+\ENDFOR
+\end{algorithmic}
+\end{algorithm} 
+
+\subsection{Experiment results}
+
+The deep Q-learning algorithm from the previous subsection achieved better performance than an expert human player on the Atari games Breakout, Enduro and Pong and achieves close to human performance on Beam Rider. The human expert outperformed the DQN in games like Q*bert, Seaquest and Space Invaders, because the games are more challenging in terms of the DQN needs to find a strategy that extents over long time scales. Nevertheless the DQN outperforms other RL algorithms like Sarsa and Contingency. These results are summarized in table \ref{fig:result_table_dqn}. The first row of the table is a random agent which acts randomly without any RL algorithm. The next 4 rows are already described previously. The last 3 rows compare the best DQN results with a evolutionary policy search approach. 
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=3.5in]{conv_net}
-\caption{Schematic illustration of the convolutional neural network \cite{DRL:HumanLevelControl}.}
-\label{fig:conv_net}
+\includegraphics[width=3.5in]{result_table_dqn}
+\caption{DQN results in Atari 2600 emulator \cite{mnih-atari-2013}.}
+\label{fig:result_table_dqn}
 \end{figure}
 
-\subsection{Recurrent Neural Networks (RNN's)}
-
-
-% Related Work / State of the art / Literature Review
-\section{Successful case studies using ANN's for RL}
-The following part is about summarising successful case studies which used ANN's for RL. 
-
-\subsection{Asynchronous Methods for Deep Reinforcement Learning}
-The scientists from Google DeepMind and Montreal Institute for Learning Algorithms introduced asynchronous deep learning algorithms \cite{DBLP:journals/corr/MnihBMGLHSK16}. These asynchronous algorithms are based on four standard reinforcement learning algorithms: One-step Q-learning, one-step Sarsa, n-step Q-learning and advantage actor-critic. The paper explains the background of reinforcement learning and how the asynchronous reinforcement learning methods works. The study was approved by an experiment in an Atari 2600 evaluation environment . All four asynchronous algorithms where tested within the test environment  . The Atari 2600 environment tests where used to compare the performance of the four algorithms. The main finding of this study is that all four asynchronous deep reinforcement learning algorithms are able to train neural network controllers on a variety of domains in a stable manner. In addition their results show that stable train ing of neural networks through reinforcement learning is possible with both value-based and policy-based methods, off-policy as well as on-policy methods, and in discrete as well as continuous domains. 
-
-\subsection{Deep Reinforcement Learning with Double Q-Learning}
-Aim of this paper is to determine if the recent DQN (Deep Q Network) algorithm, which combines Q-learning with a deep neural network, suffers from substantial overestimations in some games in the Atari 2600 domain \cite{DBLP:journals/corr/HasseltGS15}. Furthermore the Google DeepMind contributors point out how the Double Q-learning algorithm can be generalized to work with large-scale function approximation to successfully reduce the DQN overoptimism, resulting in more stable and reliable learning. Finally they propose a specific adaptation to the DQN algorithm and show that the resulting algorithm (Double DQN) not only reduces the observed overestimation, as they hypothesized, but that this also leads to much better performance on several Atari 2600 games.
-
-\subsection{Human-level controll through deep reinforcement learning}
-The paper is about how to reach human-level control through a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning \cite{DRL:HumanLevelControl}. The deep Q-network agent (in reinforcement learning an agent is the executing learning algorithm) is tested on the challenging classic Atari 2600 game environment. The result of this test demonstrated that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. 
-
-
-\subsection{Mastering the game of Go with deep neural networks and tree search}
-
-The paper from Google concerns two different algorithm approaches for deep reinforcement learning \cite{DRL:Silver_2016}. The first approach uses 'value networks' to evaluate board positions and 'policy networks' to select moves. These deep neural networks are trained by a novel combination of supervised learning from human expert games and reinforcement learning from games of self-play. They proof through experiments that this deep RL algorithm approach is capable of playing Go at the level of state-of-the-art Monte Carlo tree search. The second deep RL approach is a new seach algorithm that combines Monte Carlo simulation with value and policy networks. They used this search algorithm inside the application AlphaGo and the application achieved a 99.8\% winning rate against other Go programs and it defeated the human European Go champion by 5 games to 0.
-
-\subsection{Playing Atari with Deep Reinforcement Learning}
-The paper from DeepMind Technologies is about a deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning \cite{mnih-atari-2013}. They defined the model as a convolutional neural network (CNN). This CNN is trained with a variant of Q-learning. Input of the CNN is row pixels and output is a value function estimating future rewards. They apply this deep learning model to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. Result of this experiment is that it outperforms all previous approaches on sex ot the games and surpasses a human expert on three of them. 
-
-\section{Deep Reinforcement Learning}
-In depth explaining of the experiment done in paper "Playing Atari with Deep Reinforcement Learning".
-
-\subsection{Deep Q-network}
-A deep Q network (DQN) is a combination of a convolutional neural network and the reinforcement learning algorithm Q-learning. 
-
-"A deep Q network (DQN) is a multi-layerd neural network that for a given state $s$ outputs a vector of action values $Q(a, ; \theta)$, where $\theta$ are the parameters of the network. For an $n$-dimensional state space and an action space containing $m$ actions, the neural network is a function from $\mathbb{R}^n$ to $\mathbb{R}^m$. Two important ingredients of the DQN algorithm as proposed by Mnih et al. (2015) are the use of a target network and the use of experience replay. The target network, with parameters $\theta^-$, is the same as the online network except that its parameters are copied every $t$ steps from the online network, so that then $\theta^-_t = \theta_t$, and kept fixed on all other steps. The target used by DQN is then
-
-\begin{equation*}
-Y^{DQN}_t \equiv R_{t+1} + \gamma \max_a Q(S_{t+1}, a; \theta^-_t).
-\end{equation*}
-
-For the experience replay (Lin, 1992), observed transitions are stored for some time and sampled uniformly from this memory bank to update the network. Both the target network and the experience replay dramatically improve the performance of the algorithm (Mnih et al. 2015)."
-
 \section{Discussion \& Conclusion}
+Even if the DQN from Mnih et al. 2013 outperforms a human in several Atari 2600 games, there are still games where the human is unbeatable. The paper "Deep Reinforcement Learning with Double Q-Learning" aims to determine if the recent DQN (Deep Q Network) algorithm, which combines Q-learning with a deep neural network, suffers from substantial overestimations in some games in the Atari 2600 domain \cite{DBLP:journals/corr/HasseltGS15}. Furthermore the Google DeepMind contributors point out how the Double Q-learning algorithm can be generalized to work with large-scale function approximation to successfully reduce the DQN overoptimism, resulting in more stable and reliable learning. Finally they propose a specific adaptation to the DQN algorithm and show that the resulting algorithm (Double DQN) not only reduces the observed overestimation, as they hypothesized, but that this also leads to much better performance on several Atari 2600 games. \\
+
+The main paper of Mnih et al. 2013 \cite{mnih-atari-2013} is the foundation for another very similar paper "Human-level controll through deep reinforcement learning" \cite{DRL:HumanLevelControl}. The paper is about how to reach human-level control through a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. The deep Q-network agent is tested on the challenging classic Atari 2600 game environment. The result of this test demonstrated that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. \\
+
+Another promissing approach using artificial neural networks as function approximation is created by scientists from Google DeepMind and Montreal Institute for Learning Algorithms, they introduced asynchronous deep learning algorithms \cite{DBLP:journals/corr/MnihBMGLHSK16}. These asynchronous algorithms are based on four standard reinforcement learning algorithms: One-step Q-learning, one-step Sarsa, n-step Q-learning and advantage actor-critic. We already mentioned one-step Q-learning in a previous section. The paper explains the background of reinforcement learning and how the asynchronous reinforcement learning methods works. The study was approved by an experiment in an Atari 2600 evaluation environment. All four asynchronous algorithms where tested within the test environment. The Atari 2600 environment tests where used to compare the performance of the four algorithms. The main finding of this study is that all four asynchronous deep reinforcement learning algorithms are able to train neural network controllers on a variety of domains in a stable manner. In addition their results show that stable training of neural networks through reinforcement learning is possible with both value-based and policy-based methods, off-policy as well as on-policy methods, and in discrete as well as continuous domains. \\
+
+So far we only mentioned RL environments given by the Atari 2600 emulator, but what if we would define an extremely high dimensional board game like GO as an RL environment? The paper from D. Silver et al. 2016 concerns two different algorithm approaches for deep reinforcement learning \cite{DRL:Silver_2016} of the board game GO. The first approach uses 'value networks' to evaluate board positions and 'policy networks' to select moves. These deep neural networks are trained by a novel combination of supervised learning from human expert games and reinforcement learning from games of self-play. They proof through experiments that this deep RL algorithm approach is capable of playing Go at the level of state-of-the-art Monte Carlo tree search. The second deep RL approach is a new seach algorithm that combines Monte Carlo simulation with value and policy networks. They used this search algorithm inside the application AlphaGo and the application achieved a 99.8\% winning rate against other Go programs and it defeated the human European Go champion by 5 games to 0. \\
+
+To close out the paper and give a final statement we will summarize this paper in short. We explained what reinforcement learning in general is, what the problems of reinforcement learning are, how to solve the problem of high dimensionality with function approximation using convolutional neural networks as function approximation, what convolutional neural networks are, how loss functions look and how they define the agent objective, what the difference between the optimization methods batch gradient decent and stochastic gradient descent are and we explained how all these concepts are used by Mnih et al. 2013 \cite{mnih-atari-2013} to create a deep RL algorithm which outperforms human level gameplay in several Atari 2600 games. Convolutional neural networks which are more specialized artificial neural networks combined with RL methods produce powerful approaches to learn human level or above human level strategies in most of Atari 2600 like games or GO without changing hyperparameters or network architecture mostly. In several years the deep RL algorithms may beat humans in every Atari 2600 game. 
 
 % use section* for acknowledgment
 % \section*{Acknowledgment}
