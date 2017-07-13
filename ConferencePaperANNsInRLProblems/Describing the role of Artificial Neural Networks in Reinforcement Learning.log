@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  13 JUL 2017 15:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.28)  13 JUL 2017 17:36
 entering extended mode
 **"./Describing the role of Artificial Neural Networks in Reinforcement Learnin
 g.tex"
@@ -634,6 +634,11 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
+Underfull \hbox (badness 1881) in paragraph at lines 496--497
+\OT1/ptm/m/n/10 neu-ral net-works (ANN's) in par-tic-u-lar on con-vo-lu-tional
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
@@ -642,19 +647,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 496--497
 File: ./images/agent_environment.pdf Graphic file (type pdf)
 
 <use ./images/agent_environment.pdf>
-Package pdftex.def Info: ./images/agent_environment.pdf used on input line 506.
+Package pdftex.def Info: ./images/agent_environment.pdf used on input line 504.
 
 (pdftex.def)             Requested size: 252.94499pt x 97.14265pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 506--507
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 504--505
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 511.
+LaTeX Font Info:    Try loading font information for U+msa on input line 509.
 (E:\dev\MikTex\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 511.
+LaTeX Font Info:    Try loading font information for U+msb on input line 509.
 
 (E:\dev\MikTex\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -662,49 +667,49 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
  <./images/agent_environment.pdf>]
-Underfull \hbox (badness 1496) in paragraph at lines 518--519
+Underfull \hbox (badness 1496) in paragraph at lines 516--517
 \OT1/ptm/m/n/10 failed for big-ger game fields of Tic-Tac-Toe or Re-versi.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--519
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
 
  []
 
-<./images/linear_regression_model_fit.pdf, id=19, 549.05125pt x 198.7425pt>
+<./images/linear_regression_model_fit.pdf, id=13, 549.05125pt x 198.7425pt>
 File: ./images/linear_regression_model_fit.pdf Graphic file (type pdf)
 
 <use ./images/linear_regression_model_fit.pdf>
 Package pdftex.def Info: ./images/linear_regression_model_fit.pdf used on input
- line 543.
+ line 541.
 (pdftex.def)             Requested size: 252.94499pt x 91.55911pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 543--544
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 541--542
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 553--554
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
 
  []
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 555--556
+Underfull \hbox (badness 1552) in paragraph at lines 553--554
 \OT1/ptm/m/n/10 that batch gra-di-ent de-scent achieves lin-ear con-ver-gence,
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 555--556
+Underfull \hbox (badness 1590) in paragraph at lines 553--554
 \OT1/ptm/m/n/10 pa-ram-e-ters which are up-dated will os-cil-late around the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 555--556
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
 
  []
 
@@ -712,11 +717,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 555--556
 File: ./images/gradient_plots.pdf Graphic file (type pdf)
 
 <use ./images/gradient_plots.pdf>
-Package pdftex.def Info: ./images/gradient_plots.pdf used on input line 559.
+Package pdftex.def Info: ./images/gradient_plots.pdf used on input line 557.
 (pdftex.def)             Requested size: 252.94499pt x 96.77916pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 559--560
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 557--558
  [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+
  []
 
 [3 <./images/linear_regression_model_fit.pdf> <./images/gradient_plots.pdf
@@ -727,10 +737,10 @@ tiple pdfs with page group included in a single page
 File: ./images/conv_net.pdf Graphic file (type pdf)
 
 <use ./images/conv_net.pdf>
-Package pdftex.def Info: ./images/conv_net.pdf used on input line 591.
+Package pdftex.def Info: ./images/conv_net.pdf used on input line 586.
 (pdftex.def)             Requested size: 252.94499pt x 162.82303pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 591--592
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 586--587
  [][] 
  []
 
@@ -738,37 +748,107 @@ Overfull \hbox (0.94499pt too wide) in paragraph at lines 591--592
 File: ./images/convolutional_layer.pdf Graphic file (type pdf)
 
 <use ./images/convolutional_layer.pdf>
-Package pdftex.def Info: ./images/convolutional_layer.pdf used on input line 60
-2.
+Package pdftex.def Info: ./images/convolutional_layer.pdf used on input line 59
+7.
 (pdftex.def)             Requested size: 252.94499pt x 217.30252pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 602--603
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 597--598
  [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 602--603
+\OT1/ptm/m/n/10 ex-pen-sive layer, be-cause much ma-trix mul-ti-pli-ca-tions
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 602--603
+\OT1/ptm/m/n/10 are per-formed on raw data (not re-duced data ex-pect
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 602--603
+
  []
 
 [4 <./images/conv_net.pdf> <./images/convolutional_layer.pdf
 
 pdfTeX warning: pdflatex (file ./images/convolutional_layer.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
->] <./images/result_table_dqn.pdf, id=47, 341.275pt x 108.405pt>
-File: ./images/result_table_dqn.pdf Graphic file (type pdf)
+>] <./images/pooling_layer.pdf, id=47, 398.48875pt x 119.44624pt>
+File: ./images/pooling_layer.pdf Graphic file (type pdf)
 
-<use ./images/result_table_dqn.pdf>
-Package pdftex.def Info: ./images/result_table_dqn.pdf used on input line 687.
-(pdftex.def)             Requested size: 252.94499pt x 80.3491pt.
+<use ./images/pooling_layer.pdf>
+Package pdftex.def Info: ./images/pooling_layer.pdf used on input line 612.
+(pdftex.def)             Requested size: 252.94499pt x 75.82018pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 687--688
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 612--613
  [][] 
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 693--694
+Underfull \vbox (badness 1077) has occurred while \output is active []
+
+ [5 <./images/pooling_layer.pdf>]
+<./images/result_table_dqn.pdf, id=57, 341.275pt x 108.405pt>
+File: ./images/result_table_dqn.pdf Graphic file (type pdf)
+
+<use ./images/result_table_dqn.pdf>
+Package pdftex.def Info: ./images/result_table_dqn.pdf used on input line 683.
+(pdftex.def)             Requested size: 252.94499pt x 80.3491pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 683--684
+ [][] 
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 689--690
 \OT1/ptm/m/n/10 a hu-man in sev-eral Atari 2600 games, there are still
  []
 
 
-Underfull \hbox (badness 1990) in paragraph at lines 693--694
+Underfull \hbox (badness 1990) in paragraph at lines 689--690
 \OT1/ptm/m/n/10 suf-fers from sub-stan-tial over-es-ti-ma-tions in some games
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--690
+
+ []
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 691--692
+\OT1/ptm/m/n/10 sen-sory in-puts us-ing end-to-end re-in-force-ment learn-ing.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 691--692
+
+ []
+
+
+Underfull \hbox (badness 6808) in paragraph at lines 693--694
+[]\OT1/ptm/m/n/10 Another promiss-ing ap-proach us-ing ar-ti-fi-cial neu-ral
+ []
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 693--694
+\OT1/ptm/m/n/10 Al-go-rithms, they in-tro-duced asyn-chronous deep learn-ing
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 693--694
+\OT1/ptm/m/n/10 a pre-vi-ous sec-tion. The pa-per ex-plains the back-ground
+ []
+
+
+Underfull \hbox (badness 5970) in paragraph at lines 693--694
+\OT1/ptm/m/n/10 of re-in-force-ment learn-ing and how the asyn-chronous
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 693--694
+\OT1/ptm/m/n/10 re-in-force-ment learn-ing meth-ods works. The study was
  []
 
 
@@ -776,54 +856,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 693--694
 
  []
 
-[5 <./images/result_table_dqn.pdf>]
-Underfull \hbox (badness 2932) in paragraph at lines 695--696
-\OT1/ptm/m/n/10 sen-sory in-puts us-ing end-to-end re-in-force-ment learn-ing.
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 695--696
 
  []
 
-
-Underfull \hbox (badness 6808) in paragraph at lines 697--698
-[]\OT1/ptm/m/n/10 Another promiss-ing ap-proach us-ing ar-ti-fi-cial neu-ral
- []
-
-
-Underfull \hbox (badness 1881) in paragraph at lines 697--698
-\OT1/ptm/m/n/10 Al-go-rithms, they in-tro-duced asyn-chronous deep learn-ing
- []
-
-
-Underfull \hbox (badness 1824) in paragraph at lines 697--698
-\OT1/ptm/m/n/10 a pre-vi-ous sec-tion. The pa-per ex-plains the back-ground
- []
-
-
-Underfull \hbox (badness 5970) in paragraph at lines 697--698
-\OT1/ptm/m/n/10 of re-in-force-ment learn-ing and how the asyn-chronous
- []
-
-
-Underfull \hbox (badness 3250) in paragraph at lines 697--698
-\OT1/ptm/m/n/10 re-in-force-ment learn-ing meth-ods works. The study was
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 697--698
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 699--700
-
- []
-
-
+[6 <./images/result_table_dqn.pdf>]
 ("Describing the role of Artificial Neural Networks in Reinforcement Learning.b
-bl" [6]
+bl"
 Underfull \hbox (badness 1688) in paragraph at lines 68--71
 []\OT1/ptm/m/n/8 W. Er-tel, \OT1/ptm/m/it/8 Grund-kurs K[]unstliche In-tel-li-g
 enz: eine prax-isori-en-tierte
@@ -841,16 +881,14 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7
-
-]
+[7]
 ("Describing the role of Artificial Neural Networks in Reinforcement Learning.a
 ux") ) 
 Here is how much of TeX's memory you used:
- 3947 strings out of 493333
- 56395 string characters out of 3145253
- 131483 words of memory out of 3000000
- 7397 multiletter control sequences out of 15000+200000
+ 3953 strings out of 493333
+ 56554 string characters out of 3145253
+ 131491 words of memory out of 3000000
+ 7402 multiletter control sequences out of 15000+200000
  40049 words of font info for 84 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  40i,16n,26p,1623b,522s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -867,9 +905,9 @@ mbols/msbm10.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/dev/MikTex
 /fonts/type1/urw/times/utmbi8a.pfb><E:/dev/MikTex/fonts/type1/urw/times/utmr8a.
 pfb><E:/dev/MikTex/fonts/type1/urw/times/utmri8a.pfb>
 Output written on "Describing the role of Artificial Neural Networks in Reinfor
-cement Learning.pdf" (7 pages, 2945329 bytes).
+cement Learning.pdf" (7 pages, 3755329 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
+ 120 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
